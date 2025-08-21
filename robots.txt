@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gracechang1112-lab.github.io/website/sitemap.xml
