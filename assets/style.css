@@ -1,5 +1,5 @@
 
-:root{ --brand:#0ea5a7; --dark:#0b1320; }
+:root{ --brand:#0ea5a7; --dark:#1f2937; }
 html,body{ height:100% }
 body{ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; line-height:1.7; color:#0b1320 }
 .navbar{ background:var(--dark); }
@@ -47,3 +47,45 @@ svg [data-i18n]{display:none !important;}
 .link-arrow{text-decoration:none}
 .link-arrow i{transition:transform .2s}
 .link-arrow:hover i{transform:translateX(4px)}
+
+
+
+.navbar .dropdown-menu{ 
+  background:#fff; 
+  border:1px solid rgba(0,0,0,.08);
+  box-shadow:0 12px 24px rgba(0,0,0,.08);
+  border-radius:12px;
+  overflow:hidden;
+}
+.navbar .dropdown-item{
+  color:#0b1320 !important;
+  padding:.6rem 1rem;
+}
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus{
+  background:#f5f7f9;
+  color:#0b1320 !important;
+}
+
+
+
+/* --- Dark gray nav + matching dropdown --- */
+.navbar{ background:var(--dark); }
+.navbar .dropdown-menu{
+  background:var(--dark);
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 12px 24px rgba(0,0,0,.25);
+  border-radius:12px;
+  overflow:hidden;
+  padding:.4rem 0;
+}
+.navbar .dropdown-item{
+  color:#fff !important;
+  padding:.6rem 1rem;
+}
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus{
+  background:#374151; /* slightly lighter gray for hover */
+  color:#fff !important;
+}
+
