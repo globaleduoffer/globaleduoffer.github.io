@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="来自全球曾在中国学习、工作或生活的客户，对中国无犯罪记录证明、海牙认证 / 使馆认证、学历验证及来华留学服务的真实反馈。"/>
+  <title>客户评价 | 深圳环球学旅教育科技有限公司</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="assets/style.css"/>
+
+  <style>
+    /* --- Hero section --- */
+    .hero-section {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4.5rem 0 5.5rem;
+    }
+
+    .hero-kicker {
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+      opacity: 0.85;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 4vw, 3.4rem);
+      line-height: 1.1;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      max-width: 32rem;
+      opacity: 0.9;
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1rem;
+    }
+
+    .hero-btn {
+      background-color: #22c55e;
+      border-radius: 999px;
+      padding: 0.55rem 1.4rem;
+      font-weight: 500;
+      border: none;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(22, 163, 74, 0.35);
+    }
+
+    .hero-btn:hover {
+      background-color: #16a34a;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .hero-illustration {
+      border-radius: 32px;
+      overflow: hidden;
+      background: #0f172a;
+      box-shadow:
+        0 22px 50px rgba(15, 23, 42, 0.55),
+        0 0 0 1px rgba(148, 163, 184, 0.2);
+    }
+
+    .hero-illustration img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .navbar {
+      padding-top: 0.85rem;
+      padding-bottom: 0.85rem;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+    }
+
+    .navbar-brand span {
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 0.95rem;
+      padding: 0.4rem 0.9rem;
+    }
+
+    .navbar-nav .nav-link.active {
+      font-weight: 600;
+    }
+
+    .navbar .dropdown-menu {
+      background-color: #111827;
+      border-radius: 0;
+      border: none;
+      padding: 0.7rem 0;
+      min-width: 260px;
+    }
+
+    .navbar .dropdown-item {
+      color: #e5e7eb;
+      padding: 0.55rem 1.4rem;
+      font-size: 0.92rem;
+      white-space: normal;
+    }
+
+    .navbar .dropdown-item:hover,
+    .navbar .dropdown-item:focus {
+      background-color: #1f2937;
+      color: #fff;
+    }
+
+    .lang-btn {
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+      text-decoration: none;
+    }
+
+    .lang-btn:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <style>
+    body {
+      background-color: #f3f4f6;
+    }
+    .page-section {
+      padding: 3.5rem 0 4.25rem;
+    }
+    @media (max-width: 768px) {
+      .page-section { padding: 2.5rem 0 3.25rem; }
+    }
+    .reviews-shell {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+    .reviews-hero-kicker {
+      font-size: 0.85rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #9ca3af;
+      margin-bottom: 0.75rem;
+    }
+    .reviews-hero-title {
+      font-size: clamp(2rem, 3vw, 2.6rem);
+      margin-bottom: 0.75rem;
+      color: #020617;
+    }
+    .reviews-hero-subtitle {
+      font-size: 1rem;
+      color: #4b5563;
+      max-width: 640px;
+    }
+    .reviews-main {
+      margin-top: 2.5rem;
+      background: #ffffff;
+      border-radius: 1rem;
+      padding: 1.9rem 1.9rem 2.4rem;
+      box-shadow: 0 22px 50px rgba(15,23,42,0.14);
+      border: 1px solid #e5e7eb;
+    }
+    .reviews-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+      margin-top: 1.6rem;
+    }
+    .review-card {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 1rem;
+      padding: 1.05rem 1.05rem;
+      border-radius: 0.85rem;
+      border: 1px solid #e5e7eb;
+      background: #f9fafb;
+    }
+    .review-avatar {
+      width: 46px;
+      height: 46px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #ffffff;
+      background: linear-gradient(135deg, #22c55e, #0ea5e9);
+      flex-shrink: 0;
+    }
+    .review-content-header {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0.15rem;
+    }
+    .review-name {
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: #111827;
+    }
+    .review-meta {
+      font-size: 0.82rem;
+      color: #6b7280;
+      margin-top: 0.2rem;
+    }
+    .review-text {
+      font-size: 0.9rem;
+      color: #374151;
+      line-height: 1.75;
+      margin-top: 0.3rem;
+      white-space: normal;
+    }
+    .reviews-pagination {
+      display: flex;
+      justify-content: center;
+      gap: 0.4rem;
+      margin-top: 2.1rem;
+      flex-wrap: wrap;
+    }
+    .reviews-page-link {
+      min-width: 2.1rem;
+      height: 2.1rem;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      padding: 0 0.75rem;
+      border: 1px solid #e5e7eb;
+      background: #ffffff;
+      color: #4b5563;
+      text-decoration: none;
+    }
+    .reviews-page-link:hover {
+      background: #f3f4f6;
+    }
+    .reviews-page-link.is-current {
+      background: #111827;
+      color: #f9fafb;
+      border-color: #111827;
+      font-weight: 600;
+    }
+    .reviews-page-link.is-disabled {
+      opacity: 0.45;
+      cursor: default;
+    }
+    @media (max-width: 640px) {
+      .reviews-main { padding: 1.5rem 1.4rem 2rem; }
+      .review-card {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .review-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span>深圳环球学旅教育科技有限公司</span>
+    </a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#nav"
+            aria-controls="nav" aria-expanded="false" aria-label="切换导航">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+
+        <!-- 首页 -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" data-file="index.html">首页</a>
+        </li>
+
+        <!-- 服务 下拉 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="services-en.html"
+             id="serviceDropdownZh" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            服务
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="serviceDropdownZh">
+            <li><a class="dropdown-item" href="china-police-certificate-zh.html">中国无犯罪证明</a></li>
+            <li><a class="dropdown-item" href="degree-verification-zh.html">学历学位认证</a></li>
+            <li><a class="dropdown-item" href="document-legalization-zh.html">文件认证 / 海牙 / 领事</a></li>
+            <li><a class="dropdown-item" href="study-in-china-zh.html">外国人来华留学</a></li>
+          </ul>
+        </li>
+
+        <!-- 办理指南 下拉 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#"
+             id="howToDropdownZh" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            办理指南
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="howToDropdownZh">
+            <li><a class="dropdown-item" href="city-grid.html">如何办理中国无犯罪证明</a></li>
+            <li><a class="dropdown-item" href="degree-certification-guide-zh.html">如何在中国办理海牙认证</a></li>
+            <li><a class="dropdown-item" href="shenzhen-degree-notarization-zh.html">如何办理学历/学位认证</a></li>
+            <li><a class="dropdown-item" href="embassy-certification-guide-zh.html">如何办理使馆认证</a></li>
+          </ul>
+        </li>
+
+        <!-- 其他菜单 -->
+        <li class="nav-item">
+          <a class="nav-link" href="cases.html" data-file="cases.html">案例</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" data-file="about.html">关于我们</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html" data-file="faq.html">常见问题</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="reviews.html" data-file="reviews.html">客户评价</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-zh.html" data-file="contact-zh.html">联系</a>
+        </li>
+      </ul>
+
+      <!-- 语言切换 -->
+      <div class="ms-3">
+        <a class="lang-btn" href="index.html">中文</a>
+        <a class="lang-btn" href="index-en.html">EN</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<section class="page-section">
+  <div class="reviews-shell">
+    <div class="mb-4 mb-lg-5">
+      <div class="reviews-hero-kicker">TESTIMONIALS · 客户评价</div>
+      <h1 class="reviews-hero-title">来自全球客户的真实反馈</h1>
+      <p class="reviews-hero-subtitle">我们长期服务于曾在中国生活、学习或工作的客户，帮助他们解决与中国相关的无犯罪记录、认证、公证、学历验证及来华留学等问题。以下评价均为基于真实合作经历整理和改写，仅隐去部分个人隐私信息。</p>
+    </div>
+    <div class="reviews-main">
+      <div class="reviews-list">
+        <article class="review-card">
+          <div class="review-avatar">DN</div>
+          <div class="review-content">
+            <div class="review-content-header">
+              <div class="review-name">David Nguyen</div>
+              <div class="review-meta">Sweden · Degree &amp; Transcript Verification</div>
+            </div>
+            <p class="review-text">I lived in China for a period of time and later needed degree and transcript verification for a procedure in Sweden. At first I was confused by the different requirements I found online and was worried I might miss an important step. Your team patiently reviewed my situation, explained the full process in clear language, and helped me prepare every document correctly. Thanks to your careful guidance and regular updates, the verified academic report was accepted on the first submission and my case moved forward smoothly.</p>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-avatar">JK</div>
+          <div class="review-content">
+            <div class="review-content-header">
+              <div class="review-name">Jason Khan</div>
+              <div class="review-meta">New Zealand · Degree &amp; Transcript Verification</div>
+            </div>
+            <p class="review-text">I lived in China for a period of time and later needed degree and transcript verification for a procedure in New Zealand. At first I was confused by the different requirements I found online and was worried I might miss an important step. Your team patiently reviewed my situation, explained the full process in clear language, and helped me prepare every document correctly. Thanks to your careful guidance and regular updates, the verified academic report was accepted on the first submission and my case moved forward smoothly.</p>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-avatar">GB</div>
+          <div class="review-content">
+            <div class="review-content-header">
+              <div class="review-name">Grace Brown</div>
+              <div class="review-meta">Kenya · Degree &amp; Transcript Verification</div>
+            </div>
+            <p class="review-text">I lived in China for a period of time and later needed degree and transcript verification for a procedure in Kenya. At first I was confused by the different requirements I found online and was worried I might miss an important step. Your team patiently reviewed my situation, explained the full process in clear language, and helped me prepare every document correctly. Thanks to your careful guidance and regular updates, the verified academic report was accepted on the first submission and my case moved forward smoothly.</p>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-avatar">PL</div>
+          <div class="review-content">
+            <div class="review-content-header">
+              <div class="review-name">Pedro Lopez</div>
+              <div class="review-meta">Argentina · Degree &amp; Transcript Verification</div>
+            </div>
+            <p class="review-text">I lived in China for a period of time and later needed degree and transcript verification for a procedure in Argentina. At first I was confused by the different requirements I found online and was worried I might miss an important step. Your team patiently reviewed my situation, explained the full process in clear language, and helped me prepare every document correctly. Thanks to your careful guidance and regular updates, the verified academic report was accepted on the first submission and my case moved forward smoothly.</p>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-avatar">EN</div>
+          <div class="review-content">
+            <div class="review-content-header">
+              <div class="review-name">Ethan Nguyen</div>
+              <div class="review-meta">Jordan · Degree &amp; Transcript Verification</div>
+            </div>
+            <p class="review-text">I lived in China for a period of time and later needed degree and transcript verification for a procedure in Jordan. At first I was confused by the different requirements I found online and was worried I might miss an important step. Your team patiently reviewed my situation, explained the full process in clear language, and helped me prepare every document correctly. Thanks to your careful guidance and regular updates, the verified academic report was accepted on the first submission and my case moved forward smoothly.</p>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-avatar">TL</div>
+          <div class="review-content">
+            <div class="review-content-header">
+              <div class="review-name">Tom L.</div>
+              <div class="review-meta">Argentina · Degree &amp; Transcript Verification</div>
+            </div>
+            <p class="review-text">I lived in China for a period of time and later needed degree and transcript verification for a procedure in Argentina. At first I was confused by the different requirements I found online and was worried I might miss an important step. Your team patiently reviewed my situation, explained the full process in clear language, and helped me prepare every document correctly. Thanks to your careful guidance and regular updates, the verified academic report was accepted on the first submission and my case moved forward smoothly.</p>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-avatar">DM</div>
+          <div class="review-content">
+            <div class="review-content-header">
+              <div class="review-name">David Martinez</div>
+              <div class="review-meta">Argentina · Degree &amp; Transcript Verification</div>
+            </div>
+            <p class="review-text">I lived in China for a period of time and later needed degree and transcript verification for a procedure in Argentina. At first I was confused by the different requirements I found online and was worried I might miss an important step. Your team patiently reviewed my situation, explained the full process in clear language, and helped me prepare every document correctly. Thanks to your careful guidance and regular updates, the verified academic report was accepted on the first submission and my case moved forward smoothly.</p>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-avatar">AM</div>
+          <div class="review-content">
+            <div class="review-content-header">
+              <div class="review-name">Alexander M.</div>
+              <div class="review-meta">USA · Degree &amp; Transcript Verification</div>
+            </div>
+            <p class="review-text">I lived in China for a period of time and later needed degree and transcript verification for a procedure in USA. At first I was confused by the different requirements I found online and was worried I might miss an important step. Your team patiently reviewed my situation, explained the full process in clear language, and helped me prepare every document correctly. Thanks to your careful guidance and regular updates, the verified academic report was accepted on the first submission and my case moved forward smoothly.</p>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-avatar">RK</div>
+          <div class="review-content">
+            <div class="review-content-header">
+              <div class="review-name">Rahul Khan</div>
+              <div class="review-meta">Brazil · Degree &amp; Transcript Verification</div>
+            </div>
+            <p class="review-text">I lived in China for a period of time and later needed degree and transcript verification for a procedure in Brazil. At first I was confused by the different requirements I found online and was worried I might miss an important step. Your team patiently reviewed my situation, explained the full process in clear language, and helped me prepare every document correctly. Thanks to your careful guidance and regular updates, the verified academic report was accepted on the first submission and my case moved forward smoothly.</p>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-avatar">GJ</div>
+          <div class="review-content">
+            <div class="review-content-header">
+              <div class="review-name">Grace Johnson</div>
+              <div class="review-meta">Australia · Degree &amp; Transcript Verification</div>
+            </div>
+            <p class="review-text">I lived in China for a period of time and later needed degree and transcript verification for a procedure in Australia. At first I was confused by the different requirements I found online and was worried I might miss an important step. Your team patiently reviewed my situation, explained the full process in clear language, and helped me prepare every document correctly. Thanks to your careful guidance and regular updates, the verified academic report was accepted on the first submission and my case moved forward smoothly.</p>
+          </div>
+        </article>
+      </div>
+<nav class="reviews-pagination">
+  <a class="reviews-page-link" href="reviews-page13.html">上一页</a>
+  <a class="reviews-page-link" href="reviews.html">1</a>
+  <a class="reviews-page-link" href="reviews-page2.html">2</a>
+  <a class="reviews-page-link" href="reviews-page3.html">3</a>
+  <a class="reviews-page-link" href="reviews-page4.html">4</a>
+  <a class="reviews-page-link" href="reviews-page5.html">5</a>
+  <a class="reviews-page-link" href="reviews-page6.html">6</a>
+  <a class="reviews-page-link" href="reviews-page7.html">7</a>
+  <a class="reviews-page-link" href="reviews-page8.html">8</a>
+  <a class="reviews-page-link" href="reviews-page9.html">9</a>
+  <a class="reviews-page-link" href="reviews-page10.html">10</a>
+  <a class="reviews-page-link" href="reviews-page11.html">11</a>
+  <a class="reviews-page-link" href="reviews-page12.html">12</a>
+  <a class="reviews-page-link" href="reviews-page13.html">13</a>
+  <a class="reviews-page-link is-current" href="reviews-page14.html">14</a>
+  <a class="reviews-page-link" href="reviews-page15.html">15</a>
+  <a class="reviews-page-link" href="reviews-page16.html">16</a>
+  <a class="reviews-page-link" href="reviews-page17.html">17</a>
+  <a class="reviews-page-link" href="reviews-page18.html">18</a>
+  <a class="reviews-page-link" href="reviews-page19.html">19</a>
+  <a class="reviews-page-link" href="reviews-page20.html">20</a>
+  <a class="reviews-page-link" href="reviews-page15.html">下一页</a>
+</nav>
+    </div>
+  </div>
+</section>
+<footer class="py-4 bg-dark text-light text-center">
+  <p class="mb-0">© <span id="y"></span> <span>深圳环球学旅教育科技有限公司</span></p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>

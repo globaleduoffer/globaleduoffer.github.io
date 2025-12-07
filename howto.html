@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>办理指南 | 深圳环球学旅教育科技有限公司</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #020617;
+      color: #0f172a;
+    }
+
+    .navbar {
+      padding-top: 0.85rem;
+      padding-bottom: 0.85rem;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+      background-color: #ffffff;
+    }
+
+    .navbar-brand span {
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 0.95rem;
+      padding: 0.4rem 0.9rem;
+    }
+
+    .navbar-nav .nav-link.active {
+      font-weight: 600;
+    }
+
+    .navbar .dropdown-menu {
+      background-color: #111827;
+      border-radius: 0;
+      border: none;
+      padding: 0.7rem 0;
+      min-width: 260px;
+    }
+
+    .navbar .dropdown-item {
+      color: #e5e7eb;
+      padding: 0.55rem 1.4rem;
+      font-size: 0.92rem;
+      white-space: normal;
+    }
+
+    .navbar .dropdown-item:hover,
+    .navbar .dropdown-item:focus {
+      background-color: #1f2937;
+      color: #fff;
+    }
+
+    .lang-btn {
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+      text-decoration: none;
+    }
+
+    .lang-btn:hover {
+      text-decoration: underline;
+    }
+
+    .page-hero {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4rem 0 4.5rem;
+    }
+
+    .page-hero h1 {
+      font-size: clamp(2.3rem, 3.6vw, 3.1rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .page-hero p {
+      max-width: 40rem;
+      opacity: 0.9;
+    }
+
+    .page-hero .tag {
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.85;
+      margin-bottom: 0.75rem;
+    }
+
+    .page-hero .pill {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      padding: 0.25rem 0.85rem;
+      font-size: 0.82rem;
+      color: #e5e7eb;
+      gap: 0.35rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .section-shell {
+      background: radial-gradient(circle at top left, #0b1120 0, #020617 45%, #020617 100%);
+      padding: 3rem 0 4rem;
+      color: #e5e7eb;
+    }
+
+    .guide-layout {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 3.1fr) minmax(260px, 1fr);
+      gap: 2.4rem;
+    }
+
+    .guide-main {
+      background: #020617;
+      border-radius: 1.75rem;
+      padding: 2.2rem 2.1rem 2.4rem;
+      box-shadow:
+        0 24px 60px rgba(15, 23, 42, 0.85),
+        0 0 0 1px rgba(30, 64, 175, 0.6);
+    }
+
+    .guide-section + .guide-section {
+      border-top: 1px solid rgba(51, 65, 85, 0.9);
+      margin-top: 2.4rem;
+      padding-top: 2.2rem;
+    }
+
+    .guide-kicker {
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #9ca3af;
+      margin-bottom: 0.4rem;
+    }
+
+    .guide-title {
+      font-size: 1.45rem;
+      margin-bottom: 0.5rem;
+      color: #e5e7eb;
+    }
+
+    .guide-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.16rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      background: rgba(37, 99, 235, 0.24);
+      color: #bfdbfe;
+      margin-bottom: 0.75rem;
+    }
+
+    .guide-section p {
+      font-size: 0.96rem;
+      line-height: 1.8;
+      color: #d1d5db;
+      margin-bottom: 0.6rem;
+    }
+
+    .guide-section ul {
+      margin: 0.3rem 0 0.9rem;
+      padding-left: 1.1rem;
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: #d1d5db;
+    }
+
+    .guide-section li + li {
+      margin-top: 0.16rem;
+    }
+
+    .anchor-label {
+      font-size: 0.78rem;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    .toc-card {
+      background: rgba(15, 23, 42, 0.96);
+      border-radius: 1.5rem;
+      padding: 1.7rem 1.5rem 1.9rem;
+      box-shadow: 0 20px 45px rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(51, 65, 85, 0.9);
+    }
+
+    .toc-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.8rem;
+      color: #e5e7eb;
+    }
+
+    .toc-card ol {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    .toc-card li + li {
+      margin-top: 0.45rem;
+    }
+
+    .toc-link {
+      font-size: 0.93rem;
+      color: #d1d5db;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.4rem;
+      padding: 0.35rem 0.2rem;
+      border-radius: 999px;
+    }
+
+    .toc-link span.badge {
+      border-radius: 999px;
+      font-size: 0.7rem;
+      padding: 0.08rem 0.6rem;
+      background: rgba(37, 99, 235, 0.18);
+      color: #bfdbfe;
+    }
+
+    .toc-link:hover {
+      background: rgba(15, 23, 42, 0.9);
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .toc-footnote {
+      margin-top: 1.1rem;
+      font-size: 0.78rem;
+      color: #9ca3af;
+    }
+
+    .cta-card {
+      margin-top: 1.2rem;
+      padding: 1.1rem 1.2rem;
+      border-radius: 1.25rem;
+      background: radial-gradient(circle at top left, rgba(34, 197, 94, 0.18), transparent 55%);
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      font-size: 0.9rem;
+      color: #d1d5db;
+    }
+
+    .cta-card a {
+      color: #4ade80;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      background: #020617;
+      color: #9ca3af;
+    }
+
+    @media (max-width: 992px) {
+      .guide-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .guide-main {
+        padding: 1.7rem 1.4rem 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span>深圳环球学旅教育科技有限公司</span>
+    </a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#nav"
+            aria-controls="nav" aria-expanded="false" aria-label="切换导航">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" data-file="index.html">首页</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="services-en.html"
+             id="serviceDropdownZh" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            服务
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="serviceDropdownZh">
+            <li><a class="dropdown-item" href="china-police-certificate-zh.html">中国无犯罪证明</a></li>
+            <li><a class="dropdown-item" href="degree-verification-zh.html">学历学位认证</a></li>
+            <li><a class="dropdown-item" href="document-legalization-zh.html">文件认证 / 海牙 / 领事</a></li>
+            <li><a class="dropdown-item" href="study-in-china-zh.html">外国人来华留学</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="howto.html"
+             id="howToDropdownZh" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            办理指南
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="howToDropdownZh">
+            <li><a class="dropdown-item" href="city-grid.html">如何办理中国无犯罪证明</a></li>
+            <li><a class="dropdown-item" href="degree-certification-guide-zh.html">如何在中国办理海牙认证</a></li>
+            <li><a class="dropdown-item" href="shenzhen-degree-notarization-zh.html">如何办理学历/学位认证</a></li>
+            <li><a class="dropdown-item" href="embassy-certification-guide-zh.html">如何办理使馆认证</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="cases.html" data-file="cases.html">案例</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" data-file="about.html">关于我们</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html" data-file="faq.html">常见问题</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reviews.html" data-file="reviews.html">客户评价</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-zh.html" data-file="contact-zh.html">联系</a>
+        </li>
+      </ul>
+
+      <div class="ms-3">
+        <a class="lang-btn" href="index.html">中文</a>
+        <a class="lang-btn" href="index-en.html">EN</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <div class="tag">GUIDES · 办理指南</div>
+        <div class="pill">
+          <i class="fa-regular fa-circle-check"></i>
+          一次搞清楚 · 无犯罪 / 海牙 / 学历 / 使馆认证
+        </div>
+        <h1>中国无犯罪、公证认证与学历认证<br/>一步步带你走完整流程。</h1>
+        <p>
+          这一页汇总了我们为客户整理的办理思路：从中国无犯罪记录证明，到公证、海牙认证和使馆认证，
+          再到学历学位认证。不需要一次读完，您可以根据自己的需求点击右侧目录，直接跳到对应模块。
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="section-shell">
+  <div class="guide-layout">
+
+    <article class="guide-main">
+
+      <!-- 中国无犯罪证明 -->
+      <section id="china-pcc" class="guide-section">
+        <div class="guide-badge">
+          <span class="badge-dot"></span> 模块 1 · China Police Certificate
+        </div>
+        <h2 class="guide-title">如何办理中国无犯罪记录证明？</h2>
+        <p>
+          外国人或曾在中国长期居住的华人，如在办理移民、长期签证、境外就业或背景审查时，
+          经常会被要求提供一份 “中国无犯罪记录证明（China Police Certificate）”。
+          这份证明由公安机关或出入境管理部门出具，用于说明申请人在华期间是否有犯罪记录。
+        </p>
+        <p>
+          实际办理时，通常可以分为几个核心步骤：
+        </p>
+        <ul>
+          <li>确认自己是否具备申请资格（是否有居留记录、停留时间是否满足当地要求）；</li>
+          <li>根据 <strong>曾经居住的城市</strong>，查明由哪个部门受理（市级出入境管理支队 / 分局 / 派出所）；</li>
+          <li>准备护照、签证或居留许可、住宿登记等基础材料；</li>
+          <li>如果人已经离境，评估是否可以通过授权委托的方式，让境内家人或服务机构代为申请；</li>
+          <li>取得无犯罪证明原件后，根据目标国家要求，决定是否继续走公证 / 海牙 / 使馆认证流程。</li>
+        </ul>
+        <p>
+          若您已经明确知道自己主要在哪座城市居住过，可以优先参考我们为各城市准备的详细指南
+          （例如深圳、广州、上海、北京等），了解当地窗口的具体要求和办理时间，再决定是否需要专业代办服务。
+        </p>
+      </section>
+
+      <!-- 海牙认证 -->
+      <section id="apostille" class="guide-section">
+        <div class="guide-badge">
+          模块 2 · Apostille / 海牙认证
+        </div>
+        <h2 class="guide-title">如何在中国办理海牙认证？</h2>
+        <p>
+          如果您的文件在 <strong>中国签发</strong>，但需要在已经加入《海牙公约》的国家或地区使用，
+          一般就需要先在中国完成 <strong>Apostille / 海牙认证</strong>。它的作用，是让境外机构可以快捷核验
+          文件的真实性与公证机关 / 官方部门的签名与印章，从而在当地具有法律效力。
+        </p>
+        <p>
+          结合我们以往协助客户的经验，可以先搞清楚下面三件事，再开始正式准备：
+        </p>
+        <ul>
+          <li>目标国家是否为 <strong>海牙国家</strong>，以及对文件是否有“必须做海牙认证”的硬性要求；</li>
+          <li>您准备提交的，是 <strong>原件</strong>，还是需要先做 <strong>公证书</strong> 后再去做海牙认证；</li>
+          <li>用途属于移民、长期签证、婚姻登记、公司注册、买房贷款等哪一类，以便确认是否还要搭配翻译等额外步骤。</li>
+        </ul>
+        <p>
+          一般来说，在中国办理海牙认证的大致路径如下（不同省市略有差异，以当地外办 / 外交部领事司最新要求为准）：
+        </p>
+        <ol>
+          <li>
+            <strong>确认文件类型与签发地</strong>：例如无犯罪记录证明、公证书、结婚证、学历证书、公司文件等，
+            需要确定是由公证处、公安局、民政局还是其他机关出具。
+          </li>
+          <li>
+            <strong>准备基础材料</strong>：包括申请人护照或身份证、需要认证的文件原件或公证书，
+            部分地区还会要求提供境外用途说明或表格。
+          </li>
+          <li>
+            <strong>在有需要时先办理公证</strong>：很多类型的文件（如学历、婚姻状况、授权声明等），
+            需要先在公证处出具中文或中英文公证书，再拿公证书去做海牙认证。
+          </li>
+          <li>
+            <strong>向有权限的受理机构递交海牙认证申请</strong>：
+            目前通常由外交部授权的地方外办或外交部领事司受理，部分地区支持线上预约或邮寄办理。
+          </li>
+          <li>
+            <strong>等待出证并检查信息</strong>：海牙认证页会以贴附或加页形式附在文件上，
+            出证后需要核对姓名、证件号码、文件种类、目的国等信息是否准确。
+          </li>
+        </ol>
+        <p>
+          需要特别提醒的是：<strong>若目标国家不是海牙国家</strong>，一般应改为走
+          “公证 + 外交部认证 + 驻华使领馆认证” 的传统领事认证路径，而不是海牙认证。
+          如果您不确定自己的情况属于哪一类，可以把国家和文件扫描件发给我们，我们会帮您判断最合适的方案。
+        </p>
+      </section>
+
+      <!-- 学历学位认证 -->
+      <section id="degree" class="guide-section">
+        <div class="guide-badge">
+          模块 3 · 学历 / 学位认证
+        </div>
+        <h2 class="guide-title">如何办理学历 / 学位认证？（草稿占位）</h2>
+        <p>
+          很多客户会同时遇到两个问题：一方面需要办理中国无犯罪记录证明，另一方面还要解决
+          “国外学历在国内如何认证” 或 “中国学历如何在国外被认可” 的问题。
+        </p>
+        <p>
+          这一模块未来可以重点回答：
+        </p>
+        <ul>
+          <li>留学回国人员在中国教育部做国外学历认证的大致流程；</li>
+          <li>在华取得学历，如何配合公证、翻译以及目标国家要求完成认证；</li>
+          <li>不同国家或学校对 “成绩单、公证件、认证件” 的常见组合要求；</li>
+          <li>我们可以在哪些环节协助：比如翻译、公证排期、材料核对等。</li>
+        </ul>
+        <p>
+          你之后只要把每一步想说的话（哪怕是要点或语音记录）给我，
+          我可以帮你扩展成适合官网的专业版说明，并加入常见问题（FAQ）模块。
+        </p>
+      </section>
+
+      <!-- 使馆认证 -->
+      <section id="embassy" class="guide-section">
+        <div class="guide-badge">
+          模块 4 · 使馆认证 / 领事认证
+        </div>
+        <h2 class="guide-title">如何办理使馆认证？（草稿占位）</h2>
+        <p>
+          对于尚未加入《海牙公约》的国家，或者即便加入了但当地移民局仍坚持要求 “领事认证 / 使馆认证”，
+          通常会涉及如下链条：
+        </p>
+        <ul>
+          <li>在中国取得基础文件（如无犯罪记录公证书、出生/婚姻公证书、学历文凭公证书等）；</li>
+          <li>向中国外交部或地方外办申请 “领事认证”；</li>
+          <li>再送往目标国家在华使馆 / 总领馆做最终认证；</li>
+          <li>之后才能被该国家的移民局、法院或公证机关正式接受。</li>
+        </ul>
+        <p>
+          这一部分上线后，可以重点说明：不同国家是否接受邮寄、是否要求本人到场、
+          认证周期大约多久、以及我们可以如何帮忙衔接各个环节，避免客户多跑弯路。
+        </p>
+        <p>
+          在你还没来得及写完所有内容之前，这个占位说明可以先保证：
+          导航正常、用户不会看到空白页、同时也知道可以通过 “联系我们” 获取一对一方案。
+        </p>
+      </section>
+
+    </article>
+
+    <aside>
+      <div class="toc-card">
+        <div class="anchor-label mb-1">目录 · 快速跳转</div>
+        <h3>想先了解哪一部分？</h3>
+        <ol>
+          <li><a class="toc-link" href="city-grid.html">如何办理中国无犯罪记录证明 <span class="badge">已整理</span></a></li>
+          <li><a class="toc-link" href="#apostille">如何在中国办理海牙认证 <span class="badge">内容整理中</span></a></li>
+          <li><a class="toc-link" href="#degree">如何办理学历 / 学位认证 <span class="badge">内容整理中</span></a></li>
+          <li><a class="toc-link" href="#embassy">如何办理使馆认证 <span class="badge">内容整理中</span></a></li>
+        </ol>
+        <div class="toc-footnote">
+          如果您现在就急需办理，我们建议直接联系顾问，由我们根据您的国家和时间规划给出一套 “只做必要步骤” 的方案。
+        </div>
+        <div class="cta-card mt-2">
+          还不确定自己属于哪种情况？<br/>
+          您可以随时通过 <a href="contact-zh.html">联系表单</a> 把情况简单发给我们，我们会根据您的国家、签证类型和时间安排，
+          告诉您需要哪几项服务以及大致周期。
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="py-4 text-center">
+  <p class="mb-0">© <span id="y"></span> 深圳环球学旅教育科技有限公司</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

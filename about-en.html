@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | GLOBAL EDU OFFER LIMITED</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="assets/style.css" rel="stylesheet"/>
+<style>
+
+    /* --- Hero section --- */
+    .hero-section {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4.5rem 0 5.5rem;
+    }
+
+    .hero-kicker {
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+      opacity: 0.85;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 4vw, 3.4rem);
+      line-height: 1.1;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      max-width: 32rem;
+      opacity: 0.9;
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1rem;
+    }
+
+    .hero-btn {
+      background-color: #22c55e;
+      border-radius: 999px;
+      padding: 0.55rem 1.4rem;
+      font-weight: 500;
+      border: none;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(22, 163, 74, 0.35);
+    }
+
+    .hero-btn:hover {
+      background-color: #16a34a;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .hero-illustration {
+      border-radius: 32px;
+      overflow: hidden;
+      background: #0f172a;
+      box-shadow:
+        0 22px 50px rgba(15, 23, 42, 0.55),
+        0 0 0 1px rgba(148, 163, 184, 0.2);
+    }
+
+    .hero-illustration img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .navbar {
+      padding-top: 0.85rem;
+      padding-bottom: 0.85rem;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+    }
+
+    .navbar-brand span {
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 0.95rem;
+      padding: 0.4rem 0.9rem;
+    }
+
+    .navbar-nav .nav-link.active {
+      font-weight: 600;
+    }
+
+    .navbar .dropdown-menu {
+      background-color: #111827;
+      border-radius: 0;
+      border: none;
+      padding: 0.7rem 0;
+      min-width: 260px;
+    }
+
+    .navbar .dropdown-item {
+      color: #e5e7eb;
+      padding: 0.55rem 1.4rem;
+      font-size: 0.92rem;
+      white-space: normal;
+    }
+
+    .navbar .dropdown-item:hover,
+    .navbar .dropdown-item:focus {
+      background-color: #1f2937;
+      color: #fff;
+    }
+
+    .lang-btn {
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+      text-decoration: none;
+    }
+
+    .lang-btn:hover {
+      text-decoration: underline;
+    }
+  
+
+    .page-hero {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4rem 0 4.5rem;
+    }
+    .page-hero h1 {
+      font-size: clamp(2.2rem, 3.5vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .page-hero p {
+      max-width: 40rem;
+      opacity: 0.9;
+    }
+    .page-hero .hero-illustration {
+      border-radius: 32px;
+      overflow: hidden;
+      background: #0f172a;
+      box-shadow:
+        0 22px 50px rgba(15, 23, 42, 0.55),
+        0 0 0 1px rgba(148, 163, 184, 0.2);
+      min-height: 260px;
+    }
+    .page-hero .hero-illustration img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .section-note {
+      background-color: #f9fafb;
+      padding: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+    .section-note a {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    .steps-section {
+      padding: 3.5rem 0 3.8rem;
+      background-color: #ffffff;
+    }
+    .steps-section h2 {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .step-card {
+      text-align: center;
+      padding: 1.8rem 1.3rem;
+    }
+    .step-number {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      background-color: #22c55e;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      margin-bottom: 0.9rem;
+    }
+    .step-title {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .step-text {
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+
+    .fees-section {
+      padding: 3.5rem 0 4rem;
+      background-image: linear-gradient(to bottom, rgba(15,23,42,0.88), rgba(15,23,42,0.96)), url('https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #e5e7eb;
+    }
+    .fees-card {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .fees-card h2 {
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+    .fees-card p {
+      margin-bottom: 0.85rem;
+    }
+    .fees-divider {
+      width: 80px;
+      height: 2px;
+      background-color: #38bdf8;
+      margin: 0.5rem auto 1.5rem;
+    }
+
+  </style>
+<style>
+    .about-hero-section {
+      padding: 4.5rem 0 2.5rem;
+      background-color: #ffffff;
+    }
+    .about-title {
+      font-size: clamp(2.1rem, 3.4vw, 2.8rem);
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: #111827;
+    }
+    .about-lead {
+      font-size: 1rem;
+      color: #4b5563;
+      line-height: 1.8;
+      max-width: 32rem;
+    }
+    .about-photo-wrapper img {
+      border-radius: 24px;
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+    }
+    .about-photo-caption {
+      font-size: 0.8rem;
+      color: #9ca3af;
+      margin-top: 0.6rem;
+    }
+    .about-company-section p {
+      font-size: 0.96rem;
+      color: #374151;
+      line-height: 1.8;
+    }
+    .about-highlight-card {
+      background: #f9fafb;
+      border-radius: 18px;
+      padding: 1.4rem 1.5rem;
+      border: 1px solid #e5e7eb;
+      font-size: 0.9rem;
+      color: #4b5563;
+    }
+    .about-highlight-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+      color: #111827;
+    }
+    .about-service-section {
+      padding: 2.8rem 0 2.4rem;
+      background-color: #f9fafb;
+    }
+    .about-service-section h2,
+    .about-team-section h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #111827;
+    }
+    .about-service-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    .about-service-list li {
+      position: relative;
+      padding-left: 1.3rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      color: #374151;
+    }
+    .about-service-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0.02rem;
+      color: #2563eb;
+      font-size: 1.1rem;
+    }
+    .about-team-section {
+      padding: 2.8rem 0 3.4rem;
+    }
+    .about-team-section p {
+      font-size: 0.96rem;
+      color: #374151;
+      line-height: 1.8;
+    }
+    .about-cta {
+      margin-top: 1.4rem;
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+    @media (max-width: 991.98px) {
+      .about-hero-section {
+        padding-top: 3.2rem;
+      }
+      .about-lead {
+        max-width: none;
+      }
+      .about-photo-wrapper {
+        margin-top: 1.5rem;
+      }
+    }
+  
+body { font-family: "Times New Roman", Times, serif !important; }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<a class="navbar-brand" href="index-en.html">
+<span>GLOBAL EDU OFFER LIMITED</span>
+</a>
+<button aria-controls="nav" aria-expanded="false" aria-label="切换导航" class="navbar-toggler" data-bs-target="#nav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<!-- 首页 -->
+<li class="nav-item">
+<a class="nav-link" data-file="index-en.html" href="index-en.html">Home</a>
+</li>
+<!-- 服务 下拉 -->
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="serviceDropdownZh" role="button">Services</a>
+<ul aria-labelledby="serviceDropdownZh" class="dropdown-menu">
+<li><a class="dropdown-item" href="china-police-certificate.html">China Police Certificate (PCC)</a></li>
+<li><a class="dropdown-item" href="degree-verification.html">Degree Verification</a></li>
+<li><a class="dropdown-item" href="document-legalization.html">Document Legalization / Hague Apostille</a></li>
+<li><a class="dropdown-item" href="study-in-china.html">Study in China</a></li>
+</ul>
+</li>
+<!-- 办理指南 下拉 -->
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="howToDropdownZh" role="button">Guides</a>
+<ul aria-labelledby="howToDropdownZh" class="dropdown-menu">
+<li><a class="dropdown-item" href="city-grid-en.html">How to Get a China Police Certificate</a></li>
+<li><a class="dropdown-item" href="degree-certification-guide.html">How to Get a Hague Apostille in China</a></li>
+<li><a class="dropdown-item" href="shenzhen-degree-notarization.html">How to Certify Degrees / Diplomas in China</a></li>
+<li><a class="dropdown-item" href="embassy-certification-guide.html">How to Get Embassy Legalization</a></li>
+</ul>
+</li>
+<!-- 其他菜单 -->
+<li class="nav-item">
+<a class="nav-link" data-file="cases.html" href="cases-en.html">Cases</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" data-file="about.html" href="about-en.html">About Us</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-file="faq.html" href="faq-en.html">FAQ</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-file="reviews.html" href="reviews-en.html">Reviews</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-file="contact-zh.html" href="contact-en.html">Contact</a>
+</li>
+</ul>
+<!-- 语言切换 -->
+<div class="ms-3">
+<a class="lang-btn" href="about.html">中文</a>
+<a class="lang-btn" href="about-en.html">EN</a>
+</div>
+</div>
+</div>
+</nav><main>
+<section class="about-hero-section">
+<div class="container">
+<div class="row align-items-center g-4">
+<div class="col-lg-6">
+<h1 class="about-title">About Us</h1>
+<p class="about-lead">GLOBAL EDU OFFER LIMITED is based in Shenzhen, China and focuses on handling and supporting China-related compliance documents. We provide one-stop solutions for clients around the world and help them smoothly complete every part of their documentation that involves China.</p>
+</div>
+<div class="col-lg-6">
+<div class="about-photo-wrapper text-center text-lg-end">
+<img alt="环球学旅跨境服务团队" class="img-fluid" src="assets/images/about-team.png"/>
+<p class="about-photo-caption">Illustration of the GLOBAL EDU OFFER LIMITED cross-border service team working together.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="about-company-section py-4">
+<div class="container">
+<div class="row g-4">
+<div class="col-lg-7">
+<p>In real-life scenarios of cross-border study, work and immigration, many clients face difficulties with China-related compliance documents: how to apply for a China Police Certificate while abroad, how to prepare academic and supporting documents that are recognised by overseas institutions, and how to connect notarisation, legalization and translation procedures across different countries.</p>
+<p>Our team has extensive experience in cross-border services and has long served clients from North America, Europe, Asia and other regions. At every step of the process we insist on high compliance standards and strict quality control, so that all documents meet the expectations of both clients and destination authorities in terms of legality, accuracy and timeliness.</p>
+</div>
+<div class="col-lg-5">
+<div class="about-highlight-card">
+<h3>We care about more than just the documents</h3>
+<p>For many clients, a Police Certificate, a degree verification report or a notarised document is directly linked to whether an immigration application will be approved, an offer can be confirmed or onboarding can proceed smoothly.</p>
+<p>That is why we always explain the process in a way that is clear, transparent and actionable. Under the premise of compliance, we strive to simplify communication and preparation so that you can focus on the key milestones in your life and career.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="about-service-section">
+<div class="container">
+<h2>Our Core Services</h2>
+<div class="row">
+<div class="col-lg-7">
+<ul class="about-service-list">
+<li>China Police Certificates (PCC) for the mainland and extended-use support</li>
+<li>Hague apostille and consular legalization with Chinese ministries and embassies in China</li>
+<li>Guidance on WES and other international degree evaluations (for graduates from different countries and regions)</li>
+<li>Verification of academic records and transcripts through official Chinese platforms (e.g. CHSI)</li>
+<li>Professional translation of legal and official documents (primarily Chinese–English)</li>
+<li>Consulting and document support for studying in China</li>
+<li>Scholarship application consulting and document guidance for Chinese universities and selected international programmes</li>
+</ul>
+</div>
+<div class="col-lg-5">
+<p class="about-cta">We support not only individual clients with documentation for study, immigration and employment background checks, but also multinational companies, educational institutions and law firms with batch and standardised document-handling solutions. With years of industry experience and mature internal processes, we have helped many clients efficiently resolve complex China-related documentation issues.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="about-team-section">
+<div class="container">
+<h2>Our Team</h2>
+<div class="row g-4">
+<div class="col-lg-7">
+<p>Our company is formed by a professional team specialising in cross-border education, international document compliance services and immigration-related support. The core members have many years of experience serving clients worldwide and are familiar with the procedures, policy requirements and international standards for China-related official documents.</p>
+<p>To ensure that every document can stand up to scrutiny and verification, we have dedicated roles responsible for drafting, reviewing and tracking. Key information is checked multiple times to reduce rejections or delays caused by minor errors.</p>
+<p>Thanks to our combined expertise across several fields, we can provide systematic, standardised and trackable solutions for global clients, and proactively identify potential risks in complex scenarios to propose more reliable paths.</p>
+</div>
+<div class="col-lg-5">
+<p>Looking ahead, we will continue to deepen our expertise in cross-border education and China-related compliance documents, building a trustworthy, international service brand that offers convenient, transparent and reliable support for users worldwide.</p>
+<p class="about-cta">If you are currently facing any issues related to China-based documents or certifications, you are welcome to send your situation to us via the <a href="contact-en.html">contact form</a>. Based on your country, purpose and timeline, we will provide initial suggestions.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="py-4 bg-dark text-light text-center">
+<p class="mb-0">© <span id="y">GLOBAL EDU OFFER LIMITED</span></p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>

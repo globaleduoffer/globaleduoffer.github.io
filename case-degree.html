@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>中国无犯罪证明服务 | 深圳环球学旅教育科技有限公司</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <style>
+
+    /* --- Hero section --- */
+    .hero-section {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4.5rem 0 5.5rem;
+    }
+
+    .hero-kicker {
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+      opacity: 0.85;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 4vw, 3.4rem);
+      line-height: 1.1;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      max-width: 32rem;
+      opacity: 0.9;
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1rem;
+    }
+
+    .hero-btn {
+      background-color: #22c55e;
+      border-radius: 999px;
+      padding: 0.55rem 1.4rem;
+      font-weight: 500;
+      border: none;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(22, 163, 74, 0.35);
+    }
+
+    .hero-btn:hover {
+      background-color: #16a34a;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .hero-illustration {
+      border-radius: 32px;
+      overflow: hidden;
+      background: #0f172a;
+      box-shadow:
+        0 22px 50px rgba(15, 23, 42, 0.55),
+        0 0 0 1px rgba(148, 163, 184, 0.2);
+    }
+
+    .hero-illustration img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .navbar {
+      padding-top: 0.85rem;
+      padding-bottom: 0.85rem;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+    }
+
+    .navbar-brand span {
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 0.95rem;
+      padding: 0.4rem 0.9rem;
+    }
+
+    .navbar-nav .nav-link.active {
+      font-weight: 600;
+    }
+
+    .navbar .dropdown-menu {
+      background-color: #111827;
+      border-radius: 0;
+      border: none;
+      padding: 0.7rem 0;
+      min-width: 260px;
+    }
+
+    .navbar .dropdown-item {
+      color: #e5e7eb;
+      padding: 0.55rem 1.4rem;
+      font-size: 0.92rem;
+      white-space: normal;
+    }
+
+    .navbar .dropdown-item:hover,
+    .navbar .dropdown-item:focus {
+      background-color: #1f2937;
+      color: #fff;
+    }
+
+    .lang-btn {
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+      text-decoration: none;
+    }
+
+    .lang-btn:hover {
+      text-decoration: underline;
+    }
+  
+
+    .page-hero {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4rem 0 4.5rem;
+    }
+    .page-hero h1 {
+      font-size: clamp(2.2rem, 3.5vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .page-hero p {
+      max-width: 40rem;
+      opacity: 0.9;
+    }
+    .page-hero .hero-illustration {
+      border-radius: 32px;
+      overflow: hidden;
+      background: #0f172a;
+      box-shadow:
+        0 22px 50px rgba(15, 23, 42, 0.55),
+        0 0 0 1px rgba(148, 163, 184, 0.2);
+      min-height: 260px;
+    }
+    .page-hero .hero-illustration img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .section-note {
+      background-color: #f9fafb;
+      padding: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+    .section-note a {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    .steps-section {
+      padding: 3.5rem 0 3.8rem;
+      background-color: #ffffff;
+    }
+    .steps-section h2 {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .step-card {
+      text-align: center;
+      padding: 1.8rem 1.3rem;
+    }
+    .step-number {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      background-color: #22c55e;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      margin-bottom: 0.9rem;
+    }
+    .step-title {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .step-text {
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+
+    .fees-section {
+      padding: 3.5rem 0 4rem;
+      background-image: linear-gradient(to bottom, rgba(15,23,42,0.88), rgba(15,23,42,0.96)), url('https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #e5e7eb;
+    }
+    .fees-card {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .fees-card h2 {
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+    .fees-card p {
+      margin-bottom: 0.85rem;
+    }
+    .fees-divider {
+      width: 80px;
+      height: 2px;
+      background-color: #38bdf8;
+      margin: 0.5rem auto 1.5rem;
+    }
+
+  </style>
+
+  <style>
+    .cases-hero {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 3.5rem 0 3.5rem;
+    }
+    .cases-hero h1 {
+      font-size: clamp(2.2rem, 3.5vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+    }
+    .cases-hero p {
+      max-width: 40rem;
+      opacity: 0.9;
+      margin-bottom: 0;
+    }
+    .case-list-section {
+      padding: 3rem 0 3.5rem;
+      background-color: #f9fafb;
+    }
+    .case-card {
+      background-color: #ffffff;
+      border-radius: 18px;
+      padding: 1.5rem 1.6rem;
+      margin-bottom: 1.3rem;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.07);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+    }
+    .case-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+    }
+    .case-kicker {
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #6b7280;
+      margin-bottom: 0.35rem;
+    }
+    .case-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+      color: #0f172a;
+    }
+    .case-meta {
+      font-size: 0.85rem;
+      color: #6b7280;
+      margin-bottom: 0.4rem;
+    }
+    .case-excerpt {
+      font-size: 0.95rem;
+      color: #4b5563;
+      margin-bottom: 0.55rem;
+    }
+    .case-link {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .case-link i {
+      font-size: 0.8rem;
+      margin-left: 0.15rem;
+    }
+    .case-tag-badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      padding: 0.1rem 0.55rem;
+      border-radius: 999px;
+      background-color: #eff6ff;
+      color: #1d4ed8;
+      margin-right: 0.3rem;
+      margin-top: 0.15rem;
+    }
+    .case-detail {
+      padding: 3rem 0 3.5rem;
+      background-color: #ffffff;
+    }
+    .case-detail h1 {
+      font-size: clamp(2rem, 3vw, 2.6rem);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .case-detail-lead {
+      font-size: 1rem;
+      color: #4b5563;
+      margin-bottom: 1.5rem;
+    }
+    .case-detail-meta {
+      font-size: 0.88rem;
+      color: #6b7280;
+      margin-bottom: 2rem;
+    }
+    .case-detail h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-top: 1.8rem;
+      margin-bottom: 0.8rem;
+      color: #0f172a;
+    }
+    .case-detail h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-top: 1.4rem;
+      margin-bottom: 0.45rem;
+    }
+    .case-detail p {
+      font-size: 0.97rem;
+      color: #374151;
+      line-height: 1.7;
+      margin-bottom: 0.65rem;
+    }
+    .case-detail ul,
+    .case-detail ol {
+      padding-left: 1.1rem;
+      margin-bottom: 0.85rem;
+    }
+    .case-detail li {
+      font-size: 0.95rem;
+      color: #374151;
+      margin-bottom: 0.3rem;
+    }
+    .case-highlight {
+      border-left: 3px solid #2563eb;
+      background-color: #f3f4ff;
+      padding: 0.8rem 1rem;
+      border-radius: 0.5rem;
+      font-size: 0.9rem;
+      color: #1f2937;
+      margin: 1.3rem 0;
+    }
+    .breadcrumb-nav {
+      font-size: 0.85rem;
+      margin-bottom: 0.75rem;
+      color: #9ca3af;
+    }
+    .breadcrumb-nav a {
+      color: #9ca3af;
+      text-decoration: none;
+    }
+    .breadcrumb-nav a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      .cases-hero {
+        padding: 2.7rem 0 2.9rem;
+      }
+      .case-card {
+        padding: 1.2rem 1.25rem;
+      }
+      .case-detail {
+        padding: 2.4rem 0 2.8rem;
+      }
+    }
+  </style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span>深圳环球学旅教育科技有限公司</span>
+    </a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#nav"
+            aria-controls="nav" aria-expanded="false" aria-label="切换导航">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+
+        <!-- 首页 -->
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html" data-file="index.html">首页</a>
+        </li>
+
+        <!-- 服务 下拉 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="services-en.html"
+             id="serviceDropdownZh" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            服务
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="serviceDropdownZh">
+            <li><a class="dropdown-item" href="china-police-certificate-zh.html">中国无犯罪证明</a></li>
+            <li><a class="dropdown-item" href="degree-verification-zh.html">学历学位认证</a></li>
+            <li><a class="dropdown-item" href="document-legalization-zh.html">文件认证 / 海牙 / 领事</a></li>
+            <li><a class="dropdown-item" href="study-in-china-zh.html">外国人来华留学</a></li>
+          </ul>
+        </li>
+
+        <!-- 办理指南 下拉 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#"
+             id="howToDropdownZh" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            办理指南
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="howToDropdownZh">
+            <li><a class="dropdown-item" href="city-grid.html">如何办理中国无犯罪证明</a></li>
+            <li><a class="dropdown-item" href="degree-certification-guide-zh.html">如何在中国办理海牙认证</a></li>
+            <li><a class="dropdown-item" href="shenzhen-degree-notarization-zh.html">如何办理学历/学位认证</a></li>
+            <li><a class="dropdown-item" href="embassy-certification-guide-zh.html">如何办理使馆认证</a></li>
+          </ul>
+        </li>
+
+        <!-- 其他菜单 -->
+        <li class="nav-item">
+          <a class="nav-link" href="cases.html" data-file="cases.html">案例</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" data-file="about.html">关于我们</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html" data-file="faq.html">常见问题</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reviews.html" data-file="reviews.html">客户评价</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-zh.html" data-file="contact-zh.html">联系</a>
+        </li>
+      </ul>
+
+      <!-- 语言切换 -->
+      <div class="ms-3">
+        <a class="lang-btn" href="index.html">中文</a>
+        <a class="lang-btn" href="index-en.html">EN</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="case-detail">
+  <div class="container col-lg-8">
+    <p class="breadcrumb-nav"><a href="index.html">首页</a> · <a href="cases.html">案例</a> · 学历 / 学位认证</p>
+    <h1>案例：英国授课型硕士回国落户，如何完成国外学历学位认证？</h1>
+    <p class="case-detail-lead">
+      很多准备回国发展的同学，都需要在短时间内完成教育部留学服务中心的学历学位认证，
+      才能用于落户、考公或事业单位招聘。本案例以英国硕士为例，展示一个标准的办理过程。
+    </p>
+    <p class="case-detail-meta">
+      适用人群：持境外正规高校学历、计划回国发展的留学生<br/>
+      办理用途：新一线城市落户 · 出具材料：国外学历学位认证书（电子版）
+    </p>
+
+    <h2>一、基本情况与常见顾虑</h2>
+    <p>
+      客户 C 在英国完成了一年制授课型硕士课程，回国后找到了一份不错的工作，
+      公司 HR 提醒他：“如果想在本地落户，需要提供教育部认可的国外学历学位认证报告。”
+    </p>
+    <p>他主要有三点担心：</p>
+    <ul>
+      <li>课程为一年制授课型硕士，是否会影响认证通过；</li>
+      <li>毕业后才补办了部分材料（例如在读证明、成绩单），是否会被质疑真实性；</li>
+      <li>担心认证时间过长，影响落户办理节奏。</li>
+    </ul>
+
+    <h2>二、认证路径设计</h2>
+    <p>
+      我们先核查了客户所在院校与专业，确认属于教育部认可名单之内，
+      然后给出如下步骤：
+    </p>
+    <ol>
+      <li>在线注册教育部留学服务中心账号，填写完整的学习履历；</li>
+      <li>提前准备好电子版材料，避免因格式问题被退回；</li>
+      <li>必要时与英国学校教务处确认可供核查的联系方式；</li>
+      <li>选择合适时间提交申请，预留约 4–6 周审核期。</li>
+    </ol>
+
+    <h2>三、材料准备要点</h2>
+    <ul>
+      <li>护照信息页及所有含出入境章的页面扫描件；</li>
+      <li>英国高校颁发的学位证书扫描件；</li>
+      <li>完整的官方成绩单（建议盖章纸质版再扫描）；</li>
+      <li>学校开具的在读证明或注册证明（如有）；</li>
+      <li>国内外联系方式、当前工作单位与城市信息。</li>
+    </ul>
+
+    <h2>四、线上申请与审核过程</h2>
+    <h3>步骤 1：填写个人与教育信息</h3>
+    <p>
+      客户在系统中录入本科与硕士两个阶段的信息，我们指导他按护照与学位证书上的英文信息填写，
+      避免中英文混用导致的核查困难。
+    </p>
+
+    <h3>步骤 2：上传材料并缴费</h3>
+    <p>
+      所有文件均按要求扫描为清晰的 PDF / JPG，并统一以英文命名。
+      系统初步审核通过后，客户在线缴纳认证费用。
+    </p>
+
+    <h3>步骤 3：处理补充材料要求</h3>
+    <p>
+      审核过程中，系统发出一次“补充材料通知”，要求说明课程性质、是否全日制以及是否在境内完成学习。
+      我们根据学校官方说明，帮客户撰写了一份简短的课程说明并上传。
+    </p>
+
+    <h2>五、认证结果与使用</h2>
+    <p>
+      从正式提交到出具电子版《国外学历学位认证书》，共耗时约 <strong>4 周</strong>。
+      认证书上清晰标明了：
+    </p>
+    <ul>
+      <li>学历层次：硕士；</li>
+      <li>授课语言：英语；</li>
+      <li>就读方式：全日制；</li>
+      <li>学校与专业名称。</li>
+    </ul>
+    <p>
+      客户将电子报告提供给公司人力资源部门，用于落户与后续职称评定，
+      后续在报名部分公职与事业单位考试时，也顺利通过资格审核。
+    </p>
+
+    <div class="case-highlight">
+      如果你也在准备办理国外学历学位认证，可以先确认：院校是否在教育部认可名单内、
+      是否完成了规定的学习时长、是否保留了完整成绩单与学位证扫描件。
+      把这些信息发给我们，我们可以帮你初步判断通过率以及大致时间。
+    </div>
+
+  </div>
+</section>
+
+<footer class="py-4 bg-dark text-light text-center">
+  <p class="mb-0">© <span id="y"></span> <span>深圳环球学旅教育科技有限公司</span></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>

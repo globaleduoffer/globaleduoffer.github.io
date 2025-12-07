@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>真实案例：在美国远程办理中国无犯罪记录证明 | 深圳环球学旅教育科技有限公司</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <style>
+
+    /* --- Hero section --- */
+    .hero-section {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4.5rem 0 5.5rem;
+    }
+
+    .hero-kicker {
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+      opacity: 0.85;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 4vw, 3.4rem);
+      line-height: 1.1;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      max-width: 32rem;
+      opacity: 0.9;
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1rem;
+    }
+
+    .hero-btn {
+      background-color: #22c55e;
+      border-radius: 999px;
+      padding: 0.55rem 1.4rem;
+      font-weight: 500;
+      border: none;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(22, 163, 74, 0.35);
+    }
+
+    .hero-btn:hover {
+      background-color: #16a34a;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .hero-illustration {
+      border-radius: 32px;
+      overflow: hidden;
+      background: #0f172a;
+      box-shadow:
+        0 22px 50px rgba(15, 23, 42, 0.55),
+        0 0 0 1px rgba(148, 163, 184, 0.2);
+    }
+
+    .hero-illustration img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .navbar {
+      padding-top: 0.85rem;
+      padding-bottom: 0.85rem;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+    }
+
+    .navbar-brand span {
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 0.95rem;
+      padding: 0.4rem 0.9rem;
+    }
+
+    .navbar-nav .nav-link.active {
+      font-weight: 600;
+    }
+
+    .navbar .dropdown-menu {
+      background-color: #111827;
+      border-radius: 0;
+      border: none;
+      padding: 0.7rem 0;
+      min-width: 260px;
+    }
+
+    .navbar .dropdown-item {
+      color: #e5e7eb;
+      padding: 0.55rem 1.4rem;
+      font-size: 0.92rem;
+      white-space: normal;
+    }
+
+    .navbar .dropdown-item:hover,
+    .navbar .dropdown-item:focus {
+      background-color: #1f2937;
+      color: #fff;
+    }
+
+    .lang-btn {
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+      text-decoration: none;
+    }
+
+    .lang-btn:hover {
+      text-decoration: underline;
+    }
+  
+
+    .page-hero {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4rem 0 4.5rem;
+    }
+    .page-hero h1 {
+      font-size: clamp(2.2rem, 3.5vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .page-hero p {
+      max-width: 40rem;
+      opacity: 0.9;
+    }
+    .page-hero .hero-illustration {
+      border-radius: 32px;
+      overflow: hidden;
+      background: #0f172a;
+      box-shadow:
+        0 22px 50px rgba(15, 23, 42, 0.55),
+        0 0 0 1px rgba(148, 163, 184, 0.2);
+      min-height: 260px;
+    }
+    .page-hero .hero-illustration img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .section-note {
+      background-color: #f9fafb;
+      padding: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+    .section-note a {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    .steps-section {
+      padding: 3.5rem 0 3.8rem;
+      background-color: #ffffff;
+    }
+    .steps-section h2 {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .step-card {
+      text-align: center;
+      padding: 1.8rem 1.3rem;
+    }
+    .step-number {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      background-color: #22c55e;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      margin-bottom: 0.9rem;
+    }
+    .step-title {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .step-text {
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+
+    .fees-section {
+      padding: 3.5rem 0 4rem;
+      background-image: linear-gradient(to bottom, rgba(15,23,42,0.88), rgba(15,23,42,0.96)), url('https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #e5e7eb;
+    }
+    .fees-card {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .fees-card h2 {
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+    .fees-card p {
+      margin-bottom: 0.85rem;
+    }
+    .fees-divider {
+      width: 80px;
+      height: 2px;
+      background-color: #38bdf8;
+      margin: 0.5rem auto 1.5rem;
+    }
+
+  </style>
+
+  <style>
+    .case-page-main {
+      background-color: #f3f4f6;
+      padding: 3rem 0 4rem;
+    }
+    .case-article-card {
+      background-color: #ffffff;
+      border-radius: 24px;
+      padding: 2.4rem 2.6rem;
+      box-shadow: 0 24px 60px rgba(15,23,42,0.08);
+      border: 1px solid rgba(226,232,240,1);
+    }
+    .case-article-meta {
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-bottom: 1.6rem;
+    }
+    .case-article-badge {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.8rem;
+      padding: 0.18rem 0.7rem;
+      border-radius: 999px;
+      background-color: #eef2ff;
+      color: #4f46e5;
+      margin-bottom: 0.9rem;
+    }
+    .case-article-badge span {
+      margin-left: 0.25rem;
+    }
+    .case-article-card h1 {
+      font-size: clamp(1.9rem, 3vw, 2.3rem);
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      color: #111827;
+    }
+    .case-article-card h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 1.8rem;
+      margin-bottom: 0.75rem;
+      color: #111827;
+    }
+    .case-article-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-top: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #111827;
+    }
+    .case-article-card p {
+      font-size: 0.97rem;
+      color: #374151;
+      line-height: 1.7;
+      margin-bottom: 0.65rem;
+    }
+    .case-article-card ul,
+    .case-article-card ol {
+      padding-left: 1.1rem;
+      margin-bottom: 0.9rem;
+    }
+    .case-article-card li {
+      font-size: 0.95rem;
+      color: #374151;
+      margin-bottom: 0.35rem;
+    }
+    .case-highlight-box {
+      border-left: 3px solid #2563eb;
+      background-color: #eff6ff;
+      border-radius: 0.6rem;
+      padding: 0.85rem 1rem;
+      font-size: 0.9rem;
+      color: #1f2937;
+      margin: 1.3rem 0 1.4rem;
+    }
+    .case-sidebar-wrap {
+      position: sticky;
+      top: 90px;
+    }
+    .case-sidebar-card {
+      background-color: #ffffff;
+      border-radius: 18px;
+      padding: 1.6rem 1.5rem;
+      box-shadow: 0 20px 40px rgba(15,23,42,0.11);
+      border: 1px solid rgba(209,213,219,1);
+    }
+    .case-sidebar-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.7rem;
+      color: #111827;
+    }
+    .case-sidebar-text {
+      font-size: 0.9rem;
+      color: #4b5563;
+      margin-bottom: 0.9rem;
+    }
+    .case-sidebar-note {
+      font-size: 0.8rem;
+      color: #9ca3af;
+      margin-top: 0.6rem;
+    }
+    @media (max-width: 991.98px) {
+      .case-page-main {
+        padding: 2.4rem 0 3rem;
+      }
+      .case-article-card {
+        padding: 1.9rem 1.7rem;
+      }
+      .case-sidebar-wrap {
+        position: sticky;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span>深圳环球学旅教育科技有限公司</span>
+    </a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#nav"
+            aria-controls="nav" aria-expanded="false" aria-label="切换导航">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+
+        <!-- 首页 -->
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html" data-file="index.html">首页</a>
+        </li>
+
+        <!-- 服务 下拉 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="services-en.html"
+             id="serviceDropdownZh" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            服务
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="serviceDropdownZh">
+            <li><a class="dropdown-item" href="china-police-certificate-zh.html">中国无犯罪证明</a></li>
+            <li><a class="dropdown-item" href="degree-verification-zh.html">学历学位认证</a></li>
+            <li><a class="dropdown-item" href="document-legalization-zh.html">文件认证 / 海牙 / 领事</a></li>
+            <li><a class="dropdown-item" href="study-in-china-zh.html">外国人来华留学</a></li>
+          </ul>
+        </li>
+
+        <!-- 办理指南 下拉 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#"
+             id="howToDropdownZh" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            办理指南
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="howToDropdownZh">
+            <li><a class="dropdown-item" href="city-grid.html">如何办理中国无犯罪证明</a></li>
+            <li><a class="dropdown-item" href="degree-certification-guide-zh.html">如何在中国办理海牙认证</a></li>
+            <li><a class="dropdown-item" href="shenzhen-degree-notarization-zh.html">如何办理学历/学位认证</a></li>
+            <li><a class="dropdown-item" href="embassy-certification-guide-zh.html">如何办理使馆认证</a></li>
+          </ul>
+        </li>
+
+        <!-- 其他菜单 -->
+        <li class="nav-item">
+          <a class="nav-link" href="cases.html" data-file="cases.html">案例</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" data-file="about.html">关于我们</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html" data-file="faq.html">常见问题</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reviews.html" data-file="reviews.html">客户评价</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-zh.html" data-file="contact-zh.html">联系</a>
+        </li>
+      </ul>
+
+      <!-- 语言切换 -->
+      <div class="ms-3">
+        <a class="lang-btn" href="index.html">中文</a>
+        <a class="lang-btn" href="index-en.html">EN</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<main class="case-page-main">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <article class="case-article-card">
+          <div class="case-article-badge">
+            <i class="fas fa-file-signature"></i>
+            <span>案例 · 中国无犯罪记录证明</span>
+          </div>
+          <h1>真实案例：在美国远程办理中国无犯罪记录证明</h1>
+          <p class="case-article-meta">最近更新：2025 年 6 月（以各地公安机关最新要求为准）</p>
+          <p>本案例展示客户人在美国期间，因办理加拿大移民而需要补齐在华居住时段的中国无犯罪记录证明。通过梳理居住城市、确认签发机关并完成境外授权，我们在客户不回国的前提下，帮助其在合规范围内顺利取得被移民局认可的证明文件。</p>
+          
+<h2>一、客户背景与办理需求</h2>
+<p>
+  客户 A 长期在美国工作和生活，计划申请加拿大永久居民身份。在递交材料前，加拿大移民局要求其提供
+  <strong>覆盖在华居住期间的中国无犯罪记录证明（Police Clearance Certificate, PCC）</strong>。
+</p>
+<p>
+  客户曾在中国 <strong>两个不同城市</strong> 读书与工作，离开中国时间已超过 5 年，本人暂时无法回国办理。
+  他希望在不影响工作与日常生活的前提下，尽快补齐这项关键材料。
+</p>
+
+<h2>二、难点与风险评估</h2>
+<p>在初步沟通与信息收集阶段，我们重点评估了以下几方面的难点：</p>
+<ul>
+  <li>涉及两个城市，分别由不同的公安机关或出入境管理部门负责出具证明；</li>
+  <li>部分地区对“委托代办”的授权文件要求较高，需要规范的中文授权书与身份文件；</li>
+  <li>移民局对时间覆盖范围以及姓名、护照号等信息的一致性有较严格的审核标准；</li>
+  <li>客户人在国外，所有材料往返主要依赖快递与扫描件，必须控制好时间与遗失风险。</li>
+</ul>
+
+<h2>三、整体办理流程设计</h2>
+<p>
+  在确认客户的具体居住时间、护照信息以及目标国要求后，我们为其设计了如下办理路径：
+</p>
+<ol>
+  <li>
+    <strong>前期资料整理与可行性确认</strong><br/>
+    客户填写详细的在华居住与工作/学习时间表，我们逐一核对应由哪个城市、哪一级公安机关出具无犯罪证明，
+    同时确认加拿大移民局是否接受单城证明或需要多份文件组合使用。
+  </li>
+  <li>
+    <strong>准备授权文件与身份材料</strong><br/>
+    根据各地公安机关的要求，拟定 <strong>中文授权委托书</strong> 模板，
+    指导客户在美国当地完成签字并准备护照主页、旧护照复印件及签证页扫描件。
+  </li>
+  <li>
+    <strong>在中国境内协调递交申请</strong><br/>
+    由国内团队根据不同城市的要求，分别向有管辖权的公安机关递交申请材料，
+    包括授权书、身份证明、在华住址证明等。如遇窗口更新材料清单，我们会第一时间与客户确认补充文件。
+  </li>
+  <li>
+    <strong>取得无犯罪记录证明并复核信息</strong><br/>
+    文件签发后，我们重点核对：姓名拼写是否与护照一致、证件号码是否正确、时间范围是否覆盖要求、
+    文本中是否清楚写明“无犯罪记录”或等同表述，避免因措辞问题导致境外退件。
+  </li>
+  <li>
+    <strong>按需办理后续公证或认证</strong><br/>
+    若移民局要求“经公证 / 认证后使用”，则进一步安排公证处公证，并根据当时的具体要求，
+    决定是否需要海牙认证或驻外使领馆认证（以目标国最新政策为准）。
+  </li>
+  <li>
+    <strong>安全寄送与使用指导</strong><br/>
+    将最终成品通过可追踪的国际快递寄送至客户在美国的地址，并提供使用中的注意事项说明，
+    包括复印件是否有效、是否需要翻译件等。
+  </li>
+</ol>
+
+<h2>四、办理结果概况</h2>
+<ul>
+  <li>从客户首次提交完整信息到拿到最终文件，全流程约 <strong>7–10 个工作日</strong>（不含国际快递时间）；</li>
+  <li>成功取得覆盖两座城市居住记录的无犯罪证明及对应公证件；</li>
+  <li>文件顺利通过加拿大移民局审核，用于递交永久居民申请材料。</li>
+</ul>
+
+<h2>五、对类似情况的几点建议</h2>
+<ol>
+  <li>尽早梳理在华居住城市与时间，多城市情况应提前规划文件数量与签发机关；</li>
+  <li>人在境外时应特别注意授权书、身份证明等文件的准确性与签名一致性；</li>
+  <li>务必确认目标国家的具体要求，例如是否接受扫描件、是否必须附加公证或认证；</li>
+  <li>如时间较紧或情况复杂，建议尽早咨询专业团队，避免因材料不符合要求造成长期延误。</li>
+</ol>
+
+<div class="case-highlight-box">
+  如果您目前也身在海外，需要用于移民、工作签证或长期居留的中国无犯罪记录证明，
+  欢迎通过网站的 <a href="contact-zh.html">联系表单</a> 把您的情况发送给我们，
+  我们会根据城市与用途为您评估可行方案与时间安排。
+</div>
+
+        </article>
+      </div>
+      <div class="col-lg-4">
+        <aside class="case-sidebar-wrap">
+          <div class="case-sidebar-card">
+            <h2 class="case-sidebar-title">需要我们协助办理吗？</h2>
+            <p class="case-sidebar-text">
+              我们可以根据您的国家、签证或移民用途，帮您规划无犯罪记录、学历、公证与认证等材料，
+              提前评估可行性与时间安排，避免因文件问题影响后续申请。
+            </p>
+            <a href="contact-zh.html" class="btn btn-success w-100 mb-1">咨询代办服务</a>
+            <p class="case-sidebar-note">提交基本信息后，我们通常会在 1–2 个工作日内与您联系。</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="py-4 bg-dark text-light text-center">
+  <p class="mb-0">© <span id="y"></span> <span>深圳环球学旅教育科技有限公司</span></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>

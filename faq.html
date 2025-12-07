@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>常见问题 | 深圳环球学旅教育科技有限公司</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <style>
+
+    /* --- Hero section --- */
+    .hero-section {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4.5rem 0 5.5rem;
+    }
+
+    .hero-kicker {
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+      opacity: 0.85;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 4vw, 3.4rem);
+      line-height: 1.1;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      max-width: 32rem;
+      opacity: 0.9;
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1rem;
+    }
+
+    .hero-btn {
+      background-color: #22c55e;
+      border-radius: 999px;
+      padding: 0.55rem 1.4rem;
+      font-weight: 500;
+      border: none;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(22, 163, 74, 0.35);
+    }
+
+    .hero-btn:hover {
+      background-color: #16a34a;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .hero-illustration {
+      border-radius: 32px;
+      overflow: hidden;
+      background: #0f172a;
+      box-shadow:
+        0 22px 50px rgba(15, 23, 42, 0.55),
+        0 0 0 1px rgba(148, 163, 184, 0.2);
+    }
+
+    .hero-illustration img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .navbar {
+      padding-top: 0.85rem;
+      padding-bottom: 0.85rem;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+    }
+
+    .navbar-brand span {
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 0.95rem;
+      padding: 0.4rem 0.9rem;
+    }
+
+    .navbar-nav .nav-link.active {
+      font-weight: 600;
+    }
+
+    .navbar .dropdown-menu {
+      background-color: #111827;
+      border-radius: 0;
+      border: none;
+      padding: 0.7rem 0;
+      min-width: 260px;
+    }
+
+    .navbar .dropdown-item {
+      color: #e5e7eb;
+      padding: 0.55rem 1.4rem;
+      font-size: 0.92rem;
+      white-space: normal;
+    }
+
+    .navbar .dropdown-item:hover,
+    .navbar .dropdown-item:focus {
+      background-color: #1f2937;
+      color: #fff;
+    }
+
+    .lang-btn {
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+      text-decoration: none;
+    }
+
+    .lang-btn:hover {
+      text-decoration: underline;
+    }
+  
+
+    .page-hero {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4rem 0 4.5rem;
+    }
+    .page-hero h1 {
+      font-size: clamp(2.2rem, 3.5vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .page-hero p {
+      max-width: 40rem;
+      opacity: 0.9;
+    }
+    .page-hero .hero-illustration {
+      border-radius: 32px;
+      overflow: hidden;
+      background: #0f172a;
+      box-shadow:
+        0 22px 50px rgba(15, 23, 42, 0.55),
+        0 0 0 1px rgba(148, 163, 184, 0.2);
+      min-height: 260px;
+    }
+    .page-hero .hero-illustration img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .section-note {
+      background-color: #f9fafb;
+      padding: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+    .section-note a {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    .steps-section {
+      padding: 3.5rem 0 3.8rem;
+      background-color: #ffffff;
+    }
+    .steps-section h2 {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .step-card {
+      text-align: center;
+      padding: 1.8rem 1.3rem;
+    }
+    .step-number {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      background-color: #22c55e;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      margin-bottom: 0.9rem;
+    }
+    .step-title {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .step-text {
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+
+    .fees-section {
+      padding: 3.5rem 0 4rem;
+      background-image: linear-gradient(to bottom, rgba(15,23,42,0.88), rgba(15,23,42,0.96)), url('https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #e5e7eb;
+    }
+    .fees-card {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .fees-card h2 {
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+    .fees-card p {
+      margin-bottom: 0.85rem;
+    }
+    .fees-divider {
+      width: 80px;
+      height: 2px;
+      background-color: #38bdf8;
+      margin: 0.5rem auto 1.5rem;
+    }
+
+  </style>
+
+  <style>
+    .faq-hero {
+      padding: 4.2rem 0 2.4rem;
+      background-color: #ffffff;
+    }
+    .faq-kicker {
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #9ca3af;
+      margin-bottom: 0.6rem;
+    }
+    .faq-title {
+      font-size: clamp(2.1rem, 3.4vw, 2.7rem);
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 1rem;
+    }
+    .faq-lead {
+      font-size: 0.98rem;
+      color: #4b5563;
+      max-width: 34rem;
+      line-height: 1.8;
+    }
+    .faq-section {
+      padding: 2.4rem 0 3.2rem;
+      background-color: #f9fafb;
+    }
+    .faq-section h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+      color: #111827;
+    }
+    .faq-section p {
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+    .faq-accordion .accordion-button {
+      font-size: 0.96rem;
+      font-weight: 500;
+    }
+    .faq-accordion .accordion-body {
+      font-size: 0.95rem;
+      color: #4b5563;
+      line-height: 1.7;
+    }
+    .faq-accordion .accordion-item {
+      border-radius: 0.9rem;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+      margin-bottom: 0.75rem;
+    }
+    .faq-accordion .accordion-button:not(.collapsed) {
+      background-color: #eff6ff;
+      color: #1d4ed8;
+      box-shadow: none;
+    }
+    
+    .faq-cta-wrap {
+      position: sticky;
+      top: 90px;
+    }
+
+    .faq-cta-box {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      padding: 1.3rem 1.4rem;
+      border: 1px solid #e5e7eb;
+      font-size: 0.94rem;
+      color: #4b5563;
+    }
+    .faq-cta-box h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+      color: #111827;
+    }
+    .faq-cta-box .btn {
+      font-size: 0.9rem;
+      padding: 0.45rem 1.3rem;
+      border-radius: 999px;
+    }
+    @media (max-width: 991.98px) {
+      .faq-hero {
+        padding-top: 3.2rem;
+      }
+      .faq-lead {
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span>深圳环球学旅教育科技有限公司</span>
+    </a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#nav"
+            aria-controls="nav" aria-expanded="false" aria-label="切换导航">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+
+        <!-- 首页 -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" data-file="index.html">首页</a>
+        </li>
+
+        <!-- 服务 下拉 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="services-en.html"
+             id="serviceDropdownZh" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            服务
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="serviceDropdownZh">
+            <li><a class="dropdown-item" href="china-police-certificate-zh.html">中国无犯罪证明</a></li>
+            <li><a class="dropdown-item" href="degree-verification-zh.html">学历学位认证</a></li>
+            <li><a class="dropdown-item" href="document-legalization-zh.html">文件认证 / 海牙 / 领事</a></li>
+            <li><a class="dropdown-item" href="study-in-china-zh.html">外国人来华留学</a></li>
+          </ul>
+        </li>
+
+        <!-- 办理指南 下拉 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#"
+             id="howToDropdownZh" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            办理指南
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="howToDropdownZh">
+            <li><a class="dropdown-item" href="city-grid.html">如何办理中国无犯罪证明</a></li>
+            <li><a class="dropdown-item" href="degree-certification-guide-zh.html">如何在中国办理海牙认证</a></li>
+            <li><a class="dropdown-item" href="shenzhen-degree-notarization-zh.html">如何办理学历/学位认证</a></li>
+            <li><a class="dropdown-item" href="embassy-certification-guide-zh.html">如何办理使馆认证</a></li>
+          </ul>
+        </li>
+
+        <!-- 其他菜单 -->
+        <li class="nav-item">
+          <a class="nav-link" href="cases.html" data-file="cases.html">案例</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" data-file="about.html">关于我们</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="faq.html" data-file="faq.html">常见问题</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reviews.html" data-file="reviews.html">客户评价</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-zh.html" data-file="contact-zh.html">联系</a>
+        </li>
+      </ul>
+
+      <!-- 语言切换 -->
+      <div class="ms-3">
+        <a class="lang-btn" href="index.html">中文</a>
+        <a class="lang-btn" href="index-en.html">EN</a>
+      </div>
+    </div>
+  </div>
+</nav><main>
+
+<section class="faq-hero">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-7">
+        <div class="faq-kicker">FAQ · 常见问题</div>
+        <h1 class="faq-title">常见问题与办理小贴士</h1>
+        <p class="faq-lead">
+          我们整理了客户在咨询中国无犯罪记录、海牙与使馆认证、学历认证以及来华留学时经常会提出的问题，
+          方便您在正式咨询前先有一个整体了解。以下回答为通用说明，实际要求可能会因国家、城市和时间政策变化，
+          以相关部门的最新通知为准。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <h2>一、关于整体服务与流程</h2>
+        <div class="accordion faq-accordion" id="faqGeneral">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="genOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#genOneBody" aria-expanded="true" aria-controls="genOneBody">
+                1. 你们是直接办理机构吗？服务范围包括哪些？
+              </button>
+            </h2>
+            <div id="genOneBody" class="accordion-collapse collapse show" aria-labelledby="genOne" data-bs-parent="#faqGeneral">
+              <div class="accordion-body">
+                我们是一家注册于中国深圳的专业服务机构，为客户提供与中国相关合规文件的咨询、材料准备、流程规划与进度跟进服务。
+                具体出具文件的机构仍然是具有法定权限的机关，例如公安机关、公证处、外交部或其授权单位、驻华使领馆、
+                教育部留学服务中心等。我们会根据您的国家与用途，帮助您设计合适的办理路径，减少信息不对称带来的时间成本。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="genTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genTwoBody" aria-expanded="false" aria-controls="genTwoBody">
+                2. 人不在中国，是否也可以委托你们协助办理？
+              </button>
+            </h2>
+            <div id="genTwoBody" class="accordion-collapse collapse" aria-labelledby="genTwo" data-bs-parent="#faqGeneral">
+              <div class="accordion-body">
+                可以。我们目前服务的客户大部分都身处中国境外，例如在北美、欧洲、东南亚、中东等地工作和生活。
+                一般会通过电子邮件或视频通话确认信息，并根据不同城市和机构的要求，准备相应的授权书、身份证明和材料扫描件。
+                我们会提前说明需要原件邮寄的情况和预计时间，让您可以合理安排移民、签证或入职等后续计划。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="genThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genThreeBody" aria-expanded="false" aria-controls="genThreeBody">
+                3. 整体办理时间大概多久？是否可以加急？
+              </button>
+            </h2>
+            <div id="genThreeBody" class="accordion-collapse collapse" aria-labelledby="genThree" data-bs-parent="#faqGeneral">
+              <div class="accordion-body">
+                办理时间会受到城市、受理部门工作量以及您的材料准备情况影响。
+                一般来说，无犯罪记录证明、公证与认证、学历认证等都需要 <strong>若干个工作日到数周不等</strong>。
+                部分城市或机构支持加急受理，但通常会有名额或条件限制。我们在评估您的情况后，会给出一个比较稳妥的时间预估，
+                并在可行范围内尝试为您争取更快的进度。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="mt-4">二、中国无犯罪记录证明相关</h2>
+        <div class="accordion faq-accordion" id="faqPcc">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="pccOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pccOneBody" aria-expanded="true" aria-controls="pccOneBody">
+                1. 申请中国无犯罪记录证明，一定要本人到场吗？
+              </button>
+            </h2>
+            <div id="pccOneBody" class="accordion-collapse collapse show" aria-labelledby="pccOne" data-bs-parent="#faqPcc">
+              <div class="accordion-body">
+                是否必须本人到场，取决于具体城市和出具证明的公安机关要求。部分地区允许通过
+                授权书和身份证明由他人代为申请，部分地区可能需要本人曾在当地办理过居留登记或仍有有效关系记录。
+                我们会在评估您的居住城市和时间后，说明可行方案和可能的限制，并协助准备相应的授权材料。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="pccTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pccTwoBody" aria-expanded="false" aria-controls="pccTwoBody">
+                2. 不同城市居住过，需要同时申请多份无犯罪记录吗？
+              </button>
+            </h2>
+            <div id="pccTwoBody" class="accordion-collapse collapse" aria-labelledby="pccTwo" data-bs-parent="#faqPcc">
+              <div class="accordion-body">
+                通常建议根据您在华居住的主要城市和时间段进行规划。部分国家或机构接受由最后居住地
+                或主要居住地出具的证明，部分则更倾向于您在多个长期居住城市分别提供记录。
+                在正式办理前，我们会结合您的实际情况与目标国要求，给出更合适的组合方案。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="pccThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pccThreeBody" aria-expanded="false" aria-controls="pccThreeBody">
+                3. 无犯罪记录证明可以直接用于移民或签证申请吗？
+              </button>
+            </h2>
+            <div id="pccThreeBody" class="accordion-collapse collapse" aria-labelledby="pccThree" data-bs-parent="#faqPcc">
+              <div class="accordion-body">
+                多数情况下，移民和签证机构会要求无犯罪记录证明搭配公证、海牙认证或使馆认证后使用，
+                具体组合取决于您的目标国家是否为海牙成员国以及当时的受理政策。
+                在为您规划方案时，我们会一并考虑后续认证步骤，避免出现“证明拿到了但不能直接使用”的情况。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="mt-4">三、海牙认证 / 使馆认证相关</h2>
+        <div class="accordion faq-accordion" id="faqLegal">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="legOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#legOneBody" aria-expanded="true" aria-controls="legOneBody">
+                1. 如何判断是做海牙认证还是使馆认证？
+              </button>
+            </h2>
+            <div id="legOneBody" class="accordion-collapse collapse show" aria-labelledby="legOne" data-bs-parent="#faqLegal">
+              <div class="accordion-body">
+                一般来说，如果您的目标国家是《海牙公约》成员国，且明确接受中国出具的海牙认证文件，
+                则通常走“公证 + 海牙认证”的路径；如果目标国家尚未加入《海牙公约》或当地机构要求使馆认证，
+                则需要走“公证 + 外交部认证 + 使馆认证”的路径。
+                我们会根据您的用途和最新政策帮您确认最合适的方案。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="legTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#legTwoBody" aria-expanded="false" aria-controls="legTwoBody">
+                2. 认证流程大概包含哪些环节？需要准备什么？
+              </button>
+            </h2>
+            <div id="legTwoBody" class="accordion-collapse collapse" aria-labelledby="legTwo" data-bs-parent="#faqLegal">
+              <div class="accordion-body">
+                以常见的学历文件为例，通常流程为：先由公证处出具学历公证书，再办理海牙认证或外交部认证，
+                最后视需求递交至相关使领馆办理认证。准备材料一般包括：证书原件、身份证明、授权文件以及必要的翻译件等。
+                具体材料清单会根据城市和机构不同做出调整。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="legThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#legThreeBody" aria-expanded="false" aria-controls="legThreeBody">
+                3. 海牙认证或使馆认证有有效期吗？
+              </button>
+            </h2>
+            <div id="legThreeBody" class="accordion-collapse collapse" aria-labelledby="legThree" data-bs-parent="#faqLegal">
+              <div class="accordion-body">
+                认证本身通常不设固定有效期，但实际使用时会受目标机构的时间要求影响。
+                例如，部分移民或签证申请会要求在最近几个月内出具的文件，或者在递交时仍处于“合理期限”内。
+                因此我们会建议您在确定使用时间后再安排办理，以免文件过早出具导致需要重新办理。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="mt-4">四、学历认证 / 学信网 / WES 相关</h2>
+        <div class="accordion faq-accordion" id="faqEdu">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="eduOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#eduOneBody" aria-expanded="true" aria-controls="eduOneBody">
+                1. 国外学历回国发展，一定要做教育部留服中心认证吗？
+              </button>
+            </h2>
+            <div id="eduOneBody" class="accordion-collapse collapse show" aria-labelledby="eduOne" data-bs-parent="#faqEdu">
+              <div class="accordion-body">
+                是否必须做取决于您的实际用途。落户、部分公务员招录、事业单位招聘以及某些人才引进政策，
+                通常会明确要求提供教育部留学服务中心出具的《国外学历学位认证书》；
+                也有一些市场化职位仅将其作为参考材料。我们可以结合您的目标城市与岗位类型，给出是否建议办理的意见。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="eduTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eduTwoBody" aria-expanded="false" aria-controls="eduTwoBody">
+                2. WES 认证和中国的学历认证有什么区别？
+              </button>
+            </h2>
+            <div id="eduTwoBody" class="accordion-collapse collapse" aria-labelledby="eduTwo" data-bs-parent="#faqEdu">
+              <div class="accordion-body">
+                WES 是独立的第三方评估机构，常用于北美地区的继续深造或职业资格审核，
+                其报告主要面向学校、雇主或专业协会；而中国教育部留服中心认证则是由官方出具的学历认证，
+                多用于中国境内的落户、考公、人才引进和用人单位审核等。
+                两者用途不同，部分客户需要同时办理，我们可协助您梳理先后顺序。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="eduThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eduThreeBody" aria-expanded="false" aria-controls="eduThreeBody">
+                3. 学信网验证、成绩单寄送由谁来操作？需要多久？
+              </button>
+            </h2>
+            <div id="eduThreeBody" class="accordion-collapse collapse" aria-labelledby="eduThree" data-bs-parent="#faqEdu">
+              <div class="accordion-body">
+                学信网学历与成绩单验证通常由学校或指定机构在系统中完成，我们可以协助您确认学校是否已开通相关服务、
+                以及不同项目对验证方式的要求。部分项目需要由学校直接将电子报告发送至指定机构，
+                周期从几天到数周不等，具体需结合学校反馈与申请高峰期安排。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="mt-4">五、来华留学与奖学金相关</h2>
+        <div class="accordion faq-accordion" id="faqStudy">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="studyOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#studyOneBody" aria-expanded="true" aria-controls="studyOneBody">
+                1. 你们可以协助哪些类型的来华留学项目？
+              </button>
+            </h2>
+            <div id="studyOneBody" class="accordion-collapse collapse show" aria-labelledby="studyOne" data-bs-parent="#faqStudy">
+              <div class="accordion-body">
+                我们主要协助全日制学位项目和部分长期语言项目，包括本科、硕士、博士及联合培养等。
+                服务内容通常包括选校与项目建议、申请材料准备、时间规划以及与学校沟通的支持等。
+                具体可行方案会根据您的学历背景、语言情况和目标城市综合评估。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="studyTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#studyTwoBody" aria-expanded="false" aria-controls="studyTwoBody">
+                2. 关于奖学金，你们能提供哪些方面的帮助？
+              </button>
+            </h2>
+            <div id="studyTwoBody" class="accordion-collapse collapse" aria-labelledby="studyTwo" data-bs-parent="#faqStudy">
+              <div class="accordion-body">
+                我们可以协助您梳理适合申请的奖学金类别，结合项目要求规划申请时间，
+                并对个人陈述、推荐信和材料结构提出修改建议。奖学金的最终评审由学校或相关机构决定，
+                但通过更有针对性的材料准备，可以在一定程度上提升申请的完整度和竞争力。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="studyThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#studyThreeBody" aria-expanded="false" aria-controls="studyThreeBody">
+                3. 来华留学与签证办理之间如何衔接？
+              </button>
+            </h2>
+            <div id="studyThreeBody" class="accordion-collapse collapse" aria-labelledby="studyThree" data-bs-parent="#faqStudy">
+              <div class="accordion-body">
+                一般流程为：获得学校录取或邀请函后，根据学校所在城市和国籍要求准备签证材料，
+                例如 JW 表、录取通知书、财力证明、体检证明等。我们在协助您准备申请材料的同时，
+                也会提醒与签证环节相关的时间节点，帮助您尽量避免因文件准备不全影响入学。
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-4">
+        <div class="faq-cta-wrap">
+        <div class="faq-cta-box">
+          <h3>没找到你的问题？</h3>
+          <p>
+            每个国家、项目和城市的具体要求都会有所不同。如果您的情况比较特殊，
+            或者时间比较紧张，欢迎把您的需求和时间表发给我们，我们会根据实际情况做一对一评估。
+          </p>
+          <a href="contact-zh.html" class="btn btn-success mb-2">咨询具体方案</a>
+          <p class="mb-0">
+            您也可以在留言中附上目标国家、用途（移民 / 签证 / 就业 / 留学等）以及预计使用时间，
+            这样我们可以更精准地为您提供建议。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+</section>
+
+</main>
+<footer class="py-4 bg-dark text-light text-center">
+  <p class="mb-0">© <span id="y"></span> <span>深圳环球学旅教育科技有限公司</span></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>

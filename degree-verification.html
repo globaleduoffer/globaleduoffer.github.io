@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Degree Verification for Immigration, Work Visa & Study Abroad | GLOBAL EDU OFFER LIMITED</title>
+
+  <meta name="description" content="GLOBAL EDU OFFER LIMITED provides degree verification and academic credential evaluation services for immigration, work visa, professional licensing and study abroad, for degrees obtained in China or overseas.">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="assets/style.css"/>
+
+  <style>
+    /* Global font for English pages */
+    body {
+      font-family: "Times New Roman", Times, serif !important;
+    }
+
+    /* --- Shared hero styles --- */
+    .hero-section {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4.5rem 0 5.5rem;
+    }
+
+    .hero-kicker {
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+      opacity: 0.85;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 4vw, 3.4rem);
+      line-height: 1.1;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      max-width: 32rem;
+      opacity: 0.9;
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1rem;
+    }
+
+    .hero-btn {
+      background-color: #22c55e;
+      border-radius: 999px;
+      padding: 0.55rem 1.4rem;
+      font-weight: 500;
+      border: none;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(22, 163, 74, 0.35);
+    }
+
+    .hero-btn:hover {
+      background-color: #16a34a;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .hero-illustration {
+      border-radius: 32px;
+      overflow: hidden;
+      background: #0f172a;
+      box-shadow:
+        0 22px 50px rgba(15, 23, 42, 0.55),
+        0 0 0 1px rgba(148, 163, 184, 0.2);
+    }
+
+    .hero-illustration img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .navbar {
+      padding-top: 0.85rem;
+      padding-bottom: 0.85rem;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+    }
+
+    .navbar-brand span {
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 0.95rem;
+      padding: 0.4rem 0.9rem;
+    }
+
+    .navbar-nav .nav-link.active {
+      font-weight: 600;
+    }
+
+    .navbar .dropdown-menu {
+      background-color: #111827;
+      border-radius: 0;
+      border: none;
+      padding: 0.7rem 0;
+      min-width: 260px;
+    }
+
+    .navbar .dropdown-item {
+      color: #e5e7eb;
+      padding: 0.55rem 1.4rem;
+      font-size: 0.92rem;
+      white-space: normal;
+    }
+
+    .navbar .dropdown-item:hover,
+    .navbar .dropdown-item:focus {
+      background-color: #1f2937;
+      color: #fff;
+    }
+
+    .lang-btn {
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+      text-decoration: none;
+    }
+
+    .lang-btn:hover {
+      text-decoration: underline;
+    }
+
+    /* Page-level styles: Degree Verification */
+    .page-hero {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4rem 0 4.5rem;
+    }
+    .page-hero h1 {
+      font-size: clamp(2.2rem, 3.5vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+    }
+    .page-hero p {
+      max-width: 40rem;
+      opacity: 0.9;
+      font-size: 1rem;
+    }
+    .page-hero .hero-illustration {
+      border-radius: 32px;
+      overflow: hidden;
+      background: #0f172a;
+      box-shadow:
+        0 22px 50px rgba(15, 23, 42, 0.55),
+        0 0 0 1px rgba(148, 163, 184, 0.2);
+      min-height: 260px;
+    }
+    .page-hero .hero-illustration img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .dv-section {
+      padding: 3.5rem 0;
+    }
+    .dv-section--muted {
+      background-color: #f9fafb;
+    }
+    .dv-kicker {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #6b7280;
+      margin-bottom: 0.6rem;
+    }
+    .dv-title {
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+    }
+    .dv-lead {
+      font-size: 1rem;
+      color: #4b5563;
+      max-width: 40rem;
+    }
+
+    .dv-card {
+      border-radius: 1.5rem;
+      background-color: #ffffff;
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+      padding: 1.6rem 1.7rem;
+      height: 100%;
+    }
+    .dv-card h5 {
+      font-size: 1.05rem;
+      margin-bottom: 0.6rem;
+    }
+    .dv-pill {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 0.18rem 0.75rem;
+      background-color: #eff6ff;
+      color: #1d4ed8;
+      font-size: 0.78rem;
+      margin-right: 0.35rem;
+      margin-bottom: 0.35rem;
+    }
+    .dv-card ul {
+      font-size: 0.93rem;
+      padding-left: 1.1rem;
+      margin-bottom: 0.4rem;
+    }
+    .dv-card li + li {
+      margin-top: 0.15rem;
+    }
+
+    .dv-steps-title {
+      text-align: center;
+      font-size: 1.6rem;
+      margin-bottom: 2.4rem;
+    }
+    .dv-step {
+      text-align: left;
+      border-radius: 1.4rem;
+      background-color: #ffffff;
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.04);
+      padding: 1.3rem 1.4rem;
+      height: 100%;
+      display: flex;
+      gap: 1rem;
+    }
+    .dv-step-number {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      background-color: #22c55e;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-top: 0.2rem;
+    }
+    .dv-step h6 {
+      font-size: 0.98rem;
+      margin-bottom: 0.3rem;
+    }
+    .dv-step p {
+      font-size: 0.92rem;
+      color: #4b5563;
+      margin-bottom: 0;
+    }
+
+    .dv-faq-item + .dv-faq-item {
+      margin-top: 1.1rem;
+    }
+    .dv-faq-q {
+      font-weight: 600;
+      font-size: 0.98rem;
+    }
+    .dv-faq-a {
+      font-size: 0.93rem;
+      color: #4b5563;
+      margin-top: 0.25rem;
+    }
+
+    .fees-section {
+      padding: 3.7rem 0 4.2rem;
+      background-image: linear-gradient(to bottom, rgba(15,23,42,0.9), rgba(15,23,42,0.96)), url('https://images.unsplash.com/photo-1516238840914-94dfc0c873ae?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #e5e7eb;
+    }
+    .fees-card {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 2.5rem 2.3rem;
+      border-radius: 1.8rem;
+      background: rgba(15, 23, 42, 0.86);
+      box-shadow: 0 22px 50px rgba(15, 23, 42, 0.7);
+    }
+    .fees-card h2 {
+      color: #fff;
+      margin-bottom: 1.3rem;
+    }
+    .fees-divider {
+      width: 80px;
+      height: 2px;
+      background-color: #38bdf8;
+      margin: 0.4rem auto 1.4rem;
+    }
+    .fees-card p {
+      margin-bottom: 0.8rem;
+      font-size: 0.95rem;
+    }
+    .fees-card a {
+      color: #38bdf8;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index-en.html">
+      <span>GLOBAL EDU OFFER LIMITED</span>
+    </a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#nav"
+            aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+
+        <!-- Home -->
+        <li class="nav-item">
+          <a class="nav-link" href="index-en.html">Home</a>
+        </li>
+
+        <!-- Services Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="services-en.html"
+             id="serviceDropdownEn" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="serviceDropdownEn">
+            <li><a class="dropdown-item" href="china-police-certificate.html">China Police Certificate (PCC)</a></li>
+            <li><a class="dropdown-item" href="degree-verification.html">Degree Verification</a></li>
+            <li><a class="dropdown-item" href="document-legalization.html">Document Legalization / Hague Apostille / Consular</a></li>
+            <li><a class="dropdown-item" href="study-in-china-en.html">Study in China</a></li>
+          </ul>
+        </li>
+
+        <!-- Guides Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#"
+             id="howToDropdownEn" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Guides
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="howToDropdownEn">
+            <li><a class="dropdown-item" href="city-grid-en.html">How to Apply for a China Police Certificate</a></li>
+            <li><a class="dropdown-item" href="degree-certification-guide.html">How to Apply for a Hague Apostille in China</a></li>
+            <li><a class="dropdown-item" href="shenzhen-degree-notarization.html">How to Process Degree Verification</a></li>
+            <li><a class="dropdown-item" href="embassy-certification-guide.html">How to Apply for Embassy / Consular Legalization</a></li>
+          </ul>
+        </li>
+
+        <!-- Other Menu -->
+        <li class="nav-item">
+          <a class="nav-link" href="cases-en.html">Cases</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about-en.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq-en.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reviews-en.html">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-en.html">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Language Switch (page-specific) -->
+      <div class="ms-3">
+        <a class="lang-btn" href="degree-verification-zh.html">中文</a>
+        <a class="lang-btn" href="degree-verification.html">EN</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6">
+        <p class="hero-kicker">Degree Verification · Education Credential Evaluation</p>
+        <h1>Make sure your degree is recognized in your destination country.</h1>
+        <p>
+          Whether you obtained your degree in China or overseas, we help you design the right degree verification
+          and credential evaluation route based on your destination country and purpose of use – for immigration,
+          work visa, further education or professional licensing.
+        </p>
+        <p>
+          We coordinate with different institutions on your behalf, so you avoid unnecessary detours
+          and can focus your time on the decisions that really matter.
+        </p>
+        <div class="mt-4">
+          <a href="contact-en.html" class="btn hero-btn">Get a Quote & Consultation</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-illustration">
+          <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1200&q=80"
+               alt="Degree verification and academic credential evaluation service"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="dv-section dv-section--muted">
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-7">
+        <div class="dv-kicker">What we help you solve</div>
+        <h2 class="dv-title">One-stop planning for different types of degree verification.</h2>
+        <p class="dv-lead">
+          Different countries and institutions ask for different types of credential verification:
+          some accept a Ministry of Education report, some require a specific third-party credential evaluator,
+          while others only recognize documents issued directly by your university.
+          We first clarify exactly <strong>what your receiving institution requires</strong>, and then design a tailored route backwards from that.
+        </p>
+      </div>
+      <div class="col-lg-5">
+        <div class="dv-card">
+          <h5>Typical use cases</h5>
+          <div class="mb-2">
+            <span class="dv-pill">Skilled migration / immigration points</span>
+            <span class="dv-pill">Work visa / work permit</span>
+            <span class="dv-pill">Study abroad / school applications</span>
+            <span class="dv-pill">Professional licensing / associations</span>
+          </div>
+          <ul>
+            <li>Providing recognized proof of your degree for immigration or permanent residence applications.</li>
+            <li>Showing that your degree meets the minimum requirements for a work visa or work permit.</li>
+            <li>Explaining the level and duration of your original degree when applying to overseas universities.</li>
+            <li>Meeting academic requirements when applying for professional titles or industry qualifications.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dv-section">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="dv-card h-100">
+          <h5>Degrees obtained in China</h5>
+          <p class="mb-2" style="font-size:0.94rem; color:#4b5563;">
+            For bachelor, master, PhD and other degrees obtained at Chinese universities, we will determine –
+            based on your destination country – whether you need one or a combination of the following:
+          </p>
+          <ul>
+            <li>Official degree verification reports issued by the Ministry of Education or designated centers.</li>
+            <li>Credential evaluation reports from overseas agencies recognized by immigration authorities.</li>
+            <li>Official Chinese/English enrolment or graduation letters, course descriptions and other documents issued by your university.</li>
+          </ul>
+          <p class="mb-0" style="font-size:0.9rem; color:#6b7280;">
+            Suitable for: applicants who completed their studies in China and plan to immigrate, work or pursue further education in another country.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="dv-card h-100">
+          <h5>Degrees obtained overseas</h5>
+          <p class="mb-2" style="font-size:0.94rem; color:#4b5563;">
+            If you obtained your degree in Europe, North America or other regions and now need to use it in China
+            or a third country, you may need to consider:
+          </p>
+          <ul>
+            <li>Completing degree verification for returning graduates, for job applications or civil service exams in China.</li>
+            <li>Obtaining a third-party credential evaluation report for immigration or employment in another country.</li>
+            <li>Arranging official transcripts and letters from your university, combined with notarization / legalization when required.</li>
+          </ul>
+          <p class="mb-0" style="font-size:0.9rem; color:#6b7280;">
+            Suitable for: returnees who studied abroad and plan to work in China, or those who intend to move on to a third country for further study or employment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dv-section dv-section--muted">
+  <div class="container">
+    <h2 class="dv-steps-title">Typical process for degree verification</h2>
+    <div class="row g-3">
+      <div class="col-md-6 col-lg-4">
+        <div class="dv-step">
+          <div class="dv-step-number">1</div>
+          <div>
+            <h6>Initial assessment</h6>
+            <p>We review your education background, destination country and purpose of use, then outline feasible verification routes and estimate time and cost.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="dv-step">
+          <div class="dv-step-number">2</div>
+          <div>
+            <h6>Confirming the route</h6>
+            <p>We confirm the specific verification body (e.g. Ministry of Education, designated evaluation agency) and finalize the document checklist and translation requirements.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="dv-step">
+          <div class="dv-step-number">3</div>
+          <div>
+            <h6>Document preparation</h6>
+            <p>We guide you in preparing diplomas, degree certificates, transcripts and ID documents, and help arrange translation and notarization if needed.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="dv-step">
+          <div class="dv-step-number">4</div>
+          <div>
+            <h6>Submission</h6>
+            <p>We assist with online application forms, document uploads or mailing physical documents, and coordinate with universities or agencies as required.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="dv-step">
+          <div class="dv-step-number">5</div>
+          <div>
+            <h6>Follow-up during review</h6>
+            <p>We track the status of your application and help respond to any requests for clarification or additional documents until the verification result is issued.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="dv-step">
+          <div class="dv-step-number">6</div>
+          <div>
+            <h6>Use of results & next steps</h6>
+            <p>If you need to use the verified documents overseas, we can continue with notarization, apostille or consular legalization and offer advice on how to present them.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dv-section">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <h2 class="dv-title mb-3">Frequently Asked Questions (FAQ)</h2>
+        <div class="dv-faq-item">
+          <div class="dv-faq-q">Q: Does degree verification always have to be done in the country where I studied?</div>
+          <div class="dv-faq-a">
+            A: Not always. Some types of verification can be completed online or through agencies in other countries.
+            We design a convenient solution based on where you are now and where you need to use your degree.
+          </div>
+        </div>
+        <div class="dv-faq-item">
+          <div class="dv-faq-q">Q: Can I reuse my verification report multiple times?</div>
+          <div class="dv-faq-a">
+            A: In many cases, a verification report can be reused within a certain validity period.
+            However, different institutions have different rules on validity, so it is important to check in advance.
+          </div>
+        </div>
+        <div class="dv-faq-item">
+          <div class="dv-faq-q">Q: I am still studying. Is it useful to plan ahead now?</div>
+          <div class="dv-faq-a">
+            A: Yes. The earlier you understand the requirements of your target country or institution,
+            the easier it is to avoid issues with course selection, language scores and internship arrangements later on.
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="dv-card h-100">
+          <h5>Who is this service for?</h5>
+          <ul>
+            <li>Applicants preparing for skilled migration or points-based immigration who need degree assessment.</li>
+            <li>Professionals who already work or plan to work overseas and must prove their academic qualifications to employers or regulators.</li>
+            <li>Students and graduates applying for overseas universities, exchange programs or postgraduate study.</li>
+            <li>Engineers, accountants, doctors and other professionals applying for licenses that require education verification.</li>
+          </ul>
+          <p class="mb-0" style="font-size:0.9rem; color:#6b7280;">
+            If you are not sure whether your degree meets the requirements of your destination country,
+            we can first provide a basic assessment before you decide whether to start the full service.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fees-section">
+  <div class="container">
+    <div class="fees-card">
+      <h2>Service fee & processing time</h2>
+      <div class="fees-divider"></div>
+      <p>
+        The cost of degree verification depends on the verification body, level of study, translation needs
+        and whether further notarization or legalization is required.
+        Our service fee usually starts from around <strong>USD 150</strong>, and the final fee varies with the number
+        of degrees, institutions involved and document requirements.
+      </p>
+      <p>
+        In most cases the overall processing time is around <strong>2–8 weeks</strong>,
+        while some advanced degrees that require multiple rounds of review may take longer.
+      </p>
+      <div class="fees-divider"></div>
+      <p>
+        You can first send us scans of your degree certificate and transcript together with your destination country.
+        We will provide a more precise estimate of time and cost, and will only start the service after you confirm.
+      </p>
+      <p class="mb-0">
+        Want quick advice on your options?
+        <a href="contact-en.html">Click here to contact our consultant</a> for a one-on-one assessment.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="py-4 bg-dark text-light text-center">
+  <p class="mb-0">© <span id="y"></span> GLOBAL EDU OFFER LIMITED</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>

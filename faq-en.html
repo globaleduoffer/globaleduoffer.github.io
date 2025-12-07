@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FAQ — Frequently Asked Questions | GLOBAL EDU OFFER LIMITED</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="assets/style.css" rel="stylesheet"/>
+<style>
+
+    /* --- Hero section --- */
+    .hero-section {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4.5rem 0 5.5rem;
+    }
+
+    .hero-kicker {
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+      opacity: 0.85;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 4vw, 3.4rem);
+      line-height: 1.1;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      max-width: 32rem;
+      opacity: 0.9;
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1rem;
+    }
+
+    .hero-btn {
+      background-color: #22c55e;
+      border-radius: 999px;
+      padding: 0.55rem 1.4rem;
+      font-weight: 500;
+      border: none;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(22, 163, 74, 0.35);
+    }
+
+    .hero-btn:hover {
+      background-color: #16a34a;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .hero-illustration {
+      border-radius: 32px;
+      overflow: hidden;
+      background: #0f172a;
+      box-shadow:
+        0 22px 50px rgba(15, 23, 42, 0.55),
+        0 0 0 1px rgba(148, 163, 184, 0.2);
+    }
+
+    .hero-illustration img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .navbar {
+      padding-top: 0.85rem;
+      padding-bottom: 0.85rem;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+    }
+
+    .navbar-brand span {
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 0.95rem;
+      padding: 0.4rem 0.9rem;
+    }
+
+    .navbar-nav .nav-link.active {
+      font-weight: 600;
+    }
+
+    .navbar .dropdown-menu {
+      background-color: #111827;
+      border-radius: 0;
+      border: none;
+      padding: 0.7rem 0;
+      min-width: 260px;
+    }
+
+    .navbar .dropdown-item {
+      color: #e5e7eb;
+      padding: 0.55rem 1.4rem;
+      font-size: 0.92rem;
+      white-space: normal;
+    }
+
+    .navbar .dropdown-item:hover,
+    .navbar .dropdown-item:focus {
+      background-color: #1f2937;
+      color: #fff;
+    }
+
+    .lang-btn {
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+      text-decoration: none;
+    }
+
+    .lang-btn:hover {
+      text-decoration: underline;
+    }
+  
+
+    .page-hero {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4rem 0 4.5rem;
+    }
+    .page-hero h1 {
+      font-size: clamp(2.2rem, 3.5vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .page-hero p {
+      max-width: 40rem;
+      opacity: 0.9;
+    }
+    .page-hero .hero-illustration {
+      border-radius: 32px;
+      overflow: hidden;
+      background: #0f172a;
+      box-shadow:
+        0 22px 50px rgba(15, 23, 42, 0.55),
+        0 0 0 1px rgba(148, 163, 184, 0.2);
+      min-height: 260px;
+    }
+    .page-hero .hero-illustration img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .section-note {
+      background-color: #f9fafb;
+      padding: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+    .section-note a {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    .steps-section {
+      padding: 3.5rem 0 3.8rem;
+      background-color: #ffffff;
+    }
+    .steps-section h2 {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .step-card {
+      text-align: center;
+      padding: 1.8rem 1.3rem;
+    }
+    .step-number {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      background-color: #22c55e;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      margin-bottom: 0.9rem;
+    }
+    .step-title {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .step-text {
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+
+    .fees-section {
+      padding: 3.5rem 0 4rem;
+      background-image: linear-gradient(to bottom, rgba(15,23,42,0.88), rgba(15,23,42,0.96)), url('https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #e5e7eb;
+    }
+    .fees-card {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .fees-card h2 {
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+    .fees-card p {
+      margin-bottom: 0.85rem;
+    }
+    .fees-divider {
+      width: 80px;
+      height: 2px;
+      background-color: #38bdf8;
+      margin: 0.5rem auto 1.5rem;
+    }
+
+  </style>
+<style>
+    .faq-hero {
+      padding: 4.2rem 0 2.4rem;
+      background-color: #ffffff;
+    }
+    .faq-kicker {
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #9ca3af;
+      margin-bottom: 0.6rem;
+    }
+    .faq-title {
+      font-size: clamp(2.1rem, 3.4vw, 2.7rem);
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 1rem;
+    }
+    .faq-lead {
+      font-size: 0.98rem;
+      color: #4b5563;
+      max-width: 34rem;
+      line-height: 1.8;
+    }
+    .faq-section {
+      padding: 2.4rem 0 3.2rem;
+      background-color: #f9fafb;
+    }
+    .faq-section h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+      color: #111827;
+    }
+    .faq-section p {
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+    .faq-accordion .accordion-button {
+      font-size: 0.96rem;
+      font-weight: 500;
+    }
+    .faq-accordion .accordion-body {
+      font-size: 0.95rem;
+      color: #4b5563;
+      line-height: 1.7;
+    }
+    .faq-accordion .accordion-item {
+      border-radius: 0.9rem;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+      margin-bottom: 0.75rem;
+    }
+    .faq-accordion .accordion-button:not(.collapsed) {
+      background-color: #eff6ff;
+      color: #1d4ed8;
+      box-shadow: none;
+    }
+    
+    .faq-cta-wrap {
+      position: sticky;
+      top: 90px;
+    }
+
+    .faq-cta-box {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      padding: 1.3rem 1.4rem;
+      border: 1px solid #e5e7eb;
+      font-size: 0.94rem;
+      color: #4b5563;
+    }
+    .faq-cta-box h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+      color: #111827;
+    }
+    .faq-cta-box .btn {
+      font-size: 0.9rem;
+      padding: 0.45rem 1.3rem;
+      border-radius: 999px;
+    }
+    @media (max-width: 991.98px) {
+      .faq-hero {
+        padding-top: 3.2rem;
+      }
+      .faq-lead {
+        max-width: none;
+      }
+    }
+  
+body { font-family: "Times New Roman", Times, serif !important; }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<a class="navbar-brand" href="index-en.html">
+<span>GLOBAL EDU OFFER LIMITED</span>
+</a>
+<button aria-controls="nav" aria-expanded="false" aria-label="切换导航" class="navbar-toggler" data-bs-target="#nav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<!-- 首页 -->
+<li class="nav-item">
+<a class="nav-link" data-file="index-en.html" href="index-en.html">Home</a>
+</li>
+<!-- 服务 下拉 -->
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="serviceDropdownZh" role="button">Services</a>
+<ul aria-labelledby="serviceDropdownZh" class="dropdown-menu">
+<li><a class="dropdown-item" href="china-police-certificate.html">China Police Certificate (PCC)</a></li>
+<li><a class="dropdown-item" href="degree-verification.html">Degree Verification</a></li>
+<li><a class="dropdown-item" href="document-legalization.html">Document Legalization / Hague Apostille</a></li>
+<li><a class="dropdown-item" href="study-in-china.html">Study in China</a></li>
+</ul>
+</li>
+<!-- 办理指南 下拉 -->
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="howToDropdownZh" role="button">Guides</a>
+<ul aria-labelledby="howToDropdownZh" class="dropdown-menu">
+<li><a class="dropdown-item" href="city-grid-en.html">How to Get a China Police Certificate</a></li>
+<li><a class="dropdown-item" href="degree-certification-guide.html">How to Get a Hague Apostille in China</a></li>
+<li><a class="dropdown-item" href="shenzhen-degree-notarization.html">How to Certify Degrees / Diplomas in China</a></li>
+<li><a class="dropdown-item" href="embassy-certification-guide.html">How to Get Embassy Legalization</a></li>
+</ul>
+</li>
+<!-- 其他菜单 -->
+<li class="nav-item">
+<a class="nav-link" data-file="cases.html" href="cases-en.html">Cases</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-file="about.html" href="about-en.html">About Us</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" data-file="faq.html" href="faq-en.html">FAQ</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-file="reviews.html" href="reviews-en.html">Reviews</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-file="contact-zh.html" href="contact-en.html">Contact</a>
+</li>
+</ul>
+<!-- 语言切换 -->
+<div class="ms-3">
+<a class="lang-btn" href="faq.html">中文</a>
+<a class="lang-btn" href="faq-en.html">EN</a>
+</div>
+</div>
+</div>
+</nav><main>
+<section class="faq-hero">
+<div class="container">
+<div class="row g-4 align-items-center">
+<div class="col-lg-7">
+<div class="faq-kicker">FAQ · Frequently Asked Questions</div>
+<h1 class="faq-title">FAQ — Frequently Asked Questions</h1>
+<p class="faq-lead">Here we have collected common questions clients ask when applying for China Police Certificates, Hague or embassy legalisation, degree verification and study-in-China programmes. The answers below are general guidance only; specific requirements may vary by country, city and policy updates, and you should always follow the latest instructions issued by the relevant authorities.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="faq-section">
+<div class="container">
+<div class="row g-4">
+<div class="col-lg-8">
+<h2>1. General Service Process</h2>
+<div class="accordion faq-accordion" id="faqGeneral">
+<div class="accordion-item">
+<h2 class="accordion-header" id="genOne">
+<button aria-controls="genOneBody" aria-expanded="true" class="accordion-button" data-bs-target="#genOneBody" data-bs-toggle="collapse" type="button">1. Are you the authority that issues the documents? What exactly do your services cover?</button>
+</h2>
+<div aria-labelledby="genOne" class="accordion-collapse collapse show" data-bs-parent="#faqGeneral" id="genOneBody">
+<div class="accordion-body">No. We are a professional service provider registered in Shenzhen, offering consultation, document preparation, process planning, and progress tracking for China-related compliance documents. The official issuing bodies remain the legally authorised institutions, such as public security bureaus, notary offices, the Ministry of Foreign Affairs or its authorised units, Chinese embassies and consulates, and the CSCSE for degree verification. We design suitable application paths based on your destination country and purpose to reduce delays and costs caused by information gaps.</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="genTwo">
+<button aria-controls="genTwoBody" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#genTwoBody" data-bs-toggle="collapse" type="button">2. I am currently outside China. Can I still entrust you to handle the process?</button>
+</h2>
+<div aria-labelledby="genTwo" class="accordion-collapse collapse" data-bs-parent="#faqGeneral" id="genTwoBody">
+<div class="accordion-body">Yes. Most of our clients live outside China, including in North America, Europe, Southeast Asia and the Middle East. Communication is usually carried out via email or video call. We will advise you in advance whether original documents need to be mailed and estimate a timeline so that you can plan immigration, visa or employment steps reasonably.</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="genThree">
+<button aria-controls="genThreeBody" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#genThreeBody" data-bs-toggle="collapse" type="button">3. How long does the whole process take? Is there an expedited option?</button>
+</h2>
+<div aria-labelledby="genThree" class="accordion-collapse collapse" data-bs-parent="#faqGeneral" id="genThreeBody">
+<div class="accordion-body">The overall timeline depends on the city, the workload of the issuing authority and the completeness of your materials. As a general guide, a China Police Certificate, notarisation/legalisation, or degree verification may take from several business days to multiple weeks. Some cities or institutions offer expedited processing with limited quotas. After assessing your case, we will provide a realistic time estimate and, where possible, help you obtain faster progress.</div>
+</div>
+</div>
+</div>
+<h2 class="mt-4">2. China Police Certificate (PCC)</h2>
+<div class="accordion faq-accordion" id="faqPcc">
+<div class="accordion-item">
+<h2 class="accordion-header" id="pccOne">
+<button aria-controls="pccOneBody" aria-expanded="true" class="accordion-button" data-bs-target="#pccOneBody" data-bs-toggle="collapse" type="button">1. Do I need to appear in person to apply for a China Police Certificate?</button>
+</h2>
+<div aria-labelledby="pccOne" class="accordion-collapse collapse show" data-bs-parent="#faqPcc" id="pccOneBody">
+<div class="accordion-body">Not always. Requirements vary by city and local public security bureau policies. Some cities allow authorised representatives to apply using a power of attorney and ID copies, while others require that you have previously completed residence registration locally or still hold a valid relationship record in that city. We will assess your residence history and timeframe and then advise the feasible options and required authorisation documents.</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="pccTwo">
+<button aria-controls="pccTwoBody" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#pccTwoBody" data-bs-toggle="collapse" type="button">2. If I lived in multiple cities, do I need to apply for multiple PCCs?</button>
+</h2>
+<div aria-labelledby="pccTwo" class="accordion-collapse collapse" data-bs-parent="#faqPcc" id="pccTwoBody">
+<div class="accordion-body">Often yes. Immigration authorities generally require China Police Certificates that cover all periods of residence in China. Some countries focus on the most recent or primary place of residence, while others require records from multiple cities. Before starting we will plan the combination that best fits your destination country’s policies.</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="pccThree">
+<button aria-controls="pccThreeBody" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#pccThreeBody" data-bs-toggle="collapse" type="button">3. Can a PCC be used directly for immigration or visa applications?</button>
+</h2>
+<div aria-labelledby="pccThree" class="accordion-collapse collapse" data-bs-parent="#faqPcc" id="pccThreeBody">
+<div class="accordion-body">Usually not by itself. Most immigration and visa programmes require that the PCC be used together with notarisation, Hague apostille or embassy legalisation, depending on whether the destination country recognises the Hague Convention. We will design the appropriate certification chain so that your PCC is fully valid and accepted.</div>
+</div>
+</div>
+</div>
+<h2 class="mt-4">3. Hague Apostille / Embassy Legalisation</h2>
+<div class="accordion faq-accordion" id="faqLegal">
+<div class="accordion-item">
+<h2 class="accordion-header" id="legOne">
+<button aria-controls="legOneBody" aria-expanded="true" class="accordion-button" data-bs-target="#legOneBody" data-bs-toggle="collapse" type="button">1. How do I know whether I need a Hague apostille or embassy legalisation?</button>
+</h2>
+<div aria-labelledby="legOne" class="accordion-collapse collapse show" data-bs-parent="#faqLegal" id="legOneBody">
+<div class="accordion-body">If your destination country is a Hague Convention member and clearly accepts China-issued apostilled documents, you normally follow the route of notarisation plus Hague apostille. If your destination country is not a Hague member or local authorities require consular authentication, you will need the route of notarisation plus Ministry of Foreign Affairs authentication plus consular legalisation. We will confirm the correct path based on your intended use and the latest policies.</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="legTwo">
+<button aria-controls="legTwoBody" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#legTwoBody" data-bs-toggle="collapse" type="button">2. What steps are involved in a typical notarisation/apostille/legalisation process? What documents are needed?</button>
+</h2>
+<div aria-labelledby="legTwo" class="accordion-collapse collapse" data-bs-parent="#faqLegal" id="legTwoBody">
+<div class="accordion-body">Taking academic documents as an example, the usual steps are: first obtain notarisation for the degree or transcript, then process a Hague apostille or Ministry of Foreign Affairs authentication, and finally submit the documents to the relevant embassy or consulate if consular legalisation is required. Common materials include original documents, identification, powers of attorney and required translations. The exact checklist will be adjusted according to the city and receiving authority.</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="legThree">
+<button aria-controls="legThreeBody" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#legThreeBody" data-bs-toggle="collapse" type="button">3. Do apostilles or embassy legalisations expire?</button>
+</h2>
+<div aria-labelledby="legThree" class="accordion-collapse collapse" data-bs-parent="#faqLegal" id="legThreeBody">
+<div class="accordion-body">The certifications themselves usually do not have a fixed expiry date, but whether they are accepted in practice depends on the time limits set by the institution that receives them. Some immigration and visa programmes, for example, require documents issued within the last few months. We therefore recommend confirming your application timeline first so that documents are issued within a reasonable period and do not need to be redone.</div>
+</div>
+</div>
+</div>
+<h2 class="mt-4">4. Degree Verification / CHSI / WES</h2>
+<div class="accordion faq-accordion" id="faqEdu">
+<div class="accordion-item">
+<h2 class="accordion-header" id="eduOne">
+<button aria-controls="eduOneBody" aria-expanded="true" class="accordion-button" data-bs-target="#eduOneBody" data-bs-toggle="collapse" type="button">1. For career development in China, is CSCSE degree verification always required?</button>
+</h2>
+<div aria-labelledby="eduOne" class="accordion-collapse collapse show" data-bs-parent="#faqEdu" id="eduOneBody">
+<div class="accordion-body">It depends on your actual purpose. For household registration, some civil service exams, public institution recruitment and certain talent-introduction programmes, CSCSE degree verification is normally mandatory. Some market-based positions may treat it only as a reference. We will evaluate your target city and job type and advise whether you should complete CSCSE verification.</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="eduTwo">
+<button aria-controls="eduTwoBody" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#eduTwoBody" data-bs-toggle="collapse" type="button">2. What is the difference between WES evaluation and China’s CSCSE verification?</button>
+</h2>
+<div aria-labelledby="eduTwo" class="accordion-collapse collapse" data-bs-parent="#faqEdu" id="eduTwoBody">
+<div class="accordion-body">WES is an independent third-party evaluation agency widely used in North America for continued studies and professional qualification review, with reports intended mainly for schools, employers and associations. CSCSE verification is the official degree verification issued by the Ministry of Education’s Study Abroad Service Centre, used mainly for domestic hukou, civil service exams, talent programmes and employer reviews. Their purposes differ; some clients need both, and we can help you plan the order.</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="eduThree">
+<button aria-controls="eduThreeBody" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#eduThreeBody" data-bs-toggle="collapse" type="button">3. How are CHSI verifications and transcript submissions handled? How long do they take?</button>
+</h2>
+<div aria-labelledby="eduThree" class="accordion-collapse collapse" data-bs-parent="#faqEdu" id="eduThreeBody">
+<div class="accordion-body">CHSI academic verification and transcript dispatch are usually handled by your university or designated institutions through their internal systems. We can help you confirm whether your school provides the required channels and clarify the specific verification method for each project. Some applications require the university to send electronic reports directly to a designated institution, and processing time may range from a few days to several weeks depending on the school and peak periods.</div>
+</div>
+</div>
+</div>
+<h2 class="mt-4">5. Studying in China &amp; Scholarships</h2>
+<div class="accordion faq-accordion" id="faqStudy">
+<div class="accordion-item">
+<h2 class="accordion-header" id="studyOne">
+<button aria-controls="studyOneBody" aria-expanded="true" class="accordion-button" data-bs-target="#studyOneBody" data-bs-toggle="collapse" type="button">1. What types of study-in-China programmes can you assist with?</button>
+</h2>
+<div aria-labelledby="studyOne" class="accordion-collapse collapse show" data-bs-parent="#faqStudy" id="studyOneBody">
+<div class="accordion-body">We mainly support full-time degree programmes and some long-term language programmes, including bachelor’s, master’s, doctoral and joint-training options. Services typically cover school and programme selection advice, application document preparation, timeline planning and communication support with universities. Specific options will be suggested based on your academic background, language ability and target cities.</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="studyTwo">
+<button aria-controls="studyTwoBody" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#studyTwoBody" data-bs-toggle="collapse" type="button">2. What scholarship-related assistance can you provide?</button>
+</h2>
+<div aria-labelledby="studyTwo" class="accordion-collapse collapse" data-bs-parent="#faqStudy" id="studyTwoBody">
+<div class="accordion-body">We can help you identify suitable scholarship types, align them with project requirements and plan application timelines. We also provide suggestions and revisions for personal statements, recommendation letters and material structure. Scholarship decisions are ultimately made by universities or related institutions, but better-targeted materials can significantly improve the completeness and competitiveness of your application.</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="studyThree">
+<button aria-controls="studyThreeBody" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#studyThreeBody" data-bs-toggle="collapse" type="button">3. How do study-in-China applications connect with later visa processing?</button>
+</h2>
+<div aria-labelledby="studyThree" class="accordion-collapse collapse" data-bs-parent="#faqStudy" id="studyThreeBody">
+<div class="accordion-body">Typically, once you receive an admission notice or invitation, you will prepare visa materials according to the requirements of the school and city, such as the JW form, admission notice, financial proof and medical examination certificate. While assisting you with the application documents, we will also remind you of key visa-related time nodes so that incomplete preparation does not affect your enrollment.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="faq-cta-wrap">
+<div class="faq-cta-box">
+<h3>Didn’t find your question?</h3>
+<p>Each country, project and city may have different requirements. If your situation is more complex or your timeline is tight, you are welcome to send us a brief description of your needs and schedule. We will provide one-on-one preliminary advice based on your case.</p>
+<a class="btn btn-success mb-2" href="contact-en.html">Get a Quote & Consultation</a>
+<p class="mb-0">To help us evaluate more accurately, you can also indicate your target country, purpose (immigration, visa, employment, study, etc.) and expected document use time when you contact us.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="py-4 bg-dark text-light text-center">
+<p class="mb-0">© <span id="y">GLOBAL EDU OFFER LIMITED</span></p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
