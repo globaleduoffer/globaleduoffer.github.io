@@ -9,7 +9,22 @@
   <style>
     body { font-family: "Times New Roman", Times, serif !important; }
     .page-wrapper { padding: 4rem 1rem; }
-  </style>
+  
+/* CTA buttons in navbar */
+.cta-btn,
+.cta-btn-outline {
+  white-space: nowrap;
+}
+
+@media (max-width: 991.98px) {
+  .cta-btn,
+  .cta-btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+</style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
@@ -17,14 +32,21 @@
     <a class="navbar-brand" href="index-en.html">
       <span>GLOBAL EDU OFFER LIMITED</span>
     </a>
+
     <button class="navbar-toggler" type="button"
             data-bs-toggle="collapse" data-bs-target="#nav"
             aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index-en.html">Home</a></li>
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <!-- Home -->
+        <li class="nav-item">
+          <a class="nav-link" href="index-en.html">Home</a>
+        </li>
+
+        <!-- Services -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="services-en.html"
              id="serviceDropdownEn" role="button"
@@ -38,6 +60,8 @@
             <li><a class="dropdown-item" href="study-in-china-en.html">Study in China</a></li>
           </ul>
         </li>
+
+        <!-- Guides -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#"
              id="howToDropdownEn" role="button"
@@ -51,19 +75,43 @@
             <li><a class="dropdown-item" href="embassy-certification-guide.html">How to Apply for Embassy / Consular Legalization</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="cases-en.html">Cases</a></li>
-        <li class="nav-item"><a class="nav-link" href="about-en.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="faq-en.html">FAQ</a></li>
-        <li class="nav-item"><a class="nav-link" href="reviews-en.html">Reviews</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact-en.html">Contact</a></li>
+
+        <!-- Other Menu -->
+        <li class="nav-item">
+          <a class="nav-link" href="cases-en.html">Cases</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about-en.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq-en.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reviews-en.html">Reviews</a>
+        </li>
       </ul>
-      <div class="ms-3">
-        <a class="lang-btn" href="index.html">中文</a>
-        <a class="lang-btn" href="index-en.html">EN</a>
+
+      <!-- CTA + Language Switch -->
+      <div class="d-flex flex-column flex-lg-row align-items-lg-center ms-lg-3 mt-3 mt-lg-0 gap-2">
+        <a href="contact-en.html"
+           class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn">
+          Book a Free Consultation
+        </a>
+        <a href="https://wa.me/8618382170804"
+           class="btn btn-outline-success btn-sm rounded-pill px-3 cta-btn-outline"
+           target="_blank" rel="noopener">
+          WhatsApp
+        </a>
+
+        <div class="ms-lg-2 d-flex gap-2">
+          <a class="lang-btn" href="index.html">中文</a>
+          <a class="lang-btn" href="index-en.html">EN</a>
+        </div>
       </div>
     </div>
   </div>
 </nav>
+
 <div class="page-wrapper container">
   <h1>Our Services</h1>
   <p>This page will introduce all service categories in detail. For now, please use the menu above to visit each service page.</p>
