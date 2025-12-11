@@ -1,185 +1,247 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>外国人来华留学 | 深圳环球学旅教育科技有限公司</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+  <title>外国人来华留学服务 | 中国高校申请与签证指导</title>
+
+  <meta name="description" content="为计划来中国留学的国际学生提供院校与专业选择、申请材料指导、录取与签证办理支持等服务，覆盖本科、硕士、博士及中文进修项目，帮助学生顺利入读中国高校。"/>
+
+    <meta name="keywords" content="外国人来华留学,中国留学申请,来华留学生服务,中国大学申请,留学中国,国际学生中国留学"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-<link rel="stylesheet" href="assets/style.css"/>
-<style>
-body {margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#0b1120;color:#0f172a;}
-a{text-decoration:none;}
-.hero{
-  background:linear-gradient(135deg,#1e3a8a,#020617);
-  color:white;
-  padding:4rem 0 4.5rem;
-}
-.hero-inner{
-  max-width:1140px;
-  padding:0 12px;
-  margin:0 auto;
-  display:flex;
-  gap:2.5rem;
-  align-items:center;
-}
-.hero-text h1{
-  font-size:2.6rem;
-  line-height:1.25;
-  margin:0 0 1.2rem;
-}
-.hero-text p{
-  margin:0 0 1.8rem;
-  font-size:1rem;
-  max-width:32rem;
-}
-.hero-btn{
-  display:inline-block;
-  padding:0.8rem 1.8rem;
-  border-radius:999px;
-  background:#22c55e;
-  color:#fff;
-  font-size:1rem;
-  font-weight:600;
-}
-.hero-btn:hover{
-  background:#16a34a;
-}
-.hero-image{
-  flex:1;
-  border-radius:28px;
-  overflow:hidden;
-  box-shadow:0 24px 60px rgba(15,23,42,.6);
-}
-.hero-image img{
-  display:block;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-.main{
-  background:#f9fafb;
-  padding:3.5rem 1rem 4rem;
-}
-.section{
-  max-width:1140px;
-  padding:0 12px;
-  margin:0 auto 3rem;
-}
-.section h2{
-  font-size:1.75rem;
-  margin:0 0 1.8rem;
-}
-.cards{
-  display:flex;
-  flex-direction:column;
-  gap:1.5rem;
-}
-.card{
-  background:#ffffff;
-  border-radius:24px;
-  padding:1.6rem 1.8rem;
-  box-shadow:0 18px 40px rgba(15,23,42,.06);
-}
-.card-title{
-  font-size:1.05rem;
-  font-weight:700;
-  margin-bottom:0.4rem;
-}
-.card-title span{
-  margin-right:0.35rem;
-}
-.card p{
-  margin:0.25rem 0 0;
-  font-size:0.96rem;
-  line-height:1.7;
-  color:#374151;
-}
-.fees-card{
-  background:#ffffff;
-  border-radius:24px;
-  padding:1.8rem 1.9rem;
-  box-shadow:0 18px 40px rgba(15,23,42,.06);
-}
-.fees-card p{
-  margin:0.6rem 0;
-  font-size:0.96rem;
-  color:#374151;
-}
-.fees-card strong{
-  font-weight:700;
-}
-.fees-link{
-  color:#2563eb;
-  text-decoration:underline;
-}
-footer{
-  background:#020617;
-  color:#9ca3af;
-  text-align:center;
-  padding:1.4rem 1rem;
-  font-size:0.85rem;
-}
-@media (max-width:900px){
-  .hero-inner{flex-direction:column;}
-  .hero-text h1{font-size:2.2rem;}
-}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="assets/style.css"/>
 
-.navbar {
-  padding-top: 0.85rem;
-  padding-bottom: 0.85rem;
-  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
-  background-color: #ffffff;
-}
+  <style>
+    body { font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif !important; }
 
-.navbar-brand span {
-  font-weight: 600;
-  letter-spacing: 0.03em;
-}
+    .page-hero {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4rem 0 4.5rem;
+    }
+    .page-hero h1 {
+      font-size: clamp(2.2rem, 3.5vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+    }
+    .page-hero p {
+      max-width: 40rem;
+      opacity: 0.9;
+      font-size: 1rem;
+    }
+    .page-hero .hero-illustration {
+      border-radius: 32px;
+      overflow: hidden;
+      background: #0f172a;
+      box-shadow:
+        0 22px 50px rgba(15, 23, 42, 0.55),
+        0 0 0 1px rgba(148, 163, 184, 0.2);
+      min-height: 260px;
+    }
+    .page-hero .hero-illustration img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
-.navbar-nav .nav-link {
-  font-size: 0.95rem;
-  padding: 0.4rem 0.9rem;
-  color: #0f172a;
-}
+    .navbar {
+      padding-top: 0.85rem;
+      padding-bottom: 0.85rem;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+    }
+    .navbar-brand span {
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+    .navbar-nav .nav-link {
+      font-size: 1rem;
+      padding: 0.4rem 0.9rem;
+    }
+    .navbar-nav .nav-link.active {
+      font-weight: 600;
+    }
+    .navbar .dropdown-menu {
+      background-color: #111827;
+      border-radius: 0;
+      border: none;
+      padding: 0.7rem 0;
+      min-width: 260px;
+    }
+    .navbar .dropdown-item {
+      color: #e5e7eb;
+      padding: 0.55rem 1.4rem;
+      font-size: 0.92rem;
+      white-space: normal;
+    }
+    .navbar .dropdown-item:hover,
+    .navbar .dropdown-item:focus {
+      background-color: #1f2937;
+      color: #fff;
+    }
+    .lang-btn {
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+      text-decoration: none;
+    }
+    .lang-btn:hover { text-decoration: underline; }
 
-.navbar-nav .nav-link.active {
-  font-weight: 600;
-}
+    .sec {
+      padding: 3.5rem 0;
+    }
+    .sec-muted {
+      background-color: #f9fafb;
+    }
+    .sec-title {
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+    }
+    .sec-lead {
+      font-size: 1rem;
+      color: #4b5563;
+      max-width: 40rem;
+    }
 
-.navbar .dropdown-menu {
-  background-color: #111827;
-  border-radius: 0;
-  border: none;
-  padding: 0.7rem 0;
-  min-width: 260px;
-}
+    .pill {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 0.18rem 0.75rem;
+      background-color: #eff6ff;
+      color: #1d4ed8;
+      font-size: 0.78rem;
+      margin-right: 0.35rem;
+      margin-bottom: 0.35rem;
+    }
 
-.navbar .dropdown-item {
-  color: #e5e7eb;
-  padding: 0.55rem 1.4rem;
-  font-size: 0.92rem;
-  white-space: normal;
-}
+    .card-soft {
+      border-radius: 1.5rem;
+      background-color: #ffffff;
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+      padding: 1.6rem 1.7rem;
+      height: 100%;
+    }
+    .card-soft h5 {
+      font-size: 1.05rem;
+      margin-bottom: 0.6rem;
+    }
+    .card-soft ul {
+      font-size: 0.93rem;
+      padding-left: 1.1rem;
+      margin-bottom: 0.4rem;
+    }
+    .card-soft li + li {
+      margin-top: 0.2rem;
+    }
 
-.navbar .dropdown-item:hover,
-.navbar .dropdown-item:focus {
-  background-color: #1f2937;
-  color: #fff;
-}
+    .steps-title {
+      text-align: center;
+      font-size: 1.6rem;
+      margin-bottom: 2.4rem;
+    }
+    .step-item {
+      border-radius: 1.4rem;
+      background-color: #ffffff;
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.04);
+      padding: 1.3rem 1.4rem;
+      height: 100%;
+      display: flex;
+      gap: 1rem;
+    }
+    .step-number {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      background-color: #22c55e;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-top: 0.15rem;
+    }
+    .step-item h6 {
+      font-size: 0.98rem;
+      margin-bottom: 0.3rem;
+    }
+    .step-item p {
+      font-size: 0.92rem;
+      color: #4b5563;
+      margin-bottom: 0;
+    }
 
-.lang-btn {
-  font-size: 0.9rem;
-  margin-left: 0.5rem;
-  text-decoration: none;
-  color: #0f172a;
-}
+    .faq-item + .faq-item {
+      margin-top: 1.1rem;
+    }
+    .faq-q {
+      font-weight: 600;
+      font-size: 0.98rem;
+    }
+    .faq-a {
+      font-size: 0.93rem;
+      color: #4b5563;
+      margin-top: 0.25rem;
+    }
 
-.lang-btn:hover {
-  text-decoration: underline;
-}
+    .fees-section {
+      padding: 3.7rem 0 4.2rem;
+      background-image: linear-gradient(to bottom, rgba(15,23,42,0.9), rgba(15,23,42,0.96)), url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #e5e7eb;
+    }
+    .fees-card {
+      max-width: 780px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 2.5rem 2.3rem;
+      border-radius: 1.8rem;
+      background: rgba(15, 23, 42, 0.86);
+      box-shadow: 0 22px 50px rgba(15, 23, 42, 0.7);
+    }
+    .fees-card h2 {
+      color: #fff;
+      margin-bottom: 1.3rem;
+    }
+    .fees-divider {
+      width: 80px;
+      height: 2px;
+      background-color: #38bdf8;
+      margin: 0.4rem auto 1.4rem;
+    }
+    .fees-card p {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+    }
+    .fees-card a {
+      color: #38bdf8;
+      text-decoration: underline;
+    }
 
+    footer { font-size: 0.92rem; }
+  
+
+    .page-hero .btn.hero-btn {
+      background-color: #22c55e;
+      border-radius: 999px;
+      padding: 0.55rem 1.4rem;
+      font-weight: 500;
+      border: none;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(22, 163, 74, 0.35);
+    }
+    .page-hero .btn.hero-btn:hover {
+      background-color: #16a34a;
+      color: #fff;
+      border-color: transparent;
+    }
+
+  
 /* CTA buttons in navbar */
 .cta-btn,
 .cta-btn-outline {
@@ -194,10 +256,34 @@ footer{
   }
 }
 
+
+    .seo-extra {
+      background-color: #020617;
+      color: #e5e7eb;
+    }
+    .seo-extra h3,
+    .seo-extra h4 {
+      color: #f9fafb;
+      font-size: 1.05rem;
+    }
+    .seo-extra p {
+      font-size: 1rem;
+      color: #e5e7eb;
+      margin-bottom: 0.6rem;
+      opacity: 0.9;
+    }
+
+    .footer-text {
+      font-size: 1rem;
+    }
 </style>
+  <link rel="alternate" href="study-in-china-en.html" hreflang="en"/>
+  <link rel="alternate" href="study-in-china-zh.html" hreflang="zh-Hans"/>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How early should I start preparing to study in China?", "acceptedAnswer": {"@type": "Answer", "text": "It is advisable to start planning 6–12 months in advance, including language preparation, university and program research, document collection, and online applications. Competitive universities and scholarship schemes often close earlier."}}, {"@type": "Question", "name": "Do I need Chinese language skills to study in China?", "acceptedAnswer": {"@type": "Answer", "text": "Chinese-taught degree programs usually require a certain HSK level, while English-taught programs focus more on English proficiency such as IELTS or TOEFL. Suitable options can be recommended based on the student's language level."}}, {"@type": "Question", "name": "What budget do I need for tuition and living expenses in China?", "acceptedAnswer": {"@type": "Answer", "text": "Costs vary by city and institution, but annual tuition for bachelor and master programs is often in the range of RMB 15,000–50,000. Adding accommodation, food, insurance, and daily expenses, the total cost is usually lower than in many Western destinations."}}, {"@type": "Question", "name": "What should I pay attention to when applying for a Chinese student visa?", "acceptedAnswer": {"@type": "Answer", "text": "Ensure that the information on the admission notice, JW form, and passport is consistent, and prepare photos, medical checks, and financial proofs as required by the embassy or consulate. After arrival, residence permits and accommodation registration must be completed on time."}}, {"@type": "Question", "name": "Does the Study in China service include support after arrival?", "acceptedAnswer": {"@type": "Answer", "text": "Depending on the student's needs, support can include guidance on registration, practical advice on daily life, and assistance with communication with the university, helping them adapt more quickly to studying and living in China."}}]}
+</script>
 </head>
 <body>
-
 <nav class="navbar navbar-expand-lg">
   <div class="container">
     <a class="navbar-brand" href="index.html">
@@ -286,77 +372,231 @@ footer{
 </nav>
 
 
-
-<header class="hero">
-  <div class="hero-inner">
-    <div class="hero-text">
-      <h1>帮助外国学生顺利来华留学</h1>
-      <p>我们为计划来中国学习的外国学生提供从院校与专业筛选、申请材料准备、签证与行前准备，到来华报到和生活指导在内的一站式协助服务。</p>
-      <a href="contact-zh.html" class="hero-btn">咨询留学方案</a>
-    </div>
-    <div class="hero-image">
-      <img src="assets/images/study-in-china-hero.png" alt="中国高校校园建筑"/>
+<header class="page-hero">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6">
+        <p class="hero-kicker">来华留学 · 大学申请全流程支持</p>
+        <h1>为国际学生提供一站式来华留学规划与申请服务。</h1>
+        <p>
+          中国高校提供丰富的英文授课和中文授课学位项目，同时也有多种奖学金与职业发展机会。我们会结合您的实际背景，帮您看清真正适合的选择，而不是一味“冲名校”。
+        </p>
+        <p>
+          从梳理目标、选择院校与专业、准备申请材料，到拿到录取后办理签证和来华报到，我们都会在每一个关键步骤陪伴您，让您更安心地开启在中国的学习生活。
+        </p>
+        <div class="mt-4">
+          <a href="contact-en.html" class="btn hero-btn">获取方案与报价</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-illustration">
+          <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1200&q=80"
+               alt="International students studying in China"/>
+        </div>
+      </div>
     </div>
   </div>
 </header>
 
-<main class="main">
-  <section class="section">
-    <h2>来华留学服务内容</h2>
-    <div class="cards">
-
-      <div class="card">
-        <div class="card-title"><span>🏫</span>1. 院校与专业筛选</div>
-        <p>根据学生的学术背景、语言水平和职业目标，筛选适合的中国高校与专业方向，给出清晰的申请梯度与院校列表，帮助学生明确“去哪儿、学什么”。</p>
+<section class="sec sec-muted">
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-7">
+        <h2 class="sec-title">这项来华留学服务适合哪些学生？</h2>
+        <p class="sec-lead">
+          相比盲目跟风排名或广告，我们更关注那些希望做出理性、务实选择的学生。如果您符合下面任何一种情况，这项服务都适合您：
+        </p>
+        <ul class="mt-3" style="font-size:0.95rem; color:#4b5563;">
+          <li>计划申请中国高校的本科、硕士或中文进修等项目。</li>
+          <li>正在考虑转专业或转国家，希望了解中国是否适合作为下一步选择。</li>
+          <li>已经有心仪院校，但不确定自己的条件是否有竞争力。</li>
+          <li>希望将学业规划、实习体验与未来职业发展更好地衔接起来。</li>
+        </ul>
       </div>
-
-      <div class="card">
-        <div class="card-title"><span>📝</span>2. 申请材料准备</div>
-        <p>为学生提供个人陈述、简历、推荐信等材料的撰写思路和润色建议，并协助填写各类申请表格，确保提交给学校的材料清晰、完整且具有说服力。</p>
+      <div class="col-lg-5">
+        <div class="card-soft">
+          <h5>与我们合作的学生常见目标</h5>
+          <div class="mb-2">
+            <span class="pill">探索未来方向</span>
+            <span class="pill">取得被广泛认可的学历学位</span>
+            <span class="pill">提升中文 / 英文能力</span>
+            <span class="pill">积累在中国的实习或工作经历</span>
+          </div>
+          <p style="font-size:0.93rem; color:#4b5563;">
+            在讨论“去哪所大学”之前，我们会先一起梳理您的动机与限制条件：预算、语言水平、学术背景以及长远规划。把这些想清楚，选校与专业选择才更有意义。
+          </p>
+        </div>
       </div>
-
-      <div class="card">
-        <div class="card-title"><span>💻</span>3. 申请系统操作与过程协助</div>
-        <p>指导学生完成院校账号注册、线上申请系统的填写、材料上传及申请费支付，并跟踪每所学校的系统状态，避免因操作疏漏而影响申请结果。</p>
-      </div>
-
-      <div class="card">
-        <div class="card-title"><span>📩</span>4. 录取阶段跟进</div>
-        <p>在申请提交后，持续关注院校反馈与录取进展，提醒学生及时查看邮件与系统通知，并在学校要求补件或面试时提供应对建议。</p>
-      </div>
-
-      <div class="card">
-        <div class="card-title"><span>📄</span>5. 来华签证材料准备</div>
-        <p>指导准备 JW202 / JW201、录取通知书、财力证明、体检报告等签证材料，对关键文件进行查漏补缺，帮助学生顺利完成签证申请与递交。</p>
-      </div>
-
-      <div class="card">
-        <div class="card-title"><span>🏠</span>6. 抵达后注册与生活指导</div>
-        <p>协助学生完成报到注册、宿舍办理、手机卡与银行卡开通等事项，并提供所在城市生活建议与安全提示，让学生尽快适应在华学习与生活。</p>
-      </div>
-
-      <div class="card">
-        <div class="card-title"><span>🎓</span>7. 奖学金申请支持</div>
-        <p>根据学生背景与目标院校，评估可申请的奖学金项目（如中国政府奖学金、高校奖学金等），提供申请策略、材料指导与进度提醒，帮助学生提升投入产出比。</p>
-      </div>
-
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section">
-    <h2>费用与办理时间</h2>
+<section class="sec bg-white">
+  <div class="container">
+    <h2 class="sec-title mb-3">我们具体能为你做些什么？</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card-soft h-100">
+          <h5>1. 基于真实录取数据的院校与专业筛选</h5>
+          <p style="font-size:0.93rem; color:#4b5563;">
+            我们会综合您的学术背景、成绩、语言水平与预算，并结合真实录取数据，把申请划分为“冲刺校”“匹配校”“保底校”，而不是只看学校名气和排名。
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-soft h-100">
+          <h5>2. 个性化申请时间表与策略规划</h5>
+          <p style="font-size:0.93rem; color:#4b5563;">
+            我们会为您制定个性化的申请时间表，涵盖语言考试、材料准备、网申提交、面试以及奖学金机会，让您在每个阶段都清楚下一步要做什么。
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-soft h-100">
+          <h5>3. 申请材料与对外沟通支持</h5>
+          <p style="font-size:0.93rem; color:#4b5563;">
+            我们指导您准备个人陈述、推荐信、简历等关键材料，并在需要与学校沟通时，协助您用清晰专业的方式表达问题与诉求。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-muted">
+  <div class="container">
+    <h2 class="steps-title">典型来华留学申请流程</h2>
+    <div class="row g-3">
+      <div class="col-md-6 col-lg-4">
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <div>
+            <h6>了解你的背景与需求</h6>
+            <p>我们会了解你的学习经历、语言成绩、兴趣方向与预算，并一起讨论你短期与长期的规划。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <div>
+            <h6>确定申请院校与专业组合</h6>
+            <p>我们协助你确定适合的院校与专业清单，并按照“冲刺、匹配、保底”进行分层，让整体方案更稳妥。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <div>
+            <h6>准备与打磨申请材料</h6>
+            <p>我们会协助你构思与润色个人陈述，协调推荐信，同时整理成绩单与各种证明文件，尽量减少遗漏。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="step-item">
+          <div class="step-number">4</div>
+          <div>
+            <h6>递交网申并跟进状态</h6>
+            <p>我们协助你完成各院校网申系统的信息填写与材料上传，并及时跟踪每所院校的状态更新。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="step-item">
+          <div class="step-number">5</div>
+          <div>
+            <h6>录取确定后签证与来华准备</h6>
+            <p>在拿到录取后，我们会一起确认奖学金与录取条件，指导你准备签证材料，并帮助你为来华生活做更充分的准备。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="fees-section">
+  <div class="container">
     <div class="fees-card">
-      <p>来华留学协助服务费用通常从 <strong>400 美元</strong> 起，具体取决于申请院校数量、材料复杂度以及是否需要加急处理等因素。</p>
-      <p>大学申请审核周期一般为 <strong>4–12 周</strong> 左右，签证办理时间则因所在国家及使领馆排期而有所差异。</p>
-      <p>想快速了解您的情况？<a href="contact-zh.html" class="fees-link">点击这里联系顾问</a>，获取一对一评估与报价。</p>
+      <h2>服务费用与后续步骤</h2>
+      <div class="fees-divider"></div>
+      <p>
+        Our Study in China assistance service fee typically starts from <strong>USD 400</strong>,
+        depending on the number of universities you apply to, the complexity of your documents,
+        and whether expedited processing is required.
+      </p>
+      <p>
+        University application review usually takes around <strong>4–12 weeks</strong>.
+        Visa processing time varies by country and by the schedule of the local Chinese embassy or consulate.
+      </p>
+      <p class="mb-0">
+        Want to quickly understand your own situation?
+        <a href="contact-en.html">Click here to contact our consultant</a> for a one-on-one evaluation and quotation.
+      </p>
     </div>
-  </section>
-</main>
+  </div>
+</section>
 
-<footer>
-  © 2024 深圳环球学旅教育科技有限公司
+
+
+<section class="faq-section py-5">
+  <div class="container">
+    <h2 class="mb-4">常见问题 FAQ</h2>
+    <div class="faq-item">
+      <h3 class="faq-q">Q1：申请来华留学，一般需要提前多长时间开始准备？</h3>
+      <p class="faq-a">
+        一般建议至少提前 6–12 个月开始规划，包括语言学习、了解学校与专业、准备材料以及网申。部分竞争较激烈的院校和奖学金项目截止时间更早，越早准备，选择越多，成功率也越高。
+      </p>
+    </div>
+    <div class="faq-item mt-3">
+      <h3 class="faq-q">Q2：来华留学一定要会中文吗？</h3>
+      <p class="faq-a">
+        这取决于你申请的项目类型。中文授课的学位项目通常需要达到一定的 HSK 水平；英文授课项目则更看重雅思、托福等英文成绩。我们会根据你目前的语言水平，推荐合适的项目和路径。
+      </p>
+    </div>
+    <div class="faq-item mt-3">
+      <h3 class="faq-q">Q3：在中国读书，一般需要准备多少学费和生活费？</h3>
+      <p class="faq-a">
+        不同城市和院校的费用会有差异，本科和硕士项目的年学费通常大致在人民币 1.5 万至 5 万之间。再加上住宿、餐饮、保险和日常开销，总体花费往往低于很多西方留学目的地。
+      </p>
+    </div>
+    <div class="faq-item mt-3">
+      <h3 class="faq-q">Q4：申请学生签证（X1 / X2）时有哪些要注意的？</h3>
+      <p class="faq-a">
+        首先要确保录取通知书、JW 表和护照上的关键信息一致，并按使领馆要求准备照片、体检证明和资金证明等材料。入境后，还需要在规定时间内办理居留许可和住宿登记。我们会提供清单与提醒，帮助你不遗漏重要步骤。
+      </p>
+    </div>
+    <div class="faq-item mt-3">
+      <h3 class="faq-q">Q5：你们的来华留学服务会管到入境之后吗？</h3>
+      <p class="faq-a">
+        根据你的需求，我们可以提供报到注册流程指引、日常生活小建议，并在需要时协助与你的学校沟通，帮你更快适应在中国的学习和生活。
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="seo-extra py-4">
+  <div class="container">
+    <h3 class="mb-3">延伸阅读：为国际学生规划更适合的来华留学路径</h3>
+    <p>
+      不同院校在招生名额、奖学金政策、语言要求以及录取节奏上差异明显，仅靠公开信息往往难以判断哪些项目真正适合自己。
+      如果申请节奏安排不合理，容易错过理想院校的截止日期，或者因为材料准备不足而错失奖学金机会。
+    </p>
+    <h4 class="mt-3">从选校到落地的全流程陪伴</h4>
+    <p>
+      我们会根据学生的语言基础、学术背景、预算和职业规划，提供更贴合实际的院校与专业建议，并协助准备个人陈述、推荐信、简历等关键材料。
+      在录取阶段，我们会持续跟进学校反馈并协助处理附加要求；进入签证环节后，还会就体检、保险、住宿以及入境后报到步骤给出清晰指引，
+      让学生更顺利地开启在中国的学习与生活。
+    </p>
+  </div>
+</section>
+
+<footer class="py-4 bg-dark text-light text-center">
+  <p class="mb-0 footer-text">© <span id="y"></span> <span>深圳环球学旅教育科技有限公司</span></p>
 </footer>
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/main.js"></script>
