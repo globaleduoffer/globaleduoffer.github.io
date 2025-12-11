@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WES学历认证服务 | 深圳环球学旅教育科技有限公司</title>
+  <meta name="description" content="面向计划赴美国、加拿大留学、移民或职业评估的申请人，提供WES学历认证（WES Credential Evaluation）全流程协助服务：方案评估、材料清单、翻译、院校寄送指导、提交与进度跟踪等。"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <style>
+    .hero-section {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4.5rem 0 5.5rem;
+    }
+    .hero-kicker {
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+      opacity: 0.85;
+      margin-bottom: 0.9rem;
+    }
+    .hero-title {
+      font-size: clamp(2.4rem, 4vw, 3.4rem);
+      line-height: 1.1;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    .hero-subtitle {
+      font-size: 1rem;
+      max-width: 32rem;
+      opacity: 0.9;
+      margin-bottom: 1.8rem;
+    }
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1rem;
+    }
+    .hero-btn {
+      background-color: #22c55e;
+      border-radius: 999px;
+      padding: 0.55rem 1.4rem;
+      font-weight: 500;
+      border: none;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(22, 163, 74, 0.35);
+    }
+    .hero-btn:hover {
+      background-color: #16a34a;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+    .hero-illustration {
+      border-radius: 32px;
+      overflow: hidden;
+      background: #0f172a;
+      box-shadow:
+        0 22px 50px rgba(15, 23, 42, 0.55),
+        0 0 0 1px rgba(148, 163, 184, 0.2);
+      min-height: 260px;
+    }
+    .hero-illustration img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: left center;
+    }
+    .navbar {
+      padding-top: 0.85rem;
+      padding-bottom: 0.85rem;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+    }
+    .navbar-brand span {
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+    .navbar-nav .nav-link {
+      font-size: 0.95rem;
+      padding: 0.4rem 0.9rem;
+    }
+    .navbar-nav .nav-link.active {
+      font-weight: 600;
+    }
+    .navbar .dropdown-menu {
+      background-color: #111827;
+      border-radius: 0;
+      border: none;
+      padding: 0.7rem 0;
+      min-width: 260px;
+    }
+    .navbar .dropdown-item {
+      color: #e5e7eb;
+      padding: 0.55rem 1.4rem;
+      font-size: 0.92rem;
+      white-space: normal;
+    }
+    .navbar .dropdown-item:hover,
+    .navbar .dropdown-item:focus {
+      background-color: #1f2937;
+      color: #fff;
+    }
+    .lang-btn {
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+      text-decoration: none;
+    }
+    .lang-btn:hover {
+      text-decoration: underline;
+    }
+    .page-hero {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4rem 0 4.5rem;
+    }
+    .page-hero h1 {
+      font-size: clamp(2.2rem, 3.5vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .page-hero p {
+      max-width: 40rem;
+      opacity: 0.9;
+    }
+    .section-note {
+      background-color: #f9fafb;
+      padding: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+    .section-note a {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+    .steps-section {
+      padding: 3.5rem 0 3.8rem;
+      background-color: #ffffff;
+    }
+    .steps-section h2 {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .step-card {
+      text-align: center;
+      padding: 1.8rem 1.3rem;
+    }
+    .step-number {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      background-color: #22c55e;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      margin-bottom: 0.9rem;
+    }
+    .step-title {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .step-text {
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+    .fees-section {
+      padding: 3.5rem 0 4rem;
+      background-image: linear-gradient(to bottom, rgba(15,23,42,0.88), rgba(15,23,42,0.96)), url('https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #e5e7eb;
+    }
+    .fees-card {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .fees-card h2 {
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+    .fees-card p {
+      margin-bottom: 0.85rem;
+    }
+    .fees-divider {
+      width: 80px;
+      height: 2px;
+      background-color: #38bdf8;
+      margin: 0.5rem auto 1.5rem;
+    }
+    .cta-btn,
+    .cta-btn-outline {
+      white-space: nowrap;
+    }
+    @media (max-width: 991.98px) {
+      .cta-btn,
+      .cta-btn-outline {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span>深圳环球学旅教育科技有限公司</span>
+    </a>
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#nav"
+            aria-controls="nav" aria-expanded="false" aria-label="切换导航">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" data-file="index.html">首页</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="services-en.html"
+             id="serviceDropdownZh" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            服务
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="serviceDropdownZh">
+            <li><a class="dropdown-item" href="china-police-certificate-zh.html">中国无犯罪证明</a></li>
+            <li><a class="dropdown-item" href="degree-verification-zh.html">学历学位认证</a></li>
+            <li><a class="dropdown-item" href="document-legalization-zh.html">文件认证 / 海牙 / 领事</a></li>
+            <li><a class="dropdown-item" href="study-in-china-zh.html">外国人来华留学</a></li>
+            <li><a class="dropdown-item" href="wes-cn.html">WES 学历认证</a></li>
+                      </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#"
+             id="howToDropdownZh" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            办理指南
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="howToDropdownZh">
+            <li><a class="dropdown-item" href="city-grid.html">如何办理中国无犯罪证明</a></li>
+            <li><a class="dropdown-item" href="degree-certification-guide-zh.html">如何在中国办理海牙认证</a></li>
+            <li><a class="dropdown-item" href="shenzhen-degree-notarization-zh.html">如何办理学历/学位认证</a></li>
+            <li><a class="dropdown-item" href="embassy-certification-guide-zh.html">如何办理使馆认证</a></li>
+            <li><a class="dropdown-item" href="wes-guide-zh.html">如何办理 WES 学历认证</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cases.html" data-file="cases.html">案例</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" data-file="about.html">关于我们</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html" data-file="faq.html">常见问题</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reviews.html" data-file="reviews.html">客户评价</a>
+        </li>
+      </ul>
+      <div class="d-flex flex-column flex-lg-row align-items-lg-center ms-lg-3 mt-3 mt-lg-0 gap-2">
+        <a href="contact-zh.html"
+           class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn">
+          免费咨询
+        </a>
+        <a href="https://wa.me/8618382170804"
+           class="btn btn-outline-success btn-sm rounded-pill px-3 cta-btn-outline"
+           target="_blank" rel="noopener">
+          WhatsApp
+        </a>
+        <div class="ms-lg-2 d-flex gap-2">
+          <a class="lang-btn" href="wes-cn.html">中文</a>
+          <a class="lang-btn" href="wes-en.html">EN</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <p class="hero-kicker">WES学历认证（WES Credential Evaluation）</p>
+        <h1>帮您完成美国 / 加拿大 WES 学历认证评估。</h1>
+        <p>
+          面向计划赴美国、加拿大留学、移民或职业评估的申请人，我们提供 WES 学历认证全流程协助服务：
+          评估方案、准备材料清单、翻译文件、指导院校寄送成绩单，以及协助在 WES 平台提交与跟踪进度。
+        </p>
+        <div class="mt-4">
+          <a href="contact-zh.html" class="btn hero-btn">咨询并获取初步评估</a>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <div class="hero-illustration">
+          <img src="WechatIMG642.jpg" alt="WES学历认证服务"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section-note">
+  <div class="container">
+    如果您计划自行申请 WES 学历认证，也欢迎向我们咨询流程和注意事项。
+    若希望由专业团队协助准备材料、翻译及提交，您可以随时
+    <a href="contact-zh.html">点击这里提交信息获取评估与报价</a>。
+  </div>
+</section>
+
+<section class="steps-section">
+  <div class="container">
+    <h2>6 步完成 WES 学历认证评估</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-title">提交咨询与学历背景</div>
+          <p class="step-text">
+            告诉我们您的最高学历、毕业院校、所在国家/地区及目标用途（留学 / 移民 / 职业），
+            我们会初步评估适合的 WES 评估类型和可行方案。
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-title">确认服务内容与费用</div>
+          <p class="step-text">
+            根据您的情况，我们会说明需要准备的文件、预计时间和服务内容，
+            确认后您可通过国际转账等方式支付服务费，我们随即开始处理。
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-title">准备材料与翻译</div>
+          <p class="step-text">
+            在我们的指导下，准备成绩单、毕业证 / 学位证等材料，
+            我们负责提供中英翻译、格式整理与初步审核，确保信息一致。
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <div class="step-title">院校寄送与线上提交</div>
+          <p class="step-text">
+            我们会指导您联系院校或档案馆按 WES 要求寄送正式成绩单，
+            同时协助在 WES 系统中上传及填写相关信息，减少操作错误。
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step-card">
+          <div class="step-number">5</div>
+          <div class="step-title">WES 评估与进度跟进</div>
+          <p class="step-text">
+            当 WES 收到全部文件后进入评估流程，我们会帮助关注状态变化，
+            如遇补件或说明要求，及时协助您进行回应或补充。
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step-card">
+          <div class="step-number">6</div>
+          <div class="step-title">获得评估报告与后续协助</div>
+          <p class="step-text">
+            WES 完成评估并出具报告后，我们会协助您确认内容，并根据院校或移民机构要求，
+            指导发送或后续使用方式，必要时提供补充说明建议。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fees-section">
+  <div class="container">
+    <div class="fees-card">
+      <h2>服务范围、费用与时间预估</h2>
+      <div class="fees-divider"></div>
+      <p>
+        我们的 WES 相关服务涵盖：翻译、材料审核、院校寄送指导、WES 账号与项目选择建议、
+        在线提交协助以及进度跟踪等。您可以根据自身需求选择单项或打包服务。
+      </p>
+      <p>
+        服务费用会根据学历层次、涉及院校数量、评估类型以及所需服务深度而有所不同。
+        在了解您的具体情况后，我们会提供清晰、透明的报价明细。
+      </p>
+      <p>
+        从 WES 收到完整材料开始，一般评估时间约为 <strong>7–20 个工作日</strong>。
+        若院校寄送较慢或需要额外核查，总体时间会适当延长，我们会如实向您说明预估周期。
+      </p>
+      <div class="fees-divider"></div>
+      <p>
+        想快速了解自己的选择？<a href="contact-zh.html">点击这里联系顾问，获取一对一评估建议。</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="py-4 bg-dark text-light text-center">
+  <p class="mb-0">© <span id="y"></span> <span>深圳环球学旅教育科技有限公司</span></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
