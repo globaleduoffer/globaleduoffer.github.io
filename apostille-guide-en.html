@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Apostille (Hague Certification) Guide (China)</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="A complete guide to Apostille (Hague Certification) for China-issued documents: eligibility, Apostille vs. consular legalization, process, materials, timeline, verification, pitfalls, and FAQs." name="description"/>
+<style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f3f4f6;
+      color: #111827;
+    }
+    .guide-shell {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 3rem 1.25rem 4rem;
+    }
+    .guide-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(260px, 1.1fr);
+      gap: 2rem;
+    }
+    .guide-main {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 2.5rem 2.25rem 2.75rem;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+    }
+    .guide-sidebar {
+      position: sticky;
+      top: 90px;
+      align-self: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .guide-meta {
+      font-size: 0.85rem;
+      color: #6b7280;
+      margin-bottom: 0.75rem;
+    }
+    .guide-tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 0.2rem 0.7rem;
+      background: #e0f2fe;
+      color: #0369a1;
+      font-size: 0.78rem;
+      margin-bottom: 0.4rem;
+    }
+    h1 { font-size: 2rem; margin: 0 0 0.75rem; line-height: 1.35; }
+    h2 { font-size: 1.35rem; margin: 2.2rem 0 0.8rem; }
+    h3 { font-size: 1.05rem; margin: 1.3rem 0 0.4rem; }
+
+    p { margin: 0.45rem 0; line-height: 1.8; font-size: 0.98rem; }
+    ul { margin: 0.4rem 0 0.8rem; padding-left: 1.25rem; line-height: 1.8; font-size: 0.98rem; }
+    ol { margin: 0.4rem 0 0.8rem; padding-left: 1.25rem; line-height: 1.8; font-size: 0.98rem; }
+    li + li { margin-top: 0.15rem; }
+
+    .section-divider {
+      margin: 2rem 0 2.2rem;
+      border-top: 1px solid #e5e7eb;
+    }
+    .callout {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+      margin: 0.8rem 0 1rem;
+      color: #374151;
+    }
+    .callout strong { color: #111827; }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.9rem;
+      margin: 0.6rem 0 0.4rem;
+    }
+    .mini-card{
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 0.9rem 1rem;
+      background: #ffffff;
+    }
+    .mini-card h3{ margin: 0 0 0.35rem; font-size: 1rem; }
+    .mini-card p{ margin: 0; font-size: 0.95rem; color:#374151;}
+    .service-card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 1.5rem 1.4rem 1.7rem;
+      box-shadow: 0 14px 32px rgba(15,23,42,0.14);
+      border: 1px solid #e5e7eb;
+    }
+    .service-card h3 { margin: 0 0 0.7rem; font-size: 1.1rem; }
+    .service-card p { font-size: 0.92rem; color: #4b5563; margin-bottom: 1rem; }
+
+    .btn-primary {
+      display: inline-flex;
+      padding: 0.55rem 1.6rem;
+      border-radius: 999px;
+      background: #198754;
+      color: #ffffff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .btn-primary:hover { background: #157347; }
+
+    .toc {
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+      background: #ffffff;
+      margin: 1rem 0 0.2rem;
+    }
+    .toc strong { display:block; margin-bottom: 0.4rem; }
+    .toc a { display:block; color:#2563eb; text-decoration:none; font-size: 0.95rem; line-height: 1.7; }
+    .toc a:hover { text-decoration: underline; }
+
+    @media (max-width: 960px) {
+      .guide-layout { grid-template-columns: 1fr; }
+      .guide-main { padding: 1.9rem 1.5rem 2.2rem; }
+      .guide-sidebar { position: static; }
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .guide-shell { padding-top: 2rem; }
+      h1 { font-size: 1.7rem; }
+    }
+  </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "海牙认证（Apostille）是什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "海牙认证（Apostille，也称附加证明书）用于证明公文书上的签名、印章或签署人身份的真实性，使文书可在《海牙公约》缔约国之间直接使用。它不认证文书内容本身。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "海牙认证和领事认证有什么区别？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "海牙认证仅适用于《海牙公约》缔约国之间，流程更简化；若任一方不是缔约国，通常需要办理更传统的领事认证（多步骤、多部门）。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "在中国办理海牙认证需要先公证吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "是否需要先公证取决于文件类型与使用目的。许多个人民事类材料通常需要先完成公证或由符合要求的机构出具后，再申请海牙认证。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "海牙认证一般要多久？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "常见办理时长约 2–4 个工作日（不含前置公证与邮寄时间）。实际以受理机构安排与材料完整度为准。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "如何核验海牙认证？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不同国家提供不同核验方式，常见包括二维码、在线数据库查询或联系出具机关。若无在线系统，可通过官方渠道人工核验。"
+      }
+    }
+  ]
+}</script>
+<style>body{font-family:'Times New Roman',Times,serif !important;}</style></head>
+<body>
+<div class="guide-shell">
+<div class="guide-layout">
+<article class="guide-main">
+<div class="guide-meta">
+<span class="guide-tag">Apostille · Certification Guide</span>
+<span>Last updated: Dec 2025 (based on public policies and common acceptance practices)</span>
+</div>
+<h1>Apostille (Hague Certification) Guide (China)</h1>
+<p class="guide-intro">
+          This guide is for applicants who need to use<strong>China-issued</strong>documents overseas (study, immigration, cross‑border work, international trade, etc.). We cover what Apostille is, applicability, the difference from consular legalization, the China process, required materials, timelines, and verification—so you can confirm the right path before you start.
+        </p>
+<div class="toc">
+<strong>Contents</strong>
+<a href="#what">What is Apostille?</a>
+<a href="#convention">What is the Hague Apostille Convention?</a>
+<a href="#when">When do you need Apostille vs. consular legalization?</a>
+<a href="#docs">Which documents can be apostilled?</a>
+<a href="#process">How to obtain Apostille in China (process)</a>
+<a href="#materials">What materials are required?</a>
+<a href="#timeline">Processing time and influencing factors</a>
+<a href="#verify">How to verify an Apostille</a>
+<a href="#mistakes">Pitfalls &amp; common return reasons</a>
+<a href="#faq">Frequently Asked Questions (FAQ)</a>
+</div>
+<hr class="section-divider"/>
+<h2 id="what">What is Apostille (Hague Certification)?</h2>
+<p>
+          Apostille (also known as an<strong>Apostille Certificate</strong> ) is an authentication issued by the designated competent authority of the issuing country. Its purpose is to certify the authenticity of the<strong>signature, seal, or the signer’s capacity</strong>on a public document so it can be accepted for use in other countries.
+        </p>
+<div class="callout">
+<strong>Key point:</strong>Apostille<strong>does not certify the document’s content</strong>; it only certifies formal elements (e.g., signature/seal).
+        </div>
+<h2 id="convention">What is the Hague Apostille Convention?</h2>
+<p>
+          The Convention Abolishing the Requirement of Legalisation for Foreign Public Documents (the “Hague Apostille Convention”) establishes the Apostille mechanism, replacing multiple steps in traditional consular legalization with a single Apostille certificate. Apostille is valid only<strong>between Convention member countries</strong>.
+        </p>
+<h2 id="when">When do you need Apostille vs. consular legalization?</h2>
+<div class="grid-2">
+<div class="mini-card">
+<h3>Prefer Apostille</h3>
+<p>When the issuing country and the destination country<strong>are both Hague Convention members</strong> , Apostille is usually applicable.</p>
+</div>
+<div class="mini-card">
+<h3>Consular legalization (traditional path)</h3>
+<p>If either side<strong>is not a Convention member</strong> , you generally need consular legalization (multi‑step) per the destination’s requirements.</p>
+</div>
+</div>
+<p>
+          In practice, whether Apostille is accepted depends on the<strong>receiver’s explicit requirements (schools/immigration/employers/banks/courts, etc.)</strong>; confirm the recipient’s document checklist before you apply.
+        </p>
+<hr class="section-divider"/>
+<h2 id="docs">Which documents can be apostilled?</h2>
+<p>Document types vary by purpose. Below are common categories (subject to the actual acceptance rules):</p>
+<h3>1) Civil documents (often require prior notarization or compliant issuance)</h3>
+<ul>
+<li>Criminal record certificate</li>
+<li>Birth certificate; marriage/divorce certificate</li>
+<li>Degree/diploma and transcripts (for overseas schools/employers)</li>
+<li>Power of attorney, declarations, etc.</li>
+</ul>
+<h3>2) Commercial documents (common in cross‑border trade/corporate matters)</h3>
+<ul>
+<li>Business license, articles of association, board resolutions, etc.</li>
+<li>Commercial invoices, authorization letters, contracts, etc.</li>
+<li>Certificates of origin, free sale certificates, etc. (subject to purpose and issuing‑authority requirements)</li>
+</ul>
+<h3>3) Other specific certificates</h3>
+<p>For example, certain inspection/quarantine or export‑related certificates may apply depending on industry and issuing‑authority requirements.</p>
+<div class="callout">
+<strong>Tip:</strong>If you’re unsure whether a document qualifies for Apostille, the safest approach is to confirm the receiver’s requirements first, then verify whether the document falls within the certifiable scope in the issuing jurisdiction.
+        </div>
+<hr class="section-divider"/>
+<h2 id="process">How to obtain Apostille in China (process)</h2>
+<p>
+          China implemented the Hague Apostille Convention on 7 Nov 2023 and began issuing and accepting Apostille certificates. In China, applications are typically handled by the Ministry of Foreign Affairs and its authorized offices.
+        </p>
+<h3>Process (common path)</h3>
+<ol>
+<li><strong>Confirm destination and purpose requirements</strong> : whether Apostille is accepted or consular legalization is required.</li>
+<li><strong>Prepare original documents</strong> : prepare certificates/attestations/corporate originals based on purpose.</li>
+<li><strong>Complete prerequisite steps (if needed)</strong> : some materials require notarization or issuance/stamping by a designated body.</li>
+<li><strong>Submit the Apostille application</strong> : submit to the service window/authorized office and pay fees (if any).</li>
+<li><strong>Collect / receive by mail</strong> : collect the Apostille certificate or receive it per office rules.</li>
+</ol>
+<h3>Two common scenarios you may encounter</h3>
+<ul>
+<li><strong>Apostille only</strong> : formal requirements are met; apply directly.</li>
+<li><strong>Notarize first, then Apostille</strong> : many civil uses require notarization first; then apply Apostille for the notarized document.</li>
+</ul>
+<hr class="section-divider"/>
+<h2 id="materials">What materials are required?</h2>
+<ul>
+<li><strong>Valid ID of the applicant</strong> (ID card/passport, etc.)</li>
+<li><strong>Original document to be certified</strong> (or an acceptable version)</li>
+<li><strong>Notarial certificate / translation</strong> (if required by the receiver or acceptance rules)</li>
+<li><strong>Other supporting materials</strong> : purpose statement, delivery address, authorization materials, etc. (per office rules)</li>
+</ul>
+<h2 id="timeline">Processing time and influencing factors</h2>
+<p>
+          Apostille issuance commonly takes about <strong>2–4 business days</strong> (excluding prior notarization and shipping). The overall timeline may be affected by:
+        </p>
+<ul>
+<li>Whether prerequisite notarization or extra materials are required</li>
+<li>Queues and intake pace at the issuing/accepting office</li>
+<li>Round‑trip shipping time (if needed)</li>
+</ul>
+<h2 id="verify">How to verify an Apostille</h2>
+<p>
+          Verification methods vary by issuing country. Common approaches include:
+        </p>
+<ul>
+<li>Scan the QR code on the Apostille certificate (if applicable)</li>
+<li>Verify by entering the reference number in the authority’s online database (if applicable)</li>
+<li>Confirm with the issuing authority via official channels (phone/email)</li>
+</ul>
+<hr class="section-divider"/>
+<h2 id="mistakes">Common misunderstandings and return reasons (avoid pitfalls)</h2>
+<ul>
+<li><strong>Myth 1:</strong>Thinking Apostille equals “content certification/notarization”. (In fact, it only verifies formal elements like signatures/seals.)</li>
+<li><strong>Myth 2:</strong>Not confirming whether the destination country is a Convention member, making the document unusable after certification.</li>
+<li><strong>Myth 3:</strong>Not preparing prerequisites required for the purpose (e.g., notarization, translation, designated issuance).</li>
+<li><strong>Myth 4:</strong>Inconsistent document details (name/ID number/issue date), leading to re‑submission.</li>
+</ul>
+<p>Before submission, do a checklist review: purpose requirements, country applicability, document version, and whether prerequisite steps are complete.</p>
+<hr class="section-divider"/>
+<h2 id="faq">Frequently Asked Questions (FAQ)</h2>
+<h3>1) How do I choose between Apostille and consular legalization?</h3>
+<p>First confirm whether the destination country is a Convention member, then confirm the receiver’s requirements. If both sides are members, Apostille is usually preferred; otherwise, consular legalization is more common.</p>
+<h3>2) Do degrees/transcripts always require notarization first?</h3>
+<p>Not necessarily. It depends on the receiver’s requirements and the document’s issuance format. Some scenarios require prior notarization or a specific version issued by a school/institution.</p>
+<h3>3) Do I need translation for Apostille?</h3>
+<p>Apostille is not a translation. Whether translation is required (and translator qualifications) depends on the receiver’s requirements.</p>
+<h3>4) How long does Apostille usually take?</h3>
+<p>The certification stage is commonly 2–4 business days, but the overall timeline will be longer if prior notarization and shipping are involved. Plan extra time.</p>
+<h3>5) After Apostille, how can overseas institutions verify it?</h3>
+<p>Prefer QR code or online system verification. If no online system is available, use the issuing authority’s official channels for manual verification.</p>
+<hr class="section-divider"/>
+<p class="guide-intro">
+          If you already know the destination and document type and want a quick determination of whether to use “Apostille” or “consular legalization”, feel free to send us your<strong>document type, issuing location, destination country, and purpose</strong>. We will suggest appropriate steps and a timeline based on common requirements.
+        </p>
+</article>
+<aside class="guide-sidebar">
+<div class="service-card">
+<h3>Not sure whether you need Apostille or consular legalization?</h3>
+<p>
+            Send us your document type, issuing location, destination country, and purpose (study/immigration/employment/trade, etc.). Based on common acceptance rules, we will recommend the applicable path and provide a materials checklist and timeline expectation.
+          </p>
+<p style="margin: 0.6rem 0 0.9rem; font-size: 0.9rem; color: #4b5563;">
+            We recommend reading the “Applicability” and “Process” sections in the contents first, then deciding whether you need further consultation.
+          </p>
+<a class="btn-primary" href="contact-zh.html">Request an assessment</a>
+</div>
+<div class="service-card">
+<h3>We can help you with</h3>
+<ul>
+<li>Eligibility check: Apostille vs. consular legalization;</li>
+<li>Checklist preparation and translation guidance;</li>
+<li>Notarization &amp; certification process planning (including timeline expectations);</li>
+<li>Progress tracking and support for supplemental materials.</li>
+</ul>
+</div>
+</aside>
+</div>
+</div>
+</body>
+</html>
