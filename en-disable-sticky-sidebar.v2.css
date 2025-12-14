@@ -1,0 +1,53 @@
+/* =========================================================
+   EN pages – FORCE disable sticky/fixed sidebar (v2 stronger)
+   Works even if a JS sticky plugin injects inline styles.
+   Scope: English pages only (html[lang="en"])
+   ========================================================= */
+
+/* 1) Kill common sticky plugin wrappers/classes */
+html[lang="en"] .theiaStickySidebar,
+html[lang="en"] .sticky-sidebar,
+html[lang="en"] .is-affixed,
+html[lang="en"] .is-sticky,
+html[lang="en"] .sticky,
+html[lang="en"] .affix,
+html[lang="en"] .affixed,
+html[lang="en"] .fixed,
+html[lang="en"] .sidebar-sticky,
+html[lang="en"] .widget-sticky {
+  position: static !important;
+  top: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  width: auto !important;
+  transform: none !important;
+}
+
+/* 2) If inline styles set sticky/fixed, override them */
+html[lang="en"] [style*="position:sticky"],
+html[lang="en"] [style*="position: sticky"],
+html[lang="en"] [style*="position:fixed"],
+html[lang="en"] [style*="position: fixed"]{
+  position: static !important;
+  top: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+}
+
+/* 3) Extra safety: if your right column is an <aside> or a known wrapper, keep it normal flow */
+html[lang="en"] aside,
+html[lang="en"] .right-column,
+html[lang="en"] .right-sidebar,
+html[lang="en"] .sidebar,
+html[lang="en"] .sidebar-wrap {
+  position: static !important;
+}
+
+/* 4) Prevent flex/grid from pinning the sidebar */
+html[lang="en"] .right-sidebar,
+html[lang="en"] .sidebar {
+  align-self: auto !important;
+}
