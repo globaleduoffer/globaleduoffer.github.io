@@ -111,6 +111,35 @@
       h1 { font-size: 1.65rem; }
     }
   </style>
+
+<style>
+/* Floating WhatsApp button (inline fallback so it works on every page) */
+.wa-float{
+  position:fixed; right:18px; bottom:18px; z-index:9999;
+  display:inline-flex; align-items:center; gap:10px;
+  padding:12px 14px; border-radius:999px;
+  background:#1f8f4d; color:#fff !important;
+  text-decoration:none !important;
+  box-shadow:0 10px 24px rgba(0,0,0,.18);
+  font-weight:600; font-size:14px;
+}
+.wa-float:hover{opacity:.92;}
+.wa-float .wa-ico{font-size:16px; line-height:1;}
+@media (max-width:640px){ .wa-float .wa-text{display:none;} .wa-float{padding:12px;} }
+
+/* Navbar WhatsApp: subtle pill (works even if external CSS missing) */
+.nav-wa-text{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:6px 12px;
+  border-radius:999px;
+  border:1px solid rgba(31,143,77,.55);
+  color:#1f8f4d !important;
+  text-decoration:none !important;
+  font-weight:600;
+}
+.nav-wa-text:hover{opacity:.9;}
+</style>
+
 </head>
 <body>
   <div class="guide-shell">
@@ -280,5 +309,7 @@
 
     </div>
   </div>
+
+<a class="wa-float" href="https://wa.me/8618382170804" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
 </body>
 </html>
