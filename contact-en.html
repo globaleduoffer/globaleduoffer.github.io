@@ -4,8 +4,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Contact | GLOBAL EDU OFFER LIMITED</title>
-<meta content="Contact GLOBAL EDU OFFER LIMITED for one-on-one assistance with China Police Certificates, degree verification, document legalization and study-in-China services." name="description"/>
+<title>Contact Global Attest | Free Consultation for Apostille, PCC & WES</title>
+<meta name="description" content="Contact Global Attest for apostille (Hague certification), China police certificate (PCC), WES credential evaluation and document legalization. Message us on WhatsApp for a quick response.">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 <link href="assets/style.css" rel="stylesheet"/>
@@ -303,6 +303,35 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
       font-family: "Times New Roman", Times, serif;
     }
   </style>
+
+<style>
+/* Floating WhatsApp button (inline fallback so it works on every page) */
+.wa-float{
+  position:fixed; right:18px; bottom:18px; z-index:9999;
+  display:inline-flex; align-items:center; gap:10px;
+  padding:12px 14px; border-radius:999px;
+  background:#1f8f4d; color:#fff !important;
+  text-decoration:none !important;
+  box-shadow:0 10px 24px rgba(0,0,0,.18);
+  font-weight:600; font-size:14px;
+}
+.wa-float:hover{opacity:.92;}
+.wa-float .wa-ico{font-size:16px; line-height:1;}
+@media (max-width:640px){ .wa-float .wa-text{display:none;} .wa-float{padding:12px;} }
+
+/* Navbar WhatsApp: subtle pill (works even if external CSS missing) */
+.nav-wa-text{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:6px 12px;
+  border-radius:999px;
+  border:1px solid rgba(31,143,77,.55);
+  color:#1f8f4d !important;
+  text-decoration:none !important;
+  font-weight:600;
+}
+.nav-wa-text:hover{opacity:.9;}
+</style>
+
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
@@ -367,9 +396,7 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 <a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-en.html">
           Book a Free Consultation
         </a>
-<a class="btn btn-outline-success btn-sm rounded-pill px-3 cta-btn-outline" href="https://wa.me/8618382170804" rel="noopener" target="_blank">
-          WhatsApp
-        </a>
+<a class="nav-wa-text" href="https://wa.me/8618382170804" target="_blank" rel="noopener">WhatsApp</a>
 <div class="ms-lg-2 d-flex gap-2">
 <a class="lang-btn" href="/zh/">中文</a>
 <a class="lang-btn" href="/">EN</a>
@@ -431,25 +458,57 @@ Futian District, Shenzhen, China
 </div>
 <div class="col-lg-6">
 <div class="contact-form-card">
-<form>
-<div class="mb-3">
-<label class="form-label">Name*</label>
-<input class="form-control" placeholder="Your name" type="text"/>
-</div>
-<div class="mb-3">
-<label class="form-label">Email*</label>
-<input class="form-control" placeholder="you@example.com" type="email"/>
-</div>
-<div class="mb-3">
-<label class="form-label">WhatsApp / WeChat</label>
-<input class="form-control" placeholder="+86 ..." type="text"/>
-</div>
-<div class="mb-3">
-<label class="form-label">Message*</label>
-<textarea class="form-control" placeholder="Briefly describe your situation and what you’d like to know…" rows="4" style="border-radius:1rem; padding:0.75rem 1rem;"></textarea>
-</div>
-<button class="btn btn-success contact-submit" type="submit">Submit</button>
+
+<form id="contactForm">
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label class="form-label">Name*</label>
+      <input class="form-control" name="name" placeholder="Your name" type="text" required/>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Email*</label>
+      <input class="form-control" name="email" placeholder="you@example.com" type="email" required/>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">WhatsApp (recommended)</label>
+      <input class="form-control" name="whatsapp" placeholder="+1 555 000 0000" type="text"/>
+      <div class="form-text">Fastest way to reach us. We typically reply within 24 hours on business days.</div>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Service*</label>
+      <select class="form-select" name="service" required>
+        <option value="" selected disabled>Select a service</option>
+        <option>Apostille / Hague Certification</option>
+        <option>China Police Certificate (PCC)</option>
+        <option>WES Credential Evaluation</option>
+        <option>Document Legalization / Consular Legalization</option>
+        <option>Degree Verification</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Document type</label>
+      <input class="form-control" name="document" placeholder="e.g., degree certificate, birth certificate, PCC..." type="text"/>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Destination country</label>
+      <input class="form-control" name="country" placeholder="e.g., UAE, USA, Canada..." type="text"/>
+    </div>
+    <div class="col-12">
+      <label class="form-label">Message*</label>
+      <textarea class="form-control" name="message" rows="5" placeholder="Tell us your timeline, city of issuance, and any special requirements." style="border-radius:1rem; padding:0.75rem 1rem;" required></textarea>
+    </div>
+    <div class="col-12 d-flex gap-2 flex-wrap align-items-center">
+      <button class="btn btn-success contact-submit" type="submit">Get a free assessment</button>
+      <a class="btn btn-outline-success" href="https://wa.me/8618382170804" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      <a class="btn btn-outline-secondary" href="mailto:global.edu.offer@gmail.com">Email us</a>
+    </div>
+    <div class="col-12">
+      <small class="text-muted">By submitting, you agree that we may use your information to respond to your inquiry. We do not sell your data.</small>
+    </div>
+  </div>
 </form>
+
 </div>
 </div>
 </div>
@@ -460,5 +519,34 @@ Futian District, Shenzhen, China
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/main.js"></script>
+
+<script>
+(function(){
+  const form = document.getElementById('contactForm');
+  if(!form) return;
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const data = new FormData(form);
+    const subject = encodeURIComponent('[Global Attest] Free Assessment Request - ' + (data.get('service') || 'Inquiry'));
+    const lines = [
+      'Name: ' + (data.get('name') || ''),
+      'Email: ' + (data.get('email') || ''),
+      'WhatsApp: ' + (data.get('whatsapp') || ''),
+      'Service: ' + (data.get('service') || ''),
+      'Document: ' + (data.get('document') || ''),
+      'Destination country: ' + (data.get('country') || ''),
+      '',
+      'Message:',
+      (data.get('message') || '')
+    ];
+    const body = encodeURIComponent(lines.join('\n'));
+    window.location.href = 'mailto:global.edu.offer@gmail.com?subject=' + subject + '&body=' + body;
+  });
+})();
+</script>
+
+
+<a class="wa-float" href="https://wa.me/8618382170804" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
 </body>
 </html>

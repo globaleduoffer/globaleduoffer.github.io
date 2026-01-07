@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>联系我们 | 深圳环球学旅教育科技有限公司</title>
+  <title>联系我们 | Global Attest</title>
+  <meta name="description" content="为在华外国人提供海牙认证、无犯罪证明、学历认证、WES 评估及文件领事认证服务。欢迎通过 WhatsApp 快速咨询，我们会尽快回复。">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link rel="stylesheet" href="assets/style.css"/>
@@ -295,6 +296,35 @@
 }
 
 </style>
+
+<style>
+/* Floating WhatsApp button (inline fallback so it works on every page) */
+.wa-float{
+  position:fixed; right:18px; bottom:18px; z-index:9999;
+  display:inline-flex; align-items:center; gap:10px;
+  padding:12px 14px; border-radius:999px;
+  background:#1f8f4d; color:#fff !important;
+  text-decoration:none !important;
+  box-shadow:0 10px 24px rgba(0,0,0,.18);
+  font-weight:600; font-size:14px;
+}
+.wa-float:hover{opacity:.92;}
+.wa-float .wa-ico{font-size:16px; line-height:1;}
+@media (max-width:640px){ .wa-float .wa-text{display:none;} .wa-float{padding:12px;} }
+
+/* Navbar WhatsApp: subtle pill (works even if external CSS missing) */
+.nav-wa-text{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:6px 12px;
+  border-radius:999px;
+  border:1px solid rgba(31,143,77,.55);
+  color:#1f8f4d !important;
+  text-decoration:none !important;
+  font-weight:600;
+}
+.nav-wa-text:hover{opacity:.9;}
+</style>
+
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
@@ -373,11 +403,7 @@
            class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn">
           免费咨询
         </a>
-        <a href="https://wa.me/8618382170804"
-           class="btn btn-outline-success btn-sm rounded-pill px-3 cta-btn-outline"
-           target="_blank" rel="noopener">
-          WhatsApp
-        </a>
+        <a class="nav-wa-text" href="https://wa.me/8618382170804" target="_blank" rel="noopener">WhatsApp</a>
 
         <div class="ms-lg-2 d-flex gap-2">
           <a class="lang-btn" href="/zh/">中文</a>
@@ -441,25 +467,57 @@ Futian District, Shenzhen, China
       </div>
       <div class="col-lg-6">
         <div class="contact-form-card">
-          <form>
-            <div class="mb-3">
-              <label class="form-label">Name / 姓名*</label>
-              <input type="text" class="form-control" placeholder="Your name">
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Email*</label>
-              <input type="email" class="form-control" placeholder="you@example.com">
-            </div>
-            <div class="mb-3">
-              <label class="form-label">WhatsApp / WeChat</label>
-              <input type="text" class="form-control" placeholder="+86 ...">
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Message / 留言*</label>
-              <textarea class="form-control" rows="4" style="border-radius:1rem; padding:0.75rem 1rem;" placeholder="简单介绍您的情况和想要了解的服务…"></textarea>
-            </div>
-            <button type="submit" class="btn btn-success contact-submit">Submit</button>
-          </form>
+          
+<form id="contactFormZh">
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label class="form-label">姓名*</label>
+      <input class="form-control" name="name" placeholder="您的姓名" type="text" required/>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">邮箱*</label>
+      <input class="form-control" name="email" placeholder="you@example.com" type="email" required/>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">WhatsApp（推荐）</label>
+      <input class="form-control" name="whatsapp" placeholder="+1 555 000 0000" type="text"/>
+      <div class="form-text">最快的联系方式。工作日通常 24 小时内回复。</div>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">需要的服务*</label>
+      <select class="form-select" name="service" required>
+        <option value="" selected disabled>请选择</option>
+        <option>海牙认证 / Apostille</option>
+        <option>无犯罪证明（中国 PCC）</option>
+        <option>WES 学历认证 / 评估</option>
+        <option>领事认证 / 文件认证</option>
+        <option>学历验证 / Degree Verification</option>
+        <option>其他</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">文件类型</label>
+      <input class="form-control" name="document" placeholder="例如：毕业证、出生证、无犯罪证明…" type="text"/>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">使用国家/地区</label>
+      <input class="form-control" name="country" placeholder="例如：阿联酋、美国、加拿大…" type="text"/>
+    </div>
+    <div class="col-12">
+      <label class="form-label">留言*</label>
+      <textarea class="form-control" name="message" rows="5" placeholder="请说明：大概时间、文件签发城市、用途（工作/移民/留学）及其他要求。" style="border-radius:1rem; padding:0.75rem 1rem;" required></textarea>
+    </div>
+    <div class="col-12 d-flex gap-2 flex-wrap align-items-center">
+      <button class="btn btn-success contact-submit" type="submit">免费评估</button>
+      <a class="btn btn-outline-success" href="https://wa.me/8618382170804" target="_blank" rel="noopener">WhatsApp 直接聊</a>
+      <a class="btn btn-outline-secondary" href="mailto:global.edu.offer@gmail.com">邮件联系</a>
+    </div>
+    <div class="col-12">
+      <small class="text-muted">提交即表示你同意我们使用你的信息来回复咨询。我们不会出售你的数据。</small>
+    </div>
+  </div>
+</form>
+
         </div>
       </div>
     </div>
@@ -472,5 +530,34 @@ Futian District, Shenzhen, China
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/main.js"></script>
+
+<script>
+(function(){
+  const form = document.getElementById('contactFormZh');
+  if(!form) return;
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const data = new FormData(form);
+    const subject = encodeURIComponent('[Global Attest] 免费评估咨询 - ' + (data.get('service') || '咨询'));
+    const lines = [
+      '姓名: ' + (data.get('name') || ''),
+      '邮箱: ' + (data.get('email') || ''),
+      'WhatsApp: ' + (data.get('whatsapp') || ''),
+      '服务: ' + (data.get('service') || ''),
+      '文件类型: ' + (data.get('document') || ''),
+      '使用国家/地区: ' + (data.get('country') || ''),
+      '',
+      '留言:',
+      (data.get('message') || '')
+    ];
+    const body = encodeURIComponent(lines.join('\n'));
+    window.location.href = 'mailto:global.edu.offer@gmail.com?subject=' + subject + '&body=' + body;
+  });
+})();
+</script>
+
+
+<a class="wa-float" href="https://wa.me/8618382170804" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
 </body>
 </html>
