@@ -37,6 +37,19 @@
       margin-bottom: 1.5rem;
     }
 
+    /* ✅标题强制换行（关键） */
+.hero-title .h1-main{
+  display:block;
+}
+
+.hero-title .h1-sub{
+  display:block;
+  margin-top:12px;
+  font-size:clamp(1.1rem, 2.2vw, 1.5rem);
+  font-weight:700;
+  opacity:.92;
+}
+
     .hero-subtitle {
       font-size: 1rem;
       max-width: 32rem;
@@ -553,10 +566,10 @@
     <div class="row align-items-center g-4">
       <div class="col-lg-6">
         <p class="hero-kicker">中国文件认证 · 海牙 Apostille · 领事/使馆认证</p>
-        <h1>
-          中国文件认证（海牙 Apostille / 使馆认证）<br>
-           材料清单、费用与办理周期（2026）
-       </h1>
+      <h1 class="hero-title">
+     <span class="h1-main">中国文件认证</span>
+     <span class="h1-sub">海牙 / 领事与使馆认证（2026）</span>
+     </h1>
         <p>
           面向需要在海外使用的中国文件（学历证书、无犯罪记录、结婚证、公司文件、公证书等），提供海牙认证 Apostille 与领事/使馆认证办理指导。
           根据目标国家要求，清晰说明材料清单、费用区间与办理周期，帮助您快速完成用于移民、留学、工作或签证的文件认证。
