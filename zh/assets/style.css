@@ -1,0 +1,201 @@
+html[lang="en"], html[lang="en"] body {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; }
+
+    /* Global font for English site */
+    body {
+      font-family: "Times New Roman", Times, serif !important;
+    }
+
+    /* --- Hero section --- */
+    .hero-section {
+      background: linear-gradient(135deg, #1e3a8a, #020617);
+      color: #fff;
+      padding: 4.5rem 0 5.5rem;
+    }
+
+    .hero-kicker {
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+      opacity: 0.85;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 4vw, 3.4rem);
+      line-height: 1.1;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      max-width: 32rem;
+      opacity: 0.9;
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1rem;
+    }
+
+    .hero-btn {
+      background-color: #22c55e;
+      border-radius: 999px;
+      padding: 0.55rem 1.4rem;
+      font-weight: 500;
+      border: none;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(22, 163, 74, 0.35);
+    }
+
+    .hero-btn:hover {
+      background-color: #16a34a;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .hero-illustration {
+      border-radius: 32px;
+      overflow: hidden;
+      background: #0f172a;
+      box-shadow:
+        0 22px 50px rgba(15, 23, 42, 0.55),
+        0 0 0 1px rgba(148, 163, 184, 0.2);
+    }
+
+    .hero-illustration img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .navbar {
+      padding-top: 0.85rem;
+      padding-bottom: 0.85rem;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+    }
+
+    .navbar-brand span {
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 0.95rem;
+      padding: 0.4rem 0.9rem;
+    }
+
+    .navbar-nav .nav-link.active {
+      font-weight: 600;
+    }
+
+    .navbar .dropdown-menu {
+      background-color: #111827;
+      border-radius: 0;
+      border: none;
+      padding: 0.7rem 0;
+      min-width: 260px;
+    }
+
+    .navbar .dropdown-item {
+      color: #e5e7eb;
+      padding: 0.55rem 1.4rem;
+      font-size: 0.92rem;
+      white-space: normal;
+    }
+
+    .navbar .dropdown-item:hover,
+    .navbar .dropdown-item:focus {
+      background-color: #1f2937;
+      color: #fff;
+    }
+
+    .lang-btn {
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+      text-decoration: none;
+    }
+
+    .lang-btn:hover {
+      text-decoration: underline;
+    }
+  
+/* CTA buttons in navbar */
+.cta-btn,
+.cta-btn-outline {
+  white-space: nowrap;
+}
+
+@media (max-width: 991.98px) {
+  .cta-btn,
+  .cta-btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Floating WhatsApp button */
+.wa-float{
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 9999;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 999px;
+  background: #1f8f4d;
+  color: #fff !important;
+  text-decoration: none !important;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+  font-weight: 600;
+  font-size: 14px;
+}
+.wa-float:hover{ opacity: .92; }
+.wa-float i{ font-size: 18px; }
+@media (max-width: 640px){
+  .wa-float span{ display:none; }
+  .wa-float{ padding: 12px; }
+}
+
+
+/* High-end services grid */
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px;
+}
+@media (max-width: 992px){
+  .service-grid{ grid-template-columns:1fr; }
+}
+.service-card{
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 16px;
+  padding: 24px 24px;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.06);
+}
+.service-card h3{
+  font-size: 20px;
+  margin-bottom: 14px;
+  letter-spacing: 0.2px;
+}
+.service-card ul{
+  padding-left: 18px;
+  margin-bottom: 0;
+}
+.service-card li{
+  margin: 8px 0;
+}
+.service-highlight{
+  text-align:center;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
