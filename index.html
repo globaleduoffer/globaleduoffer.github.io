@@ -16,12 +16,6 @@
 }
 </script>
 
-/* 针对导航栏链接的字体大小调整 */
-.navbar-nav .nav-link {
-    font-size: 1.1rem; /* 调大到 1.1倍（默认通常是 1rem） */
-    font-weight: 500;   /* 稍微加粗一点点，更有质感 */
-}
-
 <meta property="og:site_name" content="Global Attest">
 <meta name="application-name" content="Global Attest">
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -170,6 +164,14 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
     width: 100%;
     text-align: center;
   }
+}
+
+/* 这里的代码会让导航栏的所有文字变大、变清晰 */
+.navbar-nav .nav-link {
+    font-size: 1.15rem !important; /* 调大字号 */
+    font-weight: 500 !important;   /* 稍微加粗，看起来更专业 */
+    padding-left: 15px !important;  /* 增加左右间距，不那么拥挤 */
+    padding-right: 15px !important;
 }
 
 </style>
