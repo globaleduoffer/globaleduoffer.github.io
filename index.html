@@ -193,6 +193,45 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
   }
 }
 
+
+    /* --- Navbar refinement (subtle, more premium) --- */
+    .navbar-nav .nav-link{
+      color:#334155;
+    }
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus{
+      color:#0f172a;
+    }
+    /* Active/hover cue: subtle pill highlight (more modern than underline) */
+    @media (min-width: 992px){
+      .navbar-nav .nav-link{
+        border-radius: 999px;
+        transition: background-color .15s ease, color .15s ease;
+      }
+      .navbar-nav .nav-link:hover,
+      .navbar-nav .nav-link:focus{
+        background: rgba(31,143,77,.10);
+      }
+      .navbar-nav .nav-link.active{
+        background: rgba(31,143,77,.16);
+      }
+    }
+/* CTA buttons: slightly tighter so they don't "jump out" */
+    .cta-btn{
+      padding-top:0.38rem !important;
+      padding-bottom:0.38rem !important;
+      font-weight:700;
+    }
+    /* Navbar WhatsApp: a touch lighter for a more premium look */
+    .nav-wa-text{
+      background:#f0fbf5;
+      color:#167a3e !important;
+    }
+    .nav-wa-text:hover{
+      background:#e6f8ee;
+    }
+    .lang-btn{ color:#2563eb; }
+
 </style>
 <style>
 /* Floating WhatsApp button (inline fallback so it works on every page) */
