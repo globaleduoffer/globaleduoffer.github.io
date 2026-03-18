@@ -102,8 +102,8 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
     }
 
     .navbar {
-      padding-top: 0.85rem;
-      padding-bottom: 0.85rem;
+      padding-top: 0.65rem;
+      padding-bottom: 0.65rem;
       box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
     }
 
@@ -112,12 +112,39 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
       letter-spacing: 0.03em;
     }
 
-    .navbar-nav .nav-link {
-      font-size: 0.95rem;
-      padding: 0.4rem 0.9rem;
+    .navbar-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0;
+    }
+    .navbar-brand img {
+      display: block;
     }
 
-    .navbar-nav .nav-link.active {
+    .navbar-nav .nav-link {
+      font-size: 0.98rem;
+      padding: 0.35rem 0.75rem;
+      font-weight: 500;
+    }
+
+    
+
+    /* Navbar font: clean & corporate (match Arial/Helvetica style) */
+    .navbar,
+    .navbar .nav-link,
+    .navbar .dropdown-item,
+    .navbar .btn,
+    .navbar .lang-btn {
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+    .navbar .dropdown-item {
+      font-weight: 600;
+    }
+
+.navbar-nav .nav-link.active {
       font-weight: 600;
     }
 
@@ -166,14 +193,6 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
   }
 }
 
-/* 这里的代码会让导航栏的所有文字变大、变清晰 */
-.navbar-nav .nav-link {
-    font-size: 1rem !important; /* 调大字号 */
-    font-weight: 500 !important;   /* 稍微加粗，看起来更专业 */
-    padding-left: 15px !important;  /* 增加左右间距，不那么拥挤 */
-    padding-right: 15px !important;
-}
-
 </style>
 <style>
 /* Floating WhatsApp button (inline fallback so it works on every page) */
@@ -207,6 +226,10 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
   background:#d9f2e3;
 }
 .nav-wa-text:hover{opacity:.9;}
+
+    .cta-btn { padding-top: 0.45rem; padding-bottom: 0.45rem; }
+    .nav-wa-text { padding-top: 0.45rem; padding-bottom: 0.45rem; }
+
 </style>
 
 </head>
@@ -216,7 +239,8 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 <a class="navbar-brand d-flex align-items-center" href="/">
 <img alt="Global Attest Logo" 
      src="assets/images/logo-global-attest.png" 
-      style="height:40px; width:auto; max-height:40px;"/>
+      style="height:36px; width:auto; max-height:36px;"/>
+      <span class="visually-hidden">Global Attest</span>
 </a>
 <button aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#nav" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
