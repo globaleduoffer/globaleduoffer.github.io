@@ -168,7 +168,7 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 
 /* 这里的代码会让导航栏的所有文字变大、变清晰 */
 .navbar-nav .nav-link {
-    font-size: 1.15rem !important; /* 调大字号 */
+    font-size: 1rem !important; /* 调大字号 */
     font-weight: 500 !important;   /* 稍微加粗，看起来更专业 */
     padding-left: 15px !important;  /* 增加左右间距，不那么拥挤 */
     padding-right: 15px !important;
@@ -192,13 +192,19 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 
 /* Navbar WhatsApp: subtle pill (works even if external CSS missing) */
 .nav-wa-text{
-  display:inline-flex; align-items:center; justify-content:center;
-  padding:6px 12px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:6px 14px;
   border-radius:999px;
-  border:1px solid rgba(31,143,77,.55);
+  background:#eaf7f0;
   color:#1f8f4d !important;
-  text-decoration:none !important;
   font-weight:600;
+  text-decoration:none !important;
+  border:none;
+}
+.nav-wa-text:hover{
+  background:#d9f2e3;
 }
 .nav-wa-text:hover{opacity:.9;}
 </style>
@@ -210,7 +216,7 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 <a class="navbar-brand d-flex align-items-center" href="/">
 <img alt="Global Attest Logo" 
      src="assets/images/logo-global-attest.png" 
-      style="height:50px; width:auto;"/>
+      style="height:40px; width:auto; max-height:40px;"/>
 </a>
 <button aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#nav" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
@@ -246,22 +252,14 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 <li><a class="dropdown-item" href="degree-certification-guide.html">How to Apply for a Hague Apostille in China</a></li>
 <li><a class="dropdown-item" href="shenzhen-degree-notarization.html">How to Process Degree Verification</a></li>
 <li><a class="dropdown-item" href="embassy-certification-guide.html">How to Apply for Embassy / Consular Legalization</a></li>
-<li><a class="dropdown-item" href="wes-guide-en.html">How to Apply for a WES Credential Evaluation</a></li>
-</ul>
-</li><li class="nav-item">
-<a class="nav-link" href="certification-guides-en.html">Certification Guides</a>
-</li>
-<!-- Other Menu -->
+<li><a class="dropdown-item" href="wes-guide-en.html">How to Apply for a WES Credential Evaluation</a></li></ul>
+</li><!-- Other Menu -->
 <li class="nav-item">
 <a class="nav-link" href="cases-en.html">Cases</a>
 </li>
 <li class="nav-item">
 <a class="nav-link" href="about-en.html">About Us</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="faq-en.html">FAQ</a>
-</li>
-<li class="nav-item">
+</li><li class="nav-item">
 <a class="nav-link" href="reviews-en.html">Reviews</a>
 </li>
 </ul>
@@ -330,48 +328,133 @@ Trusted by immigration & PR applicants in the US, Canada, Australia, the UK & EU
 </div>
 </div>
 </header>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-10 text-center">
+        <h2 class="mb-3">Our Core Services</h2>
+        <p class="text-muted">
+        Comprehensive China document solutions for immigration, visa, PR, education and international business.
+        </p>
+      </div>
+    </div>
+
+    <!-- Main Highlight Service -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-10">
+        <div class="p-4 p-md-5 shadow rounded bg-light">
+          <h3>China Police Clearance Certificate (PCC)</h3>
+          <p>
+          Our flagship service. We handle complete China Police Clearance Certificate applications for former residents worldwide.
+          Fully remote processing, compliant with IRCC, USCIS, UKVI and global immigration authorities.
+          </p>
+          <a class="btn btn-success rounded-pill px-4 mt-2" href="china-police-certificate.html">
+            Learn More About China PCC
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Secondary Services Grid -->
+    <div class="row text-center g-4">
+      <div class="col-md-4">
+        <div class="p-4 border rounded h-100">
+          <h5>Document Legalization & Apostille</h5>
+          <p>Hague Apostille, MFA authentication and embassy legalization coordination.</p>
+          <a href="document-legalization.html">View Service →</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-4 border rounded h-100">
+          <h5>Degree Verification</h5>
+          <p>China university degree verification and notarization support.</p>
+          <a href="degree-verification.html">View Service →</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-4 border rounded h-100">
+          <h5>WES Credential Evaluation</h5>
+          <p>Full assistance with WES and international credential assessment processes.</p>
+          <a href="wes-en.html">View Service →</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-4 border rounded h-100">
+          <h5>Study in China Support</h5>
+          <p>University applications, scholarships and study visa documentation.</p>
+          <a href="study-in-china-en.html">View Service →</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-4 border rounded h-100">
+          <h5>WFOE China Business Setup</h5>
+          <p>China Wholly Foreign-Owned Enterprise (WFOE) registration, company formation and compliance services.</p>
+          <a href="wfoe-china.html">View Service →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 <section class="py-5">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-10">
-        <div class="shadow-card p-4 p-md-5"><h2 class="mb-4">Our services include</h2>
-          <div class="service-grid">
-            <div class="service-card">
-              <h3>China Official Documents</h3>
-              <ul class="mb-0">
-                <li>China Police Clearance Certificate (PCC)</li>
-                <li>MFA / FAO authentication</li>
-                <li>Embassy legalization coordination</li>
-              </ul>
-            </div>
-
-            <div class="service-card">
-              <h3>Education & Credentialing</h3>
-              <ul class="mb-0">
-                <li>Degree verification</li>
-                <li>WES credential evaluation support</li>
-                <li>Certified translation</li>
-              </ul>
-            </div>
-
-            <div class="service-card">
-              <h3>Study in China</h3>
-              <ul class="mb-0">
-                
-                <li>University applications (Foundation / Bachelor’s / Master’s / PhD)</li>
-                <li>Scholarship applications</li>
-                <li>Chinese language program applications</li>
-                <li>Study-in-China application assistance</li>
-              
-              </ul>
-            </div>
-          </div>
-
-          <p class="service-highlight mt-4 mb-0">Fast, compliant, and stress-free — handled by China-based professionals.</p></div>
+        <h2 class="mb-4">China Police Clearance Certificate (PCC) – Complete Overview</h2>
+        <p>
+        A China Police Clearance Certificate (PCC), also known as a China Police Certificate or No Criminal Record Certificate, 
+        is an official document issued by the Public Security Bureau confirming whether an individual has a criminal record 
+        during their stay in China. It is commonly required for immigration, permanent residency (PR), work visas, and overseas employment.
+        </p>
+        <p>
+        Many former residents of China face challenges when applying from overseas due to varying city regulations, notarization requirements, 
+        and legalization procedures. Our team coordinates with local authorities across major cities including Beijing, Shanghai, Guangzhou and Shenzhen 
+        to ensure full compliance with immigration standards.
+        </p>
+        <p>
+        Learn more about our <a href="china-police-certificate.html">China Police Clearance Certificate (PCC) service</a> 
+        and how we simplify the process for applicants worldwide.
+        </p>
       </div>
     </div>
   </div>
 </section>
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center">
+        <h2 class="mb-4">Our Simple 4-Step Process</h2>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <h6>1. Consultation</h6>
+            <p>We assess your residency history and document requirements.</p>
+          </div>
+          <div class="col-md-3 mb-3">
+            <h6>2. Document Preparation</h6>
+            <p>We guide you in preparing authorization and identity documents.</p>
+          </div>
+          <div class="col-md-3 mb-3">
+            <h6>3. Authority Processing</h6>
+            <p>Local coordination with Public Security Bureau and notary offices.</p>
+          </div>
+          <div class="col-md-3 mb-3">
+            <h6>4. Secure Delivery</h6>
+            <p>International courier delivery of finalized documents.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer class="py-4 bg-dark text-light text-center">
 <p class="mb-0">
   © <span id="y"></span> Global Attest™. All Rights Reserved.
