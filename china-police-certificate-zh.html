@@ -85,57 +85,6 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
       object-fit: cover;
     }
 
-    .navbar {
-      padding-top: 0.85rem;
-      padding-bottom: 0.85rem;
-      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
-    }
-
-    .navbar-brand span {
-      font-weight: 600;
-      letter-spacing: 0.03em;
-    }
-
-    .navbar-nav .nav-link {
-      font-size: 1rem;
-      padding: 0.4rem 0.9rem;
-    }
-
-    .navbar-nav .nav-link.active {
-      font-weight: 600;
-    }
-
-    .navbar .dropdown-menu {
-      background-color: #111827;
-      border-radius: 0;
-      border: none;
-      padding: 0.7rem 0;
-      min-width: 260px;
-    }
-
-    .navbar .dropdown-item {
-      color: #e5e7eb;
-      padding: 0.55rem 1.4rem;
-      font-size: 0.92rem;
-      white-space: normal;
-    }
-
-    .navbar .dropdown-item:hover,
-    .navbar .dropdown-item:focus {
-      background-color: #1f2937;
-      color: #fff;
-    }
-
-    .lang-btn {
-      font-size: 0.9rem;
-      margin-left: 0.5rem;
-      text-decoration: none;
-    }
-
-    .lang-btn:hover {
-      text-decoration: underline;
-    }
-
     .page-hero {
       background: linear-gradient(135deg, #1e3a8a, #020617);
       color: #fff;
@@ -269,7 +218,72 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
       font-size: 1rem;
     }
 
-    /* 这里的代码会让导航栏的所有文字变大、变清晰 */
+.navbar {
+      padding-top: 0.85rem;
+      padding-bottom: 0.85rem;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+    }
+
+    .navbar-brand span {
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 0.95rem;
+      padding: 0.4rem 0.9rem;
+    }
+
+    .navbar-nav .nav-link.active {
+      font-weight: 600;
+    }
+
+    .navbar .dropdown-menu {
+      background-color: #111827;
+      border-radius: 0;
+      border: none;
+      padding: 0.7rem 0;
+      min-width: 260px;
+    }
+
+    .navbar .dropdown-item {
+      color: #e5e7eb;
+      padding: 0.55rem 1.4rem;
+      font-size: 0.92rem;
+      white-space: normal;
+    }
+
+    .navbar .dropdown-item:hover,
+    .navbar .dropdown-item:focus {
+      background-color: #1f2937;
+      color: #fff;
+    }
+
+    .lang-btn {
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+      text-decoration: none;
+    }
+
+    .lang-btn:hover {
+      text-decoration: underline;
+    }
+  
+/* CTA buttons in navbar */
+.cta-btn,
+.cta-btn-outline {
+  white-space: nowrap;
+}
+
+@media (max-width: 991.98px) {
+  .cta-btn,
+  .cta-btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* 这里的代码会让导航栏的所有文字变大、变清晰 */
 .navbar-nav .nav-link {
     font-size: 1rem !important; /* 调大字号 */
     font-weight: 500 !important;   /* 稍微加粗，看起来更专业 */
@@ -277,6 +291,20 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
     padding-right: 15px !important;
 }
 
+
+/* --- Navbar active/hover highlight: green pill (match degree page) --- */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show{
+  background: rgba(31,143,77,.10) !important;
+  color: #0f172a !important;
+  border-radius: 999px !important;
+}
+.navbar-nav .nav-link.active{
+  background: rgba(31,143,77,.16) !important;
+  font-weight: 600 !important;
+}
 </style>
 <link href="china-police-certificate.html" hreflang="en" rel="alternate"/>
 <link href="china-police-certificate-zh.html" hreflang="zh-Hans" rel="alternate"/>
@@ -297,6 +325,8 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 @media (max-width:640px){ .wa-float .wa-text{display:none;} .wa-float{padding:12px;} }
 
 /* Navbar WhatsApp: subtle pill (works even if external CSS missing) */
+.nav-wa-text:hover{opacity:.9;}
+
 .nav-wa-text{
   display:inline-flex;
   align-items:center;
@@ -312,7 +342,6 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 .nav-wa-text:hover{
   background:#d9f2e3;
 }
-.nav-wa-text:hover{opacity:.9;}
 </style>
 
 
@@ -362,9 +391,9 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 <nav class="navbar navbar-expand-lg">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="/">
-  <img alt="Global Attest Logo"
-       src="assets/images/logo-global-attest.png"
-       style="height:40px; width:auto; max-height:40px;"/>
+<img alt="Global Attest Logo" 
+     src="/assets/images/logo-global-attest.png" 
+      style="height:40px; width:auto; max-height:40px;"/>
 </a>
 <button aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#nav" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
@@ -373,53 +402,53 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 <ul class="navbar-nav ms-auto align-items-lg-center">
 <!-- Home -->
 <li class="nav-item">
-<a class="nav-link" href="/zh/">首页</a>
+<a class="nav-link" href="/">首页</a>
 </li>
-<!-- Services -->
+<!-- 服务 -->
 <li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="services.html" id="serviceDropdownEn" role="button">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="服务DropdownEn" role="button">
             服务
           </a>
-<ul aria-labelledby="serviceDropdownEn" class="dropdown-menu">
-<li><a class="dropdown-item" href="china-police-certificate.html">中国无犯罪证明（PCC）</a></li>
-<li><a class="dropdown-item" href="degree-verification.html">学历学位认证</a></li>
-<li><a class="dropdown-item" href="document-legalization.html">文件认证 / 海牙认证 / 领事认证</a></li>
-<li><a class="dropdown-item" href="study-in-china-zh.html">外国人来华留学</a></li>
-<li><a class="dropdown-item" href="wes-cn.html">WES 学历认证</a></li>
+<ul aria-labelledby="服务DropdownEn" class="dropdown-menu">
+<li><a class="dropdown-item" href="/china-police-certificate-zh.html">中国无犯罪证明（PCC）</a></li>
+<li><a class="dropdown-item" href="/degree-verification-zh.html">学历学位认证</a></li>
+<li><a class="dropdown-item" href="/document-legalization-zh.html">文件认证 / 海牙认证 / 领事认证</a></li>
+<li><a class="dropdown-item" href="/study-in-china-zh.html">外国人来华留学</a></li>
+<li><a class="dropdown-item" href="/wes-cn.html">WES 学历认证</a></li>
+
 </ul>
 </li>
-<!-- Guides -->
+
+<!-- 办理指南 -->
 <li class="nav-item dropdown">
 <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="howToDropdownEn" role="button">
             办理指南
           </a>
 <ul aria-labelledby="howToDropdownEn" class="dropdown-menu">
-<li><a class="dropdown-item" href="city-grid.html">如何申请中国无犯罪证明（PCC）</a></li>
-<li><a class="dropdown-item" href="degree-certification-guide.html">如何在中国办理海牙认证</a></li>
-<li><a class="dropdown-item" href="shenzhen-degree-notarization.html">如何办理学历学位认证</a></li>
-<li><a class="dropdown-item" href="embassy-certification-guide.html">如何办理使馆 / 领事认证</a></li>
-<li><a class="dropdown-item" href="wes-guide-zh.html">如何申请 WES 学历认证</a></li>
-</ul>
-</li>
-<!-- Other Menu -->
+<li><a class="dropdown-item" href="/city-grid.html">如何申请中国无犯罪证明（PCC）</a></li>
+<li><a class="dropdown-item" href="/degree-certification-guide-zh.html">如何在中国办理海牙认证</a></li>
+<li><a class="dropdown-item" href="/shenzhen-degree-notarization-zh.html">如何办理学历学位认证</a></li>
+<li><a class="dropdown-item" href="/embassy-certification-guide-zh.html">如何办理使馆 / 领事认证</a></li>
+<li><a class="dropdown-item" href="/wes-certification-guide-zh.html">如何申请 WES 学历认证</a></li></ul>
+</li><!-- Other Menu -->
 <li class="nav-item">
-<a class="nav-link" href="cases.html">案例</a>
+<a class="nav-link" href="/cases.html">案例</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="about.html">关于我们</a>
+<a class="nav-link" href="/about.html">关于我们</a>
 </li><li class="nav-item">
-<a class="nav-link" href="reviews.html">客户评价</a>
+<a class="nav-link" href="/reviews.html">客户评价</a>
 </li>
 </ul>
 <!-- CTA + Language Switch -->
 <div class="d-flex flex-column flex-lg-row align-items-lg-center ms-lg-3 mt-3 mt-lg-0 gap-2">
-<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-zh.html">
-          Contact
+<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="/contact-zh.html">
+          联系我们
         </a>
 <a class="nav-wa-text" href="https://wa.me/8618382170804" target="_blank" rel="noopener">WhatsApp</a>
 <div class="ms-lg-2 d-flex gap-2">
-<a class="lang-btn" href="/zh/">中文</a>
-<a class="lang-btn" href="/">EN</a>
+          <a class="lang-btn" href="/zh/">中文</a>
+          <a class="lang-btn" href="/">EN</a>
 </div>
 </div>
 </div>
