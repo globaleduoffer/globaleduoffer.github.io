@@ -335,14 +335,25 @@
 
 
 
-/* --- Force navbar weight (match homepage bold look) --- */
-.navbar-nav .nav-link,
-.navbar-nav .nav-link.dropdown-toggle,
-.dropdown-menu .dropdown-item{
-  font-weight: 700 !important;
+
+
+/* === Force CN navbar font to match Chinese homepage === */
+.navbar,
+.navbar .nav-link,
+.navbar .dropdown-item,
+.navbar .btn,
+.navbar .lang-btn,
+.navbar .navbar-brand,
+.navbar .navbar-toggler{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-/* Keep CTA buttons consistent */
-.cta-btn{ font-weight: 800 !important; }
+/* Match homepage weight feel */
+.navbar-nav .nav-link,
+.navbar .dropdown-item{
+  font-weight: 600 !important;
+}
 
 </style>
 
