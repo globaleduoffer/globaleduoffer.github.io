@@ -85,9 +85,11 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
       object-fit: cover;
     }
 
-    .navbar {
-      padding-top: 0.85rem;
-      padding-bottom: 0.85rem;
+    
+
+.navbar {
+      padding-top: 0.65rem;
+      padding-bottom: 0.65rem;
       box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
     }
 
@@ -96,12 +98,39 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
       letter-spacing: 0.03em;
     }
 
-    .navbar-nav .nav-link {
-      font-size: 1rem;
-      padding: 0.4rem 0.9rem;
+    .navbar-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0;
+    }
+    .navbar-brand img {
+      display: block;
     }
 
-    .navbar-nav .nav-link.active {
+    .navbar-nav .nav-link {
+      font-size: 0.98rem;
+      padding: 0.35rem 0.75rem;
+      font-weight: 500;
+    }
+
+    
+
+    /* Navbar font: clean & corporate (match Arial/Helvetica style) */
+    .navbar,
+    .navbar .nav-link,
+    .navbar .dropdown-item,
+    .navbar .btn,
+    .navbar .lang-btn {
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+    .navbar .dropdown-item {
+      font-weight: 600;
+    }
+
+.navbar-nav .nav-link.active {
       font-weight: 600;
     }
 
@@ -135,8 +164,60 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
     .lang-btn:hover {
       text-decoration: underline;
     }
+  
+/* CTA buttons in navbar */
+.cta-btn,
+.cta-btn-outline {
+  white-space: nowrap;
+}
 
-    .page-hero {
+@media (max-width: 991.98px) {
+  .cta-btn,
+  .cta-btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+    /* --- Navbar refinement (subtle, more premium) --- */
+    .navbar-nav .nav-link{
+      color:#334155;
+    }
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus{
+      color:#0f172a;
+    }
+    /* Active/hover cue: subtle pill highlight (more modern than underline) */
+    @media (min-width: 992px){
+      .navbar-nav .nav-link{
+        border-radius: 999px;
+        transition: background-color .15s ease, color .15s ease;
+      }
+      .navbar-nav .nav-link:hover,
+      .navbar-nav .nav-link:focus{
+        background: rgba(31,143,77,.10);
+      }
+      .navbar-nav .nav-link.active{
+        background: rgba(31,143,77,.16);
+      }
+    }
+/* CTA buttons: slightly tighter so they don't "jump out" */
+    .cta-btn{
+      padding-top:0.38rem !important;
+      padding-bottom:0.38rem !important;
+      font-weight:700;
+    }
+    /* Navbar WhatsApp: a touch lighter for a more premium look */
+    .nav-wa-text{
+      background:#f0fbf5;
+      color:#167a3e !important;
+    }
+    .nav-wa-text:hover{
+      background:#e6f8ee;
+    }
+    .lang-btn{ color:#2563eb; }
+.page-hero {
       background: linear-gradient(135deg, #1e3a8a, #020617);
       color: #fff;
       padding: 4rem 0 4.5rem;
@@ -268,15 +349,6 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
     .footer-text {
       font-size: 1rem;
     }
-
-    /* 这里的代码会让导航栏的所有文字变大、变清晰 */
-.navbar-nav .nav-link {
-    font-size: 1rem !important; /* 调大字号 */
-    font-weight: 500 !important;   /* 稍微加粗，看起来更专业 */
-    padding-left: 15px !important;  /* 增加左右间距，不那么拥挤 */
-    padding-right: 15px !important;
-}
-
 </style>
 <link href="china-police-certificate.html" hreflang="en" rel="alternate"/>
 <link href="china-police-certificate-zh.html" hreflang="zh-Hans" rel="alternate"/>
@@ -362,9 +434,10 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 <nav class="navbar navbar-expand-lg">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="/">
-  <img alt="Global Attest Logo"
-       src="assets/images/logo-global-attest.png"
-       style="height:40px; width:auto; max-height:40px;"/>
+<img alt="Global Attest Logo" 
+     src="assets/images/logo-global-attest.png" 
+      style="height:36px; width:auto; max-height:36px;"/>
+      <span class="visually-hidden">Global Attest</span>
 </a>
 <button aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#nav" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
@@ -386,8 +459,10 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 <li><a class="dropdown-item" href="document-legalization.html">Document Legalization / Hague Apostille / Consular</a></li>
 <li><a class="dropdown-item" href="study-in-china-en.html">Study in China</a></li>
 <li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
+<li><a class="dropdown-item" href="wfoe-china.html">WFOE China Business Setup</a></li>
 </ul>
 </li>
+
 <!-- Guides -->
 <li class="nav-item dropdown">
 <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="howToDropdownEn" role="button">
@@ -398,10 +473,8 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 <li><a class="dropdown-item" href="degree-certification-guide.html">How to Apply for a Hague Apostille in China</a></li>
 <li><a class="dropdown-item" href="shenzhen-degree-notarization.html">How to Process Degree Verification</a></li>
 <li><a class="dropdown-item" href="embassy-certification-guide.html">How to Apply for Embassy / Consular Legalization</a></li>
-<li><a class="dropdown-item" href="wes-guide-en.html">How to Apply for a WES Credential Evaluation</a></li>
-</ul>
-</li>
-<!-- Other Menu -->
+<li><a class="dropdown-item" href="wes-guide-en.html">How to Apply for a WES Credential Evaluation</a></li></ul>
+</li><!-- Other Menu -->
 <li class="nav-item">
 <a class="nav-link" href="cases-en.html">Cases</a>
 </li>
@@ -418,8 +491,8 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
         </a>
 <a class="nav-wa-text" href="https://wa.me/8618382170804" target="_blank" rel="noopener">WhatsApp</a>
 <div class="ms-lg-2 d-flex gap-2">
-<a class="lang-btn" href="/zh/">中文</a>
-<a class="lang-btn" href="/">EN</a>
+          <a class="lang-btn" href="/zh/">中文</a>
+          <a class="lang-btn" href="/">EN</a>
 </div>
 </div>
 </div>
