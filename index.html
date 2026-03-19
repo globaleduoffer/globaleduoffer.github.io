@@ -287,6 +287,23 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
       }
     } catch (e) {}
   }
+
+  function trackAndNavigate(event, eventName, params, url, target) {
+    if (event) event.preventDefault();
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', eventName, params || {});
+      }
+    } catch (e) {}
+    setTimeout(function () {
+      if (target === '_blank') {
+        window.open(url, '_blank', 'noopener');
+      } else {
+        window.location.href = url;
+      }
+    }, 350);
+    return false;
+  }
 </script>
 </head>
 <body>
@@ -342,10 +359,10 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 </ul>
 <!-- CTA + Language Switch -->
 <div class="d-flex flex-column flex-lg-row align-items-lg-center ms-lg-3 mt-3 mt-lg-0 gap-2">
-<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-en.html" onclick="trackGAEvent('contact_click', {event_category:'engagement', event_label:'navbar_contact', link_url:'contact-en.html'});">
+<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-en.html" onclick="return trackAndNavigate(event, 'contact_click', {event_category:'engagement', event_label:'navbar_contact', link_url:'contact-en.html'}, 'contact-en.html');">
           Contact
         </a>
-<a class="nav-wa-text" href="https://wa.me/8618382170804" rel="noopener" target="_blank" onclick="trackGAEvent('whatsapp_click', {event_category:'engagement', event_label:'navbar_whatsapp', link_url:'https://wa.me/8618382170804'});">WhatsApp</a>
+<a class="nav-wa-text" href="https://wa.me/8618382170804" rel="noopener" target="_blank" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'navbar_whatsapp', link_url:'https://wa.me/8618382170804'}, 'https://wa.me/8618382170804', '_blank');">WhatsApp</a>
 <div class="ms-lg-2 d-flex gap-2">
 <a class="lang-btn" href="/zh/">中文</a>
 <a class="lang-btn" href="/">EN</a>
@@ -366,23 +383,23 @@ and WES credential evaluation processed 100% remotely — trusted worldwide
 for immigration, visa and permanent residency (PR) applications.
 </p>
 <div class="hero-buttons">
-<a class="btn hero-btn" onclick="trackGAEvent('service_click', {event_category:'engagement', event_label:'china pcc certificate', link_url:'china-police-certificate.html'});" href="china-police-certificate.html">
+<a class="btn hero-btn" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'china pcc certificate', link_url:'china-police-certificate.html'}, 'china-police-certificate.html');" href="china-police-certificate.html">
 China PCC Certificate
 </a>
-<a class="btn hero-btn" onclick="trackGAEvent('service_click', {event_category:'engagement', event_label:'apostille &amp; legalization', link_url:'document-legalization.html'});" href="document-legalization.html">
+<a class="btn hero-btn" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'apostille &amp; legalization', link_url:'document-legalization.html'}, 'document-legalization.html');" href="document-legalization.html">
 Apostille &amp; Legalization
 </a>
-<a class="btn hero-btn" onclick="trackGAEvent('service_click', {event_category:'engagement', event_label:'wes evaluation support', link_url:'wes-en.html'});" href="wes-en.html">
+<a class="btn hero-btn" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'wes evaluation support', link_url:'wes-en.html'}, 'wes-en.html');" href="wes-en.html">
 WES Evaluation Support
 </a>
-<a class="btn hero-btn" onclick="trackGAEvent('service_click', {event_category:'engagement', event_label:'degree verification', link_url:'degree-verification.html'});" href="degree-verification.html">
+<a class="btn hero-btn" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'degree verification', link_url:'degree-verification.html'}, 'degree-verification.html');" href="degree-verification.html">
 Degree Verification
 </a>
-<a class="btn hero-btn" onclick="trackGAEvent('service_click', {event_category:'engagement', event_label:'study in china', link_url:'study-in-china.html'});" href="study-in-china.html">
+<a class="btn hero-btn" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'study in china', link_url:'study-in-china.html'}, 'study-in-china.html');" href="study-in-china.html">
 Study in China
 </a>
 </div>
-<a class="btn hero-btn mt-3" href="contact-en.html" onclick="trackGAEvent('contact_click', {event_category:'engagement', event_label:'hero_contact', link_url:'contact-en.html'});">
+<a class="btn hero-btn mt-3" href="contact-en.html" onclick="return trackAndNavigate(event, 'contact_click', {event_category:'engagement', event_label:'hero_contact', link_url:'contact-en.html'}, 'contact-en.html');">
   Start My Application Today →
 </a>
 <p style="margin-top:18px; opacity:.9; font-weight:600;">
@@ -417,7 +434,7 @@ Trusted by immigration &amp; PR applicants in the US, Canada, Australia, the UK 
           Our flagship service. We handle complete China Police Clearance Certificate applications for former residents worldwide.
           Fully remote processing, compliant with IRCC, USCIS, UKVI and global immigration authorities.
           </p>
-<a class="btn btn-success rounded-pill px-4 mt-2" href="china-police-certificate.html" onclick="trackGAEvent('service_click', {event_category:'engagement', event_label:'pcc_primary_cta', link_url:'china-police-certificate.html'});">
+<a class="btn btn-success rounded-pill px-4 mt-2" href="china-police-certificate.html" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'pcc_primary_cta', link_url:'china-police-certificate.html'}, 'china-police-certificate.html');">
             Learn More About China PCC
           </a>
 </div>
@@ -429,35 +446,35 @@ Trusted by immigration &amp; PR applicants in the US, Canada, Australia, the UK 
 <div class="p-4 border rounded h-100">
 <h5>Document Legalization &amp; Apostille</h5>
 <p>Hague Apostille, MFA authentication and embassy legalization coordination.</p>
-<a onclick="trackGAEvent('service_click', {event_category:'engagement', event_label:'view service →', link_url:'document-legalization.html'});" href="document-legalization.html">View Service →</a>
+<a onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'view service', link_url:'document-legalization.html'}, 'document-legalization.html');" href="document-legalization.html">View Service →</a>
 </div>
 </div>
 <div class="col-md-4">
 <div class="p-4 border rounded h-100">
 <h5>Degree Verification</h5>
 <p>China university degree verification and notarization support.</p>
-<a onclick="trackGAEvent('service_click', {event_category:'engagement', event_label:'view service →', link_url:'degree-verification.html'});" href="degree-verification.html">View Service →</a>
+<a onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'view service', link_url:'degree-verification.html'}, 'degree-verification.html');" href="degree-verification.html">View Service →</a>
 </div>
 </div>
 <div class="col-md-4">
 <div class="p-4 border rounded h-100">
 <h5>WES Credential Evaluation</h5>
 <p>Full assistance with WES and international credential assessment processes.</p>
-<a onclick="trackGAEvent('service_click', {event_category:'engagement', event_label:'view service →', link_url:'wes-en.html'});" href="wes-en.html">View Service →</a>
+<a onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'view service', link_url:'wes-en.html'}, 'wes-en.html');" href="wes-en.html">View Service →</a>
 </div>
 </div>
 <div class="col-md-4">
 <div class="p-4 border rounded h-100">
 <h5>Study in China Support</h5>
 <p>University applications, scholarships and study visa documentation.</p>
-<a onclick="trackGAEvent('service_click', {event_category:'engagement', event_label:'view service →', link_url:'study-in-china.html'});" href="study-in-china.html">View Service →</a>
+<a onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'view service', link_url:'study-in-china.html'}, 'study-in-china.html');" href="study-in-china.html">View Service →</a>
 </div>
 </div>
 <div class="col-md-4">
 <div class="p-4 border rounded h-100">
 <h5>WFOE China Business Setup</h5>
 <p>China Wholly Foreign-Owned Enterprise (WFOE) registration, company formation and compliance services.</p>
-<a onclick="trackGAEvent('service_click', {event_category:'engagement', event_label:'view service →', link_url:'wfoe-china.html'});" href="wfoe-china.html">View Service →</a>
+<a onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'view service', link_url:'wfoe-china.html'}, 'wfoe-china.html');" href="wfoe-china.html">View Service →</a>
 </div>
 </div>
 </div>
@@ -523,6 +540,6 @@ Trusted by immigration &amp; PR applicants in the US, Canada, Australia, the UK 
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/main.js"></script>
-<a class="wa-float" href="https://wa.me/8618382170804" rel="noopener" target="_blank" onclick="trackGAEvent('whatsapp_click', {event_category:'engagement', event_label:'floating_whatsapp', link_url:'https://wa.me/8618382170804'});"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+<a class="wa-float" href="https://wa.me/8618382170804" rel="noopener" target="_blank" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'floating_whatsapp', link_url:'https://wa.me/8618382170804'}, 'https://wa.me/8618382170804', '_blank');"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
 </body>
 </html>
