@@ -347,28 +347,41 @@
       background: #ffffff;
       border: 1px solid #e5e7eb;
       border-radius: 24px;
-      padding: 1.5rem;
-      box-shadow: 0 16px 36px rgba(15, 23, 42, 0.07);
+      padding: 1.65rem;
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06);
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    }
+    .team-profile-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 44px rgba(15, 23, 42, 0.10);
+      border-color: #dbe3ee;
     }
     .team-profile-photo {
       border-radius: 20px;
       overflow: hidden;
       background: linear-gradient(180deg, #1f2937, #111827);
-      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
-      height: 100%;
-      min-height: 320px;
+      box-shadow: 0 16px 34px rgba(15, 23, 42, 0.14);
+      max-width: 260px;
+      min-height: 0;
+      margin: 0 auto;
     }
     .team-profile-photo img {
       width: 100%;
-      height: 100%;
+      aspect-ratio: 4 / 5;
+      height: auto;
       object-fit: cover;
       display: block;
+      transition: transform 0.28s ease;
+    }
+    .team-profile-card:hover .team-profile-photo img {
+      transform: scale(1.02);
     }
     .team-profile-content {
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding-right: 0.5rem;
     }
     .team-profile-label {
       display: inline-flex;
@@ -409,8 +422,8 @@
     .team-profile-text p {
       font-size: 0.96rem;
       color: #374151;
-      line-height: 1.86;
-      margin-bottom: 0.9rem;
+      line-height: 1.92;
+      margin-bottom: 0.95rem;
     }
     .team-profile-text p:last-child {
       margin-bottom: 0;
@@ -420,8 +433,11 @@
         padding: 1.15rem;
       }
       .team-profile-photo {
-        min-height: 280px;
-        margin-bottom: 1rem;
+        max-width: 320px;
+        margin: 0 auto 1rem;
+      }
+      .team-profile-content {
+        padding-right: 0;
       }
     }
 
@@ -837,12 +853,12 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 <div class="team-profile-list">
 <article class="team-profile-card">
 <div class="row g-4 align-items-center">
-<div class="col-lg-4">
+<div class="col-lg-3">
 <div class="team-profile-photo">
 <img alt="David CHEN - 创始人兼首席执行官" src="assets/images/team-david-chen.jpg"/>
 </div>
 </div>
-<div class="col-lg-8">
+<div class="col-lg-9">
 <div class="team-profile-content">
 <div class="team-profile-label">Founder Profile</div>
 <h3 class="team-profile-name">David CHEN</h3>
@@ -859,12 +875,12 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 </article>
 <article class="team-profile-card">
 <div class="row g-4 align-items-center">
-<div class="col-lg-4">
+<div class="col-lg-3">
 <div class="team-profile-photo">
 <img alt="Grace CHANG - 商务发展经理" src="assets/images/team-grace-chang.jpg"/>
 </div>
 </div>
-<div class="col-lg-8">
+<div class="col-lg-9">
 <div class="team-profile-content">
 <div class="team-profile-label">Business Development</div>
 <h3 class="team-profile-name">Grace CHANG</h3>
@@ -880,12 +896,12 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 </article>
 <article class="team-profile-card">
 <div class="row g-4 align-items-center">
-<div class="col-lg-4">
+<div class="col-lg-3">
 <div class="team-profile-photo">
 <img alt="Alina XIAO - 商务发展经理" src="assets/images/team-alina-xiao.jpg"/>
 </div>
 </div>
-<div class="col-lg-8">
+<div class="col-lg-9">
 <div class="team-profile-content">
 <div class="team-profile-label">Business Development</div>
 <h3 class="team-profile-name">Alina XIAO</h3>
@@ -902,12 +918,12 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 </article>
 <article class="team-profile-card">
 <div class="row g-4 align-items-center">
-<div class="col-lg-4">
+<div class="col-lg-3">
 <div class="team-profile-photo">
 <img alt="Kris LI - 文件认证与合规专员" src="assets/images/team-kris-li.jpg"/>
 </div>
 </div>
-<div class="col-lg-8">
+<div class="col-lg-9">
 <div class="team-profile-content">
 <div class="team-profile-label">Execution &amp; Compliance</div>
 <h3 class="team-profile-name">Kris LI</h3>
