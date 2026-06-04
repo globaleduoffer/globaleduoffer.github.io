@@ -447,14 +447,35 @@ body{font-family:var(--font-sans)!important;color:#1f2937;font-weight:400;letter
 }
 </script>
 
+
+<style id="globalattest-nav-consistency">
+:root{--font-sans:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;}
+body{font-family:var(--font-sans)!important;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+.navbar,.navbar .nav-link,.navbar .dropdown-item,.navbar .btn,.navbar .lang-btn{font-family:var(--font-sans)!important;font-weight:600!important;letter-spacing:0!important;}
+.navbar{padding-top:.65rem!important;padding-bottom:.65rem!important;box-shadow:0 1px 0 rgba(15,23,42,.06)!important;}
+.navbar-brand{display:inline-flex!important;align-items:center!important;gap:.5rem!important;padding:0!important;}
+.navbar-brand img{height:36px!important;width:auto!important;max-height:36px!important;display:block!important;}
+.navbar-nav .nav-link{font-size:.98rem!important;padding:.35rem .75rem!important;color:#334155!important;}
+.navbar .dropdown-menu{background-color:#111827!important;border-radius:0!important;border:none!important;padding:.7rem 0!important;min-width:260px!important;}
+.navbar .dropdown-item{color:#e5e7eb!important;padding:.55rem 1.4rem!important;font-size:.92rem!important;white-space:normal!important;}
+.navbar .dropdown-item:hover,.navbar .dropdown-item:focus{background-color:#1f2937!important;color:#fff!important;}
+.dropdown-section-label{display:block!important;padding:.35rem 1.4rem .25rem!important;color:#94a3b8!important;font-size:.72rem!important;font-weight:800!important;letter-spacing:.08em!important;text-transform:uppercase!important;}
+@media (min-width:992px){.navbar-nav .nav-link{border-radius:999px!important;transition:background-color .15s ease,color .15s ease!important;}.navbar-nav .nav-link:hover,.navbar-nav .nav-link:focus{background:rgba(31,143,77,.10)!important;color:#0f172a!important;}.navbar-nav .nav-link.active{background:rgba(31,143,77,.16)!important;}}
+.cta-btn{padding-top:.38rem!important;padding-bottom:.38rem!important;font-weight:700!important;white-space:nowrap!important;}
+.nav-wa-text{display:inline-flex!important;align-items:center!important;justify-content:center!important;padding:.45rem 14px!important;border-radius:999px!important;background:#eaf7f0!important;color:#1f8f4d!important;font-weight:600!important;text-decoration:none!important;border:none!important;white-space:nowrap!important;}
+.nav-wa-text:hover{background:#d9f2e3!important;opacity:.95!important;}
+.lang-btn{color:#2563eb!important;font-size:.9rem!important;margin-left:.5rem!important;text-decoration:none!important;}
+.lang-btn:hover{text-decoration:underline!important;}
+@media (max-width:991.98px){.cta-btn,.cta-btn-outline{width:100%!important;text-align:center!important;}}
+</style>
+
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="/">
-<img alt="Global Attest Logo" 
-     src="assets/images/logo-global-attest.png" 
-      style="height:50px; width:auto;"/>
+<img alt="Global Attest Logo" src="assets/images/logo-global-attest.png" style="height:36px; width:auto; max-height:36px;"/>
+<span class="visually-hidden">Global Attest</span>
 </a>
 <button aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#nav" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
@@ -474,19 +495,17 @@ body{font-family:var(--font-sans)!important;color:#1f2937;font-weight:400;letter
 <li><a class="dropdown-item" href="china-police-certificate.html">China Police Certificate (PCC)</a></li>
 <li><span class="dropdown-section-label">PCC by Destination</span></li>
 <li><a class="dropdown-item" href="china-police-certificate-canada-pr.html">Canada PR / IRCC</a></li>
-<li><a class="dropdown-item" href="china-police-certificate-usa.html">U.S. Visa / Immigration</a></li>
 <li><a class="dropdown-item" href="china-police-certificate-australia.html">Australia Visa / Migration</a></li>
 <li><a class="dropdown-item" href="china-police-certificate-new-zealand.html">New Zealand Immigration</a></li>
 <li><a class="dropdown-item" href="china-police-certificate-spain.html">Spain / EU Residence</a></li>
 <li><span class="dropdown-section-label">Other Services</span></li>
 <li><a class="dropdown-item" href="degree-verification.html">Degree Verification</a></li>
 <li><a class="dropdown-item" href="document-legalization.html">Document Legalization / Hague Apostille / Consular</a></li>
-<li><a class="dropdown-item" href="study-in-china-en.html">Study in China</a></li>
+<li><a class="dropdown-item" href="study-in-china.html">Study in China</a></li>
 <li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
 <li><a class="dropdown-item" href="wfoe-china.html">WFOE China Business Setup</a></li>
 </ul>
 </li>
-
 <!-- Guides -->
 <li class="nav-item dropdown">
 <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="howToDropdownEn" role="button">
@@ -497,27 +516,23 @@ body{font-family:var(--font-sans)!important;color:#1f2937;font-weight:400;letter
 <li><a class="dropdown-item" href="degree-certification-guide.html">How to Apply for a Hague Apostille in China</a></li>
 <li><a class="dropdown-item" href="shenzhen-degree-notarization.html">How to Process Degree Verification</a></li>
 <li><a class="dropdown-item" href="embassy-certification-guide.html">How to Apply for Embassy / Consular Legalization</a></li>
-<li><a class="dropdown-item" href="wes-guide-en.html">How to Apply for a WES Credential Evaluation</a></li>
-</ul>
-</li>
-<!-- Other Menu -->
+<li><a class="dropdown-item" href="wes-guide-en.html">How to Apply for a WES Credential Evaluation</a></li></ul>
+</li><!-- Other Menu -->
 <li class="nav-item">
 <a class="nav-link" href="cases-en.html">Cases</a>
 </li>
 <li class="nav-item">
 <a class="nav-link" href="about-en.html">About Us</a>
-</li>
-
-<li class="nav-item">
+</li><li class="nav-item">
 <a class="nav-link" href="reviews-en.html">Reviews</a>
 </li>
 </ul>
 <!-- CTA + Language Switch -->
 <div class="d-flex flex-column flex-lg-row align-items-lg-center ms-lg-3 mt-3 mt-lg-0 gap-2">
-<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-en.html">
+<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-en.html" onclick="return trackAndNavigate(event, 'contact_click', {event_category:'engagement', event_label:'navbar_contact', link_url:'contact-en.html'}, 'contact-en.html');">
           Contact
         </a>
-<a class="nav-wa-text" href="https://wa.me/8617620130150" target="_blank" rel="noopener">WhatsApp</a>
+<a class="nav-wa-text" href="https://wa.me/8617620130150" rel="noopener" target="_blank" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'navbar_whatsapp', link_url:'https://wa.me/8617620130150'}, 'https://wa.me/8617620130150', '_blank');">WhatsApp</a>
 <div class="ms-lg-2 d-flex gap-2">
 <a class="lang-btn" href="/zh/">中文</a>
 <a class="lang-btn" href="/">EN</a>
@@ -530,9 +545,10 @@ body{font-family:var(--font-sans)!important;color:#1f2937;font-weight:400;letter
 <div class="reviews-shell">
 <div class="mb-4 mb-lg-5">
 <div class="reviews-hero-kicker">TESTIMONIALS · Client Reviews</div>
-<h1 class="reviews-hero-title">Global Attest Reviews: China PCC, WES, Apostille & China Service Cases</h1><h2>Real client experiences with China Police Certificates (PCC), WES Credential Evaluation, Degree Verification, Apostille, Consular Legalization, Study in China, and China Company Formation (WFOE)</h2><p class="reviews-hero-seo">From China Police Certificates (PCC) and WES credential evaluation support to degree verification, apostille, consular legalization, Study in China services, and China company formation (WFOE), these testimonials reflect real client experiences from around the world.</p>
-<p class="reviews-hero-subtitle">We work with clients who have lived, studied, worked, invested, or built businesses in China, helping them handle China-related police certificates, WES and degree verification, apostille, consular legalization, Study in China applications, and WFOE setup documentation. The testimonials below are based on real cooperation experiences; only personal privacy details have been removed or anonymized.</p>
-
+<h1 class="reviews-hero-title">Global Attest Reviews: China PCC, WES, Apostille &amp; China Service Cases</h1>
+<h2>Real client experiences with China Police Certificates (PCC), WES Credential Evaluation, Degree Verification, Apostille, Consular Legalization, Study in China, and China Company Formation (WFOE)</h2>
+<p class="reviews-hero-seo">From China Police Certificates (PCC) and WES credential evaluation support to degree verification, apostille, consular legalization, Study in China services, and China company formation (WFOE), these testimonials reflect real client experiences from around the world.</p>
+<p class="reviews-hero-subtitle">We work with clients who have lived, studied, worked, invested, or built businesses in China, helping them handle China-related police certificates, WES and degree verification, apostille, consular legalization, Study in China applications, and WFOE setup documentation. Testimonials are based on real cooperation experiences; only personal privacy details have been removed or anonymized.</p>
 <div class="reviews-trust-strip" aria-label="Global Attest review highlights">
   <div class="reviews-trust-item"><strong>China PCC</strong><span>Police certificate cases for immigration, work, PR, and background checks</span></div>
   <div class="reviews-trust-item"><strong>WES &amp; Degree Verification</strong><span>Academic verification, sealed transcripts, and WES credential evaluation support</span></div>
