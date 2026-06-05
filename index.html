@@ -494,24 +494,13 @@
     return false;
   }
 </script>
-
-<style id="global-attest-footer-final-match">
-footer.bg-dark{
-  background:#212529!important;
-}
-footer .footer-copyright,
-footer p.mb-0{
-  font-family:"Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif!important;
-  color:#f8f9fa!important;
-  font-size:20px!important;
-  line-height:1.45!important;
-  font-weight:400!important;
-  letter-spacing:.01em!important;
-  opacity:1!important;
-  margin:0!important;
-}
+<style id="globalattest-unified-font-footer">
+:root{--font-sans:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;}
+html,body,button,input,select,textarea,.navbar,.navbar .nav-link,.navbar .dropdown-item,.navbar .btn,.navbar .lang-btn{font-family:var(--font-sans)!important;letter-spacing:0!important;}
+body{color:#1f2937;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+footer.bg-dark,footer.bg-dark p{color:#f8fafc!important;}
+.footer-text{font-family:var(--font-sans)!important;font-weight:500;letter-spacing:0;}
 </style>
-
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
@@ -829,8 +818,8 @@ Trusted by immigration &amp; PR applicants in Canada, Australia, New Zealand, Sp
 </div>
 </div>
 </section>
-<footer class="py-4 bg-dark text-center">
-  <p class="mb-0 footer-copyright">
+<footer class="py-4 bg-dark text-light text-center">
+  <p class="mb-0 footer-text">
     © <span id="y"></span> Global Attest™. All Rights Reserved.
   </p>
 </footer>

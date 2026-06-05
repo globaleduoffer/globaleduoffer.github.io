@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>About Global Attest | China PCC, Apostille, WFOE & Document Legalization Experts</title>
+<title>About Global Attest | China Document Service Experts</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,8 @@ text-rendering:optimizeLegibility;
 }
 </style>
 
-<meta content="Global Attest is a Shenzhen-based China document support company specializing in China Police Certificates, apostille, consular legalization, WES support, degree verification, WFOE China business setup, and cross-border compliance documentation." name="description"/>
+<meta name="description" content="Global Attest helps clients worldwide with China PCC, apostille, consular legalization, WES support, degree verification and WFOE setup.">
+<link rel="canonical" href="https://globalattest.com/about-en.html">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 <link href="assets/style.css" rel="stylesheet"/>
@@ -543,7 +544,7 @@ nav.navbar .nav-link,
 nav.navbar .dropdown-item,
 nav.navbar .btn,
 nav.navbar .lang-btn{
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: var(--font-sans) !important;
   font-weight: 600 !important;
   letter-spacing: 0.2px !important;
 }
@@ -858,6 +859,13 @@ nav.navbar .lang-btn:hover{ text-decoration: underline !important; }
 }
 </style>
 
+<style id="globalattest-unified-font-footer">
+:root{--font-sans:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;}
+html,body,button,input,select,textarea,.navbar,.navbar .nav-link,.navbar .dropdown-item,.navbar .btn,.navbar .lang-btn{font-family:var(--font-sans)!important;letter-spacing:0!important;}
+body{color:#1f2937;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+footer.bg-dark,footer.bg-dark p{color:#f8fafc!important;}
+.footer-text{font-family:var(--font-sans)!important;font-weight:500;letter-spacing:0;}
+</style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
@@ -891,7 +899,7 @@ nav.navbar .lang-btn:hover{ text-decoration: underline !important; }
 <li><span class="dropdown-section-label">Other Services</span></li>
 <li><a class="dropdown-item" href="degree-verification.html">Degree Verification</a></li>
 <li><a class="dropdown-item" href="document-legalization.html">Document Legalization / Hague Apostille / Consular</a></li>
-<li><a class="dropdown-item" href="study-in-china-en.html">Study in China</a></li>
+<li><a class="dropdown-item" href="study-in-china.html">Study in China</a></li>
 <li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
 <li><a class="dropdown-item" href="wfoe-china.html">WFOE China Business Setup</a></li>
 </ul>
@@ -919,10 +927,10 @@ nav.navbar .lang-btn:hover{ text-decoration: underline !important; }
 </ul>
 <!-- CTA + Language Switch -->
 <div class="d-flex flex-column flex-lg-row align-items-lg-center ms-lg-3 mt-3 mt-lg-0 gap-2">
-<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-en.html">
+<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-en.html" onclick="return trackAndNavigate(event, 'contact_click', {event_category:'engagement', event_label:'navbar_contact', link_url:'contact-en.html'}, 'contact-en.html');">
           Contact
         </a>
-<a class="nav-wa-text" href="https://wa.me/8617620130150" rel="noopener" target="_blank">WhatsApp</a>
+<a class="nav-wa-text" href="https://wa.me/8618382170804" rel="noopener" target="_blank" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'navbar_whatsapp', link_url:'https://wa.me/8618382170804'}, 'https://wa.me/8618382170804', '_blank');">WhatsApp</a>
 <div class="ms-lg-2 d-flex gap-2">
 <a class="lang-btn" href="/zh/">中文</a>
 <a class="lang-btn" href="/">EN</a>
@@ -1288,9 +1296,9 @@ Below are introductions to our core team members, including specialists in China
 </section>
 </main>
 <footer class="py-4 bg-dark text-light text-center">
-<p class="mb-0">
-  © <span id="y"></span> Global Attest™. All Rights Reserved.
-</p>
+  <p class="mb-0 footer-text">
+    © <span id="y"></span> Global Attest™. All Rights Reserved.
+  </p>
 </footer>
 <script>
   document.getElementById("y").textContent = new Date().getFullYear();
