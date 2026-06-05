@@ -264,21 +264,170 @@
       text-transform: uppercase;
     }
 
-    .destination-card {
-      height: 100%;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      padding: 1.2rem;
-      background: #fff;
-      box-shadow: 0 10px 26px rgba(15,23,42,0.05);
+    .services-panel {
+      background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+      border-radius: 28px;
+      padding: clamp(1.2rem, 3vw, 2.2rem);
+      box-shadow: 0 24px 70px rgba(15, 23, 42, 0.08);
+      border: 1px solid rgba(148, 163, 184, 0.24);
     }
+
+    .service-feature-card,
+    .destination-card,
+    .service-mini-card {
+      height: 100%;
+      border: 1px solid rgba(148, 163, 184, 0.28);
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+    }
+
+    .service-feature-card {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(1.35rem, 3vw, 2.2rem);
+      border-color: rgba(31, 143, 77, 0.22);
+    }
+
+    .service-feature-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 5px;
+      background: linear-gradient(90deg, #0f5132, #22c55e, #60a5fa);
+    }
+
+    .service-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      color: #166534;
+      background: #ecfdf3;
+      border: 1px solid #bbf7d0;
+      border-radius: 999px;
+      padding: 0.32rem 0.7rem;
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 0.65rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .feature-list li {
+      display: flex;
+      gap: 0.55rem;
+      color: #475569;
+      line-height: 1.5;
+    }
+
+    .feature-list i {
+      color: #1f8f4d;
+      margin-top: 0.22rem;
+    }
+
+    .services-subhead {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 2rem 0 1rem;
+    }
+
+    .services-subhead p {
+      max-width: 44rem;
+    }
+
+    .destination-card,
+    .service-mini-card {
+      position: relative;
+      padding: 1.15rem;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+
+    .destination-card:hover,
+    .service-mini-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(31, 143, 77, 0.36);
+      box-shadow: 0 22px 50px rgba(15, 23, 42, 0.10);
+    }
+
+    .destination-badge {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 0.24rem 0.58rem;
+      margin-bottom: 0.8rem;
+      background: #f1f5f9;
+      color: #475569;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
     .destination-card h5 {
       font-weight: 800;
       color: #0f172a;
+      margin-bottom: 0.55rem;
     }
     .destination-card p {
       color: #64748b;
       margin-bottom: 0.8rem;
+    }
+
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      color: #0f7a43;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .card-link:hover {
+      color: #075e31;
+      text-decoration: none;
+    }
+
+    .service-mini-card {
+      padding: 1.35rem;
+      text-align: left;
+    }
+
+    .service-icon {
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: #eefbf3;
+      color: #167a3e;
+      margin-bottom: 1rem;
+    }
+
+    .service-mini-card h5 {
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .service-mini-card p {
+      color: #64748b;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 767.98px) {
+      .services-subhead {
+        display: block;
+      }
     }
 
 </style>
@@ -378,7 +527,7 @@
 <li><span class="dropdown-section-label">Other Services</span></li>
 <li><a class="dropdown-item" href="degree-verification.html">Degree Verification</a></li>
 <li><a class="dropdown-item" href="document-legalization.html">Document Legalization / Hague Apostille / Consular</a></li>
-<li><a class="dropdown-item" href="study-in-china-en.html">Study in China</a></li>
+<li><a class="dropdown-item" href="study-in-china.html">Study in China</a></li>
 <li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
 <li><a class="dropdown-item" href="wfoe-china.html">WFOE China Business Setup</a></li>
 </ul>
@@ -478,95 +627,135 @@ Trusted by immigration &amp; PR applicants in Canada, Australia, New Zealand, Sp
 <!-- Main Highlight Service -->
 <div class="row justify-content-center mb-5">
 <div class="col-lg-10">
-<div class="p-4 p-md-5 shadow rounded bg-light">
-<h3>China Police Clearance Certificate (PCC)</h3>
-<p>
-          Our flagship service. We handle complete China Police Clearance Certificate applications for former residents worldwide.
-          Fully remote processing for immigration, visa, PR, work and study use worldwide.
+<div class="services-panel">
+<div class="service-feature-card">
+<div class="row g-4 align-items-center">
+<div class="col-lg-7">
+<div class="service-eyebrow"><i class="fa-solid fa-shield-halved"></i> Flagship Service</div>
+<h3 class="mb-3">China Police Clearance Certificate (PCC)</h3>
+<p class="text-muted mb-4">
+          Remote China PCC application support for former foreign residents who need a no criminal record certificate for immigration, PR, visa, work, study or overseas documentation.
           </p>
-<a class="btn btn-success rounded-pill px-4 mt-2" href="china-police-certificate.html" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'pcc_primary_cta', link_url:'china-police-certificate.html'}, 'china-police-certificate.html');">
+<div class="d-flex flex-wrap gap-2">
+<a class="btn btn-success rounded-pill px-4" href="china-police-certificate.html" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'pcc_primary_cta', link_url:'china-police-certificate.html'}, 'china-police-certificate.html');">
             Learn More About China PCC
           </a>
-<a class="btn btn-outline-success rounded-pill px-4 mt-2 ms-sm-2" href="china-police-certificate-canada-pr.html" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'canada_pr_pcc_primary_cta', link_url:'china-police-certificate-canada-pr.html'}, 'china-police-certificate-canada-pr.html');">
+<a class="btn btn-outline-success rounded-pill px-4" href="china-police-certificate-canada-pr.html" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'canada_pr_pcc_primary_cta', link_url:'china-police-certificate-canada-pr.html'}, 'china-police-certificate-canada-pr.html');">
             PCC for Canada PR / IRCC
           </a>
 </div>
 </div>
+<div class="col-lg-5">
+<ul class="feature-list">
+<li><i class="fa-solid fa-circle-check"></i><span>For applicants who already left China</span></li>
+<li><i class="fa-solid fa-circle-check"></i><span>City-specific route review before document preparation</span></li>
+<li><i class="fa-solid fa-circle-check"></i><span>Support for notarization, apostille or legalization if required</span></li>
+</ul>
+</div>
+</div>
 </div>
 <!-- PCC Destination Pages -->
-<div class="row justify-content-center mb-5">
-<div class="col-lg-10">
-<h3 class="mb-3">China PCC by Destination</h3>
-<p class="text-muted mb-4">
+<div class="services-subhead">
+<div>
+<h3 class="mb-2">China PCC by Destination</h3>
+<p class="text-muted mb-0">
           Different immigration authorities may ask for different supporting steps after a China police certificate is issued. Choose the destination-specific page when it applies to your case.
         </p>
+</div>
+</div>
 <div class="row g-3">
-<div class="col-md-6 col-lg-3">
+<div class="col-md-6 col-lg">
 <div class="destination-card">
+<span class="destination-badge">Canada</span>
 <h5>Canada PR / IRCC</h5>
 <p>For Express Entry, PNP, family sponsorship and IRCC document requests.</p>
-<a href="china-police-certificate-canada-pr.html">View Canada page →</a>
+<a class="card-link" href="china-police-certificate-canada-pr.html">View Canada page <i class="fa-solid fa-arrow-right"></i></a>
 </div>
 </div>
-<div class="col-md-6 col-lg-3">
+<div class="col-md-6 col-lg">
 <div class="destination-card">
+<span class="destination-badge">United States</span>
+<h5>U.S. Visa / Immigration</h5>
+<p>For U.S. visa, green card, consular and immigration document requests.</p>
+<a class="card-link" href="china-police-certificate-usa.html">View U.S. page <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</div>
+<div class="col-md-6 col-lg">
+<div class="destination-card">
+<span class="destination-badge">Australia</span>
 <h5>Australia Visa / Migration</h5>
 <p>For Australia visa, migration and background-check requirements.</p>
-<a href="china-police-certificate-australia.html">View Australia page →</a>
+<a class="card-link" href="china-police-certificate-australia.html">View Australia page <i class="fa-solid fa-arrow-right"></i></a>
 </div>
 </div>
-<div class="col-md-6 col-lg-3">
+<div class="col-md-6 col-lg">
 <div class="destination-card">
+<span class="destination-badge">New Zealand</span>
 <h5>New Zealand Immigration</h5>
 <p>For New Zealand visa, residence and immigration document requests.</p>
-<a href="china-police-certificate-new-zealand.html">View New Zealand page →</a>
+<a class="card-link" href="china-police-certificate-new-zealand.html">View New Zealand page <i class="fa-solid fa-arrow-right"></i></a>
 </div>
 </div>
-<div class="col-md-6 col-lg-3">
+<div class="col-md-6 col-lg">
 <div class="destination-card">
+<span class="destination-badge">Spain / EU</span>
 <h5>Spain / EU Residence</h5>
 <p>For Spain residence, EU use and country-specific authentication checks.</p>
-<a href="china-police-certificate-spain.html">View Spain page →</a>
+<a class="card-link" href="china-police-certificate-spain.html">View Spain page <i class="fa-solid fa-arrow-right"></i></a>
 </div>
 </div>
 </div>
 </div>
 </div>
 <!-- Secondary Services Grid -->
-<div class="row text-center g-4">
+<div class="row justify-content-center mt-4">
+<div class="col-lg-10">
+<div class="services-subhead">
+<div>
+<h3 class="mb-2">Other Document Services</h3>
+<p class="text-muted mb-0">Specialized support for authentication, education, credential and business documentation.</p>
+</div>
+</div>
+<div class="row g-3 justify-content-center">
 <div class="col-md-4">
-<div class="p-4 border rounded h-100">
+<div class="service-mini-card">
+<div class="service-icon"><i class="fa-solid fa-stamp"></i></div>
 <h5>Document Legalization &amp; Apostille</h5>
 <p>Hague Apostille, MFA authentication and embassy legalization coordination.</p>
-<a onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'view service', link_url:'document-legalization.html'}, 'document-legalization.html');" href="document-legalization.html">View Service →</a>
+<a class="card-link" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'view service', link_url:'document-legalization.html'}, 'document-legalization.html');" href="document-legalization.html">View Service <i class="fa-solid fa-arrow-right"></i></a>
 </div>
 </div>
 <div class="col-md-4">
-<div class="p-4 border rounded h-100">
+<div class="service-mini-card">
+<div class="service-icon"><i class="fa-solid fa-graduation-cap"></i></div>
 <h5>Degree Verification</h5>
 <p>China university degree verification and notarization support.</p>
-<a onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'view service', link_url:'degree-verification.html'}, 'degree-verification.html');" href="degree-verification.html">View Service →</a>
+<a class="card-link" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'view service', link_url:'degree-verification.html'}, 'degree-verification.html');" href="degree-verification.html">View Service <i class="fa-solid fa-arrow-right"></i></a>
 </div>
 </div>
 <div class="col-md-4">
-<div class="p-4 border rounded h-100">
+<div class="service-mini-card">
+<div class="service-icon"><i class="fa-solid fa-file-signature"></i></div>
 <h5>WES Credential Evaluation</h5>
 <p>Full assistance with WES and international credential assessment processes.</p>
-<a onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'view service', link_url:'wes-en.html'}, 'wes-en.html');" href="wes-en.html">View Service →</a>
+<a class="card-link" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'view service', link_url:'wes-en.html'}, 'wes-en.html');" href="wes-en.html">View Service <i class="fa-solid fa-arrow-right"></i></a>
 </div>
 </div>
 <div class="col-md-4">
-<div class="p-4 border rounded h-100">
+<div class="service-mini-card">
+<div class="service-icon"><i class="fa-solid fa-building-columns"></i></div>
 <h5>Study in China Support</h5>
 <p>University applications, scholarships and study visa documentation.</p>
-<a onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'view service', link_url:'study-in-china.html'}, 'study-in-china.html');" href="study-in-china.html">View Service →</a>
+<a class="card-link" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'view service', link_url:'study-in-china.html'}, 'study-in-china.html');" href="study-in-china.html">View Service <i class="fa-solid fa-arrow-right"></i></a>
 </div>
 </div>
 <div class="col-md-4">
-<div class="p-4 border rounded h-100">
+<div class="service-mini-card">
+<div class="service-icon"><i class="fa-solid fa-briefcase"></i></div>
 <h5>WFOE China Business Setup</h5>
 <p>China Wholly Foreign-Owned Enterprise (WFOE) registration, company formation and compliance services.</p>
-<a onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'view service', link_url:'wfoe-china.html'}, 'wfoe-china.html');" href="wfoe-china.html">View Service →</a>
+<a class="card-link" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'view service', link_url:'wfoe-china.html'}, 'wfoe-china.html');" href="wfoe-china.html">View Service <i class="fa-solid fa-arrow-right"></i></a>
+</div>
 </div>
 </div>
 </div>
