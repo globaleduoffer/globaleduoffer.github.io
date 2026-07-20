@@ -96,3 +96,15 @@ Homepage title and meta update (2026-07-20):
 - Updated the homepage `<title>` to use "China Police Clearance Certificate" instead of the abbreviated "China PCC".
 - Updated the homepage meta description to include immigration, employment, study and international-use search intent.
 - Added matching Open Graph and Twitter title/description tags for consistent page previews.
+
+Homepage hero layout update (2026-07-20):
+- Kept the homepage H1 keyword wording but split it into two visual lines for a cleaner first-screen layout.
+- Adjusted the hero text/image column ratio and reduced the H1 display size so the headline no longer feels crowded.
+
+Homepage H1 four-line update (2026-07-20):
+- Split the homepage H1 into four visual lines: "China Police" / "Clearance Certificate" and "Apostille &" / "Authentication Services".
+- Added a 40-60px visual gap between the two title groups for a more comfortable first-screen layout.
+
+Homepage H1 two-line update (2026-07-20):
+- Updated the homepage H1 to two visual lines: "China Police Clearance Certificate" and "Apostille & Authentication Services".
+- Kept each title phrase on one line on desktop while using responsive sizing to prevent mobile overflow.
