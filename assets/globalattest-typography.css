@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --ga-font-en-body: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  --ga-font-en-heading: "Libre Baskerville", Georgia, "Times New Roman", Times, serif;
+  --ga-font-zh-body: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", Arial, sans-serif;
+}
+
+body {
+  letter-spacing: 0 !important;
+}
+
+html[lang="en"],
+html[lang="en"] body,
+html[lang="en"] p,
+html[lang="en"] li,
+html[lang="en"] label,
+html[lang="en"] input,
+html[lang="en"] select,
+html[lang="en"] textarea,
+html[lang="en"] button,
+html[lang="en"] .btn,
+html[lang="en"] .navbar,
+html[lang="en"] .navbar .nav-link,
+html[lang="en"] .navbar .dropdown-item,
+html[lang="en"] .navbar .lang-btn,
+html[lang="en"] .nav-wa-text,
+html[lang="en"] .hero-subtitle,
+html[lang="en"] .premium-lead,
+html[lang="en"] .guide-lead,
+html[lang="en"] .article-content,
+html[lang="en"] .article-content p,
+html[lang="en"] .article-content li,
+html[lang="en"] .footer-premium,
+html[lang="en"] .footer-premium p,
+html[lang="en"] .footer-premium a,
+html[lang="en"] .review-card,
+html[lang="en"] .review-text {
+  font-family: var(--ga-font-en-body) !important;
+  letter-spacing: 0 !important;
+}
+
+html[lang="en"] h1,
+html[lang="en"] h2,
+html[lang="en"] h3,
+html[lang="en"] .hero-title,
+html[lang="en"] .premium-title,
+html[lang="en"] .guide-title,
+html[lang="en"] .page-hero h1,
+html[lang="en"] .contact-hero h1,
+html[lang="en"] .article-content h1,
+html[lang="en"] .article-content h2,
+html[lang="en"] .article-content h3,
+html[lang="en"] .case-article-card h1,
+html[lang="en"] .case-article-card h2,
+html[lang="en"] .case-page-main h1,
+html[lang="en"] .case-page-main h2,
+html[lang="en"] .reviews-hero-title {
+  font-family: var(--ga-font-en-heading) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+}
+
+html[lang="en"] h4,
+html[lang="en"] h5,
+html[lang="en"] h6,
+html[lang="en"] .navbar .nav-link,
+html[lang="en"] .navbar .dropdown-item,
+html[lang="en"] .btn,
+html[lang="en"] .review-name,
+html[lang="en"] .review-meta {
+  font-family: var(--ga-font-en-body) !important;
+}
+
+html[lang="en"] .navbar .nav-link,
+html[lang="en"] .navbar .dropdown-item,
+html[lang="en"] .btn,
+html[lang="en"] .nav-wa-text {
+  font-weight: 600 !important;
+}
+
+html[lang="en"] .hero-title,
+html[lang="en"] .guide-title,
+html[lang="en"] .reviews-hero-title {
+  line-height: 1.12 !important;
+}
+
+html[lang="en"] .premium-title,
+html[lang="en"] .article-content h2 {
+  line-height: 1.22 !important;
+}
+
+html[lang^="zh"],
+html[lang^="zh"] body,
+html[lang^="zh"] h1,
+html[lang^="zh"] h2,
+html[lang^="zh"] h3,
+html[lang^="zh"] h4,
+html[lang^="zh"] h5,
+html[lang^="zh"] h6,
+html[lang^="zh"] p,
+html[lang^="zh"] li,
+html[lang^="zh"] label,
+html[lang^="zh"] input,
+html[lang^="zh"] select,
+html[lang^="zh"] textarea,
+html[lang^="zh"] button,
+html[lang^="zh"] .btn,
+html[lang^="zh"] .navbar,
+html[lang^="zh"] .navbar .nav-link,
+html[lang^="zh"] .navbar .dropdown-item,
+html[lang^="zh"] .nav-wa-text,
+html[lang^="zh"] .footer-premium,
+html[lang^="zh"] .footer-premium p,
+html[lang^="zh"] .footer-premium a {
+  font-family: var(--ga-font-zh-body) !important;
+  letter-spacing: 0 !important;
+}
+
+html[lang^="zh"] .navbar .nav-link,
+html[lang^="zh"] .navbar .dropdown-item,
+html[lang^="zh"] .btn,
+html[lang^="zh"] .nav-wa-text {
+  font-weight: 600 !important;
+}
