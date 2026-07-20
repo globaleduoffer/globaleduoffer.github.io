@@ -291,3 +291,38 @@ html[lang^="zh"] .nav-wa-text {
   color: #fff;
   text-decoration: underline;
 }
+
+html[lang="en"] .home-hero-title {
+  max-width: none;
+  font-size: clamp(1.9rem, 2.9vw, 3.25rem) !important;
+  line-height: 1.08 !important;
+  margin-bottom: 1.2rem;
+}
+
+html[lang="en"] .home-hero-title .title-line {
+  display: block;
+  white-space: nowrap;
+}
+
+html[lang="en"] .home-hero-title .title-line + .title-line {
+  margin-top: 0.34em;
+}
+
+html[lang="en"] .home-hero-title .title-line-secondary {
+  font-size: 0.82em;
+  line-height: 1.12;
+  color: rgba(255, 255, 255, 0.96);
+}
+
+html[lang="en"] .hero-section .hero-subtitle {
+  max-width: 38rem;
+}
+
+@media (max-width: 575.98px) {
+  html[lang="en"] .home-hero-title {
+    font-size: clamp(1.22rem, 5.15vw, 2.05rem) !important;
+  }
+  html[lang="en"] .home-hero-title .title-line + .title-line {
+    margin-top: 0.46em;
+  }
+}
