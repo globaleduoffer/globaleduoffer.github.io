@@ -63,3 +63,36 @@ SEO cleanup update (2026-07-20):
 - Chinese pages use one consistent Chinese system font stack.
 - Replaces large hero PNG photos with compressed JPG files for faster loading.
 - Keeps only the main Reviews pages instead of older paginated review duplicates.
+
+
+Country PCC SEO update (2026-07-20):
+- Rewrote and expanded the five destination PCC pages for Canada PR, U.S. visa/immigration, Australia visa/migration, New Zealand immigration and Spain/EU residence.
+- Added country-specific decision tables covering search intent, timeline, validity, document version, translation/authentication needs and destination-specific risks.
+- Added destination-specific high-intent FAQs to reduce template duplication and improve search relevance.
+- Clarified WES service page vs WES guide page vs Chinese degree verification page search intent.
+- Shortened/refined selected Title and Meta Description tags for better search-result clarity.
+- Added `loading`, `decoding`, `width` and `height` attributes to image tags to improve layout stability and Core Web Vitals readiness.
+
+
+PCC destinations navigation update (2026-07-20):
+- Updated the English homepage H1 to "China Police Clearance Certificate, Apostille & Authentication Services".
+- Added destination PCC pages for United Kingdom Visa / Immigration, Germany Visa / Residence, and France Visa / Residence.
+- Added /china-police-certificate-by-country.html as the unified country directory for Europe, North America and Asia-Pacific.
+- Added "View All Destinations →" to the PCC by Destination dropdown while keeping the main navigation concise.
+- Added Italy, Ireland and Singapore to the country directory as case-review destinations for future expansion.
+- Updated sitemap.xml with the new destination URLs.
+
+
+Business navigation refinement update (2026-07-20):
+- Updated the homepage subtitle to include China PCC, Apostille, certified translations, degree verification, embassy authentication and overseas applications.
+- Simplified PCC country dropdown labels to short country names and reordered them by business priority.
+- Standardized destination PCC page titles and H1 headings around "China Police Clearance Certificate for [Country]".
+- Moved WFOE / China company setup out of the Services dropdown and added Business Setup as a top-level navigation item.
+- Renamed Study in China navigation and page positioning to Student Document Services / China Student Document Services.
+- Added a homepage hero CTA for China Business Setup and WFOE registration services.
+- Added first-paragraph keyword coverage on destination pages for "China Police Clearance Certificate", "China Police Certificate" and "China PCC" while keeping country page URLs unchanged.
+
+Homepage title and meta update (2026-07-20):
+- Updated the homepage `<title>` to use "China Police Clearance Certificate" instead of the abbreviated "China PCC".
+- Updated the homepage meta description to include immigration, employment, study and international-use search intent.
+- Added matching Open Graph and Twitter title/description tags for consistent page previews.
