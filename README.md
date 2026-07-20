@@ -1,11 +1,14 @@
-# Global Attest final online package
+# Global Attest SEO clean final package
 
-Generated: 2026-07-16
+Generated: 2026-07-20
 
 Upload the contents of `upload-root/` to the website root.
 
 Important notes:
-- Keep the existing `assets/`, favicon files, images, city pages, guide pages, and review pages already on the server.
+- This is the recommended clean upload package after SEO review.
+- Do not mix this package with the older 139-page full package.
+- The package keeps the core service, case, contact, review/home language, and Blog pages.
+- The package includes `CNAME`, `robots.txt`, `sitemap.xml`, a small `assets/main.js`, and the existing Google Search Console verification file.
 - English home page is `/index.html`.
 - Chinese home page is `/zh/index.html`, corresponding to https://globalattest.com/zh/.
 - The package includes updated `sitemap.xml` and `robots.txt`.
@@ -47,3 +50,16 @@ Formal English typography update (2026-07-20):
 - English headings use Libre Baskerville with Georgia fallback.
 - English body text, navigation, buttons and forms use Source Sans 3 with system sans fallbacks.
 - Chinese pages were not changed.
+
+
+SEO cleanup update (2026-07-20):
+- Uses the 43-page core website package instead of the older 139-page mixed package.
+- Avoids old Guide pages, old city templates, old review pagination pages, and duplicate legacy pages.
+- Preserves the custom domain through `CNAME`.
+- Preserves Google Search Console verification.
+- Adds a lightweight `assets/main.js` so pages that reference it do not generate missing-script requests.
+- Adds a unified sitewide typography stylesheet at `assets/globalattest-typography.css`.
+- English pages use one consistent formal typography system across home, services, Blog, cases, Reviews and Contact pages.
+- Chinese pages use one consistent Chinese system font stack.
+- Replaces large hero PNG photos with compressed JPG files for faster loading.
+- Keeps only the main Reviews pages instead of older paginated review duplicates.
