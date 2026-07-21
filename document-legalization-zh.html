@@ -694,6 +694,90 @@ body{background:#fff!important;}
 }
 </style>
 <link href="assets/globalattest-typography.css" rel="stylesheet">
+<style id="resources-nav-compact">
+@media (min-width: 992px) {
+  .navbar .container { max-width: 1320px; }
+  .navbar-nav .nav-link { font-size: .92rem !important; padding-left: .48rem !important; padding-right: .48rem !important; }
+  .navbar .btn, .navbar .nav-wa-text { font-size: .9rem !important; padding-left: .85rem !important; padding-right: .85rem !important; }
+  .navbar-brand img { max-width: 210px !important; object-fit: contain; }
+}
+</style>
+<style id="nav-dropdown-compact-v14">
+@media (min-width: 992px) {
+  .navbar .dropdown-menu {
+    padding: .5rem 0 !important;
+    min-width: 280px !important;
+  }
+  .navbar .dropdown-item {
+    font-size: .84rem !important;
+    line-height: 1.36 !important;
+    padding: .42rem 1.15rem !important;
+    font-weight: 600 !important;
+  }
+  .navbar .dropdown-section-label {
+    font-size: .66rem !important;
+    line-height: 1.25 !important;
+    padding: .4rem 1.15rem .2rem !important;
+    letter-spacing: .08em !important;
+  }
+}
+</style>
+<style id="hero-h1-smaller-v14">
+.hero-section .hero-title,
+.page-hero h1 {
+  font-size: clamp(2.55rem, 4.35vw, 4.35rem) !important;
+  line-height: 1.13 !important;
+  letter-spacing: 0 !important;
+}
+@media (max-width: 991.98px) {
+  .hero-section .hero-title,
+  .page-hero h1 {
+    font-size: clamp(2.05rem, 9vw, 3.2rem) !important;
+  }
+}
+</style>
+<style id="hero-h1-final-v16">
+html[lang="en"] .page-hero h1,
+html[lang="en"] .hero-section .hero-title,
+html[lang="en"] .wfoe-hero .hero-title,
+html[lang="en"] .resource-hero .resource-title,
+html[lang="en"] .guide-hero .guide-title {
+  font-size: clamp(1.75rem, 2.1vw, 2.45rem) !important;
+  line-height: 1.18 !important;
+  letter-spacing: 0 !important;
+  max-width: 760px !important;
+}
+html[lang="en"] .home-hero-title {
+  font-size: clamp(2.35rem, 4vw, 3.4rem) !important;
+  line-height: 1.12 !important;
+  max-width: 820px !important;
+}
+html[lang="en"] .page-hero,
+html[lang="en"] .hero-section {
+  overflow: hidden !important;
+}
+@media (min-width: 1400px) {
+  html[lang="en"] .page-hero h1,
+  html[lang="en"] .hero-section .hero-title,
+  html[lang="en"] .wfoe-hero .hero-title,
+  html[lang="en"] .resource-hero .resource-title,
+html[lang="en"] .guide-hero .guide-title {
+    font-size: 2.45rem !important;
+  }
+}
+@media (max-width: 991.98px) {
+  html[lang="en"] .page-hero h1,
+  html[lang="en"] .hero-section .hero-title,
+  html[lang="en"] .wfoe-hero .hero-title,
+  html[lang="en"] .resource-hero .resource-title,
+  html[lang="en"] .guide-hero .guide-title,
+  html[lang="en"] .home-hero-title {
+    font-size: clamp(1.9rem, 7vw, 2.35rem) !important;
+    line-height: 1.16 !important;
+    max-width: 100% !important;
+  }
+}
+</style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg"><div class="container"><a class="navbar-brand d-flex align-items-center" href="/zh/"><img alt="Global Attest Logo" src="assets/images/logo-global-attest.png" style="height:36px; width:auto; max-height:36px;" decoding="async" width="1211" height="198" loading="eager"><span class="visually-hidden">Global Attest</span></a><button aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#nav" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="nav"><ul class="navbar-nav ms-auto align-items-lg-center"><li class="nav-item"><a class="nav-link" href="/zh/">首页</a></li><li class="nav-item dropdown"><a aria-expanded="false" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" id="serviceDropdownZh" role="button">服务</a><ul aria-labelledby="serviceDropdownZh" class="dropdown-menu"><li><a class="dropdown-item" href="china-police-certificate-zh.html">中国无犯罪证明（PCC）</a></li><li><span class="dropdown-section-label">PCC 按国家</span></li>
