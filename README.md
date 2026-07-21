@@ -108,3 +108,89 @@ Homepage H1 four-line update (2026-07-20):
 Homepage H1 two-line update (2026-07-20):
 - Updated the homepage H1 to two visual lines: "China Police Clearance Certificate" and "Apostille & Authentication Services".
 - Kept each title phrase on one line on desktop while using responsive sizing to prevent mobile overflow.
+
+
+## 2026-07-21 Resources update
+
+- Added a new top-level Resources navigation item.
+- Added resource hub pages for PCC samples, residence registration forms, apostille samples, embassy authentication samples, and CHSI verification resources.
+- Added the redacted PCC sample image under assets/images/resources with "Source: Global Attest" attribution.
+- Updated homepage resource entry blocks and sitemap.xml.
+
+## 2026-07-21 Resources v11 sample expansion
+
+- Added UAE consular authentication sample galleries in English and Chinese.
+- Added CHSI/CSSD transcript verification report samples and degree online verification report samples to the CHSI resource center.
+- Added a new WES evaluation report sample resource page in English and Chinese.
+- Added WES sample links to the Resources dropdown, resource hub pages, homepage resource blocks and sitemap.xml.
+- All newly added sample image captions include "Source: Global Attest" attribution for easier citation.
+
+
+## v12 update - 2026-07-21
+
+- Shortened the four key service page H1 headings for a cleaner first viewport.
+- Added compact H1 sizing overrides for the PCC, degree verification, WES and apostille/legalization pages.
+- Standardized all Resources pages into: Overview, Who Needs This, Sample / Template, How to Use It, Common Mistakes, Related Countries, FAQ and Need Help.
+
+
+## v13 update - 2026-07-21
+
+- Unified key English landing page H1 sizing, including WFOE and Cases pages.
+- Updated WES service H1 to "China Degree & Transcript Verification for WES".
+- Added "What is..." explanations to all resource pages.
+- Changed WES resource wording from Related Countries to Related Countries & Use Cases.
+- Added "including but not limited to" wording for related country/resource sections.
+- Upgraded the homepage Resources area to a Popular Resources section with six resource links.
+- Added Related Resources internal-link sections to major service and case pages.
+
+## v14 SEO polish update - 2026-07-21
+
+- Reduced desktop dropdown menu item sizing for Services, Resources and Blog navigation so long menu labels look cleaner.
+- Added a final smaller H1 override for hero headings on key landing pages.
+- Updated key SEO titles:
+  - WES page: "China Degree & Transcript Verification for WES | Global Attest"
+  - CHSI resource page: "China Degree & Transcript Verification (CHSI) | Global Attest"
+  - PCC samples page: "China Police Clearance Certificate Samples & Examples | Global Attest"
+  - Apostille service page: "China Apostille & Consular Legalization Services | Global Attest"
+- Rewrote sample image alt text around direct SEO phrases such as "China Police Clearance Certificate Sample".
+- Added or expanded FAQPage schema on major service pages and resource pages.
+- Added matching visible FAQ items where new FAQ schema was added.
+
+
+## v15 H1 and guide-link repair - 2026-07-21
+
+- Further reduced oversized English hero H1 typography on PCC, degree verification, apostille/legalization, student document, WES, WFOE, case and resource pages to match the homepage more closely.
+- Fixed the Blog dropdown so guide items now open guide/article pages instead of service landing pages.
+- Restored and modernized key legacy guide URLs with the new typography, navigation and footer: city PCC guides, apostille guide, degree verification guide, embassy/consular legalization guide and WES guide.
+- Added modern city PCC guide pages for Beijing, Tianjin, Shanghai, Shenyang, Guangzhou, Shenzhen, Chengdu and Hangzhou, with internal links to PCC samples, residence registration samples and country requirements.
+- Added the restored guide URLs to sitemap.xml.
+
+
+## v16 city PCC page polish - 2026-07-21
+
+- Rebuilt all 14 English city PCC guide pages from the old package with the current Global Attest typography, navigation and footer.
+- Added city-specific content for Beijing, Tianjin, Shanghai, Shenyang, Guangzhou, Shenzhen, Chengdu, Hangzhou, Xiamen, Sanya, Suzhou, Dalian, Chongqing and Wuhan.
+- Expanded each city page with Overview, Who Needs This, City-Specific Review Points, Documents, Typical Process, Common Mistakes, Related Resources, FAQ and service CTA.
+- Added FAQPage, Article and BreadcrumbList structured data for the city hub and city guide pages.
+- Updated city-grid-en.html and sitemap.xml to include all 14 city guide URLs.
+
+
+## v17 Reviews page update - 2026-07-21
+
+- Rebuilt `reviews-en.html` with the H1 `Client Reviews & Testimonials`.
+- Updated title to `Client Reviews & Testimonials | Global Attest`.
+- Added Overall Rating: 5-star display, 4.9 / 5, 120+ clients, 30+ countries.
+- Added Featured Reviews, Reviews by Service, Reviews by Country, Video / Screenshot Reviews, Leave a Review, Related Cases, FAQ, and trust metrics.
+- Leave a Review uses email submission and contact-page submission so reviews can be approved before public display.
+- Added Organization aggregate rating schema, Review schema, Breadcrumb schema, and FAQPage schema.
+
+
+## v18 Reviews pagination update - 2026-07-21
+
+- Expanded `reviews-en.html` with a new Full Client Reviews archive.
+- Reused and modernized 200 existing English review entries from the previous materials package.
+- Added client-side pagination: 20 reviews per page, 10 pages total.
+- Updated trust metrics to 5,000+ clients, 18,000+ documents processed, 100+ countries and regions, and 10+ years of experience.
+- Renamed Reviews by Service to Service Ratings & Client Feedback so it supports trust scanning without replacing the full review archive.
+- Expanded Reviews by Country into broader regional examples, including North America, Europe, Asia-Pacific and Middle East use cases.
+- Updated aggregate rating structured data to match the selected review archive.
