@@ -78,6 +78,90 @@ body{font-family:var(--font-sans)!important;color:#1f2937;background:#f3f4f6;-we
 }
 </script>
 <link href="assets/globalattest-typography.css" rel="stylesheet">
+<style id="resources-nav-compact">
+@media (min-width: 992px) {
+  .navbar .container { max-width: 1320px; }
+  .navbar-nav .nav-link { font-size: .92rem !important; padding-left: .48rem !important; padding-right: .48rem !important; }
+  .navbar .btn, .navbar .nav-wa-text { font-size: .9rem !important; padding-left: .85rem !important; padding-right: .85rem !important; }
+  .navbar-brand img { max-width: 210px !important; object-fit: contain; }
+}
+</style>
+<style id="nav-dropdown-compact-v14">
+@media (min-width: 992px) {
+  .navbar .dropdown-menu {
+    padding: .5rem 0 !important;
+    min-width: 280px !important;
+  }
+  .navbar .dropdown-item {
+    font-size: .84rem !important;
+    line-height: 1.36 !important;
+    padding: .42rem 1.15rem !important;
+    font-weight: 600 !important;
+  }
+  .navbar .dropdown-section-label {
+    font-size: .66rem !important;
+    line-height: 1.25 !important;
+    padding: .4rem 1.15rem .2rem !important;
+    letter-spacing: .08em !important;
+  }
+}
+</style>
+<style id="hero-h1-smaller-v14">
+.hero-section .hero-title,
+.page-hero h1 {
+  font-size: clamp(2.55rem, 4.35vw, 4.35rem) !important;
+  line-height: 1.13 !important;
+  letter-spacing: 0 !important;
+}
+@media (max-width: 991.98px) {
+  .hero-section .hero-title,
+  .page-hero h1 {
+    font-size: clamp(2.05rem, 9vw, 3.2rem) !important;
+  }
+}
+</style>
+<style id="hero-h1-final-v16">
+html[lang="en"] .page-hero h1,
+html[lang="en"] .hero-section .hero-title,
+html[lang="en"] .wfoe-hero .hero-title,
+html[lang="en"] .resource-hero .resource-title,
+html[lang="en"] .guide-hero .guide-title {
+  font-size: clamp(1.75rem, 2.1vw, 2.45rem) !important;
+  line-height: 1.18 !important;
+  letter-spacing: 0 !important;
+  max-width: 760px !important;
+}
+html[lang="en"] .home-hero-title {
+  font-size: clamp(2.35rem, 4vw, 3.4rem) !important;
+  line-height: 1.12 !important;
+  max-width: 820px !important;
+}
+html[lang="en"] .page-hero,
+html[lang="en"] .hero-section {
+  overflow: hidden !important;
+}
+@media (min-width: 1400px) {
+  html[lang="en"] .page-hero h1,
+  html[lang="en"] .hero-section .hero-title,
+  html[lang="en"] .wfoe-hero .hero-title,
+  html[lang="en"] .resource-hero .resource-title,
+html[lang="en"] .guide-hero .guide-title {
+    font-size: 2.45rem !important;
+  }
+}
+@media (max-width: 991.98px) {
+  html[lang="en"] .page-hero h1,
+  html[lang="en"] .hero-section .hero-title,
+  html[lang="en"] .wfoe-hero .hero-title,
+  html[lang="en"] .resource-hero .resource-title,
+  html[lang="en"] .guide-hero .guide-title,
+  html[lang="en"] .home-hero-title {
+    font-size: clamp(1.9rem, 7vw, 2.35rem) !important;
+    line-height: 1.16 !important;
+    max-width: 100% !important;
+  }
+}
+</style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
@@ -106,6 +190,19 @@ body{font-family:var(--font-sans)!important;color:#1f2937;background:#f3f4f6;-we
 <li><a class="dropdown-item" href="study-in-china-zh.html">来华留学材料服务</a></li>
 <li><a class="dropdown-item" href="wes-cn.html">WES 学历认证</a></li>
 </ul></li>
+<!-- 资源中心 -->
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/resources-zh.html" id="resourcesDropdownZh" role="button">资源中心</a>
+<ul aria-labelledby="resourcesDropdownZh" class="dropdown-menu">
+<li><a class="dropdown-item" href="/resources-zh.html">全部资源</a></li>
+<li><a class="dropdown-item" href="/china-police-clearance-certificate-samples-zh.html">中国无犯罪证明样本</a></li>
+<li><a class="dropdown-item" href="/china-temporary-residence-registration-form-samples-zh.html">临时住宿登记表样本</a></li>
+<li><a class="dropdown-item" href="/china-apostille-samples-zh.html">海牙认证样本</a></li>
+<li><a class="dropdown-item" href="/embassy-authentication-samples-zh.html">使馆认证样本</a></li>
+<li><a class="dropdown-item" href="/china-degree-transcript-verification-chsi-resource-center-zh.html">CHSI 学历认证资源</a></li>
+<li><a class="dropdown-item" href="/wes-evaluation-report-samples-zh.html">WES 评估报告样本</a></li>
+</ul>
+</li>
 <li class="nav-item dropdown"><a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="guideDropdownZh" role="button">博客</a>
 <ul aria-labelledby="guideDropdownZh" class="dropdown-menu">
 <li><a class="dropdown-item" href="/blog-zh.html">所有文章</a></li>
