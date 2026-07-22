@@ -194,3 +194,11 @@ Homepage H1 two-line update (2026-07-20):
 - Renamed Reviews by Service to Service Ratings & Client Feedback so it supports trust scanning without replacing the full review archive.
 - Expanded Reviews by Country into broader regional examples, including North America, Europe, Asia-Pacific and Middle East use cases.
 - Updated aggregate rating structured data to match the selected review archive.
+
+
+## v19 Country PCC H1 typography update - 2026-07-22
+
+- Reduced oversized H1 typography on the English country PCC pages.
+- Applied the adjustment to Canada, USA, Australia, United Kingdom, Germany, France, Spain, New Zealand and the by-country entry page.
+- The new country PCC H1 maximum size is 3.05rem on desktop, so these pages no longer appear larger than the homepage hero title.
+- Added responsive mobile sizing to reduce crowded line breaks on long country page titles.
