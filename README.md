@@ -202,3 +202,15 @@ Homepage H1 two-line update (2026-07-20):
 - Applied the adjustment to Canada, USA, Australia, United Kingdom, Germany, France, Spain, New Zealand and the by-country entry page.
 - The new country PCC H1 maximum size is 3.05rem on desktop, so these pages no longer appear larger than the homepage hero title.
 - Added responsive mobile sizing to reduce crowded line breaks on long country page titles.
+
+
+## v20 Brand cleanup update - 2026-07-22
+
+- Confirmed the final upload folder contains no `Global Edu Offer`, `Global Edu Offer Limited`, `globaleduoffer`, or `Edu Offer` text.
+- Removed the unused legacy asset filename `logo-global-edu-offer.jpg`.
+- Added clean legacy coverage pages for old indexed URLs:
+  - `services-en.html`
+  - `study-in-china-en.html`
+  - `shenzhen-degree-notarization.html`
+- These legacy pages use the Global Attest brand, point users to the current website structure, and include `noindex, follow` so Google can drop outdated search results after recrawling.
+- Legacy coverage pages are intentionally not included in `sitemap.xml`.
