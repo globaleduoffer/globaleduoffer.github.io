@@ -124,11 +124,7 @@
     .navbar .btn,
     .navbar .lang-btn {
       font-family: var(--font-sans) !important;
-      font-weight: 600;
       letter-spacing: 0.2px;
-    }
-    .navbar .dropdown-item {
-      font-weight: 600;
     }
 
 .navbar-nav .nav-link.active {
@@ -139,14 +135,10 @@
       background-color: #111827;
       border-radius: 0;
       border: none;
-      padding: 0.7rem 0;
-      min-width: 260px;
     }
 
     .navbar .dropdown-item {
       color: #e5e7eb;
-      padding: 0.55rem 1.4rem;
-      font-size: 0.92rem;
       white-space: normal;
     }
 
@@ -485,7 +477,6 @@ body *{
 }
 .navbar-brand img{height:36px!important;width:auto!important;max-height:36px!important;display:block!important;}
 .navbar .nav-link,.navbar .dropdown-item,.navbar .btn,.navbar .lang-btn{
-  font-weight:600!important;
   letter-spacing:0!important;
 }
 .navbar-nav .nav-link{
@@ -502,16 +493,11 @@ body *{
   background-color:#111827!important;
   border:none!important;
   border-radius:0!important;
-  padding:.7rem 0!important;
-  min-width:300px!important;
   z-index:2000!important;
 }
 .navbar .dropdown-item{
   color:#e5e7eb!important;
-  padding:.55rem 1.4rem!important;
-  font-size:.92rem!important;
   white-space:normal!important;
-  line-height:1.45!important;
 }
 .navbar .dropdown-item:hover,.navbar .dropdown-item:focus{
   background:#1f2937!important;
@@ -519,11 +505,7 @@ body *{
 }
 .dropdown-section-label{
   display:block!important;
-  padding:.35rem 1.4rem .25rem!important;
-  color:#94a3b8!important;
-  font-size:.72rem!important;
   font-weight:800!important;
-  letter-spacing:.08em!important;
   text-transform:uppercase!important;
 }
 .nav-wa-text{
@@ -806,11 +788,6 @@ html[lang="en"] .premium-title,
 html[lang="en"] .article-content h2{
   line-height:1.22!important;
 }
-html[lang="en"] .navbar .nav-link,
-html[lang="en"] .navbar .dropdown-item,
-html[lang="en"] .btn{
-  font-weight:600!important;
-}
 html[lang="en"] strong{
   font-weight:700!important;
 }
@@ -901,28 +878,7 @@ html[lang="en"] strong{
   line-height:1.55;
 }
 
-</style>
-<style id="nav-dropdown-compact-v14">
-@media (min-width: 992px) {
-  .navbar .dropdown-menu {
-    padding: .5rem 0 !important;
-    min-width: 280px !important;
-  }
-  .navbar .dropdown-item {
-    font-size: .84rem !important;
-    line-height: 1.36 !important;
-    padding: .42rem 1.15rem !important;
-    font-weight: 600 !important;
-  }
-  .navbar .dropdown-section-label {
-    font-size: .66rem !important;
-    line-height: 1.25 !important;
-    padding: .4rem 1.15rem .2rem !important;
-    letter-spacing: .08em !important;
-  }
-}
-</style>
-<style id="hero-h1-smaller-v14">
+</style><style id="hero-h1-smaller-v14">
 .hero-section .hero-title,
 .page-hero h1 {
   font-size: clamp(2.55rem, 4.35vw, 4.35rem) !important;
@@ -978,6 +934,7 @@ html[lang="en"] .guide-hero .guide-title {
   }
 }
 </style>
+<link href="assets/globalattest-layout.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
@@ -997,10 +954,10 @@ html[lang="en"] .guide-hero .guide-title {
 </li>
 <!-- Services -->
 <li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="index.html#services" id="serviceDropdownEn" role="button">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="serviceDropdownEn" role="button">
             Services
           </a>
-<ul aria-labelledby="serviceDropdownEn" class="dropdown-menu">
+<ul aria-labelledby="serviceDropdownEn" class="dropdown-menu services-dropdown-menu">
 <li><a class="dropdown-item" href="china-police-certificate.html">China Police Certificate (PCC)</a></li>
 <li><span class="dropdown-section-label">PCC by Country</span></li>
 <li><a class="dropdown-item" href="china-police-certificate-canada-pr.html">Canada</a></li>
@@ -1014,7 +971,11 @@ html[lang="en"] .guide-hero .guide-title {
 <li><a class="dropdown-item dropdown-view-all" href="china-police-certificate-by-country.html">By Country →</a></li>
 <li><span class="dropdown-section-label">Other Document Services</span></li>
 <li><a class="dropdown-item" href="degree-verification.html">Degree Verification</a></li>
-<li><a class="dropdown-item" href="document-legalization.html">Document Legalization / Hague Apostille / Consular</a></li>
+<li><span class="dropdown-section-label">Hague Apostille</span></li>
+<li><a class="dropdown-item" href="china-hague-apostille-services.html">Hague Apostille Services</a></li>
+<li><a class="dropdown-item" href="china-degree-apostille.html">China Degree Apostille</a></li>
+<li><span class="dropdown-section-label">Consular Legalization</span></li>
+<li><a class="dropdown-item" href="china-embassy-consular-legalization.html">Embassy / Consular Legalization</a></li>
 <li><a class="dropdown-item" href="study-in-china.html">Student Document Services</a></li>
 <li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
 </ul>

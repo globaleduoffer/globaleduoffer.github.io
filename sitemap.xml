@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://globalattest.com/</loc>
     <lastmod>2026-07-20</lastmod>
@@ -339,5 +339,57 @@
   <url>
     <loc>https://globalattest.com/china-no-criminal-record-certificate-zh.html</loc>
     <lastmod>2026-07-22</lastmod>
+  </url>
+  <url>
+    <loc>https://globalattest.com/china-hague-apostille-services.html</loc>
+    <lastmod>2026-08-03</lastmod>
+  </url>
+  <url>
+    <loc>https://globalattest.com/china-embassy-consular-legalization.html</loc>
+    <lastmod>2026-08-03</lastmod>
+  </url>
+  <url>
+    <loc>https://globalattest.com/china-degree-apostille.html</loc>
+    <lastmod>2026-08-02</lastmod>
+    <image:image>
+      <image:loc>https://globalattest.com/assets/images/resources/china-degree-apostille-sample-01.png</image:loc>
+      <image:title>China Degree Apostille Notarial Certificate Cover Sample</image:title>
+      <image:caption>Redacted notarial certificate cover from a China degree apostille document package.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://globalattest.com/assets/images/resources/china-degree-apostille-sample-02.png</image:loc>
+      <image:title>Chinese Bachelor's Degree Certificate Sample</image:title>
+      <image:caption>Redacted Chinese bachelor's degree certificate included in an apostille document package.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://globalattest.com/assets/images/resources/china-degree-apostille-sample-03.png</image:loc>
+      <image:title>English Translation of Chinese Degree Certificate</image:title>
+      <image:caption>Redacted English translation of a Chinese bachelor's degree certificate.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://globalattest.com/assets/images/resources/china-degree-apostille-sample-04.png</image:loc>
+      <image:title>Chinese Degree Notarial Certificate Sample</image:title>
+      <image:caption>Redacted Chinese notarial certificate for a bachelor's degree.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://globalattest.com/assets/images/resources/china-degree-apostille-sample-05.png</image:loc>
+      <image:title>English Degree Notarial Certificate Sample</image:title>
+      <image:caption>Redacted English notarial certificate for a Chinese bachelor's degree.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://globalattest.com/assets/images/resources/china-degree-apostille-sample-06.png</image:loc>
+      <image:title>Chinese Translation Notarial Certificate Sample</image:title>
+      <image:caption>Redacted Chinese notarial certificate confirming the English translation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://globalattest.com/assets/images/resources/china-degree-apostille-sample-07.png</image:loc>
+      <image:title>English Translation Conformity Notarial Certificate</image:title>
+      <image:caption>Redacted English translation conformity notarial certificate.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://globalattest.com/assets/images/resources/china-degree-apostille-sample-08.png</image:loc>
+      <image:title>China Degree Apostille Certificate Sample</image:title>
+      <image:caption>Redacted China apostille certificate attached to a notarized degree document.</image:caption>
+    </image:image>
   </url>
 </urlset>
