@@ -110,14 +110,10 @@ html[lang="en"] body { font-family: var(--font-sans) !important; }
       background-color: #111827;
       border-radius: 0;
       border: none;
-      padding: 0.7rem 0;
-      min-width: 260px;
     }
 
     .navbar .dropdown-item {
       color: #e5e7eb;
-      padding: 0.55rem 1.4rem;
-      font-size: 0.92rem;
       white-space: normal;
     }
 
@@ -453,14 +449,9 @@ nav.navbar .dropdown-menu{
   background-color:#111827 !important;
   border-radius:0 !important;
   border:none !important;
-  padding:0.7rem 0 !important;
-  min-width:260px !important;
 }
 nav.navbar .dropdown-item{
   color:#e5e7eb !important;
-  padding:0.55rem 1.4rem !important;
-  font-size:0.92rem !important;
-  font-weight:600 !important;
   white-space:normal !important;
 }
 nav.navbar .dropdown-item:hover,
@@ -515,7 +506,7 @@ html[lang="en"] body, body{font-family:var(--font-sans)!important;color:#1f2937;
 .case-article-card h1{font-weight:800;letter-spacing:-.02em;}
 .case-article-card h2{font-size:1.25rem;font-weight:800;margin-top:2.1rem;}
 .case-article-card h3{font-size:1.02rem;font-weight:800;}
-.dropdown-section-label{display:block!important;padding:.35rem 1.4rem .25rem!important;color:#94a3b8!important;font-size:.72rem!important;font-weight:800!important;letter-spacing:.08em!important;text-transform:uppercase!important;}
+.dropdown-section-label{display:block!important;font-weight:800!important;text-transform:uppercase!important;}
 .related-card{display:block;height:100%;padding:1rem 1.1rem;border:1px solid #e5e7eb;border-radius:16px;background:#fff;color:#111827;text-decoration:none;box-shadow:0 10px 28px rgba(15,23,42,.05);}
 .related-card:hover{border-color:rgba(31,143,77,.45);box-shadow:0 16px 35px rgba(15,23,42,.09);}
 .related-card span{display:block;margin-top:.35rem;color:#64748b;font-size:.9rem;line-height:1.45;}
@@ -641,11 +632,6 @@ html[lang="en"] .premium-title,
 html[lang="en"] .article-content h2{
   line-height:1.22!important;
 }
-html[lang="en"] .navbar .nav-link,
-html[lang="en"] .navbar .dropdown-item,
-html[lang="en"] .btn{
-  font-weight:600!important;
-}
 html[lang="en"] strong{
   font-weight:700!important;
 }
@@ -658,28 +644,7 @@ html[lang="en"] strong{
   .navbar .btn, .navbar .nav-wa-text { font-size: .9rem !important; padding-left: .85rem !important; padding-right: .85rem !important; }
   .navbar-brand img { max-width: 210px !important; object-fit: contain; }
 }
-</style>
-<style id="nav-dropdown-compact-v14">
-@media (min-width: 992px) {
-  .navbar .dropdown-menu {
-    padding: .5rem 0 !important;
-    min-width: 280px !important;
-  }
-  .navbar .dropdown-item {
-    font-size: .84rem !important;
-    line-height: 1.36 !important;
-    padding: .42rem 1.15rem !important;
-    font-weight: 600 !important;
-  }
-  .navbar .dropdown-section-label {
-    font-size: .66rem !important;
-    line-height: 1.25 !important;
-    padding: .4rem 1.15rem .2rem !important;
-    letter-spacing: .08em !important;
-  }
-}
-</style>
-<style id="hero-h1-smaller-v14">
+</style><style id="hero-h1-smaller-v14">
 .hero-section .hero-title,
 .page-hero h1 {
   font-size: clamp(2.55rem, 4.35vw, 4.35rem) !important;
@@ -735,6 +700,7 @@ html[lang="en"] .guide-hero .guide-title {
   }
 }
 </style>
+<link href="assets/globalattest-layout.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
@@ -754,10 +720,10 @@ html[lang="en"] .guide-hero .guide-title {
 </li>
 <!-- Services -->
 <li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="index.html#services" id="serviceDropdownEn" role="button">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="serviceDropdownEn" role="button">
             Services
           </a>
-<ul aria-labelledby="serviceDropdownEn" class="dropdown-menu">
+<ul aria-labelledby="serviceDropdownEn" class="dropdown-menu services-dropdown-menu">
 <li><a class="dropdown-item" href="china-police-certificate.html">China Police Certificate (PCC)</a></li>
 <li><span class="dropdown-section-label">PCC by Country</span></li>
 <li><a class="dropdown-item" href="china-police-certificate-canada-pr.html">Canada</a></li>
@@ -771,7 +737,11 @@ html[lang="en"] .guide-hero .guide-title {
 <li><a class="dropdown-item dropdown-view-all" href="china-police-certificate-by-country.html">By Country →</a></li>
 <li><span class="dropdown-section-label">Other Document Services</span></li>
 <li><a class="dropdown-item" href="degree-verification.html">Degree Verification</a></li>
-<li><a class="dropdown-item" href="document-legalization.html">Document Legalization / Hague Apostille / Consular</a></li>
+<li><span class="dropdown-section-label">Hague Apostille</span></li>
+<li><a class="dropdown-item" href="china-hague-apostille-services.html">Hague Apostille Services</a></li>
+<li><a class="dropdown-item" href="china-degree-apostille.html">China Degree Apostille</a></li>
+<li><span class="dropdown-section-label">Consular Legalization</span></li>
+<li><a class="dropdown-item" href="china-embassy-consular-legalization.html">Embassy / Consular Legalization</a></li>
 <li><a class="dropdown-item" href="study-in-china.html">Student Document Services</a></li>
 <li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
 </ul>
@@ -950,10 +920,10 @@ html[lang="en"] .guide-hero .guide-title {
 </p>
 <h2>Related services and guides</h2>
 <div class="row g-3 related-services">
-<div class="col-md-6"><a class="related-card" href="document-legalization.html"><strong>Document Legalization / Hague Apostille / Consular</strong><span>For China documents used in UAE and other non-Hague countries.</span></a></div>
+<div class="col-md-6"><a class="related-card" href="china-embassy-consular-legalization.html"><strong>China Consular Legalization Services</strong><span>For China documents used in UAE and other destinations requiring a consular route.</span></a></div>
 <div class="col-md-6"><a class="related-card" href="china-police-certificate.html"><strong>China Police Certificate Service</strong><span>Remote PCC support for immigration, work visa and residence use.</span></a></div>
 <div class="col-md-6"><a class="related-card" href="degree-verification.html"><strong>Degree Verification</strong><span>Education document review and verification support.</span></a></div>
-<div class="col-md-6"><a class="related-card" href="document-legalization.html"><strong>Embassy Legalization Guide</strong><span>Understand the general China embassy certification route.</span></a></div>
+<div class="col-md-6"><a class="related-card" href="embassy-certification-guide-en.html"><strong>Embassy Legalization Guide</strong><span>Understand the general China embassy certification route.</span></a></div>
 </div>
 <h2>FAQ: China embassy legalization for UAE work visas</h2>
 <div class="faq-block">

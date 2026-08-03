@@ -29,13 +29,13 @@ body{font-family:var(--font-sans)!important;color:#1f2937;background:#f3f4f6;-we
 .navbar{background:#fff!important;padding-top:.65rem!important;padding-bottom:.65rem!important;box-shadow:0 1px 0 rgba(15,23,42,.06)!important;position:relative;z-index:1050;}
 .navbar-brand{display:inline-flex!important;align-items:center!important;gap:.5rem!important;padding:0!important;}
 .navbar-brand img{display:block!important;height:36px!important;width:auto!important;max-height:36px!important;}
-.navbar,.navbar .nav-link,.navbar .dropdown-item,.navbar .btn,.navbar .lang-btn{font-family:var(--font-sans)!important;font-weight:600!important;letter-spacing:0!important;}
+.navbar,.navbar .nav-link,.navbar .dropdown-item,.navbar .btn,.navbar .lang-btn{font-family:var(--font-sans)!important;letter-spacing:0!important;}
 .navbar-nav .nav-link{font-size:.98rem!important;padding:.35rem .75rem!important;color:#334155!important;border-radius:999px!important;white-space:nowrap!important;}
 .navbar-nav .nav-link:hover,.navbar-nav .nav-link:focus,.navbar-nav .nav-link.active{background:rgba(31,143,77,.10)!important;color:#0f172a!important;}
-.navbar .dropdown-menu{background-color:#111827!important;border:none!important;border-radius:0!important;padding:.7rem 0!important;min-width:300px!important;z-index:2000!important;}
-.navbar .dropdown-item{color:#e5e7eb!important;padding:.55rem 1.4rem!important;font-size:.92rem!important;white-space:normal!important;line-height:1.45!important;font-weight:600!important;}
+.navbar .dropdown-menu{background-color:#111827!important;border:none!important;border-radius:0!important;z-index:2000!important;}
+.navbar .dropdown-item{color:#e5e7eb!important;white-space:normal!important;}
 .navbar .dropdown-item:hover,.navbar .dropdown-item:focus{background:#1f2937!important;color:#fff!important;}
-.dropdown-section-label{display:block!important;padding:.35rem 1.4rem .25rem!important;color:#94a3b8!important;font-size:.72rem!important;font-weight:800!important;letter-spacing:.08em!important;text-transform:uppercase!important;}
+.dropdown-section-label{display:block!important;font-weight:800!important;text-transform:uppercase!important;}
 .cta-btn{padding-top:.38rem!important;padding-bottom:.38rem!important;font-weight:700!important;white-space:nowrap!important;}
 .nav-wa-text{display:inline-flex!important;align-items:center!important;justify-content:center!important;padding:6px 14px!important;border-radius:999px!important;background:#f0fbf5!important;color:#167a3e!important;font-weight:700!important;text-decoration:none!important;border:none!important;white-space:nowrap!important;}
 .nav-wa-text:hover{background:#e6f8ee!important;}
@@ -171,11 +171,6 @@ html[lang="en"] .premium-title,
 html[lang="en"] .article-content h2{
   line-height:1.22!important;
 }
-html[lang="en"] .navbar .nav-link,
-html[lang="en"] .navbar .dropdown-item,
-html[lang="en"] .btn{
-  font-weight:600!important;
-}
 html[lang="en"] strong{
   font-weight:700!important;
 }
@@ -188,28 +183,7 @@ html[lang="en"] strong{
   .navbar .btn, .navbar .nav-wa-text { font-size: .9rem !important; padding-left: .85rem !important; padding-right: .85rem !important; }
   .navbar-brand img { max-width: 210px !important; object-fit: contain; }
 }
-</style>
-<style id="nav-dropdown-compact-v14">
-@media (min-width: 992px) {
-  .navbar .dropdown-menu {
-    padding: .5rem 0 !important;
-    min-width: 280px !important;
-  }
-  .navbar .dropdown-item {
-    font-size: .84rem !important;
-    line-height: 1.36 !important;
-    padding: .42rem 1.15rem !important;
-    font-weight: 600 !important;
-  }
-  .navbar .dropdown-section-label {
-    font-size: .66rem !important;
-    line-height: 1.25 !important;
-    padding: .4rem 1.15rem .2rem !important;
-    letter-spacing: .08em !important;
-  }
-}
-</style>
-<style id="hero-h1-smaller-v14">
+</style><style id="hero-h1-smaller-v14">
 .hero-section .hero-title,
 .page-hero h1 {
   font-size: clamp(2.55rem, 4.35vw, 4.35rem) !important;
@@ -265,6 +239,7 @@ html[lang="en"] .guide-hero .guide-title {
   }
 }
 </style>
+<link href="assets/globalattest-layout.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
@@ -284,10 +259,10 @@ html[lang="en"] .guide-hero .guide-title {
 </li>
 <!-- Services -->
 <li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="index.html#services" id="serviceDropdownEn" role="button">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="serviceDropdownEn" role="button">
             Services
           </a>
-<ul aria-labelledby="serviceDropdownEn" class="dropdown-menu">
+<ul aria-labelledby="serviceDropdownEn" class="dropdown-menu services-dropdown-menu">
 <li><a class="dropdown-item" href="china-police-certificate.html">China Police Certificate (PCC)</a></li>
 <li><span class="dropdown-section-label">PCC by Country</span></li>
 <li><a class="dropdown-item" href="china-police-certificate-canada-pr.html">Canada</a></li>
@@ -301,7 +276,11 @@ html[lang="en"] .guide-hero .guide-title {
 <li><a class="dropdown-item dropdown-view-all" href="china-police-certificate-by-country.html">By Country →</a></li>
 <li><span class="dropdown-section-label">Other Document Services</span></li>
 <li><a class="dropdown-item" href="degree-verification.html">Degree Verification</a></li>
-<li><a class="dropdown-item" href="document-legalization.html">Document Legalization / Hague Apostille / Consular</a></li>
+<li><span class="dropdown-section-label">Hague Apostille</span></li>
+<li><a class="dropdown-item" href="china-hague-apostille-services.html">Hague Apostille Services</a></li>
+<li><a class="dropdown-item" href="china-degree-apostille.html">China Degree Apostille</a></li>
+<li><span class="dropdown-section-label">Consular Legalization</span></li>
+<li><a class="dropdown-item" href="china-embassy-consular-legalization.html">Embassy / Consular Legalization</a></li>
 <li><a class="dropdown-item" href="study-in-china.html">Student Document Services</a></li>
 <li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
 </ul>
@@ -417,7 +396,7 @@ html[lang="en"] .guide-hero .guide-title {
 </ul>
 <div class="related-services">
 <h2>Related services and guides</h2>
-<a href="document-legalization.html">Document Legalization & Hague Apostille</a>
+<a href="china-hague-apostille-services.html">Hague apostille assistance in China</a>
 <a href="degree-verification.html">Degree Verification</a>
 <a href="blog-china-pcc-apostille-legalization.html">Hague Apostille Guide</a>
 <a href="case-embassy-legalization.html">Embassy Legalization Case</a>
