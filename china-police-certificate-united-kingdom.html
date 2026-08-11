@@ -2,6 +2,35 @@
 
 <html lang="en">
 <head>
+<script>
+  function trackAndNavigate(event, eventName, params, url, target) {
+    if (event) event.preventDefault();
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', eventName, params || {});
+      }
+    } catch (e) {}
+    setTimeout(function () {
+      if (target === '_blank') {
+        window.open(url, '_blank', 'noopener');
+      } else {
+        window.location.href = url;
+      }
+    }, 350);
+    return false;
+  }
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VDC1P9N84P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VDC1P9N84P');
+</script>
+
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>China Police Certificate for the UK | Global Attest</title>
@@ -838,7 +867,7 @@ html[lang="en"] .ca-hero .col-lg-7 {
 <link href="assets/globalattest-layout.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-xl">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="/">
 <img alt="Global Attest Logo" src="assets/images/logo-global-attest.png" style="height:36px; width:auto; max-height:36px;" decoding="async" width="1211" height="198" loading="eager">
@@ -855,7 +884,7 @@ html[lang="en"] .ca-hero .col-lg-7 {
 </li>
 <!-- Services -->
 <li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="serviceDropdownEn" role="button">
+<a aria-expanded="false" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" id="serviceDropdownEn" role="button" aria-current="page">
             Services
           </a>
 <ul aria-labelledby="serviceDropdownEn" class="dropdown-menu services-dropdown-menu">
@@ -927,7 +956,7 @@ html[lang="en"] .ca-hero .col-lg-7 {
 <a class="nav-wa-text" href="https://wa.me/8617620130150" rel="noopener" target="_blank" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'navbar_whatsapp', link_url:'https://wa.me/8617620130150'}, 'https://wa.me/8617620130150', '_blank');">WhatsApp</a>
 <div class="ms-lg-2 d-flex gap-2">
 <a class="lang-btn" href="/zh/">中文</a>
-<a class="lang-btn" href="/">EN</a>
+<a class="lang-btn" href="china-police-certificate-united-kingdom.html">EN</a>
 </div>
 </div>
 </div>

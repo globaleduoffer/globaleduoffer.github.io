@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VDC1P9N84P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VDC1P9N84P');
+</script>
+
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>中国无犯罪证明（PCC）、海牙认证与学历认证服务 | Global Attest</title>
@@ -109,6 +119,29 @@ body{font-family:var(--font-zh)!important;color:#1f2937;-webkit-font-smoothing:a
 .service-card p,.case-card p,.why-card p,.related-card p{color:#64748b;line-height:1.65;margin-bottom:.85rem;}
 .card-link{display:inline-flex;gap:.4rem;align-items:center;color:#0f7a43;font-weight:800;text-decoration:none;}
 .card-link:hover{color:#075e31;}
+.home-trust-section{background:#f8fafc;border-top:1px solid rgba(148,163,184,.18);border-bottom:1px solid rgba(148,163,184,.18);}
+.home-trust-heading{max-width:760px;margin-bottom:1.75rem;}
+.home-trust-heading p{color:#5b6778;line-height:1.7;margin-bottom:0;}
+.home-review-language-note{display:block;color:#64748b;font-size:.86rem;margin-top:.55rem;}
+.home-trust-overview{display:grid;grid-template-columns:minmax(260px,.9fr) minmax(0,1.9fr);gap:1.25rem;align-items:stretch;}
+.home-trust-summary{background:#fff;border:1px solid rgba(148,163,184,.28);border-radius:20px;padding:1.45rem;box-shadow:0 14px 36px rgba(15,23,42,.06);}
+.home-trust-stars,.home-review-stars{color:#1f8f4d;letter-spacing:.08em;}
+.home-trust-score{color:#0f172a;font-family:var(--font-formal-serif,Georgia,serif);font-size:clamp(2rem,3vw,2.55rem);font-weight:700;line-height:1.15;margin:.55rem 0 .7rem;}
+.home-trust-summary p{color:#5b6778;line-height:1.55;margin-bottom:.55rem;}
+.home-trust-summary .home-trust-satisfaction{color:#334155;font-weight:700;margin-bottom:0;}
+.home-trust-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;}
+.home-trust-metric{display:flex;flex-direction:column;justify-content:center;min-height:120px;background:#fff;border:1px solid rgba(148,163,184,.25);border-radius:18px;padding:1.15rem 1.25rem;}
+.home-trust-metric strong{color:#0f172a;font-size:clamp(1.8rem,2.4vw,2.2rem);line-height:1.1;}
+.home-trust-metric span{color:#5b6778;font-weight:700;margin-top:.4rem;}
+.home-review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.5rem;}
+.home-review-card{background:#fff;border:1px solid rgba(148,163,184,.28);border-radius:18px;padding:1.4rem;box-shadow:0 12px 30px rgba(15,23,42,.05);}
+.home-review-card h3{color:#0f172a;font-size:1.02rem;margin:.7rem 0 .45rem;}
+.home-review-card blockquote{color:#475569;line-height:1.65;margin:0 0 1rem;}
+.home-review-meta{color:#64748b;font-size:.92rem;font-weight:700;margin-bottom:0;}
+.home-trust-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem;}
+.home-trust-actions .btn{border-radius:999px;font-weight:800;}
+.home-trust-secondary-link{display:inline-flex;align-items:center;color:#166534;font-weight:700;padding:.55rem .25rem;text-decoration:none;}
+.home-trust-secondary-link:hover,.home-trust-secondary-link:focus{color:#0f5132;text-decoration:underline;}
 .destination-badge{display:inline-flex;border-radius:999px;padding:.24rem .6rem;margin:.15rem .25rem .15rem 0;background:#eef2ff;color:#4338ca;font-size:.78rem;font-weight:800;}
 .feature-list{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:.75rem;}
 .feature-list li{display:flex;gap:.65rem;color:#475569;line-height:1.55;}
@@ -126,6 +159,8 @@ body{font-family:var(--font-zh)!important;color:#1f2937;-webkit-font-smoothing:a
 .footer-copyright{font-family:var(--font-zh)!important;color:#fff!important;font-size:.95rem!important;line-height:1.5!important;font-weight:500!important;letter-spacing:0!important;opacity:1!important;margin:0!important;}
 .wa-float{position:fixed;right:18px;bottom:18px;z-index:9999;display:inline-flex;align-items:center;gap:10px;padding:12px 14px;border-radius:999px;background:#1f8f4d;color:#fff!important;text-decoration:none!important;box-shadow:0 10px 24px rgba(0,0,0,.18);font-weight:700;font-size:14px;}
 .wa-float:hover{opacity:.92;}
+@media (max-width:991.98px){.home-trust-overview{grid-template-columns:1fr}.home-review-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:575.98px){.home-trust-metrics,.home-review-grid{grid-template-columns:1fr}.home-trust-actions{flex-direction:column;align-items:flex-start}.home-trust-actions .btn{width:100%}}
 @media (max-width:640px){.wa-float span{display:none}.wa-float{padding:12px}.hero-section{padding:3.4rem 0 4rem}}
 </style>
 <link rel="canonical" href="https://globalattest.com/zh/">
@@ -231,7 +266,7 @@ html[lang="en"] .guide-hero .guide-title {
     </button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link active" href="/zh/">首页</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/zh/" aria-current="page">首页</a></li>
         <li class="nav-item dropdown">
           <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/#services" id="serviceDropdownZh" role="button">服务</a>
           <ul aria-labelledby="serviceDropdownZh" class="dropdown-menu">
@@ -249,7 +284,7 @@ html[lang="en"] .guide-hero .guide-title {
 <li><span class="dropdown-section-label">其他文件服务</span></li>
             <li><a class="dropdown-item" href="/degree-verification-zh.html">学历学位认证</a></li>
             <li><a class="dropdown-item" href="/document-legalization-zh.html">文件认证 / 海牙认证 / 领事认证</a></li>
-            <li><a class="dropdown-item" href="/study-in-china.html">来华留学材料服务</a></li>
+            <li><a class="dropdown-item" href="/study-in-china-zh.html">来华留学材料服务</a></li>
             <li><a class="dropdown-item" href="/wes-cn.html">WES 学历认证</a></li>
           </ul>
         </li>
@@ -258,6 +293,7 @@ html[lang="en"] .guide-hero .guide-title {
 <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/resources-zh.html" id="resourcesDropdownZh" role="button">资源中心</a>
 <ul aria-labelledby="resourcesDropdownZh" class="dropdown-menu">
 <li><a class="dropdown-item" href="/resources-zh.html">全部资源</a></li>
+<li><a class="dropdown-item" href="/china-no-criminal-record-certificate-zh.html">无犯罪记录证明指南</a></li>
 <li><a class="dropdown-item" href="/china-police-clearance-certificate-samples-zh.html">中国无犯罪证明样本</a></li>
 <li><a class="dropdown-item" href="/china-temporary-residence-registration-form-samples-zh.html">临时住宿登记表样本</a></li>
 <li><a class="dropdown-item" href="/china-apostille-samples-zh.html">海牙认证样本</a></li>
@@ -275,10 +311,10 @@ html[lang="en"] .guide-hero .guide-title {
             <li><a class="dropdown-item" href="/blog-china-pcc-apostille-zh.html">如何在中国办理海牙认证</a></li>
             <li><a class="dropdown-item" href="/degree-verification-zh.html">如何办理学历学位认证</a></li>
             <li><a class="dropdown-item" href="/document-legalization-zh.html">如何办理使馆 / 领事认证</a></li>
-            <li><a class="dropdown-item" href="/wes-guide-en.html">如何申请 WES 学历认证</a></li>
+            <li><a class="dropdown-item" href="/wes-guide-zh.html">如何申请 WES 学历认证</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="/cases-en.html">成功案例</a></li>
+        <li class="nav-item"><a class="nav-link" href="/cases.html">案例</a></li>
         <li class="nav-item"><a class="nav-link" href="/wfoe-china.html">公司注册</a></li>
         <li class="nav-item"><a class="nav-link" href="/about.html">关于我们</a></li>
         <li class="nav-item"><a class="nav-link" href="/reviews.html">客户评价</a></li>
@@ -429,6 +465,61 @@ html[lang="en"] .guide-hero .guide-title {
           <div class="col-md-6"><div class="why-card"><div class="why-icon"><i class="fa-solid fa-list-check"></i></div><h3>重视细节核对</h3><p>核对姓名、护照号、日期、签章、认证链条和文件用途，减少因细节错误导致的补件或退件。</p></div></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-trust-section py-5 py-lg-6" aria-labelledby="home-trust-title">
+  <div class="container premium-shell">
+    <div class="home-trust-heading">
+      <span class="section-kicker">客户信任</span>
+      <h2 class="premium-title display-6 mt-3 mb-3" id="home-trust-title">深受全球客户信赖</h2>
+      <p>来自中国无犯罪证明、海牙认证、领事认证、学历验证、WES 及相关文件服务客户的真实反馈与服务体验。</p>
+      <small class="home-review-language-note">客户评价保留英文原文，未作翻译。</small>
+    </div>
+
+    <div class="home-trust-overview">
+      <article class="home-trust-summary" aria-label="客户评分摘要">
+        <div class="home-trust-stars" aria-label="五星评价">★★★★★</div>
+        <div class="home-trust-score">4.9 / 5</div>
+        <p>基于 200 条精选客户评价与反馈</p>
+        <p class="home-trust-satisfaction">已完成文件案件客户满意度 98%</p>
+      </article>
+
+      <div class="home-trust-metrics" aria-label="Global Attest 服务经验">
+        <div class="home-trust-metric"><strong>5,000+</strong><span>服务客户</span></div>
+        <div class="home-trust-metric"><strong>18,000+</strong><span>处理文件</span></div>
+        <div class="home-trust-metric"><strong>100+</strong><span>国家与地区</span></div>
+        <div class="home-trust-metric"><strong>10+</strong><span>年服务经验</span></div>
+      </div>
+    </div>
+
+    <div class="home-review-grid" aria-label="精选客户评价">
+      <article class="home-review-card">
+        <div class="home-review-stars" aria-label="五星评价">★★★★★</div>
+        <h3>Australia visa document review</h3>
+        <blockquote>The team explained which documents should be translated, which documents needed notarization, and whether apostille would be relevant. The communication was clear and the document package was easy for my migration adviser to review.</blockquote>
+        <p class="home-review-meta">Australia · PCC and apostille</p>
+      </article>
+
+      <article class="home-review-card">
+        <div class="home-review-stars" aria-label="五星评价">★★★★★</div>
+        <h3>China PCC for U.S. immigration</h3>
+        <blockquote>My China residence record was not simple because I had studied in one city and worked in another. Global Attest helped organize the timeline and checked the likely document requirements before starting.</blockquote>
+        <p class="home-review-meta">United States · Police certificate</p>
+      </article>
+
+      <article class="home-review-card">
+        <div class="home-review-stars" aria-label="五星评价">★★★★★</div>
+        <h3>Degree Verification review</h3>
+        <blockquote>Global Attest reviewed the employer’s wording and explained the difference between academic verification and document legalization. They prepared the online verification application, checked my diploma and degree certificate details, and translated the final result for HR.</blockquote>
+        <p class="home-review-meta">Bangladesh · Degree Verification</p>
+      </article>
+    </div>
+
+    <div class="home-trust-actions">
+      <a class="btn btn-success px-4" href="/reviews.html">查看更多客户评价 →</a>
+      <a class="home-trust-secondary-link" href="/contact-zh.html">咨询我的情况 →</a>
     </div>
   </div>
 </section>

@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+  function trackAndNavigate(event, eventName, params, url, target) {
+    if (event) event.preventDefault();
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', eventName, params || {});
+      }
+    } catch (e) {}
+    setTimeout(function () {
+      if (target === '_blank') {
+        window.open(url, '_blank', 'noopener');
+      } else {
+        window.location.href = url;
+      }
+    }, 350);
+    return false;
+  }
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VDC1P9N84P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VDC1P9N84P');
+</script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Read client reviews and testimonials for Global Attest China document services, including China Police Clearance Certificates, apostille, consular legalization, degree verification, WES support, and business setup.">
+<meta name="description" content="Read client feedback on Global Attest services for China PCC, apostille, consular legalization, degree verification, WES and business setup.">
 <link rel="canonical" href="https://globalattest.com/reviews-en.html">
 <link rel="alternate" hreflang="en" href="https://globalattest.com/reviews-en.html">
-<link rel="alternate" hreflang="zh-Hans" href="https://globalattest.com/reviews.html">
+<link rel="alternate" hreflang="zh-CN" href="https://globalattest.com/reviews.html">
 <link rel="alternate" hreflang="x-default" href="https://globalattest.com/reviews-en.html">
 <title>Client Reviews & Testimonials | Global Attest</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -139,7 +168,13 @@ html[lang="en"] h3 {
 .reviews-hero {
   background: linear-gradient(135deg, #102a63 0%, #0c1b3a 58%, #061021 100%);
   color: #fff;
-  padding: clamp(4.5rem, 8vw, 7rem) 0 clamp(3.2rem, 6vw, 5rem);
+  padding: clamp(3.6rem, 6.2vw, 5.6rem) 0 clamp(2.7rem, 4.5vw, 4rem);
+}
+.reviews-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(340px, .9fr);
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
 }
 .reviews-kicker {
   display: inline-flex;
@@ -179,6 +214,70 @@ html[lang="en"] h3 {
   padding: .72rem 1.25rem;
   font-weight: 700;
 }
+.reviews-summary-card {
+  width: 106%;
+  justify-self: end;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 22px;
+  background: rgba(255,255,255,.06);
+  box-shadow: 0 20px 50px rgba(0,0,0,.12);
+  padding: 2.1rem;
+  color: rgba(255,255,255,.96);
+}
+.reviews-summary-label,
+.section-kicker,
+.trust-cta-kicker {
+  display: inline-flex;
+  align-items: center;
+  color: var(--brand-green);
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.reviews-summary-card h2 {
+  color: rgba(255,255,255,.96);
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  line-height: 1.25;
+  margin: .65rem 0 .75rem;
+}
+.reviews-summary-card p {
+  color: rgba(255,255,255,.74);
+  font-size: 1rem;
+  line-height: 1.62;
+  margin: 0;
+}
+.reviews-summary-card .reviews-summary-label {
+  color: #7ee2a8;
+}
+.reviews-summary-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 1.15rem 0 1.25rem;
+}
+.reviews-summary-tags span {
+  display: inline-flex;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 999px;
+  background: rgba(255,255,255,.07);
+  color: rgba(255,255,255,.92);
+  padding: .45rem .75rem;
+  font-size: .82rem;
+  font-weight: 700;
+}
+.reviews-summary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  color: #69d59a;
+  font-weight: 800;
+  text-decoration: none;
+}
+.reviews-summary-link:hover,
+.reviews-summary-link:focus {
+  color: #86efac;
+}
 .section-band {
   padding: clamp(2.7rem, 5vw, 4.5rem) 0;
 }
@@ -203,7 +302,7 @@ html[lang="en"] h3 {
 }
 .overall-rating {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) repeat(3, minmax(0, .75fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1rem;
   align-items: stretch;
 }
@@ -217,12 +316,13 @@ html[lang="en"] h3 {
 .review-card,
 .leave-review-panel {
   border: 1px solid var(--brand-line);
-  border-radius: 8px;
+  border-radius: 18px;
   background: #fff;
   box-shadow: 0 14px 34px rgba(15, 23, 42, .06);
 }
 .rating-panel {
   padding: 1.35rem;
+  border-left: 3px solid var(--brand-green);
 }
 .rating-stars {
   color: #f59e0b;
@@ -243,6 +343,14 @@ html[lang="en"] h3 {
   color: var(--brand-muted);
   line-height: 1.55;
 }
+.rating-panel .rating-satisfaction {
+  margin-top: .55rem;
+  color: #334155;
+}
+.rating-panel .rating-satisfaction strong {
+  color: var(--brand-ink);
+  font-weight: 800;
+}
 .metric-panel {
   padding: 1.2rem;
 }
@@ -253,27 +361,24 @@ html[lang="en"] h3 {
   color: var(--brand-ink);
   margin-bottom: .55rem;
 }
+.metric-label {
+  display: block;
+  color: var(--brand-ink);
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: .45rem;
+}
 .review-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 .review-card {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 1rem;
-  padding: 1.15rem;
+  display: block;
+  padding: 1.5rem;
 }
 .review-avatar {
-  width: 46px;
-  height: 46px;
-  border-radius: 999px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #eaf7f0;
-  color: var(--brand-green);
-  font-weight: 800;
+  display: none;
 }
 .review-stars {
   color: #f59e0b;
@@ -443,9 +548,31 @@ html[lang="en"] h3 {
   font-weight: 700;
   font-size: 14px;
 }
+@media (max-width: 1199.98px) {
+  .reviews-summary-card {
+    width: 100%;
+  }
+  .overall-rating {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .rating-panel {
+    grid-column: span 2;
+  }
+}
 @media (max-width: 991.98px) {
+  .reviews-hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .reviews-summary-card {
+    width: 100%;
+  }
   .overall-rating,
-  .review-grid,
+  .review-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .rating-panel {
+    grid-column: 1 / -1;
+  }
   .service-grid,
   .country-grid,
   .proof-grid,
@@ -453,9 +580,6 @@ html[lang="en"] h3 {
   .faq-grid,
   .leave-review-panel {
     grid-template-columns: 1fr;
-  }
-  .review-card {
-    grid-template-columns: minmax(0, 1fr);
   }
   .cta-btn,
   .cta-btn-outline {
@@ -473,10 +597,17 @@ html[lang="en"] h3 {
   .wa-float {
     padding: 12px;
   }
-}
-
-.overall-rating {
-  grid-template-columns: minmax(0, 1.15fr) repeat(4, minmax(0, .78fr));
+  .overall-rating,
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+  .rating-panel {
+    grid-column: auto;
+  }
+  .reviews-hero-actions .btn,
+  .trust-cta-actions .btn {
+    width: 100%;
+  }
 }
 .full-review-toolbar {
   display: flex;
@@ -496,12 +627,10 @@ html[lang="en"] h3 {
   gap: 1rem;
 }
 .full-review-card {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 1rem;
+  display: block;
   padding: 1.15rem;
   border: 1px solid var(--brand-line);
-  border-radius: 8px;
+  border-radius: 18px;
   background: #fff;
   box-shadow: 0 14px 34px rgba(15, 23, 42, .06);
 }
@@ -565,9 +694,36 @@ html[lang="en"] h3 {
   .full-review-list {
     grid-template-columns: 1fr;
   }
-  .full-review-card {
-    grid-template-columns: minmax(0, 1fr);
-  }
+}
+.trust-cta {
+  border-radius: 22px;
+  background: #0b1b34;
+  color: #fff;
+  padding: clamp(1.5rem, 3vw, 2.2rem);
+  box-shadow: 0 20px 50px rgba(15, 23, 42, .14);
+}
+.trust-cta-kicker {
+  color: #86efac;
+}
+.trust-cta h2 {
+  color: #fff;
+  margin: .55rem 0 .65rem;
+}
+.trust-cta p {
+  color: #dbeafe;
+  max-width: 820px;
+  line-height: 1.7;
+  margin-bottom: 1.15rem;
+}
+.trust-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+.trust-cta-actions .btn {
+  border-radius: 999px;
+  padding: .72rem 1.2rem;
+  font-weight: 700;
 }
 
 </style>
@@ -579,67 +735,7 @@ html[lang="en"] h3 {
       "@type": "Organization",
       "@id": "https://globalattest.com/#organization",
       "name": "Global Attest",
-      "url": "https://globalattest.com/",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "bestRating": "5",
-        "ratingCount": "200"
-      },
-      "review": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Verified client - Canada"
-          },
-          "reviewBody": "Global Attest helped me prepare a China Police Clearance Certificate after I had already left China. They reviewed my passport history, residence registration records, and old visa pages before confirming the practical route. The final certificate and supporting documents were accepted for my immigration file without additional questions.",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          }
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Verified client - Australia"
-          },
-          "reviewBody": "I needed China police certificate documents for an Australian visa process. The team explained which documents should be translated, which documents needed notarization, and whether apostille would be relevant. The communication was clear and the document package was easy for my migration adviser to review.",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          }
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Verified client - United States"
-          },
-          "reviewBody": "My China residence record was not simple because I had studied in one city and worked in another. Global Attest helped organize the timeline and checked the likely document requirements before starting. That preparation saved time and reduced the risk of submitting the wrong certificate format.",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          }
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Verified client - Canada"
-          },
-          "reviewBody": "The WES process was confusing because my Chinese university required specific transcript handling. Global Attest helped me understand the document route, prepare the transcript request, and check the delivery steps. My WES file moved forward smoothly after the documents were received.",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          }
-        }
-      ]
+      "url": "https://globalattest.com/"
     },
     {
       "@type": "WebPage",
@@ -730,7 +826,7 @@ html[lang="en"] h3 {
 <link href="assets/globalattest-layout.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-xl">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="/">
 <img alt="Global Attest Logo" src="assets/images/logo-global-attest.png" style="height:36px; width:auto; max-height:36px;" decoding="async" width="1211" height="198" loading="eager">
@@ -791,6 +887,8 @@ html[lang="en"] h3 {
 <li class="nav-item dropdown">
 <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="howToDropdownEn" role="button">Blog</a>
 <ul aria-labelledby="howToDropdownEn" class="dropdown-menu">
+<li><a class="dropdown-item" href="blog.html">All Articles</a></li>
+<li><hr class="dropdown-divider"></li>
 <li><a class="dropdown-item" href="city-grid-en.html">How to Apply for a China Police Certificate</a></li>
 <li><a class="dropdown-item" href="apostille-guide-en.html">How to Apply for a Hague Apostille in China</a></li>
 <li><a class="dropdown-item" href="degree-certification-guide-en.html">How to Process Degree Verification</a></li>
@@ -806,7 +904,7 @@ html[lang="en"] h3 {
 <li class="nav-item">
 <a class="nav-link" href="about-en.html">About Us</a>
 </li><li class="nav-item">
-<a class="nav-link active" href="reviews-en.html" class="active">Reviews</a>
+<a class="nav-link active" href="reviews-en.html" aria-current="page">Reviews</a>
 </li>
 </ul>
 <!-- CTA + Language Switch -->
@@ -816,8 +914,8 @@ html[lang="en"] h3 {
         </a>
 <a class="nav-wa-text" href="https://wa.me/8617620130150" rel="noopener" target="_blank" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'navbar_whatsapp', link_url:'https://wa.me/8617620130150'}, 'https://wa.me/8617620130150', '_blank');">WhatsApp</a>
 <div class="ms-lg-2 d-flex gap-2">
-<a class="lang-btn" href="/zh/">中文</a>
-<a class="lang-btn" href="/">EN</a>
+<a class="lang-btn" href="reviews.html">中文</a>
+<a class="lang-btn" href="reviews-en.html">EN</a>
 </div>
 </div>
 </div>
@@ -825,42 +923,60 @@ html[lang="en"] h3 {
 </nav>
 <main>
   <section class="reviews-hero">
-    <div class="container">
-      <span class="reviews-kicker">Client feedback · Verified service experience</span>
-      <h1>Client Reviews &amp; Testimonials</h1>
-      <p>Read client feedback from individuals, families, students, professionals, and companies that used Global Attest for China Police Clearance Certificates, apostille, consular legalization, degree verification, WES support, student document services, and China business setup.</p>
-      <div class="reviews-hero-actions">
-        <a class="btn btn-success" href="contact-en.html">Discuss Your Case</a>
-        <a class="btn btn-outline-light" href="#featured-reviews">Read Reviews</a>
+    <div class="container reviews-hero-grid">
+      <div class="reviews-hero-copy">
+        <span class="reviews-kicker">Client feedback</span>
+        <h1>Client Reviews &amp; Testimonials</h1>
+        <p>Read client feedback from individuals, families, students, professionals, and companies that used Global Attest for China Police Clearance Certificates, apostille, consular legalization, degree verification, WES support, student document services, and China business setup.</p>
+        <div class="reviews-hero-actions">
+          <a class="btn btn-success" href="contact-en.html">Discuss Your Case</a>
+          <a class="btn btn-outline-light" href="#client-feedback">Browse Client Feedback ↓</a>
+        </div>
       </div>
+      <aside class="reviews-summary-card" aria-labelledby="feedback-summary-title">
+        <span class="reviews-summary-label">Client feedback</span>
+        <h2 id="feedback-summary-title">Real Experiences Across Our Services</h2>
+        <p>Read feedback from clients who used Global Attest for China document and cross-border paperwork services.</p>
+        <div class="reviews-summary-tags" aria-label="Services covered by client feedback">
+          <span>China PCC</span>
+          <span>Apostille</span>
+          <span>Consular Legalization</span>
+          <span>Degree Verification</span>
+          <span>WES</span>
+          <span>Business Setup</span>
+        </div>
+        <a class="reviews-summary-link" href="#client-feedback">Browse Client Feedback ↓</a>
+      </aside>
     </div>
   </section>
 
   <section class="section-band soft" aria-labelledby="overall-rating-title">
     <div class="container">
       <div class="section-head">
-        <h2 id="overall-rating-title">Overall Rating</h2>
+        <h2 id="overall-rating-title">Global Attest at a Glance</h2>
         <p>Client feedback is reviewed before publication. Private names, document numbers, and case identifiers are removed unless a client gives explicit permission.</p>
       </div>
       <div class="overall-rating">
         <div class="rating-panel">
           <div class="rating-stars" aria-label="5 star rating">★★★★★</div>
           <div class="rating-score">4.9 / 5</div>
-        <p>Based on 200 selected client reviews and feedback. 98% client satisfaction across completed document cases.</p>
+          <p>Based on 200 selected client reviews and feedback.</p>
+          <p class="rating-satisfaction"><strong>98% client satisfaction</strong> across completed document cases.</p>
         </div>
-        <div class="metric-panel"><strong>5,000+</strong><p>Clients served for China document, academic, immigration, and business matters</p></div>
-        <div class="metric-panel"><strong>18,000+</strong><p>Documents processed for immigration, study, employment, business, and overseas use</p></div>
-        <div class="metric-panel"><strong>100+</strong><p>Countries and regions covered by client cases and destination requirements</p></div>
-        <div class="metric-panel"><strong>10+</strong><p>Years experience with China document coordination and cross-border paperwork</p></div>
+        <div class="metric-panel"><strong>5,000+</strong><span class="metric-label">Clients Served</span><p>China document, academic, immigration and business matters.</p></div>
+        <div class="metric-panel"><strong>18,000+</strong><span class="metric-label">Documents Processed</span><p>For immigration, study, employment, business and overseas use.</p></div>
+        <div class="metric-panel"><strong>100+</strong><span class="metric-label">Countries &amp; Regions</span><p>Client cases and destination requirements covered worldwide.</p></div>
+        <div class="metric-panel"><strong>10+</strong><span class="metric-label">Years Experience</span><p>China document coordination and cross-border paperwork support.</p></div>
       </div>
     </div>
   </section>
 
-  <section class="section-band" id="featured-reviews">
+  <section class="section-band" id="client-feedback" aria-labelledby="featured-feedback-title">
     <div class="container">
       <div class="section-head">
-        <h2>Featured Reviews</h2>
-        <p>Examples below show common service scenarios. They are shortened for readability and anonymized where appropriate.</p>
+        <span class="section-kicker">Client experiences</span>
+        <h2 id="featured-feedback-title">Featured Client Feedback</h2>
+        <p>A selection of client experiences across Global Attest document services.</p>
       </div>
       <div class="review-grid">
 
@@ -875,42 +991,12 @@ html[lang="en"] h3 {
         </article>
 
         <article class="review-card">
-          <div class="review-avatar">AU</div>
-          <div>
-            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <h3>Australia visa document review</h3>
-            <p class="review-meta">Australia · PCC and apostille</p>
-            <p>I needed China police certificate documents for an Australian visa process. The team explained which documents should be translated, which documents needed notarization, and whether apostille would be relevant. The communication was clear and the document package was easy for my migration adviser to review.</p>
-          </div>
-        </article>
-
-        <article class="review-card">
-          <div class="review-avatar">US</div>
-          <div>
-            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <h3>China PCC for U.S. immigration</h3>
-            <p class="review-meta">United States · Police certificate</p>
-            <p>My China residence record was not simple because I had studied in one city and worked in another. Global Attest helped organize the timeline and checked the likely document requirements before starting. That preparation saved time and reduced the risk of submitting the wrong certificate format.</p>
-          </div>
-        </article>
-
-        <article class="review-card">
           <div class="review-avatar">WE</div>
           <div>
             <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
             <h3>WES credential evaluation support</h3>
             <p class="review-meta">Canada · WES</p>
             <p>The WES process was confusing because my Chinese university required specific transcript handling. Global Attest helped me understand the document route, prepare the transcript request, and check the delivery steps. My WES file moved forward smoothly after the documents were received.</p>
-          </div>
-        </article>
-
-        <article class="review-card">
-          <div class="review-avatar">DG</div>
-          <div>
-            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <h3>Degree and transcript verification</h3>
-            <p class="review-meta">United Kingdom · Degree verification</p>
-            <p>I needed China degree and transcript verification for an overseas employer. Global Attest explained the difference between CHSI verification, notarization, certified translation, and apostille. The final documents matched the employer's request and were accepted on the first review.</p>
           </div>
         </article>
 
@@ -931,8 +1017,8 @@ html[lang="en"] h3 {
   <section class="section-band soft" id="full-client-reviews">
     <div class="container">
       <div class="section-head">
-        <h2>Full Client Reviews</h2>
-        <p>Browse a larger selected archive of anonymized client feedback. For readability, the list shows 20 reviews per page, following the format used in the earlier version of the website.</p>
+        <h2>More Client Experiences</h2>
+        <p>Browse the paginated archive of anonymized client experiences across Global Attest services.</p>
       </div>
       <div class="full-review-toolbar">
         <span><strong>200 selected client reviews</strong> across China PCC, WES, degree verification, apostille, legalization, student documents, and business setup.</span>
@@ -2141,12 +2227,12 @@ html[lang="en"] h3 {
         </article>
 
         <article class="full-review-card" data-review-page="7" hidden>
-          <div class="review-avatar">AM</div>
+          <div class="review-avatar">AU</div>
           <div>
             <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <h3>China Police Clearance (PCC) review</h3>
-            <p class="review-meta">Canada · China Police Clearance (PCC)</p>
-            <p>I needed a China Police Clearance Certificate for a background check in Toronto, but my China residence history was not simple. I had lived in Shanghai first as a student and later in Chengdu under a work permit, and I was worried that the certificate would not cover the full period. Global Attest reviewed my old visas, residence permits, passport stamps, and temporary residence records before telling me which bureau should handle each part of the application. They prepared the authorization documents, submitted the files locally, and kept me updated until the certificates were issued. The final package was clear, properly translated, and accepted without additional questions.</p>
+            <h3>Australia visa document review</h3>
+            <p class="review-meta">Australia · PCC and apostille</p>
+            <p>I needed China police certificate documents for an Australian visa process. The team explained which documents should be translated, which documents needed notarization, and whether apostille would be relevant. The communication was clear and the document package was easy for my migration adviser to review.</p>
           </div>
         </article>
 
@@ -2161,12 +2247,12 @@ html[lang="en"] h3 {
         </article>
 
         <article class="full-review-card" data-review-page="7" hidden>
-          <div class="review-avatar">SS</div>
+          <div class="review-avatar">US</div>
           <div>
             <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <h3>PCC for U.S. Immigration review</h3>
-            <p class="review-meta">Singapore · PCC for U.S. Immigration</p>
-            <p>I needed a Chinese police clearance for a U.S. immigration filing after working in Wuhan. The difficult part was that my employer had kept most of my China-side employment paperwork, and I only had scans of my old residence permit and work permit card. Global Attest helped reconstruct the document trail, prepared a clear explanation of my residence period, and contacted the local bureau to confirm what they would accept. They handled the application and then arranged the required translation and document preparation for my U.S. attorney. The certificate was accepted, and my lawyer specifically commented that the supporting documents were well organized.</p>
+            <h3>China PCC for U.S. immigration</h3>
+            <p class="review-meta">United States · Police certificate</p>
+            <p>My China residence record was not simple because I had studied in one city and worked in another. Global Attest helped organize the timeline and checked the likely document requirements before starting. That preparation saved time and reduced the risk of submitting the wrong certificate format.</p>
           </div>
         </article>
 
@@ -2901,12 +2987,12 @@ html[lang="en"] h3 {
         </article>
 
         <article class="full-review-card" data-review-page="10" hidden>
-          <div class="review-avatar">CN</div>
+          <div class="review-avatar">DG</div>
           <div>
             <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <h3>Degree Verification review</h3>
-            <p class="review-meta">Bangladesh · Degree Verification</p>
-            <p>My employer in Dhaka required official verification of my Chinese bachelor’s degree before issuing a work contract. I knew the degree was valid, but I did not know whether they needed a Ministry of Education verification report, a university letter, or a notarized certificate. Global Attest reviewed the employer’s wording and explained the difference between academic verification and document legalization. They prepared the online verification application, checked my diploma and degree certificate details, and translated the final result for HR. The employer accepted the package on the first review, and the whole process was much smoother than trying to interpret the requirements myself.</p>
+            <h3>Degree and transcript verification</h3>
+            <p class="review-meta">United Kingdom · Degree verification</p>
+            <p>I needed China degree and transcript verification for an overseas employer. Global Attest explained the difference between CHSI verification, notarization, certified translation, and apostille. The final documents matched the employer's request and were accepted on the first review.</p>
           </div>
         </article>
 
@@ -3022,22 +3108,6 @@ html[lang="en"] h3 {
     </div>
   </section>
 
-  <section class="section-band">
-    <div class="container">
-      <div class="leave-review-panel">
-        <div>
-          <h2>Have you used Global Attest?</h2>
-          <p>Leave your review and tell us which service you used, which country your documents were for, and whether your application, employer, school, or authority accepted the final document package.</p>
-          <div class="privacy-note">Your review will not appear on the website automatically. We review each submission first and remove private information before publication.</div>
-        </div>
-        <div class="leave-actions">
-          <a class="btn btn-success" href="mailto:chinaattest@gmail.com?subject=Global%20Attest%20Review%20Submission">Leave Your Review</a>
-          <a class="btn btn-outline-success" href="contact-en.html">Send via Contact Page</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="section-band soft">
     <div class="container">
       <div class="section-head">
@@ -3092,6 +3162,20 @@ html[lang="en"] h3 {
           <h3>Will my review be published automatically?</h3>
           <p>No. Submitted reviews are reviewed before publication. We remove private information and only display feedback when it is suitable for public use.</p>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-band soft" aria-labelledby="trust-cta-title">
+    <div class="container">
+      <div class="trust-cta">
+        <span class="trust-cta-kicker">Case review</span>
+        <h2 id="trust-cta-title">Have a China Document Case to Review?</h2>
+        <p>Tell us what document you need, where it will be used and your expected deadline. We can review the basic case details and help identify the likely next step.</p>
+        <div class="trust-cta-actions">
+          <a class="btn btn-success" href="contact-en.html">Discuss Your Case</a>
+          <a class="btn btn-outline-light" href="https://wa.me/8617620130150" rel="noopener" target="_blank">WhatsApp Us</a>
+        </div>
       </div>
     </div>
   </section>
