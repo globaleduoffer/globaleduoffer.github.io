@@ -1,25 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>
-  function trackAndNavigate(event, eventName, params, url, target) {
-    if (event) event.preventDefault();
-    try {
-      if (typeof gtag === 'function') {
-        gtag('event', eventName, params || {});
-      }
-    } catch (e) {}
-    setTimeout(function () {
-      if (target === '_blank') {
-        window.open(url, '_blank', 'noopener');
-      } else {
-        window.location.href = url;
-      }
-    }, 350);
-    return false;
-  }
-</script>
-
+<meta charset="utf-8">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDC1P9N84P"></script>
 <script>
@@ -29,15 +11,12 @@
 
   gtag('config', 'G-VDC1P9N84P');
 </script>
-
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>China Police Certificate for Canada PR: IRCC Guide | Global Attest</title>
-<meta name="description" content="What Canada PR and IRCC applicants should know before preparing a China police certificate, including documents, timing, notarization and common mistakes.">
-<link rel="canonical" href="https://globalattest.com/blog-china-pcc-canada-pr.html">
-<link rel="alternate" hreflang="en" href="https://globalattest.com/blog-china-pcc-canada-pr.html">
-<link rel="alternate" hreflang="zh-CN" href="https://globalattest.com/blog-canada-pr-china-pcc-zh.html">
-<link rel="alternate" hreflang="x-default" href="https://globalattest.com/blog-china-pcc-canada-pr.html">
+<title>China Police Certificates for Multiple Cities | Global Attest</title>
+<meta name="description" content="Lived in more than one Chinese city? Learn how to organize residence periods, passports and supporting records when preparing a China police certificate application.">
+<link rel="canonical" href="https://globalattest.com/blog-china-pcc-multiple-cities-residence-periods.html">
+<link rel="alternate" hreflang="en" href="https://globalattest.com/blog-china-pcc-multiple-cities-residence-periods.html">
+<link rel="alternate" hreflang="x-default" href="https://globalattest.com/blog-china-pcc-multiple-cities-residence-periods.html">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,6 +52,11 @@ body{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;col
 .article-content{padding:3rem 0;}
 .article-content h2{font-size:1.45rem;color:#0f172a;font-weight:850;margin-top:2.2rem;margin-bottom:.85rem;}
 .article-content ul{padding-left:1.2rem;}
+.article-table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.25rem 0;border:1px solid var(--ga-line);border-radius:14px;}
+.article-record-table{width:100%;min-width:680px;border-collapse:collapse;background:#fff;}
+.article-record-table th,.article-record-table td{padding:.85rem 1rem;border-bottom:1px solid var(--ga-line);text-align:left;vertical-align:top;}
+.article-record-table th{background:var(--ga-soft);color:var(--ga-ink);font-weight:850;}
+.article-record-table tbody tr:last-child td{border-bottom:0;}
 .article-note{border-left:4px solid var(--ga-green);background:#f4fbf7;border-radius:12px;padding:1.1rem 1.25rem;margin:2rem 0;}
 .article-cta{background:#0b1b34;color:#fff;border-radius:22px;padding:1.6rem;margin-top:2.5rem;}
 .article-cta p{color:#dbeafe;}
@@ -87,10 +71,10 @@ body{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;col
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "China Police Certificate for Canada PR: IRCC Guide",
-  "description": "What Canada PR and IRCC applicants should know before preparing a China police certificate, including documents, timing, notarization and common mistakes.",
-  "datePublished": "2026-07-19",
-  "dateModified": "2026-07-19",
+  "headline": "China Police Certificates for Multiple Cities and Residence Periods",
+  "description": "Lived in more than one Chinese city? Learn how to organize residence periods, passports and supporting records when preparing a China police certificate application.",
+  "datePublished": "2026-08-11",
+  "dateModified": "2026-08-11",
   "author": {
     "@type": "Organization",
     "name": "Global Attest"
@@ -100,8 +84,32 @@ body{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;col
     "name": "Global Attest",
     "url": "https://globalattest.com"
   },
-  "mainEntityOfPage": "https://globalattest.com/blog-china-pcc-canada-pr.html",
+  "mainEntityOfPage": "https://globalattest.com/blog-china-pcc-multiple-cities-residence-periods.html",
   "inLanguage": "en"
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://globalattest.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://globalattest.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "China Police Certificates for Multiple Cities and Residence Periods",
+      "item": "https://globalattest.com/blog-china-pcc-multiple-cities-residence-periods.html"
+    }
+  ]
 }</script>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -109,26 +117,42 @@ body{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;col
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is a China PCC required for Express Entry?",
+      "name": "Do I need a separate China police certificate from every city where I lived?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It may be required if your residence history meets IRCC police certificate rules. Always follow the request in your account."
+        "text": "Not necessarily. What can be issued locally and what the receiving authority requires are separate questions. Both the relevant city process and destination instructions should be checked."
       }
     },
     {
       "@type": "Question",
-      "name": "Can the China PCC be handled remotely?",
+      "name": "What if I lived in China during several different periods?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Often yes, depending on city records and authorization requirements."
+        "text": "List each period separately, including the city, dates, passport, visa or residence status and available records. Do not automatically combine separate stays into one continuous period."
       }
     },
     {
       "@type": "Question",
-      "name": "Should I apostille a China PCC for Canada?",
+      "name": "What if I used different passports while living in China?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Canada usually focuses on the police certificate requirement, but the exact document route should be checked against the request wording."
+        "text": "Record which passport was used for each stay and keep old passport copies, visas or residence permits where available. These may help connect historical records to the current applicant."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if records are available in one Chinese city but missing in another?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Assess each city and period separately. Record what exists, what is missing and which enquiries have been made. A gap in one city does not automatically determine the outcome of the entire case."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does my destination country affect which China residence periods need police certificate coverage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Potentially, yes. Receiving authorities can have their own rules about residence duration, document coverage and unavailable certificates, so current destination instructions should be checked."
       }
     }
   ]
@@ -303,6 +327,32 @@ html[lang="en"] .guide-hero .guide-title {
 }
 </style>
 <link href="assets/globalattest-layout.css" rel="stylesheet">
+<script>
+  function trackGAEvent(eventName, params) {
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', eventName, params || {});
+      }
+    } catch (e) {}
+  }
+
+  function trackAndNavigate(event, eventName, params, url, target) {
+    if (event) event.preventDefault();
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', eventName, params || {});
+      }
+    } catch (e) {}
+    setTimeout(function () {
+      if (target === '_blank') {
+        window.open(url, '_blank', 'noopener');
+      } else {
+        window.location.href = url;
+      }
+    }, 350);
+    return false;
+  }
+</script>
 </head>
 <body>
 
@@ -394,8 +444,8 @@ html[lang="en"] .guide-hero .guide-title {
         </a>
 <a class="nav-wa-text" href="https://wa.me/8617620130150" rel="noopener" target="_blank" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'navbar_whatsapp', link_url:'https://wa.me/8617620130150'}, 'https://wa.me/8617620130150', '_blank');">WhatsApp</a>
 <div class="ms-lg-2 d-flex gap-2">
-<a class="lang-btn" href="blog-canada-pr-china-pcc-zh.html">中文</a>
-<a class="lang-btn" href="blog-china-pcc-canada-pr.html">EN</a>
+<a class="lang-btn" href="blog-zh.html">中文</a>
+<a class="lang-btn" href="blog-china-pcc-multiple-cities-residence-periods.html">EN</a>
 </div>
 </div>
 </div>
@@ -403,67 +453,154 @@ html[lang="en"] .guide-hero .guide-title {
 </nav>
 <header class="guide-hero">
   <div class="container article-wrap">
-    <span class="guide-kicker"><i class="fa-solid fa-file-lines"></i> Canada PR</span>
-    <h1 class="guide-title">China Police Certificate for Canada PR: What IRCC Applicants Should Check</h1>
-    <p class="guide-lead">Canada PR applicants often need a China police certificate if they lived in China for a qualifying period. The practical challenge is not only getting the document, but getting the right format for IRCC review.</p>
-    <div class="article-meta"><span>7 min read</span><span>Updated 2026-07-19</span></div>
+    <span class="guide-kicker"><i class="fa-solid fa-map-location-dot"></i> China PCC</span>
+    <h1 class="guide-title">China Police Certificates for Multiple Cities and Residence Periods</h1>
+    <p class="guide-lead">A multi-city China PCC case is easier to assess when the residence history is organized city by city and period by period. The goal is to identify what needs coverage, which passport was used and what records remain available for each stay.</p>
+    <div class="article-meta"><span>8 min read</span><span>Updated 2026-08-11</span></div>
   </div>
 </header>
 <main class="article-content">
   <div class="container article-wrap">
-    <div class="article-note">
-      <strong>Before you start:</strong>
-      Confirm the destination country, receiving authority and deadline before choosing the document route.
-    </div>
-    <section><h2>Why Canada PR Cases Need Extra Care</h2><p>IRCC document requests can be strict about police certificates. Applicants who lived in China may need to show the correct city coverage, dates and translation or notarization route.</p><p>If you have already left China, it is important to confirm whether your old city can issue the certificate remotely and whether the final file needs additional authentication.</p></section>
-<section><h2>Information to Send Before Starting</h2><ul><li>Your current country of residence.</li><li>Every city in China where you lived, studied or worked.</li><li>Approximate start and end dates for each city.</li><li>Passport used during the China stay.</li><li>IRCC request letter or document checklist if already received.</li><li>Deadline shown in your immigration account.</li></ul></section>
-<section><h2>Canada PR Format Questions</h2><p>The right package may involve a police certificate, notarized certificate, certified translation or additional authentication depending on the issuing route and IRCC request wording.</p><p>Do not assume that every China PCC looks the same. City rules, notary wording and translation format can differ.</p></section>
-<section><h2>Common Mistakes</h2><ul><li>Waiting until the IRCC deadline is too close.</li><li>Preparing a certificate for one city while the residence history covers several cities.</li><li>Ignoring passport name changes or old passport numbers.</li><li>Submitting a document without checking whether notarization or translation is required.</li></ul></section>
-<section><h2>Best Next Step</h2><p>Before ordering anything, compare your China residence history against the IRCC request. A quick case review can prevent the wrong city or format from being prepared.</p></section>
-    
+    <div class="article-note"><strong>Important:</strong> Do not assume that every city always requires a separate certificate or that one certificate always covers every China residence period. The local issuing route and the receiving authority’s instructions both matter.</div>
+    <p>Some applicants lived in China in one city for one continuous period. Others studied in Beijing, worked in Shanghai, later moved to Shenzhen, left China, and returned several years later under a different passport.</p>
+    <p>In these cases, the first question should not simply be “Do I need a China PCC?” A more useful question is: “Which parts of my China residence history need to be documented, and what records are available for each city and period?” This article explains how to build that timeline before choosing a <a href="china-police-certificate.html">China Police Certificate</a> route. For wider terminology and document types, see the <a href="china-no-criminal-record-certificate.html">China No Criminal Record Certificate guide</a>.</p>
+
     <section>
-      <h2>Pre-Application Checklist</h2>
-      <p>Before preparing any China document, write down the final destination, receiving authority and deadline. Most rework happens because the applicant starts with the wrong city, wrong format or wrong authentication route.</p>
+      <h2>Why Multiple Cities Can Make a China PCC Case More Complex</h2>
+      <p>Records may be held, located or assessed differently depending on the city and historical period. Accommodation registration, university files, employment records, visas, residence permits and local issuing records may not all be available through the same route.</p>
+      <p>This does not mean that every city always has a completely separate process. It means that each part of the residence history should be checked instead of treating several years in China as one undivided stay. Changes in city, address, purpose of stay or passport can affect which records can be matched.</p>
+    </section>
+
+    <section>
+      <h2>Start With a Complete China Residence Timeline</h2>
+      <p>Do not begin by guessing how many certificates you need. First create a city-by-city and period-by-period timeline. Include gaps outside China and note when a passport, visa status, employer or university changed.</p>
+      <div class="article-table-wrap" role="region" aria-label="Example China residence timeline for a multi-city PCC case" tabindex="0">
+        <table class="article-record-table">
+          <thead><tr><th>City</th><th>Residence Period</th><th>Purpose of Stay</th><th>Passport Used</th><th>Available Records</th></tr></thead>
+          <tbody>
+            <tr><td>Beijing</td><td>2017–2018</td><td>Study</td><td>Passport A</td><td>Student and residence records</td></tr>
+            <tr><td>Shanghai</td><td>2019–2021</td><td>Employment</td><td>Passport A</td><td>Work and accommodation records</td></tr>
+            <tr><td>Shenzhen</td><td>2023–2024</td><td>Employment</td><td>Passport B</td><td>Residence permit and registration records</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Example only:</strong> This table shows how to organize information. It is not an official government checklist, and the records listed are not automatically required in every PCC application.</p>
+    </section>
+
+    <section>
+      <h2>Do You Need a Separate Police Certificate From Every City?</h2>
+      <p>There is no single yes-or-no answer. Two separate questions need to be checked:</p>
+      <ol>
+        <li>What can be issued or documented through the relevant local route in China?</li>
+        <li>What does the receiving authority require for the applicant’s China residence history?</li>
+      </ol>
+      <p>Do not assume that one city automatically covers every other city. Do not assume that every city automatically requires a separate certificate either. Review the <a href="city-grid-en.html">China Police Certificate requirements by city</a>, then confirm the current process for the relevant locations and periods.</p>
+    </section>
+
+    <section>
+      <h2>What If Your China Residence Was Not Continuous?</h2>
+      <p>An applicant may have lived in China from 2016 to 2018, stayed outside China from 2018 to 2020, and returned from 2020 to 2022. These should be recorded as separate residence periods rather than combined into one continuous six-year stay.</p>
+      <p>For each period, list the city, arrival and departure dates, passport, visa or residence status, purpose of stay and available records. This makes gaps visible and helps compare the China timeline with the periods the receiving authority asks the applicant to cover.</p>
+    </section>
+
+    <section>
+      <h2>What If You Returned to China Under a New Passport?</h2>
+      <p>A person may have used Passport A during an earlier stay and Passport B after returning to China. Historical visas, accommodation records, work permits and residence permits may therefore show different passport numbers.</p>
+      <p>Record the passport used for each city and period. Old passport copies, visa pages and residence permits may help show that the records belong to the same person. If historical records also contain different name spellings, passport numbers or other identity details, see our guide to <a href="blog-china-pcc-name-passport-record-mismatch.html">name, passport and residence record mismatches</a>. These records do not guarantee issuance, but they can help establish identity continuity when current and historical details differ.</p>
+    </section>
+
+    <section>
+      <h2>What If You Studied in One City and Worked in Another?</h2>
+      <p>A study period and an employment period may leave different supporting records. A university might hold student-status or dormitory information, while an employer may have work permit, employment or address records.</p>
+      <p>List the purpose of each stay and the organization connected to it. University records, work permits, residence permits and accommodation registration may help reconstruct the timeline, but none should automatically be described as a replacement for a police certificate.</p>
+    </section>
+
+    <section>
+      <h2>How Temporary Residence Registration Fits Into a Multi-City Case</h2>
+      <p>Accommodation registration may help connect a passport, address, city and residence period. In a multi-city case, the records available for one stay may differ from those available for another.</p>
+      <p>Read more about <a href="blog-china-temporary-residence-registration-pcc.html">how Temporary Residence Registration records may relate to a China PCC</a>. Redacted <a href="china-temporary-residence-registration-form-samples.html">Temporary Residence Registration Form samples</a> can also help identify documents in old files, but they are not a national checklist or guaranteed format.</p>
+    </section>
+
+    <section>
+      <h2>What If Records Are Available for One City but Missing for Another?</h2>
+      <p>Do not treat a partially complete timeline as proof that every period is covered. At the same time, one missing city record does not automatically mean the entire case will fail.</p>
+      <p>For each city, record what exists, what is missing, which period is affected and what enquiries have been made. This separates a local record gap from the rest of the case. If the missing period is blocking the route, see <a href="blog-china-police-certificate-cannot-be-issued.html">what to do if a China Police Certificate cannot be issued</a> before preparing an explanation or alternative evidence.</p>
+    </section>
+
+    <section>
+      <h2>Does the Destination Country Affect the Required Coverage?</h2>
+      <p>Potentially, yes. Canada, the United States, Australia, New Zealand and other receiving authorities may have different instructions about residence duration, police certificate coverage, document format and unavailable certificates.</p>
+      <p>Do not apply a general number of months to every applicant. Check the current instructions for the immigration program, visa category, employer or institution involved. The <a href="china-police-certificate-by-country.html">China Police Certificate requirements by destination country</a> can help locate the relevant guidance without replacing the authority’s current instructions.</p>
+    </section>
+
+    <section>
+      <h2>A Practical Multi-City PCC Checklist</h2>
+      <p>For each China residence period, record:</p>
       <ul>
-        <li>Which country or institution will review the document.</li>
-        <li>Whether there is an immigration account deadline, request letter or upload window.</li>
-        <li>Whether the authority asks for translation, notarization, apostille or consular legalization.</li>
-        <li>Whether the applicant is outside China and can sign authorization documents remotely.</li>
-        <li>Whether old passports, visas, school records or work records are still available.</li>
+        <li>City.</li>
+        <li>Start date and end date.</li>
+        <li>Passport number used.</li>
+        <li>Visa or residence status.</li>
+        <li>Employer or university.</li>
+        <li>Accommodation type.</li>
+        <li>Whether temporary residence registration is available.</li>
+        <li>Whether the old passport is available.</li>
+        <li>Whether a residence permit is available.</li>
+        <li>Other supporting records available.</li>
+        <li>PCC status or whether the local route has been checked.</li>
+      </ul>
+      <p>This is an organizational checklist, not a universal government document list. Its purpose is to expose missing periods and make later enquiries more precise.</p>
+    </section>
+
+    <section>
+      <h2>Common Mistakes in Multi-City China PCC Cases</h2>
+      <ul>
+        <li>Assuming one city automatically covers all China residence.</li>
+        <li>Forgetting an earlier study, work or other relevant residence period.</li>
+        <li>Searching only under the current passport number.</li>
+        <li>Ignoring gaps between separate China stays.</li>
+        <li>Assuming destination-country requirements are identical.</li>
+        <li>Waiting until an immigration deadline to reconstruct old records.</li>
+      </ul>
+      <p>A complete timeline does not decide the case by itself, but it reduces avoidable confusion and helps identify which city or period needs further confirmation.</p>
+    </section>
+
+    <section>
+      <h2>See What China PCC Documents Look Like</h2>
+      <p>The <a href="china-police-clearance-certificate-samples.html">China Police Certificate samples</a> library shows redacted original PCCs, notarial certificates and sample document sets for different destination countries. Samples illustrate document appearance; they do not determine what every applicant must obtain.</p>
+      <p>Additional sample libraries and practical guides are available through <a href="resources.html">Global Attest Resources</a>.</p>
+    </section>
+
+    <section>
+      <h2>When a Multi-City Case May Need Individual Review</h2>
+      <p>A review may be useful when the applicant lived in multiple Chinese cities, the history spans many years, an old passport is unavailable, temporary registration is missing, different names or passport numbers appear, one city has records while another does not, or a deadline is approaching.</p>
+      <p>Prepare the timeline first, then send the basic cities, dates, passports, destination country and known record gaps through the <a href="contact-en.html">Global Attest contact page</a>. A review may help identify the next practical enquiry, but it cannot guarantee PCC issuance, immigration approval or acceptance by a receiving authority.</p>
+    </section>
+
+    <section>
+      <h2>Related Articles and Resources</h2>
+      <ul>
+        <li><a href="blog-china-temporary-residence-registration-pcc.html">China Temporary Residence Registration Form for PCC Applications</a></li>
+        <li><a href="blog-china-police-certificate-cannot-be-issued.html">What to Do If a China Police Certificate Cannot Be Issued</a></li>
+        <li><a href="blog-china-police-certificate-after-leaving-china.html">How to Get a China Police Certificate After Leaving China</a></li>
+        <li><a href="city-grid-en.html">China Police Certificate Requirements by City</a></li>
       </ul>
     </section>
+
     <section>
-      <h2>What to Send for a Route Review</h2>
-      <p>You do not need to prepare every document before asking for help. A short case summary is often enough to identify the likely route, the missing information and the format risks.</p>
-      <ul>
-        <li>Your nationality, current country and contact method.</li>
-        <li>The China city or cities involved and approximate residence dates.</li>
-        <li>The purpose: Canada PR, U.S. immigration, Australia visa, WES, employment, residence or another use.</li>
-        <li>The exact wording from the receiving authority, if available.</li>
-        <li>Your deadline and whether this is an initial filing or a document request.</li>
-      </ul>
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item"><h3>Do I need a separate China police certificate from every city where I lived?</h3><p>Not necessarily. What can be issued locally and what the receiving authority requires are separate questions. Both the relevant city process and destination instructions should be checked.</p></div>
+      <div class="faq-item"><h3>What if I lived in China during several different periods?</h3><p>List each period separately, including the city, dates, passport, visa or residence status and available records. Do not automatically combine separate stays into one continuous period.</p></div>
+      <div class="faq-item"><h3>What if I used different passports while living in China?</h3><p>Record which passport was used for each stay and keep old passport copies, visas or residence permits where available. These may help connect historical records to the current applicant.</p></div>
+      <div class="faq-item"><h3>What if records are available in one Chinese city but missing in another?</h3><p>Assess each city and period separately. Record what exists, what is missing and which enquiries have been made. A gap in one city does not automatically determine the outcome of the entire case.</p></div>
+      <div class="faq-item"><h3>Does my destination country affect which China residence periods need police certificate coverage?</h3><p>Potentially, yes. Receiving authorities can have their own rules about residence duration, document coverage and unavailable certificates, so current destination instructions should be checked.</p></div>
     </section>
-    <section>
-      <h2>Related Blog Articles</h2>
-      <p>If your case involves more than one document, read the related guides before deciding the route. China PCC, notarization, apostille, legalization and academic evaluation often need to be planned together.</p>
-      <ul>
-        <li><a href="blog-china-police-certificate-after-leaving-china.html">China police certificate after leaving China</a></li>
-        <li><a href="blog-china-pcc-canada-pr.html">China PCC for Canada PR</a></li>
-        <li><a href="blog-china-pcc-apostille-legalization.html">China PCC apostille or legalization</a></li>
-        <li><a href="blog-wes-china-degree-evaluation.html">WES China degree evaluation</a></li>
-      </ul>
-    </section>
-    <section>
-      <h2>FAQ</h2>
-      <div class="faq-item"><h3>Is a China PCC required for Express Entry?</h3><p>It may be required if your residence history meets IRCC police certificate rules. Always follow the request in your account.</p></div>
-<div class="faq-item"><h3>Can the China PCC be handled remotely?</h3><p>Often yes, depending on city records and authorization requirements.</p></div>
-<div class="faq-item"><h3>Should I apostille a China PCC for Canada?</h3><p>Canada usually focuses on the police certificate requirement, but the exact document route should be checked against the request wording.</p></div>
-    </section>
+
     <div class="article-cta">
-      <h2 class="text-white mt-0">Need to confirm your route?</h2>
-      <p>Send your city, residence dates, destination country and deadline. We can help you check the practical route before you prepare the wrong document.</p>
-      <a class="btn btn-success" href="china-police-certificate-canada-pr.html">View Canada PR PCC support</a>
-      <a class="btn btn-outline-light ms-sm-2 mt-2 mt-sm-0" href="contact-en.html">Contact Global Attest</a>
+      <h2 class="text-white mt-0">Discuss Your China PCC Case</h2>
+      <p>Tell us the cities, residence periods, passports used, destination country and which records are missing. We can review the likely next step without promising issuance or acceptance.</p>
+      <a class="btn btn-success" href="contact-en.html">Discuss Your China PCC Case</a>
+      <a class="btn btn-outline-light ms-sm-2 mt-2 mt-sm-0" href="https://wa.me/8617620130150" target="_blank" rel="noopener">WhatsApp Us</a>
     </div>
   </div>
 </main>
@@ -478,7 +615,7 @@ html[lang="en"] .guide-hero .guide-title {
       <div class="col-6 col-lg-2">
         <h5>Services</h5>
         <p class="mb-2"><a href="china-police-certificate.html">China PCC</a></p>
-        <p class="mb-2"><a href="document-legalization.html">Apostille</a></p>
+        <p class="mb-2"><a href="china-hague-apostille-services.html">Apostille</a></p>
         <p class="mb-2"><a href="wes-en.html">WES Support</a></p>
       </div>
       <div class="col-6 col-lg-2">

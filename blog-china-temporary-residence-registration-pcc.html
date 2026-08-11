@@ -1,25 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>
-  function trackAndNavigate(event, eventName, params, url, target) {
-    if (event) event.preventDefault();
-    try {
-      if (typeof gtag === 'function') {
-        gtag('event', eventName, params || {});
-      }
-    } catch (e) {}
-    setTimeout(function () {
-      if (target === '_blank') {
-        window.open(url, '_blank', 'noopener');
-      } else {
-        window.location.href = url;
-      }
-    }, 350);
-    return false;
-  }
-</script>
-
+<meta charset="utf-8">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDC1P9N84P"></script>
 <script>
@@ -29,15 +11,12 @@
 
   gtag('config', 'G-VDC1P9N84P');
 </script>
-
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>China Police Certificate for Canada PR: IRCC Guide | Global Attest</title>
-<meta name="description" content="What Canada PR and IRCC applicants should know before preparing a China police certificate, including documents, timing, notarization and common mistakes.">
-<link rel="canonical" href="https://globalattest.com/blog-china-pcc-canada-pr.html">
-<link rel="alternate" hreflang="en" href="https://globalattest.com/blog-china-pcc-canada-pr.html">
-<link rel="alternate" hreflang="zh-CN" href="https://globalattest.com/blog-canada-pr-china-pcc-zh.html">
-<link rel="alternate" hreflang="x-default" href="https://globalattest.com/blog-china-pcc-canada-pr.html">
+<title>China Temporary Residence Registration Form for PCC | Global Attest</title>
+<meta name="description" content="Learn how China Temporary Residence Registration records may relate to police certificate applications, what to check if records are missing, and why city practice can vary.">
+<link rel="canonical" href="https://globalattest.com/blog-china-temporary-residence-registration-pcc.html">
+<link rel="alternate" hreflang="en" href="https://globalattest.com/blog-china-temporary-residence-registration-pcc.html">
+<link rel="alternate" hreflang="x-default" href="https://globalattest.com/blog-china-temporary-residence-registration-pcc.html">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,6 +52,11 @@ body{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;col
 .article-content{padding:3rem 0;}
 .article-content h2{font-size:1.45rem;color:#0f172a;font-weight:850;margin-top:2.2rem;margin-bottom:.85rem;}
 .article-content ul{padding-left:1.2rem;}
+.article-table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.25rem 0;border:1px solid var(--ga-line);border-radius:14px;}
+.article-record-table{width:100%;min-width:680px;border-collapse:collapse;background:#fff;}
+.article-record-table th,.article-record-table td{padding:.85rem 1rem;border-bottom:1px solid var(--ga-line);text-align:left;vertical-align:top;}
+.article-record-table th{background:var(--ga-soft);color:var(--ga-ink);font-weight:850;}
+.article-record-table tbody tr:last-child td{border-bottom:0;}
 .article-note{border-left:4px solid var(--ga-green);background:#f4fbf7;border-radius:12px;padding:1.1rem 1.25rem;margin:2rem 0;}
 .article-cta{background:#0b1b34;color:#fff;border-radius:22px;padding:1.6rem;margin-top:2.5rem;}
 .article-cta p{color:#dbeafe;}
@@ -87,10 +71,10 @@ body{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;col
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "China Police Certificate for Canada PR: IRCC Guide",
-  "description": "What Canada PR and IRCC applicants should know before preparing a China police certificate, including documents, timing, notarization and common mistakes.",
-  "datePublished": "2026-07-19",
-  "dateModified": "2026-07-19",
+  "headline": "China Temporary Residence Registration Form for PCC Applications",
+  "description": "Learn how China Temporary Residence Registration records may relate to police certificate applications, what to check if records are missing, and why city practice can vary.",
+  "datePublished": "2026-08-11",
+  "dateModified": "2026-08-11",
   "author": {
     "@type": "Organization",
     "name": "Global Attest"
@@ -100,8 +84,32 @@ body{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;col
     "name": "Global Attest",
     "url": "https://globalattest.com"
   },
-  "mainEntityOfPage": "https://globalattest.com/blog-china-pcc-canada-pr.html",
+  "mainEntityOfPage": "https://globalattest.com/blog-china-temporary-residence-registration-pcc.html",
   "inLanguage": "en"
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://globalattest.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://globalattest.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "China Temporary Residence Registration Form for PCC Applications",
+      "item": "https://globalattest.com/blog-china-temporary-residence-registration-pcc.html"
+    }
+  ]
 }</script>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -109,26 +117,42 @@ body{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;col
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is a China PCC required for Express Entry?",
+      "name": "Is a Temporary Residence Registration Form always required for a China PCC?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It may be required if your residence history meets IRCC police certificate rules. Always follow the request in your account."
+        "text": "No. It can be relevant, but whether it is requested or how it is used depends on the city, residence period, local issuing practice and other available records."
       }
     },
     {
       "@type": "Question",
-      "name": "Can the China PCC be handled remotely?",
+      "name": "What if I lost my old registration form?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Often yes, depending on city records and authorization requirements."
+        "text": "Identify the city, residence dates and passport used, then check whether copies or related hotel, landlord, university, employer, visa or residence records remain available. Recovery is not guaranteed."
       }
     },
     {
       "@type": "Question",
-      "name": "Should I apostille a China PCC for Canada?",
+      "name": "Can hotel records help with a China police certificate application?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Canada usually focuses on the police certificate requirement, but the exact document route should be checked against the request wording."
+        "text": "They may help establish an accommodation period or connect a passport to a city, but their availability and usefulness depend on the hotel, the historical period and the relevant local requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I lived in several Chinese cities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Organize each city and residence period separately. Records and PCC procedures can be city-specific, so information from one city should not automatically be assumed to cover another."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can another document replace a missing registration form?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not automatically. Other records may help reconstruct residence history, but the relevant issuing authority and receiving organization determine what evidence is sufficient for their respective purposes."
       }
     }
   ]
@@ -303,6 +327,32 @@ html[lang="en"] .guide-hero .guide-title {
 }
 </style>
 <link href="assets/globalattest-layout.css" rel="stylesheet">
+<script>
+  function trackGAEvent(eventName, params) {
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', eventName, params || {});
+      }
+    } catch (e) {}
+  }
+
+  function trackAndNavigate(event, eventName, params, url, target) {
+    if (event) event.preventDefault();
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', eventName, params || {});
+      }
+    } catch (e) {}
+    setTimeout(function () {
+      if (target === '_blank') {
+        window.open(url, '_blank', 'noopener');
+      } else {
+        window.location.href = url;
+      }
+    }, 350);
+    return false;
+  }
+</script>
 </head>
 <body>
 
@@ -394,8 +444,8 @@ html[lang="en"] .guide-hero .guide-title {
         </a>
 <a class="nav-wa-text" href="https://wa.me/8617620130150" rel="noopener" target="_blank" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'navbar_whatsapp', link_url:'https://wa.me/8617620130150'}, 'https://wa.me/8617620130150', '_blank');">WhatsApp</a>
 <div class="ms-lg-2 d-flex gap-2">
-<a class="lang-btn" href="blog-canada-pr-china-pcc-zh.html">中文</a>
-<a class="lang-btn" href="blog-china-pcc-canada-pr.html">EN</a>
+<a class="lang-btn" href="blog-zh.html">中文</a>
+<a class="lang-btn" href="blog-china-temporary-residence-registration-pcc.html">EN</a>
 </div>
 </div>
 </div>
@@ -403,67 +453,142 @@ html[lang="en"] .guide-hero .guide-title {
 </nav>
 <header class="guide-hero">
   <div class="container article-wrap">
-    <span class="guide-kicker"><i class="fa-solid fa-file-lines"></i> Canada PR</span>
-    <h1 class="guide-title">China Police Certificate for Canada PR: What IRCC Applicants Should Check</h1>
-    <p class="guide-lead">Canada PR applicants often need a China police certificate if they lived in China for a qualifying period. The practical challenge is not only getting the document, but getting the right format for IRCC review.</p>
-    <div class="article-meta"><span>7 min read</span><span>Updated 2026-07-19</span></div>
+    <span class="guide-kicker"><i class="fa-solid fa-address-card"></i> China PCC</span>
+    <h1 class="guide-title">China Temporary Residence Registration Form for PCC Applications</h1>
+    <p class="guide-lead">Temporary residence registration records can help connect a former foreign resident to a China city, address, passport and residence period. Their relevance to a police certificate application depends on city-specific requirements and the records available for the individual case.</p>
+    <div class="article-meta"><span>8 min read</span><span>Updated 2026-08-11</span></div>
   </div>
 </header>
 <main class="article-content">
   <div class="container article-wrap">
-    <div class="article-note">
-      <strong>Before you start:</strong>
-      Confirm the destination country, receiving authority and deadline before choosing the document route.
-    </div>
-    <section><h2>Why Canada PR Cases Need Extra Care</h2><p>IRCC document requests can be strict about police certificates. Applicants who lived in China may need to show the correct city coverage, dates and translation or notarization route.</p><p>If you have already left China, it is important to confirm whether your old city can issue the certificate remotely and whether the final file needs additional authentication.</p></section>
-<section><h2>Information to Send Before Starting</h2><ul><li>Your current country of residence.</li><li>Every city in China where you lived, studied or worked.</li><li>Approximate start and end dates for each city.</li><li>Passport used during the China stay.</li><li>IRCC request letter or document checklist if already received.</li><li>Deadline shown in your immigration account.</li></ul></section>
-<section><h2>Canada PR Format Questions</h2><p>The right package may involve a police certificate, notarized certificate, certified translation or additional authentication depending on the issuing route and IRCC request wording.</p><p>Do not assume that every China PCC looks the same. City rules, notary wording and translation format can differ.</p></section>
-<section><h2>Common Mistakes</h2><ul><li>Waiting until the IRCC deadline is too close.</li><li>Preparing a certificate for one city while the residence history covers several cities.</li><li>Ignoring passport name changes or old passport numbers.</li><li>Submitting a document without checking whether notarization or translation is required.</li></ul></section>
-<section><h2>Best Next Step</h2><p>Before ordering anything, compare your China residence history against the IRCC request. A quick case review can prevent the wrong city or format from being prepared.</p></section>
-    
+    <div class="article-note"><strong>Important:</strong> A Temporary Residence Registration Form is not a nationwide, automatic requirement for every China Police Certificate application. Its role may vary by city, residence period and local issuing practice.</div>
+    <p>Many former residents first think about accommodation registration only when they begin a <a href="china-police-certificate.html">China Police Certificate application</a>. A local office or case reviewer may ask how the applicant’s historical address, passport and residence period can be connected, especially when the stay took place years ago.</p>
+    <p>A missing registration form does not produce the same result in every case. The practical question is whether the relevant city can identify the residence period using its records and any other evidence that remains available. For broader terminology and document formats, see the <a href="china-no-criminal-record-certificate.html">China No Criminal Record Certificate guide</a>.</p>
+
     <section>
-      <h2>Pre-Application Checklist</h2>
-      <p>Before preparing any China document, write down the final destination, receiving authority and deadline. Most rework happens because the applicant starts with the wrong city, wrong format or wrong authentication route.</p>
+      <h2>What Is a China Temporary Residence Registration Form?</h2>
+      <p>A China Temporary Residence Registration Form is commonly understood as a record of a foreign national’s accommodation or temporary residence at a particular address. It may also be described in English as accommodation registration or temporary residence registration.</p>
+      <p>The document can show details such as the registered person, passport information, address, city and registration date. Formats and recorded fields can differ by location and period. The <a href="china-temporary-residence-registration-form-samples.html">China Temporary Residence Registration Form samples</a> page provides redacted examples for reference, but no single sample should be treated as a mandatory national format.</p>
+    </section>
+
+    <section>
+      <h2>Why This Record Can Matter for a China PCC</h2>
+      <p>In some PCC routes, accommodation registration can help connect four parts of the residence history: the applicant, the city, the address and the passport used during the stay. This may be useful when a local authority needs to identify the relevant historical period or match older records.</p>
+      <p>Its role can vary from one case to another. One city may rely on its own accessible records, while another may ask the applicant for supporting information. Requirements can also change over time. A TRRF should therefore not be described as an automatic PCC requirement for every foreign resident in China.</p>
+    </section>
+
+    <section>
+      <h2>Is the Registration Form Always Required?</h2>
+      <p>No. Whether a registration form is requested, useful or available can depend on the city, historical period, issuing practice and other records connected to the applicant.</p>
+      <p>Some applicants may have a clear address history and accessible local records without retaining a paper form. Others may need to provide copies or additional evidence to clarify a residence period. The right way to assess the form depends on the individual case; neither possession nor absence of it guarantees a PCC outcome.</p>
+    </section>
+
+    <section>
+      <h2>What If You Stayed in a Hotel?</h2>
+      <p>Hotel accommodation may be registered through a process that differs from the form used for a rented apartment or private residence. Depending on the stay, there may once have been hotel registration data, passport registration details, invoices or other accommodation records.</p>
+      <p>Do not assume that a hotel can retrieve or reissue records many years later. Before making enquiries, organize the hotel name, city, approximate check-in and check-out dates, and the passport used. Old booking confirmations, receipts or travel records may help narrow the search, but they do not automatically replace an official residence record or PCC.</p>
+    </section>
+
+    <section>
+      <h2>What If You Lived in a Rented Apartment?</h2>
+      <p>For a rented apartment, check whether the applicant, landlord, employer or relocation provider retained a registration copy. A lease, address record, community document, visa or residence permit may also help explain where and when the applicant lived.</p>
+      <p>These documents have different purposes. A tenancy agreement can support an address timeline, but it does not prove that a specific police registration was completed and it is not a substitute for a police certificate. Their value depends on what the local PCC route needs to establish.</p>
+    </section>
+
+    <section>
+      <h2>What If You Lived in University Housing?</h2>
+      <p>Students may have records held by an international student office, registrar, dormitory or another university department. Enrollment records, student-status letters, dormitory records and copies of residence documents may help reconstruct the period of study and accommodation.</p>
+      <p>Record retention varies, and a university is not guaranteed to have historical accommodation information. Any available material should be described accurately as supporting residence history, not as an alternative police certificate.</p>
+    </section>
+
+    <section>
+      <h2>What If the Original Registration Form Is Missing?</h2>
+      <p>Start by defining the missing period rather than searching for documents without a timeline. A structured review usually includes the following steps:</p>
+      <ol>
+        <li>Identify the China city connected to the missing registration.</li>
+        <li>Identify the exact or approximate residence period.</li>
+        <li>Confirm which passport was used during that stay.</li>
+        <li>Check personal files, email and prior immigration records for copies.</li>
+        <li>Review possible hotel, landlord, university or employer records.</li>
+        <li>Compare the address history with visas and residence permits.</li>
+        <li>Confirm the relevant local issuing process before preparing a submission.</li>
+      </ol>
+      <p>This process may reveal that only part of the residence history is unclear. It does not guarantee that the form can be recovered or that another record will be accepted in its place.</p>
+    </section>
+
+    <section>
+      <h2>Can Other Records Help Reconstruct Residence History?</h2>
+      <p>Other documents may help establish dates, identity continuity or the connection to a particular city. Their usefulness depends on the case:</p>
+      <div class="article-table-wrap" role="region" aria-label="Records that may support a China PCC residence history" tabindex="0">
+        <table class="article-record-table">
+          <thead><tr><th>Record Type</th><th>What It May Help Show</th><th>Is It Automatically Required?</th></tr></thead>
+          <tbody>
+            <tr><td>Temporary residence registration</td><td>Registered address, city, date and passport details</td><td>Depends on the city, period and case</td></tr>
+            <tr><td>Old passport</td><td>Identity continuity, visas and passport number used</td><td>Depends on available records and local requirements</td></tr>
+            <tr><td>Residence permit</td><td>Authorized stay and passport-linked residence period</td><td>May be relevant; not a universal answer</td></tr>
+            <tr><td>Hotel record</td><td>Possible accommodation dates and city</td><td>Availability and use vary</td></tr>
+            <tr><td>University record</td><td>Study period, institution and possible accommodation</td><td>Supporting evidence where relevant</td></tr>
+            <tr><td>Employment record</td><td>Employer, work period and possible location</td><td>Depends on the route and case</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Work permits, leases, tax records, entry-exit history and travel receipts may also help build a timeline. None should automatically be described as a mandatory PCC document or a replacement for the certificate.</p>
+    </section>
+
+    <section>
+      <h2>Does the City Matter?</h2>
+      <p>Yes. China PCC practice is often city-specific because the residence history, accessible records and issuing route may be assessed locally. Requirements reported for one city or period should not be applied automatically to another.</p>
+      <p>Use the <a href="city-grid-en.html">China Police Certificate requirements by city</a> as a starting point, then confirm the current requirements for the relevant dates and passport history. Online summaries cannot guarantee that an older case will follow the same route as a current resident’s application.</p>
+    </section>
+
+    <section>
+      <h2>What If You Lived in More Than One Chinese City?</h2>
+      <p>Prepare a separate line in the residence timeline for each city. Include the dates, address type, passport used and any registration, work, study or accommodation records available for that location. For a fuller planning method, see <a href="blog-china-pcc-multiple-cities-residence-periods.html">China Police Certificates for multiple cities and residence periods</a>.</p>
+      <p>A registration connected to one city should not be assumed to establish residence in another city. Use the <a href="city-grid-en.html">China Police Certificate requirements by city</a> to review each location separately and confirm the relevant local route. The destination authority may also define which residence periods require police documentation; the <a href="china-police-certificate-by-country.html">China Police Certificate requirements by destination country</a> can help identify the appropriate country guidance.</p>
+    </section>
+
+    <section>
+      <h2>What If Missing Registration Is Preventing Your PCC Application?</h2>
+      <p>If the missing record is already blocking the route, identify the exact city, time period, passport and unavailable record before preparing an explanation. Do not assume that a general Letter of Explanation will resolve the issue.</p>
+      <p>The guide on <a href="blog-china-police-certificate-cannot-be-issued.html">what to do if a China Police Certificate cannot be issued</a> explains how to document attempts, organize supporting evidence and check the receiving authority’s current procedure. Any alternative evidence may be considered only where the issuing or receiving authority permits it.</p>
+    </section>
+
+    <section>
+      <h2>See Real Registration Form Examples</h2>
+      <p>The <a href="china-temporary-residence-registration-form-samples.html">China Temporary Residence Registration Form samples</a> library shows redacted examples and common layouts. The samples can help former residents recognize a document in their files or understand the type of record being discussed.</p>
+      <p>They are not a guaranteed format for every city or period. Other document sample libraries and practical guides are available through <a href="resources.html">Global Attest Resources</a>.</p>
+    </section>
+
+    <section>
+      <h2>When to Request a Case Review</h2>
+      <p>A case review may be useful when registration records are missing, the residence took place many years ago, several cities or passports are involved, hotel or university records are incomplete, a PCC deadline is approaching or the local issuing route is unclear.</p>
+      <p>Send the basic city, dates, passport history, destination country and known record gap through the <a href="contact-en.html">Global Attest contact page</a>. A review may help identify the likely next enquiry, but it cannot guarantee PCC issuance, document acceptance or a visa outcome.</p>
+    </section>
+
+    <section>
+      <h2>Related Articles and Resources</h2>
       <ul>
-        <li>Which country or institution will review the document.</li>
-        <li>Whether there is an immigration account deadline, request letter or upload window.</li>
-        <li>Whether the authority asks for translation, notarization, apostille or consular legalization.</li>
-        <li>Whether the applicant is outside China and can sign authorization documents remotely.</li>
-        <li>Whether old passports, visas, school records or work records are still available.</li>
+        <li><a href="blog-china-police-certificate-cannot-be-issued.html">What to Do If a China Police Certificate Cannot Be Issued</a></li>
+        <li><a href="blog-china-police-certificate-after-leaving-china.html">How to Get a China Police Certificate After Leaving China</a></li>
+        <li><a href="china-no-criminal-record-certificate.html">China No Criminal Record Certificate: Complete Guide for Foreigners</a></li>
+        <li><a href="china-temporary-residence-registration-form-samples.html">Temporary Residence Registration Form Samples</a></li>
       </ul>
     </section>
+
     <section>
-      <h2>What to Send for a Route Review</h2>
-      <p>You do not need to prepare every document before asking for help. A short case summary is often enough to identify the likely route, the missing information and the format risks.</p>
-      <ul>
-        <li>Your nationality, current country and contact method.</li>
-        <li>The China city or cities involved and approximate residence dates.</li>
-        <li>The purpose: Canada PR, U.S. immigration, Australia visa, WES, employment, residence or another use.</li>
-        <li>The exact wording from the receiving authority, if available.</li>
-        <li>Your deadline and whether this is an initial filing or a document request.</li>
-      </ul>
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item"><h3>Is a Temporary Residence Registration Form always required for a China PCC?</h3><p>No. It can be relevant, but whether it is requested or how it is used depends on the city, residence period, local issuing practice and other available records.</p></div>
+      <div class="faq-item"><h3>What if I lost my old registration form?</h3><p>Identify the city, residence dates and passport used, then check whether copies or related hotel, landlord, university, employer, visa or residence records remain available. Recovery is not guaranteed.</p></div>
+      <div class="faq-item"><h3>Can hotel records help with a China police certificate application?</h3><p>They may help establish an accommodation period or connect a passport to a city, but their availability and usefulness depend on the hotel, the historical period and the relevant local requirements.</p></div>
+      <div class="faq-item"><h3>What if I lived in several Chinese cities?</h3><p>Organize each city and residence period separately. Records and PCC procedures can be city-specific, so information from one city should not automatically be assumed to cover another.</p></div>
+      <div class="faq-item"><h3>Can another document replace a missing registration form?</h3><p>Not automatically. Other records may help reconstruct residence history, but the relevant issuing authority and receiving organization determine what evidence is sufficient for their respective purposes.</p></div>
     </section>
-    <section>
-      <h2>Related Blog Articles</h2>
-      <p>If your case involves more than one document, read the related guides before deciding the route. China PCC, notarization, apostille, legalization and academic evaluation often need to be planned together.</p>
-      <ul>
-        <li><a href="blog-china-police-certificate-after-leaving-china.html">China police certificate after leaving China</a></li>
-        <li><a href="blog-china-pcc-canada-pr.html">China PCC for Canada PR</a></li>
-        <li><a href="blog-china-pcc-apostille-legalization.html">China PCC apostille or legalization</a></li>
-        <li><a href="blog-wes-china-degree-evaluation.html">WES China degree evaluation</a></li>
-      </ul>
-    </section>
-    <section>
-      <h2>FAQ</h2>
-      <div class="faq-item"><h3>Is a China PCC required for Express Entry?</h3><p>It may be required if your residence history meets IRCC police certificate rules. Always follow the request in your account.</p></div>
-<div class="faq-item"><h3>Can the China PCC be handled remotely?</h3><p>Often yes, depending on city records and authorization requirements.</p></div>
-<div class="faq-item"><h3>Should I apostille a China PCC for Canada?</h3><p>Canada usually focuses on the police certificate requirement, but the exact document route should be checked against the request wording.</p></div>
-    </section>
+
     <div class="article-cta">
-      <h2 class="text-white mt-0">Need to confirm your route?</h2>
-      <p>Send your city, residence dates, destination country and deadline. We can help you check the practical route before you prepare the wrong document.</p>
-      <a class="btn btn-success" href="china-police-certificate-canada-pr.html">View Canada PR PCC support</a>
-      <a class="btn btn-outline-light ms-sm-2 mt-2 mt-sm-0" href="contact-en.html">Contact Global Attest</a>
+      <h2 class="text-white mt-0">Discuss Your China PCC Case</h2>
+      <p>Tell us the city or cities, residence period, passport history, destination country and which registration records are missing. We can review the likely next step without promising issuance or acceptance.</p>
+      <a class="btn btn-success" href="contact-en.html">Discuss Your China PCC Case</a>
+      <a class="btn btn-outline-light ms-sm-2 mt-2 mt-sm-0" href="https://wa.me/8617620130150" target="_blank" rel="noopener">WhatsApp Us</a>
     </div>
   </div>
 </main>
@@ -478,7 +603,7 @@ html[lang="en"] .guide-hero .guide-title {
       <div class="col-6 col-lg-2">
         <h5>Services</h5>
         <p class="mb-2"><a href="china-police-certificate.html">China PCC</a></p>
-        <p class="mb-2"><a href="document-legalization.html">Apostille</a></p>
+        <p class="mb-2"><a href="china-hague-apostille-services.html">Apostille</a></p>
         <p class="mb-2"><a href="wes-en.html">WES Support</a></p>
       </div>
       <div class="col-6 col-lg-2">

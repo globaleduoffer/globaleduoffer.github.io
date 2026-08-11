@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+  function trackAndNavigate(event, eventName, params, url, target) {
+    if (event) event.preventDefault();
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', eventName, params || {});
+      }
+    } catch (e) {}
+    setTimeout(function () {
+      if (target === '_blank') {
+        window.open(url, '_blank', 'noopener');
+      } else {
+        window.location.href = url;
+      }
+    }, 350);
+    return false;
+  }
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VDC1P9N84P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VDC1P9N84P');
+</script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Global Attest Blog | China Document Articles</title>
@@ -258,7 +287,7 @@ html[lang="en"] .guide-hero .guide-title {
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-xl">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="/">
 <img alt="Global Attest Logo" src="assets/images/logo-global-attest.png" style="height:36px; width:auto; max-height:36px;" decoding="async" width="1211" height="198" loading="eager">
@@ -317,7 +346,7 @@ html[lang="en"] .guide-hero .guide-title {
 </li>
 <!-- Blog -->
 <li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" id="howToDropdownEn" role="button">Blog</a>
+<a aria-expanded="false" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" id="howToDropdownEn" role="button" aria-current="page">Blog</a>
 <ul aria-labelledby="howToDropdownEn" class="dropdown-menu">
 <li><a class="dropdown-item" href="blog.html">All Articles</a></li>
 <li><hr class="dropdown-divider"></li>
@@ -341,13 +370,13 @@ html[lang="en"] .guide-hero .guide-title {
 </ul>
 <!-- CTA + Language Switch -->
 <div class="d-flex flex-column flex-lg-row align-items-lg-center ms-lg-3 mt-3 mt-lg-0 gap-2">
-<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-en.html">
+<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-en.html" onclick="return trackAndNavigate(event, 'contact_click', {event_category:'engagement', event_label:'navbar_contact', link_url:'contact-en.html'}, 'contact-en.html');">
           Contact
         </a>
-<a class="nav-wa-text" href="https://wa.me/8617620130150" rel="noopener" target="_blank">WhatsApp</a>
+<a class="nav-wa-text" href="https://wa.me/8617620130150" rel="noopener" target="_blank" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'navbar_whatsapp', link_url:'https://wa.me/8617620130150'}, 'https://wa.me/8617620130150', '_blank');">WhatsApp</a>
 <div class="ms-lg-2 d-flex gap-2">
-<a class="lang-btn" href="/zh/">中文</a>
-<a class="lang-btn" href="/">EN</a>
+<a class="lang-btn" href="blog-zh.html">中文</a>
+<a class="lang-btn" href="blog.html">EN</a>
 </div>
 </div>
 </div>
@@ -364,6 +393,50 @@ html[lang="en"] .guide-hero .guide-title {
   <div class="container guide-shell">
     <div class="row g-4">
       
+<article class="col-md-6">
+  <div class="guide-card">
+    <a href="blog-china-police-certificate-cannot-be-issued.html">
+      <span class="guide-badge">China PCC</span>
+      <h2 class="h4 mt-3 mb-2">What to Do If a China Police Certificate Cannot Be Issued</h2>
+      <p>Unable to obtain a China police certificate? Learn why a PCC may be unavailable, what records to check and what evidence may help explain the situation.</p>
+      <span class="guide-link">Read article <i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+  </div>
+</article>
+
+<article class="col-md-6">
+  <div class="guide-card">
+    <a href="blog-china-temporary-residence-registration-pcc.html">
+      <span class="guide-badge">China PCC</span>
+      <h2 class="h4 mt-3 mb-2">China Temporary Residence Registration Form for PCC Applications</h2>
+      <p>Learn how accommodation registration records may relate to a China PCC, what to check when records are missing and why local city practice can vary.</p>
+      <span class="guide-link">Read article <i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+  </div>
+</article>
+
+<article class="col-md-6">
+  <div class="guide-card">
+    <a href="blog-china-pcc-multiple-cities-residence-periods.html">
+      <span class="guide-badge">China PCC</span>
+      <h2 class="h4 mt-3 mb-2">China Police Certificates for Multiple Cities and Residence Periods</h2>
+      <p>Learn how to organize cities, residence periods, passports and supporting records before confirming the appropriate China PCC route.</p>
+      <span class="guide-link">Read article <i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+  </div>
+</article>
+
+<article class="col-md-6">
+  <div class="guide-card">
+    <a href="blog-china-pcc-name-passport-record-mismatch.html">
+      <span class="guide-badge">China PCC</span>
+      <h2 class="h4 mt-3 mb-2">China PCC Name, Passport and Residence Record Mismatches</h2>
+      <p>Learn how to organize old and current passports, name variations and historical China records when identity details do not match exactly.</p>
+      <span class="guide-link">Read article <i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+  </div>
+</article>
+
 <article class="col-md-6">
   <div class="guide-card">
     <a href="blog-china-police-certificate-after-leaving-china.html">
