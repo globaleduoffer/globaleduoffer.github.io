@@ -2,35 +2,6 @@
 
 <html lang="en">
 <head>
-<script>
-  function trackAndNavigate(event, eventName, params, url, target) {
-    if (event) event.preventDefault();
-    try {
-      if (typeof gtag === 'function') {
-        gtag('event', eventName, params || {});
-      }
-    } catch (e) {}
-    setTimeout(function () {
-      if (target === '_blank') {
-        window.open(url, '_blank', 'noopener');
-      } else {
-        window.location.href = url;
-      }
-    }, 350);
-    return false;
-  }
-</script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VDC1P9N84P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VDC1P9N84P');
-</script>
-
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>China Police Certificate for U.S. Immigration | Global Attest</title>
@@ -896,54 +867,37 @@ html[lang="en"] .guide-hero .guide-title {
 
 <style id="country-pcc-hero-h1-v19">
 html[lang="en"] .ca-hero h1 {
-  font-size: clamp(2rem, 2.3vw, 2.75rem) !important;
-  line-height: 1.10 !important;
+  font-size: clamp(2.25rem, 3vw, 3.05rem) !important;
+  line-height: 1.1 !important;
   letter-spacing: 0 !important;
-  max-width: 700px !important;
-  text-wrap: balance;
+  max-width: 900px !important;
   margin-bottom: 1.15rem !important;
 }
 html[lang="en"] .ca-hero .col-lg-7 {
   max-width: 760px;
 }
+@media (min-width: 1400px) {
+  html[lang="en"] .ca-hero h1 {
+    font-size: 3.05rem !important;
+  }
+}
 @media (max-width: 991.98px) {
   html[lang="en"] .ca-hero h1 {
-    font-size: clamp(2rem, 5.5vw, 2.6rem) !important;
-    line-height: 1.10 !important;
+    font-size: clamp(1.95rem, 8vw, 2.55rem) !important;
+    line-height: 1.14 !important;
     max-width: 100% !important;
   }
 }
 @media (max-width: 575.98px) {
   html[lang="en"] .ca-hero h1 {
-    font-size: clamp(1.9rem, 8vw, 2.35rem) !important;
-    line-height: 1.10 !important;
+    font-size: clamp(1.85rem, 9vw, 2.25rem) !important;
   }
 }
 </style>
 <link href="assets/globalattest-layout.css" rel="stylesheet">
-<style id="country-pcc-sample-preview">
-.country-pcc-sample-section{text-align:left;}
-.country-pcc-sample-section h2{text-align:center;}
-.country-pcc-sample-intro,.country-pcc-sample-note{max-width:820px;margin-left:auto;margin-right:auto;text-align:center;}
-.country-pcc-sample-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem;max-width:720px;margin:1.4rem auto 0;}
-.country-pcc-sample-card{min-width:0;margin:0;padding:.9rem;background:#fff;border:1px solid rgba(148,163,184,.28);border-radius:18px;box-shadow:0 12px 30px rgba(15,23,42,.05);}
-.country-pcc-sample-card h3{font-size:1rem;line-height:1.35;margin:0 0 .7rem;color:#0f172a;}
-.country-pcc-sample-image{display:block;overflow:hidden;border-radius:10px;background:#f8fafc;border:1px solid #edf2f7;text-decoration:none;}
-.country-pcc-sample-card img{display:block;width:100%;height:auto;object-fit:contain;background:#fff;}
-.country-pcc-sample-card figcaption{display:grid;gap:.28rem;margin-top:.75rem;color:#526071;font-size:.88rem;line-height:1.45;}
-.country-pcc-sample-card figcaption strong{color:#0f172a;}
-.country-pcc-sample-card .document-source{color:#166534;font-weight:700;}
-.country-pcc-sample-link-wrap{text-align:center;margin-top:1.15rem;}
-.country-pcc-sample-link{display:inline-flex;align-items:center;color:#0f7a43;font-weight:800;text-decoration:none;}
-.country-pcc-sample-link:hover{color:#166534;text-decoration:underline;}
-.country-pcc-sample-note{margin-top:1rem;margin-bottom:0;color:#526071;font-size:.94rem;}
-@media(max-width:575.98px){
-  .country-pcc-sample-grid{grid-template-columns:1fr;max-width:340px;}
-}
-</style>
 </head>
 <body>
-<nav class="navbar navbar-expand-xl">
+<nav class="navbar navbar-expand-lg">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="/">
 <img alt="Global Attest Logo" src="assets/images/logo-global-attest.png" style="height:36px; width:auto; max-height:36px;" decoding="async" width="1211" height="198" loading="eager">
@@ -960,7 +914,7 @@ html[lang="en"] .ca-hero .col-lg-7 {
 </li>
 <!-- Services -->
 <li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" id="serviceDropdownEn" role="button" aria-current="page">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="serviceDropdownEn" role="button">
             Services
           </a>
 <ul aria-labelledby="serviceDropdownEn" class="dropdown-menu services-dropdown-menu">
@@ -1006,11 +960,18 @@ html[lang="en"] .ca-hero .col-lg-7 {
 <ul aria-labelledby="howToDropdownEn" class="dropdown-menu">
 <li><a class="dropdown-item" href="blog.html">All Articles</a></li>
 <li><hr class="dropdown-divider"></li>
-<li><a class="dropdown-item" href="city-grid-en.html">How to Apply for a China Police Certificate</a></li>
-<li><a class="dropdown-item" href="apostille-guide-en.html">How to Apply for a Hague Apostille in China</a></li>
-<li><a class="dropdown-item" href="degree-certification-guide-en.html">How to Process Degree Verification</a></li>
-<li><a class="dropdown-item" href="embassy-certification-guide-en.html">How to Apply for Embassy / Consular Legalization</a></li>
-<li><a class="dropdown-item" href="wes-certification-guide-en.html">How to Apply for a WES Credential Evaluation</a></li></ul>
+<li><span class="dropdown-section-label">China Police Certificate</span></li>
+<li><a class="dropdown-item" href="china-police-certificate-guides.html">China PCC Guides</a></li>
+<li><a class="dropdown-item" href="china-police-certificate-by-country.html">PCC by Country</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><span class="dropdown-section-label">Authentication</span></li>
+<li><a class="dropdown-item" href="china-hague-apostille-services.html">Apostille &amp; Legalization</a></li>
+<li><a class="dropdown-item" href="china-embassy-consular-legalization.html">Embassy / Consular Legalization</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><span class="dropdown-section-label">Education &amp; Credentials</span></li>
+<li><a class="dropdown-item" href="degree-verification.html">Degree Verification</a></li>
+<li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
+</ul>
 </li><!-- Other Menu -->
 <li class="nav-item">
 <a class="nav-link" href="cases-en.html">Cases</a>
@@ -1032,7 +993,7 @@ html[lang="en"] .ca-hero .col-lg-7 {
 <a class="nav-wa-text" href="https://wa.me/8617620130150" rel="noopener" target="_blank" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'navbar_whatsapp', link_url:'https://wa.me/8617620130150'}, 'https://wa.me/8617620130150', '_blank');">WhatsApp</a>
 <div class="ms-lg-2 d-flex gap-2">
 <a class="lang-btn" href="/zh/">中文</a>
-<a class="lang-btn" href="china-police-certificate-usa.html">EN</a>
+<a class="lang-btn" href="/">EN</a>
 </div>
 </div>
 </div>
@@ -1074,31 +1035,6 @@ html[lang="en"] .ca-hero .col-lg-7 {
     <h2>When Is a China Police Certificate Required for the United States?</h2>
     <p>A China police certificate may be requested when a U.S. immigration, visa, consular or institutional process requires information about time spent in China. Whether it is needed depends on the case type, residence history, age, procedural stage and instructions from the relevant authority. Applicants should follow their current checklist, case notice or request rather than assuming that every U.S. application uses the same rule.</p>
     <p>A China police certificate concerns records from China. It is not an FBI Identity History Summary or another U.S. background check. For assistance with the underlying China-side route, visit the <a href="/china-police-certificate.html">China Police Certificate Service</a>.</p>
-  </div>
-</section>
-
-<section class="ca-section country-pcc-sample-section" aria-labelledby="usa-real-pcc-sample-title">
-  <div class="container">
-    <h2 id="usa-real-pcc-sample-title">Real China Police Certificate Sample for the United States</h2>
-    <p class="country-pcc-sample-intro">See a redacted example of an original China Police Certificate and part of the accompanying notarized document package used in a real US-related case.</p>
-    <div class="country-pcc-sample-grid">
-      <figure class="country-pcc-sample-card">
-        <h3>Original China Police Certificate</h3>
-        <a class="country-pcc-sample-image" href="assets/images/resources/pcc-samples/china-police-certificate-usa-original-sample.jpg" target="_blank" rel="noopener" aria-label="View the US-related original China Police Certificate sample at full size">
-          <img src="assets/images/resources/pcc-samples/china-police-certificate-usa-original-sample.jpg" alt="Redacted China Police Certificate sample for US-related use" width="850" height="1270" loading="lazy" decoding="async">
-        </a>
-        <figcaption><span>Redacted sample for reference.</span><span class="document-source">Source: Global Attest</span></figcaption>
-      </figure>
-      <figure class="country-pcc-sample-card">
-        <h3>Chinese Notarial Certificate</h3>
-        <a class="country-pcc-sample-image" href="assets/images/resources/pcc-samples/china-police-certificate-usa-notarial-chinese-sample.jpg" target="_blank" rel="noopener" aria-label="View the US-related Chinese notarial certificate sample at full size">
-          <img src="assets/images/resources/pcc-samples/china-police-certificate-usa-notarial-chinese-sample.jpg" alt="Redacted China Police Certificate notarial sample for US-related use" width="850" height="1274" loading="lazy" decoding="async">
-        </a>
-        <figcaption><span>Redacted sample from the accompanying document package.</span><span class="document-source">Source: Global Attest</span></figcaption>
-      </figure>
-    </div>
-    <p class="country-pcc-sample-note">Document formats and notarization requirements may vary by issuing authority, case circumstances and receiving organization.</p>
-    <div class="country-pcc-sample-link-wrap"><a class="country-pcc-sample-link" href="china-police-clearance-certificate-samples.html#usa-samples">View the Complete PCC Sample Package →</a></div>
   </div>
 </section>
 

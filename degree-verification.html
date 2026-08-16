@@ -2,38 +2,9 @@
 
 <html lang="en">
 <head>
-<script>
-  function trackAndNavigate(event, eventName, params, url, target) {
-    if (event) event.preventDefault();
-    try {
-      if (typeof gtag === 'function') {
-        gtag('event', eventName, params || {});
-      }
-    } catch (e) {}
-    setTimeout(function () {
-      if (target === '_blank') {
-        window.open(url, '_blank', 'noopener');
-      } else {
-        window.location.href = url;
-      }
-    }, 350);
-    return false;
-  }
-</script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VDC1P9N84P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VDC1P9N84P');
-</script>
-
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>China Degree &amp; Transcript Verification | Global Attest</title>
+<title>China Degree Verification Service | Verify Chinese Degree &amp; Transcript | Global Attest</title>
 <meta name="description" content="Verify Chinese degrees and academic transcripts for overseas study, employment and professional licensing. See requirements, process and turnaround time.">
 <meta content="China degree verification, diploma authentication China, academic credential certification, China education verification, MOE verification China" name="keywords"/>
 <link rel="canonical" href="https://globalattest.com/degree-verification.html">
@@ -966,7 +937,7 @@ html[lang="en"] .guide-hero .guide-title {
 <link href="assets/globalattest-layout.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-xl">
+<nav class="navbar navbar-expand-lg">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="/">
 <img alt="Global Attest Logo" src="assets/images/logo-global-attest.png" style="height:36px; width:auto; max-height:36px;" decoding="async" width="1211" height="198" loading="eager">
@@ -983,7 +954,7 @@ html[lang="en"] .guide-hero .guide-title {
 </li>
 <!-- Services -->
 <li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" id="serviceDropdownEn" role="button" aria-current="page">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="serviceDropdownEn" role="button">
             Services
           </a>
 <ul aria-labelledby="serviceDropdownEn" class="dropdown-menu services-dropdown-menu">
@@ -1029,11 +1000,18 @@ html[lang="en"] .guide-hero .guide-title {
 <ul aria-labelledby="howToDropdownEn" class="dropdown-menu">
 <li><a class="dropdown-item" href="blog.html">All Articles</a></li>
 <li><hr class="dropdown-divider"></li>
-<li><a class="dropdown-item" href="city-grid-en.html">How to Apply for a China Police Certificate</a></li>
-<li><a class="dropdown-item" href="apostille-guide-en.html">How to Apply for a Hague Apostille in China</a></li>
-<li><a class="dropdown-item" href="degree-certification-guide-en.html">How to Process Degree Verification</a></li>
-<li><a class="dropdown-item" href="embassy-certification-guide-en.html">How to Apply for Embassy / Consular Legalization</a></li>
-<li><a class="dropdown-item" href="wes-certification-guide-en.html">How to Apply for a WES Credential Evaluation</a></li></ul>
+<li><span class="dropdown-section-label">China Police Certificate</span></li>
+<li><a class="dropdown-item" href="china-police-certificate-guides.html">China PCC Guides</a></li>
+<li><a class="dropdown-item" href="china-police-certificate-by-country.html">PCC by Country</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><span class="dropdown-section-label">Authentication</span></li>
+<li><a class="dropdown-item" href="china-hague-apostille-services.html">Apostille &amp; Legalization</a></li>
+<li><a class="dropdown-item" href="china-embassy-consular-legalization.html">Embassy / Consular Legalization</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><span class="dropdown-section-label">Education &amp; Credentials</span></li>
+<li><a class="dropdown-item" href="degree-verification.html">Degree Verification</a></li>
+<li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
+</ul>
 </li><!-- Other Menu -->
 <li class="nav-item">
 <a class="nav-link" href="cases-en.html">Cases</a>
@@ -1054,8 +1032,8 @@ html[lang="en"] .guide-hero .guide-title {
         </a>
 <a class="nav-wa-text" href="https://wa.me/8617620130150" rel="noopener" target="_blank" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'navbar_whatsapp', link_url:'https://wa.me/8617620130150'}, 'https://wa.me/8617620130150', '_blank');">WhatsApp</a>
 <div class="ms-lg-2 d-flex gap-2">
-<a class="lang-btn" href="degree-verification-zh.html">中文</a>
-<a class="lang-btn" href="degree-verification.html">EN</a>
+<a class="lang-btn" href="/zh/">中文</a>
+<a class="lang-btn" href="/">EN</a>
 </div>
 </div>
 </div>

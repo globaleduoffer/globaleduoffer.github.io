@@ -1,0 +1,44 @@
+1. 新增了哪些文件
+
+- blog-china-pcc-multiple-cities-residence-periods.html
+- blog-china-pcc-name-passport-record-mismatch.html
+- blog-china-police-certificate-cannot-be-issued.html
+- blog-china-police-certificate-processing-time.html
+- blog-china-police-certificate-requirements-documents.html
+- blog-china-temporary-residence-registration-pcc.html
+
+2. 修改了哪些文件
+
+- blog.html（新增两篇最新文章卡片并同步 Blog 导航）
+- china-police-certificate.html（使用最新服务页版本、同步 Blog 导航并修正一个缺失的英文指南链接）
+- sitemap.xml（新增 6 个 Phase 1 Blog URL）
+- 以下 57 个现有英文页面仅同步 Blog 下拉导航：
+  about-en.html, apostille-guide-en.html, beijing.html, blog-china-pcc-apostille-legalization.html, blog-china-pcc-canada-pr.html, blog-china-police-certificate-after-leaving-china.html, blog-wes-china-degree-evaluation.html, case-china-police-certificate.html, case-degree-verification.html, case-embassy-legalization.html, case-hague-apostille.html, cases-en.html, chengdu.html, china-apostille-samples.html, china-degree-apostille.html, china-degree-transcript-verification-chsi-resource-center.html, china-embassy-consular-legalization.html, china-hague-apostille-services.html, china-no-criminal-record-certificate.html, china-police-certificate-australia.html, china-police-certificate-by-country.html, china-police-certificate-canada-pr.html, china-police-certificate-france.html, china-police-certificate-germany.html, china-police-certificate-new-zealand.html, china-police-certificate-spain.html, china-police-certificate-united-kingdom.html, china-police-certificate-usa.html, china-police-clearance-certificate-samples.html, china-temporary-residence-registration-form-samples.html, chongqing.html, city-grid-en.html, contact-en.html, dalian.html, degree-certification-guide-en.html, degree-verification.html, document-legalization.html, embassy-authentication-samples.html, embassy-certification-guide-en.html, guangzhou.html, hangzhou.html, index.html, resources.html, reviews-en.html, sanya.html, shanghai.html, shenyang.html, shenzhen.html, study-in-china.html, suzhou.html, tianjin.html, wes-certification-guide-en.html, wes-en.html, wes-evaluation-report-samples.html, wfoe-china.html, wuhan.html, xiamen.html
+
+3. sitemap 新增了哪些 URL
+
+- https://globalattest.com/blog-china-police-certificate-cannot-be-issued.html
+- https://globalattest.com/blog-china-temporary-residence-registration-pcc.html
+- https://globalattest.com/blog-china-pcc-multiple-cities-residence-periods.html
+- https://globalattest.com/blog-china-pcc-name-passport-record-mismatch.html
+- https://globalattest.com/blog-china-police-certificate-requirements-documents.html
+- https://globalattest.com/blog-china-police-certificate-processing-time.html
+
+4. Blog 首页新增了哪些文章
+
+- China Police Certificate Requirements: Documents Needed for Foreigners
+- China Police Certificate Processing Time: How Long Does It Take?
+
+5. 哪些页面同步了新 Blog 导航
+
+- 所有 65 个包含英文 Blog dropdown 的页面均已同步，包括：首页、Blog 首页、10 篇英文 Blog、China PCC 服务及国家页面、城市页面、其他主要服务页面、Resources、Cases、Reviews、Contact 与 About 页面。
+- 中文页面导航未修改。
+
+6. 是否发现死链或缺失文件
+
+- 检查时发现 china-police-certificate.html 中的 embassy-certification-guide.html 在部署包内不存在，已改为现有的 embassy-certification-guide-en.html。
+- 最终本地页面、CSS、JS、图片及 sitemap 文件检查未发现死链或缺失文件。
+
+7. 确认没有删除现有正常页面
+
+- 已确认：没有删除完整网站基线中的任何现有正常页面或资源文件。
