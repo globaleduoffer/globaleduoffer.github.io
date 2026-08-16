@@ -1,25 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>
-  function trackAndNavigate(event, eventName, params, url, target) {
-    if (event) event.preventDefault();
-    try {
-      if (typeof gtag === 'function') {
-        gtag('event', eventName, params || {});
-      }
-    } catch (e) {}
-    setTimeout(function () {
-      if (target === '_blank') {
-        window.open(url, '_blank', 'noopener');
-      } else {
-        window.location.href = url;
-      }
-    }, 350);
-    return false;
-  }
-</script>
-
+<meta charset="utf-8">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDC1P9N84P"></script>
 <script>
@@ -29,14 +11,21 @@
 
   gtag('config', 'G-VDC1P9N84P');
 </script>
-
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>China Police Certificate After Leaving China | Global Attest</title>
-<meta name="description" content="A practical guide for former foreign residents who need a China police certificate remotely after leaving China for immigration, visa, PR or work use.">
+<meta name="description" content="Learn how former foreign residents may obtain a China Police Certificate after leaving China, including remote applications, documents and Power of Attorney.">
 <link rel="canonical" href="https://globalattest.com/blog-china-police-certificate-after-leaving-china.html">
+<meta property="og:title" content="China Police Certificate After Leaving China | Global Attest">
+<meta property="og:description" content="Learn how former foreign residents may obtain a China Police Certificate after leaving China, including remote applications, documents and Power of Attorney.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://globalattest.com/blog-china-police-certificate-after-leaving-china.html">
+<meta property="og:site_name" content="Global Attest">
+<meta property="og:image" content="https://globalattest.com/assets/images/logo-global-attest.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="China Police Certificate After Leaving China | Global Attest">
+<meta name="twitter:description" content="Learn how former foreign residents may obtain a China Police Certificate after leaving China, including remote applications, documents and Power of Attorney.">
+<meta name="twitter:image" content="https://globalattest.com/assets/images/logo-global-attest.png">
 <link rel="alternate" hreflang="en" href="https://globalattest.com/blog-china-police-certificate-after-leaving-china.html">
-<link rel="alternate" hreflang="zh-CN" href="https://globalattest.com/blog-china-police-certificate-after-leaving-china-zh.html">
 <link rel="alternate" hreflang="x-default" href="https://globalattest.com/blog-china-police-certificate-after-leaving-china.html">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,6 +62,11 @@ body{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;col
 .article-content{padding:3rem 0;}
 .article-content h2{font-size:1.45rem;color:#0f172a;font-weight:850;margin-top:2.2rem;margin-bottom:.85rem;}
 .article-content ul{padding-left:1.2rem;}
+.article-table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.25rem 0;border:1px solid var(--ga-line);border-radius:14px;}
+.article-record-table{width:100%;min-width:680px;border-collapse:collapse;background:#fff;}
+.article-record-table th,.article-record-table td{padding:.85rem 1rem;border-bottom:1px solid var(--ga-line);text-align:left;vertical-align:top;}
+.article-record-table th{background:var(--ga-soft);color:var(--ga-ink);font-weight:850;}
+.article-record-table tbody tr:last-child td{border-bottom:0;}
 .article-note{border-left:4px solid var(--ga-green);background:#f4fbf7;border-radius:12px;padding:1.1rem 1.25rem;margin:2rem 0;}
 .article-cta{background:#0b1b34;color:#fff;border-radius:22px;padding:1.6rem;margin-top:2.5rem;}
 .article-cta p{color:#dbeafe;}
@@ -86,11 +80,10 @@ body{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;col
 
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": "BlogPosting",
   "headline": "How to Get a China Police Certificate After Leaving China",
-  "description": "A practical guide for former foreign residents who need a China police certificate remotely after leaving China for immigration, visa, PR or work use.",
-  "datePublished": "2026-07-19",
-  "dateModified": "2026-07-19",
+  "description": "Learn how former foreign residents may obtain a China Police Certificate after leaving China, including remote applications, documents and Power of Attorney.",
+  "datePublished": "2026-08-16",
   "author": {
     "@type": "Organization",
     "name": "Global Attest"
@@ -105,31 +98,25 @@ body{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;col
 }</script>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-      "@type": "Question",
-      "name": "Can I apply after leaving China?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In many cases, yes, but it depends on the city, residence records and document format required by the receiving authority."
-      }
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://globalattest.com/"
     },
     {
-      "@type": "Question",
-      "name": "Do I need notarization?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Some destinations accept the police certificate itself, while others request a notarized, apostilled or legalized version."
-      }
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://globalattest.com/blog.html"
     },
     {
-      "@type": "Question",
-      "name": "How long does it take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many standard cases can be handled in around 7-10 working days after complete documents are ready, but city and authentication requirements can change the timeline."
-      }
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to Get a China Police Certificate After Leaving China",
+      "item": "https://globalattest.com/blog-china-police-certificate-after-leaving-china.html"
     }
   ]
 }</script>
@@ -151,7 +138,7 @@ body{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;col
 .lang-btn{color:#2563eb;font-size:.9rem;margin-left:.5rem;text-decoration:none;}
 .lang-btn:hover{text-decoration:underline;}
 .footer-premium{background:#101827;color:#dbe4ef;padding:3rem 0 1.6rem;}
-.footer-premium h5{color:#fff;font-weight:850;margin-bottom:1rem;}
+.footer-premium .h5{color:#fff;font-weight:850;margin-bottom:1rem;}
 .footer-premium a{color:#dbe4ef;text-decoration:none;}
 .footer-premium a:hover{color:#fff;text-decoration:underline;}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:2rem;padding-top:1.2rem;color:#aeb9c8;}
@@ -303,6 +290,32 @@ html[lang="en"] .guide-hero .guide-title {
 }
 </style>
 <link href="assets/globalattest-layout.css" rel="stylesheet">
+<script>
+  function trackGAEvent(eventName, params) {
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', eventName, params || {});
+      }
+    } catch (e) {}
+  }
+
+  function trackAndNavigate(event, eventName, params, url, target) {
+    if (event) event.preventDefault();
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', eventName, params || {});
+      }
+    } catch (e) {}
+    setTimeout(function () {
+      if (target === '_blank') {
+        window.open(url, '_blank', 'noopener');
+      } else {
+        window.location.href = url;
+      }
+    }, 350);
+    return false;
+  }
+</script>
 </head>
 <body>
 
@@ -369,11 +382,18 @@ html[lang="en"] .guide-hero .guide-title {
 <ul aria-labelledby="howToDropdownEn" class="dropdown-menu">
 <li><a class="dropdown-item" href="blog.html">All Articles</a></li>
 <li><hr class="dropdown-divider"></li>
-<li><a class="dropdown-item" href="city-grid-en.html">How to Apply for a China Police Certificate</a></li>
-<li><a class="dropdown-item" href="apostille-guide-en.html">How to Apply for a Hague Apostille in China</a></li>
-<li><a class="dropdown-item" href="degree-certification-guide-en.html">How to Process Degree Verification</a></li>
-<li><a class="dropdown-item" href="embassy-certification-guide-en.html">How to Apply for Embassy / Consular Legalization</a></li>
-<li><a class="dropdown-item" href="wes-certification-guide-en.html">How to Apply for a WES Credential Evaluation</a></li></ul>
+<li><span class="dropdown-section-label">China Police Certificate</span></li>
+<li><a class="dropdown-item" href="china-police-certificate-guides.html">China PCC Guides</a></li>
+<li><a class="dropdown-item" href="china-police-certificate-by-country.html">PCC by Country</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><span class="dropdown-section-label">Authentication</span></li>
+<li><a class="dropdown-item" href="china-hague-apostille-services.html">Apostille &amp; Legalization</a></li>
+<li><a class="dropdown-item" href="china-embassy-consular-legalization.html">Embassy / Consular Legalization</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><span class="dropdown-section-label">Education &amp; Credentials</span></li>
+<li><a class="dropdown-item" href="degree-verification.html">Degree Verification</a></li>
+<li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
+</ul>
 </li><!-- Other Menu -->
 <li class="nav-item">
 <a class="nav-link" href="cases-en.html">Cases</a>
@@ -394,7 +414,7 @@ html[lang="en"] .guide-hero .guide-title {
         </a>
 <a class="nav-wa-text" href="https://wa.me/8617620130150" rel="noopener" target="_blank" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'navbar_whatsapp', link_url:'https://wa.me/8617620130150'}, 'https://wa.me/8617620130150', '_blank');">WhatsApp</a>
 <div class="ms-lg-2 d-flex gap-2">
-<a class="lang-btn" href="blog-china-police-certificate-after-leaving-china-zh.html">中文</a>
+<a class="lang-btn" href="blog-zh.html">中文</a>
 <a class="lang-btn" href="blog-china-police-certificate-after-leaving-china.html">EN</a>
 </div>
 </div>
@@ -403,68 +423,133 @@ html[lang="en"] .guide-hero .guide-title {
 </nav>
 <header class="guide-hero">
   <div class="container article-wrap">
-    <span class="guide-kicker"><i class="fa-solid fa-file-lines"></i> China PCC</span>
+    <span class="guide-kicker"><i class="fa-solid fa-earth-asia"></i> China PCC</span>
     <h1 class="guide-title">How to Get a China Police Certificate After Leaving China</h1>
-    <p class="guide-lead">Many applicants discover the China police certificate requirement only after they have already left China. The good news is that a remote route may still be possible, but the right path depends on your city, residence history, visa records and destination country.</p>
-    <div class="article-meta"><span>8 min read</span><span>Updated 2026-07-19</span></div>
+    <p class="guide-lead">Former foreign residents may often be able to obtain a China Police Certificate after leaving China without returning in person, depending on the city, residence history and records available.</p>
+    <div class="article-meta"><span>By Global Attest Document Services Team · Published: August 16, 2026</span></div>
   </div>
 </header>
 <main class="article-content">
   <div class="container article-wrap">
-    <div class="article-note">
-      <strong>Before you start:</strong>
-      Confirm the destination country, receiving authority and deadline before choosing the document route.
-    </div>
-    <section><h2>Who This Guide Is For</h2><p>This guide is for former foreign residents of China who need a police clearance certificate, <a href="/china-no-criminal-record-certificate.html">China No Criminal Record Certificate</a> or China PCC for immigration, permanent residence, employment, study, visa renewal or overseas compliance review.</p><p>It is especially relevant if you are outside China and cannot return in person to visit the local police station, notary office or exit-entry authority.</p></section>
-<section><h2>What Usually Determines the Route</h2><p>The most important factors are the city where you lived, the dates of your residence, your visa or residence permit type, whether your registration records are complete, and whether the receiving authority requires notarization, apostille or consular legalization.</p><p>China PCC practice can vary by city. A route that works in Shenzhen may not be identical to the route used in Shanghai, Beijing, Guangzhou or another city.</p></section>
-<section><h2>Documents to Prepare First</h2><ul><li>Passport information page and old passports if your China stay covered more than one passport.</li><li>China visa pages, residence permits, work permits or student records.</li><li>Entry and exit records or approximate residence dates.</li><li>Temporary residence registration or address history, if available.</li><li>Destination country and receiving authority instructions.</li><li>Authorization documents if a representative will coordinate locally.</li></ul></section>
-<section><h2>Remote Process in Practice</h2><p>A remote case usually starts with a document review. The goal is to confirm whether the city can issue the certificate based on available records and whether a notarized version is needed.</p><p>After the route is confirmed, the applicant prepares authorization materials, the China-side representative coordinates with the relevant authority, and the final document is prepared for overseas use.</p></section>
-<section><h2>Common Delay Risks</h2><ul><li>Unclear residence dates or missing temporary residence registration.</li><li>Using the wrong city or issuing authority.</li><li>Destination instructions that require notarization or apostille but were checked too late.</li><li>Name differences between passport, visa records and application forms.</li><li>Multiple China cities requiring separate review.</li></ul></section>
-<section><h2>When to Ask for a Case Review</h2><p>If your immigration deadline is close, do not wait until the receiving authority asks for a corrected format. Send your city, residence period, passport history and destination country for a route check first.</p></section>
-    
+    <div class="article-note"><strong>Important:</strong> Remote processing is not automatic in every case. Feasibility depends on the Chinese city, residence period, passport history, locally available records and current local-authority requirements.</div>
+    <p>Leaving China does not necessarily close the door on obtaining a police certificate. Many former foreign residents can explore an application through an authorized representative, but there is no single nationwide route that fits every city or residence history.</p>
+    <p>A preliminary feasibility review is useful before documents are signed or sent. It helps identify the relevant city or cities, connect the applicant’s passport history to the requested residence period, check what records may still be available locally and determine whether remote representation appears workable.</p>
+
     <section>
-      <h2>Pre-Application Checklist</h2>
-      <p>Before preparing any China document, write down the final destination, receiving authority and deadline. Most rework happens because the applicant starts with the wrong city, wrong format or wrong authentication route.</p>
+      <h2>Can I Get a China Police Certificate After Leaving China?</h2>
+      <p>Remote processing may be possible after departure, particularly when the relevant city, residence dates and identity records can be identified clearly. Historical visa, residence and accommodation records may be important because the application concerns a past period rather than the applicant’s current location.</p>
+      <p>Requirements vary by city, and not every former resident follows the same route. The <a href="china-police-certificate.html">China Police Certificate service</a> explains the information used to review whether a case may be handled and what further preparation could be needed. Applicants who already hold a PCC should separately check <a href="blog-china-police-certificate-validity.html">how long a China Police Certificate remains acceptable</a> under the receiving authority’s recency rules.</p>
+    </section>
+
+    <section>
+      <h2>Do I Need to Return to China in Person?</h2>
+      <p>Many cases may be handled through an authorized representative, so returning to China is not always necessary. A representative may help submit documents, communicate through the appropriate local route and collect the resulting certificate where permitted.</p>
+      <p>However, this should not be treated as a promise that every local authority accepts the same remote arrangement. Personal attendance, document form and authorization requirements can differ, so the route should be confirmed for the relevant city and case before travel decisions are made.</p>
+    </section>
+
+    <section>
+      <h2>How Does a Remote China PCC Application Work?</h2>
+      <p>A remote China PCC application can generally be understood as a case-review and document-coordination process rather than one universal government procedure:</p>
+      <ol>
+        <li>Identify the Chinese city or cities connected to the requested residence period.</li>
+        <li>Build a clear timeline of residence in China.</li>
+        <li>Review the current passport and any previous passport used in China.</li>
+        <li>Check which residence, visa, accommodation, employment or study records are locally available.</li>
+        <li>Prepare the appropriate authorization documents for a representative.</li>
+        <li>Submit through the confirmed local route.</li>
+        <li>Obtain the police certificate if the responsible authority can issue it.</li>
+        <li>Complete notarization or authentication only if required for the intended use.</li>
+      </ol>
+      <p>The exact sequence and supporting documents may change according to the city, the applicant’s history and the receiving authority’s requirements.</p>
+    </section>
+
+    <section>
+      <h2>What Documents May Be Needed?</h2>
+      <p>Commonly requested materials may include:</p>
       <ul>
-        <li>Which country or institution will review the document.</li>
-        <li>Whether there is an immigration account deadline, request letter or upload window.</li>
-        <li>Whether the authority asks for translation, notarization, apostille or consular legalization.</li>
-        <li>Whether the applicant is outside China and can sign authorization documents remotely.</li>
-        <li>Whether old passports, visas, school records or work records are still available.</li>
+        <li>Current passport identity page.</li>
+        <li>Previous passport used while living in China.</li>
+        <li>China visa and residence-permit copies.</li>
+        <li>Temporary Residence Registration or other accommodation records.</li>
+        <li>Power of Attorney for the authorized representative.</li>
+        <li>Employment or study records where relevant.</li>
+        <li>Other documents requested for the confirmed local route.</li>
       </ul>
+      <p>Not every item is a uniform nationwide requirement. The detailed <a href="blog-china-police-certificate-requirements-documents.html">China Police Certificate requirements and document checklist</a> explains why the likely document set depends on the city, passport history and application method.</p>
     </section>
+
     <section>
-      <h2>What to Send for a Route Review</h2>
-      <p>You do not need to prepare every document before asking for help. A short case summary is often enough to identify the likely route, the missing information and the format risks.</p>
+      <h2>Why Is My Old Passport Important?</h2>
+      <p>An old passport may connect the applicant’s identity to the passport number, visa history and residence period recorded while they lived in China. If a new passport was issued after departure—or during a long stay—the current passport alone may not show the identifiers held in older local records.</p>
+      <p>Losing an old passport does not automatically mean that a China PCC is impossible. The case may need a closer review of available visa copies, residence permits, registration records, employment or study evidence and other documents that help connect the applicant to the relevant period.</p>
+    </section>
+
+    <section>
+      <h2>What If I Lost My Temporary Residence Registration?</h2>
+      <p>Temporary residence registration can help show where and when a foreign resident stayed in a Chinese city. Missing registration records may make verification more difficult, especially when the requested period is old or the applicant changed addresses.</p>
+      <p>The result depends on the city and what other records remain available; a missing form should not be described as an automatic refusal. Review the guide to <a href="blog-china-temporary-residence-registration-pcc.html">temporary residence registration for China PCC applications</a> for the records and alternatives that may need to be checked.</p>
+    </section>
+
+    <section>
+      <h2>What If I Lived in Multiple Chinese Cities?</h2>
+      <p>Applicants who lived in more than one city should prepare a separate timeline for each location, including residence dates, passport number, visa or residence status and available accommodation records. Different cities may require separate checks and may not use identical procedures or supporting documents.</p>
+      <p>The guide to <a href="blog-china-pcc-multiple-cities-residence-periods.html">China Police Certificates for multiple cities and residence periods</a> explains how to organize the history before confirming the appropriate scope and route.</p>
+    </section>
+
+    <section>
+      <h2>What If My Passport Number or Name Changed?</h2>
+      <p>A change of passport number, spelling, surname or name order can make it harder to match an applicant with historical records. Current and old identity pages, visas, residence permits and documents showing the connection between the names or passport numbers may need to be reviewed together.</p>
+      <p>Applicants can use the guide on <a href="blog-china-pcc-name-passport-record-mismatch.html">name, passport and residence record mismatches</a> to organize those differences clearly without assuming that every mismatch makes issuance impossible.</p>
+    </section>
+
+    <section>
+      <h2>What If the China PCC Cannot Be Issued?</h2>
+      <p>Some cases remain difficult even after additional review. The relevant records may be unavailable, the residence period may not be verifiable through the local route or the responsible authority may not be able to issue the requested certificate.</p>
+      <p>Depending on the circumstances, the next step may involve further record review, alternative supporting documents, evidence explaining unsuccessful attempts or guidance from the destination authority about acceptable alternatives. The article on <a href="blog-china-police-certificate-cannot-be-issued.html">what to do if a China Police Certificate cannot be issued</a> discusses these possibilities without promising a successful outcome.</p>
+    </section>
+
+    <section>
+      <h2>How Long Does It Take From Overseas?</h2>
+      <p>For relatively standard cases handled through Global Attest, <strong>around 7–10 business days after the required documents are ready</strong> may commonly be used as a service-time estimate. This is not a government-wide guaranteed processing time and does not mean every city or case follows the same schedule.</p>
+      <p>Missing records, multiple cities, passport or name differences, authorization preparation and additional local checks can make a remote case take longer. The separate guide to <a href="blog-china-police-certificate-processing-time.html">China Police Certificate processing time</a> explains what the estimate covers and which later stages should be planned separately.</p>
+    </section>
+
+    <section>
+      <h2>Do I Need Notarization or an Apostille?</h2>
+      <p>After the PCC is obtained, the destination country or receiving authority may require another document step, such as notarization, a <a href="china-hague-apostille-services.html">Hague Apostille</a> or <a href="china-embassy-consular-legalization.html">embassy or consular legalization</a>. These are separate from obtaining the police certificate itself.</p>
+      <p>Not every PCC requires every step. The correct final format depends on where the document will be submitted and what that receiving authority accepts, so these requirements should be confirmed before post-issuance processing begins.</p>
+    </section>
+
+    <section>
+      <h2>Before You Apply From Overseas: Checklist</h2>
       <ul>
-        <li>Your nationality, current country and contact method.</li>
-        <li>The China city or cities involved and approximate residence dates.</li>
-        <li>The purpose: Canada PR, U.S. immigration, Australia visa, WES, employment, residence or another use.</li>
-        <li>The exact wording from the receiving authority, if available.</li>
-        <li>Your deadline and whether this is an initial filing or a document request.</li>
+        <li>Chinese city or cities where you lived.</li>
+        <li>Residence dates for each city.</li>
+        <li>Current passport.</li>
+        <li>Previous passport used in China, if available.</li>
+        <li>China visa and residence-permit history.</li>
+        <li>Temporary residence registration or other residence records.</li>
+        <li>Destination country and receiving authority.</li>
+        <li>Required final document format, including any notarization or authentication.</li>
       </ul>
+      <p>Providing a clear timeline at the start helps distinguish missing information from documents that may not be relevant to the confirmed local route.</p>
     </section>
+
     <section>
-      <h2>Related Blog Articles</h2>
-      <p>If your case involves more than one document, read the related guides before deciding the route. China PCC, notarization, apostille, legalization and academic evaluation often need to be planned together.</p>
-      <ul>
-        <li><a href="blog-china-police-certificate-after-leaving-china.html">China police certificate after leaving China</a></li>
-        <li><a href="blog-china-pcc-canada-pr.html">China PCC for Canada PR</a></li>
-        <li><a href="blog-china-pcc-apostille-legalization.html">China PCC apostille or legalization</a></li>
-        <li><a href="blog-wes-china-degree-evaluation.html">WES China degree evaluation</a></li>
-      </ul>
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item"><h3>Can I get a China Police Certificate after leaving China?</h3><p>Often, yes, a former foreign resident may be able to apply after departure. Feasibility depends on the city, residence history, passport records and the locally accepted route.</p></div>
+      <div class="faq-item"><h3>Do I need to return to China?</h3><p>Not necessarily. Many cases may be handled through an authorized representative, but personal-attendance requirements should be confirmed for the relevant city and circumstances.</p></div>
+      <div class="faq-item"><h3>Can someone apply for a China PCC on my behalf?</h3><p>An authorized representative may be able to assist where the local route permits it. The required Power of Attorney and supporting documents can vary.</p></div>
+      <div class="faq-item"><h3>What if I lost my old passport?</h3><p>A missing old passport can make record matching harder, but it does not automatically make the application impossible. Other identity, visa and residence evidence may need to be reviewed.</p></div>
+      <div class="faq-item"><h3>What if I lost my residence registration?</h3><p>The case may require a review of locally available records and other supporting evidence. The effect of a missing registration depends on the city and residence history.</p></div>
+      <div class="faq-item"><h3>How long does a remote China PCC application take?</h3><p>Standard cases may often be completed within the service estimate described above, but timing varies by city, available records and case complexity.</p></div>
     </section>
-    <section>
-      <h2>FAQ</h2>
-      <div class="faq-item"><h3>Can I apply after leaving China?</h3><p>In many cases, yes, but it depends on the city, residence records and document format required by the receiving authority.</p></div>
-<div class="faq-item"><h3>Do I need notarization?</h3><p>Some destinations accept the police certificate itself, while others request a notarized, apostilled or legalized version.</p></div>
-<div class="faq-item"><h3>How long does it take?</h3><p>Many standard cases can be handled in around 7-10 working days after complete documents are ready, but city and authentication requirements can change the timeline.</p></div>
-    </section>
+
     <div class="article-cta">
-      <h2 class="text-white mt-0">Need to confirm your route?</h2>
-      <p>Send your city, residence dates, destination country and deadline. We can help you check the practical route before you prepare the wrong document.</p>
-      <a class="btn btn-success" href="china-police-certificate.html">Check the China PCC service</a>
-      <a class="btn btn-outline-light ms-sm-2 mt-2 mt-sm-0" href="contact-en.html">Contact Global Attest</a>
+      <h2 class="text-white mt-0">Request a Preliminary Overseas Case Review</h2>
+      <p>If you have already left China, send the Chinese city or cities, years lived in China, current and previous passport situation, visa type, whether residence registration is available, and the destination country.</p>
+      <a class="btn btn-success" href="contact-en.html">Request a Preliminary Case Review</a>
+      <a class="btn btn-outline-light ms-sm-2 mt-2 mt-sm-0" href="https://wa.me/8617620130150" target="_blank" rel="noopener">WhatsApp Us</a>
     </div>
   </div>
 </main>
@@ -473,23 +558,23 @@ html[lang="en"] .guide-hero .guide-title {
   <div class="container premium-shell">
     <div class="row g-4">
       <div class="col-lg-4">
-        <h5>Global Attest</h5>
+        <h3 class="h5">Global Attest</h3>
         <p class="mb-0">China document services for immigration, PR, visa, academic, employment and international use.</p>
       </div>
       <div class="col-6 col-lg-2">
-        <h5>Services</h5>
+        <h3 class="h5">Services</h3>
         <p class="mb-2"><a href="china-police-certificate.html">China PCC</a></p>
-        <p class="mb-2"><a href="document-legalization.html">Apostille</a></p>
+        <p class="mb-2"><a href="china-hague-apostille-services.html">Apostille</a></p>
         <p class="mb-2"><a href="wes-en.html">WES Support</a></p>
       </div>
       <div class="col-6 col-lg-2">
-        <h5>Company</h5>
+        <h3 class="h5">Company</h3>
         <p class="mb-2"><a href="about-en.html">About Us</a></p>
         <p class="mb-2"><a href="cases-en.html">Cases</a></p>
         <p class="mb-2"><a href="reviews-en.html">Reviews</a></p>
       </div>
       <div class="col-lg-4">
-        <h5>Contact</h5>
+        <h3 class="h5">Contact</h3>
         <p class="mb-2">Shenzhen, Guangdong, China</p>
         <p class="mb-2"><a href="contact-en.html">Contact form</a></p>
         <p class="mb-0"><a href="https://wa.me/8617620130150" target="_blank" rel="noopener">WhatsApp: +86 176 2013 0150</a></p>
@@ -505,3 +590,4 @@ html[lang="en"] .guide-hero .guide-title {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

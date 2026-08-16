@@ -1,40 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>
-  function trackAndNavigate(event, eventName, params, url, target) {
-    if (event) event.preventDefault();
-    try {
-      if (typeof gtag === 'function') {
-        gtag('event', eventName, params || {});
-      }
-    } catch (e) {}
-    setTimeout(function () {
-      if (target === '_blank') {
-        window.open(url, '_blank', 'noopener');
-      } else {
-        window.location.href = url;
-      }
-    }, 350);
-    return false;
-  }
-</script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VDC1P9N84P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VDC1P9N84P');
-</script>
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Global Attest Blog | China Document Articles</title>
 <meta name="description" content="Global Attest Blog articles about China police certificates, apostille, WES, degree verification and overseas document use.">
 <link rel="canonical" href="https://globalattest.com/blog.html">
+<meta property="og:title" content="Global Attest Blog | China Document Articles">
+<meta property="og:description" content="Global Attest Blog articles about China police certificates, apostille, WES, degree verification and overseas document use.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://globalattest.com/blog.html">
+<meta property="og:site_name" content="Global Attest">
+<meta property="og:image" content="https://globalattest.com/assets/images/logo-global-attest.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Global Attest Blog | China Document Articles">
+<meta name="twitter:description" content="Global Attest Blog articles about China police certificates, apostille, WES, degree verification and overseas document use.">
+<meta name="twitter:image" content="https://globalattest.com/assets/images/logo-global-attest.png">
 <link rel="alternate" hreflang="en" href="https://globalattest.com/blog.html">
 <link rel="alternate" hreflang="zh-CN" href="https://globalattest.com/blog-zh.html">
 <link rel="alternate" hreflang="x-default" href="https://globalattest.com/blog.html">
@@ -90,29 +71,7 @@ body{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;col
   "name": "Global Attest Blog | China Document Articles",
   "description": "Global Attest Blog articles about China police certificates, apostille, WES, degree verification and overseas document use.",
   "url": "https://globalattest.com/blog.html",
-  "inLanguage": "en",
-  "hasPart": [
-    {
-      "@type": "Article",
-      "headline": "How to Get a China Police Certificate After Leaving China",
-      "url": "https://globalattest.com/blog-china-police-certificate-after-leaving-china.html"
-    },
-    {
-      "@type": "Article",
-      "headline": "China Police Certificate for Canada PR: IRCC Guide",
-      "url": "https://globalattest.com/blog-china-pcc-canada-pr.html"
-    },
-    {
-      "@type": "Article",
-      "headline": "China PCC Apostille or Legalization: When Is It Needed?",
-      "url": "https://globalattest.com/blog-china-pcc-apostille-legalization.html"
-    },
-    {
-      "@type": "Article",
-      "headline": "WES China Degree Evaluation: Documents and Delay Risks",
-      "url": "https://globalattest.com/blog-wes-china-degree-evaluation.html"
-    }
-  ]
+  "inLanguage": "en"
 }</script>
 <style id="blog-homepage-shell-style">
 .navbar{padding-top:.65rem;padding-bottom:.65rem;box-shadow:0 1px 0 rgba(15,23,42,.06);background:#fff;position:relative;z-index:1050;}
@@ -132,7 +91,7 @@ body{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;col
 .lang-btn{color:#2563eb;font-size:.9rem;margin-left:.5rem;text-decoration:none;}
 .lang-btn:hover{text-decoration:underline;}
 .footer-premium{background:#101827;color:#dbe4ef;padding:3rem 0 1.6rem;}
-.footer-premium h5{color:#fff;font-weight:850;margin-bottom:1rem;}
+.footer-premium .h5{color:#fff;font-weight:850;margin-bottom:1rem;}
 .footer-premium a{color:#dbe4ef;text-decoration:none;}
 .footer-premium a:hover{color:#fff;text-decoration:underline;}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:2rem;padding-top:1.2rem;color:#aeb9c8;}
@@ -350,11 +309,18 @@ html[lang="en"] .guide-hero .guide-title {
 <ul aria-labelledby="howToDropdownEn" class="dropdown-menu">
 <li><a class="dropdown-item" href="blog.html">All Articles</a></li>
 <li><hr class="dropdown-divider"></li>
-<li><a class="dropdown-item" href="city-grid-en.html">How to Apply for a China Police Certificate</a></li>
-<li><a class="dropdown-item" href="apostille-guide-en.html">How to Apply for a Hague Apostille in China</a></li>
-<li><a class="dropdown-item" href="degree-certification-guide-en.html">How to Process Degree Verification</a></li>
-<li><a class="dropdown-item" href="embassy-certification-guide-en.html">How to Apply for Embassy / Consular Legalization</a></li>
-<li><a class="dropdown-item" href="wes-certification-guide-en.html">How to Apply for a WES Credential Evaluation</a></li></ul>
+<li><span class="dropdown-section-label">China Police Certificate</span></li>
+<li><a class="dropdown-item" href="china-police-certificate-guides.html">China PCC Guides</a></li>
+<li><a class="dropdown-item" href="china-police-certificate-by-country.html">PCC by Country</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><span class="dropdown-section-label">Authentication</span></li>
+<li><a class="dropdown-item" href="china-hague-apostille-services.html">Apostille &amp; Legalization</a></li>
+<li><a class="dropdown-item" href="china-embassy-consular-legalization.html">Embassy / Consular Legalization</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><span class="dropdown-section-label">Education &amp; Credentials</span></li>
+<li><a class="dropdown-item" href="degree-verification.html">Degree Verification</a></li>
+<li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
+</ul>
 </li><!-- Other Menu -->
 <li class="nav-item">
 <a class="nav-link" href="cases-en.html">Cases</a>
@@ -393,6 +359,28 @@ html[lang="en"] .guide-hero .guide-title {
   <div class="container guide-shell">
     <div class="row g-4">
       
+<article class="col-md-6">
+  <div class="guide-card">
+    <a href="blog-china-police-certificate-processing-time.html">
+      <span class="guide-badge">China PCC</span>
+      <h2 class="h4 mt-3 mb-2">China Police Certificate Processing Time: How Long Does It Take?</h2>
+      <p>Learn what the 7–10 business day standard-case estimate covers and why documents, cities and additional processing stages can affect the timeline.</p>
+      <span class="guide-link">Read article <i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+  </div>
+</article>
+
+<article class="col-md-6">
+  <div class="guide-card">
+    <a href="blog-china-police-certificate-requirements-documents.html">
+      <span class="guide-badge">China PCC</span>
+      <h2 class="h4 mt-3 mb-2">China Police Certificate Requirements: Documents Needed for Foreigners</h2>
+      <p>Learn which passports, visas, residence records, authorization documents and other supporting materials may be needed for a China PCC.</p>
+      <span class="guide-link">Read article <i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+  </div>
+</article>
+
 <article class="col-md-6">
   <div class="guide-card">
     <a href="blog-china-police-certificate-cannot-be-issued.html">
@@ -461,21 +449,20 @@ html[lang="en"] .guide-hero .guide-title {
 
 <article class="col-md-6">
   <div class="guide-card">
-    <a href="blog-china-pcc-apostille-legalization.html">
-      <span class="guide-badge">Apostille</span>
-      <h2 class="h4 mt-3 mb-2">China PCC Apostille or Legalization: When Is It Needed?</h2>
-      <p>Learn when a China police certificate may need notarization, apostille or consular legalization for overseas immigration, visa, work or residence use.</p>
-      <span class="guide-link">Read article <i class="fa-solid fa-arrow-right"></i></span>
-    </a>
-  </div>
-</article>
-
-<article class="col-md-6">
-  <div class="guide-card">
     <a href="blog-wes-china-degree-evaluation.html">
       <span class="guide-badge">WES</span>
       <h2 class="h4 mt-3 mb-2">WES China Degree Evaluation: Documents and Delay Risks</h2>
       <p>A guide for applicants preparing Chinese degree and academic records for WES credential evaluation, ECA, immigration, study or employment use.</p>
+      <span class="guide-link">Read article <i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+  </div>
+</article>
+<article class="col-md-6">
+  <div class="guide-card">
+    <a href="blog-china-police-certificate-old-expired-passport.html">
+      <span class="guide-badge">China PCC</span>
+      <h2 class="h4 mt-3 mb-2">China Police Certificate With an Old or Expired Passport</h2>
+      <p>Learn how previous passports, expired passports and historical identity records may affect a China PCC application.</p>
       <span class="guide-link">Read article <i class="fa-solid fa-arrow-right"></i></span>
     </a>
   </div>
@@ -494,11 +481,31 @@ html[lang="en"] .guide-hero .guide-title {
 </article>
 <article class="col-md-6">
   <div class="guide-card">
+    <a href="blog-china-police-certificate-vs-notarial-certificate.html">
+      <span class="guide-badge">China PCC</span>
+      <h2 class="h4 mt-3 mb-2">China Police Certificate vs Notarial Certificate</h2>
+      <p>Understand why the underlying PCC and a possible later notarial document or process are not the same concept.</p>
+      <span class="guide-link">Read article <i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+  </div>
+</article>
+<article class="col-md-6">
+  <div class="guide-card">
     <a href="apostille-guide-en.html">
       <span class="guide-badge">Apostille</span>
       <h2 class="h4 mt-3 mb-2">How to Apply for a Hague Apostille in China</h2>
       <p>When China-issued documents need apostille for Hague Convention destinations, and how to avoid choosing the wrong authentication route.</p>
       <span class="guide-link">Read guide <i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+  </div>
+</article>
+<article class="col-md-6">
+  <div class="guide-card">
+    <a href="blog-china-police-certificate-apostille.html">
+      <span class="guide-badge">China PCC</span>
+      <h2 class="h4 mt-3 mb-2">Does a China Police Certificate Need an Apostille?</h2>
+      <p>Learn how the destination, receiving authority and document route determine whether a China PCC may need an Apostille.</p>
+      <span class="guide-link">Read article <i class="fa-solid fa-arrow-right"></i></span>
     </a>
   </div>
 </article>
@@ -514,11 +521,31 @@ html[lang="en"] .guide-hero .guide-title {
 </article>
 <article class="col-md-6">
   <div class="guide-card">
+    <a href="blog-china-police-certificate-validity.html">
+      <span class="guide-badge">China PCC</span>
+      <h2 class="h4 mt-3 mb-2">How Long Is a China Police Certificate Valid?</h2>
+      <p>Distinguish the PCC issue date, residence period covered and receiving authority's document-recency requirements.</p>
+      <span class="guide-link">Read article <i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+  </div>
+</article>
+<article class="col-md-6">
+  <div class="guide-card">
     <a href="embassy-certification-guide-en.html">
       <span class="guide-badge">Legalization</span>
       <h2 class="h4 mt-3 mb-2">How to Apply for Embassy / Consular Legalization</h2>
       <p>Guide to consular legalization for China-issued documents used in UAE, Qatar, Saudi Arabia, Vietnam and other non-Hague destinations.</p>
       <span class="guide-link">Read guide <i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+  </div>
+</article>
+<article class="col-md-6">
+  <div class="guide-card">
+    <a href="blog-china-police-certificate-translation-requirements.html">
+      <span class="guide-badge">China PCC</span>
+      <h2 class="h4 mt-3 mb-2">China Police Certificate Translation Requirements</h2>
+      <p>Check translation, certified translation, notarization and authentication requirements as separate document questions.</p>
+      <span class="guide-link">Read article <i class="fa-solid fa-arrow-right"></i></span>
     </a>
   </div>
 </article>
@@ -541,23 +568,23 @@ html[lang="en"] .guide-hero .guide-title {
   <div class="container premium-shell">
     <div class="row g-4">
       <div class="col-lg-4">
-        <h5>Global Attest</h5>
+        <h3 class="h5">Global Attest</h3>
         <p class="mb-0">China document services for immigration, PR, visa, academic, employment and international use.</p>
       </div>
       <div class="col-6 col-lg-2">
-        <h5>Services</h5>
+        <h3 class="h5">Services</h3>
         <p class="mb-2"><a href="china-police-certificate.html">China PCC</a></p>
-        <p class="mb-2"><a href="document-legalization.html">Apostille</a></p>
+        <p class="mb-2"><a href="china-hague-apostille-services.html">Apostille</a></p>
         <p class="mb-2"><a href="wes-en.html">WES Support</a></p>
       </div>
       <div class="col-6 col-lg-2">
-        <h5>Company</h5>
+        <h3 class="h5">Company</h3>
         <p class="mb-2"><a href="about-en.html">About Us</a></p>
         <p class="mb-2"><a href="cases-en.html">Cases</a></p>
         <p class="mb-2"><a href="reviews-en.html">Reviews</a></p>
       </div>
       <div class="col-lg-4">
-        <h5>Contact</h5>
+        <h3 class="h5">Contact</h3>
         <p class="mb-2">Shenzhen, Guangdong, China</p>
         <p class="mb-2"><a href="contact-en.html">Contact form</a></p>
         <p class="mb-0"><a href="https://wa.me/8617620130150" target="_blank" rel="noopener">WhatsApp: +86 176 2013 0150</a></p>
@@ -573,3 +600,5 @@ html[lang="en"] .guide-hero .guide-title {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
