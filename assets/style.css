@@ -127,7 +127,7 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 }
 
 /* Keep the full desktop navbar inside the viewport near the lg breakpoint. */
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) and (max-width: 1153px) {
   html[lang="en"] body nav.navbar.navbar > .container {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
