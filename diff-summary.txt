@@ -1,0 +1,20 @@
+Academic Document Guides navigation diff summary
+
+Files modified: 92
+Navigation insertions: 92
+Insertions per eligible file: 1
+Files with changes beyond the intended navigation node: 0
+Metadata changes: 0
+JSON-LD changes: 0
+datePublished changes: 0
+dateModified changes: 0
+Article-body changes: 0
+Sitemap changes: 0
+Chinese-page changes: 0
+Validation failures: 0
+
+Inserted node:
+<li><a class="dropdown-item" href="/china-academic-document-guides.html">Academic Document Guides</a></li>
+
+Placement verified in every file:
+Education & Credentials label -> Academic Document Guides -> Degree Verification -> WES Credential Evaluation
