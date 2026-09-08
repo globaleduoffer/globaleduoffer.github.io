@@ -466,7 +466,8 @@ footer > :not(.container):not(.container-fluid):not(.resource-shell):not(.guide-
  * Source of truth: index.html. These deliberately high-specificity, navbar-only
  * rules neutralize legacy page-level navbar CSS without affecting page content.
  */
-html[lang="en"] body nav.navbar {
+html[lang="en"] body nav.navbar,
+body nav.navbar.ga-modern-navbar {
   position: relative !important;
   z-index: auto !important;
   width: 100% !important;
@@ -482,7 +483,8 @@ html[lang="en"] body nav.navbar {
   letter-spacing: 0 !important;
 }
 
-html[lang="en"] body nav.navbar > .container {
+html[lang="en"] body nav.navbar > .container,
+body nav.navbar.ga-modern-navbar > .container {
   width: 100% !important;
   max-width: var(--ga-layout-max) !important;
   margin-left: auto !important;
@@ -492,7 +494,8 @@ html[lang="en"] body nav.navbar > .container {
   font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif !important;
 }
 
-html[lang="en"] body nav.navbar .navbar-brand {
+html[lang="en"] body nav.navbar .navbar-brand,
+body nav.navbar.ga-modern-navbar .navbar-brand {
   display: inline-flex !important;
   align-items: center !important;
   gap: .5rem !important;
@@ -501,7 +504,8 @@ html[lang="en"] body nav.navbar .navbar-brand {
   font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif !important;
 }
 
-html[lang="en"] body nav.navbar .navbar-brand img {
+html[lang="en"] body nav.navbar .navbar-brand img,
+body nav.navbar.ga-modern-navbar .navbar-brand img {
   display: block !important;
   width: auto !important;
   height: 36px !important;
@@ -510,7 +514,8 @@ html[lang="en"] body nav.navbar .navbar-brand img {
   font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif !important;
 }
 
-html[lang="en"] body nav.navbar .navbar-nav {
+html[lang="en"] body nav.navbar .navbar-nav,
+body nav.navbar.ga-modern-navbar .navbar-nav {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   align-self: center !important;
@@ -520,7 +525,8 @@ html[lang="en"] body nav.navbar .navbar-nav {
   line-height: 1.5 !important;
 }
 
-html[lang="en"] body nav.navbar .navbar-nav > .nav-item > .nav-link {
+html[lang="en"] body nav.navbar .navbar-nav > .nav-item > .nav-link,
+body nav.navbar.ga-modern-navbar .navbar-nav > .nav-item > .nav-link {
   padding: .35rem .75rem !important;
   border-radius: 0 !important;
   color: #334155 !important;
@@ -533,16 +539,20 @@ html[lang="en"] body nav.navbar .navbar-nav > .nav-item > .nav-link {
   white-space: normal !important;
 }
 
-html[lang="en"] body nav.navbar .navbar-nav > .nav-item > .nav-link.dropdown-toggle {
+html[lang="en"] body nav.navbar .navbar-nav > .nav-item > .nav-link.dropdown-toggle,
+body nav.navbar.ga-modern-navbar .navbar-nav > .nav-item > .nav-link.dropdown-toggle {
   white-space: nowrap !important;
 }
 
 html[lang="en"] body nav.navbar .navbar-nav > .nav-item > .nav-link:hover,
-html[lang="en"] body nav.navbar .navbar-nav > .nav-item > .nav-link:focus {
+body nav.navbar.ga-modern-navbar .navbar-nav > .nav-item > .nav-link:hover,
+html[lang="en"] body nav.navbar .navbar-nav > .nav-item > .nav-link:focus,
+body nav.navbar.ga-modern-navbar .navbar-nav > .nav-item > .nav-link:focus {
   color: #0f172a !important;
 }
 
-html[lang="en"] body nav.navbar .dropdown-menu {
+html[lang="en"] body nav.navbar .dropdown-menu,
+body nav.navbar.ga-modern-navbar .dropdown-menu {
   min-width: 280px !important;
   padding: .5rem 0 !important;
   border: 0 !important;
@@ -551,7 +561,8 @@ html[lang="en"] body nav.navbar .dropdown-menu {
   box-shadow: none;
 }
 
-html[lang="en"] body nav.navbar .dropdown-item {
+html[lang="en"] body nav.navbar .dropdown-item,
+body nav.navbar.ga-modern-navbar .dropdown-item {
   padding: .42rem 1.15rem !important;
   color: #e5e7eb !important;
   background: transparent !important;
@@ -564,13 +575,17 @@ html[lang="en"] body nav.navbar .dropdown-item {
 }
 
 html[lang="en"] body nav.navbar .dropdown-item:hover,
+body nav.navbar.ga-modern-navbar .dropdown-item:hover,
 html[lang="en"] body nav.navbar .dropdown-item:focus,
-html[lang="en"] body nav.navbar .dropdown-item.active {
+body nav.navbar.ga-modern-navbar .dropdown-item:focus,
+html[lang="en"] body nav.navbar .dropdown-item.active,
+body nav.navbar.ga-modern-navbar .dropdown-item.active {
   color: #fff !important;
   background: #1f2937 !important;
 }
 
-html[lang="en"] body nav.navbar .dropdown-section-label {
+html[lang="en"] body nav.navbar .dropdown-section-label,
+body nav.navbar.ga-modern-navbar .dropdown-section-label {
   display: block !important;
   padding: .4rem 1.15rem .2rem !important;
   color: #93c5fd !important;
@@ -582,11 +597,13 @@ html[lang="en"] body nav.navbar .dropdown-section-label {
   text-transform: uppercase !important;
 }
 
-html[lang="en"] body nav.navbar .dropdown-divider {
+html[lang="en"] body nav.navbar .dropdown-divider,
+body nav.navbar.ga-modern-navbar .dropdown-divider {
   border-color: rgba(148, 163, 184, .24) !important;
 }
 
-html[lang="en"] body nav.navbar .cta-btn {
+html[lang="en"] body nav.navbar .cta-btn,
+body nav.navbar.ga-modern-navbar .cta-btn {
   width: auto !important;
   padding-top: .38rem !important;
   padding-bottom: .38rem !important;
@@ -598,7 +615,8 @@ html[lang="en"] body nav.navbar .cta-btn {
   white-space: nowrap !important;
 }
 
-html[lang="en"] body nav.navbar .nav-wa-text {
+html[lang="en"] body nav.navbar .nav-wa-text,
+body nav.navbar.ga-modern-navbar .nav-wa-text {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -617,12 +635,15 @@ html[lang="en"] body nav.navbar .nav-wa-text {
 }
 
 html[lang="en"] body nav.navbar .nav-wa-text:hover,
-html[lang="en"] body nav.navbar .nav-wa-text:focus {
+body nav.navbar.ga-modern-navbar .nav-wa-text:hover,
+html[lang="en"] body nav.navbar .nav-wa-text:focus,
+body nav.navbar.ga-modern-navbar .nav-wa-text:focus {
   background: #d9f2e3 !important;
   color: #1f8f4d !important;
 }
 
-html[lang="en"] body nav.navbar .lang-btn {
+html[lang="en"] body nav.navbar .lang-btn,
+body nav.navbar.ga-modern-navbar .lang-btn {
   margin-left: .5rem !important;
   padding: 0 !important;
   color: #2563eb !important;
@@ -635,20 +656,25 @@ html[lang="en"] body nav.navbar .lang-btn {
 }
 
 html[lang="en"] body nav.navbar .lang-btn:hover,
-html[lang="en"] body nav.navbar .lang-btn:focus {
+body nav.navbar.ga-modern-navbar .lang-btn:hover,
+html[lang="en"] body nav.navbar .lang-btn:focus,
+body nav.navbar.ga-modern-navbar .lang-btn:focus {
   text-decoration: underline !important;
 }
 
 @media (min-width: 992px) {
-  html[lang="en"] body nav.navbar .navbar-nav {
+  html[lang="en"] body nav.navbar .navbar-nav,
+  body nav.navbar.ga-modern-navbar .navbar-nav {
     max-height: 3.459rem !important;
   }
 
-  html[lang="en"] body nav.navbar .navbar-brand img {
+  html[lang="en"] body nav.navbar .navbar-brand img,
+  body nav.navbar.ga-modern-navbar .navbar-brand img {
     max-width: 210px !important;
   }
 
-  html[lang="en"] body nav.navbar .navbar-nav > .nav-item > .nav-link {
+  html[lang="en"] body nav.navbar .navbar-nav > .nav-item > .nav-link,
+  body nav.navbar.ga-modern-navbar .navbar-nav > .nav-item > .nav-link {
     padding-left: .48rem !important;
     padding-right: .48rem !important;
     border-radius: 999px !important;
@@ -657,16 +683,21 @@ html[lang="en"] body nav.navbar .lang-btn:focus {
   }
 
   html[lang="en"] body nav.navbar .navbar-nav > .nav-item > .nav-link:hover,
-  html[lang="en"] body nav.navbar .navbar-nav > .nav-item > .nav-link:focus {
+  body nav.navbar.ga-modern-navbar .navbar-nav > .nav-item > .nav-link:hover,
+  html[lang="en"] body nav.navbar .navbar-nav > .nav-item > .nav-link:focus,
+  body nav.navbar.ga-modern-navbar .navbar-nav > .nav-item > .nav-link:focus {
     background: rgba(31, 143, 77, .10) !important;
   }
 
-  html[lang="en"] body nav.navbar .navbar-nav > .nav-item > .nav-link.active {
+  html[lang="en"] body nav.navbar .navbar-nav > .nav-item > .nav-link.active,
+  body nav.navbar.ga-modern-navbar .navbar-nav > .nav-item > .nav-link.active {
     background: rgba(31, 143, 77, .16) !important;
   }
 
   html[lang="en"] body nav.navbar .cta-btn,
-  html[lang="en"] body nav.navbar .nav-wa-text {
+  body nav.navbar.ga-modern-navbar .cta-btn,
+  html[lang="en"] body nav.navbar .nav-wa-text,
+  body nav.navbar.ga-modern-navbar .nav-wa-text {
     padding-left: .85rem !important;
     padding-right: .85rem !important;
     font-size: .9rem !important;
@@ -674,7 +705,8 @@ html[lang="en"] body nav.navbar .lang-btn:focus {
 }
 
 @media (max-width: 991.98px) {
-  html[lang="en"] body nav.navbar .cta-btn {
+  html[lang="en"] body nav.navbar .cta-btn,
+  body nav.navbar.ga-modern-navbar .cta-btn {
     width: 100% !important;
     text-align: center !important;
   }
