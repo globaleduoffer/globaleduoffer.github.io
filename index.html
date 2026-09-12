@@ -3,15 +3,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<!-- Google tag (gtag.js) -->
+<!-- GA4: initialization and non-blocking interaction tracking -->
+<script src="assets/globalattest-round1.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDC1P9N84P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VDC1P9N84P');
-</script>
 
 <link href="/favicon.ico" rel="icon" sizes="any"/>
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
@@ -460,32 +454,7 @@
     .nav-wa-text { padding-top: 0.45rem; padding-bottom: 0.45rem; }
 
 </style>
-</link></link></link></meta><script>
-  function trackGAEvent(eventName, params) {
-    try {
-      if (typeof gtag === 'function') {
-        gtag('event', eventName, params || {});
-      }
-    } catch (e) {}
-  }
 
-  function trackAndNavigate(event, eventName, params, url, target) {
-    if (event) event.preventDefault();
-    try {
-      if (typeof gtag === 'function') {
-        gtag('event', eventName, params || {});
-      }
-    } catch (e) {}
-    setTimeout(function () {
-      if (target === '_blank') {
-        window.open(url, '_blank', 'noopener');
-      } else {
-        window.location.href = url;
-      }
-    }, 350);
-    return false;
-  }
-</script>
 <style id="globalattest-unified-font-footer">
 :root{--font-sans:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;}
 html,body,button,input,select,textarea,.navbar,.navbar .nav-link,.navbar .dropdown-item,.navbar .btn,.navbar .lang-btn{font-family:var(--font-sans)!important;letter-spacing:0!important;}
@@ -1032,8 +1001,9 @@ html[lang="en"] .guide-hero .guide-title {
 }
 </style>
 <link href="assets/globalattest-layout.css" rel="stylesheet">
+<link href="assets/globalattest-round1.css" rel="stylesheet">
 </head>
-<body>
+<body class="ga-round1 ga-home">
 <nav class="navbar navbar-expand-lg">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="/">
@@ -1148,30 +1118,13 @@ html[lang="en"] .guide-hero .guide-title {
   <span class="title-line title-line-secondary">Apostille &amp; Authentication Services</span>
 </h1>
 <p class="hero-subtitle">
-Helping individuals and businesses worldwide obtain China Police Clearance Certificates, Apostille, certified translations, degree verification, embassy authentication, and other China document services for immigration, employment, study, and overseas applications.
+Living overseas and need documents from China? We help you confirm the requirements and assess a practical route for China police certificates, apostille and legalization, and academic records before you start.
 </p>
-<div class="hero-buttons">
-<a class="btn hero-btn" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'china pcc certificate', link_url:'china-police-certificate.html'}, 'china-police-certificate.html');" href="china-police-certificate.html">
-China PCC Certificate
-</a>
-<a class="btn hero-btn" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'canada pr pcc', link_url:'china-police-certificate-canada-pr.html'}, 'china-police-certificate-canada-pr.html');" href="china-police-certificate-canada-pr.html">
-PCC for Canada PR
-</a>
-<a class="btn hero-btn" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'apostille &amp; legalization', link_url:'document-legalization.html'}, 'document-legalization.html');" href="document-legalization.html">
-Apostille &amp; Legalization
-</a>
-<a class="btn hero-btn" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'wes evaluation support', link_url:'wes-en.html'}, 'wes-en.html');" href="wes-en.html">
-WES Evaluation Support
-</a>
-<a class="btn hero-btn" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'degree verification', link_url:'degree-verification.html'}, 'degree-verification.html');" href="degree-verification.html">
-Degree Verification
-</a>
-<a class="btn hero-btn" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'study in china', link_url:'study-in-china.html'}, 'study-in-china.html');" href="study-in-china.html">
-Student Document Services</a>
+<div class="hero-buttons hero-actions">
+<a class="btn hero-primary" href="contact-en.html" data-ga-event="contact_click" data-ga-label="hero_contact">Get a Free Case Assessment</a>
+<a class="btn hero-secondary" href="#core-services">Explore Our Services</a>
 </div>
-<a class="btn hero-btn mt-3" href="contact-en.html" onclick="return trackAndNavigate(event, 'contact_click', {event_category:'engagement', event_label:'hero_contact', link_url:'contact-en.html'}, 'contact-en.html');">
-  Start My Application Today →
-</a>
+<p class="hero-chat"><a href="https://wa.me/8617620130150" target="_blank" rel="noopener" data-ga-event="whatsapp_click" data-ga-label="hero_whatsapp">Prefer WhatsApp? Chat with our team</a></p>
 <p style="margin-top:18px; opacity:.9; font-weight:600;">
 Trusted by immigration &amp; PR applicants in Canada, Australia, New Zealand, Spain, the US, the UK, the EU — and worldwide.
 </p>
@@ -1190,12 +1143,12 @@ Trusted by immigration &amp; PR applicants in Canada, Australia, New Zealand, Sp
 </div>
 </header>
 <main class="premium-page">
-  <section class="py-5 py-lg-6">
+  <section class="py-5 py-lg-6" id="core-services" aria-labelledby="core-services-title">
     <div class="container premium-shell">
       <div class="row align-items-end mb-4">
         <div class="col-lg-7">
           <span class="section-kicker"><i class="fa-solid fa-layer-group"></i> Core Services</span>
-          <h2 class="premium-title display-5 mt-3 mb-3">China-side documents prepared for overseas use</h2>
+          <h2 class="premium-title display-5 mt-3 mb-3" id="core-services-title">China-side documents prepared for overseas use</h2>
           <p class="premium-lead mb-0">Global Attest helps former foreign residents and international applicants coordinate China-issued documents for immigration, PR, visa, academic, employment and cross-border compliance purposes.</p>
         </div>
         <div class="col-lg-4 ms-lg-auto mt-3 mt-lg-0">
@@ -1203,6 +1156,26 @@ Trusted by immigration &amp; PR applicants in Canada, Australia, New Zealand, Sp
         </div>
       </div>
 
+
+      <nav class="service-quick-links" aria-label="Quick service links">
+<a class="service-quick-link" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'china pcc certificate', link_url:'china-police-certificate.html'}, 'china-police-certificate.html');" href="china-police-certificate.html">
+China PCC Certificate
+</a>
+<a class="service-quick-link" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'canada pr pcc', link_url:'china-police-certificate-canada-pr.html'}, 'china-police-certificate-canada-pr.html');" href="china-police-certificate-canada-pr.html">
+PCC for Canada PR
+</a>
+<a class="service-quick-link" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'apostille &amp; legalization', link_url:'document-legalization.html'}, 'document-legalization.html');" href="document-legalization.html">
+Apostille &amp; Legalization
+</a>
+<a class="service-quick-link" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'wes evaluation support', link_url:'wes-en.html'}, 'wes-en.html');" href="wes-en.html">
+WES Evaluation Support
+</a>
+<a class="service-quick-link" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'degree verification', link_url:'degree-verification.html'}, 'degree-verification.html');" href="degree-verification.html">
+Degree Verification
+</a>
+<a class="service-quick-link" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'study in china', link_url:'study-in-china.html'}, 'study-in-china.html');" href="study-in-china.html">
+Student Document Services</a>
+      </nav>
       <div class="service-matrix">
         <article class="premium-card">
           <div class="premium-icon"><i class="fa-solid fa-shield-halved"></i></div>
@@ -1519,6 +1492,6 @@ Trusted by immigration &amp; PR applicants in Canada, Australia, New Zealand, Sp
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/main.js"></script>
-<a class="wa-float" href="https://wa.me/8617620130150" rel="noopener" target="_blank" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'floating_whatsapp', link_url:'https://wa.me/8617620130150'}, 'https://wa.me/8617620130150', '_blank');"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+<a aria-label="Chat with Global Attest on WhatsApp (opens in a new tab)" class="wa-float" href="https://wa.me/8617620130150" rel="noopener" target="_blank" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'floating_whatsapp', link_url:'https://wa.me/8617620130150'}, 'https://wa.me/8617620130150', '_blank');"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
 </body>
 </html>

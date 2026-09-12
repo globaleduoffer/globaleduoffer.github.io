@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
+<script src="assets/globalattest-round1.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VDC1P9N84P"></script>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Contact Global Attest | China PCC, Apostille, WES & WFOE</title>
 <meta name="description" content="Contact Global Attest for China PCC, apostille, degree verification, WES, consular legalization, study in China and WFOE setup support.">
@@ -906,8 +908,9 @@ html[lang="en"] .guide-hero .guide-title {
 }
 </style>
 <link href="assets/globalattest-layout.css" rel="stylesheet">
+<link href="assets/globalattest-round1.css" rel="stylesheet">
 </head>
-<body>
+<body class="ga-round1 ga-contact">
 <nav class="navbar navbar-expand-lg">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="/">
@@ -1066,23 +1069,23 @@ html[lang="en"] .guide-hero .guide-title {
 </div>
 <div class="col-lg-6">
 <div class="contact-form-card">
-<div id="formSuccess">Thank you! Your request has been submitted successfully. A Global Attest specialist will review your case and contact you within one business day. For urgent inquiries, please contact us on WhatsApp or WeChat: +86 176 2013 0150.</div>
-<div id="formError">Sorry, your message could not be submitted. Please try again or contact us directly on WhatsApp.</div>
+<div id="formSuccess" role="status" aria-live="polite" tabindex="-1">Thank you! Your request has been submitted successfully. A Global Attest specialist will review your case and contact you within one business day. For urgent inquiries, please contact us on WhatsApp or WeChat: +86 176 2013 0150.</div>
+<div id="formError" role="alert" tabindex="-1">Sorry, your message could not be submitted. Please try again or contact us directly on WhatsApp.</div>
 <form action="https://formsubmit.co/ajax/chinaattest@gmail.com" class="p-4 p-md-5" id="contactForm" method="POST">
 <input type="hidden" name="_subject" value="New Global Attest website inquiry">
 <input type="hidden" name="_template" value="table">
 <input type="hidden" name="_captcha" value="false">
 <div class="row g-3">
 <div class="col-md-6">
-<label class="form-label">Name*</label>
-<input class="form-control" name="name" placeholder="Your name" required="" type="text"/>
+<label class="form-label" for="contact-name">Name*</label>
+<input id="contact-name" class="form-control" name="name" placeholder="Your name" required="" type="text"/>
 </div>
 <div class="col-md-6">
-<label class="form-label">Email*</label>
-<input class="form-control" name="email" placeholder="you@example.com" required="" type="email"/>
+<label class="form-label" for="contact-email">Email*</label>
+<input id="contact-email" class="form-control" name="email" placeholder="you@example.com" required="" type="email"/>
 </div>
 <div class="col-12">
-<label class="form-label">WhatsApp (recommended)</label>
+<label class="form-label" for="whatsappNumber">WhatsApp (recommended)</label>
 <input id="whatsappFull" name="whatsapp" type="hidden"/>
 <div class="phone-input-group">
 <select aria-label="Country code" class="form-select country-code-select" id="countryCode" name="country_code">
@@ -1321,8 +1324,8 @@ html[lang="en"] .guide-hero .guide-title {
 <div class="form-text">Fastest way to reach us. We typically reply within 24 hours on business days.</div>
 </div>
 <div class="col-md-6">
-<label class="form-label">Service*</label>
-<select class="form-select" name="service" required="">
+<label class="form-label" for="contact-service">Service*</label>
+<select id="contact-service" class="form-select" name="service" required="">
 <option disabled="" selected="" value="">Select a service</option>
 <option>Apostille / Hague Certification</option>
 <option>China Police Certificate (PCC)</option>
@@ -1331,21 +1334,22 @@ html[lang="en"] .guide-hero .guide-title {
 <option>Degree Verification</option>
 <option>Study in China Support</option>
 <option>China Company Formation (WFOE)</option>
+<option>Not sure — help me choose</option>
 <option>Other</option>
 </select>
 </div>
 <div class="col-md-6">
-<label class="form-label">Document type</label>
-<input class="form-control" name="document" placeholder="e.g., degree certificate, birth certificate, PCC..." type="text"/>
+<label class="form-label" for="contact-document">Document type</label>
+<input id="contact-document" class="form-control" name="document" placeholder="e.g., degree certificate, birth certificate, PCC..." type="text"/>
 </div>
 <div class="col-md-6">
-<label class="form-label">Destination country</label>
-<input class="form-control" name="country" placeholder="e.g., UAE, USA, Canada..." type="text"/>
+<label class="form-label" for="contact-country">Destination country</label>
+<input id="contact-country" class="form-control" name="country" placeholder="e.g., UAE, USA, Canada..." type="text"/>
 </div>
 
 <div class="col-md-6">
-<label class="form-label">How did you find us?*</label>
-<select class="form-select" name="source" required="">
+<label class="form-label" for="contact-source">How did you hear about us? (optional)</label>
+<select id="contact-source" class="form-select" name="source">
 <option disabled="" selected="" value="">Select an option</option>
 <option>Google Search</option>
 <option>Google Ads</option>
@@ -1359,8 +1363,8 @@ html[lang="en"] .guide-hero .guide-title {
 </div>
 
 <div class="col-12">
-<label class="form-label">Message*</label>
-<textarea class="form-control" name="message" placeholder="Tell us your timeline, city of issuance, and any special requirements." required="" rows="5" style="border-radius:1rem; padding:0.75rem 1rem;"></textarea>
+<label class="form-label" for="contact-message">Message*</label>
+<textarea id="contact-message" class="form-control" name="message" placeholder="Tell us your timeline, city of issuance, and any special requirements." required="" rows="5" style="border-radius:1rem; padding:0.75rem 1rem;"></textarea>
 </div>
 <div class="col-12 d-flex gap-2 flex-wrap align-items-center">
 <button class="btn btn-success contact-submit" type="submit">Get a free assessment</button>
@@ -1389,63 +1393,70 @@ html[lang="en"] .guide-hero .guide-title {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/main.js"></script>
 <script>
-(function(){
+(function () {
   const form = document.getElementById('contactForm');
-  if(!form) return;
-
+  if (!form) return;
   const successBox = document.getElementById('formSuccess');
   const errorBox = document.getElementById('formError');
-
-  form.addEventListener('submit', async function(e){
-    e.preventDefault();
-
-    const countryCode = document.getElementById('countryCode');
-    const whatsappNumber = document.getElementById('whatsappNumber');
-    const whatsappFull = document.getElementById('whatsappFull');
-    if (countryCode && whatsappNumber && whatsappFull) {
-      const number = whatsappNumber.value.trim();
-      whatsappFull.value = number ? `${countryCode.value} ${number}` : '';
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalBtnText = submitBtn.textContent;
+  let started = false;
+  let submitting = false;
+  function track(name, errorType) {
+    if (typeof window.trackGAEvent === 'function') {
+      window.trackGAEvent(name, {form_id: 'contactForm', error_type: errorType});
     }
-
+  }
+  function start() {
+    if (!started) { started = true; track('form_start'); }
+  }
+  form.addEventListener('input', start);
+  form.addEventListener('change', start);
+  form.addEventListener('submit', async function (event) {
+    event.preventDefault();
+    if (submitting || !form.checkValidity()) return;
+    start();
+    submitting = true;
+    const countryCode = document.getElementById('countryCode');
+    const number = document.getElementById('whatsappNumber').value.trim();
+    document.getElementById('whatsappFull').value = number ? countryCode.value + ' ' + number : '';
+    // Personal details go only to the existing inquiry endpoint, never to analytics.
     const formData = new FormData(form);
-    const submitBtn = form.querySelector('button[type="submit"]');
-    const originalBtnText = submitBtn.textContent;
-
-    if(successBox) successBox.style.display = 'none';
-    if(errorBox) errorBox.style.display = 'none';
-
+    successBox.style.display = 'none';
+    errorBox.style.display = 'none';
     submitBtn.textContent = 'Sending...';
     submitBtn.disabled = true;
-
+    const controller = new AbortController();
+    const timeout = setTimeout(function () { controller.abort(); }, 20000);
+    let errorType = 'network';
     try {
       const response = await fetch(form.action, {
-        method: 'POST',
-        body: formData,
-        headers: { 'Accept': 'application/json' }
+        method: 'POST', body: formData, headers: {'Accept': 'application/json'}, signal: controller.signal
       });
-
-      if (response.ok) {
-        form.reset();
-        if(successBox) {
-          successBox.style.display = 'block';
-          successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-        submitBtn.textContent = originalBtnText;
-        submitBtn.disabled = false;
-      } else {
-        if(errorBox) errorBox.style.display = 'block';
-        submitBtn.textContent = originalBtnText;
-        submitBtn.disabled = false;
+      if (!response.ok) { errorType = 'http'; throw new Error('Submission failed'); }
+      errorType = 'invalid_response';
+      const result = await response.json();
+      if (!result || (result.success !== true && result.success !== 'true')) {
+        errorType = 'service'; throw new Error('Submission not confirmed');
       }
+      track('form_submit_success');
+      form.reset();
+      started = false;
+      successBox.style.display = 'block';
+      successBox.focus();
     } catch (error) {
-      console.error('Error:', error);
-      if(errorBox) errorBox.style.display = 'block';
+      track('form_submit_error', error.name === 'AbortError' ? 'timeout' : errorType);
+      errorBox.style.display = 'block';
+      errorBox.focus();
+    } finally {
+      clearTimeout(timeout);
+      submitting = false;
       submitBtn.textContent = originalBtnText;
       submitBtn.disabled = false;
     }
   });
 })();
 </script>
-<a class="wa-float" href="https://wa.me/8617620130150" rel="noopener" target="_blank"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+<a aria-label="Chat with Global Attest on WhatsApp (opens in a new tab)" class="wa-float" href="https://wa.me/8617620130150" rel="noopener" target="_blank"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
 </body>
 </html>

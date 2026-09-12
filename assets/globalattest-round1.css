@@ -1,0 +1,43 @@
+/* Round 1: loaded only by the English home and contact pages. */
+html[lang="en"] body.ga-home .hero-section {
+  overflow: visible !important;
+}
+html[lang="en"] body.ga-home .hero-section .home-hero-title {
+  font-size: clamp(1.75rem, 3.1vw, 2.65rem) !important;
+  line-height: 1.22 !important;
+  max-width: 100% !important;
+  overflow-wrap: anywhere;
+}
+html[lang="en"] body.ga-home .home-hero-title .title-line {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.ga-home .hero-section .row > div { min-width: 0; }
+.ga-home .hero-subtitle { line-height: 1.65; }
+.ga-home .hero-actions { gap: .75rem; }
+.ga-home .hero-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: .7rem 1.2rem;
+  border-radius: 999px;
+  white-space: normal;
+  max-width: 100%;
+}
+.ga-home .hero-primary { background: #1f8f4d; color: #fff; border: 1px solid #1f8f4d; }
+.ga-home .hero-primary:hover { background: #176e3b; color: #fff; }
+.ga-home .hero-secondary { background: transparent; color: #fff; border: 1px solid #cbd5e1; }
+.ga-home .hero-secondary:hover { background: rgba(255,255,255,.12); color: #fff; }
+.ga-home .hero-chat { margin: .75rem 0 0; }
+.ga-home .hero-chat a { display: inline-block; padding: .5rem 0; color: #d9fbe5; text-underline-offset: .2em; }
+.ga-home .service-quick-links { display: flex; flex-wrap: wrap; gap: .5rem 1rem; margin-bottom: 1.5rem; }
+.ga-home .service-quick-link { color: #126438; font-weight: 600; padding: .6rem 0; text-underline-offset: .2em; }
+.ga-home #core-services { scroll-margin-top: 1rem; }
+.ga-round1 a:focus-visible, .ga-round1 button:focus-visible { outline: 3px solid #3b82f6; outline-offset: 4px; }
+.ga-round1 .wa-float { min-width: 48px; min-height: 48px; justify-content: center; }
+@media (max-width: 575.98px) {
+  .ga-home .hero-actions { flex-direction: column; align-items: stretch; }
+  .ga-contact .contact-form-card form { padding: 1rem !important; }
+  .ga-contact .contact-value { overflow-wrap: anywhere; }
+}
