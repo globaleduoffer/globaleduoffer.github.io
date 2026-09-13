@@ -1002,6 +1002,20 @@ html[lang="en"] .guide-hero .guide-title {
 </style>
 <link href="assets/globalattest-layout.css" rel="stylesheet">
 <link href="assets/globalattest-round1.css" rel="stylesheet">
+<style>
+.ga-home-team-preview { background: #f6f8fb; color: #0f172a; }
+.ga-home-team-preview .ga-home-team-intro { max-width: 54rem; margin-bottom: 2rem; }
+.ga-home-team-preview .ga-home-team-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; }
+.ga-home-team-preview .ga-home-team-card { min-width: 0; border: 1px solid #dce4ef; border-radius: 1rem; background: #fff; }
+.ga-home-team-preview .ga-home-team-card img { display: block; width: 100%; height: auto; aspect-ratio: 2 / 3; object-fit: cover; object-position: center top; border-radius: 1rem 1rem 0 0; }
+.ga-home-team-preview .ga-home-team-details { padding: 1.25rem; }
+.ga-home-team-preview .ga-home-team-details h3 { margin: 0 0 .5rem; font-size: 1.2rem; line-height: 1.4; }
+.ga-home-team-preview .ga-home-team-details p { margin: 0; font-size: 1rem; line-height: 1.5; color: #5b6778; }
+.ga-home-team-preview .ga-home-team-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 1.5rem; margin-top: 2rem; }
+@media (min-width: 992px) { .ga-home-team-preview .ga-home-team-card img { height: 340px; aspect-ratio: auto; } }
+@media (max-width: 991.98px) { .ga-home-team-preview .ga-home-team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 575.98px) { .ga-home-team-preview .ga-home-team-grid { grid-template-columns: minmax(0, 1fr); } }
+</style>
 </head>
 <body class="ga-round1 ga-home">
 <nav class="navbar navbar-expand-lg">
@@ -1277,6 +1291,36 @@ Student Document Services</a>
       </div>
     </div>
   </section>
+
+<section class="ga-home-team-preview py-5 py-lg-6" aria-labelledby="ga-home-team-title">
+  <div class="container premium-shell">
+    <h2 class="premium-title display-6 mb-3" id="ga-home-team-title">Meet the People Behind Your Case</h2>
+    <p class="premium-lead ga-home-team-intro">Your inquiry is reviewed by our document support team. We assess your requirements, coordinate the China-side process, and check the final documents before delivery.</p>
+    <div class="ga-home-team-grid">
+      <article class="ga-home-team-card">
+        <img src="assets/images/team-david-chen.jpg" alt="David CHEN" width="600" height="900" loading="lazy" decoding="async">
+        <div class="ga-home-team-details"><h3>David CHEN</h3><p>Founder &amp; CEO</p></div>
+      </article>
+      <article class="ga-home-team-card">
+        <img src="assets/images/team-grace-chang.jpg" alt="Grace CHANG" width="600" height="900" loading="lazy" decoding="async">
+        <div class="ga-home-team-details"><h3>Grace CHANG</h3><p>Immigration Documentation</p></div>
+      </article>
+      <article class="ga-home-team-card">
+        <img src="assets/images/team-alina-xiao.jpg" alt="Alina XIAO" width="600" height="900" loading="lazy" decoding="async">
+        <div class="ga-home-team-details"><h3>Alina XIAO</h3><p>China Business Setup</p></div>
+      </article>
+      <article class="ga-home-team-card">
+        <img src="assets/images/team-kris-li.jpg" alt="Kris LI" width="600" height="900" loading="lazy" decoding="async">
+        <div class="ga-home-team-details"><h3>Kris LI</h3><p>Documentation Quality</p></div>
+      </article>
+    </div>
+    <div class="ga-home-team-actions">
+      <a class="btn btn-success rounded-pill px-4 fw-semibold" href="about-en.html#our-team">Meet Our Team</a>
+      <a class="premium-link" href="contact-en.html">Discuss Your Case</a>
+    </div>
+  </div>
+</section>
+
 
   <section class="py-5 py-lg-6">
     <div class="container premium-shell">
