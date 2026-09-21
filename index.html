@@ -14,9 +14,38 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
+  "@type": "Organization",
+  "@id": "https://globalattest.com/#organization",
   "name": "Global Attest",
-  "url": "https://globalattest.com/"
+  "url": "https://globalattest.com/",
+  "logo": "https://globalattest.com/assets/images/logo-global-attest.png",
+  "telephone": "+86-176-2013-0150",
+  "email": "chinaattest@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Shenzhen",
+    "addressRegion": "Guangdong",
+    "addressCountry": "CN"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "telephone": "+86-176-2013-0150",
+    "email": "chinaattest@gmail.com",
+    "availableLanguage": ["English", "Chinese"]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://globalattest.com/#website",
+  "name": "Global Attest",
+  "url": "https://globalattest.com/",
+  "publisher": {
+    "@id": "https://globalattest.com/#organization"
+  }
 }
 </script>
 <meta content="Global Attest" property="og:site_name"/>
