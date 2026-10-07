@@ -1,0 +1,229 @@
+/* Homepage prototype only. #101827 is the existing .footer-premium background.
+   All selectors stay within the new footer; original shared assets are untouched. */
+.ga-footer {
+  background: #101827;
+  color: #e5ecf6;
+  margin-top: 3rem;
+  padding: 64px 0 32px;
+  font-family: var(--ga-font-en-body, Arial, sans-serif);
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: left;
+}
+.ga-footer, .ga-footer * { box-sizing: border-box; }
+/* Override the existing five-:not() shared footer container selector locally. */
+.ga-footer > .ga-footer-shell {
+  width: 100%;
+  max-width: 1440px !important;
+  margin: 0 auto;
+  padding: 0 64px !important;
+}
+.ga-footer .ga-footer-top {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr) minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 42px;
+  align-items: start;
+}
+.ga-footer p, .ga-footer ul, .ga-footer h2 { margin: 0; }
+.ga-footer ul { padding: 0; list-style: none; }
+.ga-footer a { color: #e5ecf6; text-decoration: none; text-underline-offset: 4px; }
+.ga-footer a:hover { color: #fff; text-decoration: underline; }
+.ga-footer a:focus-visible { outline: 3px solid #79cfff; outline-offset: 5px; border-radius: 3px; text-decoration: underline; }
+.ga-footer .ga-footer-logo { display: block; width: 330px; max-width: 100%; }
+/* Render the supplied dark-on-white artwork on the dark footer without a white
+   tile. Pixel geometry and lettering are unchanged; screen blending removes
+   the inverted white background. The lossless source PNG remains untouched. */
+.ga-footer .ga-footer-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: invert(1) hue-rotate(180deg) brightness(1.3);
+  mix-blend-mode: screen;
+}
+.ga-footer .ga-footer-intro { margin-top: 24px; max-width: 340px; font-size: 20px; line-height: 1.4; color: #e5ecf6; }
+.ga-footer .ga-footer-reviews { display: inline-block; margin-top: 22px; padding: 12px 14px; border: 1px solid #526278; border-radius: 4px; max-width: 330px; font-size: 15px; line-height: 1.5; }
+.ga-footer .ga-footer-reviews:hover { background: #1b2b40; border-color: #79cfff; }
+.ga-footer .ga-footer-column { padding-top: 42px; min-width: 0; }
+.ga-footer h2 { font-size: 18px; font-weight: 600; line-height: 1.4; text-transform: uppercase; letter-spacing: .025em; color: #fff; }
+html[lang="en"] .ga-footer h2 { font-family: var(--ga-font-en-body, Arial, sans-serif) !important; font-weight: 600 !important; }
+.ga-footer .ga-footer-column h2::after { content: ""; display: block; width: 50px; height: 3px; margin: 10px 0 19px; background: #65c8f1; }
+.ga-footer .ga-footer-column li + li { margin-top: 12px; }
+.ga-footer .ga-footer-column a { display: inline-block; padding: 3px 0; }
+/* Keep last-column text left of the existing fixed WhatsApp control. */
+.ga-footer .ga-footer-column:last-child { max-width: 140px; }
+.ga-footer .ga-footer-payments { display: grid; grid-template-columns: 230px minmax(0, 1fr) 180px; align-items: center; gap: 24px; border-top: 1px solid #526278; border-bottom: 1px solid #526278; padding: 24px 80px 24px 0; margin-top: 30px; }
+.ga-footer .ga-footer-payments h2 { font-size: 14px; padding-right: 20px; border-right: 1px solid #8c9aaa; }
+.ga-footer .ga-footer-payment-list { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+.ga-footer .ga-footer-payment-list li { display: inline-flex; align-items: center; justify-content: center; border: 1px solid #607086; border-radius: 4px; padding: 6px 9px; font-size: 13px; font-weight: 600; color: #f5f8fc; background: #192638; white-space: nowrap; }
+.ga-footer .ga-footer-payments p { padding-left: 20px; border-left: 1px solid #8c9aaa; font-size: 13px; line-height: 1.5; color: #e5ecf6; }
+.ga-footer .ga-footer-bottom { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 16px 24px; margin-top: 22px; padding-right: 80px; font-size: 13px; }
+.ga-footer .ga-footer-policies { display: flex; flex-wrap: wrap; gap: 8px 0; }
+.ga-footer .ga-footer-policies li + li { border-left: 1px solid #526278; }
+.ga-footer .ga-footer-policies a { display: inline-block; padding: 2px 16px; }
+.ga-footer .ga-footer-location { white-space: nowrap; }
+.ga-footer .ga-footer-disclaimer { margin-top: 20px; padding-right: 80px; color: #b7c8e0; font-size: 13px; text-align: center; }
+.ga-footer .ga-footer-sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 1199px) {
+  .ga-footer { padding-bottom: calc(100px + env(safe-area-inset-bottom, 0px)); }
+  .ga-footer > .ga-footer-shell { padding: 0 32px !important; }
+  .ga-footer .ga-footer-top { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; }
+  .ga-footer .ga-footer-brand { grid-column: 1 / -1; }
+  .ga-footer .ga-footer-column { padding-top: 0; }
+  .ga-footer .ga-footer-column:last-child { max-width: none; }
+  .ga-footer .ga-footer-payments { grid-template-columns: minmax(0, 1fr); gap: 16px; padding-right: 0; }
+  .ga-footer .ga-footer-payments h2, .ga-footer .ga-footer-payments p { border: 0; padding: 0; }
+  .ga-footer .ga-footer-payment-list { justify-content: flex-start; }
+  .ga-footer .ga-footer-bottom, .ga-footer .ga-footer-disclaimer { padding-right: 0; }
+  .ga-footer .ga-footer-disclaimer { text-align: left; }
+}
+@media (max-width: 575px) {
+  .ga-footer { padding: 40px 0 calc(100px + env(safe-area-inset-bottom, 0px)); }
+  .ga-footer > .ga-footer-shell { padding: 0 24px !important; }
+  .ga-footer .ga-footer-top { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .ga-footer .ga-footer-intro { font-size: 18px; }
+  .ga-footer .ga-footer-bottom { flex-direction: column; gap: 16px; }
+  .ga-footer .ga-footer-policies { flex-direction: column; gap: 8px; }
+  .ga-footer .ga-footer-policies li + li { border-left: 0; }
+  .ga-footer .ga-footer-policies a { padding: 4px 0; }
+}
+
+/* Desktop geometry follows the supplied 2048 x 768 composition. */
+@media(min-width:1200px){
+html[lang="en"] .ga-footer,html[lang="en"] .ga-footer :is(p,a,h2,li,span){font-family:Arial,Helvetica,sans-serif!important;}
+.ga-footer{padding:calc(70 * (100vw - 15px) / 2048) 0 calc(35 * (100vw - 15px) / 2048);font-size:calc(24 * (100vw - 15px) / 2048);line-height:1.5;}
+.ga-footer>.ga-footer-shell{max-width:none!important;padding:0 4.4%!important;}
+.ga-footer .ga-footer-top{display:grid;grid-template-columns:37.5% 23.8% 22.2% 16.5%;gap:0;height:calc(435 * (100vw - 15px) / 2048);}
+.ga-footer .ga-footer-top>*{min-width:0;}
+.ga-footer .ga-footer-logo{width:calc(512 * (100vw - 15px) / 2048);max-width:100%;}
+.ga-footer .ga-footer-logo img{filter:invert(1) hue-rotate(180deg) brightness(1.1);}
+.ga-footer .ga-footer-intro{width:calc(480 * (100vw - 15px) / 2048);max-width:100%;margin-top:calc(16 * (100vw - 15px) / 2048);font-size:calc(28 * (100vw - 15px) / 2048);line-height:calc(36 * (100vw - 15px) / 2048);letter-spacing:.025em;}
+.ga-footer .ga-footer-reviews{display:block;width:calc(410 * (100vw - 15px) / 2048);max-width:100%;height:calc(105 * (100vw - 15px) / 2048);margin-top:calc(24 * (100vw - 15px) / 2048);padding:calc(22 * (100vw - 15px) / 2048);font-size:calc(21 * (100vw - 15px) / 2048);line-height:calc(30 * (100vw - 15px) / 2048);border:calc(1 * (100vw - 15px) / 2048) solid #2b3a4c;border-radius:calc(6 * (100vw - 15px) / 2048);}
+.ga-footer .ga-footer-column{padding-top:calc(90 * (100vw - 15px) / 2048);max-width:none!important;}
+html[lang="en"] .ga-footer h2{font-weight:500!important;}
+.ga-footer .ga-footer-column h2{font-size:calc(24 * (100vw - 15px) / 2048);line-height:calc(34 * (100vw - 15px) / 2048);letter-spacing:0;}
+.ga-footer .ga-footer-column h2::after{width:calc(73 * (100vw - 15px) / 2048);height:calc(4 * (100vw - 15px) / 2048);margin:calc(8 * (100vw - 15px) / 2048) 0 calc(30 * (100vw - 15px) / 2048);background:linear-gradient(90deg,#64d1ee,#3176e8);}
+.ga-footer .ga-footer-column:last-child h2::after{background:#65c8f1;}
+.ga-footer .ga-footer-column a{padding:0;font-size:calc(24 * (100vw - 15px) / 2048);line-height:calc(36 * (100vw - 15px) / 2048);}
+.ga-footer .ga-footer-column li+li{margin-top:calc(16 * (100vw - 15px) / 2048);}
+.ga-footer .ga-footer-payments{display:grid;grid-template-columns:20.45% minmax(0,1fr) 18%;height:calc(112 * (100vw - 15px) / 2048);margin:0;padding:0;gap:0;align-items:center;border-top:calc(1 * (100vw - 15px) / 2048) solid #526278;border-bottom:calc(1 * (100vw - 15px) / 2048) solid #526278;}
+.ga-footer .ga-footer-payments h2{display:flex;align-items:center;height:calc(44 * (100vw - 15px) / 2048);padding:0;border-right:calc(1 * (100vw - 15px) / 2048) solid #adb8c9;font-size:calc(20 * (100vw - 15px) / 2048);line-height:calc(28 * (100vw - 15px) / 2048);letter-spacing:0;white-space:nowrap;}
+.ga-footer .ga-footer-payment-list{display:grid;grid-template-columns:.9fr .7fr 1.15fr .8fr 1.5fr 1fr 1.4fr;align-items:center;gap:calc(22 * (100vw - 15px) / 2048);padding:0 calc(34 * (100vw - 15px) / 2048) 0 calc(50 * (100vw - 15px) / 2048);}
+.ga-footer .ga-footer-payment-list li{display:block;border:0;border-radius:0;background:none;padding:0;font-size:calc(26 * (100vw - 15px) / 2048);line-height:calc(44 * (100vw - 15px) / 2048);font-weight:600;white-space:nowrap;text-align:center;}
+.ga-footer .ga-footer-payments p{border-left:calc(1 * (100vw - 15px) / 2048) solid #adb8c9;padding-left:calc(36 * (100vw - 15px) / 2048);font-size:calc(19 * (100vw - 15px) / 2048);line-height:calc(27 * (100vw - 15px) / 2048);}
+.ga-footer .ga-footer-bottom{display:grid;grid-template-columns:28.3% minmax(0,1fr) 14%;align-items:center;gap:0;height:calc(42 * (100vw - 15px) / 2048);margin-top:calc(35 * (100vw - 15px) / 2048);padding:0;font-size:calc(19 * (100vw - 15px) / 2048);line-height:calc(28 * (100vw - 15px) / 2048);}
+.ga-footer .ga-footer-policies{display:grid;grid-template-columns:calc(160 * (100vw - 15px) / 2048) calc(224 * (100vw - 15px) / 2048) calc(206 * (100vw - 15px) / 2048) minmax(0,1fr);gap:0;white-space:nowrap;}
+.ga-footer .ga-footer-policies li{display:flex;align-items:center;min-height:calc(28 * (100vw - 15px) / 2048);}
+.ga-footer .ga-footer-policies li+li{padding-left:calc(38 * (100vw - 15px) / 2048);}
+.ga-footer .ga-footer-policies a{padding:0;}
+.ga-footer .ga-footer-location{border-left:calc(1 * (100vw - 15px) / 2048) solid #526278;height:calc(30 * (100vw - 15px) / 2048);text-align:right;}
+.ga-footer .ga-footer-disclaimer{padding:0;margin-top:calc(9 * (100vw - 15px) / 2048);font-size:calc(20 * (100vw - 15px) / 2048);line-height:calc(30 * (100vw - 15px) / 2048);color:#b7c8e0;text-align:center;}
+.ga-footer~.wa-float{bottom:calc(4 * (100vw - 15px) / 2048);}
+}
+
+@media(min-width:1200px){.ga-footer .ga-footer-column a,.ga-footer .ga-footer-disclaimer,.ga-footer .ga-footer-bottom{letter-spacing:.02em;}.ga-footer .ga-footer-location::before{content:"●";color:#b7d4ff;margin-right:.65em;font-size:.8em;}}
+
+/* Approved final desktop polish; retain the established layout. */
+@media(min-width:1200px){
+ .ga-footer{padding-bottom:64px;}
+ .ga-footer .ga-footer-brand{transform:translateY(-4px);}
+ .ga-footer .ga-footer-logo{width:calc(532 * (100vw - 15px) / 2048);}
+ .ga-footer .ga-footer-logo img{filter:none;mix-blend-mode:normal;}
+ .ga-footer .ga-footer-intro{width:calc(500 * (100vw - 15px) / 2048);font-size:calc(29 * (100vw - 15px) / 2048);margin-top:calc(12 * (100vw - 15px) / 2048);}
+ .ga-footer .ga-footer-top{grid-template-columns:38.05% 23.85% 22.05% 16.05%;}
+ html[lang="en"] .ga-footer .ga-footer-column h2{font-size:calc(25 * (100vw - 15px) / 2048);font-weight:600!important;}
+ .ga-footer .ga-footer-column h2::after{width:calc(77 * (100vw - 15px) / 2048);height:3px;}
+ .ga-footer .ga-footer-column a{font-size:calc(25 * (100vw - 15px) / 2048);line-height:calc(38 * (100vw - 15px) / 2048);}
+ .ga-footer .ga-footer-payments h2{font-size:calc(21 * (100vw - 15px) / 2048);letter-spacing:.025em;}
+ .ga-footer .ga-footer-payment-list{grid-template-columns:1fr .85fr 1.15fr .85fr 1.4fr 1.15fr 1.25fr;gap:calc(17 * (100vw - 15px) / 2048);padding-left:calc(43 * (100vw - 15px) / 2048);padding-right:calc(29 * (100vw - 15px) / 2048);}
+ .ga-footer .ga-footer-payments p{font-size:calc(20 * (100vw - 15px) / 2048);line-height:calc(29 * (100vw - 15px) / 2048);}
+ .ga-footer .ga-footer-bottom{font-size:calc(20 * (100vw - 15px) / 2048);grid-template-columns:28.3% minmax(0,1fr) 14%;}
+ .ga-footer .ga-footer-policies li+li{padding-left:calc(36 * (100vw - 15px) / 2048);}
+ .ga-footer .ga-footer-location{display:flex;justify-content:flex-end;align-items:center;gap:8px;}
+ .ga-footer .ga-footer-location::before{content:"";display:inline-block;flex:0 0 12px;width:12px;height:17px;margin:0;background:#b7d4ff;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 22'%3E%3Cpath d='M8 0a8 8 0 0 0-8 8c0 5 8 14 8 14s8-9 8-14a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 22'%3E%3Cpath d='M8 0a8 8 0 0 0-8 8c0 5 8 14 8 14s8-9 8-14a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z'/%3E%3C/svg%3E") center/contain no-repeat;}
+ .ga-footer .ga-footer-disclaimer{font-size:calc(21 * (100vw - 15px) / 2048);margin-top:calc(17 * (100vw - 15px) / 2048);}
+ .ga-footer~.wa-float{bottom:8px;}
+}
+
+/* Local official payment artwork; existing list text remains accessible. */
+@media(min-width:1200px){
+ .ga-footer .ga-footer-logo img{filter:invert(1) hue-rotate(180deg);mix-blend-mode:screen;}
+ .ga-footer .ga-footer-payment-list{grid-template-columns:1.05fr .7fr 1.2fr .85fr 1.55fr .8fr 1.25fr;gap:12px;padding-left:24px;padding-right:22px;}
+ .ga-footer .ga-footer-payment-list li{display:flex;align-items:center;justify-content:center;min-width:0;height:34px;font-size:17px;line-height:24px;}
+ .ga-footer .ga-footer-payment-list li:nth-child(1)::before{content:"";width:30px;height:30px;flex:0 0 30px;margin-right:3px;background:url("images/footer/payments/paypal.svg") center/contain no-repeat;}
+ .ga-footer .ga-footer-payment-list li:nth-child(4){font-size:0;background:url("images/footer/payments/wise.png") center/85px auto no-repeat;}
+ .ga-footer .ga-footer-payment-list li:nth-child(5){font-size:14px;}
+ .ga-footer .ga-footer-payment-list li:nth-child(5)::before{content:"";width:22px;height:24px;flex:0 0 22px;margin-right:6px;background:url("images/footer/payments/bank.svg") center/contain no-repeat;}
+ .ga-footer .ga-footer-column li+li{margin-top:12px;}
+ .ga-footer .ga-footer-disclaimer{margin-top:15px;}
+ .ga-footer{padding-bottom:70px;}
+}
+@media(min-width:1200px){.ga-footer .ga-footer-brand{transform:none;position:relative;top:-4px;}}
+
+/* Global Attest's own review navigation card: no scores or platform branding. */
+.ga-footer .ga-footer-customer-reviews {
+  display:flex; flex-direction:column; justify-content:center; gap:5px;
+  width:330px; max-width:100%; margin-top:16px; padding:12px 16px;
+  border-left:3px solid #65c8f1; border-radius:0; background:#192638;
+}
+.ga-footer .ga-footer-customer-reviews strong {
+  color:#f5f8fc; font-size:17px; font-weight:600; line-height:22px;
+}
+.ga-footer .ga-footer-customer-reviews a {
+  font-size:14px; line-height:20px; color:#d5e8ff;
+}
+.ga-footer .ga-footer-trustpilot-link {
+  display:inline-block; max-width:100%; margin-top:8px;
+  font-size:13px; line-height:20px; color:#c2cee0;
+}
+@media(min-width:1200px){
+  .ga-footer .ga-footer-customer-reviews {padding:9px 15px;gap:3px;}
+}
+
+/* Static, unscored review placeholder; no widget or rating scripts. */
+.ga-footer .ga-footer-review-preview{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;width:300px;max-width:100%;min-height:106px;margin-top:16px;padding:10px 14px;border:1px solid #2b3a4c;border-radius:5px;gap:3px;text-decoration:none;}
+.ga-footer .ga-footer-review-brand{display:flex;align-items:center;gap:12px;font-size:21px;line-height:25px;color:#edf2ff;}
+.ga-footer .ga-footer-review-brand small{font-size:8px;letter-spacing:.08em;color:#b7c8e0;}
+.ga-footer .ga-footer-review-stars{color:#00b67a;font-size:22px;line-height:24px;letter-spacing:1px;}
+.ga-footer .ga-footer-review-data{display:flex;gap:10px;font-size:13px;line-height:18px;}
+.ga-footer .ga-footer-review-pending{color:#b7c8e0;font-size:10px;line-height:13px;}
+@media(min-width:1200px){
+ .ga-footer .ga-footer-review-preview{width:calc(410 * (100vw - 15px) / 2048);}
+ .ga-footer .ga-footer-payment-list li:nth-child(3){font-size:0;background:url("images/footer/payments/mastercard.svg") center/46px auto no-repeat;}
+ .ga-footer .ga-footer-payment-list li:nth-child(6){font-size:0;background:url("images/footer/payments/alipay.png") center/82px auto no-repeat;}
+ .ga-footer .ga-footer-payment-list li:nth-child(7){font-size:0;background:url("images/footer/payments/wechatpay.png") center/103px auto no-repeat;}
+}
+@media(min-width:1200px){
+ .ga-footer .ga-footer-review-preview{min-height:88px;padding:7px 14px;gap:2px;}
+ .ga-footer .ga-footer-review-brand{font-size:19px;line-height:21px;}
+ .ga-footer .ga-footer-review-stars{font-size:20px;line-height:20px;}
+ .ga-footer .ga-footer-review-data{font-size:12px;line-height:15px;}
+ .ga-footer .ga-footer-review-pending{font-size:9px;line-height:10px;}
+ .ga-footer .ga-footer-payment-list li:nth-child(6),.ga-footer .ga-footer-payment-list li:nth-child(7){font-size:10px;line-height:11px;align-items:flex-end;height:40px;background-position:center top;}
+ .ga-footer .ga-footer-payment-list li:nth-child(6){background-size:75px auto;}
+ .ga-footer .ga-footer-payment-list li:nth-child(7){background-size:75px auto;}
+}
+
+/* Compact static Trustpilot link; local public star artwork, no rating widget. */
+.ga-footer .ga-footer-review-preview{width:300px;max-width:100%;min-height:0;height:auto;padding:4px 0;margin-top:16px;gap:9px;border:0;border-radius:0;background:none;align-items:flex-start;text-decoration:none;}
+.ga-footer .ga-footer-review-row{display:flex;align-items:center;gap:12px;max-width:100%;}
+.ga-footer .ga-footer-review-brand{font-size:21px;font-weight:600;line-height:26px;}
+.ga-footer .ga-footer-review-star-strip{display:block;width:126px;height:auto;max-width:100%;flex:0 1 126px;}
+.ga-footer .ga-footer-review-cta{font-size:14px;line-height:22px;color:#f1f7ff;}
+.ga-footer .ga-footer-review-preview:hover{text-decoration:none;}
+.ga-footer .ga-footer-review-preview:hover .ga-footer-review-cta{color:#fff;text-decoration:underline;text-underline-offset:4px;}
+.ga-footer .ga-footer-review-preview:focus-visible{outline:3px solid #79cfff;outline-offset:6px;border-radius:3px;text-decoration:none;}
+
+.ga-footer .ga-footer-review-arrow{display:inline-block;transition:transform .18s ease;}
+.ga-footer .ga-footer-review-preview:hover .ga-footer-review-arrow{transform:translateX(3px);}
+@media(prefers-reduced-motion:reduce){.ga-footer .ga-footer-review-arrow{transition:none;}}
+
+/* Show only the colored icon portion of the existing local artwork.
+   Original images stay intact; no color filters are applied. */
+.ga-footer .ga-footer-payment-list li.ga-footer-payment-bilingual{display:flex;align-items:center;justify-content:center;gap:6px;background:none;border:0;color:#E8EDF5;font-size:12px;line-height:17px;white-space:normal;}
+.ga-footer .ga-footer-payment-icon{display:block;flex:0 0 auto;width:24px;height:24px;background-repeat:no-repeat;}
+.ga-footer .ga-footer-payment-alipay .ga-footer-payment-icon{background-image:url("images/footer/payments/alipay.png");background-size:auto 24px;background-position:left top;}
+.ga-footer .ga-footer-payment-wechat .ga-footer-payment-icon{width:25px;height:22px;background-image:url("images/footer/payments/wechatpay.png");background-size:87.5px auto;background-position:left top;}
+@media(min-width:1200px){
+ .ga-footer .ga-footer-payment-list li.ga-footer-payment-bilingual{flex-direction:column;height:64px;padding:0;gap:3px;font-size:11px;line-height:14px;text-align:center;}
+ .ga-footer .ga-footer-payment-bilingual>span:last-child{max-width:100%;}
+}
