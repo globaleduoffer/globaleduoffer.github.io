@@ -227,3 +227,74 @@ html[lang="en"] .ga-footer h2{font-weight:500!important;}
  .ga-footer .ga-footer-payment-list li.ga-footer-payment-bilingual{flex-direction:column;height:64px;padding:0;gap:3px;font-size:11px;line-height:14px;text-align:center;}
  .ga-footer .ga-footer-payment-bilingual>span:last-child{max-width:100%;}
 }
+
+/* Final desktop footer typography refinement */
+@media (min-width: 1200px) {
+  .ga-footer {
+    font-size: 16px;
+    line-height: 1.55;
+    padding-top: clamp(48px, 3vw, 64px);
+  }
+
+  .ga-footer .ga-footer-top {
+    height: auto;
+    min-height: 300px;
+  }
+
+  .ga-footer .ga-footer-logo {
+    width: min(360px, 100%);
+  }
+
+  .ga-footer .ga-footer-intro {
+    width: min(340px, 100%);
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .ga-footer .ga-footer-column h2 {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+
+  .ga-footer .ga-footer-column a {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .ga-footer .ga-footer-column li + li {
+    margin-top: 10px;
+  }
+
+  .ga-footer .ga-footer-payments h2 {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .ga-footer .ga-footer-payments p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .ga-footer .ga-footer-bottom {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .ga-footer .ga-footer-disclaimer {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .ga-footer
+  .ga-footer-payment-list
+  li.ga-footer-payment-bilingual {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  /* Match the existing English-heading selector specificity. */
+  html[lang="en"] .ga-footer .ga-footer-column h2 {
+    font-size: 17px;
+  }
+}
