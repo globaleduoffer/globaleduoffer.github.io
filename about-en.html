@@ -1010,6 +1010,7 @@ html[lang="en"] .guide-hero .guide-title {
 @media (max-width: 1199.98px) { .ga-about-page .about-section > .container > .row.g-5 { --bs-gutter-x: 1.5rem; } .ga-about-page .trust-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ga-about-page .about-stat strong { overflow-wrap: anywhere; } }
 @media (max-width: 575.98px) { .ga-about-page .trust-grid { grid-template-columns: minmax(0, 1fr); } }
 </style>
+<link rel="stylesheet" href="assets/globalattest-footer-phase1.css">
 </head>
 <body class="ga-about-page">
 <nav class="navbar navbar-expand-lg">
@@ -1475,10 +1476,75 @@ Below are introductions to our core team members, including specialists in China
   </div>
 </section>
 </main>
-<footer class="py-4 bg-dark text-light text-center">
-  <p class="mb-0 footer-text">
-    © <span id="y"></span> Global Attest™. All Rights Reserved.
-  </p>
+<footer class="ga-footer" aria-label="Global Attest footer">
+  <div class="ga-footer-shell">
+    <div class="ga-footer-top">
+      <div class="ga-footer-brand">
+        <a class="ga-footer-logo" href="index.html" aria-label="Global Attest home">
+          <img src="assets/images/footer/global-attest-footer-logo.png" width="600" height="208" alt="Global Attest — China Document Services" loading="lazy" decoding="async">
+        </a>
+        <p class="ga-footer-intro">China document support for international applicants.</p>
+        <!-- Static local star artwork checked against the public Trustpilot page; not an auto-updating widget. -->
+        <a class="ga-footer-review-preview" href="https://www.trustpilot.com/review/globalattest.com" target="_blank" rel="noopener noreferrer" aria-label="Read customer reviews on Trustpilot (opens in a new tab)">
+          <span class="ga-footer-review-row"><span class="ga-footer-review-brand">Trustpilot</span><img class="ga-footer-review-star-strip" src="assets/images/footer/trustpilot-stars-4-5.svg" width="120" height="23" alt="Trustpilot star rating"></span>
+          <span class="ga-footer-review-cta">Read customer reviews <span class="ga-footer-review-arrow" aria-hidden="true">→</span></span>
+        </a>
+      </div>
+      <nav class="ga-footer-column" aria-label="Footer Services">
+        <h2>Services</h2>
+        <ul>
+          <li><a href="china-police-certificate.html">China Police Certificate</a></li>
+          <li><a href="document-legalization.html">Apostille &amp; Legalization</a></li>
+          <li><a href="degree-verification.html">Degree Verification</a></li>
+          <li><a href="wes-en.html">WES Support</a></li>
+        </ul>
+      </nav>
+      <nav class="ga-footer-column" aria-label="Footer Company">
+        <h2>Company</h2>
+        <ul>
+          <li><a href="about-en.html">About Us</a></li>
+          <li><a href="about-en.html#our-team">Our Team</a></li>
+          <li><a href="cases-en.html">Case Results</a></li>
+          <li><a href="reviews-en.html">Client Reviews</a></li>
+        </ul>
+      </nav>
+      <nav class="ga-footer-column" aria-label="Footer Resources">
+        <h2>Resources</h2>
+        <ul>
+          <li><a href="china-police-certificate-guides.html">China PCC Guides</a></li>
+          <li><a href="city-grid-en.html">City Guides</a></li>
+          <li><a href="resources.html">Document Samples</a></li>
+          <li><a href="contact-en.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section class="ga-footer-payments" aria-labelledby="ga-footer-payment-heading">
+      <h2 id="ga-footer-payment-heading">Accepted payment methods</h2>
+      <ul class="ga-footer-payment-list" aria-label="Accepted payment methods">
+          <li>PayPal</li>
+          <li>Visa</li>
+          <li>Mastercard</li>
+          <li>Wise</li>
+          <li>Bank Transfer</li>
+          <li class="ga-footer-payment-bilingual ga-footer-payment-alipay"><span class="ga-footer-payment-icon" aria-hidden="true"></span><span>支付宝 · Alipay</span></li>
+          <li class="ga-footer-payment-bilingual ga-footer-payment-wechat"><span class="ga-footer-payment-icon" aria-hidden="true"></span><span>微信支付 · WeChat Pay</span></li>
+      </ul>
+      <p>Case eligibility and pricing are confirmed before payment.</p>
+    </section>
+    <div class="ga-footer-bottom">
+      <p class="ga-footer-copyright">© <span id="y">2026</span> Global Attest. All rights reserved.</p>
+      <nav aria-label="Footer policies">
+        <ul class="ga-footer-policies">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+          <li><a href="refund-cancellation-policy.html">Refund Policy</a></li>
+          <li><a href="payment-information.html">Payment Information</a></li>
+        </ul>
+      </nav>
+      <p class="ga-footer-location">Shenzhen, China</p>
+    </div>
+    <p class="ga-footer-disclaimer">Global Attest is an independent document support provider and is not affiliated with any government authority.</p>
+  </div>
 </footer>
 <script>
   document.getElementById("y").textContent = new Date().getFullYear();
