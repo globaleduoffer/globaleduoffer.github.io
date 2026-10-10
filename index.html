@@ -454,6 +454,25 @@
     transform: translateY(-60px);
   }
 }
+
+/* Home trust evidence strip only. */
+.home-trust-strip{background:#f5f8fc;padding:32px 0;color:#526174}
+.home-trust-panel{background:#fff;border:1px solid #e2e8f0;border-radius:20px;box-shadow:0 4px 18px rgba(16,42,99,.035);padding:30px}
+.home-trust-heading{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-bottom:28px}
+.home-trust-strip .home-trust-kicker{font-family:var(--font-formal-sans)!important;font-size:12px!important;font-weight:700!important;line-height:1.5;letter-spacing:.09em!important;color:#1f7547;margin:0 0 7px}
+.home-trust-strip .home-trust-lead{font-family:var(--font-formal-serif)!important;font-weight:700!important;font-size:28px!important;line-height:1.2!important;letter-spacing:-0.01em!important;color:#102a63;margin:0}
+.home-trust-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
+.home-trust-item{min-width:0;padding:0 20px;border-left:1px solid #e2e8f0}.home-trust-item:first-child{padding-left:0;border-left:0}.home-trust-item:last-child{padding-right:0}
+.home-trust-item i{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#edf7ef;color:#1f8f4d;font-size:18px;margin-bottom:12px}
+.home-trust-strip .home-trust-item h3{font-family:Arial,sans-serif!important;font-size:16px!important;line-height:1.4;color:#102a63;margin:0 0 8px}
+.home-trust-strip p{font-size:14.5px;line-height:1.5;margin:0;color:#526174}
+.home-trust-links{display:flex;flex-wrap:wrap;gap:10px;flex-shrink:0}
+.home-trust-links a{display:inline-flex;align-items:center;justify-content:center;color:#17663c;background:#fff;border:1px solid #28794d;border-radius:8px;font-size:14px;font-weight:600;line-height:1.5;text-decoration:none;padding:10px 15px}
+.home-trust-links a:last-child{background:#eaf5ed;border-color:#eaf5ed}
+.home-trust-links a:hover{background:#dceee1;color:#104c2b;text-decoration:underline}
+.home-trust-links a:focus-visible{outline:3px solid #2563eb;outline-offset:4px}
+@media(max-width:1199px){.home-trust-heading{align-items:flex-start;flex-direction:column;gap:18px}.home-trust-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:26px}.home-trust-item:nth-child(3){border-left:0;padding-left:0}.home-trust-item:nth-child(2){padding-right:0}}
+@media(max-width:575px){.home-trust-strip{padding:24px 0}.home-trust-panel{padding:22px 20px}.home-trust-strip .home-trust-lead{font-size:23px!important;line-height:1.22!important}.home-trust-grid{grid-template-columns:1fr;gap:0}.home-trust-strip .home-trust-item{border-left:0;padding:20px 0;border-top:1px solid #e2e8f0}.home-trust-strip .home-trust-item:first-child{border-top:0;padding-top:0}.home-trust-strip .home-trust-item:last-child{padding-bottom:0}.home-trust-links{width:100%;flex-direction:column}.home-trust-links a{width:100%;box-sizing:border-box}.home-trust-heading{margin-bottom:24px;width:100%}}
 </style>
 <style>
 /* Floating WhatsApp button (inline fallback so it works on every page) */
@@ -1179,9 +1198,6 @@ Living overseas and need documents from China? We help you confirm the requireme
 <a class="btn hero-secondary" href="#core-services">Explore Our Services</a>
 </div>
 <p class="hero-chat"><a href="https://wa.me/8617620130150" target="_blank" rel="noopener" data-ga-event="whatsapp_click" data-ga-label="hero_whatsapp">Prefer WhatsApp? Chat with our team</a></p>
-<p style="margin-top:18px; opacity:.9; font-weight:600;">
-Trusted by immigration &amp; PR applicants in Canada, Australia, New Zealand, Spain, the US, the UK, the EU — and worldwide.
-</p>
 <div class="hero-business-cta">
   <strong>Also Looking for China Business Setup?</strong>
   <a href="wfoe-china.html">Explore our WFOE registration services →</a>
@@ -1197,6 +1213,28 @@ Trusted by immigration &amp; PR applicants in Canada, Australia, New Zealand, Sp
 </div>
 </div>
 </header>
+<section class="home-trust-strip" aria-labelledby="home-trust-title">
+  <div class="container premium-shell">
+  <div class="home-trust-panel">
+    <div class="home-trust-heading">
+      <div>
+    <p class="home-trust-kicker">WHY CLIENTS CHOOSE GLOBAL ATTEST</p>
+        <h2 id="home-trust-title" class="home-trust-lead">Clear guidance before you proceed</h2>
+      </div>
+    <div class="home-trust-links">
+      <a href="cases-en.html" data-ga-event="service_click" data-ga-label="home_trust_cases">View Real Cases →</a>
+      <a href="https://www.trustpilot.com/review/globalattest.com" target="_blank" rel="noopener noreferrer" aria-label="Read customer reviews on Trustpilot (opens in a new tab)" data-ga-event="trustpilot_click" data-ga-label="home_trust_strip">Read Customer Reviews →</a>
+    </div>
+    </div>
+    <div class="home-trust-grid">
+      <div class="home-trust-item"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i><h3>Case Review Before Payment</h3><p>We review your destination, China residence city and available records before you proceed.</p></div>
+      <div class="home-trust-item"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><h3>China-Based Coordination</h3><p>Practical document support for former foreign residents and overseas applicants.</p></div>
+      <div class="home-trust-item"><i class="fa-solid fa-folder-open" aria-hidden="true"></i><h3>Real Case Results</h3><p>Review anonymized examples of completed China document cases.</p></div>
+      <div class="home-trust-item"><i class="fa-solid fa-globe" aria-hidden="true"></i><h3>Worldwide Delivery</h3><p>International courier options are available after document confirmation.</p></div>
+    </div>
+  </div>
+  </div>
+</section>
 <main class="premium-page">
   <section class="py-5 py-lg-6" id="core-services" aria-labelledby="core-services-title">
     <div class="container premium-shell">
