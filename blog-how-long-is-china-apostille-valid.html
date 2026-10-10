@@ -318,6 +318,7 @@ html[lang="en"] .guide-hero .guide-title {
     return false;
   }
 </script>
+<link rel="stylesheet" href="assets/globalattest-footer-phase1.css">
 </head>
 <body>
 
@@ -565,40 +566,92 @@ html[lang="en"] .guide-hero .guide-title {
 </main>
 
 
-<footer class="footer-premium">
-  <div class="container premium-shell">
-    <div class="row g-4">
-      <div class="col-lg-4">
-        <h3 class="h5">Global Attest</h3>
-        <p class="mb-0">China document services for immigration, PR, visa, academic, employment and international use.</p>
+<footer class="ga-footer" aria-label="Global Attest footer">
+  <div class="ga-footer-shell">
+    <div class="ga-footer-top">
+      <div class="ga-footer-brand">
+        <a class="ga-footer-logo" href="index.html" aria-label="Global Attest home">
+          <img src="assets/images/footer/global-attest-footer-logo.png" width="600" height="208" alt="Global Attest — China Document Services" loading="lazy" decoding="async">
+        </a>
+        <p class="ga-footer-intro">China document support for international applicants.</p>
+        <!-- Static local star artwork checked against the public Trustpilot page; not an auto-updating widget. -->
+        <a class="ga-footer-review-preview" href="https://www.trustpilot.com/review/globalattest.com" target="_blank" rel="noopener noreferrer" aria-label="Read customer reviews on Trustpilot (opens in a new tab)">
+          <span class="ga-footer-review-row"><span class="ga-footer-review-brand">Trustpilot</span><img class="ga-footer-review-star-strip" src="assets/images/footer/trustpilot-stars-4-5.svg" width="120" height="23" alt="" aria-hidden="true"></span>
+          <span class="ga-footer-review-cta">Read customer reviews <span class="ga-footer-review-arrow" aria-hidden="true">→</span></span>
+        </a>
       </div>
-      <div class="col-6 col-lg-2">
-        <h3 class="h5">Services</h3>
-        <p class="mb-2"><a href="china-police-certificate.html">China PCC</a></p>
-        <p class="mb-2"><a href="china-hague-apostille-services.html">Apostille</a></p>
-        <p class="mb-2"><a href="wes-en.html">WES Support</a></p>
-      </div>
-      <div class="col-6 col-lg-2">
-        <h3 class="h5">Company</h3>
-        <p class="mb-2"><a href="about-en.html">About Us</a></p>
-        <p class="mb-2"><a href="cases-en.html">Cases</a></p>
-        <p class="mb-2"><a href="reviews-en.html">Reviews</a></p>
-      </div>
-      <div class="col-lg-4">
-        <h3 class="h5">Contact</h3>
-        <p class="mb-2">Shenzhen, Guangdong, China</p>
-        <p class="mb-2"><a href="contact-en.html">Contact form</a></p>
-        <p class="mb-0"><a href="https://wa.me/8617620130150" target="_blank" rel="noopener">WhatsApp: +86 176 2013 0150</a></p>
-      </div>
+      <nav class="ga-footer-column" aria-label="Footer Services">
+        <h2>Services</h2>
+        <ul>
+          <li><a href="china-police-certificate.html">China Police Certificate</a></li>
+          <li><a href="document-legalization.html">Apostille &amp; Legalization</a></li>
+          <li><a href="degree-verification.html">Degree Verification</a></li>
+          <li><a href="wes-en.html">WES Support</a></li>
+        </ul>
+      </nav>
+      <nav class="ga-footer-column" aria-label="Footer Company">
+        <h2>Company</h2>
+        <ul>
+          <li><a href="about-en.html">About Us</a></li>
+          <li><a href="about-en.html#our-team">Our Team</a></li>
+          <li><a href="cases-en.html">Case Results</a></li>
+          <li><a href="reviews-en.html">Client Reviews</a></li>
+        </ul>
+      </nav>
+      <nav class="ga-footer-column" aria-label="Footer Resources">
+        <h2>Resources</h2>
+        <ul>
+          <li><a href="china-police-certificate-guides.html">China PCC Guides</a></li>
+          <li><a href="city-grid-en.html">City Guides</a></li>
+          <li><a href="resources.html">Document Samples</a></li>
+          <li><a href="contact-en.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
-      <span>© <span id="y"></span> Global Attest™. All Rights Reserved.</span>
-      <span>Remote China document coordination for global applicants.</span>
+    <section class="ga-footer-payments" aria-labelledby="ga-footer-payment-heading">
+      <h2 id="ga-footer-payment-heading">Accepted payment methods</h2>
+      <ul class="ga-footer-payment-list" aria-label="Accepted payment methods">
+          <li>PayPal</li>
+          <li>Visa</li>
+          <li>Mastercard</li>
+          <li>Wise</li>
+          <li>Bank Transfer</li>
+          <li class="ga-footer-payment-bilingual ga-footer-payment-alipay"><span class="ga-footer-payment-icon" aria-hidden="true"></span><span>支付宝 · Alipay</span></li>
+          <li class="ga-footer-payment-bilingual ga-footer-payment-wechat"><span class="ga-footer-payment-icon" aria-hidden="true"></span><span>微信支付 · WeChat Pay</span></li>
+      </ul>
+      <p>Case eligibility and pricing are confirmed before payment.</p>
+    </section>
+    <div class="ga-footer-bottom">
+      <p class="ga-footer-copyright">© <span id="y">2026</span> Global Attest. All rights reserved.</p>
+      <nav aria-label="Footer policies">
+        <ul class="ga-footer-policies">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+          <li><a href="refund-cancellation-policy.html">Refund Policy</a></li>
+          <li><a href="payment-information.html">Payment Information</a></li>
+        </ul>
+      </nav>
+      <p class="ga-footer-location">Shenzhen, China</p>
     </div>
+    <p class="ga-footer-disclaimer">Global Attest is an independent document support provider and is not affiliated with any government authority.</p>
   </div>
 </footer>
 <script>const y=document.getElementById('y');if(y){y.textContent=new Date().getFullYear();}</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <a class="wa-float" href="https://wa.me/8617620130150" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+<script>
+document.addEventListener('click', function (event) {
+  var link = event.target.closest('a.ga-footer-review-preview');
+  if (!link) return;
+
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', 'trustpilot_click', {
+      event_category: 'engagement',
+      link_type: 'trustpilot',
+      event_label: 'footer_trustpilot'
+    });
+  }
+});
+</script>
 </body>
 </html>
