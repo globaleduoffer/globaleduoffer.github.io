@@ -99,15 +99,11 @@
     }
 
     .hero-title {
-      font-size: clamp(2.4rem, 4vw, 3.4rem);
-      line-height: 1.1;
       font-weight: 800;
       margin-bottom: 1.5rem;
     }
 
     .hero-subtitle {
-      font-size: 1rem;
-      max-width: 32rem;
       opacity: 0.9;
       margin-bottom: 1.8rem;
     }
@@ -460,7 +456,7 @@
 .home-trust-panel{background:#fff;border:1px solid #e2e8f0;border-radius:20px;box-shadow:0 4px 18px rgba(16,42,99,.035);padding:30px}
 .home-trust-heading{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-bottom:28px}
 .home-trust-strip .home-trust-kicker{font-family:var(--font-formal-sans)!important;font-size:12px!important;font-weight:700!important;line-height:1.5;letter-spacing:.09em!important;color:#1f7547;margin:0 0 7px}
-.home-trust-strip .home-trust-lead{font-family:var(--font-formal-serif)!important;font-weight:700!important;font-size:28px!important;line-height:1.2!important;letter-spacing:-0.01em!important;color:#102a63;margin:0}
+.home-trust-strip .home-trust-lead{font-family:var(--font-formal-serif)!important;font-weight:700!important;font-size:24px!important;line-height:1.2!important;letter-spacing:-0.01em!important;color:#102a63;margin:0}
 .home-trust-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
 .home-trust-item{min-width:0;padding:0 20px;border-left:1px solid #e2e8f0}.home-trust-item:first-child{padding-left:0;border-left:0}.home-trust-item:last-child{padding-right:0}
 .home-trust-item i{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#edf7ef;color:#1f8f4d;font-size:18px;margin-bottom:12px}
@@ -1001,79 +997,101 @@ html[lang="en"] strong{
   .navbar .btn, .navbar .nav-wa-text { font-size: .9rem !important; padding-left: .85rem !important; padding-right: .85rem !important; }
   .navbar-brand img { max-width: 210px !important; object-fit: contain; }
 }
-</style><style id="hero-h1-smaller-v14">
-.hero-section .hero-title,
-.page-hero h1 {
-  font-size: clamp(2.55rem, 4.35vw, 4.35rem) !important;
-  line-height: 1.13 !important;
-  letter-spacing: 0 !important;
-}
-@media (max-width: 991.98px) {
-  .hero-section .hero-title,
-  .page-hero h1 {
-    font-size: clamp(2.05rem, 9vw, 3.2rem) !important;
-  }
-}
 </style>
-<style id="hero-h1-final-v16">
-html[lang="en"] .page-hero h1,
-html[lang="en"] .hero-section .hero-title,
-html[lang="en"] .wfoe-hero .hero-title,
-html[lang="en"] .resource-hero .resource-title,
-html[lang="en"] .guide-hero .guide-title {
-  font-size: clamp(1.75rem, 2.1vw, 2.45rem) !important;
-  line-height: 1.18 !important;
-  letter-spacing: 0 !important;
-  max-width: 760px !important;
-}
-html[lang="en"] .home-hero-title {
-  font-size: clamp(2.35rem, 4vw, 3.4rem) !important;
-  line-height: 1.12 !important;
-  max-width: 820px !important;
-}
-html[lang="en"] .page-hero,
-html[lang="en"] .hero-section {
-  overflow: hidden !important;
-}
-@media (min-width: 1400px) {
-  html[lang="en"] .page-hero h1,
-  html[lang="en"] .hero-section .hero-title,
-  html[lang="en"] .wfoe-hero .hero-title,
-  html[lang="en"] .resource-hero .resource-title,
-html[lang="en"] .guide-hero .guide-title {
-    font-size: 2.45rem !important;
-  }
-}
-@media (max-width: 991.98px) {
-  html[lang="en"] .page-hero h1,
-  html[lang="en"] .hero-section .hero-title,
-  html[lang="en"] .wfoe-hero .hero-title,
-  html[lang="en"] .resource-hero .resource-title,
-  html[lang="en"] .guide-hero .guide-title,
-  html[lang="en"] .home-hero-title {
-    font-size: clamp(1.9rem, 7vw, 2.35rem) !important;
-    line-height: 1.16 !important;
-    max-width: 100% !important;
-  }
-}
-</style>
+
 <link href="assets/globalattest-layout.css" rel="stylesheet">
 <link href="assets/globalattest-round1.css" rel="stylesheet">
 <style>
 .ga-home-team-preview { background: #f6f8fb; color: #0f172a; }
 .ga-home-team-preview .ga-home-team-intro { max-width: 54rem; margin-bottom: 2rem; }
 .ga-home-team-preview .ga-home-team-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; }
-.ga-home-team-preview .ga-home-team-card { min-width: 0; border: 1px solid #dce4ef; border-radius: 1rem; background: #fff; }
-.ga-home-team-preview .ga-home-team-card img { display: block; width: 100%; height: auto; aspect-ratio: 2 / 3; object-fit: cover; object-position: center top; border-radius: 1rem 1rem 0 0; }
-.ga-home-team-preview .ga-home-team-details { padding: 1.25rem; }
-.ga-home-team-preview .ga-home-team-details h3 { margin: 0 0 .5rem; font-size: 1.2rem; line-height: 1.4; }
+.ga-home-team-preview .ga-home-team-card { display:flex; flex-direction:column; align-items:center; min-width: 0; border: 1px solid #dce4ef; border-radius: 1rem; background: #fff; }
+.ga-home-team-preview .ga-home-team-card img { display: block; width: 132px; max-width: 100%; height: 198px; aspect-ratio:2 / 3; flex-shrink:0; object-fit: contain; object-position: center; margin: 24px auto 0; border-radius: 10px; }
+.ga-home-team-preview .ga-home-team-details { padding: 20px 12px 24px; text-align:center; flex:1; }
+.ga-home-team-preview .ga-home-team-details h3 { margin: 0 0 .5rem; font-size: 18px; line-height: 1.4; }
 .ga-home-team-preview .ga-home-team-details p { margin: 0; font-size: 1rem; line-height: 1.5; color: #5b6778; }
 .ga-home-team-preview .ga-home-team-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 1.5rem; margin-top: 2rem; }
-@media (min-width: 992px) { .ga-home-team-preview .ga-home-team-card img { height: 340px; aspect-ratio: auto; } }
+
 @media (max-width: 991.98px) { .ga-home-team-preview .ga-home-team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 575.98px) { .ga-home-team-preview .ga-home-team-grid { grid-template-columns: minmax(0, 1fr); } }
 </style>
 <link rel="stylesheet" href="assets/globalattest-footer-phase1.css">
+<style id="home-refinement">
+/* Homepage only: corporate hierarchy using the existing brand fonts. */
+.ga-home .hero-section { padding: 72px 0 78px; }
+.ga-home .hero-section .hero-title { font-size:clamp(2rem,2.8vw,2.8rem)!important; line-height:1.2!important; max-width:760px; letter-spacing:-.02em!important; }
+.ga-home .hero-section .hero-subtitle { font-size:17px; line-height:1.7; max-width:36rem; }
+.ga-home .hero-section .hero-kicker { color:#a7dcba; opacity:1; }
+.ga-home .hero-section .hero-business-cta { margin-top:24px; }
+.ga-home .premium-page { background:#fff; }
+.ga-home .premium-page > section { padding-top:64px!important; padding-bottom:64px!important; }
+.ga-home .premium-page h2 { font-size:clamp(1.7rem,2.4vw,2.15rem); line-height:1.3; color:#102a63; }
+.ga-home .premium-page h3,.ga-home .premium-page h4 { line-height:1.4; }
+.ga-home .premium-page .text-white { color:#fff; }
+.ga-home .section-kicker { background:transparent; padding:0; border-radius:0; color:#287b4d; font-size:12px; }
+.ga-home .home-trust-strip { padding:28px 0; }
+.ga-home .home-trust-panel { box-shadow:0 4px 16px rgba(15,23,42,.03); }
+.ga-home .home-section-heading { max-width:780px; margin-bottom:32px; }
+.ga-home .home-section-heading h2 { margin:14px 0; }
+.ga-home .home-service-categories { display:grid; grid-template-columns:minmax(0,1.7fr) minmax(0,1fr); gap:28px; align-items:start; }
+.ga-home .home-document-category { border-top:3px solid #287b4d; padding-top:24px; min-width:0; }
+.ga-home .home-category-label { color:#287b4d; font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+.ga-home .home-category-heading h3 { font-size:26px; color:#102a63; margin:8px 0 12px; }
+.ga-home .home-category-heading p { color:#526174; line-height:1.65; }
+.ga-home .service-quick-links { display:flex; flex-wrap:wrap; gap:8px; margin:20px 0 24px; }
+.ga-home .service-quick-link { font-size:14px; white-space:normal; }
+.ga-home .service-matrix { grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.ga-home .premium-card { padding:24px; border:1px solid #e2e8f0; border-radius:16px; box-shadow:none; background:#fff; }
+.ga-home .premium-card:first-child { grid-column:1/-1; background:#f5f8fc; }
+.ga-home .premium-card:before { display:none; }
+.ga-home .premium-card:hover { transform:none; box-shadow:none; border-color:#aac8b7; }
+.ga-home .premium-card h4 { font-size:19px; }
+.ga-home .premium-card:first-child h4 { font-size:23px; }
+.ga-home .premium-card p { font-size:16px; }
+.ga-home .premium-icon { background:#edf5ef; border-radius:12px; color:#287b4d; width:40px; height:40px; }
+.ga-home .home-secondary-services { display:grid; gap:24px; }
+.ga-home .home-secondary-services article { padding:28px; border:1px solid #e2e8f0; border-radius:18px; background:#f7f9fc; }
+.ga-home .home-secondary-services h3 { font-size:23px; color:#102a63; margin-bottom:16px; }
+.ga-home .home-secondary-services p,.ga-home .home-secondary-services li { color:#526174; line-height:1.7; }
+.ga-home .home-secondary-services ul { padding-left:20px; margin:20px 0 24px; }
+.ga-home .home-secondary-services li+li { margin-top:10px; }
+.ga-home .home-secondary-link { display:block; margin-top:16px; }
+.ga-home .home-study-category .service-quick-link { display:block; margin-top:18px; width:fit-content; }
+.ga-home #recent-pcc-cases { background:#f5f8fc; }
+.ga-home #recent-pcc-cases > .container { max-width:1180px; }
+.ga-home #recent-pcc-cases .card { border-color:#e2e8f0; box-shadow:none!important; }
+.ga-home #recent-pcc-cases h3 { font-size:20px; }
+.ga-home .destination-panel,.ga-home .premium-cta { background:#0b1b34; box-shadow:none; border-radius:22px; }
+.ga-home .destination-panel:after { display:none; }
+.ga-home .destination-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.ga-home .destination-tile { min-height:0; }
+.ga-home .workflow-band { background:#f5f8fc; }
+.ga-home .step-card { box-shadow:none; border-color:#e2e8f0; }
+.ga-home .home-workflow-guidance { margin-top:28px; }
+.ga-home .home-workflow-guidance .trust-list { grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px 32px; }
+.ga-home .home-workflow-guidance .trust-list li { padding:0; border:0; background:transparent; font-size:15px; }
+.ga-home .home-workflow-guidance .trust-list i { color:#287b4d; }
+.ga-home .guide-card { box-shadow:none; border:1px solid #e2e8f0; border-radius:16px; }
+.ga-home .premium-page a:focus-visible,.ga-home .hero-section a:focus-visible { outline:3px solid #399565; outline-offset:4px; }
+.ga-home .premium-link:hover { text-decoration:underline; }
+@media(max-width:991.98px) {
+ .ga-home .home-service-categories { grid-template-columns:1fr; }
+ .ga-home .home-secondary-services { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .ga-home .hero-section { padding:48px 0; }
+ .ga-home .hero-section .hero-title { font-size:clamp(1.9rem,4.3vw,2.6rem)!important; }
+ .ga-home .destination-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:575.98px) {
+ .ga-home .premium-page > section { padding-top:44px!important; padding-bottom:44px!important; }
+ .ga-home .service-matrix,.ga-home .home-secondary-services,.ga-home .destination-grid,.ga-home .home-workflow-guidance .trust-list { grid-template-columns:1fr; }
+ .ga-home .premium-card,.ga-home .home-secondary-services article { padding:22px; }
+ .ga-home .hero-section .hero-title { font-size:1.9rem!important; }
+ .ga-home .ga-home-team-preview .ga-home-team-card { flex-direction:row; align-items:center; padding:16px; gap:18px; }
+ .ga-home .ga-home-team-preview .ga-home-team-card img { width:84px; height:126px; flex-shrink:0; margin:0; }
+ .ga-home .ga-home-team-preview .ga-home-team-details { text-align:left; padding:0; }
+}
+
+</style>
 </head>
 <body class="ga-round1 ga-home">
 <nav class="navbar navbar-expand-lg">
@@ -1116,7 +1134,7 @@ html[lang="en"] .guide-hero .guide-title {
 <li><a class="dropdown-item" href="china-degree-apostille.html">China Degree Apostille</a></li>
 <li><span class="dropdown-section-label">Consular Legalization</span></li>
 <li><a class="dropdown-item" href="china-embassy-consular-legalization.html">Embassy / Consular Legalization</a></li>
-<li><a class="dropdown-item" href="study-in-china.html">Student Document Services</a></li>
+<li><a class="dropdown-item" href="study-in-china.html">Study in China</a></li>
 <li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
 </ul>
 </li>
@@ -1236,21 +1254,15 @@ Living overseas and need documents from China? We help you confirm the requireme
   </div>
 </section>
 <main class="premium-page">
-  <section class="py-5 py-lg-6" id="core-services" aria-labelledby="core-services-title">
-    <div class="container premium-shell">
-      <div class="row align-items-end mb-4">
-        <div class="col-lg-7">
-          <span class="section-kicker"><i class="fa-solid fa-layer-group"></i> Core Services</span>
-          <h2 class="premium-title display-5 mt-3 mb-3" id="core-services-title">China-side documents prepared for overseas use</h2>
-          <p class="premium-lead mb-0">Global Attest helps former foreign residents and international applicants coordinate China-issued documents for immigration, PR, visa, academic, employment and cross-border compliance purposes.</p>
-        </div>
-        <div class="col-lg-4 ms-lg-auto mt-3 mt-lg-0">
-          <p class="premium-lead mb-0">Instead of sending clients through a generic checklist, we review the destination authority first and build a practical route before documents are prepared.</p>
-        </div>
-      </div>
-
-
-      <nav class="service-quick-links" aria-label="Quick service links">
+<section class="py-5 py-lg-6" id="core-services" aria-labelledby="core-services-title">
+<div class="container premium-shell">
+<div class="home-section-heading"><span class="section-kicker">Core Services</span>
+<h2 id="core-services-title" class="premium-title">China document expertise. Broader support for your next step.</h2>
+<p class="premium-lead">China Police Certificates and documents for overseas use remain at the heart of our services, alongside company formation and study support in China.</p></div>
+<div class="home-service-categories">
+<div class="home-document-category" aria-labelledby="document-services-title">
+<div class="home-category-heading"><span class="home-category-label">Our primary focus</span><h3 id="document-services-title">Document Services</h3><p>China-issued documents for immigration, PR, employment, academic and overseas institutional requirements.</p></div>
+<nav class="service-quick-links" aria-label="Quick service links">
 <a class="service-quick-link" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'china pcc certificate', link_url:'china-police-certificate.html'}, 'china-police-certificate.html');" href="china-police-certificate.html">
 China PCC Certificate
 </a>
@@ -1266,112 +1278,51 @@ WES Evaluation Support
 <a class="service-quick-link" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'degree verification', link_url:'degree-verification.html'}, 'degree-verification.html');" href="degree-verification.html">
 Degree Verification
 </a>
-<a class="service-quick-link" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'study in china', link_url:'study-in-china.html'}, 'study-in-china.html');" href="study-in-china.html">
-Student Document Services</a>
-      </nav>
-      <div class="service-matrix">
-        <article class="premium-card">
+
+      </nav><div class="service-matrix"><article class="premium-card">
           <div class="premium-icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <h3 class="h4">China Police Certificate (PCC)</h3>
+          <h4 class="h4">China Police Certificate (PCC)</h4>
           <p>Remote support for former China residents who need a police clearance certificate for immigration, PR, work, visa, citizenship or overseas background checks. See our <a href="/china-no-criminal-record-certificate.html">China No Criminal Record Certificate guide</a> for terminology and document formats.</p>
           <a class="premium-link" href="china-police-certificate.html">View PCC service <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-        <article class="premium-card">
+        </article><article class="premium-card">
           <div class="premium-icon"><i class="fa-solid fa-stamp"></i></div>
-          <h3 class="h4">Apostille &amp; Legalization</h3>
+          <h4 class="h4">Apostille &amp; Legalization</h4>
           <p>China document apostille, MFA authentication and embassy or consular legalization route review for overseas submission.</p>
           <a class="premium-link" href="document-legalization.html">View legalization service <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-        <article class="premium-card">
-          <div class="premium-icon"><i class="fa-solid fa-file-signature"></i></div>
-          <h3 class="h4">WES Credential Evaluation</h3>
-          <p>Support for WES and international credential assessment workflows involving Chinese degrees, transcripts and academic records.</p>
-          <a class="premium-link" href="wes-en.html">View WES support <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-        <article class="premium-card">
+        </article><article class="premium-card">
           <div class="premium-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-          <h3 class="h4">Degree Verification</h3>
+          <h4 class="h4">Degree Verification</h4>
           <p>China university degree verification, academic certificate checks, notarization support and destination-ready document preparation.</p>
           <a class="premium-link" href="degree-verification.html">View degree verification <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-        <article class="premium-card">
-          <div class="premium-icon"><i class="fa-solid fa-building-columns"></i></div>
-          <h3 class="h4">China Student Document Services</h3>
-          <p>Document guidance for international students preparing China university admission, scholarship, visa and certified translation files.</p>
-          <a class="premium-link" href="study-in-china.html">View student document support <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-        <article class="premium-card">
+        </article><article class="premium-card">
+          <div class="premium-icon"><i class="fa-solid fa-file-signature"></i></div>
+          <h4 class="h4">WES Credential Evaluation</h4>
+          <p>Support for WES and international credential assessment workflows involving Chinese degrees, transcripts and academic records.</p>
+          <a class="premium-link" href="wes-en.html">View WES support <i class="fa-solid fa-arrow-right"></i></a>
+        </article><article class="premium-card">
           <div class="premium-icon"><i class="fa-solid fa-language"></i></div>
-          <h3 class="h4">Certified Translation Support</h3>
+          <h4 class="h4">Certified Translation Support</h4>
           <p>Certified translation planning for China-issued documents used in immigration, employment, study and overseas administrative applications.</p>
           <a class="premium-link" href="document-legalization.html">View translation support <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-      </div>
-    </div>
-  </section>
+        </article></div></div>
+<div class="home-secondary-services">
+<article class="home-business-category" aria-labelledby="business-services-title">
+<div class="premium-icon"><i class="fa-solid fa-building" aria-hidden="true"></i></div>
+<h3 id="business-services-title">China Business Setup</h3>
+<p>Company formation and WFOE registration support for foreign founders, with preparation of registration documents and China-side coordination.</p>
+<ul><li>Company registration planning and business scope preparation</li><li>Shareholder documents, authorization files and translations</li><li>Bilingual coordination for overseas founders</li></ul>
+<a class="btn btn-success" href="wfoe-china.html">View WFOE Service →</a>
+<a class="premium-link home-secondary-link" href="contact-en.html">Discuss a Setup Plan →</a>
+</article>
+<article class="home-study-category" aria-labelledby="study-services-title">
+<div class="premium-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div>
+<h3 id="study-services-title">Study in China</h3>
+<p>Guidance for international students preparing China university admission, scholarship, visa and certified translation files.</p>
+<p>Explore university applications and the supporting documents needed for your next step.</p>
+<a class="service-quick-link" onclick="return trackAndNavigate(event, 'service_click', {event_category:'engagement', event_label:'study in china', link_url:'study-in-china.html'}, 'study-in-china.html');" href="study-in-china.html">
+Explore Study in China Services</a></article>
+</div></div></div></section>
 
-  <section class="py-5">
-    <div class="container premium-shell">
-      <div class="destination-panel">
-        <div class="row align-items-end mb-4">
-          <div class="col-lg-7">
-            <span class="section-kicker" style="background:rgba(255,255,255,.1);color:#bbf7d0;border:1px solid rgba(255,255,255,.16);">PCC by Country</span>
-            <h2 class="premium-title text-white display-6 mt-3 mb-3">Match your China PCC to the country reviewing your file</h2>
-          </div>
-          <div class="col-lg-5">
-            <p class="mb-0" style="color:#cbd5e1;line-height:1.75;">Canada, the U.S., Australia, New Zealand, the United Kingdom, Spain, Germany, France and EU authorities may look for different document formats, translations, notarization, apostille or legalization steps.</p>
-          </div>
-        </div>
-        <div class="destination-grid">
-          <a class="destination-tile" href="china-police-certificate-canada-pr.html"><span>Canada</span><strong>China PCC for Canada</strong><em>PR, Express Entry, PNP and family sponsorship files.</em></a>
-          <a class="destination-tile" href="china-police-certificate-usa.html"><span>USA</span><strong>China PCC for USA</strong><em>Visa, immigration and employment document use.</em></a>
-          <a class="destination-tile" href="china-police-certificate-australia.html"><span>Australia</span><strong>China PCC for Australia</strong><em>Migration, residence and background-check requests.</em></a>
-          <a class="destination-tile" href="china-police-certificate-united-kingdom.html"><span>United Kingdom</span><strong>China PCC for United Kingdom</strong><em>UK visa, work, immigration and settlement document use.</em></a>
-          <a class="destination-tile" href="china-police-certificate-germany.html"><span>Germany</span><strong>China PCC for Germany</strong><em>Visa, residence, employment and family files.</em></a>
-          <a class="destination-tile" href="china-police-certificate-france.html"><span>France</span><strong>China PCC for France</strong><em>Visa, residence and administrative submissions.</em></a>
-          <a class="destination-tile" href="china-police-certificate-spain.html"><span>Spain</span><strong>China PCC for Spain</strong><em>EU residence and country-specific authentication review.</em></a>
-          <a class="destination-tile" href="china-police-certificate-new-zealand.html"><span>New Zealand</span><strong>China PCC for New Zealand</strong><em>Visa, residence and long-term immigration cases.</em></a>
-          <a class="destination-tile destination-tile-all" href="china-police-certificate-by-country.html"><span>By Country</span><strong>All Countries →</strong><em>Browse Europe, North America and Asia-Pacific PCC use cases.</em></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="workflow-band py-5 py-lg-6">
-    <div class="container premium-shell">
-      <div class="row justify-content-center text-center mb-4">
-        <div class="col-lg-8">
-          <span class="section-kicker"><i class="fa-solid fa-route"></i> Workflow</span>
-          <h2 class="premium-title display-6 mt-3 mb-3">A clear route from case review to document delivery</h2>
-          <p class="premium-lead mb-0">The process is designed for applicants who are outside China and need China-side coordination without guessing which authority or format applies.</p>
-        </div>
-      </div>
-      <div class="step-grid">
-        <article class="step-card">
-          <span class="step-no">1</span>
-          <h3 class="h5 fw-bold">Case Assessment</h3>
-          <p class="text-muted mb-0">We review your residence history, destination country and receiving authority requirements.</p>
-        </article>
-        <article class="step-card">
-          <span class="step-no">2</span>
-          <h3 class="h5 fw-bold">Document Checklist</h3>
-          <p class="text-muted mb-0">You receive a practical list for passport, visa, residence and authorization materials.</p>
-        </article>
-        <article class="step-card">
-          <span class="step-no">3</span>
-          <h3 class="h5 fw-bold">Local Coordination</h3>
-          <p class="text-muted mb-0">We coordinate with the relevant China-side authority, notary office or authentication route.</p>
-        </article>
-        <article class="step-card">
-          <span class="step-no">4</span>
-          <h3 class="h5 fw-bold">Final Delivery</h3>
-          <p class="text-muted mb-0">Finalized documents can be prepared for courier delivery or overseas submission requirements.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-<!-- Anonymized PCC case links -->
 <section class="py-5" id="recent-pcc-cases" aria-labelledby="recent-pcc-cases-title">
   <div class="container">
     <h2 class="mb-3" id="recent-pcc-cases-title">Recent China PCC Cases</h2>
@@ -1421,13 +1372,81 @@ Student Document Services</a>
     </div>
   </div>
 </section>
+
+<section class="py-5">
+    <div class="container premium-shell">
+      <div class="destination-panel">
+        <div class="row align-items-end mb-4">
+          <div class="col-lg-7">
+            <span class="section-kicker" style="background:rgba(255,255,255,.1);color:#bbf7d0;border:1px solid rgba(255,255,255,.16);">PCC by Country</span>
+            <h2 class="premium-title text-white display-6 mt-3 mb-3">Match your China PCC to the country reviewing your file</h2>
+          </div>
+          <div class="col-lg-5">
+            <p class="mb-0" style="color:#cbd5e1;line-height:1.75;">Canada, the U.S., Australia, New Zealand, the United Kingdom, Spain, Germany, France and EU authorities may look for different document formats, translations, notarization, apostille or legalization steps.</p>
+          </div>
+        </div>
+        <div class="destination-grid">
+          <a class="destination-tile" href="china-police-certificate-canada-pr.html"><span>Canada</span><strong>China PCC for Canada</strong><em>PR, Express Entry, PNP and family sponsorship files.</em></a>
+          <a class="destination-tile" href="china-police-certificate-usa.html"><span>USA</span><strong>China PCC for USA</strong><em>Visa, immigration and employment document use.</em></a>
+          <a class="destination-tile" href="china-police-certificate-australia.html"><span>Australia</span><strong>China PCC for Australia</strong><em>Migration, residence and background-check requests.</em></a>
+          <a class="destination-tile" href="china-police-certificate-united-kingdom.html"><span>United Kingdom</span><strong>China PCC for United Kingdom</strong><em>UK visa, work, immigration and settlement document use.</em></a>
+          <a class="destination-tile" href="china-police-certificate-germany.html"><span>Germany</span><strong>China PCC for Germany</strong><em>Visa, residence, employment and family files.</em></a>
+          <a class="destination-tile" href="china-police-certificate-france.html"><span>France</span><strong>China PCC for France</strong><em>Visa, residence and administrative submissions.</em></a>
+          <a class="destination-tile" href="china-police-certificate-spain.html"><span>Spain</span><strong>China PCC for Spain</strong><em>EU residence and country-specific authentication review.</em></a>
+          <a class="destination-tile" href="china-police-certificate-new-zealand.html"><span>New Zealand</span><strong>China PCC for New Zealand</strong><em>Visa, residence and long-term immigration cases.</em></a>
+          <a class="destination-tile destination-tile-all" href="china-police-certificate-by-country.html"><span>By Country</span><strong>All Countries →</strong><em>Browse Europe, North America and Asia-Pacific PCC use cases.</em></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="workflow-band py-5 py-lg-6">
+    <div class="container premium-shell">
+      <div class="row justify-content-center text-center mb-4">
+        <div class="col-lg-8">
+          <span class="section-kicker"><i class="fa-solid fa-route"></i> Workflow</span>
+          <h2 class="premium-title display-6 mt-3 mb-3">A clear route from case review to document delivery</h2>
+          <p class="premium-lead mb-0">The process is designed for applicants who are outside China and need China-side coordination without guessing which authority or format applies.</p>
+        </div>
+      </div>
+      <div class="step-grid">
+        <article class="step-card">
+          <span class="step-no">1</span>
+          <h3 class="h5 fw-bold">Case Assessment</h3>
+          <p class="text-muted mb-0">We review your residence history, destination country and receiving authority requirements.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-no">2</span>
+          <h3 class="h5 fw-bold">Document Checklist</h3>
+          <p class="text-muted mb-0">You receive a practical list for passport, visa, residence and authorization materials.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-no">3</span>
+          <h3 class="h5 fw-bold">Local Coordination</h3>
+          <p class="text-muted mb-0">We coordinate with the relevant China-side authority, notary office or authentication route.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-no">4</span>
+          <h3 class="h5 fw-bold">Final Delivery</h3>
+          <p class="text-muted mb-0">Finalized documents can be prepared for courier delivery or overseas submission requirements.</p>
+        </article>
+      </div>
+      <div class="home-workflow-guidance"><ul class="trust-list">
+                <li><i class="fa-solid fa-circle-check"></i><span><strong>Destination-first review:</strong> we confirm whether your file needs translation, notarization, apostille or consular legalization before the route is finalized.</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span><strong>City-specific handling:</strong> China PCC and civil document requirements may vary by city, residence record and issuing authority.</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span><strong>Remote coordination:</strong> many cases can be prepared after the applicant has already left China, depending on the city and document type.</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span><strong>International use:</strong> documents are prepared for immigration, PR, visa, employment, academic and overseas institutional review.</span></li>
+              </ul></div>
+    </div>
+  </section>
+
 <section class="ga-home-team-preview py-5 py-lg-6" aria-labelledby="ga-home-team-title">
   <div class="container premium-shell">
     <h2 class="premium-title display-6 mb-3" id="ga-home-team-title">Meet the People Behind Your Case</h2>
     <p class="premium-lead ga-home-team-intro">Your inquiry is reviewed by our document support team. We assess your requirements, coordinate the China-side process, and check the final documents before delivery.</p>
     <div class="ga-home-team-grid">
       <article class="ga-home-team-card">
-        <img src="assets/images/team-david-chen.jpg" alt="David CHEN" width="600" height="900" loading="lazy" decoding="async">
+        <img src="assets/images/founder-david-chen.webp" alt="David CHEN" width="720" height="1080" loading="lazy" decoding="async">
         <div class="ga-home-team-details"><h3>David CHEN</h3><p>Founder &amp; CEO</p></div>
       </article>
       <article class="ga-home-team-card">
@@ -1449,113 +1468,6 @@ Student Document Services</a>
     </div>
   </div>
 </section>
-
-
-  <section class="py-5 py-lg-6">
-    <div class="container premium-shell">
-      <div class="business-feature">
-        <div class="row align-items-center g-4">
-          <div class="col-lg-5">
-            <span class="section-kicker" style="background:rgba(255,255,255,.1);color:#bbf7d0;border:1px solid rgba(255,255,255,.16);">China Business Setup</span>
-            <h2 class="premium-title text-white display-6 mt-3 mb-3">WFOE and China company setup support for foreign founders</h2>
-            <p class="mb-4">Beyond personal and academic documents, Global Attest also supports foreign entrepreneurs and overseas companies preparing China business registration, WFOE documentation and compliance materials.</p>
-            <div class="d-flex flex-wrap gap-2">
-              <a class="btn btn-success rounded-pill px-4 fw-bold" href="wfoe-china.html">View WFOE Service</a>
-              <a class="btn btn-outline-light rounded-pill px-4 fw-bold" href="contact-en.html">Discuss a Setup Plan</a>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <div class="business-grid">
-              <article class="business-tile">
-                <i class="fa-solid fa-building fa-lg"></i>
-                <h3>Company Registration</h3>
-                <p>WFOE registration planning, company formation documents and business scope preparation.</p>
-              </article>
-              <article class="business-tile">
-                <i class="fa-solid fa-file-contract fa-lg"></i>
-                <h3>Registration Materials</h3>
-                <p>Shareholder documents, authorization files, translations and China-side filing support.</p>
-              </article>
-              <article class="business-tile">
-                <i class="fa-solid fa-building-columns fa-lg"></i>
-                <h3>Bank, Tax and Compliance</h3>
-                <p>Support for post-registration document readiness, banking coordination and compliance steps.</p>
-              </article>
-              <article class="business-tile">
-                <i class="fa-solid fa-globe fa-lg"></i>
-                <h3>Foreign Founder Support</h3>
-                <p>Bilingual coordination for overseas founders who need practical China-side execution.</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-5 py-lg-6">
-    <div class="container premium-shell">
-      <div class="trust-panel">
-        <div class="row g-0">
-          <div class="col-lg-5">
-            <div class="trust-dark">
-              <span class="section-kicker" style="background:rgba(255,255,255,.1);color:#bbf7d0;border:1px solid rgba(255,255,255,.16);">Why Global Attest</span>
-              <h2 class="premium-title text-white h1 mt-3 mb-3">Built for remote applicants with China document complexity</h2>
-              <p style="color:#cbd5e1;line-height:1.75;">Most delays happen before submission: wrong authority, missing residence proof, unclear notarization route, or destination requirements that were not checked early enough.</p>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <div class="p-4 p-lg-5">
-              <ul class="trust-list">
-                <li><i class="fa-solid fa-circle-check"></i><span><strong>Destination-first review:</strong> we confirm whether your file needs translation, notarization, apostille or consular legalization before the route is finalized.</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span><strong>City-specific handling:</strong> China PCC and civil document requirements may vary by city, residence record and issuing authority.</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span><strong>Remote coordination:</strong> many cases can be prepared after the applicant has already left China, depending on the city and document type.</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span><strong>International use:</strong> documents are prepared for immigration, PR, visa, employment, academic and overseas institutional review.</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-5">
-    <div class="container premium-shell">
-      <div class="row align-items-start g-4">
-        <div class="col-lg-4">
-          <span class="section-kicker"><i class="fa-solid fa-circle-question"></i> FAQ</span>
-          <h2 class="premium-title display-6 mt-3 mb-3">Common questions before you start</h2>
-          <p class="premium-lead">Short answers for applicants comparing routes before contacting us.</p>
-        </div>
-        <div class="col-lg-8">
-          <div class="row g-3">
-            <div class="col-md-6"><div class="faq-card"><h3>Can I apply after leaving China?</h3><p>In many cases, yes. We first check your city, residence history and available records before confirming the route.</p></div></div>
-            <div class="col-md-6"><div class="faq-card"><h3>How fast can a China PCC be handled?</h3><p>Many eligible cases can be completed in about 7-10 working days after the required documents are ready.</p></div></div>
-            <div class="col-md-6"><div class="faq-card"><h3>Do I need apostille or legalization?</h3><p>It depends on the receiving country and institution. We review this before preparing the final document package.</p></div></div>
-            <div class="col-md-6"><div class="faq-card"><h3>Can you help with WES and degrees?</h3><p>Yes. We support WES credential evaluation, China degree verification and academic document preparation.</p></div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="pb-5 pb-lg-6">
-    <div class="container premium-shell">
-      <div class="premium-cta">
-        <div class="row align-items-center g-4">
-          <div class="col-lg-8">
-            <span class="section-kicker" style="background:rgba(255,255,255,.1);color:#bbf7d0;border:1px solid rgba(255,255,255,.16);">Start Here</span>
-            <h2 class="premium-title text-white display-6 mt-3 mb-3">Tell us what document you need and where it will be used</h2>
-            <p class="mb-0" style="color:#dbeafe;line-height:1.75;">Share your document type, city of issuance or residence history, destination country and timeline. We will suggest the practical next step.</p>
-          </div>
-          <div class="col-lg-4 text-lg-end">
-            <a class="btn btn-success me-lg-2 mb-2 mb-lg-0" href="contact-en.html">Contact Global Attest</a>
-            <a class="btn btn-outline-light" href="https://wa.me/8617620130150" target="_blank" rel="noopener">WhatsApp</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
 <section class="py-5">
   <div class="container premium-shell">
@@ -1626,6 +1538,43 @@ Student Document Services</a>
   </div>
 </section>
 
+<section class="py-5">
+    <div class="container premium-shell">
+      <div class="row align-items-start g-4">
+        <div class="col-lg-4">
+          <span class="section-kicker"><i class="fa-solid fa-circle-question"></i> FAQ</span>
+          <h2 class="premium-title display-6 mt-3 mb-3">Common questions before you start</h2>
+          <p class="premium-lead">Short answers for applicants comparing routes before contacting us.</p>
+        </div>
+        <div class="col-lg-8">
+          <div class="row g-3">
+            <div class="col-md-6"><div class="faq-card"><h3>Can I apply after leaving China?</h3><p>In many cases, yes. We first check your city, residence history and available records before confirming the route.</p></div></div>
+            <div class="col-md-6"><div class="faq-card"><h3>How fast can a China PCC be handled?</h3><p>Many eligible cases can be completed in about 7-10 working days after the required documents are ready.</p></div></div>
+            <div class="col-md-6"><div class="faq-card"><h3>Do I need apostille or legalization?</h3><p>It depends on the receiving country and institution. We review this before preparing the final document package.</p></div></div>
+            <div class="col-md-6"><div class="faq-card"><h3>Can you help with WES and degrees?</h3><p>Yes. We support WES credential evaluation, China degree verification and academic document preparation.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="pb-5 pb-lg-6">
+    <div class="container premium-shell">
+      <div class="premium-cta">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <span class="section-kicker" style="background:rgba(255,255,255,.1);color:#bbf7d0;border:1px solid rgba(255,255,255,.16);">Start Here</span>
+            <h2 class="premium-title text-white display-6 mt-3 mb-3">Tell us what document you need and where it will be used</h2>
+            <p class="mb-0" style="color:#dbeafe;line-height:1.75;">Share your document type, city of issuance or residence history, destination country and timeline. We will suggest the practical next step.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a class="btn btn-success me-lg-2 mb-2 mb-lg-0" href="contact-en.html">Contact Global Attest</a>
+            <a class="btn btn-outline-light" href="https://wa.me/8617620130150" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="ga-footer" aria-label="Global Attest footer">
@@ -1635,7 +1584,7 @@ Student Document Services</a>
         <a class="ga-footer-logo" href="index.html" aria-label="Global Attest home">
           <img src="assets/images/footer/global-attest-footer-logo.png" width="600" height="208" alt="Global Attest — China Document Services" loading="lazy" decoding="async">
         </a>
-        <p class="ga-footer-intro">China document support for international applicants.</p>
+        <p class="ga-footer-intro">China Document, Business &amp; Education Services for International Clients.</p>
         <!-- Static local star artwork checked against the public Trustpilot page; not an auto-updating widget. -->
         <a class="ga-footer-review-preview" href="https://www.trustpilot.com/review/globalattest.com" target="_blank" rel="noopener noreferrer" aria-label="Read customer reviews on Trustpilot (opens in a new tab)">
           <span class="ga-footer-review-row"><span class="ga-footer-review-brand">Trustpilot</span><img class="ga-footer-review-star-strip" src="assets/images/footer/trustpilot-stars-4-5.svg" width="120" height="23" alt="Trustpilot star rating"></span>
@@ -1649,6 +1598,8 @@ Student Document Services</a>
           <li><a href="document-legalization.html">Apostille &amp; Legalization</a></li>
           <li><a href="degree-verification.html">Degree Verification</a></li>
           <li><a href="wes-en.html">WES Support</a></li>
+          <li><a href="wfoe-china.html">Company Formation</a></li>
+          <li><a href="study-in-china.html">Study in China</a></li>
         </ul>
       </nav>
       <nav class="ga-footer-column" aria-label="Footer Company">
