@@ -298,3 +298,15 @@ html[lang="en"] .ga-footer h2{font-weight:500!important;}
     font-size: 17px;
   }
 }
+
+.ga-footer h2 {
+  color: #fff !important;
+}
+
+.ga-footer p {
+  color: #e5ecf6 !important;
+}
+
+.ga-footer .ga-footer-disclaimer {
+  color: #b7c8e0 !important;
+}
