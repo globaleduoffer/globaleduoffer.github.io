@@ -1,0 +1,11 @@
+/* Targeted only at the existing floating WhatsApp link activated by the fix JS.
+   Preserve all existing size, color, right offset, shadow and breakpoint rules.
+   No selectors target the Footer, navigation, Hero or content containers. */
+html[lang="en"] body > a.wa-float[data-ga-wa-safe] {
+  bottom: var(--ga-wa-safe-bottom, 18px) !important;
+  transition-property: opacity;
+}
+html[lang="en"] body > a.wa-float[data-ga-wa-safe][data-ga-wa-suppressed] {
+  visibility: hidden;
+  pointer-events: none;
+}
