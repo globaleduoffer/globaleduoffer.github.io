@@ -877,19 +877,30 @@ html[lang="en"] strong{
   }
 }
 </style>
+
+<link rel="stylesheet" href="assets/home-v2/home-en-v2.css">
+<link rel="stylesheet" href="assets/about-v2/about-en-v2.css?v=3">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://globalattest.com/about-en.html">
+<meta property="og:title" content="About Global Attest | Document, Business &amp; Education Services">
+<meta property="og:description" content="Meet Global Attest, a Shenzhen-based brand supporting international clients with China document services, company formation, and study in China.">
+<meta property="og:image" content="https://globalattest.com/assets/images/about/about-social-preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About Global Attest | Document, Business &amp; Education Services">
+<meta name="twitter:description" content="Meet Global Attest, a Shenzhen-based brand supporting international clients with China document services, company formation, and study in China.">
+<meta name="twitter:image" content="https://globalattest.com/assets/images/about/about-social-preview.jpg">
 </head>
-<body class="ga-about-page">
-<nav class="navbar navbar-expand-lg">
+<body class="ga-about-page"><nav aria-label="Main navigation" class="navbar navbar-expand-xl ga-home-v2-nav">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="/">
-<img alt="Global Attest Logo" src="assets/images/logo-global-attest.png" style="height:36px; width:auto; max-height:36px;" decoding="async" width="1211" height="198" loading="eager">
+<img alt="Global Attest Logo" decoding="async" height="198" loading="eager" src="assets/images/logo-global-attest.png" style="height:36px; width:auto; max-height:36px;" width="1211"/>
 <span class="visually-hidden">Global Attest</span>
 </a>
 <button aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#nav" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="nav">
-<ul class="navbar-nav ms-auto align-items-lg-center">
+<ul class="navbar-nav ms-auto align-items-xl-center">
 <!-- Home -->
 <li class="nav-item">
 <a class="nav-link" href="/">Home</a>
@@ -919,7 +930,7 @@ html[lang="en"] strong{
 <li><a class="dropdown-item" href="china-degree-apostille.html">China Degree Apostille</a></li>
 <li><span class="dropdown-section-label">Consular Legalization</span></li>
 <li><a class="dropdown-item" href="china-embassy-consular-legalization.html">Embassy / Consular Legalization</a></li>
-<li><a class="dropdown-item" href="study-in-china.html">Student Document Services</a></li>
+<li><a class="dropdown-item" href="study-in-china.html">Study in China</a></li>
 <li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
 </ul>
 </li>
@@ -942,16 +953,16 @@ html[lang="en"] strong{
 <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="howToDropdownEn" role="button">Blog</a>
 <ul aria-labelledby="howToDropdownEn" class="dropdown-menu">
 <li><a class="dropdown-item" href="blog.html">All Articles</a></li>
-<li><hr class="dropdown-divider"></li>
+<li><hr class="dropdown-divider"/></li>
 <li><span class="dropdown-section-label">China Police Certificate</span></li>
 <li><a class="dropdown-item" href="china-police-certificate-guides.html">China PCC Guides</a></li>
 <li><a class="dropdown-item" href="china-police-certificate-by-country.html">PCC by Country</a></li>
-<li><hr class="dropdown-divider"></li>
+<li><hr class="dropdown-divider"/></li>
 <li><span class="dropdown-section-label">Authentication</span></li>
 <li><a class="dropdown-item" href="china-apostille-guides.html">China Apostille Guides</a></li>
 <li><a class="dropdown-item" href="china-hague-apostille-services.html">Apostille Services</a></li>
 <li><a class="dropdown-item" href="china-embassy-consular-legalization.html">Embassy / Consular Legalization</a></li>
-<li><hr class="dropdown-divider"></li>
+<li><hr class="dropdown-divider"/></li>
 <li><span class="dropdown-section-label">Education &amp; Credentials</span></li>
 <li><a class="dropdown-item" href="/china-academic-document-guides.html">Academic Document Guides</a></li><li><a class="dropdown-item" href="degree-verification.html">Degree Verification</a></li>
 <li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
@@ -964,128 +975,26 @@ html[lang="en"] strong{
 <a class="nav-link" href="wfoe-china.html">Business Setup</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="about-en.html">About Us</a>
+<a class="nav-link active" href="about-en.html" aria-current="page">About Us</a>
 </li><li class="nav-item">
 <a class="nav-link" href="reviews-en.html">Reviews</a>
 </li>
 </ul>
 <!-- CTA + Language Switch -->
-<div class="d-flex flex-column flex-lg-row align-items-lg-center ms-lg-3 mt-3 mt-lg-0 gap-2">
-<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-en.html" data-ga-event="contact_click" data-ga-label="about_nav_contact">
+<div class="v2-nav-actions d-flex flex-column flex-xl-row align-items-xl-center ms-lg-3 mt-3 mt-lg-0 gap-2">
+<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-en.html" onclick="return trackAndNavigate(event, 'contact_click', {event_category:'engagement', event_label:'navbar_contact', link_url:'/contact-en.html'}, 'contact-en.html');">
           Contact
         </a>
-<a class="nav-wa-text" href="https://wa.me/8617620130150" rel="noopener" target="_blank" data-ga-event="whatsapp_click" data-ga-label="about_nav_whatsapp">WhatsApp</a>
-<div class="ms-lg-2 d-flex gap-2">
+<a class="nav-wa-text" href="https://wa.me/8617620130150" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'navbar_whatsapp', link_url:'https://wa.me/8617620130150'}, 'https://wa.me/8617620130150', '_blank');" rel="noopener" target="_blank">WhatsApp</a>
+<div class="v2-nav-languages ms-lg-2 d-flex gap-2">
 <a class="lang-btn" href="/zh/">中文</a>
 <a class="lang-btn" href="/">EN</a>
 </div>
 </div>
 </div>
 </div>
-</nav>
-<main class="ga-about">
-<section class="ga-about-intro" aria-labelledby="about-title">
-<div class="container">
-<p class="ga-about-kicker">ABOUT GLOBAL ATTEST</p>
-<h1 id="about-title">Your Partner for China Document, Business &amp; Education Services</h1>
-<div class="ga-about-copy">
-<p>Global Attest is a Shenzhen-based service brand helping international clients with China document services, company formation, and educational opportunities.</p>
-<p>From official documents and business registration to Chinese university and scholarship applications, we provide practical guidance, careful preparation, and coordinated support.</p>
-</div>
-<div class="ga-about-facts">
-<span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Based in Shenzhen, China</span>
-<span><i class="fa-solid fa-globe" aria-hidden="true"></i> Supporting Clients Worldwide</span>
-</div>
-<a class="ga-about-text-link" href="#our-team">Meet Our Team →</a>
-</div>
-</section>
-
-<section class="ga-about-section ga-about-story" aria-labelledby="story-title">
-<div class="container">
-<p class="ga-about-kicker">OUR STORY</p>
-<h2 id="story-title">Connecting People, Opportunities, and Possibilities Across Borders</h2>
-<div class="ga-story-opening">
-<div>
-<p>China has shaped the lives of international students, professionals, entrepreneurs, and families. Some once studied, worked, or lived here; others see new opportunities for education, business, and personal development.</p>
-<p>Administrative procedures can be difficult for people unfamiliar with local requirements or now living overseas and coordinating their applications remotely.</p>
-</div>
-<div>
-<p>Former residents may need a China Police Certificate for immigration or employment. Graduates may need transcripts or academic verification years after university. Others require notarization, apostille, or legalization for documents used abroad.</p>
-<p>Foreign entrepreneurs face company registration and documentation requirements. Prospective students need guidance on university selection, admissions, Chinese Government Scholarship (CSC) and university scholarship applications, and X1/X2 student visas.</p>
-<p>These goals share a practical challenge: identifying the right procedures, preparing appropriate documents, and finding reliable support in China.</p>
-</div>
-</div>
-<div class="ga-story-chapter">
-<h3>Why Global Attest Exists</h3>
-<div>
-<p>Global Attest is built around a simple idea: services and opportunities connected to China should be clearer and more manageable, wherever someone lives.</p>
-<p>Based in Shenzhen, we support international clients with China document services, company formation and business support, and university admission and scholarship assistance.</p>
-<p>Our document work covers Police Certificates, notarization, Apostille, consular legalization, academic verification, and transcripts. We also help entrepreneurs prepare registration documents and guide students through university, scholarship, and visa requirements. We explain the relevant steps and support preparation without promising institutional decisions.</p>
-</div>
-</div>
-<div class="ga-story-chapter">
-<h3>Understanding Every Client's Journey</h3>
-<div>
-<p>Some applicants have complete records and need a clear process. Others face missing old passports, incomplete accommodation registration, difficulty contacting former universities, or transcripts needed years after graduation.</p>
-<p>An entrepreneur entering China has different priorities from a graduate applying for residence overseas or a student choosing a university.</p>
-<p>We begin with the client's actual circumstances, rather than using one approach for every case. Careful materials review, clear communication, and practical coordination guide our work.</p>
-</div>
-</div>
-<div class="ga-story-chapter">
-<h3>More Than Documents and Applications</h3>
-<div>
-<p>Every application supports a personal or professional goal. A Police Certificate may help with immigration; a transcript may enable further study or employment. Company registration may start a business venture, while admission may begin a student's future in China.</p>
-<p>These procedures connect to important decisions and milestones. We aim to make them more accessible through careful preparation and dependable communication, helping clients understand their options and the steps involved.</p>
-<p>Whether you need records from your time in China, help establishing a business, or university application support, our team helps you prepare and move forward with greater confidence.</p>
-</div>
-</div>
-<p class="ga-story-closing">From your past connections with China to your future opportunities here, Global Attest is here to support your journey.</p>
-</div>
-</section>
-
-<section class="ga-about-section ga-about-founder" aria-labelledby="founder-title">
-<div class="container ga-about-founder-grid">
-<img class="ga-about-founder-photo" src="assets/images/founder-david-chen.webp" width="720" height="1080" alt="David CHEN, Founder and CEO of Global Attest" loading="lazy" decoding="async">
-<div>
-<p class="ga-about-kicker">LEADERSHIP &amp; RESPONSIBILITY</p>
-<h2 id="founder-title">Meet Our Founder</h2>
-<h3 class="ga-about-founder-name">David CHEN</h3>
-<p class="ga-about-role">Founder &amp; CEO</p>
-<p>David CHEN leads Global Attest's service strategy, client experience, and quality standards across document, business, and education support.</p>
-<p>He works with the team to review requirements, coordinate procedures, and keep overseas clients informed, with an emphasis on clear communication and careful preparation.</p>
-</div>
-</div>
-</section>
-
-<section class="ga-about-section ga-about-muted" aria-labelledby="company-title">
-<div class="container ga-about-company-grid">
-<div>
-<p class="ga-about-kicker">COMPANY INFORMATION</p>
-<h2 id="company-title">Who We Are</h2>
-<p>Global Attest is a service brand based in Shenzhen, China. We support international clients with China-related document services, company formation and business support, and university admission and scholarship assistance.</p>
-<p>Global Attest is operated by <span lang="zh-CN">深圳市环球学旅教育科技有限公司</span>, a company registered in Shenzhen, China.</p>
-<a class="ga-about-text-link" href="wfoe-china.html">Explore our China business setup support →</a>
-</div>
-<div class="ga-about-company-card">
-<h3>Company Information</h3>
-<dl>
-<div><dt>Brand Name</dt><dd>Global Attest</dd></div>
-<div><dt>Registered Company Name</dt><dd lang="zh-CN">深圳市环球学旅教育科技有限公司</dd></div>
-<div><dt>Location</dt><dd>Shenzhen, Guangdong, China</dd></div>
-<div><dt>Business Focus</dt><dd>Document Services, Company Formation &amp; Education Support</dd></div>
-</dl>
-</div>
-</div>
-</section>
-
-<section class="ga-about-section" aria-labelledby="services-title">
-<div class="container">
-<p class="ga-about-kicker">WHAT WE DO</p>
-<h2 id="services-title">Our Core Services</h2>
-<p class="ga-about-section-lead">Global Attest supports international clients with documentation, business establishment, and educational opportunities connected to China.</p>
-<div class="ga-about-service-grid">
-<article class="ga-about-service">
-<i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+</nav><main class="about-v2"><header class="av2-hero hero-section"><img class="av2-hero-image" src="assets/images/about/about-hero-bg.webp" width="2048" height="768" alt="" aria-hidden="true" fetchpriority="high" decoding="async"><div class="av2-hero-shell"><div class="av2-hero-copy"><p class="av2-kicker">ABOUT GLOBAL ATTEST</p><h1>Your Trusted Partner<br>for China Document Services</h1><p>Global Attest provides professional China-related document services for individuals and businesses worldwide, helping clients navigate applications, verification, notarization, legalization, and other procedures with confidence.</p><div class="av2-actions"><a class="av2-btn av2-primary" href="contact-en.html" data-ga-event="contact_click" data-ga-label="hero_contact_click">Get a Free Consultation <span aria-hidden="true">→</span></a><a class="av2-btn av2-whatsapp" href="https://wa.me/8617620130150" target="_blank" rel="noopener" data-ga-event="whatsapp_click" data-ga-label="hero_whatsapp_click"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a></div></div></div></header><section id="who-we-are" class="av2-section av2-who" aria-labelledby="who-we-are-title"><div class="container av2-shell"><p class="av2-kicker">WHO WE ARE</p><h2 id="who-we-are-title">Global Attest</h2><div class="av2-who-grid"><div><h3>China Document Services</h3><p>Global Attest is a China-based professional document services provider supporting international individuals and businesses. Based in Shenzhen, we help clients understand requirements, prepare materials and coordinate China-related procedures.</p><p>Our work covers police clearance certificates, translation, notarization, apostille and consular legalization, academic credential verification, WES-related assistance, and company registration and business setup in China.</p></div><img class="av2-brand-logo" src="assets/images/footer/global-attest-footer-logo.png" alt="Global Attest — China Document Services" width="600" height="208" loading="lazy" decoding="async"><ul class="av2-who-points"><li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><div><strong>Professional coordination</strong><span>Focused on China-related procedures</span></div></li><li><i class="fa-solid fa-comment-dots" aria-hidden="true"></i><div><strong>Clear communication</strong><span>Practical guidance and updates</span></div></li><li><i class="fa-solid fa-sliders" aria-hidden="true"></i><div><strong>Case-specific solutions</strong><span>Support based on your requirements</span></div></li></ul></div><a class="ga-about-text-link" href="#our-team">Meet Our Team →</a></div></section><section id="our-services" class="av2-section av2-services-section" aria-labelledby="our-services-title"><div class="container av2-shell"><p class="av2-kicker">OUR SERVICES</p><h2 id="our-services-title">Comprehensive Support for Your China-Related Needs</h2><p class="av2-lead">Practical support for your China-related needs, with requirements reviewed for each service and case.</p><div class="av2-services"><article><i class="fa-solid fa-file-shield" aria-hidden="true"></i><h3>China Police Clearance Certificate</h3><p>PCC application coordination and guidance on city-specific requirements.</p><a href="china-police-certificate.html">Explore service <span aria-hidden="true">→</span></a></article><article><i class="fa-solid fa-language" aria-hidden="true"></i><h3>Translation Services</h3><p>Preparation and translation support for China-related documents used overseas.</p><a href="document-legalization.html">Explore service <span aria-hidden="true">→</span></a></article><article><i class="fa-solid fa-landmark" aria-hidden="true"></i><h3>Notarization Services</h3><p>Guidance on notarization for personal, academic and commercial documents.</p><a href="document-legalization.html">Explore service <span aria-hidden="true">→</span></a></article><article><i class="fa-solid fa-globe" aria-hidden="true"></i><h3>Apostille & Legalization</h3><p>Apostille or consular legalization, depending on the applicable requirements.</p><a href="china-hague-apostille-services.html">Explore service <span aria-hidden="true">→</span></a></article><article><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><h3>Academic Credential Services</h3><p>CHSI / CSSD verification, transcript-related support and WES application assistance.</p><a href="degree-verification.html">Explore service <span aria-hidden="true">→</span></a></article><article><i class="fa-solid fa-building" aria-hidden="true"></i><h3>Business Setup in China</h3><p>Company registration preparation, bank documentation and tax setup coordination.</p><a href="wfoe-china.html">Explore service <span aria-hidden="true">→</span></a></article></div><div class="av2-related"><a href="china-embassy-consular-legalization.html">Embassy &amp; consular legalization →</a><a href="wes-en.html">WES evaluation assistance →</a></div><details class="av2-disclosure av2-service-detail"><summary>More about our document, business and education support <span aria-hidden="true">+</span></summary><div class="av2-original-services"><article class="ga-about-service">
+<i aria-hidden="true" class="fa-solid fa-file-lines"></i>
 <h3>China Document Services</h3>
 <p>We help overseas applicants obtain official records and prepare China-related documentation, including notarization and authentication.</p>
 <ul>
@@ -1097,9 +1006,8 @@ html[lang="en"] strong{
 <li>University Transcripts &amp; Academic Documents</li>
 </ul>
 <a class="ga-about-text-link" href="document-legalization.html">Explore Apostille &amp; Legalization →</a>
-</article>
-<article class="ga-about-service">
-<i class="fa-solid fa-building" aria-hidden="true"></i>
+</article><article class="ga-about-service">
+<i aria-hidden="true" class="fa-solid fa-building"></i>
 <h3>Company Formation &amp; Business Support</h3>
 <p>We assist foreign entrepreneurs and international clients who wish to establish a business in China and prepare the required registration documents.</p>
 <ul>
@@ -1110,9 +1018,8 @@ html[lang="en"] strong{
 <li>Business Documentation Support</li>
 </ul>
 <a class="ga-about-text-link" href="wfoe-china.html">Explore Company Formation →</a>
-</article>
-<article class="ga-about-service">
-<i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+</article><article class="ga-about-service">
+<i aria-hidden="true" class="fa-solid fa-graduation-cap"></i>
 <h3>Study in China &amp; Scholarship Support</h3>
 <p>We help international students explore Chinese universities and prepare admission, scholarship, and student visa applications.</p>
 <ul>
@@ -1123,153 +1030,49 @@ html[lang="en"] strong{
 <li>X1/X2 Student Visa Guidance</li>
 </ul>
 <a class="ga-about-text-link" href="study-in-china.html">Explore Study in China Support →</a>
-</article>
-</div>
-<p class="ga-about-limit">We provide application assistance and guidance. University admission, scholarship awards, and visa issuance are decided by the relevant institutions and authorities and are not guaranteed.</p>
-</div>
-</section>
-
-<section class="ga-about-section ga-about-muted" aria-labelledby="why-title">
-<div class="container">
-<p class="ga-about-kicker">WHY GLOBAL ATTEST</p>
-<h2 id="why-title">Why Clients Choose Us</h2>
-<p class="ga-about-section-lead">We focus on the details of each case: the documents on hand, the relevant requirements, and the practical steps needed in China.</p>
-<div class="ga-about-benefits">
-<article>
-<i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+</article><p class="ga-about-limit">We provide application assistance and guidance. University admission, scholarship awards, and visa issuance are decided by the relevant institutions and authorities and are not guaranteed.</p></div></details></div></section><section id="our-team" class="av2-section av2-team-section" aria-labelledby="our-team-title"><div class="container av2-shell"><p class="av2-kicker">OUR TEAM</p><h2 id="our-team-title">The People Behind Global Attest</h2><p class="av2-lead">Meet the people who review requirements, coordinate procedures and keep clients informed throughout their cases.</p><div class="av2-team"><article class="av2-person"><img src="assets/images/founder-david-chen.webp" width="720" height="1080" alt="David CHEN, Founder and CEO of Global Attest" loading="lazy" decoding="async"><div class="av2-person-body"><h3>David CHEN</h3><p class="av2-role">Founder &amp; CEO</p><p>David CHEN leads Global Attest&#x27;s service strategy, client experience, and quality standards across document, business, and education support. He works with the team to review requirements, coordinate procedures, and keep overseas clients informed, with an emphasis on clear communication and careful preparation.</p></div></article><article class="av2-person"><img src="assets/images/team-grace-chang.jpg" width="600" height="900" alt="Grace CHANG, Immigration Documentation and International Case Assessment Specialist" loading="lazy" decoding="async"><div class="av2-person-body"><h3>Grace CHANG</h3><p class="av2-role">Immigration Documentation &amp; International Case Assessment Specialist</p><p>Grace CHANG supports clients who need China-issued documents for immigration and residence applications overseas. She handles document planning, case assessment, and preparation based on destination requirements, including permanent residence, skilled migration, family sponsorship, employment visas, and citizenship pathways.</p><details class="av2-bio"><summary>More about Grace <span aria-hidden="true">+</span></summary><p>She reviews the purpose of each application and helps clients understand the materials relevant to their situation, including files intended for Canada, the United States, Australia, New Zealand, the United Kingdom, Spain, and other destinations.</p></details></div></article><article class="av2-person"><img src="assets/images/team-alina-xiao.jpg" width="600" height="900" alt="Alina XIAO, China Business Setup and Foreign Investment Specialist" loading="lazy" decoding="async"><div class="av2-person-body"><h3>Alina XIAO</h3><p class="av2-role">China Business Setup &amp; Foreign Investment Specialist</p><p>Alina XIAO supports foreign entrepreneurs, overseas companies, and international investors preparing to establish a business in China. Her work includes company registration planning, WFOE documentation, licensing coordination, and cross-border compliance.</p><details class="av2-bio"><summary>More about Alina <span aria-hidden="true">+</span></summary><p>She helps clients understand the documentation associated with entering the Chinese market and preparing a business structure.</p><p>Alongside business setup projects, she also assists applicants who need China Police Certificates, apostille, legalization, and related documents for immigration, employment, or international business purposes.</p></details></div></article><article class="av2-person"><img src="assets/images/team-kris-li.jpg" width="600" height="900" alt="Kris LI, Documentation Quality and Verification Specialist" loading="lazy" decoding="async"><div class="av2-person-body"><h3>Kris LI</h3><p class="av2-role">Documentation Quality &amp; Verification Specialist</p><p>Kris LI focuses on document verification, quality control, and application readiness across China-related authentication and compliance cases. He reviews supporting materials, checks identity and document details, and flags inconsistencies that may need clarification.</p><details class="av2-bio"><summary>More about Kris <span aria-hidden="true">+</span></summary><p>He organizes files before submission or delivery so the available information is presented consistently.</p><p>This review supports immigration, academic, employment, and business documentation, and is intended to reduce avoidable clarification requests while keeping attention on the requirements of each case.</p></details></div></article></div></div></section><section id="our-story" class="av2-section av2-story-section" aria-labelledby="our-story-title"><div class="container av2-shell"><p class="av2-kicker">OUR STORY &amp; MISSION</p><h2 id="our-story-title">Making China-Related Procedures Clearer</h2><div class="av2-story-grid"><div><p>China has shaped the lives of international students, professionals, entrepreneurs, and families. Some once studied, worked, or lived here; others see new opportunities for education, business, and personal development.</p><p>Administrative procedures can be difficult for people unfamiliar with local requirements or now living overseas and coordinating their applications remotely.</p><p class="ga-story-closing">From your past connections with China to your future opportunities here, Global Attest is here to support your journey.</p></div><div><details class="av2-disclosure"><summary>Understanding China-related document and application needs <span aria-hidden="true">+</span></summary><div class="av2-story-copy"><p>Former residents may need a China Police Certificate for immigration or employment. Graduates may need transcripts or academic verification years after university. Others require notarization, apostille, or legalization for documents used abroad.</p><p>Foreign entrepreneurs face company registration and documentation requirements. Prospective students need guidance on university selection, admissions, Chinese Government Scholarship (CSC) and university scholarship applications, and X1/X2 student visas.</p><p>These goals share a practical challenge: identifying the right procedures, preparing appropriate documents, and finding reliable support in China.</p></div></details><details class="av2-disclosure"><summary>Why Global Attest Exists<span aria-hidden="true">+</span></summary><div class="av2-story-copy"><p>Global Attest is built around a simple idea: services and opportunities connected to China should be clearer and more manageable, wherever someone lives.</p><p>Based in Shenzhen, we support international clients with China document services, company formation and business support, and university admission and scholarship assistance.</p><p>Our document work covers Police Certificates, notarization, Apostille, consular legalization, academic verification, and transcripts. We also help entrepreneurs prepare registration documents and guide students through university, scholarship, and visa requirements. We explain the relevant steps and support preparation without promising institutional decisions.</p></div></details><details class="av2-disclosure"><summary>Understanding Every Client's Journey<span aria-hidden="true">+</span></summary><div class="av2-story-copy"><p>Some applicants have complete records and need a clear process. Others face missing old passports, incomplete accommodation registration, difficulty contacting former universities, or transcripts needed years after graduation.</p><p>An entrepreneur entering China has different priorities from a graduate applying for residence overseas or a student choosing a university.</p><p>We begin with the client's actual circumstances, rather than using one approach for every case. Careful materials review, clear communication, and practical coordination guide our work.</p></div></details><details class="av2-disclosure"><summary>More Than Documents and Applications<span aria-hidden="true">+</span></summary><div class="av2-story-copy"><p>Every application supports a personal or professional goal. A Police Certificate may help with immigration; a transcript may enable further study or employment. Company registration may start a business venture, while admission may begin a student's future in China.</p><p>These procedures connect to important decisions and milestones. We aim to make them more accessible through careful preparation and dependable communication, helping clients understand their options and the steps involved.</p><p>Whether you need records from your time in China, help establishing a business, or university application support, our team helps you prepare and move forward with greater confidence.</p></div></details></div></div></div></section><section id="who-we-help" class="av2-section av2-dark" aria-labelledby="who-we-help-title"><div class="container av2-shell"><p class="av2-kicker">WHO WE HELP</p><h2 id="who-we-help-title">Supporting Individuals and Businesses Worldwide</h2><p class="av2-lead">Support for different goals, grounded in the documents and requirements of each individual case.</p><div class="av2-help-grid"><article><i class="fa-solid fa-user" aria-hidden="true"></i><div><h3>Individuals</h3><p>Immigration applicants, former China residents, international professionals and families requiring China-related documents.</p></div></article><article><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><div><h3>Students & Graduates</h3><p>Academic verification, transcript-related services, CHSI / CSSD support, WES assistance and study-in-China applications.</p></div></article><article><i class="fa-solid fa-building" aria-hidden="true"></i><div><h3>Businesses</h3><p>Foreign investors, entrepreneurs, companies, law firms and organizations requiring China-related document or business support.</p></div></article></div></div></section><section id="how-we-work" class="av2-section " aria-labelledby="how-we-work-title"><div class="container av2-shell"><p class="av2-kicker">HOW WE WORK</p><h2 id="how-we-work-title">A Simple and Transparent Process</h2><p class="av2-lead">A practical process across our services. The exact steps depend on the case.</p><ol class="av2-steps"><li><span class="av2-step-number">01</span><h3>Consultation</h3><p>We discuss your goals, circumstances, and the support you need.</p></li><li><span class="av2-step-number">02</span><h3>Document Review</h3><p>We review the relevant requirements and identify the documents needed for your case.</p></li><li><span class="av2-step-number">03</span><h3>Application &amp; Coordination</h3><p>We assist with preparation and coordinate applicable procedures with relevant institutions.</p></li><li><span class="av2-step-number">04</span><h3>Updates &amp; Follow-up</h3><p>We provide progress updates and explain the next steps.</p></li><li><span class="av2-step-number">05</span><h3>Document Delivery</h3><p>We coordinate document delivery where applicable and confirm the available delivery options.</p></li></ol><p class="av2-note">Processing timelines depend on document completeness, relevant authority requirements and the specific service. Decisions and outcomes are determined by the relevant institutions and authorities.</p></div></section><section id="why-global-attest" class="av2-section av2-light" aria-labelledby="why-global-attest-title"><div class="container av2-shell"><p class="av2-kicker">WHY CHOOSE GLOBAL ATTEST</p><h2 id="why-global-attest-title">Reliable Support for Your China-Related Procedures</h2><div class="av2-advantages"><article><i class="fa-solid fa-gem" aria-hidden="true"></i><div><h3>China-Related Document Expertise</h3><p>We review available materials, identify documentation gaps, and explain requirements clearly so clients understand what needs to be prepared before proceeding.</p></div></article><article><i class="fa-solid fa-comments" aria-hidden="true"></i><div><h3>Clear Communication</h3><p>Clear explanations of the relevant requirements, progress and next steps.</p></div></article><article><i class="fa-solid fa-sliders" aria-hidden="true"></i><div><h3>Tailored Service Coordination</h3><p>We begin with your circumstances and available documents, with practical coordination in China where needed.</p></div></article><article><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><div><h3>Privacy & Confidentiality</h3><p>Careful handling of the personal information and documents provided for your case.</p></div></article></div><details class="av2-disclosure av2-extra"><summary>More about our approach <span aria-hidden="true">+</span></summary><div class="av2-original-benefits"><article>
+<i aria-hidden="true" class="fa-solid fa-folder-open"></i>
 <h3>Experience With Complex Cases</h3>
 <p>We assist with missing historical documents, incomplete residence records, and academic files that are difficult to obtain years after graduation.</p>
-</article>
-<article>
-<i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+</article><article>
+<i aria-hidden="true" class="fa-solid fa-location-dot"></i>
 <h3>China-Based Coordination</h3>
 <p>Being based in China allows our team to communicate and coordinate with relevant institutions and service providers as each case requires.</p>
-</article>
-<article>
-<i class="fa-solid fa-globe" aria-hidden="true"></i>
+</article><article>
+<i aria-hidden="true" class="fa-solid fa-globe"></i>
 <h3>Support for Overseas Clients</h3>
 <p>Our services are designed for clients living outside China who still need documents, business registration, or education-related support here.</p>
-</article>
-<article>
-<i class="fa-solid fa-file-circle-check" aria-hidden="true"></i>
+</article><article>
+<i aria-hidden="true" class="fa-solid fa-file-circle-check"></i>
 <h3>Careful Document Review</h3>
 <p>We review available materials, identify documentation gaps, and explain requirements clearly so clients understand what needs to be prepared before proceeding.</p>
-</article>
-</div>
-</div>
-</section>
-
-<section class="ga-about-section" aria-labelledby="work-title">
-<div class="container">
-<p class="ga-about-kicker">OUR PROCESS</p>
-<h2 id="work-title">How We Work</h2>
-<p class="ga-about-subtitle">A practical process across our services. The exact steps depend on the case.</p>
-<div class="ga-about-steps">
-<article class="ga-about-step">
-<div class="ga-about-step-top"><span>01</span><i class="fa-solid fa-clipboard-list" aria-hidden="true"></i></div>
-<h3>Initial Consultation</h3>
-<p>We discuss your goals, circumstances, and the support you need.</p>
-</article>
-<article class="ga-about-step">
-<div class="ga-about-step-top"><span>02</span><i class="fa-solid fa-file-circle-check" aria-hidden="true"></i></div>
-<h3>Requirements &amp; Document Review</h3>
-<p>We review the relevant requirements and identify the documents needed for your case.</p>
-</article>
-<article class="ga-about-step">
-<div class="ga-about-step-top"><span>03</span><i class="fa-solid fa-building-columns" aria-hidden="true"></i></div>
-<h3>Application Preparation &amp; Coordination</h3>
-<p>We assist with preparation and coordinate applicable procedures with relevant institutions.</p>
-</article>
-<article class="ga-about-step">
-<div class="ga-about-step-top"><span>04</span><i class="fa-solid fa-paper-plane" aria-hidden="true"></i></div>
-<h3>Updates &amp; Next Steps</h3>
-<p>We provide progress updates and explain the next steps, including document delivery where applicable.</p>
-</article>
-</div>
-</div>
-</section>
-
-<section class="ga-about-section ga-about-muted" id="our-team" aria-labelledby="team-title">
-<div class="container">
-<p class="ga-about-kicker">THE PEOPLE BEHIND YOUR CASE</p>
-<h2 id="team-title">Meet Our Team</h2>
-<div class="ga-about-team-grid">
-<article class="ga-about-person">
-<img src="assets/images/team-grace-chang.jpg" alt="Grace CHANG, Immigration Documentation and International Case Assessment Specialist" width="600" height="900" loading="lazy" decoding="async">
-<div class="ga-about-person-body">
-<h3>Grace CHANG</h3>
-<p class="ga-about-role">Immigration Documentation &amp; International Case Assessment Specialist</p>
-<p>Grace CHANG supports clients who need China-issued documents for immigration and residence applications overseas. She handles document planning, case assessment, and preparation based on destination requirements, including permanent residence, skilled migration, family sponsorship, employment visas, and citizenship pathways. She reviews the purpose of each application and helps clients understand the materials relevant to their situation, including files intended for Canada, the United States, Australia, New Zealand, the United Kingdom, Spain, and other destinations.</p>
-</div>
-</article>
-<article class="ga-about-person">
-<img src="assets/images/team-alina-xiao.jpg" alt="Alina XIAO, China Business Setup and Foreign Investment Specialist" width="600" height="900" loading="lazy" decoding="async">
-<div class="ga-about-person-body">
-<h3>Alina XIAO</h3>
-<p class="ga-about-role">China Business Setup &amp; Foreign Investment Specialist</p>
-<p>Alina XIAO supports foreign entrepreneurs, overseas companies, and international investors preparing to establish a business in China. Her work includes company registration planning, WFOE documentation, licensing coordination, and cross-border compliance. She helps clients understand the documentation associated with entering the Chinese market and preparing a business structure. Alongside business setup projects, she also assists applicants who need China Police Certificates, apostille, legalization, and related documents for immigration, employment, or international business purposes.</p>
-</div>
-</article>
-<article class="ga-about-person">
-<img src="assets/images/team-kris-li.jpg" alt="Kris LI, Documentation Quality and Verification Specialist" width="600" height="900" loading="lazy" decoding="async">
-<div class="ga-about-person-body">
-<h3>Kris LI</h3>
-<p class="ga-about-role">Documentation Quality &amp; Verification Specialist</p>
-<p>Kris LI focuses on document verification, quality control, and application readiness across China-related authentication and compliance cases. He reviews supporting materials, checks identity and document details, and flags inconsistencies that may need clarification. He organizes files before submission or delivery so the available information is presented consistently. This review supports immigration, academic, employment, and business documentation, and is intended to reduce avoidable clarification requests while keeping attention on the requirements of each case.</p>
-</div>
-</article>
-</div>
-<a class="ga-about-text-link ga-about-reviews" href="reviews-en.html">Read Client Reviews →</a>
-</div>
-</section>
-
-<section class="ga-about-section" aria-labelledby="cases-title">
-<div class="container">
-<p class="ga-about-kicker">REAL CLIENT EXPERIENCES</p>
-<h2 id="cases-title">Real Cases</h2>
-<p class="ga-about-section-lead">Selected examples of China Police Certificate work. Details are anonymized.</p>
-<div class="ga-about-case-grid">
-<article class="ga-about-case">
+</article></div></details></div></section><section id="real-cases" class="av2-section " aria-labelledby="real-cases-title"><div class="container av2-shell"><p class="av2-kicker">REAL CASE EXPERIENCES</p><h2 id="real-cases-title">Practical Coordination, Real Cases</h2><p class="av2-lead">Selected examples of China Police Certificate work. Details are anonymized.</p><div class="av2-case-grid"><article class="ga-about-case">
 <p class="ga-about-kicker">SHANGHAI · ANONYMIZED CASE SUMMARY</p>
 <h3>Shanghai Police Certificate</h3>
 <p><strong>Challenge:</strong> Former visa, residence permit, and temporary registration copies were unavailable.</p>
 <p><strong>Result:</strong> The China PCC and notarized English translation were completed after review of the available documents and local coordination.</p>
 <a class="ga-about-text-link" href="case-shanghai-pcc-missing-residence-records.html">View Case Study →</a>
-</article>
-<article class="ga-about-case">
+</article><article class="ga-about-case">
 <p class="ga-about-kicker">GUANGZHOU · ANONYMIZED CASE SUMMARY</p>
 <h3>Guangzhou Police Certificate</h3>
 <p><strong>Challenge:</strong> The Temporary Residence Registration Form was missing.</p>
 <p><strong>Result:</strong> A replacement registration form was obtained first. The China PCC and notarized English translation were then completed.</p>
 <a class="ga-about-text-link" href="case-guangzhou-pcc-no-registration-form.html">View Case Study →</a>
-</article>
-<article class="ga-about-case">
+</article><article class="ga-about-case">
 <p class="ga-about-kicker">SHIYAN · ANONYMIZED CASE SUMMARY</p>
 <h3>Shiyan Police Certificate</h3>
 <p><strong>Challenge:</strong> A former student needed coordination between the former school and the police station.</p>
 <p><strong>Result:</strong> After school and police-station coordination, the China PCC and notarized English translation were completed.</p>
 <a class="ga-about-text-link" href="case-shiyan-pcc-former-student.html">View Case Study →</a>
-</article>
-</div>
-<p class="ga-about-limit">These summaries reflect completed service records, not customer quotations. Requirements and outcomes vary by city and individual circumstances; past cases do not guarantee the same result.</p>
-<a class="ga-about-text-link" href="cases-en.html">Explore More Cases →</a>
-</div>
-</section>
-
-<section class="ga-about-section ga-about-contact" aria-labelledby="contact-title">
-<div class="container">
-<div class="ga-about-contact-panel">
-<h2 id="contact-title">Let's Make Your Next Step Easier</h2>
-<p>Whether you need documents from China, assistance with company formation, or guidance on studying at a Chinese university, our team can help you review the available options.</p>
-<div class="ga-about-buttons">
-<a class="btn btn-success rounded-pill px-4 fw-semibold" href="contact-en.html" data-ga-event="contact_click" data-ga-label="about_contact_team">Contact Our Team</a>
-<a class="btn btn-outline-success rounded-pill px-4 fw-semibold" href="https://wa.me/8617620130150" target="_blank" rel="noopener noreferrer" data-ga-event="whatsapp_click" data-ga-label="about_contact_whatsapp">Chat on WhatsApp</a>
-</div>
-</div>
-</div>
-</section>
-</main>
-<footer class="ga-footer" aria-label="Global Attest footer">
+</article></div><p class="ga-about-limit">These summaries reflect completed service records, not customer quotations. Requirements and outcomes vary by city and individual circumstances; past cases do not guarantee the same result.</p><a class="ga-about-text-link" href="cases-en.html">Explore More Cases →</a></div></section><section id="client-experiences" class="av2-section av2-light" aria-labelledby="client-experiences-title"><div class="container av2-shell"><p class="av2-kicker">CLIENT EXPERIENCES</p><h2 id="client-experiences-title">Hear from Our Clients</h2><div class="av2-reviews-copy"><p>Read published client experiences on our Reviews page or visit our Trustpilot profile to learn more about working with Global Attest.</p><div class="av2-review-links"><a href="reviews-en.html">Read Client Reviews <span aria-hidden="true">→</span></a><a href="https://www.trustpilot.com/review/globalattest.com" target="_blank" rel="noopener">Visit our Trustpilot profile <span aria-hidden="true">↗</span></a></div></div></div></section><section id="company-information" class="av2-section " aria-labelledby="company-information-title"><div class="container av2-shell"><p class="av2-kicker">COMPANY INFORMATION</p><h2 id="company-information-title">Based in Shenzhen, Supporting International Clients</h2><div class="av2-company-grid"><div><p>Global Attest is a service brand based in Shenzhen, China. We support international clients with China-related document services, company formation and business support, and university admission and scholarship assistance.</p><p>Global Attest is operated by <span lang="zh-CN">深圳市环球学旅教育科技有限公司</span>, a company registered in Shenzhen, China.</p><p><a href="mailto:chinaattest@gmail.com">chinaattest@gmail.com</a><br><a href="https://wa.me/8617620130150">WhatsApp: +86 176 2013 0150</a></p><a class="ga-about-text-link" href="wfoe-china.html">Explore our China business setup support →</a></div><div class="ga-about-company-card">
+<h3>Company Information</h3>
+<dl>
+<div><dt>Brand Name</dt><dd>Global Attest</dd></div>
+<div><dt>Registered Company Name</dt><dd lang="zh-CN">深圳市环球学旅教育科技有限公司</dd></div>
+<div><dt>Location</dt><dd>Shenzhen, Guangdong, China</dd></div>
+<div><dt>Business Focus</dt><dd>Document Services, Company Formation &amp; Education Support</dd></div>
+</dl>
+</div></div></div></section><section id="consultation" class="av2-section av2-final" aria-labelledby="consultation-title"><div class="container av2-shell"><p class="av2-kicker">CONTACT OUR TEAM</p><h2 id="consultation-title">Let's Discuss Your Needs</h2><p>Tell us about your China-related document requirements. Our team will help you understand the available services, required information, and next steps.</p><div class="av2-actions"><a class="av2-btn av2-primary" href="contact-en.html" data-ga-event="contact_click" data-ga-label="content_contact_click">Get a Free Consultation <span aria-hidden="true">→</span></a><a class="av2-btn av2-whatsapp" href="https://wa.me/8617620130150" target="_blank" rel="noopener" data-ga-event="whatsapp_click" data-ga-label="content_whatsapp_click"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a></div></div></section></main><footer class="ga-footer" aria-label="Global Attest footer">
   <div class="ga-footer-shell">
     <div class="ga-footer-top">
       <div class="ga-footer-brand">
@@ -1347,5 +1150,6 @@ html[lang="en"] strong{
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/main.js"></script>
 <a class="wa-float" href="https://wa.me/8617620130150" rel="noopener" target="_blank"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+<script src="assets/about-v2/whatsapp-safe-position.js" defer></script>
 </body>
 </html>
