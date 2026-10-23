@@ -1,0 +1,174 @@
+/* About Us V2. All content rules are isolated to main.about-v2.
+   Original navigation component and Footer retain their shared rules. */
+html[lang=en] body .about-v2{--av2-navy:#031b37;--av2-ink:#092449;--av2-blue:#076bfa;--av2-muted:#5b7190;--av2-line:#dfe9f5;background:#fff;color:var(--av2-ink);font-family:"Source Sans 3",Arial,sans-serif}
+html[lang=en] body .about-v2 :is(h1,h2,h3,h4,p,li,a,span,summary,strong,dt,dd){font-family:"Source Sans 3",Arial,sans-serif!important}
+html[lang=en] body .about-v2 :is(h1,h2,h3,h4){font-weight:600!important;letter-spacing:-.025em!important;line-height:1.18!important;color:var(--av2-ink)}
+html[lang=en] body .about-v2 h2{font-size:clamp(28px,2.5vw,36px);margin:0 0 18px}
+html[lang=en] body .about-v2 h3{font-size:21px;margin:0 0 12px}
+html[lang=en] body .about-v2 p{font-size:17px;line-height:1.65!important;color:var(--av2-muted);margin:0 0 17px}
+.about-v2 a{color:#0564d3;text-underline-offset:4px}
+.about-v2 a:hover{color:#004baf}
+.about-v2 :is(a,summary):focus-visible{outline:3px solid #1488ff;outline-offset:4px}
+.about-v2 .av2-section{padding:52px 0}
+html[lang=en] body .about-v2 .av2-kicker{font-size:12px;line-height:1.4!important;color:#0878f6;font-weight:600;letter-spacing:.13em!important;margin:0 0 11px;text-transform:uppercase}
+.about-v2 .av2-lead{max-width:86ch}
+.about-v2 .av2-light{background:linear-gradient(120deg,#f7fbff,#eff7ff)}
+.about-v2 .av2-hero{height:390px;position:relative;isolation:isolate;overflow:hidden;background:#031b37;display:flex;align-items:center}
+.about-v2 .av2-hero-image{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:center}
+.about-v2 .av2-hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#031b37e6, #031b37b3 29%,#031b3740 49%,transparent 65%)}
+.about-v2 .av2-hero-shell{width:89%;max-width:1320px;padding:0;margin-inline:auto}
+.about-v2 .av2-hero-copy{max-width:670px;width:52%}
+html[lang=en] body .about-v2 .av2-hero h1{color:#fff;font-size:clamp(36px,3.3vw,50px)!important;line-height:1.08!important;letter-spacing:-.035em!important;margin:0 0 20px}
+html[lang=en] body .about-v2 .av2-hero-copy>p:not(.av2-kicker){color:#dfebfa;font-size:17px;line-height:1.5!important;max-width:600px}
+html[lang=en] body .about-v2 .av2-hero .av2-kicker{color:#5ed5ff}
+.about-v2 .av2-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:23px}
+html[lang=en] body .about-v2 .av2-btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;padding:12px 20px;min-height:48px;border-radius:6px;font-size:15px;font-weight:600;line-height:1.3!important;text-decoration:none;color:#fff!important;border:1px solid #52769a;transition:background-color .15s}
+.about-v2 .av2-btn.av2-primary{background:#076bfa;border-color:#076bfa}
+.about-v2 .av2-btn.av2-primary:hover{background:#0057d4}
+.about-v2 .av2-whatsapp{background:#031b3799}
+.about-v2 .av2-whatsapp:hover{background:#173d60}
+.about-v2 .av2-whatsapp i{font-size:19px}
+.about-v2 .av2-who{padding-block:38px}
+.about-v2 .av2-who-grid{display:grid;grid-template-columns:1.5fr 1.05fr .9fr;gap:32px;align-items:center}
+html[lang=en] body .about-v2 .av2-who-grid h3{font-size:25px}
+html[lang=en] body .about-v2 .av2-who-grid p{font-size:16px;line-height:1.6!important}
+.about-v2 .av2-brand-logo{display:block;width:100%;height:auto}
+.about-v2 .av2-who-points{list-style:none;margin:0;padding:0 0 0 24px;border-left:1px solid #dfe9f5;display:grid;gap:22px}
+.about-v2 .av2-who-points li{display:flex;gap:15px;align-items:flex-start}
+.about-v2 .av2-who-points i{font-size:27px;color:#0784ff;width:30px;flex:none;margin-top:3px}
+.about-v2 .av2-who-points strong{display:block;font-size:16px;line-height:1.3!important}
+.about-v2 .av2-who-points span{display:block;color:var(--av2-muted);font-size:14px;line-height:1.45!important;margin-top:4px}
+.about-v2 .av2-services-section{background:linear-gradient(#f3f8fe,#fff)}
+.about-v2 .av2-services{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;margin-top:26px}
+.about-v2 .av2-services article{min-width:0;background:#fff;border:1px solid #e4edf7;border-radius:9px;padding:23px 18px;box-shadow:0 5px 16px #173f6e05;display:flex;flex-direction:column;transition:border-color .15s,box-shadow .15s}
+.about-v2 .av2-services article:hover{border-color:#a3ccff;box-shadow:0 7px 20px #153f7010}
+.about-v2 .av2-services i{font-size:28px;color:#077cff;margin-bottom:22px}
+html[lang=en] body .about-v2 .av2-services h3{font-size:18px;line-height:1.25!important;margin-bottom:13px}
+html[lang=en] body .about-v2 .av2-services p{font-size:15px;line-height:1.5!important;flex:1}
+.about-v2 .av2-services a{min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:14px;text-decoration:none;font-weight:600}
+.about-v2 .av2-related{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:18px}
+.about-v2 .av2-related a{display:inline-flex;align-items:center;min-height:44px;font-size:15px}
+.about-v2 .av2-disclosure{border-top:1px solid #dbe7f4;margin-top:20px}
+.about-v2 summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:56px;padding:15px 0;color:#163b66;font-size:17px;line-height:1.5!important;font-weight:600}
+.about-v2 summary::-webkit-details-marker{display:none}
+.about-v2 summary>span{font-size:23px;font-weight:400;color:#157bdf;flex:none}
+.about-v2 details[open]>summary>span{transform:rotate(45deg)}
+.about-v2 .av2-original-services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;padding-block:18px}
+.about-v2 .av2-original-services ul{padding-left:20px;color:var(--av2-muted);font-size:16px;line-height:1.7}
+.about-v2 .av2-original-services>.ga-about-limit{grid-column:1/-1}
+.about-v2 .av2-team{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:23px;margin-top:25px;align-items:start}
+.about-v2 .av2-person{min-width:0;overflow:hidden;background:#fff;border:1px solid #e3ebf5;border-radius:8px;box-shadow:0 5px 16px #163b6a06}
+.about-v2 .av2-person>img{display:block;width:100%;height:auto;aspect-ratio:1.18;object-fit:cover;object-position:center 30%}
+.about-v2 .av2-person-body{padding:20px}
+html[lang=en] body .about-v2 .av2-person h3{font-size:22px;margin-bottom:7px}
+html[lang=en] body .about-v2 .av2-role{font-size:15px;line-height:1.35!important;color:#076bfa;margin-bottom:18px;min-height:61px}
+html[lang=en] body .about-v2 .av2-person-body>p:not(.av2-role),html[lang=en] body .about-v2 .av2-bio p{font-size:15px;line-height:1.65!important;margin-bottom:12px}
+.about-v2 .av2-bio summary{font-size:14px;min-height:44px;padding:8px 0}
+.about-v2 .av2-bio{border-top:1px solid #e6eef7;padding-top:5px;margin-top:14px}
+.about-v2 .av2-story-section{padding-top:22px}
+.about-v2 .av2-story-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 45px}
+.about-v2 .av2-story-grid details{margin-top:12px;align-self:start}
+.about-v2 .av2-story-copy{padding:6px 0 20px;max-width:70ch}
+html[lang=en] body .about-v2 .av2-story-copy p{font-size:16px;line-height:1.75!important}
+.about-v2 .ga-story-closing{padding-top:22px;max-width:80ch}
+.about-v2 .av2-dark{background:radial-gradient(ellipse at 80% 0,#104a7b,#031b37 75%)}
+html[lang=en] body .about-v2 .av2-dark :is(h2,h3){color:#fff}
+html[lang=en] body .about-v2 .av2-dark p{color:#c9dbed}
+html[lang=en] body .about-v2 .av2-dark .av2-kicker{color:#54d1ff}
+.about-v2 .av2-help-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:25px}
+.about-v2 .av2-help-grid article{padding:26px;display:flex;gap:20px;border:1px solid #49769c80;border-radius:8px;background:#0d315160;min-width:0}
+.about-v2 .av2-help-grid i{font-size:31px;color:#119aff;margin-top:3px;flex:none}
+html[lang=en] body .about-v2 .av2-help-grid h3{font-size:21px}
+html[lang=en] body .about-v2 .av2-help-grid p{font-size:16px;line-height:1.55!important;margin:0}
+.about-v2 .av2-steps{list-style:none;padding:0;margin:30px 0 0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:26px}
+.about-v2 .av2-steps li{min-width:0;border-top:1px solid #93cfff;padding-top:20px}
+.about-v2 .av2-step-number{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#0879ff;color:#fff;font-size:19px;margin-bottom:19px}
+html[lang=en] body .about-v2 .av2-steps h3{font-size:19px}
+html[lang=en] body .about-v2 .av2-steps p{font-size:15px;line-height:1.5!important}
+html[lang=en] body .about-v2 .av2-note{font-size:14px;line-height:1.6!important;margin-top:25px;max-width:95ch}
+.about-v2 .av2-advantages{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;margin-top:26px}
+.about-v2 .av2-advantages article{min-width:0;background:#fff;padding:23px 18px;display:flex;gap:15px;border-radius:7px}
+.about-v2 .av2-advantages i{font-size:27px;color:#087cff;flex:none;margin-top:4px}
+html[lang=en] body .about-v2 .av2-advantages h3{font-size:18px;margin-bottom:8px}
+html[lang=en] body .about-v2 .av2-advantages p{font-size:15px;line-height:1.5!important;margin:0}
+.about-v2 .av2-original-benefits{display:grid;grid-template-columns:1fr 1fr;gap:25px;padding-block:20px}
+.about-v2 .av2-original-benefits i{color:#087cff;font-size:24px;margin-bottom:15px}
+.about-v2 .av2-original-benefits p{font-size:16px!important}
+.about-v2 .av2-case-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:27px;margin-top:27px}
+.about-v2 .av2-case-grid article{border-top:2px solid #afd5fc;padding:23px 0 6px;min-width:0}
+html[lang=en] body .about-v2 .av2-case-grid .ga-about-kicker{font-size:11px;letter-spacing:.07em!important;color:#3a70ab}
+html[lang=en] body .about-v2 .av2-case-grid p{font-size:16px;line-height:1.6!important}
+.about-v2 .av2-case-grid a,.about-v2 .ga-about-text-link{display:inline-flex;align-items:center;min-height:44px;font-weight:600;font-size:15px;text-decoration:none}
+html[lang=en] body .about-v2 .ga-about-limit{font-size:14px;line-height:1.6!important;margin-top:22px}
+.about-v2 .av2-reviews-copy{max-width:90ch}
+.about-v2 .av2-review-links{display:flex;gap:15px 35px;flex-wrap:wrap}
+.about-v2 .av2-review-links a{display:inline-flex;gap:18px;align-items:center;min-height:44px;font-weight:600}
+.about-v2 .av2-company-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;margin-top:26px}
+.about-v2 .ga-about-company-card{background:#f3f8ff;border-radius:8px;padding:27px}
+.about-v2 .ga-about-company-card dl{margin:20px 0 0}
+.about-v2 .ga-about-company-card dl>div{padding:12px 0;border-top:1px solid #dae7f5}
+.about-v2 .ga-about-company-card dt{color:#4c6a8c;font-size:13px;margin-bottom:5px}
+.about-v2 .ga-about-company-card dd{color:#0a2c51;font-size:16px;margin:0;line-height:1.6!important;overflow-wrap:anywhere}
+.about-v2 .av2-final{background:linear-gradient(105deg,#031b37,#0b3a69);text-align:center}
+html[lang=en] body .about-v2 .av2-final h2{color:#fff;font-size:36px}
+html[lang=en] body .about-v2 .av2-final p{color:#c1d7ee;max-width:72ch;margin-inline:auto}
+html[lang=en] body .about-v2 .av2-final .av2-kicker{color:#6cdcff}
+.about-v2 .av2-final .av2-actions{justify-content:center}
+html[lang=en] body .about-v2 i.fa-solid{font-family:"Font Awesome 6 Free"!important}
+html[lang=en] body .about-v2 i.fa-brands{font-family:"Font Awesome 6 Brands"!important}
+/* Only the page's existing floating link is managed; Footer appearance is untouched. */
+html[lang=en] body:has(>main.about-v2)>a.wa-float[data-ga-wa-safe]{bottom:var(--ga-wa-safe-bottom,18px)!important;transition-property:opacity}
+html[lang=en] body:has(>main.about-v2)>a.wa-float[data-ga-wa-suppressed]{visibility:hidden;pointer-events:none}
+@media(min-width:1600px){.about-v2 .av2-hero{height:430px}}
+@media(max-width:1199.98px){.about-v2 .av2-services{grid-template-columns:repeat(3,minmax(0,1fr))}.about-v2 .av2-who-grid{grid-template-columns:1.4fr 1fr;gap:28px}.about-v2 .av2-who-points{grid-column:1/-1;display:flex;border:0;padding:20px 0 0;border-top:1px solid #dfe9f5;justify-content:space-between}.about-v2 .av2-hero-copy{width:60%}.about-v2 .av2-hero{height:440px}.about-v2 .av2-team{gap:18px}.about-v2 .av2-person-body{padding:17px}.about-v2 .av2-advantages{grid-template-columns:1fr 1fr}.about-v2 .av2-help-grid article{display:block;padding:22px}.about-v2 .av2-help-grid i{display:block;margin-bottom:20px}}
+@media(max-width:991.98px){.about-v2 .av2-team{grid-template-columns:1fr 1fr;gap:24px}.about-v2 .av2-person>img{aspect-ratio:1.25;object-position:center 30%}.about-v2 .av2-person-body{padding:22px}.about-v2 .av2-role{min-height:41px!important}.about-v2 .av2-hero-copy{width:67%}.about-v2 .av2-hero-image{object-position:62% center}.about-v2 .av2-company-grid{gap:30px}.about-v2 .av2-steps{gap:18px}.about-v2 .av2-steps h3{font-size:17px!important}}
+@media(max-width:767.98px){
+.about-v2 .av2-section{padding-block:37px}
+.about-v2 .av2-hero{height:auto;min-height:0;display:block;padding:29px 0 210px}
+.about-v2 .av2-hero-shell{width:calc(100% - 32px)}
+.about-v2 .av2-hero-copy{width:100%;max-width:none}
+html[lang=en] body .about-v2 .av2-hero h1{font-size:36px!important;line-height:1.08!important;margin-bottom:17px}
+html[lang=en] body .about-v2 .av2-hero-copy>p:not(.av2-kicker){font-size:16px;line-height:1.55!important}
+.about-v2 .av2-hero-image{height:230px;top:auto;bottom:0;object-position:right center;mask-image:linear-gradient(180deg,transparent,#000 24%)}
+.about-v2 .av2-hero:after{display:none}
+.about-v2 .av2-actions{gap:10px;margin-top:20px}
+.about-v2 .av2-hero .av2-actions,.about-v2 .av2-final .av2-actions{display:grid;grid-template-columns:1fr}
+.about-v2 .av2-btn{min-height:47px!important;padding:12px 16px!important}
+.about-v2 .av2-who-grid,.about-v2 .av2-story-grid,.about-v2 .av2-help-grid,.about-v2 .av2-company-grid{grid-template-columns:1fr}
+.about-v2 .av2-who-grid{gap:24px}.about-v2 .av2-brand-logo{max-width:370px;margin:0 auto}
+.about-v2 .av2-who-points{display:grid;gap:20px}
+.about-v2 .av2-services{grid-template-columns:1fr 1fr;gap:14px}
+.about-v2 .av2-services article{padding:21px 17px}
+.about-v2 .av2-original-services,.about-v2 .av2-original-benefits,.about-v2 .av2-case-grid{grid-template-columns:1fr}
+.about-v2 .av2-team{grid-template-columns:1fr;gap:24px}
+.about-v2 .av2-person>img{aspect-ratio:1.13;object-position:center 30%}
+.about-v2 .av2-role{min-height:0!important;margin-bottom:16px!important}
+.about-v2 .av2-person-body{padding:22px}
+.about-v2 .av2-help-grid{gap:15px}.about-v2 .av2-help-grid article{display:flex;gap:20px}.about-v2 .av2-help-grid i{margin-bottom:0}
+.about-v2 .av2-steps{display:block;margin-top:25px}.about-v2 .av2-steps li{border-top:0;border-left:1px solid #abd5ff;padding:0 0 23px 65px;position:relative;margin-left:21px;min-height:112px}
+.about-v2 .av2-steps li:last-child{border:0;padding-bottom:0}
+.about-v2 .av2-step-number{position:absolute;left:-21px;top:0;margin:0}
+html[lang=en] body .about-v2 .av2-steps h3{font-size:20px!important}
+.about-v2 .av2-advantages{grid-template-columns:1fr;gap:14px}
+.about-v2 .av2-company-grid{gap:25px}.about-v2 .ga-about-company-card{padding:23px}
+.about-v2 .av2-final h2{font-size:30px!important}.about-v2 .av2-final{padding-bottom:50px}
+}
+@media(max-width:359.98px){html[lang=en] body .about-v2 .av2-hero h1{font-size:32px!important}.about-v2 .av2-services{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.about-v2 :is(article,a){transition:none}}
+
+/* User-supplied decorative document-services scene, not an actual-premises photo.
+   Hero-only presentation: preserve all text and every other section unchanged. */
+.about-v2 .av2-hero-image{object-fit:contain;object-position:right bottom}
+.about-v2 .av2-hero:after{background:linear-gradient(90deg,#031b37e6 0%,#031b37b3 29%,#031b3759 45%,transparent 62%)}
+@media(max-width:767.98px){
+.about-v2 .av2-hero{padding-bottom:calc(37.5vw + 20px)}
+.about-v2 .av2-hero-image{height:auto;object-fit:contain;object-position:center bottom;mask-image:none}
+}
+
+/* Final mobile-only rhythm adjustment: keep typography, CTA size and image intact. */
+@media(max-width:767.98px){
+.about-v2 .av2-hero{padding-top:23px;padding-bottom:calc(37.5vw + 12px)}
+html[lang=en] body .about-v2 .av2-hero h1{margin-bottom:14px}
+html[lang=en] body .about-v2 .av2-hero-copy>p:not(.av2-kicker){line-height:1.45!important;margin-bottom:14px}
+.about-v2 .av2-hero .av2-actions{margin-top:14px;gap:8px}
+}
