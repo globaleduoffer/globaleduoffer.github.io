@@ -119,13 +119,7 @@
   ]
 }
 </script>
-<style>
-@media (min-width: 768px) {
-  .legalization-service-steps {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-</style>
+
 <link href="assets/globalattest-layout.css" rel="stylesheet">
 
 <style id="navbar-whatsapp-pill-fix">
@@ -134,9 +128,15 @@
 @media(max-width:991.98px){.navbar .nav-wa-text{width:100%!important;}}
 </style>
 <link rel="stylesheet" href="assets/globalattest-footer-phase1.css">
+<link rel="stylesheet" href="assets/home-v2/home-en-v2.css">
+<link rel="stylesheet" href="assets/embassy-v2/china-embassy-consular-legalization-v2.css">
+<link rel="preload" as="image" href="assets/images/embassy-v2/international-flags-world-connections.webp">
+<script src="assets/globalattest-round1.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VDC1P9N84P"></script>
+<script defer src="assets/embassy-v2/whatsapp-safe-position.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-xl ga-home-v2-nav" aria-label="Main navigation">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="/">
 <img alt="Global Attest Logo" src="assets/images/logo-global-attest.png" style="height:36px; width:auto; max-height:36px;" decoding="async" width="1211" height="198" loading="eager">
@@ -146,10 +146,16 @@
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="nav">
-<ul class="navbar-nav ms-auto align-items-lg-center">
-<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+<ul class="navbar-nav ms-auto align-items-xl-center">
+<!-- Home -->
+<li class="nav-item">
+<a class="nav-link" href="/">Home</a>
+</li>
+<!-- Services -->
 <li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" id="serviceDropdownEn" role="button">Services</a>
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="serviceDropdownEn" role="button">
+            Services
+          </a>
 <ul aria-labelledby="serviceDropdownEn" class="dropdown-menu services-dropdown-menu">
 <li><a class="dropdown-item" href="china-police-certificate.html">China Police Certificate (PCC)</a></li>
 <li><span class="dropdown-section-label">PCC by Country</span></li>
@@ -170,10 +176,11 @@
 <li><a class="dropdown-item" href="china-degree-apostille.html">China Degree Apostille</a></li>
 <li><span class="dropdown-section-label">Consular Legalization</span></li>
 <li><a class="dropdown-item" href="china-embassy-consular-legalization.html">Embassy / Consular Legalization</a></li>
-<li><a class="dropdown-item" href="study-in-china.html">Student Document Services</a></li>
+<li><a class="dropdown-item" href="study-in-china.html">Study in China</a></li>
 <li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
 </ul>
 </li>
+<!-- Resources -->
 <li class="nav-item dropdown">
 <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="resources.html" id="resourcesDropdownEn" role="button">Resources</a>
 <ul aria-labelledby="resourcesDropdownEn" class="dropdown-menu">
@@ -187,6 +194,7 @@
 <li><a class="dropdown-item" href="wes-evaluation-report-samples.html">WES Evaluation Samples</a></li>
 </ul>
 </li>
+<!-- Blog -->
 <li class="nav-item dropdown">
 <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="howToDropdownEn" role="button">Blog</a>
 <ul aria-labelledby="howToDropdownEn" class="dropdown-menu">
@@ -205,16 +213,26 @@
 <li><a class="dropdown-item" href="/china-academic-document-guides.html">Academic Document Guides</a></li><li><a class="dropdown-item" href="degree-verification.html">Degree Verification</a></li>
 <li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
 </ul>
+</li><!-- Other Menu -->
+<li class="nav-item">
+<a class="nav-link" href="cases-en.html">Cases</a>
 </li>
-<li class="nav-item"><a class="nav-link" href="cases-en.html">Cases</a></li>
-<li class="nav-item"><a class="nav-link" href="wfoe-china.html">Business Setup</a></li>
-<li class="nav-item"><a class="nav-link" href="about-en.html">About Us</a></li>
-<li class="nav-item"><a class="nav-link" href="reviews-en.html">Reviews</a></li>
+<li class="nav-item">
+<a class="nav-link" href="wfoe-china.html">Business Setup</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="about-en.html">About Us</a>
+</li><li class="nav-item">
+<a class="nav-link" href="reviews-en.html">Reviews</a>
+</li>
 </ul>
-<div class="d-flex flex-column flex-lg-row align-items-lg-center ms-lg-3 mt-3 mt-lg-0 gap-2">
-<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-en.html" onclick="return trackAndNavigate(event, 'contact_click', {event_category:'engagement', event_label:'navbar_contact', link_url:'contact-en.html'}, 'contact-en.html');">Contact</a>
+<!-- CTA + Language Switch -->
+<div class="v2-nav-actions d-flex flex-column flex-xl-row align-items-xl-center ms-lg-3 mt-3 mt-lg-0 gap-2">
+<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-en.html" onclick="return trackAndNavigate(event, 'contact_click', {event_category:'engagement', event_label:'navbar_contact', link_url:'/contact-en.html'}, 'contact-en.html');">
+          Contact
+        </a>
 <a class="nav-wa-text" href="https://wa.me/8617620130150" rel="noopener" target="_blank" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'navbar_whatsapp', link_url:'https://wa.me/8617620130150'}, 'https://wa.me/8617620130150', '_blank');">WhatsApp</a>
-<div class="ms-lg-2 d-flex gap-2">
+<div class="v2-nav-languages ms-lg-2 d-flex gap-2">
 <a class="lang-btn" href="/zh/">中文</a>
 <a class="lang-btn" href="/">EN</a>
 </div>
@@ -222,138 +240,65 @@
 </div>
 </div>
 </nav>
+<main class="embassy-v2"><header class="ev2-hero"><div aria-hidden="true" class="ev2-hero-picture"><img alt="" decoding="async" fetchpriority="high" height="764" src="assets/images/embassy-v2/international-flags-world-connections.webp" width="2058"/></div><div class="ev2-hero-shell"><div class="ev2-hero-grid"><div class="ev2-hero-copy"><p class="ev2-eyebrow">CHINA DOCUMENT LEGALIZATION SERVICES</p><h1>China Embassy &amp;<br/>Consular Legalization</h1><p class="ev2-hero-description">We assist with notarization, local authentication and embassy or consular legalization for Chinese documents, helping clients prepare documents for use overseas.</p><div class="ev2-actions"><a class="btn ev2-primary" data-ga-event="contact_click" data-ga-label="hero_contact" href="contact-en.html">Get a Free Consultation <span aria-hidden="true">→</span></a><a class="btn ev2-wa" data-ga-event="whatsapp_click" data-ga-label="hero_whatsapp" href="https://wa.me/8617620130150" rel="noopener" target="_blank"><i aria-hidden="true" class="fa-brands fa-whatsapp"></i> WhatsApp Us</a></div></div><div aria-hidden="true" class="ev2-hero-art"></div></div><ul class="ev2-highlights"><li><i aria-hidden="true" class="fa-solid fa-globe"></i><span><strong>Multiple Destination Countries</strong><small>Support for embassy and consular requirements</small></span></li><li><i aria-hidden="true" class="fa-solid fa-user-group"></i><span><strong>Professional and Reliable</strong><small>Guidance throughout the legalization process</small></span></li><li><i aria-hidden="true" class="fa-solid fa-list-check"></i><span><strong>Clear Process and Timelines</strong><small>From document preparation to final legalization</small></span></li><li><i aria-hidden="true" class="fa-solid fa-plane"></i><span><strong>International Delivery</strong><small>Worldwide courier options available</small></span></li></ul></div></header><section id="what-is-legalization" class="ev2-section ev2-intro"><div class="container ev2-body-shell"><div class="ev2-intro-grid"><div><p class="ev2-eyebrow">THE RIGHT ROUTE FOR YOUR DOCUMENTS</p><h2>What Is Embassy / Consular Legalization?</h2>
+<p>Traditional consular legalization may be required where the Apostille Convention does not apply between China and the destination country or does not cover the document, subject to applicable exemptions.</p>
+<p class="mt-3">The route may follow notarization, translation and another authentication stage before submission to the relevant embassy or consulate. Legalization generally confirms the preceding signature, seal or official capacity; it does not automatically prove that every statement in the underlying document is true.</p>
+<a class="ev2-text-link" href="#authentication-routes">Compare legalization and apostille <span aria-hidden="true">→</span></a></div><aside class="ev2-document-panel" aria-label="Requirements to confirm"><ul><li><i class="fa-solid fa-earth-asia" aria-hidden="true"></i><div><strong>Destination and intended use</strong><span>Check the route accepted for your document.</span></div></li><li><i class="fa-solid fa-list-check" aria-hidden="true"></i><div><strong>Document-specific preparation</strong><span>Notarization and translation may be separate steps.</span></div></li><li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><div><strong>Independent document assistance</strong><span>Acceptance is decided by the receiving organization.</span></div></li></ul></aside></div></div></section><section id="document-types" class="ev2-section ev2-documents"><div class="container ev2-body-shell"><p class="ev2-eyebrow">DOCUMENTS WE CAN HANDLE</p><h2>Documents We Can Assist With</h2><p>Eligibility and preparation vary by document, issuing location, destination requirements and the relevant embassy or consulate.</p><div class="ev2-document-grid"><article class="ev2-document-card"><i class="fa-solid fa-id-card" aria-hidden="true"></i><h3>Personal Documents</h3><ul class="mb-0"><li>Birth certificate</li><li>Marriage certificate</li><li>Divorce-related documents</li><li>Police clearance or no criminal record documents</li><li>Affidavits and declarations</li></ul></article><article class="ev2-document-card"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><h3>Academic Documents</h3><ul class="mb-0"><li>Degree certificate</li><li>Graduation certificate</li><li>Diploma</li><li>Academic transcript</li><li>Enrollment or attendance certificate</li></ul></article><article class="ev2-document-card"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><h3>Commercial Documents</h3><ul class="mb-0"><li>Company registration documents</li><li>Business licenses</li><li>Powers of attorney</li><li>Corporate resolutions</li><li>Eligible commercial agreements</li></ul></article><article class="ev2-document-card"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i><h3>Legal Documents</h3><p>Affidavits, declarations and powers of attorney, subject to the applicable document and authority requirements.</p></article><article class="ev2-document-card"><i class="fa-solid fa-ellipsis" aria-hidden="true"></i><h3>Other Documents</h3><h4>Notarized Documents</h4><ul class="mb-0"><li>Certified copies</li><li>Notarial certificates</li><li>Translations or supporting pages where required</li></ul></article></div></div></section><section id="our-process" class="ev2-section ev2-process"><div class="container ev2-body-shell"><p class="ev2-eyebrow">OUR SERVICE PROCESS</p><h2>A clear and straightforward process</h2><ol class="ev2-timeline"><li><span class="ev2-step-number">01</span><div class="ev2-step-copy"><i class="fa-solid fa-comments" aria-hidden="true"></i><h3>Confirm Requirements</h3><p>Confirm the destination, intended use and recipient’s current instructions.</p></div></li><li><span class="ev2-step-number">02</span><div class="ev2-step-copy"><i class="fa-solid fa-file-lines" aria-hidden="true"></i><h3>Prepare Documents</h3><p>Review original documents, copies, identification and supporting records.</p></div></li><li><span class="ev2-step-number">03</span><div class="ev2-step-copy"><i class="fa-solid fa-file-circle-check" aria-hidden="true"></i><h3>Notarization and Authentication</h3><p>Coordinate the preparation and authentication stages required for the document.</p></div></li><li><span class="ev2-step-number">04</span><div class="ev2-step-copy"><i class="fa-solid fa-building-columns" aria-hidden="true"></i><h3>Embassy / Consular Legalization</h3><p>Arrange the accepted submission route where consular legalization applies.</p></div></li><li><span class="ev2-step-number">05</span><div class="ev2-step-copy"><i class="fa-solid fa-plane" aria-hidden="true"></i><h3>International Delivery</h3><p>Check completed document details and arrange courier options.</p></div></li></ol><p class="ev2-fine">Actual steps depend on the destination country, document type and current authority requirements. Not every case requires every stage.</p><details class="ev2-process-detail"><summary><h3>Typical Process</h3><span>View the detailed preparation steps</span><i class="fa-solid fa-plus" aria-hidden="true"></i></summary><div>
 
-<header class="resource-hero">
-  <div class="container resource-shell">
-    <div class="row align-items-center g-4">
-      <div class="col-lg-7">
-        <span class="resource-kicker"><i class="fa-solid fa-stamp" aria-hidden="true"></i> China Document Authentication</span>
-        <h1 class="resource-title">China Embassy &amp; Consular Legalization Services</h1>
-        <p class="resource-lead">Professional assistance with embassy and consular legalization for Chinese documents where traditional legalization may be required outside the Apostille Convention's applicable scope, subject to exemptions.</p>
-        <a class="btn btn-success rounded-pill px-4 fw-semibold" href="contact-en.html">Request a Document Review</a>
-      </div>
-      <div class="col-lg-5">
-        <img class="img-fluid rounded-4 shadow" src="WechatIMG642.jpg" alt="Chinese document review for embassy and consular legalization" decoding="async" loading="eager" fetchpriority="high" width="1000" height="677">
-      </div>
-    </div>
-  </div>
-</header>
+<p>The exact route may differ by document and authority, but a typical service review includes the following stages.</p>
+<ol class="resource-steps legalization-service-steps">
+<li><h3>Confirm the Destination and Purpose</h3><p class="mb-0">Check the destination country, intended use and current receiving-authority instructions.</p></li>
+<li><h3>Review the Chinese Document</h3><p class="mb-0">Identify the document type, issuing location, available original and supporting records.</p></li>
+<li><h3>Plan Notarization and Translation</h3><p class="mb-0">Confirm whether the route uses the original, a notarial certificate, a certified copy or an accepted translation format.</p></li>
+<li><h3>Complete the Required Authentication</h3><p class="mb-0">Coordinate the applicable authentication stage before consular submission, depending on the document and destination.</p></li>
+<li><h3>Submit to the Relevant Embassy or Consulate</h3><p class="mb-0">Arrange submission through the accepted channel and follow any current consular document requirements.</p></li>
+<li><h3>Review and Return the Completed Document</h3><p class="mb-0">Check visible names, dates, seals and certificate details before return or courier delivery.</p></li>
+</ol>
+</div></details></div></section><section id="destination-countries" class="ev2-section ev2-countries"><div class="container ev2-body-shell"><p class="ev2-eyebrow">DESTINATION FIRST</p><h2>Different destinations. The right document route.</h2><p class="ev2-country-intro">These are examples of destinations for a requirements review, not a list of countries that always require consular legalization. Treaty applicability, document type, intended use, exemptions and current instructions determine the route.</p><div class="ev2-country-grid"><article class="ev2-country"><span class="ev2-flag" role="img" aria-label="Qatar flag">🇶🇦</span><h3>Qatar</h3><p class="ev2-country-route">Confirm the consular route</p><p>Check the destination’s current requirements.</p><a href="contact-en.html" data-ga-event="contact_click" data-ga-label="destination_review">Review requirements <span aria-hidden="true">→</span></a></article><article class="ev2-country"><span class="ev2-flag" role="img" aria-label="United Arab Emirates flag">🇦🇪</span><h3>United Arab Emirates</h3><p class="ev2-country-route">Confirm the consular route</p><p>Check document category and submission rules.</p><a href="contact-en.html" data-ga-event="contact_click" data-ga-label="destination_review">Review requirements <span aria-hidden="true">→</span></a></article><article class="ev2-country"><span class="ev2-flag" role="img" aria-label="Saudi Arabia flag">🇸🇦</span><h3>Saudi Arabia</h3><p class="ev2-country-route">Check apostille applicability</p><p>Apostille may replace consular legalization within scope.</p><a href="contact-en.html" data-ga-event="contact_click" data-ga-label="destination_review">Review requirements <span aria-hidden="true">→</span></a></article><article class="ev2-country"><span class="ev2-flag" role="img" aria-label="Kuwait flag">🇰🇼</span><h3>Kuwait</h3><p class="ev2-country-route">Confirm the consular route</p><p>Check document preparation with the recipient.</p><a href="contact-en.html" data-ga-event="contact_click" data-ga-label="destination_review">Review requirements <span aria-hidden="true">→</span></a></article><article class="ev2-country"><span class="ev2-flag" role="img" aria-label="Thailand flag">🇹🇭</span><h3>Thailand</h3><p class="ev2-country-route">Check current and future rules</p><p>Treaty entry into force and the intended use matter.</p><a href="contact-en.html" data-ga-event="contact_click" data-ga-label="destination_review">Review requirements <span aria-hidden="true">→</span></a></article><article class="ev2-country"><span class="ev2-flag" role="img" aria-label="Viet Nam flag">🇻🇳</span><h3>Viet Nam</h3><p class="ev2-country-route">Check apostille applicability</p><p>Confirm treaty effect between China and the destination.</p><a href="contact-en.html" data-ga-event="contact_click" data-ga-label="destination_review">Review requirements <span aria-hidden="true">→</span></a></article><article class="ev2-country"><span class="ev2-flag" role="img" aria-label="Philippines flag">🇵🇭</span><h3>Philippines</h3><p class="ev2-country-route">Check apostille applicability</p><p>Confirm document scope and recipient instructions.</p><a href="contact-en.html" data-ga-event="contact_click" data-ga-label="destination_review">Review requirements <span aria-hidden="true">→</span></a></article><article class="ev2-country"><span class="ev2-flag" role="img" aria-label="Indonesia flag">🇮🇩</span><h3>Indonesia</h3><p class="ev2-country-route">Check apostille applicability</p><p>Confirm the accepted format before preparation.</p><a href="contact-en.html" data-ga-event="contact_click" data-ga-label="destination_review">Review requirements <span aria-hidden="true">→</span></a></article></div><p class="ev2-fine">Check the <a href="https://www.hcch.net/en/instruments/conventions/status-table/?cid=41" target="_blank" rel="noopener">HCCH Apostille Convention status table</a>, relevant declarations and the receiving authority’s instructions before proceeding. A country’s treaty status alone does not determine acceptance of a particular document.</p></div></section><section id="requirements" class="ev2-section ev2-editorial"><div class="container ev2-body-shell"><div class="ev2-editorial-grid"><div><p class="ev2-eyebrow">CONFIRM BEFORE YOU START</p><h2>When Is Embassy Legalization Required?</h2></div><div class="ev2-editorial-body">
 
-<main class="resource-content">
-  <div class="container resource-shell resource-structure">
-    <section>
-      <h2>What Is Embassy / Consular Legalization?</h2>
-      <div class="resource-definition">
-        <p>Traditional consular legalization may be required where the Apostille Convention does not apply between China and the destination country or does not cover the document, subject to applicable exemptions.</p>
-        <p class="mt-3">The route may follow notarization, translation and another authentication stage before submission to the relevant embassy or consulate. Legalization generally confirms the preceding signature, seal or official capacity; it does not automatically prove that every statement in the underlying document is true.</p>
-      </div>
-    </section>
+<p class="resource-intro">Before arranging embassy or consular legalization, confirm whether the Convention applies to the document between China and the destination country, including its territorial application and any applicable exemptions.</p>
+<div class="resource-note" role="note">
+<h3>Confirm the Requirements First</h3>
+<p class="mb-0">Legalization and preparation requirements vary by document type, issuing authority, destination country, embassy or consulate and receiving organization. Confirm the recipient's current instructions before arranging notarization, translation, authentication or consular submission.</p>
+</div>
+</div></div></div></section><section id="authentication-routes" class="ev2-section ev2-routes"><div class="container ev2-body-shell"><p class="ev2-eyebrow">APOSTILLE OR CONSULAR LEGALIZATION</p><h2>Embassy Legalization vs Hague Apostille</h2><p>These are different authentication routes. The applicable route depends on the Convention's scope, its effect between China and the destination country, territorial application and any exemptions.</p><div class="ev2-route-grid"><article class="resource-mini-card"><h3>Embassy / Consular Legalization</h3><p>Outside the Convention's applicable scope, traditional consular legalization may be required, subject to exemptions. The route can include several preparation and authentication stages.</p></article><article class="resource-mini-card"><h3>Hague Apostille</h3><p>Within the Convention's scope, an apostille replaces traditional diplomatic or consular legalization unless authentication is waived. Notarization or translation may remain separate requirements.</p><a class="resource-link" href="china-hague-apostille-services.html">Learn about China Hague Apostille Services <span aria-hidden="true">→</span></a></article></div></div></section><section id="translation-notarization" class="ev2-section ev2-editorial"><div class="container ev2-body-shell"><div class="ev2-editorial-grid"><div><p class="ev2-eyebrow">PREPARE THE RIGHT FORMAT</p><h2>Translation and Notarization</h2></div><div class="ev2-editorial-body">
 
-    <section>
-      <h2>When Is Embassy Legalization Required?</h2>
-      <p class="resource-intro">Before arranging embassy or consular legalization, confirm whether the Convention applies to the document between China and the destination country, including its territorial application and any applicable exemptions.</p>
-      <div class="resource-note" role="note">
-        <h3>Confirm the Requirements First</h3>
-        <p class="mb-0">Legalization and preparation requirements vary by document type, issuing authority, destination country, embassy or consulate and receiving organization. Confirm the recipient's current instructions before arranging notarization, translation, authentication or consular submission.</p>
-      </div>
-    </section>
+<div class="resource-grid">
+<article class="resource-definition"><h3>Notarization and Authentication</h3><p>Many documents may need a notarial certificate, notarized copy or another accepted preparation step before authentication and consular submission. The exact sequence depends on the document, destination and relevant authority.</p></article>
+<article class="resource-definition"><h3>Translation</h3><p>Translation requirements are set by the receiving organization and may also be affected by embassy or consulate instructions. A certified or notarized translation may be requested, but translation is not automatically included in legalization.</p></article>
+</div>
+</div></div></div></section><section id="processing-time" class="ev2-section ev2-editorial"><div class="container ev2-body-shell"><div class="ev2-editorial-grid"><div><p class="ev2-eyebrow">PLAN YOUR APPLICATION</p><h2>Processing Time</h2></div><div class="ev2-editorial-body">
 
-    <section>
-      <h2>Documents We Can Assist With</h2>
-      <p>Eligibility and preparation vary by document, issuing location, destination requirements and the relevant embassy or consulate.</p>
-      <div class="resource-grid">
-        <article class="resource-mini-card"><h3>Personal Documents</h3><ul class="mb-0"><li>Birth certificate</li><li>Marriage certificate</li><li>Divorce-related documents</li><li>Police clearance or no criminal record documents</li><li>Affidavits and declarations</li></ul></article>
-        <article class="resource-mini-card"><h3>Academic Documents</h3><ul class="mb-0"><li>Degree certificate</li><li>Graduation certificate</li><li>Diploma</li><li>Academic transcript</li><li>Enrollment or attendance certificate</li></ul></article>
-        <article class="resource-mini-card"><h3>Commercial Documents</h3><ul class="mb-0"><li>Company registration documents</li><li>Business licenses</li><li>Powers of attorney</li><li>Corporate resolutions</li><li>Eligible commercial agreements</li></ul></article>
-        <article class="resource-mini-card"><h3>Notarized Documents</h3><ul class="mb-0"><li>Certified copies</li><li>Notarial certificates</li><li>Translations or supporting pages where required</li></ul></article>
-      </div>
-    </section>
-
-    <section>
-      <h2>Embassy Legalization vs Hague Apostille</h2>
-      <p>These are different authentication routes. The applicable route depends on the Convention's scope, its effect between China and the destination country, territorial application and any exemptions.</p>
-      <div class="resource-grid">
-        <article class="resource-mini-card"><h3>Embassy / Consular Legalization</h3><p>Outside the Convention's applicable scope, traditional consular legalization may be required, subject to exemptions. The route can include several preparation and authentication stages.</p></article>
-        <article class="resource-mini-card"><h3>Hague Apostille</h3><p>Within the Convention's scope, an apostille replaces traditional diplomatic or consular legalization unless authentication is waived. Notarization or translation may remain separate requirements.</p><a class="resource-link" href="china-hague-apostille-services.html">Learn about China Hague Apostille Services <span aria-hidden="true">→</span></a></article>
-      </div>
-    </section>
-
-    <section>
-      <h2>Typical Process</h2>
-      <p>The exact route may differ by document and authority, but a typical service review includes the following stages.</p>
-      <ol class="resource-steps legalization-service-steps">
-        <li><h3>Confirm the Destination and Purpose</h3><p class="mb-0">Check the destination country, intended use and current receiving-authority instructions.</p></li>
-        <li><h3>Review the Chinese Document</h3><p class="mb-0">Identify the document type, issuing location, available original and supporting records.</p></li>
-        <li><h3>Plan Notarization and Translation</h3><p class="mb-0">Confirm whether the route uses the original, a notarial certificate, a certified copy or an accepted translation format.</p></li>
-        <li><h3>Complete the Required Authentication</h3><p class="mb-0">Coordinate the applicable authentication stage before consular submission, depending on the document and destination.</p></li>
-        <li><h3>Submit to the Relevant Embassy or Consulate</h3><p class="mb-0">Arrange submission through the accepted channel and follow any current consular document requirements.</p></li>
-        <li><h3>Review and Return the Completed Document</h3><p class="mb-0">Check visible names, dates, seals and certificate details before return or courier delivery.</p></li>
-      </ol>
-    </section>
-
-    <section>
-      <h2>Translation and Notarization</h2>
-      <div class="resource-grid">
-        <article class="resource-definition"><h3>Notarization and Authentication</h3><p>Many documents may need a notarial certificate, notarized copy or another accepted preparation step before authentication and consular submission. The exact sequence depends on the document, destination and relevant authority.</p></article>
-        <article class="resource-definition"><h3>Translation</h3><p>Translation requirements are set by the receiving organization and may also be affected by embassy or consulate instructions. A certified or notarized translation may be requested, but translation is not automatically included in legalization.</p></article>
-      </div>
-    </section>
-
-    <section>
-      <h2>Processing Time</h2>
-      <p class="resource-intro">Processing time depends on the document type, issuing location, notarization and translation needs, authentication stages, embassy or consulate review, public holidays and courier arrangements.</p>
-      <div class="resource-note" role="note">Global Attest can provide an estimated schedule after reviewing the available documents and destination requirements. Any estimate remains subject to authority and consular review.</div>
-    </section>
-
-    <section>
-      <h2>Embassy Authentication Samples</h2>
-      <div class="resource-grid">
-        <article class="resource-mini-card"><h3>View Embassy Authentication Samples</h3><p>Review redacted examples showing common embassy or consular legalization stamps, seals and certificate formats.</p><a class="resource-link" href="embassy-authentication-samples.html">View Sample Documents <span aria-hidden="true">→</span></a></article>
-        <article class="resource-mini-card"><h3>Embassy Certification Guide</h3><p>Learn how notarization, authentication, translation and consular legalization may fit into the broader document route.</p><a class="resource-link" href="embassy-certification-guide-en.html">Read the Legalization Guide <span aria-hidden="true">→</span></a></article>
-      </div>
-    </section>
-
-    <section>
-      <h2>Related Resources</h2>
-      <p class="resource-intro">For a broader library of document guides and reference materials, browse the <a href="resources.html">Global Attest resource center</a>.</p>
-      <div class="resource-grid">
-        <article class="resource-mini-card"><h3>Chinese Degree Verification for the UAE</h3><p>Understand how primary-source verification and qualification recognition differ from document attestation.</p><a class="resource-link" href="chinese-degree-verification-uae-dataflow.html">Read the UAE Degree Verification Guide <span aria-hidden="true">→</span></a></article>
-        <article class="resource-mini-card"><h3>Embassy Authentication Samples</h3><p>See redacted reference examples of consular authentication formats.</p><a class="resource-link" href="embassy-authentication-samples.html">View Authentication Samples <span aria-hidden="true">→</span></a></article>
-        <article class="resource-mini-card"><h3>Embassy Certification Guide</h3><p>Understand the roles of notarization, authentication and consular legalization.</p><a class="resource-link" href="embassy-certification-guide-en.html">Read the Embassy Guide <span aria-hidden="true">→</span></a></article>
-        <article class="resource-mini-card"><h3>Document Legalization Overview</h3><p>Compare the apostille and embassy or consular legalization routes.</p><a class="resource-link" href="document-legalization.html">Compare Authentication Routes <span aria-hidden="true">→</span></a></article>
-        <article class="resource-mini-card"><h3>China Hague Apostille Services</h3><p>Review apostille assistance for documents covered by the Convention as applicable between China and the destination country.</p><a class="resource-link" href="china-hague-apostille-services.html">Explore Apostille Assistance <span aria-hidden="true">→</span></a></article>
-        <article class="resource-mini-card"><h3>Degree Verification</h3><p>Learn how Chinese degree and transcript verification differs from document legalization.</p><a class="resource-link" href="degree-verification.html">Review Degree Verification <span aria-hidden="true">→</span></a></article>
-        <article class="resource-mini-card"><h3>China Embassy Legalization Case</h3><p>See a practical case involving preparation of Chinese documents for consular use.</p><a class="resource-link" href="case-embassy-legalization.html">View the Legalization Case <span aria-hidden="true">→</span></a></article>
-      </div>
-    </section>
-
-    <section>
-      <h2>Frequently Asked Questions</h2>
-      <div class="resource-faq">
-        <details><summary>What is embassy legalization?</summary><p>Embassy legalization is an authentication route used when a Chinese document must be presented in a destination that requires legalization by its embassy or consulate. The process may follow notarization and another authentication step. It confirms relevant signatures, seals or official capacity, not the truth of every statement in the document.</p></details>
-        <details><summary>What is consular legalization?</summary><p>Consular legalization generally refers to legalization completed through the relevant foreign embassy or consulate after the required Chinese document preparation and authentication stages. The exact terminology and sequence vary by destination, document type and consular requirements, so the receiving authority's current instructions should be checked first.</p></details>
-        <details><summary>When is embassy or consular legalization required?</summary><p>Traditional consular legalization may be required where the Apostille Convention does not apply between China and the destination country or does not cover the document, subject to applicable exemptions. Confirm the applicable route for the document and destination separately from the receiving institution's document-content, translation and submission requirements.</p></details>
-        <details><summary>Which Chinese documents can be legalized?</summary><p>Personal, academic, commercial and notarized documents may be eligible, including civil certificates, police certificates, degrees, transcripts, company records and powers of attorney. Eligibility and preparation depend on the original document, issuing location, destination, embassy or consulate and receiving organization.</p></details>
-        <details><summary>Does every document need notarization first?</summary><p>Not always. Some documents may need a notarial certificate, notarized copy or notarized translation before further authentication and consular submission, while other documents may follow a different accepted route. The correct sequence depends on the document and the current requirements of the destination and receiving authority.</p></details>
-        <details><summary>How is embassy legalization different from an apostille?</summary><p>First confirm whether the Apostille Convention applies between China and the destination country and covers the document. Within its scope, an apostille replaces traditional diplomatic or consular legalization unless authentication is waived. Outside that scope, traditional consular legalization may be required, subject to applicable exemptions. Document-content, notarization, translation, recency and submission requirements should be checked separately.</p></details>
-        <details><summary>Can I apply after leaving China?</summary><p>In some cases, yes. An authorized representative or document assistance process may be available after the document holder leaves China. Feasibility depends on the document, original records, identification, notarization needs, local authority procedures and the embassy or consulate's submission rules.</p></details>
-        <details><summary>How long does embassy or consular legalization take?</summary><p>Processing time depends on the document type, issuing location, notarization and translation needs, authentication stages, embassy or consulate review, public holidays and courier arrangements. Global Attest can provide an estimate after reviewing the documents and destination requirements, but a fixed completion date cannot be guaranteed.</p></details>
-      </div>
-    </section>
-
-    <section class="cta-panel">
-      <h2>Need Help With Embassy or Consular Legalization?</h2>
-      <p>For an initial review, tell us the document type and issuing location, destination country, intended use and deadline. If available, include the receiving institution's exact requirements and explain whether you hold the original, a copy or a notarized document. Global Attest can review possible preparation and authentication options, subject to the relevant authorities' requirements.</p>
-      <p class="small">Global Attest is an independent document assistance provider and is not a government, diplomatic, notarial or apostille-issuing authority. Final document acceptance is determined by the receiving organization.</p>
-      <div class="d-flex flex-column flex-sm-row gap-2">
-        <a class="btn btn-success rounded-pill px-4 fw-semibold" href="contact-en.html">Request a Document Review</a>
-        <a class="btn btn-outline-light rounded-pill px-4 fw-semibold" href="https://wa.me/8617620130150" target="_blank" rel="noopener">WhatsApp Us</a>
-      </div>
-    </section>
-  </div>
-</main>
-
-
+<p class="resource-intro">Processing time depends on the document type, issuing location, notarization and translation needs, authentication stages, embassy or consulate review, public holidays and courier arrangements.</p>
+<div class="resource-note" role="note">Global Attest can provide an estimated schedule after reviewing the available documents and destination requirements. Any estimate remains subject to authority and consular review.</div>
+</div></div></div></section><section id="document-references" class="ev2-section ev2-resources"><div class="container ev2-body-shell"><p class="ev2-eyebrow">DOCUMENT REFERENCES</p>
+<h2>Embassy Authentication Samples</h2>
+<div class="ev2-resource-grid">
+<article class=""><h3>View Embassy Authentication Samples</h3><p>Review redacted examples showing common embassy or consular legalization stamps, seals and certificate formats.</p><a class="resource-link" href="embassy-authentication-samples.html">View Sample Documents <span aria-hidden="true">→</span></a></article>
+<article class=""><h3>Embassy Certification Guide</h3><p>Learn how notarization, authentication, translation and consular legalization may fit into the broader document route.</p><a class="resource-link" href="embassy-certification-guide-en.html">Read the Legalization Guide <span aria-hidden="true">→</span></a></article>
+</div>
+</div></section><section id="related-resources" class="ev2-section ev2-resources"><div class="container ev2-body-shell"><p class="ev2-eyebrow">FURTHER READING</p>
+<h2>Related Resources</h2>
+<p class="resource-intro">For a broader library of document guides and reference materials, browse the <a href="resources.html">Global Attest resource center</a>.</p>
+<div class="ev2-resource-grid">
+<article class=""><h3>Chinese Degree Verification for the UAE</h3><p>Understand how primary-source verification and qualification recognition differ from document attestation.</p><a class="resource-link" href="chinese-degree-verification-uae-dataflow.html">Read the UAE Degree Verification Guide <span aria-hidden="true">→</span></a></article>
+<article class=""><h3>Embassy Authentication Samples</h3><p>See redacted reference examples of consular authentication formats.</p><a class="resource-link" href="embassy-authentication-samples.html">View Authentication Samples <span aria-hidden="true">→</span></a></article>
+<article class=""><h3>Embassy Certification Guide</h3><p>Understand the roles of notarization, authentication and consular legalization.</p><a class="resource-link" href="embassy-certification-guide-en.html">Read the Embassy Guide <span aria-hidden="true">→</span></a></article>
+<article class=""><h3>Document Legalization Overview</h3><p>Compare the apostille and embassy or consular legalization routes.</p><a class="resource-link" href="document-legalization.html">Compare Authentication Routes <span aria-hidden="true">→</span></a></article>
+<article class=""><h3>China Hague Apostille Services</h3><p>Review apostille assistance for documents covered by the Convention as applicable between China and the destination country.</p><a class="resource-link" href="china-hague-apostille-services.html">Explore Apostille Assistance <span aria-hidden="true">→</span></a></article>
+<article class=""><h3>Degree Verification</h3><p>Learn how Chinese degree and transcript verification differs from document legalization.</p><a class="resource-link" href="degree-verification.html">Review Degree Verification <span aria-hidden="true">→</span></a></article>
+<article class=""><h3>China Embassy Legalization Case</h3><p>See a practical case involving preparation of Chinese documents for consular use.</p><a class="resource-link" href="case-embassy-legalization.html">View the Legalization Case <span aria-hidden="true">→</span></a></article>
+</div>
+</div></section><section id="faq" class="ev2-section ev2-faq"><div class="container ev2-body-shell"><div class="ev2-editorial-grid"><div><p class="ev2-eyebrow">BEFORE YOU APPLY</p><h2>Frequently Asked Questions</h2><p>Clear answers for your document review.</p></div><div class="ev2-faq-list"><div class="resource-faq">
+<details id="embassy-faq-1"><summary>What is embassy legalization?</summary><p>Embassy legalization is an authentication route used when a Chinese document must be presented in a destination that requires legalization by its embassy or consulate. The process may follow notarization and another authentication step. It confirms relevant signatures, seals or official capacity, not the truth of every statement in the document.</p></details>
+<details id="embassy-faq-2"><summary>What is consular legalization?</summary><p>Consular legalization generally refers to legalization completed through the relevant foreign embassy or consulate after the required Chinese document preparation and authentication stages. The exact terminology and sequence vary by destination, document type and consular requirements, so the receiving authority's current instructions should be checked first.</p></details>
+<details id="embassy-faq-3"><summary>When is embassy or consular legalization required?</summary><p>Traditional consular legalization may be required where the Apostille Convention does not apply between China and the destination country or does not cover the document, subject to applicable exemptions. Confirm the applicable route for the document and destination separately from the receiving institution's document-content, translation and submission requirements.</p></details>
+<details id="embassy-faq-4"><summary>Which Chinese documents can be legalized?</summary><p>Personal, academic, commercial and notarized documents may be eligible, including civil certificates, police certificates, degrees, transcripts, company records and powers of attorney. Eligibility and preparation depend on the original document, issuing location, destination, embassy or consulate and receiving organization.</p></details>
+<details id="embassy-faq-5"><summary>Does every document need notarization first?</summary><p>Not always. Some documents may need a notarial certificate, notarized copy or notarized translation before further authentication and consular submission, while other documents may follow a different accepted route. The correct sequence depends on the document and the current requirements of the destination and receiving authority.</p></details>
+<details id="embassy-faq-6"><summary>How is embassy legalization different from an apostille?</summary><p>First confirm whether the Apostille Convention applies between China and the destination country and covers the document. Within its scope, an apostille replaces traditional diplomatic or consular legalization unless authentication is waived. Outside that scope, traditional consular legalization may be required, subject to applicable exemptions. Document-content, notarization, translation, recency and submission requirements should be checked separately.</p></details>
+<details id="embassy-faq-7"><summary>Can I apply after leaving China?</summary><p>In some cases, yes. An authorized representative or document assistance process may be available after the document holder leaves China. Feasibility depends on the document, original records, identification, notarization needs, local authority procedures and the embassy or consulate's submission rules.</p></details>
+<details id="embassy-faq-8"><summary>How long does embassy or consular legalization take?</summary><p>Processing time depends on the document type, issuing location, notarization and translation needs, authentication stages, embassy or consulate review, public holidays and courier arrangements. Global Attest can provide an estimate after reviewing the documents and destination requirements, but a fixed completion date cannot be guaranteed.</p></details>
+<details><summary>Do I need to provide original documents?</summary><p>The accepted route may require an original, a notarial certificate, a certified copy or supporting evidence. Confirm the format before sending documents.</p></details><details><summary>Can you arrange translation and notarization?</summary><p>We can help review and coordinate preparation where applicable. The required translation format and notarization route depend on the document, destination and receiving authority.</p></details><details><summary>Can documents be delivered internationally?</summary><p>International courier options can be discussed after the completed document is checked. Delivery arrangements depend on the destination and courier availability.</p></details><details><summary>What information is required for a quotation?</summary><p>Tell us the document type and issuing location, destination country, intended use and deadline. Include the recipient’s exact instructions and explain whether you hold the original, a copy or a notarized document.</p></details></div></div></div></div></section><section id="service-review" class="ev2-section ev2-context"><div class="container ev2-body-shell"><p class="ev2-eyebrow">DOCUMENT REVIEW</p><h2>China Embassy & Consular Legalization Services</h2><p>Professional assistance with embassy and consular legalization for Chinese documents where traditional legalization may be required outside the Apostille Convention's applicable scope, subject to exemptions.</p></div></section><section id="consultation" class="ev2-section ev2-final"><div class="container ev2-body-shell"><p class="ev2-eyebrow">START WITH YOUR DOCUMENTS</p><h2>Need Help with Chinese Document Legalization?</h2><p>Tell us your document type and destination country, and our team will help you understand the applicable requirements.</p><div class="ev2-final-detail"><h3>Need Help With Embassy or Consular Legalization?</h3><p>For an initial review, tell us the document type and issuing location, destination country, intended use and deadline. If available, include the receiving institution's exact requirements and explain whether you hold the original, a copy or a notarized document. Global Attest can review possible preparation and authentication options, subject to the relevant authorities' requirements.</p><p class="small">Global Attest is an independent document assistance provider and is not a government, diplomatic, notarial or apostille-issuing authority. Final document acceptance is determined by the receiving organization.</p></div><div class="ev2-actions"><a class="btn ev2-primary" href="contact-en.html" data-ga-event="contact_click" data-ga-label="final_contact">Get a Free Consultation <span aria-hidden="true">→</span></a><a class="btn ev2-wa" href="https://wa.me/8617620130150" target="_blank" rel="noopener" data-ga-event="whatsapp_click" data-ga-label="final_whatsapp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp Us</a></div></div></section></main>
 <footer class="ga-footer" aria-label="Global Attest footer">
   <div class="ga-footer-shell">
     <div class="ga-footer-top">
