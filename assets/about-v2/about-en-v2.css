@@ -172,3 +172,28 @@ html[lang=en] body .about-v2 .av2-hero h1{margin-bottom:14px}
 html[lang=en] body .about-v2 .av2-hero-copy>p:not(.av2-kicker){line-height:1.45!important;margin-bottom:14px}
 .about-v2 .av2-hero .av2-actions{margin-top:14px;gap:8px}
 }
+
+/* Services and team only: eight independent service cards and aligned portraits. */
+.about-v2 .av2-services{grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;grid-auto-rows:1fr}
+.about-v2 .av2-services article{padding:26px 23px}
+.about-v2 .av2-services i{font-size:29px;margin-bottom:23px}
+html[lang=en] body .about-v2 .av2-services h3{font-size:20px;line-height:1.25!important;min-height:50px}
+html[lang=en] body .about-v2 .av2-services p{font-size:16px;line-height:1.6!important}
+.about-v2 .av2-services a{margin-top:4px}
+.about-v2 .av2-team{align-items:stretch}
+.about-v2 .av2-person{display:flex;flex-direction:column}
+.about-v2 .av2-person>img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center}
+.about-v2 .av2-person-body{flex:1;display:flex;flex-direction:column}
+html[lang=en] body .about-v2 .av2-role{min-height:81px}
+.about-v2 .av2-bio{margin-top:auto;padding-top:13px}
+@media(max-width:1199.98px){.about-v2 .av2-services{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.about-v2 .av2-team{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:991.98px){html[lang=en] body .about-v2 .av2-role{min-height:61px!important}}
+@media(max-width:767.98px){
+.about-v2 .av2-services{grid-template-columns:1fr;gap:18px;grid-auto-rows:auto}
+.about-v2 .av2-team{grid-template-columns:1fr}
+.about-v2 .av2-services article{padding:25px}
+html[lang=en] body .about-v2 .av2-services h3{min-height:0}
+.about-v2 .av2-person>img{aspect-ratio:4/5;object-position:center}
+html[lang=en] body .about-v2 .av2-role{min-height:0!important}
+.about-v2 .av2-bio{margin-top:14px}
+}
