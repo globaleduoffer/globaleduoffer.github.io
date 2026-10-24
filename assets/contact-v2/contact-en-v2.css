@@ -1,0 +1,91 @@
+/* Contact page only. Homepage navigation and production Footer are reused unchanged. */
+html[lang=en] body .contact-v2{--cv2-ink:#08234b;--cv2-muted:#526b8d;--cv2-blue:#076bfa;color:var(--cv2-ink);background:#fff;font-family:"Source Sans 3",Arial,sans-serif}
+html[lang=en] body .contact-v2 :is(h1,h2,h3,p,a,label,span,input,textarea,select,button,address,summary){font-family:"Source Sans 3",Arial,sans-serif!important}
+html[lang=en] body .contact-v2 :is(h1,h2,h3){font-weight:600!important;letter-spacing:-.025em!important;line-height:1.18!important;color:var(--cv2-ink);margin:0 0 12px}
+html[lang=en] body .contact-v2 h2{font-size:32px}
+html[lang=en] body .contact-v2 h3{font-size:18px}
+html[lang=en] body .contact-v2 p{font-size:17px;line-height:1.5!important;color:var(--cv2-muted);margin:0 0 14px}
+.contact-v2 a{color:#0066e8;text-underline-offset:3px}
+.contact-v2 :is(a,button,input,select,textarea,summary):focus-visible{outline:3px solid #2481d5;outline-offset:3px}
+.contact-v2 [hidden]{display:none!important}
+html[lang=en] body .contact-v2 .cv2-kicker{font-size:12px;font-weight:600;letter-spacing:.1em!important;color:#0876ef;margin-bottom:12px}
+.contact-v2 .cv2-hero{position:relative;isolation:isolate;min-height:425px;display:flex;align-items:center;background:#061d36;overflow:hidden;padding:52px 0}
+.contact-v2 .cv2-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 48%;z-index:-2}
+.contact-v2 .cv2-hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#031a32f5 0%,#031a32e8 25%,#031a32b8 43%,#031a3255 61%,#031a3200 81%)}
+.contact-v2 .cv2-hero-shell{width:89%;max-width:1320px;margin-inline:auto}
+.contact-v2 .cv2-hero-copy{width:51%;max-width:665px}
+html[lang=en] body .contact-v2 .cv2-hero h1{font-size:clamp(34px,3.6vw,54px)!important;line-height:1.07!important;color:#fff;margin-bottom:20px}
+html[lang=en] body .contact-v2 .cv2-hero p{color:#e7eff9;font-size:18px;max-width:580px}
+html[lang=en] body .contact-v2 .cv2-hero .cv2-kicker{font-size:12px;color:#d9edff}
+.contact-v2 .cv2-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+html[lang=en] body .contact-v2 .cv2-btn{border-radius:6px;min-height:50px;padding:12px 21px;display:inline-flex;justify-content:center;align-items:center;gap:13px;text-decoration:none;font-size:16px;font-weight:600;line-height:1.35!important;border:1px solid #7290af;color:#fff;cursor:pointer;transition:background .15s}
+.contact-v2 .cv2-primary{background:#076bfa;border-color:#076bfa!important}
+.contact-v2 .cv2-primary:hover{background:#0057cf}
+.contact-v2 .cv2-outline{background:#031b3777}
+.contact-v2 .cv2-outline:hover{background:#153d61}
+.contact-v2 .cv2-main{padding:32px 0 24px}
+.contact-v2 .cv2-columns{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);gap:28px;align-items:start}
+.contact-v2 .cv2-contact-cards{display:grid;gap:16px}
+.contact-v2 .cv2-contact-card{display:grid;grid-template-columns:62px minmax(0,1fr);gap:18px;border:1px solid #dce7f2;border-radius:9px;padding:26px 22px;background:linear-gradient(135deg,#fff,#fbfdff);box-shadow:0 5px 18px #17365903}
+.contact-v2 .cv2-icon{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:62px;height:62px;background:#e6f3ff;color:#0781fc;border-radius:50%;font-size:28px}
+.contact-v2 .cv2-green .cv2-icon{color:#09a64b;background:#e6f9ee}
+html[lang=en] body .contact-v2 .cv2-contact-card h2{font-size:22px;margin:0 0 9px}
+html[lang=en] body .contact-v2 .cv2-contact-card p{font-size:16px;line-height:1.45!important;margin-bottom:12px}
+.contact-v2 .cv2-contact-value{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:8px 12px;background:#edf6ff;border-radius:5px;font-size:16px;min-width:0;overflow-wrap:anywhere}
+.contact-v2 .cv2-contact-value a{text-decoration:none;font-weight:600;min-width:0}
+.contact-v2 .cv2-green .cv2-contact-value{background:#eaf9f0;color:#087f3d}
+.contact-v2 .cv2-green .cv2-contact-value a{color:#087f3d}
+.contact-v2 .cv2-copy{border:0;background:transparent;color:inherit;min-width:36px;min-height:36px;border-radius:4px;font-size:16px;padding:6px;flex-shrink:0}
+.contact-v2 .cv2-copy:hover{background:#cfe5f855}
+html[lang=en] body .contact-v2 .cv2-company-name,html[lang=en] body .contact-v2 .cv2-hours{color:#0a2951;font-weight:600}
+.contact-v2 address{font-size:16px;color:#526b8d;line-height:1.5;margin:0;font-style:normal}
+.contact-v2 .cv2-form-card{padding:30px;background:linear-gradient(120deg,#f7fbff,#edf6ff);border:1px solid #e5eff9;border-radius:9px;min-width:0}
+html[lang=en] body .contact-v2 .cv2-required-note{font-size:13px;margin-bottom:20px;color:#52647d}
+.contact-v2 .cv2-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px 20px}
+.contact-v2 .cv2-field{min-width:0}
+.contact-v2 .cv2-field label{display:block;color:#09244b;font-weight:600;font-size:15px;line-height:1.35;margin-bottom:7px}
+.contact-v2 .cv2-field label>span:not(.cv2-optional){color:#a72435}
+.contact-v2 .cv2-optional{font-weight:400;color:#566e90}
+html[lang=en] body .contact-v2 .cv2-field :is(input,select,textarea){display:block;width:100%;max-width:100%;min-width:0;min-height:46px;border:1px solid #ccd9e9;border-radius:5px;background:#fff;color:#163250;padding:11px 12px;font-size:15px;line-height:1.4;box-shadow:0 2px 4px #15376402}
+.contact-v2 .cv2-field input::placeholder,.contact-v2 .cv2-field textarea::placeholder{color:#7487a0;opacity:1}
+.contact-v2 .cv2-field select{appearance:auto}
+.contact-v2 .cv2-field textarea{resize:vertical;min-height:135px}
+.contact-v2 .cv2-wide{grid-column:1/-1}
+.contact-v2 .cv2-phone{display:grid;grid-template-columns:90px minmax(0,1fr);gap:7px}
+html[lang=en] body .contact-v2 .cv2-help{font-size:12px;margin:7px 0 0;line-height:1.3!important;color:#576d85}
+html[lang=en] body .contact-v2 .cv2-field-error{font-size:13px;color:#9c2034;margin:6px 0 0}
+.contact-v2 .cv2-field [aria-invalid=true]{border-color:#af3346!important}
+.contact-v2 .cv2-message-help{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:#576b86;margin-top:6px}
+.contact-v2 .cv2-submit{width:100%;margin-top:20px}
+.contact-v2 .cv2-submit:disabled{opacity:.65;cursor:wait}
+.contact-v2 .cv2-privacy{display:flex;align-items:flex-start;gap:15px;margin-top:18px;color:#637a93}
+.contact-v2 .cv2-privacy>i{margin-top:4px}
+html[lang=en] body .contact-v2 .cv2-privacy p{font-size:13px;margin-bottom:9px;line-height:1.45!important}
+.contact-v2 :is(#formSuccess,#formError){padding:16px;margin-top:18px;border-radius:6px;font-size:16px;line-height:1.5}
+.contact-v2 #formSuccess{display:block;background:#e1f5e9;color:#164d2c;border:1px solid #a9d8bb}
+.contact-v2 #formError{display:block;background:#fff1f2;color:#922338;border:1px solid #eac2cb}
+.contact-v2 .cv2-care{margin-top:22px;background:linear-gradient(110deg,#edf6ff,#f7fbff);border:1px solid #e6eff8;padding:25px 30px;display:flex;gap:24px;align-items:center;border-radius:9px}
+.contact-v2 .cv2-care>i{color:#008e97;font-size:44px;margin-inline:8px 12px}
+html[lang=en] body .contact-v2 .cv2-care h2{font-size:23px;margin-bottom:8px}
+html[lang=en] body .contact-v2 .cv2-care p{font-size:15px;line-height:1.45!important;margin:0 0 4px}
+.contact-v2 .cv2-next{padding:38px 0 46px;background:linear-gradient(120deg,#f8fcff,#edf6ff)}
+.contact-v2 .cv2-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;list-style:none;margin:26px 0 0;padding:0}
+.contact-v2 .cv2-step-top{display:flex;align-items:center;gap:17px;position:relative;margin-bottom:15px}
+.contact-v2 .cv2-steps li:not(:last-child) .cv2-step-top:after{content:"→";position:absolute;right:-15px;color:#7797be;font-size:24px}
+.contact-v2 .cv2-step-num{font-size:24px;color:#0878ef;font-weight:600}
+html[lang=en] body .contact-v2 .cv2-step-top h3{font-size:17px;margin:2px 0 0}
+html[lang=en] body .contact-v2 .cv2-steps p{font-size:16px}
+.contact-v2 .cv2-faq{margin-top:24px;border-top:1px solid #cfdfef;padding-top:17px}
+.contact-v2 .cv2-faq summary{cursor:pointer;font-size:16px;font-weight:600;color:#0c3d70}
+.contact-v2 .cv2-faq>div{padding:20px 0 0;max-width:900px}
+html[lang=en] body .contact-v2 .cv2-faq h3{font-size:18px;margin-top:15px}
+body:has(>main.contact-v2)>a.wa-float[data-ga-wa-safe]{bottom:var(--ga-wa-safe-bottom,18px)!important;right:18px!important}
+body:has(>main.contact-v2)>a.wa-float[data-ga-wa-safe][data-ga-wa-suppressed]{visibility:hidden!important;pointer-events:none!important}
+@media(max-width:1199px){.contact-v2 .cv2-columns{gap:22px;grid-template-columns:minmax(0,2fr) minmax(0,3fr)}.contact-v2 .cv2-contact-card{padding:21px 18px;grid-template-columns:42px minmax(0,1fr);gap:13px}.contact-v2 .cv2-contact-card .cv2-icon{width:42px;height:42px;font-size:22px}.contact-v2 .cv2-form-card{padding:24px}.contact-v2 .cv2-fields{gap:18px 14px}.contact-v2 .cv2-steps{gap:24px}.contact-v2 .cv2-step-top{flex-direction:column;align-items:flex-start;gap:8px}}
+@media(max-width:991px){.contact-v2 .cv2-columns{grid-template-columns:minmax(0,1fr)}.contact-v2 .cv2-contact-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.contact-v2 .cv2-contact-card:last-child{grid-column:1/-1}.contact-v2 .cv2-hero-copy{width:63%}.contact-v2 .cv2-hero{min-height:405px}.contact-v2 .cv2-hero:after{background:linear-gradient(90deg,#031a32f5,#031a32db 38%,#031a3280 62%,#031a3215 100%)}.contact-v2 .cv2-steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:24px}.contact-v2 .cv2-step-top{flex-direction:row;align-items:center}.contact-v2 .cv2-steps li:nth-child(2) .cv2-step-top:after{display:none}}
+@media(max-width:575px){.contact-v2 .cv2-hero{padding:32px 0 160px;min-height:0;align-items:flex-start}.contact-v2 .cv2-hero-copy{width:100%;max-width:none}.contact-v2 .cv2-hero-img{object-position:72% bottom;object-fit:cover}.contact-v2 .cv2-hero:after{background:linear-gradient(180deg,#031a32f5,#031a32de 52%,#031a3233 100%)}html[lang=en] body .contact-v2 .cv2-hero h1{font-size:36px!important;margin-bottom:17px}html[lang=en] body .contact-v2 .cv2-hero p{font-size:17px}.contact-v2 .cv2-actions{gap:10px;margin-top:20px}.contact-v2 .cv2-btn{flex:1 1 auto;padding:12px 14px!important;font-size:15px!important;gap:9px!important}.contact-v2 .cv2-main{padding-top:22px}.contact-v2 .cv2-contact-cards{grid-template-columns:minmax(0,1fr)}.contact-v2 .cv2-contact-card{padding:21px 18px;grid-template-columns:48px minmax(0,1fr);gap:14px}.contact-v2 .cv2-contact-card .cv2-icon{width:48px;height:48px}.contact-v2 .cv2-form-card{padding:23px 18px}.contact-v2 .cv2-fields{grid-template-columns:minmax(0,1fr);gap:20px}.contact-v2 .cv2-field label{font-size:16px}html[lang=en] body .contact-v2 .cv2-field :is(input,select,textarea){font-size:16px;min-height:48px}.contact-v2 .cv2-care{padding:23px 20px;gap:15px;align-items:flex-start}.contact-v2 .cv2-care>i{font-size:29px;margin:3px 0}.contact-v2 .cv2-steps{grid-template-columns:minmax(0,1fr);gap:20px}.contact-v2 .cv2-step-top{margin-bottom:10px}.contact-v2 .cv2-steps li .cv2-step-top:after{display:none!important}.contact-v2 .cv2-steps li{border-bottom:1px solid #dbe7f1;padding-bottom:8px}.contact-v2 .cv2-next{padding-block:30px}html[lang=en] body .contact-v2 h2{font-size:29px}html[lang=en] body .contact-v2 .cv2-care h2{font-size:21px}.contact-v2 .cv2-message-help{font-size:12px}.contact-v2 .cv2-privacy{gap:10px}}
+@media(prefers-reduced-motion:reduce){.contact-v2 *{transition:none!important}}
+
+.contact-v2 .cv2-phone #countryCode{border-radius:5px!important;padding:11px 7px!important;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* Architectural illustration crops naturally below the copy on narrow screens. */
+@media(max-width:575px){.contact-v2 .cv2-hero{padding-bottom:205px}.contact-v2 .cv2-hero-img{inset:auto 0 0;width:100%;height:240px;object-fit:cover;object-position:72% 42%}.contact-v2 .cv2-hero:after{background:linear-gradient(180deg,#031a32 0%,#031a32 59%,#031a32d9 69%,#031a3222 87%,transparent 100%)}}
