@@ -11,161 +11,15 @@
 <title>Client Reviews &amp; Case Feedback | Global Attest</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="assets/reviews-v2/vendor/google-fonts-shared.css" rel="stylesheet">
+<link href="assets/reviews-v2/vendor/bootstrap.min.css" rel="stylesheet">
+<link href="assets/reviews-v2/vendor/fontawesome.min.css" rel="stylesheet">
 <link href="assets/style.css" rel="stylesheet">
-<link href="assets/globalattest-typography.css" rel="stylesheet">
+<link href="assets/reviews-v2/vendor/typography-local.css" rel="stylesheet">
 
 <script src="assets/globalattest-round1.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDC1P9N84P"></script>
-<style>
-:root {
-  --brand-navy: #102a63;
-  --brand-ink: #0f172a;
-  --brand-green: #1f8f4d;
-  --brand-soft: #f6f8fb;
-  --brand-line: #dce4ef;
-  --brand-muted: #5b6778;
-  --font-formal-serif: "Libre Baskerville", Georgia, "Times New Roman", Times, serif;
-  --font-formal-sans: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
-}
-html[lang="en"] body {
-  margin: 0;
-  background: #ffffff;
-  color: var(--brand-ink);
-  font-family: var(--font-formal-sans) !important;
-  letter-spacing: 0;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-html[lang="en"] h1,
-html[lang="en"] h2,
-html[lang="en"] h3 {
-  font-family: var(--font-formal-serif) !important;
-  font-weight: 700 !important;
-  letter-spacing: 0 !important;
-}
-.navbar,
-.navbar .nav-link,
-.navbar .dropdown-item,
-.navbar .btn,
-.navbar .lang-btn,
-.nav-wa-text {
-  font-family: var(--font-formal-sans) !important;
-  letter-spacing: 0 !important;
-}
-.navbar {
-  padding-top: .65rem !important;
-  padding-bottom: .65rem !important;
-  box-shadow: 0 1px 0 rgba(15, 23, 42, .06) !important;
-  background: #fff;
-}
-.navbar-brand {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: .5rem !important;
-  padding: 0 !important;
-}
-.navbar-brand img {
-  height: 36px !important;
-  width: auto !important;
-  max-height: 36px !important;
-  display: block !important;
-}
-.navbar-nav .nav-link {
-  font-size: .92rem !important;
-  padding: .35rem .55rem !important;
-  color: #334155 !important;
-}
-.navbar .dropdown-menu {
-  background-color: #111827 !important;
-  border-radius: 0 !important;
-  border: none !important;
-}
-.navbar .dropdown-item {
-  color: #e5e7eb !important;
-  white-space: normal !important;
-}
-.navbar .dropdown-item:hover,
-.navbar .dropdown-item:focus {
-  background-color: #1f2937 !important;
-  color: #fff !important;
-}
-.dropdown-section-label {
-  display: block !important;
-  font-weight: 800 !important;
-  text-transform: uppercase !important;
-}
-@media (min-width: 992px) {
-  .navbar .container { max-width: 1320px; }
-  .navbar-nav .nav-link {
-    border-radius: 999px !important;
-    transition: background-color .15s ease, color .15s ease !important;
-  }
-  .navbar-nav .nav-link:hover,
-  .navbar-nav .nav-link:focus,
-  .navbar-nav .nav-link.active {
-    background: rgba(31, 143, 77, .12) !important;
-    color: #0f172a !important;
-  }
-  .navbar .btn,
-  .navbar .nav-wa-text {
-    font-size: .9rem !important;
-    padding-left: .85rem !important;
-    padding-right: .85rem !important;
-  }
-  .navbar-brand img {
-    max-width: 210px !important;
-    object-fit: contain;
-  }
-}
-.nav-wa-text {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: .45rem 14px !important;
-  border-radius: 999px !important;
-  background: #eaf7f0 !important;
-  color: var(--brand-green) !important;
-  font-weight: 700 !important;
-  text-decoration: none !important;
-  border: none !important;
-  white-space: nowrap !important;
-}
-.lang-btn {
-  color: #2563eb !important;
-  font-size: .9rem !important;
-  margin-left: .5rem !important;
-  text-decoration: none !important;
-}
 
-.reviews-page{--rv-navy:#102a63;--rv-green:#1f8f4d;color:#243449;overflow-wrap:anywhere}
-.reviews-page .rv-wrap{max-width:1160px;margin:auto;padding:0 28px}
-.reviews-page section{padding:64px 0}.reviews-page .rv-soft{background:#f6f8fb}
-.reviews-page h1,.reviews-page h2,.reviews-page h3{color:var(--rv-navy);line-height:1.3}
-.reviews-page h1{font-size:clamp(32px,4vw,50px);max-width:850px;margin:14px 0 22px}
-.reviews-page h2{font-size:30px;margin:0 0 18px}.reviews-page h3{font-size:20px;margin:0 0 14px}
-.reviews-page p,.reviews-page li{font-size:18px;line-height:1.75}.reviews-page p{margin:0 0 16px}
-.reviews-page .rv-kicker{font-size:12px;letter-spacing:.15em;font-weight:700;color:var(--rv-green)}
-.reviews-page .rv-hero { background: linear-gradient(115deg, #102a63 0%, #071326 100%); padding: 76px 0; }
-.reviews-page .rv-hero h1 { color: #ffffff; }
-.reviews-page .rv-hero p { color: #d7e0ec; max-width: 810px; }
-.reviews-page .rv-hero .rv-kicker { color: #59c78b; }
-.reviews-page .rv-hero .rv-btn.secondary { color: #ffffff; border-color: rgba(255,255,255,.65); background: transparent; }
-.reviews-page .rv-hero .rv-btn.secondary:hover,
-.reviews-page .rv-hero .rv-btn.secondary:focus-visible { color: #0b1834; background: #ffffff; border-color: #ffffff; }
-.rv-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.rv-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border-radius:8px;border:1px solid #1f8f4d;color:#fff;background:#1f8f4d;font-weight:600;text-decoration:none}.rv-btn.secondary{color:#153c2a;background:transparent}.rv-btn:hover{background:#166c39;color:white}
-.reviews-page a:focus-visible{outline:3px solid #317dd1;outline-offset:5px}.rv-lead{max-width:830px;color:#526277}
-.rv-trust{display:flex;align-items:center;justify-content:space-between;gap:32px}.rv-trust a{flex:none;color:#102a63;text-decoration:none}.rv-trust-brand{display:flex;align-items:center;gap:18px;font-size:25px;font-weight:700}.rv-trust img{width:120px;height:23px}.rv-trust-cta{display:block;margin-top:12px;font-size:17px}.rv-trust a:hover .rv-trust-cta{text-decoration:underline}
-.rv-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.rv-card{background:#fff;border:1px solid #dce4ef;border-radius:16px;padding:30px;box-shadow:0 6px 20px rgba(15,23,42,.035);min-width:0}.rv-card .rv-label{font-family:var(--font-formal-sans)!important;font-size:16px!important;font-weight:600!important;color:#294d6c;margin:0 0 6px}.rv-card .rv-service{font-size:14px;color:#5b6778;margin:0 0 22px}.rv-card blockquote{margin:0}.rv-card blockquote h4{font-family:var(--font-formal-sans);font-size:20px;font-weight:600;line-height:1.4;margin:0 0 16px;color:#142d4b}.rv-card blockquote p{font-size:17px;line-height:1.75}.rv-tag{display:inline-block;font-size:12px;font-weight:600;color:#316344;background:#edf5ef;border-radius:4px;padding:5px 9px;margin-top:8px}.rv-group{margin:34px 0 20px!important;font-family:var(--font-formal-sans)!important;font-size:20px!important}.rv-case-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.rv-case{border:1px solid #dce4ef;border-radius:14px;padding:26px}.rv-case .rv-kicker{font-size:10px;display:block;margin-bottom:18px}.rv-case a{color:#165d3b}.rv-transparency{max-width:860px}.rv-transparency li{margin-bottom:12px}.rv-cta{border-left:4px solid #1f8f4d;padding:28px 32px;background:#edf3f8;border-radius:0 14px 14px 0}.rv-faq details{padding:22px 0;border-bottom:1px solid #dce4ef}.rv-faq summary{cursor:pointer;font-size:20px;font-weight:600;color:#102a63}.rv-faq details p{padding-top:16px;max-width:900px}
-.wa-float{position:fixed;right:18px;bottom:18px;z-index:9999;display:inline-flex;align-items:center;gap:10px;padding:12px 14px;border-radius:999px;background:#1f8f4d;color:#fff!important;text-decoration:none!important;font-weight:700;font-size:14px}
-@media(max-width:767px){.reviews-page section{padding:42px 0}.reviews-page .rv-wrap{padding:0 22px}.rv-grid,.rv-case-grid{grid-template-columns:1fr}.rv-trust{display:block}.rv-trust a{display:inline-block;margin-top:18px}.rv-card{padding:24px}.reviews-page h2{font-size:26px}.reviews-page .rv-hero{padding:48px 0}.rv-cta{padding:24px}.wa-float span{display:none}.wa-float{padding:12px}.rv-actions .rv-btn{max-width:100%}}
-@media (max-width: 575px) {
-  .reviews-page .rv-hero .rv-actions { flex-direction: column; }
-  .reviews-page .rv-hero .rv-btn { width: 100%; }
-}
-</style>
 <link rel="stylesheet" href="assets/globalattest-footer-phase1.css">
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -257,19 +111,22 @@ html[lang="en"] h3 {
     }
   ]
 }</script>
+<link rel="stylesheet" href="assets/globalattest-layout.css">
+<link rel="stylesheet" href="assets/home-v2/home-en-v2.css">
+<link rel="stylesheet" href="assets/reviews-v2/reviews-en-v2.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg">
+<nav aria-label="Main navigation" class="navbar navbar-expand-xl ga-home-v2-nav">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="/">
-<img alt="Global Attest Logo" src="assets/images/logo-global-attest.png" style="height:36px; width:auto; max-height:36px;" decoding="async" width="1211" height="198" loading="eager">
+<img alt="Global Attest Logo" decoding="async" height="198" loading="eager" src="assets/images/logo-global-attest.png" style="height:36px; width:auto; max-height:36px;" width="1211"/>
 <span class="visually-hidden">Global Attest</span>
 </a>
 <button aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#nav" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="nav">
-<ul class="navbar-nav ms-auto align-items-lg-center">
+<ul class="navbar-nav ms-auto align-items-xl-center">
 <!-- Home -->
 <li class="nav-item">
 <a class="nav-link" href="/">Home</a>
@@ -299,7 +156,7 @@ html[lang="en"] h3 {
 <li><a class="dropdown-item" href="china-degree-apostille.html">China Degree Apostille</a></li>
 <li><span class="dropdown-section-label">Consular Legalization</span></li>
 <li><a class="dropdown-item" href="china-embassy-consular-legalization.html">Embassy / Consular Legalization</a></li>
-<li><a class="dropdown-item" href="study-in-china.html">Student Document Services</a></li>
+<li><a class="dropdown-item" href="study-in-china.html">Study in China</a></li>
 <li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
 </ul>
 </li>
@@ -322,16 +179,16 @@ html[lang="en"] h3 {
 <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="howToDropdownEn" role="button">Blog</a>
 <ul aria-labelledby="howToDropdownEn" class="dropdown-menu">
 <li><a class="dropdown-item" href="blog.html">All Articles</a></li>
-<li><hr class="dropdown-divider"></li>
+<li><hr class="dropdown-divider"/></li>
 <li><span class="dropdown-section-label">China Police Certificate</span></li>
 <li><a class="dropdown-item" href="china-police-certificate-guides.html">China PCC Guides</a></li>
 <li><a class="dropdown-item" href="china-police-certificate-by-country.html">PCC by Country</a></li>
-<li><hr class="dropdown-divider"></li>
+<li><hr class="dropdown-divider"/></li>
 <li><span class="dropdown-section-label">Authentication</span></li>
 <li><a class="dropdown-item" href="china-apostille-guides.html">China Apostille Guides</a></li>
 <li><a class="dropdown-item" href="china-hague-apostille-services.html">Apostille Services</a></li>
 <li><a class="dropdown-item" href="china-embassy-consular-legalization.html">Embassy / Consular Legalization</a></li>
-<li><hr class="dropdown-divider"></li>
+<li><hr class="dropdown-divider"/></li>
 <li><span class="dropdown-section-label">Education &amp; Credentials</span></li>
 <li><a class="dropdown-item" href="/china-academic-document-guides.html">Academic Document Guides</a></li><li><a class="dropdown-item" href="degree-verification.html">Degree Verification</a></li>
 <li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
@@ -346,16 +203,16 @@ html[lang="en"] h3 {
 <li class="nav-item">
 <a class="nav-link" href="about-en.html">About Us</a>
 </li><li class="nav-item">
-<a class="nav-link active" href="reviews-en.html" aria-current="page">Reviews</a>
+<a aria-current="page" class="nav-link active" href="reviews-en.html">Reviews</a>
 </li>
 </ul>
 <!-- CTA + Language Switch -->
-<div class="d-flex flex-column flex-lg-row align-items-lg-center ms-lg-3 mt-3 mt-lg-0 gap-2">
-<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-en.html" onclick="return trackAndNavigate(event, 'contact_click', {event_category:'engagement', event_label:'navbar_contact', link_url:'contact-en.html'}, 'contact-en.html');">
+<div class="v2-nav-actions d-flex flex-column flex-xl-row align-items-xl-center ms-lg-3 mt-3 mt-lg-0 gap-2">
+<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-en.html" onclick="return trackAndNavigate(event, 'contact_click', {event_category:'engagement', event_label:'navbar_contact', link_url:'/contact-en.html'}, 'contact-en.html');">
           Contact
         </a>
-<a class="nav-wa-text" href="https://wa.me/8617620130150" rel="noopener" target="_blank" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'navbar_whatsapp', link_url:'https://wa.me/8617620130150'}, 'https://wa.me/8617620130150', '_blank');">WhatsApp</a>
-<div class="ms-lg-2 d-flex gap-2">
+<a class="nav-wa-text" href="https://wa.me/8617620130150" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'navbar_whatsapp', link_url:'https://wa.me/8617620130150'}, 'https://wa.me/8617620130150', '_blank');" rel="noopener" target="_blank">WhatsApp</a>
+<div class="v2-nav-languages ms-lg-2 d-flex gap-2">
 <a class="lang-btn" href="/zh/">中文</a>
 <a class="lang-btn" href="/">EN</a>
 </div>
@@ -441,7 +298,7 @@ html[lang="en"] h3 {
   </div>
 </footer>
 <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/reviews-v2/vendor/bootstrap.bundle.min.js"></script>
 <script src="assets/main.js"></script>
 <script>
 (function () {
