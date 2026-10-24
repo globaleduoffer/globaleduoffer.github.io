@@ -1,0 +1,28 @@
+/* Study in China header only. Reuses the homepage navbar HTML and behavior. */
+html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav{background:#061d39!important;border-bottom:0;padding:16px 0!important}
+html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav>.container{width:95%!important;max-width:none!important;padding-inline:0!important}
+html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav .navbar-brand img{width:224px!important;max-width:224px!important;max-height:none!important;height:auto!important;filter:brightness(0) invert(1)}
+html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav .navbar-nav>.nav-item>.nav-link{font-size:16px!important;padding:8px 12px!important;color:#e0ebfc!important}
+html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav .cta-btn{font-size:16px!important;padding:11px 18px!important;min-height:47px;border-radius:9px!important;background:#076cfa;border-color:#076cfa}
+html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav .nav-wa-text{font-size:15px!important;color:#b8efcc!important;background:transparent!important;border:0!important;box-shadow:none!important;white-space:nowrap}
+html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav .lang-btn{font-size:14px!important}
+@media(min-width:1200px){
+ html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav .navbar-collapse>.v2-nav-actions{margin-left:20px!important;gap:10px!important}
+}
+@media(min-width:1200px) and (max-width:1399.98px){
+ html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav .navbar-brand img{width:200px!important;max-width:200px!important}
+ html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav .navbar-nav>.nav-item>.nav-link{font-size:14px!important;padding:8px 8px!important}
+ html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav .cta-btn{font-size:14px!important;padding-inline:15px!important}
+ html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav .nav-wa-text{font-size:13px!important}
+ html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav .lang-btn{font-size:12px!important}
+}
+@media(max-width:1199.98px){
+ html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav{padding:12px 0!important}
+ html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav>.container{width:calc(100% - 32px)!important}
+ html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav .navbar-brand img{width:200px!important;max-width:200px!important}
+ html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav .navbar-nav>.nav-item>.nav-link{font-size:15px!important;padding:11px 9px!important}
+ html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav .cta-btn{font-size:15px!important;min-height:44px;padding:9px 15px!important}
+}
+@media(max-width:359.98px){html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav .navbar-brand img{width:184px!important;max-width:184px!important}}
+
+html[lang=en] body:has(>main.study-v2) nav.navbar.ga-home-v2-nav .navbar-nav>.nav-item>.nav-link:is(:hover,:focus){color:#fff!important}

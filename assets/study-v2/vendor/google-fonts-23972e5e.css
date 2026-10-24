@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/9ae7d8f84793e67a.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/d938959881692883.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/e9c6c0a715f84fc5.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/3154e0e4e0c3f52f.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/4f9a6ab7145f4fd2.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/39713c8cb4a8ba03.ttf) format('truetype');
+}
