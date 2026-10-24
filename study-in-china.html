@@ -10,355 +10,11 @@
 <link rel="alternate" hreflang="en" href="https://globalattest.com/study-in-china.html">
 <link rel="alternate" hreflang="zh-CN" href="https://globalattest.com/study-in-china-zh.html">
 <link rel="alternate" hreflang="x-default" href="https://globalattest.com/study-in-china.html">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="assets/study-v2/vendor/google-fonts-34340195.css" rel="stylesheet"><link href="assets/study-v2/vendor/bootstrap.min.css" rel="stylesheet"/>
+<link href="assets/study-v2/vendor/fontawesome.min.css" rel="stylesheet"/>
 <link href="assets/style.css" rel="stylesheet"/>
-<style>
 
 
-    body { font-family: "Inter", system-ui, sans-serif !important; }
-
-    .page-hero {
-      background: linear-gradient(135deg, #1e3a8a, #020617);
-      color: #fff;
-      padding: 4rem 0 4.5rem;
-    }
-    .page-hero h1 {
-      font-size: clamp(2.2rem, 3.5vw, 3rem);
-      font-weight: 700;
-      margin-bottom: 1.2rem;
-    }
-    .page-hero p {
-      max-width: 40rem;
-      opacity: 0.9;
-      font-size: 1rem;
-    }
-    .page-hero .hero-illustration {
-      border-radius: 32px;
-      overflow: hidden;
-      background: #0f172a;
-      box-shadow:
-        0 22px 50px rgba(15, 23, 42, 0.55),
-        0 0 0 1px rgba(148, 163, 184, 0.2);
-      min-height: 260px;
-    }
-    .page-hero .hero-illustration img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .sec {
-      padding: 3.5rem 0;
-    }
-    .sec-muted {
-      background-color: #f9fafb;
-    }
-    .sec-title {
-      font-size: 1.7rem;
-      font-weight: 600;
-      margin-bottom: 0.8rem;
-    }
-    .sec-lead {
-      font-size: 1rem;
-      color: #4b5563;
-      max-width: 40rem;
-    }
-
-    .pill {
-      display: inline-block;
-      border-radius: 999px;
-      padding: 0.18rem 0.75rem;
-      background-color: #eff6ff;
-      color: #1d4ed8;
-      font-size: 0.78rem;
-      margin-right: 0.35rem;
-      margin-bottom: 0.35rem;
-    }
-
-    .card-soft {
-      border-radius: 1.5rem;
-      background-color: #ffffff;
-      border: 1px solid rgba(226, 232, 240, 0.9);
-      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
-      padding: 1.6rem 1.7rem;
-      height: 100%;
-    }
-    .card-soft h5 {
-      font-size: 1.05rem;
-      margin-bottom: 0.6rem;
-    }
-    .card-soft ul {
-      font-size: 0.93rem;
-      padding-left: 1.1rem;
-      margin-bottom: 0.4rem;
-    }
-    .card-soft li + li {
-      margin-top: 0.2rem;
-    }
-
-    .steps-title {
-      text-align: center;
-      font-size: 1.6rem;
-      margin-bottom: 2.4rem;
-    }
-    .step-item {
-      border-radius: 1.4rem;
-      background-color: #ffffff;
-      border: 1px solid rgba(226, 232, 240, 0.9);
-      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.04);
-      padding: 1.3rem 1.4rem;
-      height: 100%;
-      display: flex;
-      gap: 1rem;
-    }
-    .step-number {
-      width: 32px;
-      height: 32px;
-      border-radius: 999px;
-      background-color: #22c55e;
-      color: #fff;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      font-size: 0.9rem;
-      margin-top: 0.15rem;
-    }
-    .step-item h6 {
-      font-size: 0.98rem;
-      margin-bottom: 0.3rem;
-    }
-    .step-item p {
-      font-size: 0.92rem;
-      color: #4b5563;
-      margin-bottom: 0;
-    }
-
-    .faq-item + .faq-item {
-      margin-top: 1.1rem;
-    }
-    .faq-q {
-      font-weight: 600;
-      font-size: 0.98rem;
-    }
-    .faq-a {
-      font-size: 0.93rem;
-      color: #4b5563;
-      margin-top: 0.25rem;
-    }
-
-    .fees-section {
-      padding: 3.7rem 0 4.2rem;
-      background-image: linear-gradient(to bottom, rgba(15,23,42,0.9), rgba(15,23,42,0.96)), url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1400&q=80');
-      background-size: cover;
-      background-position: center;
-      color: #e5e7eb;
-    }
-    .fees-card {
-      max-width: 780px;
-      margin: 0 auto;
-      text-align: center;
-      padding: 2.5rem 2.3rem;
-      border-radius: 1.8rem;
-      background: rgba(15, 23, 42, 0.86);
-      box-shadow: 0 22px 50px rgba(15, 23, 42, 0.7);
-    }
-    .fees-card h2 {
-      color: #fff;
-      margin-bottom: 1.3rem;
-    }
-    .fees-divider {
-      width: 80px;
-      height: 2px;
-      background-color: #38bdf8;
-      margin: 0.4rem auto 1.4rem;
-    }
-    .fees-card p {
-      margin-bottom: 0.8rem;
-      font-size: 0.95rem;
-    }
-    .fees-card a {
-      color: #38bdf8;
-      text-decoration: underline;
-    }
-
-    footer { font-size: 0.92rem; }
-  
-
-    .page-hero .btn.hero-btn {
-      background-color: #22c55e;
-      border-radius: 999px;
-      padding: 0.55rem 1.4rem;
-      font-weight: 500;
-      border: none;
-      color: #fff;
-      box-shadow: 0 10px 30px rgba(22, 163, 74, 0.35);
-    }
-    .page-hero .btn.hero-btn:hover {
-      background-color: #16a34a;
-      color: #fff;
-      border-color: transparent;
-    }
-
-/* ===== Navbar synced from English homepage ===== */
-.navbar {
-      padding-top: 0.65rem;
-      padding-bottom: 0.65rem;
-      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
-    }
-
-    .navbar-brand span {
-      font-weight: 600;
-      letter-spacing: 0.03em;
-    }
-
-    .navbar-brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0;
-    }
-    .navbar-brand img {
-      display: block;
-    }
-
-    .navbar-nav .nav-link {
-      font-size: 0.98rem;
-      padding: 0.35rem 0.75rem;
-      font-weight: 500;
-    }
-
-    
-
-    /* Navbar font: clean & corporate (match Arial/Helvetica style) */
-    .navbar,
-    .navbar .nav-link,
-    .navbar .dropdown-item,
-    .navbar .btn,
-    .navbar .lang-btn {
-      font-family: var(--font-sans) !important;
-      letter-spacing: 0.2px;
-    }
-
-.navbar-nav .nav-link.active {
-      font-weight: 600;
-    }
-
-    .navbar .dropdown-menu {
-      background-color: #111827;
-      border-radius: 0;
-      border: none;
-    }
-
-    .navbar .dropdown-item {
-      color: #e5e7eb;
-      white-space: normal;
-    }
-
-    .navbar .dropdown-item:hover,
-    .navbar .dropdown-item:focus {
-      background-color: #1f2937;
-      color: #fff;
-    }
-
-    .lang-btn {
-      font-size: 0.9rem;
-      margin-left: 0.5rem;
-      text-decoration: none;
-    }
-
-    .lang-btn:hover {
-      text-decoration: underline;
-    }
-  
-/* CTA buttons in navbar */
-.cta-btn,
-.cta-btn-outline {
-  white-space: nowrap;
-}
-
-@media (max-width: 991.98px) {
-  .cta-btn,
-  .cta-btn-outline {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-
-    /* --- Navbar refinement (subtle, more premium) --- */
-    .navbar-nav .nav-link{
-      color:#334155;
-    }
-    .navbar-nav .nav-link:hover,
-    .navbar-nav .nav-link:focus{
-      color:#0f172a;
-    }
-    /* Active/hover cue: subtle pill highlight (more modern than underline) */
-    @media (min-width: 992px){
-      .navbar-nav .nav-link{
-        border-radius: 999px;
-        transition: background-color .15s ease, color .15s ease;
-      }
-      .navbar-nav .nav-link:hover,
-      .navbar-nav .nav-link:focus{
-        background: rgba(31,143,77,.10);
-      }
-      .navbar-nav .nav-link.active{
-        background: rgba(31,143,77,.16);
-      }
-    }
-/* CTA buttons: slightly tighter so they don't "jump out" */
-    .cta-btn{
-      padding-top:0.38rem !important;
-      padding-bottom:0.38rem !important;
-      font-weight:700;
-    }
-    /* Navbar WhatsApp: a touch lighter for a more premium look */
-    .nav-wa-text{
-      background:#f0fbf5;
-      color:#167a3e !important;
-    }
-    .nav-wa-text:hover{
-      background:#e6f8ee;
-    }
-    .lang-btn{ color:#2563eb; }
-</style>
-<style>
-/* Floating WhatsApp button (inline fallback so it works on every page) */
-.wa-float{
-  position:fixed; right:18px; bottom:18px; z-index:9999;
-  display:inline-flex; align-items:center; gap:10px;
-  padding:12px 14px; border-radius:999px;
-  background:#1f8f4d; color:#fff !important;
-  text-decoration:none !important;
-  box-shadow:0 10px 24px rgba(0,0,0,.18);
-  font-weight:600; font-size:14px;
-}
-.wa-float:hover{opacity:.92;}
-.wa-float .wa-ico{font-size:16px; line-height:1;}
-@media (max-width:640px){ .wa-float .wa-text{display:none;} .wa-float{padding:12px;} }
-
-/* Navbar WhatsApp: subtle pill (works even if external CSS missing) */
-
-.nav-wa-text{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:6px 14px;
-  border-radius:999px;
-  background:#eaf7f0;
-  color:#1f8f4d !important;
-  font-weight:600;
-  text-decoration:none !important;
-  border:none;
-}
-.nav-wa-text:hover{
-  background:#d9f2e3;
-}
-</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -408,287 +64,35 @@
 }
 </script>
 
-<style id="study-navbar-footer-final-fix">
-:root{--font-sans:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;}
-body{font-family:var(--font-sans)!important;}
-.navbar{
-  background:#fff!important;
-  padding-top:.65rem!important;
-  padding-bottom:.65rem!important;
-  box-shadow:0 1px 0 rgba(15,23,42,.06)!important;
-  position:relative!important;
-  z-index:1050!important;
-}
-.navbar-brand{display:inline-flex!important;align-items:center!important;gap:.5rem!important;padding:0!important;}
-.navbar-brand img{height:36px!important;width:auto!important;max-height:36px!important;display:block!important;}
-.navbar,.navbar .nav-link,.navbar .dropdown-item,.navbar .btn,.navbar .lang-btn{
-  font-family:var(--font-sans)!important;
-  letter-spacing:0!important;
-}
-.navbar-nav .nav-link{
-  font-size:.98rem!important;
-  padding:.35rem .75rem!important;
-  color:#334155!important;
-  border-radius:999px!important;
-  white-space:nowrap!important;
-}
-.navbar-nav .nav-link:hover,.navbar-nav .nav-link:focus,.navbar-nav .nav-link.active{
-  background:rgba(31,143,77,.10)!important;
-  color:#0f172a!important;
-}
-.navbar .dropdown-menu{
-  background-color:#111827!important;
-  border:none!important;
-  border-radius:0!important;
-  z-index:2000!important;
-}
-.navbar .dropdown-item{
-  color:#e5e7eb!important;
-  white-space:normal!important;
-}
-.navbar .dropdown-item:hover,.navbar .dropdown-item:focus{
-  background:#1f2937!important;
-  color:#fff!important;
-}
-.dropdown-section-label{
-  display:block!important;
-  font-weight:800!important;
-  text-transform:uppercase!important;
-}
-.nav-wa-text{
-  display:inline-flex!important;
-  align-items:center!important;
-  justify-content:center!important;
-  padding:6px 14px!important;
-  border-radius:999px!important;
-  background:#eaf7f0!important;
-  color:#1f8f4d!important;
-  font-weight:700!important;
-  text-decoration:none!important;
-  border:none!important;
-  white-space:nowrap!important;
-}
-.nav-wa-text:hover{background:#d9f2e3!important;}
-.lang-btn{color:#2563eb!important;font-size:.9rem!important;text-decoration:none!important;}
-.lang-btn:hover{text-decoration:underline!important;}
-footer.bg-dark{
-  background:#212529!important;
-}
-.footer-copyright{
-  font-family: var(--font-sans) !important;
-  color:#ffffff!important;
-  font-size:0.95rem!important;
-  font-weight:500!important;
-  letter-spacing:0!important;
-  opacity:1!important;
-  margin:0!important;
-}
-</style>
 
 
-<style id="global-attest-footer-final-match">
-footer.bg-dark{
-  background:#212529!important;
-}
-footer .footer-copyright,
-footer p.mb-0{
-  font-family:"Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif!important;
-  color:#f8f9fa!important;
-  font-size:0.95rem!important;
-  line-height:1.45!important;
-  font-weight:400!important;
-  letter-spacing:.01em!important;
-  opacity:1!important;
-  margin:0!important;
-}
-</style>
 
-<style id="globalattest-unified-font-footer">
-:root{--font-sans:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;}
-html,body,button,input,select,textarea,.navbar,.navbar .nav-link,.navbar .dropdown-item,.navbar .btn,.navbar .lang-btn{font-family:var(--font-sans)!important;letter-spacing:0!important;}
-body{color:#1f2937;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
-footer.bg-dark,footer.bg-dark p{color:#f8fafc!important;}
-.footer-text, footer.bg-dark p{font-family:var(--font-sans)!important;font-size:0.95rem!important;line-height:1.5!important;font-weight:500;letter-spacing:0;}
-</style>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style id="globalattest-formal-english-typography">
-html[lang="en"]{
-  --font-formal-serif:"Libre Baskerville", Georgia, "Times New Roman", Times, serif;
-  --font-formal-sans:"Source Sans 3", "Helvetica Neue", Arial, sans-serif;
-}
-html[lang="en"] body{
-  font-family:var(--font-formal-sans)!important;
-  font-weight:400!important;
-  letter-spacing:0!important;
-}
-html[lang="en"] h1,
-html[lang="en"] h2,
-html[lang="en"] h3,
-html[lang="en"] .hero-title,
-html[lang="en"] .premium-title,
-html[lang="en"] .guide-title,
-html[lang="en"] .page-hero h1,
-html[lang="en"] .contact-hero h1,
-html[lang="en"] .article-content h2,
-html[lang="en"] .case-article-card h1,
-html[lang="en"] .case-article-card h2,
-html[lang="en"] .case-page-main h1,
-html[lang="en"] .case-page-main h2{
-  font-family:var(--font-formal-serif)!important;
-  font-weight:700!important;
-  letter-spacing:0!important;
-}
-html[lang="en"] h4,
-html[lang="en"] h5,
-html[lang="en"] h6,
-html[lang="en"] p,
-html[lang="en"] li,
-html[lang="en"] label,
-html[lang="en"] input,
-html[lang="en"] select,
-html[lang="en"] textarea,
-html[lang="en"] button,
-html[lang="en"] .btn,
-html[lang="en"] .navbar,
-html[lang="en"] .navbar .nav-link,
-html[lang="en"] .navbar .dropdown-item,
-html[lang="en"] .navbar .btn,
-html[lang="en"] .navbar .lang-btn,
-html[lang="en"] .nav-wa-text,
-html[lang="en"] .hero-subtitle,
-html[lang="en"] .premium-lead,
-html[lang="en"] .guide-lead,
-html[lang="en"] .article-content p,
-html[lang="en"] .article-content li,
-html[lang="en"] .footer-premium,
-html[lang="en"] .footer-premium p,
-html[lang="en"] .footer-premium a{
-  font-family:var(--font-formal-sans)!important;
-  letter-spacing:0!important;
-}
-html[lang="en"] .hero-kicker,
-html[lang="en"] .section-kicker,
-html[lang="en"] .guide-kicker,
-html[lang="en"] .guide-badge,
-html[lang="en"] .article-meta{
-  font-family:var(--font-formal-sans)!important;
-  letter-spacing:.06em!important;
-}
-html[lang="en"] .hero-title,
-html[lang="en"] .guide-title{
-  line-height:1.12!important;
-}
-html[lang="en"] .premium-title,
-html[lang="en"] .article-content h2{
-  line-height:1.22!important;
-}
-html[lang="en"] strong{
-  font-weight:700!important;
-}
-</style>
-<link href="assets/globalattest-typography.css" rel="stylesheet">
-<style id="resources-nav-compact">
-@media (min-width: 992px) {
-  .navbar .container { max-width: 1320px; }
-  .navbar-nav .nav-link { font-size: .92rem !important; padding-left: .48rem !important; padding-right: .48rem !important; }
-  .navbar .btn, .navbar .nav-wa-text { font-size: .9rem !important; padding-left: .85rem !important; padding-right: .85rem !important; }
-  .navbar-brand img { max-width: 210px !important; object-fit: contain; }
-}
-</style>
-<style id="hero-h1-uniform-v13">
 
-.hero-section .hero-title,
-.page-hero h1{
-  font-size:clamp(3rem,5.25vw,5.15rem)!important;
-  line-height:1.12!important;
-  letter-spacing:0!important;
-  font-weight:700!important;
-}
-.page-hero .hero-kicker,
-.hero-section .hero-kicker{
-  font-size:.92rem!important;
-  line-height:1.6!important;
-}
-@media(max-width:991.98px){
-  .hero-section .hero-title,
-  .page-hero h1{
-    font-size:clamp(2.25rem,10vw,3.55rem)!important;
-  }
-}
 
-</style><style id="hero-h1-smaller-v14">
-.hero-section .hero-title,
-.page-hero h1 {
-  font-size: clamp(2.55rem, 4.35vw, 4.35rem) !important;
-  line-height: 1.13 !important;
-  letter-spacing: 0 !important;
-}
-@media (max-width: 991.98px) {
-  .hero-section .hero-title,
-  .page-hero h1 {
-    font-size: clamp(2.05rem, 9vw, 3.2rem) !important;
-  }
-}
-</style>
-<style id="hero-h1-final-v16">
-html[lang="en"] .page-hero h1,
-html[lang="en"] .hero-section .hero-title,
-html[lang="en"] .wfoe-hero .hero-title,
-html[lang="en"] .resource-hero .resource-title,
-html[lang="en"] .guide-hero .guide-title {
-  font-size: clamp(1.75rem, 2.1vw, 2.45rem) !important;
-  line-height: 1.18 !important;
-  letter-spacing: 0 !important;
-  max-width: 760px !important;
-}
-html[lang="en"] .home-hero-title {
-  font-size: clamp(2.35rem, 4vw, 3.4rem) !important;
-  line-height: 1.12 !important;
-  max-width: 820px !important;
-}
-html[lang="en"] .page-hero,
-html[lang="en"] .hero-section {
-  overflow: hidden !important;
-}
-@media (min-width: 1400px) {
-  html[lang="en"] .page-hero h1,
-  html[lang="en"] .hero-section .hero-title,
-  html[lang="en"] .wfoe-hero .hero-title,
-  html[lang="en"] .resource-hero .resource-title,
-html[lang="en"] .guide-hero .guide-title {
-    font-size: 2.45rem !important;
-  }
-}
-@media (max-width: 991.98px) {
-  html[lang="en"] .page-hero h1,
-  html[lang="en"] .hero-section .hero-title,
-  html[lang="en"] .wfoe-hero .hero-title,
-  html[lang="en"] .resource-hero .resource-title,
-  html[lang="en"] .guide-hero .guide-title,
-  html[lang="en"] .home-hero-title {
-    font-size: clamp(1.9rem, 7vw, 2.35rem) !important;
-    line-height: 1.16 !important;
-    max-width: 100% !important;
-  }
-}
-</style>
+
+<link href="assets/study-v2/vendor/google-fonts-23972e5e.css" rel="stylesheet">
+
+<link href="assets/study-v2/vendor/typography-local.css" rel="stylesheet">
+
+
+
 <link href="assets/globalattest-layout.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/globalattest-footer-phase1.css">
-</head>
-<body>
 
-
-<nav class="navbar navbar-expand-lg">
+<link rel="stylesheet" href="assets/home-v2/home-en-v2.css">
+<link rel="stylesheet" href="assets/study-v2/study-in-china-v2.css">
+<link rel="stylesheet" href="assets/study-v2/study-header-r1.css">
+</head><body><nav aria-label="Main navigation" class="navbar navbar-expand-xl ga-home-v2-nav">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="/">
-<img alt="Global Attest Logo" src="assets/images/logo-global-attest.png" style="height:36px; width:auto; max-height:36px;" decoding="async" width="1211" height="198" loading="eager">
+<img alt="Global Attest Logo" decoding="async" height="198" loading="eager" src="assets/images/logo-global-attest.png" style="height:36px; width:auto; max-height:36px;" width="1211"/>
 <span class="visually-hidden">Global Attest</span>
 </a>
 <button aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#nav" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="nav">
-<ul class="navbar-nav ms-auto align-items-lg-center">
+<ul class="navbar-nav ms-auto align-items-xl-center">
 <!-- Home -->
 <li class="nav-item">
 <a class="nav-link" href="/">Home</a>
@@ -718,7 +122,7 @@ html[lang="en"] .guide-hero .guide-title {
 <li><a class="dropdown-item" href="china-degree-apostille.html">China Degree Apostille</a></li>
 <li><span class="dropdown-section-label">Consular Legalization</span></li>
 <li><a class="dropdown-item" href="china-embassy-consular-legalization.html">Embassy / Consular Legalization</a></li>
-<li><a class="dropdown-item" href="study-in-china.html">Student Document Services</a></li>
+<li><a class="dropdown-item" href="study-in-china.html">Study in China</a></li>
 <li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
 </ul>
 </li>
@@ -741,16 +145,16 @@ html[lang="en"] .guide-hero .guide-title {
 <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="howToDropdownEn" role="button">Blog</a>
 <ul aria-labelledby="howToDropdownEn" class="dropdown-menu">
 <li><a class="dropdown-item" href="blog.html">All Articles</a></li>
-<li><hr class="dropdown-divider"></li>
+<li><hr class="dropdown-divider"/></li>
 <li><span class="dropdown-section-label">China Police Certificate</span></li>
 <li><a class="dropdown-item" href="china-police-certificate-guides.html">China PCC Guides</a></li>
 <li><a class="dropdown-item" href="china-police-certificate-by-country.html">PCC by Country</a></li>
-<li><hr class="dropdown-divider"></li>
+<li><hr class="dropdown-divider"/></li>
 <li><span class="dropdown-section-label">Authentication</span></li>
 <li><a class="dropdown-item" href="china-apostille-guides.html">China Apostille Guides</a></li>
 <li><a class="dropdown-item" href="china-hague-apostille-services.html">Apostille Services</a></li>
 <li><a class="dropdown-item" href="china-embassy-consular-legalization.html">Embassy / Consular Legalization</a></li>
-<li><hr class="dropdown-divider"></li>
+<li><hr class="dropdown-divider"/></li>
 <li><span class="dropdown-section-label">Education &amp; Credentials</span></li>
 <li><a class="dropdown-item" href="/china-academic-document-guides.html">Academic Document Guides</a></li><li><a class="dropdown-item" href="degree-verification.html">Degree Verification</a></li>
 <li><a class="dropdown-item" href="wes-en.html">WES Credential Evaluation</a></li>
@@ -769,316 +173,84 @@ html[lang="en"] .guide-hero .guide-title {
 </li>
 </ul>
 <!-- CTA + Language Switch -->
-<div class="d-flex flex-column flex-lg-row align-items-lg-center ms-lg-3 mt-3 mt-lg-0 gap-2">
-<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-en.html">
+<div class="v2-nav-actions d-flex flex-column flex-xl-row align-items-xl-center ms-lg-3 mt-3 mt-lg-0 gap-2">
+<a class="btn btn-success btn-sm rounded-pill px-3 fw-semibold cta-btn" href="contact-en.html" onclick="return trackAndNavigate(event, 'contact_click', {event_category:'engagement', event_label:'navbar_contact', link_url:'/contact-en.html'}, 'contact-en.html');">
           Contact
         </a>
-<a class="nav-wa-text" href="https://wa.me/8617620130150" rel="noopener" target="_blank">WhatsApp</a>
-<div class="ms-lg-2 d-flex gap-2">
+<a class="nav-wa-text" href="https://wa.me/8617620130150" onclick="return trackAndNavigate(event, 'whatsapp_click', {event_category:'engagement', event_label:'navbar_whatsapp', link_url:'https://wa.me/8617620130150'}, 'https://wa.me/8617620130150', '_blank');" rel="noopener" target="_blank">WhatsApp</a>
+<div class="v2-nav-languages ms-lg-2 d-flex gap-2">
 <a class="lang-btn" href="/zh/">中文</a>
 <a class="lang-btn" href="/">EN</a>
 </div>
 </div>
 </div>
 </div>
-</nav>
-
-<header class="page-hero">
-<div class="container">
-<div class="row align-items-center g-4">
-<div class="col-lg-6">
-<p class="hero-kicker">China Student Document Services</p>
-<h1>China Student Document Services</h1>
-<p>
+</nav><main class="study-v2"><header class="sv-hero"><img class="sv-hero-image" src="assets/images/study-v2/graduates.webp" alt="" aria-hidden="true" fetchpriority="high" width="2000" height="800"><div class="sv-shell"><div class="sv-copy"><p class="sv-eyebrow">STUDY IN CHINA</p><h1>University Admission<br>&amp; Scholarship Assistance</h1><p class="sv-lead">We help international students apply to universities in China, with guidance on program selection, application documents, scholarships, visa procedures and pre-departure preparation.</p><div class="p3-actions"><a class="btn btn-success p3-primary" href="contact-en.html">Get a Free Consultation <span aria-hidden="true">→</span></a><a class="btn p3-wa" href="https://wa.me/8617620130150" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp Us</a></div></div><ul class="sv-highlights"><li><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Personalized university selection</span></li><li><i class="fa-solid fa-file-lines" aria-hidden="true"></i><span>Application guidance and document review</span></li><li><i class="fa-solid fa-users" aria-hidden="true"></i><span>Support from application to enrollment</span></li><li><i class="fa-solid fa-globe" aria-hidden="true"></i><span>Assistance for international students</span></li></ul></div></header><div class="sv-shell sv-content"><section class="sv-section sv-intro"><div><h2>Study in China with Professional Support</h2><p>Choosing where and what to study is a personal decision. Global Attest helps international students understand university options, admission requirements, application documents and scholarship opportunities in China.</p><p>Whether you are considering a degree or a language program, we build a realistic plan around your academic background, language ability, budget and long-term goals. We support the journey from selection and application through visa preparation and arrival guidance.</p></div><aside class="sv-info"><h3>Who Can We Help?</h3><ul><li><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>High school graduates applying for bachelor’s programs</span></li><li><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Bachelor’s degree holders applying for master’s programs</span></li><li><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Master’s degree holders applying for doctoral programs</span></li><li><i class="fa-solid fa-book-open" aria-hidden="true"></i><span>Chinese language program applicants</span></li><li><i class="fa-solid fa-users" aria-hidden="true"></i><span>Exchange and short-term program applicants, where applicable</span></li><li><i class="fa-solid fa-users" aria-hidden="true"></i><span>Other international applicants interested in studying in China</span></li></ul></aside></section><section class="sv-section"><h2>Our Services</h2><div class="sv-services"><article><i class="fa-solid fa-building-columns" aria-hidden="true"></i><h3>University &amp; Program Selection</h3><p>Help applicants identify suitable universities and academic programs based on their background, goals, and preferences.</p></article><article><i class="fa-solid fa-file-lines" aria-hidden="true"></i><h3>Application Guidance</h3><p>Explain admission requirements, application timelines, and submission procedures.</p></article><article><i class="fa-solid fa-folder-open" aria-hidden="true"></i><h3>Document Preparation</h3><p>Assist with organizing and reviewing required application documents.</p></article><article><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><h3>Scholarship Application</h3><p>Provide guidance on available scholarship opportunities and relevant application procedures.</p></article><article><i class="fa-solid fa-users" aria-hidden="true"></i><h3>University Communication</h3><p>Assist with application-related communication and follow-up where permitted.</p></article><article><i class="fa-solid fa-passport" aria-hidden="true"></i><h3>Pre-departure Support</h3><p>Provide practical guidance on student visa procedures, travel preparation, and arrival-related requirements.</p></article></div></section><section class="sv-section"><h2>Application Process</h2><ol class="sv-process"><li><span class="sv-step-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></span><span class="sv-step-no">01</span><h3>Initial Consultation</h3><p>Discuss your study goals, academic background, language level and budget.</p></li><li><span class="sv-step-icon"><i class="fa-solid fa-building-columns" aria-hidden="true"></i></span><span class="sv-step-no">02</span><h3>University Selection</h3><p>Identify suitable programs and realistic dream, match and safety options.</p></li><li><span class="sv-step-icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></span><span class="sv-step-no">03</span><h3>Prepare &amp; Submit Documents</h3><p>Organize application materials and complete the relevant submission steps.</p></li><li><span class="sv-step-icon"><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i></span><span class="sv-step-no">04</span><h3>Application &amp; Follow-up</h3><p>Track university updates and help respond to requests for further information.</p></li><li><span class="sv-step-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></span><span class="sv-step-no">05</span><h3>Admission &amp; Next Steps</h3><p>Review any offer and scholarship conditions, then plan visa and arrival steps.</p></li></ol><p class="sv-note">Admission, scholarship and visa decisions are made by the relevant institutions and authorities. Outcomes and timelines are not guaranteed.</p></section><section class="sv-section sv-study-options"><div><h2>Scholarship Opportunities</h2><div class="sv-scholar"><img class="" src="assets/images/study-v2/campus.webp" alt="Illustrative Chinese academic campus with traditional roof architecture" width="1200" height="700" loading="lazy" decoding="async"><div><h3>Find a suitable funding route</h3><ul class="sv-checks"><li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span>Chinese Government Scholarship (CSC)</span></li><li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span>Provincial Government Scholarships</span></li><li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span>University Scholarships</span></li><li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span>Partial scholarships and fee waivers, where available</span></li><li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span>Scholarship application preparation</span></li></ul></div></div><p class="sv-note">Eligibility, availability, deadlines and selection depend on the institution and official program. Selected-country and regional opportunities, including Belt &amp; Road programs, may also be relevant. Confirm current terms with the scholarship provider.</p></div><div><h2>Popular Programs</h2><div class="sv-programs"><article><img class="" src="assets/images/study-v2/medicine.webp" alt="Medical students using an anatomical teaching model" width="1200" height="700" loading="lazy" decoding="async"><h3>Medicine (MBBS)</h3></article><article><img class="" src="assets/images/study-v2/engineering.webp" alt="Engineering students collaborating on a robotics project" width="1200" height="700" loading="lazy" decoding="async"><h3>Engineering &amp; Computer Science</h3></article><article><img class="" src="assets/images/study-v2/student-collaboration.webp" alt="International students collaborating in a library" width="1200" height="700" loading="lazy" decoding="async"><h3>Business &amp; International Trade</h3></article><article><img class="" src="assets/images/study-v2/campus.webp" alt="Illustrative Chinese university campus" width="1200" height="700" loading="lazy" decoding="async"><h3>Chinese Language Programs</h3></article><article><img class="" src="assets/images/study-v2/student-collaboration.webp" alt="Students reading and discussing their coursework" width="1200" height="700" loading="lazy" decoding="async"><h3>Social Sciences &amp; Humanities</h3></article><article><img class="" src="assets/images/study-v2/graduates.webp" alt="International graduates in an illustrative campus setting" width="1200" height="700" loading="lazy" decoding="async"><h3>Other Academic Programs</h3></article></div><p class="sv-note">Program availability and language of instruction vary. MBBS applicants should check current approved university offerings and the recognition requirements relevant to their intended place of practice.</p></div></section><section class="sv-section"><h2>Why Study in China?</h2><div class="sv-four"><article><i class="fa-solid fa-award" aria-hidden="true"></i><h3>High-quality Education</h3><p>Explore established academic institutions and find a program suited to your goals.</p></article><article><i class="fa-solid fa-coins" aria-hidden="true"></i><h3>Affordable Tuition Options</h3><p>Compare tuition and living costs across cities and institutions to plan your budget.</p></article><article><i class="fa-solid fa-users" aria-hidden="true"></i><h3>Diverse Academic Programs</h3><p>Consider pathways across sciences, engineering, business, languages and the humanities.</p></article><article><i class="fa-solid fa-building-columns" aria-hidden="true"></i><h3>Cultural Experience</h3><p>Develop your understanding of Chinese language, culture and contemporary society.</p></article></div></section><section class="sv-section"><h2>Why Choose Global Attest?</h2><div class="sv-four"><article><i class="fa-solid fa-gem" aria-hidden="true"></i><h3>Experienced Support Team</h3><p>Practical assistance with international student applications and preparation.</p></article><article><i class="fa-solid fa-user" aria-hidden="true"></i><h3>Personalized Guidance</h3><p>Recommendations informed by your background, preferences and study goals.</p></article><article><i class="fa-solid fa-comments" aria-hidden="true"></i><h3>Clear Communication</h3><p>Understand the required steps and receive application-related updates.</p></article><article><i class="fa-solid fa-globe" aria-hidden="true"></i><h3>Ongoing Application Support</h3><p>Coordination through application, offer review and pre-departure preparation.</p></article></div></section><section class="sv-final"><img class="sv-final-image" src="assets/images/study-v2/campus.webp" alt="" width="1200" height="700" loading="lazy" decoding="async"><div><h2>Start Your Study Journey in China</h2><p>Send us a message with your background and study goals. Our team will review your case and provide a tailored plan and quotation.</p><div class="p3-actions"><a class="btn btn-success p3-primary" href="contact-en.html">Get a Free Consultation <span aria-hidden="true">→</span></a><a class="btn p3-wa" href="https://wa.me/8617620130150" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp Us</a></div></div></section><section class="sv-section"><div class="sv-faq-head"><h2>Frequently Asked Questions</h2><button type="button" class="sv-expand" aria-controls="study-faq" aria-expanded="false">Expand all</button></div><div class="sv-faq-grid" id="study-faq"><details class="sv-faq"><summary>What programs can I apply for in China?<span aria-hidden="true">⌄</span></summary><p>Options may include bachelor’s, master’s and doctoral degrees, Chinese language courses, and exchange or short-term study where available. We review your education, language level and goals against each institution’s current requirements. English-taught provision varies by university and subject.</p></details><details class="sv-faq"><summary>What documents do I need to provide?<span aria-hidden="true">⌄</span></summary><p>Universities may request your passport details, academic certificates and transcripts, language results, a personal statement or study plan, CV and recommendation letters. The exact list, format and any additional requirements depend on the university, program, nationality and application cycle. Share your background first; we will help organize a relevant checklist.</p></details><details class="sv-faq"><summary>Do I need to take HSK or IELTS?<span aria-hidden="true">⌄</span></summary><p>Chinese-taught degrees often require HSK; English-taught programs may ask for IELTS, TOEFL or other evidence accepted by the university. Exemptions and language preparation routes vary. Check the current program instructions before booking a test.</p></details><details class="sv-faq"><summary>How much does it cost to study in China?<span aria-hidden="true">⌄</span></summary><p>Tuition, accommodation, insurance and everyday costs vary by university, subject, city and lifestyle. Ask your target university for current fees and check the precise coverage of any scholarship. Our assistance fee is separate and depends on the agreed service scope and number of applications; a quotation is provided before proceeding.</p></details><details class="sv-faq"><summary>When should I start the application process?<span aria-hidden="true">⌄</span></summary><p>The existing service guidance recommends beginning 6–12 months ahead, and earlier for scholarships, to allow for language tests, program selection and document preparation. This is a planning recommendation, not a fixed deadline. Confirm the application cycle and scholarship dates with each university.</p></details><details class="sv-faq"><summary>Can you help with the student visa (X1/X2) application?<span aria-hidden="true">⌄</span></summary><p>We can explain the document preparation steps after admission and provide practical checklists. Use the current instructions of the Chinese embassy, consulate or visa centre responsible for your application. The required route and documents depend on your study duration and circumstances. Visa decisions remain with the authorities; we do not guarantee approval.</p></details></div></section><section class="sv-section sv-reading"><h2>Plan Your Application with Confidence</h2><p>Explore the existing service guidance, graduate resources and original planning answers below. Requirements and costs must always be confirmed for your chosen application cycle.</p><details class="sv-more"><summary>Planning around your goals &amp; background</summary><div class="sv-legacy"><p>
           China offers a wide range of English-taught and Chinese-taught degree programs,
           scholarships and career opportunities. We help you understand the options that truly
           match your background, and design a realistic application plan instead of only chasing “famous brands”.
-        </p>
-<p>
+        </p><p>
           From clarifying your goals, choosing schools and majors, preparing documents to arrival support in China,
           we walk you through each step so that you can study in China with confidence.
-        </p>
-<div class="mt-4">
-<a class="btn hero-btn" href="contact-en.html">Get a Quote &amp; Consultation</a>
-</div>
-</div>
-<div class="col-lg-6">
-<div class="hero-illustration">
-<img alt="International students studying in China" src="assets/images/study-in-china-hero.jpg" decoding="async" width="1400" height="933" loading="eager" fetchpriority="high">
-</div>
-</div>
-</div>
-</div>
-</header>
-<section class="sec sec-muted">
-<div class="container">
-<div class="row g-4 align-items-start">
-<div class="col-lg-7">
-<h2 class="sec-title">Who are these China student document services for?</h2>
-<p class="sec-lead">
-          Instead of blindly following rankings or advertisements, we focus on students who
-          want to make thoughtful, realistic choices. This service is suitable if you:
-        </p>
-<ul class="mt-3" style="font-size:0.95rem; color:#4b5563;">
-<li>Plan to apply for undergraduate, postgraduate or language programs in China.</li>
-<li>Are considering switching majors or country and want to know whether China is a good fit.</li>
-<li>Already have some target schools in mind but are not sure if your profile is competitive.</li>
-<li>Would like a long-term plan that connects study, internships, and future career development.</li>
-</ul>
-</div>
-<div class="col-lg-5">
-<div class="card-soft">
-<h5>Common goals of our students</h5>
-<div class="mb-2">
-<span class="pill">Explore future direction</span>
-<span class="pill">Obtain a recognized degree</span>
-<span class="pill">Improve Chinese / English</span>
-<span class="pill">Gain work experience in China</span>
-</div>
-<p style="font-size:0.93rem; color:#4b5563;">
-            Before talking about “which university”, we first clarify your motivations and constraints:
-            budget, language level, academic background and long-term plans.
-            Only then does it make sense to discuss specific schools and majors.
-          </p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="sec">
-<div class="container">
-<h2 class="sec-title mb-3">What do we do for you?</h2>
-<div class="row g-4">
-<div class="col-md-4">
-<div class="card-soft h-100">
-<h5>1. Reality-based school and major selection</h5>
-<p style="font-size:0.93rem; color:#4b5563;">
-            We combine your academic background, grades, language ability and budget
-            with real admission data to help you distinguish between “dream”, “match” and “safety” options
-            instead of only looking at rankings.
-          </p>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card-soft h-100">
-<h5>2. Application timeline and strategy</h5>
-<p style="font-size:0.93rem; color:#4b5563;">
-            We create a personalized application schedule, including language tests, document preparation,
-            online application, interviews and scholarship opportunities, so you know what to do at each stage.
-          </p>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card-soft h-100">
-<h5>3. Document and communication support</h5>
-<p style="font-size:0.93rem; color:#4b5563;">
-            We guide you in preparing application documents such as personal statements,
-            recommendation letters and CVs, and help you communicate with universities when clarification is needed.
-          </p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="sec sec-muted">
-<div class="container">
-<h2 class="steps-title">Typical student document support process</h2>
-<div class="row g-3">
-<div class="col-md-6 col-lg-4">
-<div class="step-item">
-<div class="step-number">1</div>
-<div>
-<h6>Understanding your background</h6>
-<p>We collect your academic history, language scores, interests and budget, and discuss your short-term and long-term plans.</p>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4">
-<div class="step-item">
-<div class="step-number">2</div>
-<div>
-<h6>Selecting target programs</h6>
-<p>We help you identify a list of suitable universities and programs, divided into “dream”, “match” and “safety” tiers.</p>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4">
-<div class="step-item">
-<div class="step-number">3</div>
-<div>
-<h6>Preparing application documents</h6>
-<p>We guide you in writing and polishing personal statements, obtaining recommendation letters and organizing transcripts and certificates.</p>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4">
-<div class="step-item">
-<div class="step-number">4</div>
-<div>
-<h6>Submitting applications</h6>
-<p>We assist you with completing online application forms, uploading documents and tracking each university’s status updates.</p>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4">
-<div class="step-item">
-<div class="step-number">5</div>
-<div>
-<h6>Admission, visa and arrival</h6>
-<p>After you receive admission offers, we help you understand scholarship conditions, prepare visa documents and get ready for your arrival in China.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section class="sec sec-muted">
-<div class="container">
-<h2 class="sec-title">Scholarship and Student Document Support</h2>
-<p class="sec-lead">Many international students can apply for CSC Scholarships, provincial government scholarships, university scholarships and Belt & Road funding opportunities. We help identify programs that match your profile and scholarship goals.</p>
-<div class="row g-4 mt-2">
-<div class="col-md-3"><div class="card-soft"><h5>CSC Scholarship</h5><p>Chinese Government Scholarship opportunities.</p></div></div>
-<div class="col-md-3"><div class="card-soft"><h5>Provincial Scholarships</h5><p>Funding offered by local governments.</p></div></div>
-<div class="col-md-3"><div class="card-soft"><h5>University Scholarships</h5><p>Merit-based awards from Chinese universities.</p></div></div>
-<div class="col-md-3"><div class="card-soft"><h5>Belt & Road Programs</h5><p>Scholarships for selected countries and regions.</p></div></div>
-</div>
-</div>
-</section>
-
-<section class="sec">
-<div class="container">
-<h2 class="sec-title">Popular Programs for International Students</h2>
-<div class="row g-4">
-<div class="col-md-4"><div class="card-soft"><h5>MBBS in China</h5><p>Medical programs taught in English at approved universities.</p></div></div>
-<div class="col-md-4"><div class="card-soft"><h5>Engineering & Computer Science</h5><p>Among the most popular international degree pathways.</p></div></div>
-<div class="col-md-4"><div class="card-soft"><h5>Business & International Trade</h5><p>Ideal for students interested in China's economy and global commerce.</p></div></div>
-</div>
-</div>
-</section>
-
-<section class="sec sec-muted">
-<div class="container">
-<h2 class="sec-title">After Graduation in China</h2>
-<p class="sec-lead">Many students continue with employment, internships, postgraduate studies, degree verification, WES evaluations or even company formation in China.</p>
-<p>If you are unsure whether you need document retrieval, CHSI/CSSD verification, WES support or authentication, use the <a href="china-academic-document-guides.html">China Academic Document Guides</a> to choose the relevant route.</p>
-<p>Former students who need an academic record can review <a href="get-chinese-university-transcript-after-graduation.html">how to obtain an old Chinese university transcript after graduation</a> before preparing identity evidence, university enquiries or authorization materials.</p>
-<p>When that transcript must be prepared in another language, review <a href="chinese-university-transcript-translation.html">transcript translation for overseas use</a> before choosing professional translation, verification or notarization.</p>
-<p>Former international students who have lost a graduation or degree certificate can review the <a href="lost-chinese-university-diploma-replacement.html">Chinese university diploma replacement guide</a> before preparing university application or authorization materials.</p>
-<p>Former international students whose degree or graduation record cannot be found online can review <a href="blog-china-degree-not-found-on-chsi.html">how to troubleshoot a China degree not found on CHSI</a>.</p>
-<p>Graduates whose academic record remains connected to a former passport or name can review <a href="blog-chsi-old-passport-name-mismatch.html">how to diagnose a CHSI historical-identity or binding mismatch</a>.</p>
-<ul>
-<li>Degree Verification & Academic Authentication</li>
-<li>WES Credential Evaluation</li>
-<li>Work Opportunities in China</li>
-<li>WFOE China Business Setup for Entrepreneurs</li>
-</ul>
-</div>
-</section>
-
-<section class="sec">
-<div class="container">
-<div class="row g-4">
-<div class="col-lg-6">
-<h2 class="sec-title mb-3">Frequently Asked Questions</h2>
-<div class="faq-item">
-<div class="faq-q">Q1: How early should I start preparing for China student document applications?</div>
-<div class="faq-a">
-    A: We recommend starting at least 6–12 months in advance (and earlier if you want scholarships).
-    Early planning gives you time for language tests, school selection, document preparation, and deadlines.
-  </div>
-</div>
-<div class="faq-item">
-<div class="faq-q">Q2: Do I need Chinese language ability to study in China?</div>
-<div class="faq-a">
-    A: It depends on the program type. Chinese-taught degrees often require HSK. English-taught programs may focus on IELTS/TOEFL.
-    We help you choose the right route based on your current language level and target schools.
-  </div>
-</div>
-<div class="faq-item">
-<div class="faq-q">Q3: How much are tuition and living costs in China?</div>
-<div class="faq-a">
-    A: Costs vary by city and university. Many bachelor’s and master’s programs range roughly from RMB 15,000–50,000/year.
-    Living costs (housing, meals, insurance, daily expenses) also vary, and are often lower than many Western destinations.
-  </div>
-</div>
-<div class="faq-item">
-<div class="faq-q">Q4: What should I pay attention to for student visas (X1/X2)?</div>
-<div class="faq-a">
-    A: Ensure your admission notice and JW form details match your passport, prepare photos/medical/financial proof as required,
-    and complete residence permit + local registration after arrival within the specified timeframe. We provide checklists and reminders.
-  </div>
-</div>
-<div class="faq-item">
-<div class="faq-q">Q5: Do you support students after they arrive in China?</div>
-<div class="faq-a">
-    A: Yes. Based on your needs, we can guide you through onboarding steps (registration, housing, insurance),
-    and help coordinate with your school when communication support is needed.
-  </div>
-</div>
-</div>
-<div class="col-lg-6">
-<div class="card-soft h-100">
-<h5>What kind of students work with us?</h5>
+        </p><div>
+<h3>What kind of students work with us?</h3>
 <ul>
 <li>High school graduates or undergraduates exploring the possibility of studying in China.</li>
 <li>Students who wish to combine language learning with degree programs or internships.</li>
 <li>Professionals seeking further study or short-term training in China related to their industry.</li>
 </ul>
-<p style="font-size:0.9rem; color:#6b7280;">
+<p>
             If you are unsure whether studying in China is the right choice for you,
             we can start with a low-pressure conversation to explore your options before you make any decisions.
           </p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="fees-section" style="padding: 3.5rem 0 3.8rem; background-image: linear-gradient(to bottom, rgba(15,23,42,0.88), rgba(15,23,42,0.96));">
-<div class="container">
-<div class="fees-card" style="text-align:left; max-width: 980px;">
-<h2 style="text-align:left;">Extended reading: plan a more suitable China student document pathway</h2>
-<div class="fees-divider" style="margin-left:0;"></div>
-<p>
+</div></div></details><details class="sv-more"><summary>Who are these China student document services for?</summary><div class="sv-legacy"><p>
+          Instead of blindly following rankings or advertisements, we focus on students who
+          want to make thoughtful, realistic choices. This service is suitable if you:
+        </p><ul>
+<li>Plan to apply for undergraduate, postgraduate or language programs in China.</li>
+<li>Are considering switching majors or country and want to know whether China is a good fit.</li>
+<li>Already have some target schools in mind but are not sure if your profile is competitive.</li>
+<li>Would like a long-term plan that connects study, internships, and future career development.</li>
+</ul><h3>Common goals of our students</h3><p>
+            Before talking about “which university”, we first clarify your motivations and constraints:
+            budget, language level, academic background and long-term plans.
+            Only then does it make sense to discuss specific schools and majors.
+          </p></div></details><details class="sv-more"><summary>What do we do for you?</summary><div class="sv-legacy"><h3>1. Reality-based school and major selection</h3><p>
+            We combine your academic background, grades, language ability and budget
+            with real admission data to help you distinguish between “dream”, “match” and “safety” options
+            instead of only looking at rankings.
+          </p><h3>2. Application timeline and strategy</h3><p>
+            We create a personalized application schedule, including language tests, document preparation,
+            online application, interviews and scholarship opportunities, so you know what to do at each stage.
+          </p><h3>3. Document and communication support</h3><p>
+            We guide you in preparing application documents such as personal statements,
+            recommendation letters and CVs, and help you communicate with universities when clarification is needed.
+          </p></div></details><details class="sv-more"><summary>Typical student document support process</summary><div class="sv-legacy"><h3>Understanding your background</h3><p>We collect your academic history, language scores, interests and budget, and discuss your short-term and long-term plans.</p><h3>Selecting target programs</h3><p>We help you identify a list of suitable universities and programs, divided into “dream”, “match” and “safety” tiers.</p><h3>Preparing application documents</h3><p>We guide you in writing and polishing personal statements, obtaining recommendation letters and organizing transcripts and certificates.</p><h3>Submitting applications</h3><p>We assist you with completing online application forms, uploading documents and tracking each university’s status updates.</p><h3>Admission, visa and arrival</h3><p>After you receive admission offers, we help you understand scholarship conditions, prepare visa documents and get ready for your arrival in China.</p></div></details><details class="sv-more"><summary>Scholarship and Student Document Support</summary><div class="sv-legacy"><p>Many international students can apply for CSC Scholarships, provincial government scholarships, university scholarships and Belt &amp; Road funding opportunities. We help identify programs that match your profile and scholarship goals.</p><h3>CSC Scholarship</h3><p>Chinese Government Scholarship opportunities.</p><h3>Provincial Scholarships</h3><p>Funding offered by local governments.</p><h3>University Scholarships</h3><p>Merit-based awards from Chinese universities.</p><h3>Belt &amp; Road Programs</h3><p>Scholarships for selected countries and regions.</p></div></details><details class="sv-more"><summary>Popular Programs for International Students</summary><div class="sv-legacy"><h3>MBBS in China</h3><p>Medical programs taught in English at approved universities.</p><h3>Engineering &amp; Computer Science</h3><p>Among the most popular international degree pathways.</p><h3>Business &amp; International Trade</h3><p>Ideal for students interested in China's economy and global commerce.</p></div></details><details class="sv-more"><summary>After Graduation in China</summary><div class="sv-legacy"><p>Many students continue with employment, internships, postgraduate studies, degree verification, WES evaluations or even company formation in China.</p><p>If you are unsure whether you need document retrieval, CHSI/CSSD verification, WES support or authentication, use the <a href="china-academic-document-guides.html">China Academic Document Guides</a> to choose the relevant route.</p><p>Former students who need an academic record can review <a href="get-chinese-university-transcript-after-graduation.html">how to obtain an old Chinese university transcript after graduation</a> before preparing identity evidence, university enquiries or authorization materials.</p><p>When that transcript must be prepared in another language, review <a href="chinese-university-transcript-translation.html">transcript translation for overseas use</a> before choosing professional translation, verification or notarization.</p><p>Former international students who have lost a graduation or degree certificate can review the <a href="lost-chinese-university-diploma-replacement.html">Chinese university diploma replacement guide</a> before preparing university application or authorization materials.</p><p>Former international students whose degree or graduation record cannot be found online can review <a href="blog-china-degree-not-found-on-chsi.html">how to troubleshoot a China degree not found on CHSI</a>.</p><p>Graduates whose academic record remains connected to a former passport or name can review <a href="blog-chsi-old-passport-name-mismatch.html">how to diagnose a CHSI historical-identity or binding mismatch</a>.</p><ul>
+<li>Degree Verification &amp; Academic Authentication</li>
+<li>WES Credential Evaluation</li>
+<li>Work Opportunities in China</li>
+<li>WFOE China Business Setup for Entrepreneurs</li>
+</ul></div></details><details class="sv-more"><summary>Extended reading: plan a more suitable China student document pathway</summary><div class="sv-legacy"><p>
         Admission requirements, scholarship policies, language expectations, and application timelines can differ significantly across universities.
         Public information alone often makes it hard to judge which programs truly fit your profile. If your IELTS/HSK plan is not aligned,
         you may miss important deadlines or scholarship opportunities.
-      </p>
-<h3 style="color:#fff; font-size:1.2rem; margin-top:1.4rem;">From school selection to arrival: full-process support</h3>
-<p>
+      </p><h3>From school selection to arrival: full-process support</h3><p>
         We tailor recommendations based on your language level, academic background, budget, and career goals. We assist with key materials
         such as personal statements, recommendation letters, and CVs. During the admission stage, we track updates and help respond to requests.
         After visa approval, we can also provide practical onboarding guidance (medical check, insurance, housing, registration) so you can start
         your study in China smoothly.
-      </p>
-</div>
-</div>
-</section>
-<section class="fees-section">
-<div class="container">
-<div class="fees-card">
-<h2>Service fee &amp; next steps</h2>
-<div class="fees-divider"></div>
-<p>
+      </p></div></details><details class="sv-more"><summary>Service fee & next steps</summary><div class="sv-legacy"><p>
         Our China student document service can be as light or as comprehensive as you need –
         from a one-time consultation to full-cycle application support.
         The fee depends on the level of service and the number of universities you apply to.
-      </p>
-<p>
+      </p><p>
         You can first share your basic background and goals with us.
         After an initial assessment, we will suggest a suitable service scope and a transparent quotation,
         and only proceed if you feel comfortable.
-      </p>
-<div class="fees-divider"></div>
-<p class="mb-0">
+      </p><p>
         Want to explore whether studying in China is right for you?
         <a href="contact-en.html">Click here to contact our consultant</a> for a one-on-one conversation.
-      </p>
-</div>
-</div>
-</section>
-
-<footer class="ga-footer" aria-label="Global Attest footer">
+      </p></div></details><details class="sv-more"><summary>Original planning questions &amp; arrival support</summary><div class="sv-faq-grid"><details class="sv-faq"><summary>How early should I start preparing for China student document applications?<span aria-hidden="true">⌄</span></summary><p>We recommend starting at least 6–12 months in advance (earlier for scholarships). Early planning allows time for language tests, school selection, document preparation, and deadlines.</p></details><details class="sv-faq"><summary>Do I need Chinese language ability to study in China?<span aria-hidden="true">⌄</span></summary><p>It depends on the program type. Chinese-taught degrees often require HSK. English-taught programs may focus on IELTS/TOEFL. We help you choose based on your level and targets.</p></details><details class="sv-faq"><summary>How much are tuition and living costs in China?<span aria-hidden="true">⌄</span></summary><p>Costs vary by city and university. Many bachelor’s and master’s programs range roughly from RMB 15,000–50,000/year, with living costs varying by location and lifestyle.</p></details><details class="sv-faq"><summary>What should I pay attention to for student visas (X1/X2)?<span aria-hidden="true">⌄</span></summary><p>Ensure admission and JW form details match your passport, prepare required documents, and complete residence permit plus local registration after arrival within the specified timeframe.</p></details><details class="sv-faq"><summary>Do you support students after they arrive in China?<span aria-hidden="true">⌄</span></summary><p>Yes. Based on your needs, we can guide onboarding steps (registration, housing, insurance) and assist with school communication when needed.</p></details></div><p class="sv-note">The tuition range in this retained guidance is an indicative existing website estimate, not a current university quotation or a fee guarantee. Confirm current fees directly with the university. Visa instructions and available support depend on your circumstances.</p></details></section></div></main><footer class="ga-footer" aria-label="Global Attest footer">
   <div class="ga-footer-shell">
     <div class="ga-footer-top">
       <div class="ga-footer-brand">
@@ -1148,7 +320,7 @@ html[lang="en"] .guide-hero .guide-title {
     <p class="ga-footer-disclaimer">Global Attest is an independent document support provider and is not affiliated with any government authority.</p>
   </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/study-v2/vendor/bootstrap.bundle.min.js"></script>
 <script src="assets/main.js"></script>
 <script>
   const y=document.getElementById("y");
@@ -1169,5 +341,7 @@ document.addEventListener('click', function (event) {
   }
 });
 </script>
+<script src="assets/study-v2/study-in-china-v2.js"></script>
+<script src="assets/study-v2/whatsapp-safe-position.js"></script>
 </body>
 </html>
