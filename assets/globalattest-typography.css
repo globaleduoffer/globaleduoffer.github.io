@@ -10,83 +10,83 @@ body {
   letter-spacing: 0 !important;
 }
 
-html[lang="en"],
-html[lang="en"] body,
-html[lang="en"] p,
-html[lang="en"] li,
-html[lang="en"] label,
-html[lang="en"] input,
-html[lang="en"] select,
-html[lang="en"] textarea,
-html[lang="en"] button,
-html[lang="en"] .btn,
-html[lang="en"] .navbar,
-html[lang="en"] .navbar .nav-link,
-html[lang="en"] .navbar .dropdown-item,
-html[lang="en"] .navbar .lang-btn,
-html[lang="en"] .nav-wa-text,
-html[lang="en"] .hero-subtitle,
-html[lang="en"] .premium-lead,
-html[lang="en"] .guide-lead,
-html[lang="en"] .article-content,
-html[lang="en"] .article-content p,
-html[lang="en"] .article-content li,
-html[lang="en"] .footer-premium,
-html[lang="en"] .footer-premium p,
-html[lang="en"] .footer-premium a,
-html[lang="en"] .review-card,
-html[lang="en"] .review-text {
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])),
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) body,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) p,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) li,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) label,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) input,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) select,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) textarea,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) button,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .btn,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .navbar,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .navbar .nav-link,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .navbar .dropdown-item,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .navbar .lang-btn,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .nav-wa-text,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .hero-subtitle,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .premium-lead,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .guide-lead,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .article-content,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .article-content p,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .article-content li,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .footer-premium,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .footer-premium p,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .footer-premium a,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .review-card,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .review-text {
   font-family: var(--ga-font-en-body) !important;
   letter-spacing: 0 !important;
 }
 
-html[lang="en"] h1,
-html[lang="en"] h2,
-html[lang="en"] h3,
-html[lang="en"] .hero-title,
-html[lang="en"] .premium-title,
-html[lang="en"] .guide-title,
-html[lang="en"] .page-hero h1,
-html[lang="en"] .contact-hero h1,
-html[lang="en"] .article-content h1,
-html[lang="en"] .article-content h2,
-html[lang="en"] .article-content h3,
-html[lang="en"] .case-article-card h1,
-html[lang="en"] .case-article-card h2,
-html[lang="en"] .case-page-main h1,
-html[lang="en"] .case-page-main h2,
-html[lang="en"] .reviews-hero-title {
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) h1,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) h2,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) h3,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .hero-title,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .premium-title,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .guide-title,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .page-hero h1,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .contact-hero h1,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .article-content h1,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .article-content h2,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .article-content h3,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .case-article-card h1,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .case-article-card h2,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .case-page-main h1,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .case-page-main h2,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .reviews-hero-title {
   font-family: var(--ga-font-en-heading) !important;
   font-weight: 700 !important;
   letter-spacing: 0 !important;
 }
 
-html[lang="en"] h4,
-html[lang="en"] h5,
-html[lang="en"] h6,
-html[lang="en"] .navbar .nav-link,
-html[lang="en"] .navbar .dropdown-item,
-html[lang="en"] .btn,
-html[lang="en"] .review-name,
-html[lang="en"] .review-meta {
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) h4,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) h5,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) h6,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .navbar .nav-link,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .navbar .dropdown-item,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .btn,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .review-name,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .review-meta {
   font-family: var(--ga-font-en-body) !important;
 }
 
-html[lang="en"] .navbar .nav-link,
-html[lang="en"] .navbar .dropdown-item,
-html[lang="en"] .btn,
-html[lang="en"] .nav-wa-text {
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .navbar .nav-link,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .navbar .dropdown-item,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .btn,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .nav-wa-text {
   font-weight: 600 !important;
 }
 
-html[lang="en"] .hero-title,
-html[lang="en"] .guide-title,
-html[lang="en"] .reviews-hero-title {
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .hero-title,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .guide-title,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .reviews-hero-title {
   line-height: 1.12 !important;
 }
 
-html[lang="en"] .premium-title,
-html[lang="en"] .article-content h2 {
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .premium-title,
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .article-content h2 {
   line-height: 1.22 !important;
 }
 
@@ -292,37 +292,37 @@ html[lang^="zh"] .nav-wa-text {
   text-decoration: underline;
 }
 
-html[lang="en"] .home-hero-title {
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .home-hero-title {
   max-width: none;
   font-size: clamp(1.9rem, 2.9vw, 3.25rem) !important;
   line-height: 1.08 !important;
   margin-bottom: 1.2rem;
 }
 
-html[lang="en"] .home-hero-title .title-line {
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .home-hero-title .title-line {
   display: block;
   white-space: nowrap;
 }
 
-html[lang="en"] .home-hero-title .title-line + .title-line {
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .home-hero-title .title-line + .title-line {
   margin-top: 0.34em;
 }
 
-html[lang="en"] .home-hero-title .title-line-secondary {
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .home-hero-title .title-line-secondary {
   font-size: 0.82em;
   line-height: 1.12;
   color: rgba(255, 255, 255, 0.96);
 }
 
-html[lang="en"] .hero-section .hero-subtitle {
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .hero-section .hero-subtitle {
   max-width: 38rem;
 }
 
 @media (max-width: 575.98px) {
-  html[lang="en"] .home-hero-title {
+  html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .home-hero-title {
     font-size: clamp(1.22rem, 5.15vw, 2.05rem) !important;
   }
-  html[lang="en"] .home-hero-title .title-line + .title-line {
+  html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .home-hero-title .title-line + .title-line {
     margin-top: 0.46em;
   }
 }

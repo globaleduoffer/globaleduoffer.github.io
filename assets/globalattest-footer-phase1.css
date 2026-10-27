@@ -45,7 +45,7 @@
 .ga-footer .ga-footer-reviews:hover { background: #1b2b40; border-color: #79cfff; }
 .ga-footer .ga-footer-column { padding-top: 42px; min-width: 0; }
 .ga-footer h2 { font-size: 18px; font-weight: 600; line-height: 1.4; text-transform: uppercase; letter-spacing: .025em; color: #fff; }
-html[lang="en"] .ga-footer h2 { font-family: var(--ga-font-en-body, Arial, sans-serif) !important; font-weight: 600 !important; }
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .ga-footer h2 { font-family: var(--ga-font-en-body, Arial, sans-serif) !important; font-weight: 600 !important; }
 .ga-footer .ga-footer-column h2::after { content: ""; display: block; width: 50px; height: 3px; margin: 10px 0 19px; background: #65c8f1; }
 .ga-footer .ga-footer-column li + li { margin-top: 12px; }
 .ga-footer .ga-footer-column a { display: inline-block; padding: 3px 0; }
@@ -89,7 +89,7 @@ html[lang="en"] .ga-footer h2 { font-family: var(--ga-font-en-body, Arial, sans-
 
 /* Desktop geometry follows the supplied 2048 x 768 composition. */
 @media(min-width:1200px){
-html[lang="en"] .ga-footer,html[lang="en"] .ga-footer :is(p,a,h2,li,span){font-family:Arial,Helvetica,sans-serif!important;}
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .ga-footer,html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .ga-footer :is(p,a,h2,li,span){font-family:Arial,Helvetica,sans-serif!important;}
 .ga-footer{padding:calc(70 * (100vw - 15px) / 2048) 0 calc(35 * (100vw - 15px) / 2048);font-size:calc(24 * (100vw - 15px) / 2048);line-height:1.5;}
 .ga-footer>.ga-footer-shell{max-width:none!important;padding:0 4.4%!important;}
 .ga-footer .ga-footer-top{display:grid;grid-template-columns:37.5% 23.8% 22.2% 16.5%;gap:0;height:calc(435 * (100vw - 15px) / 2048);}
@@ -99,7 +99,7 @@ html[lang="en"] .ga-footer,html[lang="en"] .ga-footer :is(p,a,h2,li,span){font-f
 .ga-footer .ga-footer-intro{width:calc(480 * (100vw - 15px) / 2048);max-width:100%;margin-top:calc(16 * (100vw - 15px) / 2048);font-size:calc(28 * (100vw - 15px) / 2048);line-height:calc(36 * (100vw - 15px) / 2048);letter-spacing:.025em;}
 .ga-footer .ga-footer-reviews{display:block;width:calc(410 * (100vw - 15px) / 2048);max-width:100%;height:calc(105 * (100vw - 15px) / 2048);margin-top:calc(24 * (100vw - 15px) / 2048);padding:calc(22 * (100vw - 15px) / 2048);font-size:calc(21 * (100vw - 15px) / 2048);line-height:calc(30 * (100vw - 15px) / 2048);border:calc(1 * (100vw - 15px) / 2048) solid #2b3a4c;border-radius:calc(6 * (100vw - 15px) / 2048);}
 .ga-footer .ga-footer-column{padding-top:calc(90 * (100vw - 15px) / 2048);max-width:none!important;}
-html[lang="en"] .ga-footer h2{font-weight:500!important;}
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .ga-footer h2{font-weight:500!important;}
 .ga-footer .ga-footer-column h2{font-size:calc(24 * (100vw - 15px) / 2048);line-height:calc(34 * (100vw - 15px) / 2048);letter-spacing:0;}
 .ga-footer .ga-footer-column h2::after{width:calc(73 * (100vw - 15px) / 2048);height:calc(4 * (100vw - 15px) / 2048);margin:calc(8 * (100vw - 15px) / 2048) 0 calc(30 * (100vw - 15px) / 2048);background:linear-gradient(90deg,#64d1ee,#3176e8);}
 .ga-footer .ga-footer-column:last-child h2::after{background:#65c8f1;}
@@ -130,7 +130,7 @@ html[lang="en"] .ga-footer h2{font-weight:500!important;}
  .ga-footer .ga-footer-logo img{filter:none;mix-blend-mode:normal;}
  .ga-footer .ga-footer-intro{width:calc(500 * (100vw - 15px) / 2048);font-size:calc(29 * (100vw - 15px) / 2048);margin-top:calc(12 * (100vw - 15px) / 2048);}
  .ga-footer .ga-footer-top{grid-template-columns:38.05% 23.85% 22.05% 16.05%;}
- html[lang="en"] .ga-footer .ga-footer-column h2{font-size:calc(25 * (100vw - 15px) / 2048);font-weight:600!important;}
+ html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .ga-footer .ga-footer-column h2{font-size:calc(25 * (100vw - 15px) / 2048);font-weight:600!important;}
  .ga-footer .ga-footer-column h2::after{width:calc(77 * (100vw - 15px) / 2048);height:3px;}
  .ga-footer .ga-footer-column a{font-size:calc(25 * (100vw - 15px) / 2048);line-height:calc(38 * (100vw - 15px) / 2048);}
  .ga-footer .ga-footer-payments h2{font-size:calc(21 * (100vw - 15px) / 2048);letter-spacing:.025em;}
@@ -294,7 +294,7 @@ html[lang="en"] .ga-footer h2{font-weight:500!important;}
   }
 
   /* Match the existing English-heading selector specificity. */
-  html[lang="en"] .ga-footer .ga-footer-column h2 {
+  html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"]), :where([lang="zh-CN"][data-service-template="embassy-en"])) .ga-footer .ga-footer-column h2 {
     font-size: 17px;
   }
 }
