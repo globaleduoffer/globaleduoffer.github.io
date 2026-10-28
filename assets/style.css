@@ -1,8 +1,8 @@
-html[lang="en"], html[lang="en"] body {
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"])), html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"])) body {
   font-family: "Times New Roman", Times, serif !important;
 }
 
-html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; }
+html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"])) body { font-family: "Times New Roman", Times, serif !important; }
 
     /* Global font for English site */
     body {
@@ -128,40 +128,40 @@ html[lang="en"] body { font-family: "Times New Roman", Times, serif !important; 
 
 /* Keep the full desktop navbar inside the viewport near the lg breakpoint. */
 @media (min-width: 992px) and (max-width: 1153px) {
-  html[lang="en"] body nav.navbar.navbar > .container {
+  html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"])) body nav.navbar.navbar > .container {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
 
-  html[lang="en"] body nav.navbar.navbar .navbar-brand img {
+  html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"])) body nav.navbar.navbar .navbar-brand img {
     max-width: 180px !important;
   }
 
-  html[lang="en"] body nav.navbar.navbar .navbar-nav > .nav-item > .nav-link {
+  html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"])) body nav.navbar.navbar .navbar-nav > .nav-item > .nav-link {
     font-size: 0.82rem !important;
     padding-left: 0.15rem !important;
     padding-right: 0.15rem !important;
     white-space: nowrap !important;
   }
 
-  html[lang="en"] body nav.navbar.navbar .navbar-collapse > .d-flex {
+  html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"])) body nav.navbar.navbar .navbar-collapse > .d-flex {
     gap: 0.15rem !important;
     margin-left: 0.25rem !important;
   }
 
-  html[lang="en"] body nav.navbar.navbar .btn,
-  html[lang="en"] body nav.navbar.navbar .nav-wa-text {
+  html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"])) body nav.navbar.navbar .btn,
+  html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"])) body nav.navbar.navbar .nav-wa-text {
     font-size: 0.82rem !important;
     padding-left: 0.45rem !important;
     padding-right: 0.45rem !important;
   }
 
-  html[lang="en"] body nav.navbar.navbar .navbar-collapse .ms-lg-2 {
+  html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"])) body nav.navbar.navbar .navbar-collapse .ms-lg-2 {
     gap: 0.1rem !important;
     margin-left: 0 !important;
   }
 
-  html[lang="en"] body nav.navbar.navbar .lang-btn {
+  html:is([lang="en"], :where([lang="zh-CN"][data-service-template="legalization-en"])) body nav.navbar.navbar .lang-btn {
     font-size: 0.78rem !important;
     margin-left: 0.1rem !important;
   }
