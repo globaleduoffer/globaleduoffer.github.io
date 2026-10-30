@@ -1,0 +1,9 @@
+/* Proposed Chinese typography only. Requires review before visual acceptance.
+   All sizes, spacing and responsive breakpoints stay in the existing Study CSS.
+   Existing !important font declarations require equivalent specificity/importance. */
+html[lang="zh-CN"][data-service-template="study-en"] body .study-v2,
+html[lang="zh-CN"][data-service-template="study-en"] body .study-v2 :is(h1,h2,h3,p,li,a,button,summary,span),
+html[lang="zh-CN"][data-service-template="study-en"] body .study-v2 .sv-info h3,
+html[lang="zh-CN"][data-service-template="study-en"] body .ga-footer :is(h2,p,li,a,span) {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif !important;
+}
