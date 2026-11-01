@@ -1,0 +1,405 @@
+/* Chinese Contact only. Shared files are unchanged. */
+
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar {padding-top: 0.65rem;
+      padding-bottom: 0.65rem;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar-brand span {font-weight: 600;
+      letter-spacing: 0.03em;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar-brand {display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar-brand img {display: block;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar-nav .nav-link {font-size: 0.98rem;
+      padding: 0.35rem 0.75rem;
+      font-weight: 500;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .nav-link,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .dropdown-item,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .btn,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .lang-btn {font-family: var(--font-sans) !important;
+      letter-spacing: 0;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar-nav .nav-link.active {font-weight: 600;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .dropdown-menu {background-color: #111827;
+      border-radius: 0;
+      border: none;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .dropdown-item {color: #e5e7eb;
+      white-space: normal;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .dropdown-item:hover,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .dropdown-item:focus {background-color: #1f2937;
+      color: #fff;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) nav.navbar .lang-btn {font-size: 0.9rem;
+      margin-left: 0.5rem;
+      text-decoration: none;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) nav.navbar .lang-btn:hover {text-decoration: underline;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) nav.navbar .cta-btn,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) nav.navbar .cta-btn-outline {white-space: nowrap;}
+@media (max-width: 991.98px) {
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) nav.navbar .cta-btn,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) nav.navbar .cta-btn-outline {width: 100%;
+    text-align: center;}
+}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar-nav .nav-link {color:#334155;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar-nav .nav-link:hover,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar-nav .nav-link:focus {color:#0f172a;}
+@media (min-width: 992px) {
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar-nav .nav-link {border-radius: 999px;
+        transition: background-color .15s ease, color .15s ease;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar-nav .nav-link:hover,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar-nav .nav-link:focus {background: rgba(31,143,77,.10);}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar-nav .nav-link.active {background: rgba(31,143,77,.16);}
+}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) nav.navbar .cta-btn {padding-top:0.38rem !important;
+      padding-bottom:0.38rem !important;
+      font-weight:700;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) nav.navbar .nav-wa-text {background:#f0fbf5;
+      color:#167a3e !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) nav.navbar .nav-wa-text:hover {background:#e6f8ee;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) nav.navbar .lang-btn {color:#2563eb;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) nav.navbar .dropdown-section-label {display: block;
+      font-weight: 800;
+      text-transform: uppercase;}
+
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) nav.navbar .nav-wa-text {display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:6px 14px;
+  border-radius:999px;
+  background:#eaf7f0;
+  color:#1f8f4d !important;
+  font-weight:600;
+  text-decoration:none !important;
+  border:none;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) nav.navbar .nav-wa-text:hover {background:#d9f2e3;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) nav.navbar .nav-wa-text:hover {opacity:.9;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) nav.navbar .cta-btn {padding-top: 0.45rem; padding-bottom: 0.45rem;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) nav.navbar .nav-wa-text {padding-top: 0.45rem; padding-bottom: 0.45rem;}
+
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .nav-link,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .dropdown-item,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .btn,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .lang-btn {font-family:var(--font-sans)!important;letter-spacing:0!important;}
+
+@media (min-width: 992px) {
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .container {max-width: 1320px;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar-nav .nav-link {font-size: .92rem !important; padding-left: .48rem !important; padding-right: .48rem !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .btn,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .nav-wa-text {font-size: .9rem !important; padding-left: .85rem !important; padding-right: .85rem !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar-brand img {max-width: 210px !important; object-fit: contain;}
+}
+
+/* Reused from assets/style.css */
+@media (min-width: 992px) and (max-width: 1153px) {
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.navbar > .container {padding-left: 0.75rem;
+    padding-right: 0.75rem;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.navbar .navbar-brand img {max-width: 180px !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.navbar .navbar-nav > .nav-item > .nav-link {font-size: 0.82rem !important;
+    padding-left: 0.15rem !important;
+    padding-right: 0.15rem !important;
+    white-space: nowrap !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.navbar .navbar-collapse > .d-flex {gap: 0.15rem !important;
+    margin-left: 0.25rem !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.navbar .btn,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.navbar .nav-wa-text {font-size: 0.82rem !important;
+    padding-left: 0.45rem !important;
+    padding-right: 0.45rem !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.navbar .navbar-collapse .ms-lg-2 {gap: 0.1rem !important;
+    margin-left: 0 !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.navbar .lang-btn {font-size: 0.78rem !important;
+    margin-left: 0.1rem !important;}
+}
+
+/* Reused from assets/globalattest-layout.css */
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .dropdown-menu {min-width: 280px !important;
+  padding: .5rem 0 !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .dropdown-item {font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: .84rem !important;
+  line-height: 1.36 !important;
+  padding: .42rem 1.15rem !important;
+  font-weight: 600 !important;
+  white-space: normal !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .dropdown-section-label {display: block !important;
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: .66rem !important;
+  line-height: 1.25 !important;
+  padding: .4rem 1.15rem .2rem !important;
+  font-weight: 800 !important;
+  letter-spacing: .08em !important;
+  text-transform: uppercase !important;
+  color: #93c5fd !important;}
+@media (max-width: 991.98px) {
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .services-dropdown-menu {max-height: none !important;
+    overflow-y: visible !important;}
+}
+@media (min-width: 992px) {
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .services-dropdown-menu {max-height: calc(100vh - 90px) !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(148, 163, 184, .6) transparent;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .services-dropdown-menu::-webkit-scrollbar {width: 7px;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .services-dropdown-menu::-webkit-scrollbar-thumb {border-radius: 999px;
+    background: rgba(148, 163, 184, .6);}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .navbar .services-dropdown-menu::-webkit-scrollbar-track {background: transparent;}
+}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar {position: relative !important;
+  z-index: auto !important;
+  width: 100% !important;
+  padding-top: .65rem !important;
+  padding-bottom: .65rem !important;
+  background: #fff !important;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, .06) !important;
+  color: #1f2937 !important;
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar > .container {width: 100% !important;
+  max-width: var(--ga-layout-max) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--ga-layout-gutter) !important;
+  padding-right: var(--ga-layout-gutter) !important;
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .navbar-brand {display: inline-flex !important;
+  align-items: center !important;
+  gap: .5rem !important;
+  padding: 0 !important;
+  margin-right: 1rem !important;
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .navbar-brand img {display: block !important;
+  width: auto !important;
+  height: 36px !important;
+  max-height: 36px !important;
+  object-fit: contain !important;
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .navbar-nav {margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  align-self: center !important;
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .navbar-nav > .nav-item > .nav-link {padding: .35rem .75rem !important;
+  border-radius: 0 !important;
+  color: #334155 !important;
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: .98rem !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+  text-decoration: none !important;
+  white-space: normal !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .navbar-nav > .nav-item > .nav-link.dropdown-toggle {white-space: nowrap !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .navbar-nav > .nav-item > .nav-link:hover,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .navbar-nav > .nav-item > .nav-link:focus {color: #0f172a !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .dropdown-menu {min-width: 280px !important;
+  padding: .5rem 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: #111827 !important;
+  box-shadow: none;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .dropdown-item {padding: .42rem 1.15rem !important;
+  color: #e5e7eb !important;
+  background: transparent !important;
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: .84rem !important;
+  font-weight: 600 !important;
+  line-height: 1.36 !important;
+  letter-spacing: 0 !important;
+  white-space: normal !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .dropdown-item:hover,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .dropdown-item:focus,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .dropdown-item.active {color: #fff !important;
+  background: #1f2937 !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .dropdown-section-label {display: block !important;
+  padding: .4rem 1.15rem .2rem !important;
+  color: #93c5fd !important;
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: .66rem !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+  letter-spacing: .08em !important;
+  text-transform: uppercase !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .dropdown-divider {border-color: rgba(148, 163, 184, .24) !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .cta-btn {width: auto !important;
+  padding-top: .38rem !important;
+  padding-bottom: .38rem !important;
+  border-radius: 800px !important;
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+  white-space: nowrap !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .nav-wa-text {display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: auto !important;
+  padding: .45rem .875rem !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: #eaf7f0 !important;
+  color: #1f8f4d !important;
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .nav-wa-text:hover,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .nav-wa-text:focus {background: #d9f2e3 !important;
+  color: #1f8f4d !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .lang-btn {margin-left: .5rem !important;
+  padding: 0 !important;
+  color: #2563eb !important;
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: .9rem !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+  text-decoration: none !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .lang-btn:hover,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .lang-btn:focus {text-decoration: underline !important;}
+@media (min-width: 992px) {
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .navbar-nav {max-height: 3.459rem !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .navbar-brand img {max-width: 210px !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .navbar-nav > .nav-item > .nav-link {padding-left: .48rem !important;
+    padding-right: .48rem !important;
+    border-radius: 999px !important;
+    font-size: .92rem !important;
+    transition: background-color .15s ease, color .15s ease !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .navbar-nav > .nav-item > .nav-link:hover,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .navbar-nav > .nav-item > .nav-link:focus {background: rgba(31, 143, 77, .10) !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .navbar-nav > .nav-item > .nav-link.active {background: rgba(31, 143, 77, .16) !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .cta-btn,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .nav-wa-text {padding-left: .85rem !important;
+    padding-right: .85rem !important;
+    font-size: .9rem !important;}
+}
+@media (max-width: 991.98px) {
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar .cta-btn {width: 100% !important;
+    text-align: center !important;}
+}
+
+/* Reused from assets/home-v2/home-en-v2.css */
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav {background: #071d39 !important; color: #fff !important; padding: 16px 0 !important; border-bottom: 1px solid #245076; position: relative !important; z-index: 5 !important; box-shadow: none !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-brand {margin-right: 24px !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-brand img {filter: brightness(0) invert(1); max-width: 188px !important; height: auto !important; max-height: 36px !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-nav > .nav-item > .nav-link {color: #e0ebfb !important; font-size: 14px !important; padding: 8px 9px !important; white-space: nowrap !important; border-radius: 5px !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-nav > .nav-item > .nav-link:is(:hover,:focus) {background: #123554 !important; color: #fff !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-collapse > .d-flex {gap: 8px !important; margin-left: 14px !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .cta-btn {background: #076bfa; border-color: #076bfa; border-radius: 7px !important; min-height: 40px; padding: 9px 15px !important; font-size: 14px !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .nav-wa-text {color: #b8eecb !important; background: transparent !important; padding: 8px 4px !important; font-size: 13px !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .lang-btn {color: #c6d5ed !important; font-size: 12px !important; margin-left: 3px !important; padding: 8px 2px !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .dropdown-menu {background: #0d2744 !important; border: 1px solid #2b4969 !important; border-radius: 8px !important; box-shadow: 0 18px 40px #020d2066;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .dropdown-item:is(:hover,:focus) {background: #1c4268 !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-toggler {width: 44px; height: 44px; border: 1px solid #66809a; padding: 8px;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-toggler-icon {filter: invert(1);}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav :is(a,button):focus-visible {outline: 3px solid #83dcff; outline-offset: 3px;}
+@media (max-width: 991.98px) {
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav {padding: 12px 0 !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-collapse {margin-top: 18px; padding-top: 12px; border-top: 1px solid #37516d;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-nav {align-items: stretch !important; max-height: none !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-nav > .nav-item > .nav-link {padding: 11px 8px !important; min-height: 44px;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-collapse > .d-flex {margin-left: 0 !important; margin-top: 14px !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .dropdown-menu {min-width: 0 !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .dropdown-item {min-height: 40px; padding-block: 10px !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .nav-wa-text {min-height: 44px;}
+}
+@media (max-width: 575.98px) {
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-brand img {max-width: 180px !important;}
+}
+@media (min-width: 1200px) {
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav > .container {flex-wrap: nowrap; gap: 0;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-collapse {min-width: 0;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-nav {flex-wrap: nowrap;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-brand {margin-right: 20px !important; flex-shrink: 0;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-collapse > .v2-nav-actions {flex-shrink: 0; margin-top: 0 !important;}
+}
+@media (min-width: 1200px) and (max-width: 1359.98px) {
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-brand img {max-width: 166px !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-brand {margin-right: 13px !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-nav > .nav-item > .nav-link {font-size: 13px !important; padding: 8px 7px !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-collapse > .v2-nav-actions {margin-left: 10px !important; gap: 6px !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .cta-btn {padding: 9px 12px !important;}
+}
+@media (max-width: 1199.98px) {
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav {padding: 12px 0 !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav > .container {flex-wrap: wrap;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-brand {margin: 0 !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-toggler {display: block;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-collapse {flex-basis: 100%; width: 100%; margin-top: 16px; padding-top: 12px; border-top: 1px solid #37516d;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-collapse:not(.show):not(.collapsing) {display: none !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-nav {flex-direction: column; align-items: stretch !important; max-height: none !important; margin: 0 !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-nav > .nav-item > .nav-link {font-size: 15px !important; padding: 11px 9px !important; min-height: 44px;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .dropdown-menu {position: static !important; min-width: 0 !important; width: 100%; max-height: none !important; overflow: visible !important; margin: 4px 0 10px;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .dropdown-item {padding: 11px 16px !important; min-height: 42px;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .navbar-collapse > .v2-nav-actions {display: grid !important; grid-template-columns: 1fr 1fr; gap: 10px !important; align-items: center !important; margin: 14px 0 2px !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .v2-nav-actions .cta-btn {display: flex; align-items: center; justify-content: center; width: 100% !important; min-height: 44px;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .v2-nav-actions .nav-wa-text {min-height: 44px; border: 1px solid #41637e !important; border-radius: 7px !important; color: #b8eecb !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .v2-nav-actions .v2-nav-languages {grid-column: 1 / -1; justify-content: flex-end; margin: 0 !important; gap: 18px !important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body nav.navbar.ga-home-v2-nav .v2-nav-languages .lang-btn {display: inline-flex; align-items: center; min-height: 42px; font-size: 13px !important; margin: 0 !important;}
+}
+
+/* Reused from assets/globalattest-footer-phase1.css */
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .ga-footer h2 {font-family: var(--ga-font-en-body, Arial, sans-serif) !important; font-weight: 600 !important;}
+@media (min-width:1200px) {
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .ga-footer,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .ga-footer :is(p,a,h2,li,span) {font-family:Arial,Helvetica,sans-serif!important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .ga-footer h2 {font-weight:500!important;}
+}
+@media (min-width:1200px) {
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .ga-footer .ga-footer-column h2 {font-size:calc(25 * (100vw - 15px) / 2048);font-weight:600!important;}
+}
+@media (min-width: 1200px) {
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) .ga-footer .ga-footer-column h2 {font-size: 17px;}
+}
+
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2{--cv2-ink:#08234b;--cv2-muted:#526b8d;--cv2-blue:#076bfa;color:var(--cv2-ink);background:#fff;font-family:"Source Sans 3",Arial,sans-serif}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 :is(h1,h2,h3,p,a,label,span,input,textarea,select,button,address,summary){font-family:"Source Sans 3",Arial,sans-serif!important}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 :is(h1,h2,h3){font-weight:600!important;letter-spacing:-.025em!important;line-height:1.18!important;color:var(--cv2-ink);margin:0 0 12px}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 h2{font-size:32px}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 h3{font-size:18px}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 p{font-size:17px;line-height:1.5!important;color:var(--cv2-muted);margin:0 0 14px}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-kicker{font-size:12px;font-weight:600;letter-spacing:.1em!important;color:#0876ef;margin-bottom:12px}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-hero h1{font-size:clamp(34px,3.6vw,54px)!important;line-height:1.07!important;color:#fff;margin-bottom:20px}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-hero p{color:#e7eff9;font-size:18px;max-width:580px}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-hero .cv2-kicker{font-size:12px;color:#d9edff}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-btn{border-radius:6px;min-height:50px;padding:12px 21px;display:inline-flex;justify-content:center;align-items:center;gap:13px;text-decoration:none;font-size:16px;font-weight:600;line-height:1.35!important;border:1px solid #7290af;color:#fff;cursor:pointer;transition:background .15s}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-contact-card h2{font-size:22px;margin:0 0 9px}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-contact-card p{font-size:16px;line-height:1.45!important;margin-bottom:12px}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-company-name,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-hours{color:#0a2951;font-weight:600}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-required-note{font-size:13px;margin-bottom:20px;color:#52647d}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-field :is(input,select,textarea){display:block;width:100%;max-width:100%;min-width:0;min-height:46px;border:1px solid #ccd9e9;border-radius:5px;background:#fff;color:#163250;padding:11px 12px;font-size:15px;line-height:1.4;box-shadow:0 2px 4px #15376402}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-help{font-size:12px;margin:7px 0 0;line-height:1.3!important;color:#576d85}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-field-error{font-size:13px;color:#9c2034;margin:6px 0 0}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-privacy p{font-size:13px;margin-bottom:9px;line-height:1.45!important}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-care h2{font-size:23px;margin-bottom:8px}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-care p{font-size:15px;line-height:1.45!important;margin:0 0 4px}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-step-top h3{font-size:17px;margin:2px 0 0}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-steps p{font-size:16px}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-faq h3{font-size:18px;margin-top:15px}
+@media (max-width:575px){
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-hero h1{font-size:36px!important;margin-bottom:17px}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-hero p{font-size:17px}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-field :is(input,select,textarea){font-size:16px;min-height:48px}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 h2{font-size:29px}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-care h2{font-size:21px}
+}
+
+/* Chinese typography only; inherit original sizes, spacing and breakpoints. */
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) { --contact-zh-font:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei",Arial,sans-serif; }
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 :is(h1,h2,h3,p,a,label,span,input,textarea,select,button,address,summary),
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .ga-footer,
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .ga-footer :is(h2,p,a,li,span) {font-family:var(--contact-zh-font)!important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 :is(h1,h2,h3) {font-weight:700!important;letter-spacing:0!important;}
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 :is(h1,h2,h3,p,a,label) {overflow-wrap:break-word;}
+/* Keep the English hero's two stacked mobile CTA rows despite shorter Chinese labels. */
+@media(max-width:575px) {
+html[lang="zh-CN"]:where([data-page-template="contact-en"]) body .contact-v2 .cv2-hero .cv2-actions > .cv2-btn {flex-basis:100%;}
+}
+
