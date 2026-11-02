@@ -1,0 +1,176 @@
+/* Success Stories candidate. Every selector is scoped to this page.
+   Shared stylesheets, homepage navigation rules and footer are unchanged. */
+body.ga-cases-page { --font-sans:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif; --font-formal-sans:var(--ga-font-en-body); --cs-content-font: "Source Sans 3", Arial, sans-serif; --cs-navy:#071d39; --cs-ink:#102b50; --cs-muted:#52657b; --cs-blue:#076bfa; --cs-line:#dce7f2; background:#fff; }
+.ga-cases-page .cases-v2 { color:var(--cs-ink); font-family:var(--cs-content-font); }
+/* Match the homepage V2 content font chain; override only the existing shared English font declarations. */
+.ga-cases-page .cases-v2 :is(h1,h2,h3,h4,h5,h6,p,li,a,span,strong,summary,button,dt,dd) { font-family:var(--cs-content-font) !important; }
+.ga-cases-page .cases-v2 :is(h1,h2,h3,h4) { font-family:var(--cs-content-font) !important; letter-spacing:-.025em !important; font-weight:700 !important; }
+.ga-cases-page .cases-v2 :is(p,li,dd) { line-height:1.65; }
+.ga-cases-page .cases-v2 :is(a,button,summary):focus-visible { outline:3px solid #0584e8; outline-offset:4px; }
+.ga-cases-page .cs-hero :is(a,button):focus-visible { outline-color:#83e4ff; }
+.ga-cases-page .cases-v2 [hidden], .ga-cases-page .cs-wa-float[hidden] { display:none !important; }
+.ga-cases-page .cs-skip { position:absolute; top:-100px; left:16px; z-index:99; background:#fff; padding:12px 20px; color:#102b50; }
+.ga-cases-page .cs-skip:focus { top:12px; }
+.ga-cases-page .cs-hero { position:relative; background:radial-gradient(ellipse at 80% 45%,#093763 0,transparent 60%),linear-gradient(115deg,#061a35,#092748); color:#fff; padding:52px 0 42px; }
+.ga-cases-page .cs-hero-grid { display:grid; grid-template-columns:minmax(0,.88fr) minmax(0,1.25fr); align-items:center; gap:20px; }
+.ga-cases-page .cs-hero-copy { position:relative; z-index:1; min-width:0; }
+.ga-cases-page .cs-eyebrow { color:#25dce8; font-size:14px; font-weight:700; letter-spacing:.12em; margin:0 0 13px; }
+.ga-cases-page .cases-v2 .cs-hero h1 { color:#fff; font-size:clamp(32px,3.2vw,45px); line-height:1.09; letter-spacing:-.022em !important; margin:0 0 18px; max-width:560px; }
+.ga-cases-page .cases-v2 .cs-hero-lead { font-size:clamp(15px,1.28vw,18px); line-height:1.5; color:#e1edfc; max-width:32rem; margin:0 0 25px; }
+.ga-cases-page .cs-actions { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+.ga-cases-page .cases-v2 .cs-btn { display:inline-flex; justify-content:center; align-items:center; gap:12px; min-height:48px; padding:12px 19px; border-radius:8px; border:1px solid transparent; font:600 16px/1.5 var(--cs-content-font); text-decoration:none; cursor:pointer; transition:background-color .18s,border-color .18s,transform .18s; }
+.ga-cases-page .cases-v2 .cs-btn-primary { color:#fff; background:#076bfa; border-color:#076bfa; }
+.ga-cases-page .cases-v2 .cs-btn-primary:hover { background:#0055d1; border-color:#0055d1; transform:translateY(-1px); }
+.ga-cases-page .cases-v2 .cs-btn-outline { background:#071d3966; color:#fff; border-color:#a8c8e6; }
+.ga-cases-page .cases-v2 .cs-btn-outline svg { color:#36e179; flex-shrink:0; }
+.ga-cases-page .cases-v2 .cs-btn-outline:hover { background:#17456a; border-color:#fff; }
+.ga-cases-page .cs-hero .cs-related-services { margin-top:20px; }
+.ga-cases-page .cs-hero .cs-related-label { margin:0 0 8px; color:#a9bfd5; font-size:12px; line-height:1.5; }
+.ga-cases-page .cs-hero .cs-service-links { display:flex; flex-wrap:wrap; gap:8px; max-width:100%; }
+.ga-cases-page .cs-hero .cs-service-links a { display:inline-flex; align-items:center; gap:7px; max-width:100%; padding:5px 10px; border:1px solid #9dc4e333; border-radius:999px; background:#a8c9ef08; color:#c4def3; font-size:12px; font-weight:400; line-height:1.5; text-decoration:none; overflow-wrap:anywhere; }
+.ga-cases-page .cs-hero .cs-service-links a span { flex-shrink:0; font-size:12px; }
+.ga-cases-page .cs-hero .cs-service-links a:hover { color:#fff; border-color:#9dc4e388; background:#a8c9ef14; }
+.ga-cases-page .cs-hero .cs-service-links a:focus-visible { outline:2px solid #82c5ff; outline-offset:3px; }
+/* Hero CTAs mirror the current homepage; no shared rules are changed. */
+.ga-cases-page .cases-v2 .cs-hero .cs-actions .cs-btn { min-height:48px; padding:10px 18px; gap:12px; font-size:16px; font-weight:600; white-space:nowrap; width:auto; }
+.ga-cases-page .cases-v2 .cs-hero .cs-btn-primary { background:linear-gradient(110deg,#007bff,#0063f6); border-color:#168dff; box-shadow:0 5px 20px #0066ee30; }
+.ga-cases-page .cases-v2 .cs-hero .cs-btn-primary:hover { background:#0874f1; border-color:#82c5ff; transform:none; }
+.ga-cases-page .cases-v2 .cs-hero .cs-btn-primary span { display:inline-flex; align-items:center; justify-content:center; width:25px; height:25px; border-radius:50%; color:#086ff0; background:#fff; font-size:19px; line-height:1; }
+.ga-cases-page .cases-v2 .cs-hero .cs-btn-outline { background:#061e3ab8; border-color:#bed0e0; box-shadow:none; backdrop-filter:blur(5px); }
+.ga-cases-page .cases-v2 .cs-hero .cs-btn-outline:hover { background:#103760; border-color:#fff; }
+.ga-cases-page .cases-v2 .cs-hero .cs-btn-outline svg { color:#6be859; width:25px; height:25px; }
+@media (min-width:992px) and (max-width:1199.98px) {
+ .ga-cases-page .cases-v2 .cs-hero .cs-actions .cs-btn { font-size:14px; min-height:44px; padding:9px 15px; gap:10px; }
+}
+@media (max-width:575.98px) {
+ .ga-cases-page .cs-hero .cs-actions { flex-direction:column; align-items:stretch; gap:11px; }
+ .ga-cases-page .cases-v2 .cs-hero .cs-actions .cs-btn { width:100%; min-height:50px; font-size:15px; padding:10px 14px; }
+}
+.ga-cases-page .cs-hero-art { margin:0; min-width:0; }
+.ga-cases-page .cs-hero-art img { display:block; width:100%; height:auto; aspect-ratio:638/289; object-fit:contain; mask-image:linear-gradient(90deg,transparent,#000 8%,#000 98%,transparent),linear-gradient(0deg,transparent,#000 6%,#000 96%,transparent); mask-composite:intersect; }
+.ga-cases-page .cs-hero-art figcaption { color:#b4cce3; font-size:11px; line-height:1.5; text-align:right; padding:10px 6px 0; }
+.ga-cases-page .cs-benefits { background:#04182e; border-top:1px solid #1d567b; border-bottom:1px solid #1d3c58; color:#fff; }
+.ga-cases-page .cs-benefit-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); padding-top:22px; padding-bottom:22px; }
+.ga-cases-page .cs-benefit-grid > div { display:flex; align-items:center; gap:15px; padding:0 20px; border-right:1px solid #35516b; min-width:0; }
+.ga-cases-page .cs-benefit-grid > div:first-child { padding-left:0; }
+.ga-cases-page .cs-benefit-grid > div:last-child { border:0; padding-right:0; }
+.ga-cases-page .cs-benefit-grid > div > i { color:#26d8ec; font-size:29px; flex-shrink:0; }
+.ga-cases-page .cases-v2 .cs-benefit-grid h2 { font-size:17px; line-height:1.2; color:#fff; margin:0 0 4px; }
+.ga-cases-page .cs-benefit-grid p { font-size:13px; line-height:1.4; margin:0; color:#c9dced; }
+.ga-cases-page .cs-section { padding:64px 0; }
+.ga-cases-page .cs-stories { background:linear-gradient(#f4f8ff,#fff); }
+.ga-cases-page .cs-section-heading { max-width:850px; text-align:center; margin:0 auto 28px; }
+.ga-cases-page .cs-section-heading .cs-eyebrow { color:#0765c9; font-size:12px; }
+.ga-cases-page .cases-v2 .cs-section-heading h2 { font-size:clamp(1.9rem,3vw,2.65rem); line-height:1.15; color:#071d39; margin:0 0 15px; }
+.ga-cases-page .cs-section-heading > p { color:var(--cs-muted); font-size:16px; margin-bottom:12px; }
+.ga-cases-page .cs-section-heading .cs-image-note { font-size:12px; color:#52657b; }
+.ga-cases-page .cs-filters { display:flex; justify-content:center; flex-wrap:wrap; gap:10px; margin:28px 0 15px; }
+.ga-cases-page .cs-filter { border:1px solid #c1d6ee; border-radius:999px; min-height:44px; padding:10px 18px; background:#fff; color:#123b68; font:600 14px/1.5 var(--cs-content-font); }
+.ga-cases-page .cs-filter:hover { background:#e7f2ff; border-color:#1c77dd; }
+.ga-cases-page .cs-filter[aria-pressed="true"] { background:#073468; color:#fff; border-color:#073468; }
+.ga-cases-page .cs-result-count { text-align:center; font-size:14px; color:#52657b; min-height:24px; margin:0 0 24px; }
+.ga-cases-page .cs-card-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; align-items:stretch; }
+.ga-cases-page .cs-card { display:flex; flex-direction:column; min-width:0; border:1px solid #dce7f2; border-radius:12px; background:#fff; box-shadow:0 4px 16px #103a6010; overflow:hidden; scroll-margin-top:20px; }
+.ga-cases-page .cs-card-media { position:relative; background:#e8f1fb; }
+.ga-cases-page .cs-card-media img { display:block; width:100%; height:auto; aspect-ratio:2.25; object-fit:cover; }
+.ga-cases-page .cs-badge { position:absolute; left:14px; top:13px; max-width:calc(100% - 28px); background:#f7fbfff5; color:#073468; border:1px solid #bcd6eb; border-radius:999px; padding:5px 10px; font-size:12px; font-weight:600; display:inline-flex; align-items:center; gap:7px; }
+.ga-cases-page .cs-card-body { padding:21px 22px 18px; flex:1; }
+.ga-cases-page .cases-v2 .cs-card h3 { color:#102b50; font-size:22px; line-height:1.3; margin:0 0 15px; }
+.ga-cases-page .cs-card p { font-size:15px; line-height:1.6; margin:0 0 13px; color:#52657b; }
+.ga-cases-page .cs-card .cs-record-type { font-size:11px; color:#1463b4; text-transform:uppercase; letter-spacing:.06em; }
+.ga-cases-page .cs-card .cs-summary > p { margin:0 0 16px; }
+.ga-cases-page .cs-record { border-top:1px solid #e0e9f4; padding-top:12px; }
+.ga-cases-page .cs-record summary { font-family:var(--cs-content-font); font-size:16px; line-height:1.5; font-weight:600; color:#0765c9; cursor:pointer; padding:4px 0; min-height:32px; }
+.ga-cases-page .cs-record[open] summary { margin-bottom:13px; }
+.ga-cases-page .cs-record .pcc-facts { display:grid; grid-template-columns:1fr 1fr; gap:12px; background:#f2f7fd; padding:14px; border-radius:8px; margin:0 0 16px; }
+.ga-cases-page .pcc-facts > div { min-width:0; }
+.ga-cases-page .pcc-facts dt { font-size:12px; font-weight:400; color:#53677d; }
+.ga-cases-page .pcc-facts dd { margin:4px 0 0; font-size:14px; font-weight:600; overflow-wrap:anywhere; }
+.ga-cases-page .cs-record-actions { display:flex; flex-wrap:wrap; align-items:center; gap:10px; }
+.ga-cases-page .cs-record-actions a { font-size:14px; }
+.ga-cases-page .cs-card-foot { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; padding:15px 22px; border-top:1px solid #e4edf7; background:#f8fbff; font-size:12px; color:#294866; }
+.ga-cases-page .cs-card-foot > span { max-width:100%; }
+.ga-cases-page .cs-card-foot a { display:inline-flex; align-items:center; gap:9px; color:#0765c9; font-size:16px; font-weight:600; text-decoration:none; min-height:28px; }
+.ga-cases-page .cs-card-foot a:hover { text-decoration:underline; }
+.ga-cases-page .cs-empty { text-align:center; border:1px solid #dce7f2; background:#fff; padding:35px; border-radius:12px; }
+.ga-cases-page .cs-more-wrap { text-align:center; margin-top:28px; }
+.ga-cases-page .cs-jump-links { display:flex; flex-wrap:wrap; justify-content:center; gap:10px 20px; margin-top:26px; font-size:14px; }
+.ga-cases-page .cases-v2 .cs-btn-more { background:#fff; border:1px solid #076bfa; color:#075abe; border-radius:999px; }
+.ga-cases-page .cases-v2 .cs-btn-more:hover { background:#e8f3ff; }
+.ga-cases-page .cs-trust { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; padding-top:25px; padding-bottom:25px; background:#eff5fd; border-radius:12px; }
+.ga-cases-page .cs-trust > div { display:flex; align-items:center; gap:13px; min-width:0; padding:0 16px; border-right:1px solid #c6d7e9; color:#123b68; }
+.ga-cases-page .cs-trust > div:last-child { border:0; }
+.ga-cases-page .cs-trust i { color:#076bfa; font-size:27px; }
+.ga-cases-page .cs-trust strong { font-size:16px; line-height:1.4; }
+.ga-cases-page .cs-retained { color:#52657b; }
+.ga-cases-page .cs-retained:nth-of-type(even) { background:#f5f9ff; }
+.ga-cases-page .cases-v2 .cs-retained h2 { color:#102b50; font-size:clamp(1.65rem,2.4vw,2.2rem); line-height:1.25; }
+.ga-cases-page .cases-v2 .cs-retained h3 { color:#102b50; font-size:20px; line-height:1.35; }
+.ga-cases-page .cs-retained :is(.related-resource-card-v13,.related-link) { display:block; height:100%; padding:22px; border-radius:12px; border:1px solid #dce7f2; background:#fff; color:#0765c9; text-decoration:none; }
+.ga-cases-page .cs-retained .related-resource-card-v13 span { display:block; font-weight:600; margin-bottom:8px; }
+.ga-cases-page .cs-retained .related-resource-card-v13 small { color:#52657b; font-size:15px; }
+.ga-cases-page .cs-retained .faq-item { background:#fff; padding:22px; border:1px solid #dce7f2; border-radius:10px; margin-bottom:12px; }
+.ga-cases-page .cs-retained .faq-item p { margin-bottom:0; }
+.ga-cases-page .cs-cta-wrap { padding-top:24px; padding-bottom:36px; }
+.ga-cases-page .cs-cta { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:26px; padding:38px; border:1px solid #175e9a; border-radius:14px; background:radial-gradient(ellipse at 90% 100%,#0c5aa4,transparent 65%),linear-gradient(110deg,#064a8c,#061d39); color:#fff; }
+.ga-cases-page .cases-v2 .cs-cta h2 { color:#fff; font-size:clamp(1.7rem,2.5vw,2.25rem); line-height:1.2; margin:0 0 12px; }
+.ga-cases-page .cs-cta p { color:#e0edfc; margin:0; }
+.ga-cases-page .cs-wa-float { position:fixed; z-index:20; bottom:20px; right:20px; display:flex; align-items:center; gap:8px; padding:12px 16px; border-radius:999px; background:#168346; color:#fff; font:600 15px/1.4 var(--cs-content-font); box-shadow:0 5px 20px #04182e33; text-decoration:none; }
+.ga-cases-page .cs-wa-float:hover { background:#126d3a; color:#fff; }
+.ga-cases-page .cs-wa-float:focus-visible { outline:3px solid #076bfa; outline-offset:4px; }
+@media (max-width:1199.98px) {
+ .ga-cases-page .cs-hero-grid { grid-template-columns:minmax(0,1fr) minmax(0,1fr); }
+ .ga-cases-page .cs-card-grid { gap:18px; }
+ .ga-cases-page .cs-benefit-grid > div { padding:0 12px; gap:11px; }
+}
+@media (min-width:992px) and (max-width:1199.98px) {
+ .ga-cases-page .cases-v2 .cs-hero h1 { font-size:34px; }
+}
+@media (max-width:991.98px) {
+ .ga-cases-page .cases-v2 .cs-hero h1 { font-size:39px; line-height:1.12; }
+ .ga-cases-page .cs-hero-grid { grid-template-columns:minmax(0,1fr); gap:24px; }
+ .ga-cases-page .cs-hero-copy { max-width:680px; }
+ .ga-cases-page .cs-hero-art { max-width:760px; }
+ .ga-cases-page .cs-hero-art figcaption { text-align:center; }
+ .ga-cases-page .cs-card-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .ga-cases-page .cs-benefit-grid, .ga-cases-page .cs-trust { grid-template-columns:repeat(2,minmax(0,1fr)); gap:25px 20px; }
+ .ga-cases-page .cs-benefit-grid > div { padding:0; border:0; }
+ .ga-cases-page .cs-trust > div { border:0; }
+}
+@media (max-width:575.98px) {
+ .ga-cases-page .cs-hero { padding:36px 0 28px; }
+ .ga-cases-page .cases-v2 .cs-hero h1 { font-size:30px; line-height:1.15; letter-spacing:-.016em !important; }
+ .ga-cases-page .cases-v2 .cs-hero-lead { font-size:15px; line-height:1.65; }
+ .ga-cases-page .cs-section { padding:44px 0; }
+ .ga-cases-page .cs-actions { align-items:stretch; }
+ .ga-cases-page .cases-v2 .cs-actions .cs-btn { flex:1 1 auto; }
+ .ga-cases-page .cs-card-grid { grid-template-columns:minmax(0,1fr); }
+ .ga-cases-page .cs-benefit-grid { gap:22px 16px; }
+ .ga-cases-page .cs-benefit-grid > div { align-items:flex-start; gap:9px; }
+ .ga-cases-page .cs-benefit-grid > div > i { font-size:23px; }
+ .ga-cases-page .cases-v2 .cs-benefit-grid h2 { font-size:15px; }
+ .ga-cases-page .cs-benefit-grid p { font-size:12px; }
+ .ga-cases-page .cs-filter { padding:10px 13px; font-size:13px; }
+ .ga-cases-page .cs-trust > div { padding:0; gap:10px; }
+ .ga-cases-page .cs-trust strong { font-size:14px; }
+ .ga-cases-page .cs-trust i { font-size:22px; }
+ .ga-cases-page .cs-cta { padding:25px 21px; }
+ .ga-cases-page .cs-cta .cs-actions { width:100%; }
+ .ga-cases-page .cs-wa-float { bottom:14px; right:14px; padding:12px; }
+ .ga-cases-page .cs-wa-float span { display:none; }
+ .ga-cases-page .cs-retained .faq-item { padding:19px; }
+}
+@media (prefers-reduced-motion:reduce) {
+ .ga-cases-page .cases-v2 .cs-btn { transition:none; }
+}
+
+/* Photo licensing information is confined to this case gallery. */
+.ga-cases-page .cs-photo-credits { margin-top:24px; padding:16px 20px; border:1px solid #dce7f2; border-radius:8px; font-family:var(--cs-content-font); font-size:13px; line-height:1.5; color:#52657b; background:#f8fbff; }
+.ga-cases-page .cs-photo-credits summary { cursor:pointer; font-weight:600; min-height:28px; }
+.ga-cases-page .cs-photo-credits ol { margin:16px 0 0; padding-left:20px; }
+.ga-cases-page .cs-photo-credits li + li { margin-top:12px; }
+.ga-cases-page .cs-inline-note { font-size:12px; color:#52657b; }
+@media (max-width:359.98px) {
+ .ga-cases-page .cases-v2 .cs-hero h1 { font-size:28px; line-height:1.12; letter-spacing:-.022em !important; }
+ .ga-cases-page .cases-v2 .cs-hero-lead { line-height:1.55; }
+}
