@@ -1,0 +1,304 @@
+/* Canada country guide only. No shared declarations or other country pages changed. */
+body.ga-city-page { --font-sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif; --font-formal-sans:var(--ga-font-en-body); --cp-font:var(--ga-font-en-body,"Source Sans 3",sans-serif); --cp-ink:#102b50; --cp-blue:#076bfa; background:#fff; }
+.ga-city-page .city-guides-v2 { color:var(--cp-ink); font-family:var(--cp-font); }
+/* The shared English typography uses !important; this page follows the approved homepage sans-serif component hierarchy. */
+.ga-city-page .city-guides-v2 :is(h1,h2,h3,p,li,a,span,summary,dt,dd) { font-family:var(--cp-font) !important; }
+.ga-city-page .city-guides-v2 :is(h1,h2,h3) { font-weight:700 !important; letter-spacing:-.025em !important; }
+.ga-city-page .cp-shell { width:89%; max-width:1320px; margin-inline:auto; }
+.ga-city-page .city-guides-v2 p { line-height:1.65; }
+.ga-city-page .city-guides-v2 a { color:#075fca; text-underline-offset:3px; }
+.ga-city-page .city-guides-v2 :is(a,summary):focus-visible { outline:3px solid #24bce8; outline-offset:4px; }
+.ga-city-page .cp-skip { position:absolute; top:-100px; left:16px; z-index:30; padding:12px 18px; background:#fff; color:#102b50; }
+.ga-city-page .cp-skip:focus { top:8px; }
+.ga-city-page .cp-hero { overflow:hidden; position:relative; padding:0; color:#fff; background:radial-gradient(ellipse at 80% 45%,#12416c,transparent 67%),linear-gradient(115deg,#04172e,#092a50); }
+.ga-city-page .cp-hero-grid { display:grid; grid-template-columns:1fr 1.08fr; gap:28px; align-items:center; min-height:440px; padding:46px 0; position:relative; }
+.ga-city-page .cp-hero-copy { position:relative; z-index:1; min-width:0; }
+.ga-city-page .cp-eyebrow { color:#30e3ee; font-size:12px; font-weight:700; letter-spacing:.09em; margin:0 0 14px; }
+.ga-city-page .cp-hero h1 { color:#fff; font-size:clamp(34px,3.4vw,50px); line-height:1.08; max-width:620px; margin:0 0 20px; }
+.ga-city-page .cp-lead { color:#e2edfa; font-size:18px; max-width:570px; margin:0 0 25px; }
+.ga-city-page .cp-actions { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+.ga-city-page .city-guides-v2 .cp-btn { display:inline-flex; align-items:center; justify-content:center; gap:12px; min-height:48px; padding:10px 18px; border:1px solid; border-radius:8px; font-size:16px; font-weight:600; line-height:1.5; text-decoration:none; white-space:nowrap; color:#fff; transition:background-color .18s,border-color .18s; }
+.ga-city-page .city-guides-v2 .cp-primary { background:linear-gradient(110deg,#007bff,#0063f6); border-color:#168dff; box-shadow:0 5px 20px #0066ee30; }
+.ga-city-page .city-guides-v2 .cp-primary:hover { background:#0874f1; border-color:#82c5ff; }
+.ga-city-page .cp-primary span { display:inline-flex; align-items:center; justify-content:center; width:25px; height:25px; border-radius:50%; background:#fff; color:#086ff0; font-size:19px; line-height:1; }
+.ga-city-page .city-guides-v2 .cp-secondary { background:#061e3ab8; border-color:#bed0e0; backdrop-filter:blur(5px); }
+.ga-city-page .city-guides-v2 .cp-secondary:hover { background:#103760; border-color:#fff; }
+.ga-city-page .cp-secondary svg { color:#6be859; width:25px; height:25px; flex-shrink:0; }
+.ga-city-page .cp-promises { display:flex; flex-wrap:wrap; gap:8px 17px; list-style:none; padding:0; margin:23px 0 0; font-size:13px; color:#d6e8fa; }
+.ga-city-page .cp-promises li::before { content:"✓"; color:#28e6ed; margin-right:7px; }
+.ga-city-page .cp-hero-art { margin:0 -8% 0 -5%; min-width:0; position:relative; }
+.ga-city-page .cp-hero-art img { display:block; width:100%; height:410px; object-fit:cover; object-position:center 56%; mix-blend-mode:screen; -webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 90%,transparent),linear-gradient(0deg,transparent,#000 12%,#000 86%,transparent); -webkit-mask-composite:source-in; mask-image:linear-gradient(90deg,transparent,#000 14%,#000 90%,transparent),linear-gradient(0deg,transparent,#000 12%,#000 86%,transparent); mask-composite:intersect; }
+.ga-city-page .cp-hero-art figcaption { position:absolute; right:11%; bottom:24px; color:#d5eaff; font-size:11px; letter-spacing:.06em; text-transform:uppercase; }
+.ga-city-page .cp-benefits { background:#04182e; border-block:1px solid #245076; color:#fff; }
+.ga-city-page .cp-benefit-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); padding-block:23px; }
+.ga-city-page .cp-benefit-grid>div { display:flex; align-items:center; gap:15px; padding-inline:23px; border-right:1px solid #35516b; min-width:0; }
+.ga-city-page .cp-benefit-grid>div:first-child { padding-left:0; }
+.ga-city-page .cp-benefit-grid>div:last-child { padding-right:0; border:0; }
+.ga-city-page .cp-benefit-grid i { font-size:29px; color:#16d7e9; flex-shrink:0; }
+.ga-city-page .cp-benefit-grid h2 { color:#fff; font-size:17px; line-height:1.25; margin:0 0 4px; }
+.ga-city-page .cp-benefit-grid p { color:#c8dcef; font-size:13px; line-height:1.4; margin:0; }
+.ga-city-page .cp-content { background:linear-gradient(#f6f9ff,#fff 60%); }
+.ga-city-page .cp-section { padding-top:52px; }
+.ga-city-page .cp-section h2 { color:#102b50; font-size:clamp(26px,2.3vw,34px); line-height:1.16; margin:0 0 19px; }
+.ga-city-page .cp-section h3 { font-size:21px; color:#102b50; line-height:1.25; margin:0 0 12px; }
+.ga-city-page .cp-section p,.ga-city-page .cp-section li,.ga-city-page .cp-section dd { font-size:16px; }
+.ga-city-page .cp-section ul { padding-left:21px; margin-bottom:16px; }
+.ga-city-page .cp-section li+li { margin-top:8px; }
+.ga-city-page .cp-kicker { color:#076bfa; font-size:14px; line-height:1.3; font-weight:700; margin:0 0 8px; }
+.ga-city-page .cp-overview { display:grid; grid-template-columns:1.5fr 1fr; gap:42px; align-items:start; }
+.ga-city-page .cp-card { background:linear-gradient(135deg,#fff,#f2f6fd); border:1px solid #dee8f6; border-radius:12px; box-shadow:0 4px 15px #173d6c0b; padding:25px; min-width:0; }
+.ga-city-page .cp-uses { position:relative; overflow:hidden; background:linear-gradient(120deg,#f0f5ff,#e6eefc); }
+.ga-city-page .cp-uses li { position:relative; }
+.ga-city-page .cp-country-mark { position:absolute; right:10px; top:-15px; font-size:110px; font-weight:700; color:#c9d9f04d; pointer-events:none; }
+.ga-city-page .cp-uses :is(h3,ul,p) { position:relative; }
+.ga-city-page .cp-uses p { font-size:13px; margin:12px 0 0; color:#52657b; }
+.ga-city-page .cp-jump-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; margin-top:28px; }
+.ga-city-page .city-guides-v2 .cp-jump { color:#102b50; text-decoration:none; padding:24px 22px; position:relative; }
+.ga-city-page .cp-jump>i { color:#0878ff; font-size:28px; margin-bottom:17px; }
+.ga-city-page .cp-jump h3 { font-size:19px; margin-bottom:9px; }
+.ga-city-page .cp-jump p { font-size:15px; line-height:1.45; margin:0 0 14px; }
+.ga-city-page .cp-jump>span { display:block; text-align:right; color:#076bfa; }
+.ga-city-page .cp-jump:hover { border-color:#9bc8ff; background:#eff6ff; }
+.ga-city-page .cp-document-grid,.ga-city-page .cp-two-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; margin-top:23px; }
+.ga-city-page .cp-document-grid h3 i { color:#0878ff; margin-right:9px; }
+.ga-city-page .cp-document-grid ul { margin:0; }
+.ga-city-page .cp-note { color:#52657b; font-size:14px !important; line-height:1.55; padding-top:16px; }
+.ga-city-page .cp-section-intro { max-width:850px; }
+.ga-city-page .cp-steps { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:22px; list-style:none; padding:7px 0 0; margin:0; }
+.ga-city-page .cp-steps li { position:relative; text-align:center; margin:0; }
+.ga-city-page .cp-step-icon { display:inline-flex; align-items:center; justify-content:center; width:58px; height:58px; border-radius:50%; color:#0878ff; background:#dfebff; font-size:25px; margin-bottom:15px; }
+.ga-city-page .cp-steps li:not(:last-child)::after { content:""; position:absolute; border-top:1px dashed #a6c7f3; top:29px; left:calc(50% + 36px); width:calc(100% - 50px); }
+.ga-city-page .cp-steps h3 { font-size:17px; margin-bottom:9px; }
+.ga-city-page .cp-steps p { font-size:15px; line-height:1.45; margin:0; }
+.ga-city-page .cp-practical { display:grid; grid-template-columns:1fr 1.15fr; gap:26px; align-items:start; }
+.ga-city-page .cp-timing h2 { font-size:27px; }
+.ga-city-page .cp-timing dl { margin:0 0 20px; }
+.ga-city-page .cp-timing dl>div { display:grid; grid-template-columns:1fr 1.4fr; gap:18px; padding:14px 0; border-top:1px solid #dce6f5; }
+.ga-city-page .cp-timing dt { font-size:15px; font-weight:700; }
+.ga-city-page .cp-timing dd { margin:0; font-size:15px; line-height:1.45; }
+.ga-city-page .cp-timing>p { font-size:15px; }
+.ga-city-page .cp-faq-panel { min-width:0; }
+.ga-city-page .cp-faq { margin:0 0 10px; border:1px solid #dfe8f4; border-radius:9px; background:#fff; box-shadow:0 3px 12px #13386d06; }
+.ga-city-page .cp-faq summary { position:relative; cursor:pointer; list-style:none; padding:15px 42px 15px 18px; font-size:17px; font-weight:600; line-height:1.35; color:#102b50; }
+.ga-city-page .cp-faq summary::-webkit-details-marker { display:none; }
+.ga-city-page .cp-faq summary::after { content:"+"; position:absolute; right:17px; top:14px; color:#076bfa; font-size:22px; line-height:1; }
+.ga-city-page .cp-faq[open] summary::after { content:"−"; }
+.ga-city-page .cp-faq[open] summary { border-bottom:1px solid #e5edf7; }
+.ga-city-page .cp-faq p { padding:16px 18px 18px; margin:0; color:#425c77; }
+.ga-city-page .cp-related { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; }
+.ga-city-page .cp-related figure { margin:0; }
+.ga-city-page .cp-related img { display:block; width:100%; height:auto; aspect-ratio:2/1; object-fit:cover; border-radius:12px; }
+.ga-city-page .cp-related figcaption { color:#62768e; font-size:12px; margin-top:8px; }
+.ga-city-page .city-guides-v2 .cp-text-button { display:inline-flex; align-items:center; gap:15px; border:1px solid #0878ff; border-radius:7px; padding:10px 18px; text-decoration:none; font-weight:600; }
+.ga-city-page .cp-other-cases { margin-top:28px; padding:24px; background:#f4f8fe; border-left:3px solid #0878ff; border-radius:0 10px 10px 0; }
+.ga-city-page .cp-other-cases p:last-child { margin-bottom:0; }
+.ga-city-page .cp-resource-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+.ga-city-page .city-guides-v2 .cp-resource-grid>a { text-decoration:none; color:#52657b; }
+.ga-city-page .cp-resource-grid h3 { font-size:21px; }
+.ga-city-page .cp-resource-grid p { margin-bottom:0; }
+.ga-city-page .cp-source-note { margin-top:22px; color:#52657b; font-size:14px; }
+.ga-city-page .cp-source-note summary { cursor:pointer; padding-block:12px; min-height:44px; }
+.ga-city-page .cp-source-note p,.ga-city-page .cp-source-note li { font-size:14px; }
+.ga-city-page .cp-resources { padding-bottom:45px; }
+.ga-city-page .cp-bottom-cta { position:relative; overflow:hidden; background:radial-gradient(ellipse at 85% 85%,#0b4e87,transparent 58%),#041c37; padding:43px 0; color:#fff; }
+.ga-city-page .cp-bottom-cta::after { content:""; position:absolute; inset:0 0 0 55%; background:url('../cases-v2/success-stories-hero.webp') center 52%/cover no-repeat; opacity:.46; -webkit-mask-image:linear-gradient(90deg,transparent,#000 45%); mask-image:linear-gradient(90deg,transparent,#000 45%); pointer-events:none; }
+.ga-city-page .cp-bottom-cta .cp-shell { position:relative; z-index:1; }
+.ga-city-page .cp-bottom-cta .cp-shell>div { max-width:780px; }
+.ga-city-page .cp-bottom-cta h2 { font-size:clamp(27px,2.5vw,36px); line-height:1.15; color:#fff; margin:0 0 13px; }
+.ga-city-page .cp-bottom-cta p { color:#e0ecfa; font-size:18px; max-width:650px; margin-bottom:23px; }
+.ga-city-page .ga-footer { margin-top:0; }
+.ga-city-page .cp-wa-float { position:fixed; z-index:20; right:20px; bottom:20px; display:flex; align-items:center; gap:8px; padding:12px 16px; border-radius:999px; background:#168346; color:#fff; font:600 15px/1.4 var(--cp-font); box-shadow:0 5px 20px #04182e33; text-decoration:none; }
+.ga-city-page .cp-wa-float svg { width:25px; height:25px; }
+.ga-city-page .cp-wa-float[hidden] { display:none; }
+.ga-city-page .cp-wa-float:focus-visible { outline:3px solid #076bfa; outline-offset:4px; }
+.ga-city-page .city-guides-v2 [id] { scroll-margin-top:20px; }
+@media(min-width:992px) and (max-width:1199.98px) {
+ .ga-city-page .cp-actions .cp-btn { font-size:14px; min-height:44px; padding:9px 15px; gap:10px; }
+ .ga-city-page .cp-hero h1 { font-size:38px; }
+ .ga-city-page .cp-lead { font-size:17px; }
+}
+@media(max-width:991.98px) {
+ .ga-city-page .cp-shell { width:calc(100% - 40px); }
+ .ga-city-page .cp-hero-grid { grid-template-columns:1fr 1fr; gap:12px; padding-block:38px; }
+ .ga-city-page .cp-hero h1 { font-size:36px; }
+ .ga-city-page .cp-lead { font-size:16px; }
+ .ga-city-page .cp-hero-art img { height:410px; }
+ .ga-city-page .cp-actions { gap:10px; }
+ .ga-city-page .cp-actions .cp-btn { white-space:normal; }
+ .ga-city-page .cp-benefit-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+ .ga-city-page .cp-benefit-grid>div { padding:0; border:0; }
+ .ga-city-page .cp-overview { grid-template-columns:1.25fr 1fr; gap:24px; }
+ .ga-city-page .cp-jump-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .ga-city-page .cp-steps { grid-template-columns:1fr; gap:19px; }
+ .ga-city-page .cp-steps li { text-align:left; padding-left:78px; min-height:62px; }
+ .ga-city-page .cp-step-icon { position:absolute; left:0; top:0; }
+ .ga-city-page .cp-steps li:not(:last-child)::after { width:0; height:calc(100% - 38px); left:28px; top:64px; border-top:0; border-left:1px dashed #a6c7f3; }
+ .ga-city-page .cp-practical { grid-template-columns:1fr; gap:32px; }
+ .ga-city-page .cp-related { gap:24px; }
+ .ga-city-page .cp-resource-grid { grid-template-columns:1fr; }
+}
+@media(max-width:575.98px) {
+ .ga-city-page .cp-shell { width:calc(100% - 40px); }
+ .ga-city-page .cp-hero-grid { grid-template-columns:1fr; padding:32px 0 10px; }
+ .ga-city-page .cp-hero h1 { font-size:36px; line-height:1.08; }
+ .ga-city-page .cp-eyebrow { font-size:11px; }
+ .ga-city-page .cp-actions { flex-direction:column; align-items:stretch; }
+ .ga-city-page .cp-actions .cp-btn { width:100%; min-height:50px; font-size:15px; padding:10px 14px; }
+ .ga-city-page .cp-promises { gap:7px 13px; font-size:12px; margin-top:18px; }
+ .ga-city-page .cp-hero-art { margin:0 -12px; }
+ .ga-city-page .cp-hero-art img { height:auto; aspect-ratio:1.8/1; object-position:center 50%; }
+ .ga-city-page .cp-hero-art figcaption { bottom:12px; right:8%; }
+ .ga-city-page .cp-benefit-grid { gap:22px 16px; padding-block:22px; }
+ .ga-city-page .cp-benefit-grid>div { align-items:flex-start; gap:9px; }
+ .ga-city-page .cp-benefit-grid i { font-size:23px; }
+ .ga-city-page .cp-benefit-grid h2 { font-size:15px; }
+ .ga-city-page .cp-benefit-grid p { font-size:12px; }
+ .ga-city-page .cp-section { padding-top:38px; }
+ .ga-city-page .cp-overview,.ga-city-page .cp-document-grid,.ga-city-page .cp-two-grid,.ga-city-page .cp-related { grid-template-columns:1fr; }
+ .ga-city-page .cp-jump-grid { gap:12px; }
+ .ga-city-page .cp-jump { padding:18px 15px; }
+ .ga-city-page .cp-jump h3 { font-size:18px; }
+ .ga-city-page .cp-jump p { font-size:14px; }
+ .ga-city-page .cp-card { padding:21px; }
+ .ga-city-page .cp-timing dl>div { grid-template-columns:1fr 1.25fr; gap:12px; }
+ .ga-city-page .cp-faq summary { font-size:16px; }
+ .ga-city-page .cp-bottom-cta::after { inset:0; opacity:.15; }
+ .ga-city-page .cp-wa-float { padding:12px; right:14px; bottom:14px; }
+ .ga-city-page .cp-wa-float span { display:none; }
+}
+@media(prefers-reduced-motion:reduce) { .ga-city-page .cp-btn { transition:none; } }
+
+
+/* City hub: approved country-template tokens; every rule is page-scoped. */
+.ga-city-page .city-guides-v2 {background:#f4f8ff;}
+.ga-city-page .cg-hero {background:#041c38;}
+.ga-city-page .cg-hero-media {position:absolute;inset:0 0 0 48%;margin:0;pointer-events:none;
+ -webkit-mask-image:linear-gradient(90deg,transparent,#000 32%);mask-image:linear-gradient(90deg,transparent,#000 32%);}
+.ga-city-page .cg-hero-media::after {content:"";position:absolute;inset:0;background:linear-gradient(0deg,#041c3855,transparent 35%),linear-gradient(90deg,#041c3830,transparent 60%);}
+.ga-city-page .cg-hero-media img {width:100%;height:100%;display:block;object-fit:cover;object-position:center 48%;}
+.ga-city-page .cg-hero .cp-hero-grid {grid-template-columns:minmax(0,48fr) minmax(0,52fr);min-height:460px;padding-block:48px;gap:20px;}
+.ga-city-page .cg-hero .cp-lead {max-width:570px;font-size:17px;}
+.ga-city-page .cg-hero .cp-eyebrow {display:inline-flex;align-items:center;gap:7px;color:#e3f5ff;background:#42729d66;border-radius:999px;padding:4px 10px;font-size:12px;}
+.ga-city-page .cg-hero h1 {font-size:clamp(34px,3.4vw,48px);}
+.ga-city-page .cp-benefit-grid {gap:20px;padding-block:22px;}
+.ga-city-page .cp-benefit-grid>div {gap:12px;padding-right:12px;}
+.ga-city-page .cp-benefit-grid i {color:#f0f8ff;font-size:27px;}
+.ga-city-page .cp-benefit-grid h2 {font-size:17px;}
+.ga-city-page .cp-benefit-grid p {font-size:14px;}
+.ga-city-page .cg-overview p {max-width:1100px;margin-bottom:12px;}
+.ga-city-page .cg-guides {padding-top:30px;}
+.ga-city-page .cg-city-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:1fr;gap:18px;}
+.ga-city-page .cg-city-card {min-width:0;border:1px solid #dce7f6;background:linear-gradient(135deg,#fff,#f1f7ff);border-radius:14px;box-shadow:0 4px 14px #183a6810;transition:transform .18s,border-color .18s;}
+.ga-city-page .cg-city-card:hover {transform:translateY(-3px);border-color:#96bff4;}
+.ga-city-page .city-guides-v2 .cg-card-link {display:grid;grid-template-columns:106px minmax(0,1fr);align-items:start;gap:16px;padding:15px;height:100%;color:#193a60;text-decoration:none;border-radius:14px;}
+.ga-city-page .cg-card-link>img {width:106px;height:122px;object-fit:cover;border-radius:9px;display:block;background:#d9e7f4;color:#243f60;font-size:12px;}
+.ga-city-page .cg-card-copy {display:flex;flex-direction:column;min-width:0;height:100%;}
+.ga-city-page .cg-city-card h3 {font-size:23px;line-height:1.2;margin:0 0 8px;}
+.ga-city-page .cg-city-card p {font-size:15px;line-height:1.5;margin:0 0 12px;color:#3f5773;}
+.ga-city-page .cg-view {margin-top:auto;font-size:16px;font-weight:700;color:#076bfa;}
+.ga-city-page .cg-other {display:flex;align-items:center;gap:24px;padding:25px 28px;margin-top:24px;background:#e2f0ff;border:1px solid #d1e4fb;border-radius:16px;}
+.ga-city-page .cg-other>i {font-size:34px;color:#0878ff;flex-shrink:0;}
+.ga-city-page .cg-other>div {flex:1;min-width:0;}
+.ga-city-page .cg-other h3 {font-size:24px;margin:0 0 8px;}
+.ga-city-page .cg-other p {margin:0;font-size:16px;color:#294b71;}
+.ga-city-page .cg-resources {padding-top:30px;}
+.ga-city-page .cg-resources h2 {font-size:25px;}
+.ga-city-page .cg-resource-links {display:flex;flex-wrap:wrap;gap:10px 20px;}
+.ga-city-page .cg-resource-links a {font-size:15px;font-weight:600;}
+.ga-city-page .cg-credits {margin-top:18px;color:#536a83;font-size:13px;}
+.ga-city-page .cg-credits summary {cursor:pointer;font-size:13px;width:fit-content;}
+.ga-city-page .cg-credits p,.ga-city-page .cg-credits li {font-size:13px;line-height:1.6;overflow-wrap:anywhere;}
+.ga-city-page .cg-credits ul {margin-top:12px;}
+.ga-city-page .cg-faq-section {padding-top:36px;padding-bottom:44px;}
+.ga-city-page .cg-faq-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px;align-items:start;}
+.ga-city-page .cp-faq {border-radius:12px;background:#fff;box-shadow:0 2px 9px #183a680b;}
+.ga-city-page .cp-bottom-cta {margin-top:0;}
+.ga-city-page .cp-bottom-cta::after {background-image:url("../country-hub-v2/digital-globe-3d.webp");background-size:contain;background-position:right center;opacity:.48;}
+.ga-city-page .cp-bottom-cta .cp-shell>div {max-width:none;display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:30px;align-items:center;}
+.ga-city-page .cp-bottom-cta h2 {grid-column:1;font-size:clamp(27px,2.5vw,35px);}
+.ga-city-page .cp-bottom-cta p {grid-column:1;margin-bottom:0;max-width:680px;}
+.ga-city-page .cp-bottom-cta .cp-actions {grid-column:2;grid-row:1 / span 2;}
+@media(max-width:1199px) {
+ .ga-city-page .cg-city-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+ .ga-city-page .cg-other {flex-wrap:wrap;}
+ .ga-city-page .cg-other>.cp-btn {margin-left:58px;}
+ .ga-city-page .cp-bottom-cta .cp-shell>div {display:block;}
+ .ga-city-page .cp-bottom-cta p {margin-bottom:20px;}
+}
+@media(max-width:991.98px) {
+ .ga-city-page .cg-hero .cp-hero-grid {grid-template-columns:minmax(0,54fr) minmax(0,46fr);min-height:440px;padding-block:38px;}
+ .ga-city-page .cg-hero-media {left:44%;}
+ .ga-city-page .cg-hero h1 {font-size:36px;}
+ .ga-city-page .cp-benefit-grid {gap:20px;}
+}
+@media(max-width:767px) {
+ .ga-city-page .cg-hero .cp-hero-grid {display:block;padding-block:32px 24px;min-height:0;}
+ .ga-city-page .cg-hero-media {position:relative;inset:auto;height:245px;order:2;
+ -webkit-mask-image:linear-gradient(0deg,#000 80%,transparent);mask-image:linear-gradient(0deg,#000 80%,transparent);}
+ .ga-city-page .cg-hero-media img {object-fit:cover;object-position:center 42%;}
+ .ga-city-page .cg-hero {display:flex;flex-direction:column;}
+ .ga-city-page .cg-hero .cp-hero-grid {order:1;}
+ .ga-city-page .cg-hero h1 {font-size:35px;}
+ .ga-city-page .cg-hero .cp-lead {font-size:16px;}
+ .ga-city-page .cg-faq-grid {grid-template-columns:minmax(0,1fr);}
+ .ga-city-page .cg-city-grid {grid-template-columns:minmax(0,1fr);}
+ .ga-city-page .cg-other {display:block;padding:22px;}
+ .ga-city-page .cg-other>i {margin-bottom:12px;}
+ .ga-city-page .cg-other>.cp-btn {margin:18px 0 0;white-space:normal;}
+ .ga-city-page .cg-other h3 {font-size:25px;}
+ .ga-city-page .cp-benefit-grid h2 {font-size:16px;}
+ .ga-city-page .cp-benefit-grid p {font-size:13px;}
+ .ga-city-page .cp-benefit-grid i {font-size:23px;}
+}
+@media(max-width:400px) {
+ .ga-city-page .city-guides-v2 .cg-card-link {grid-template-columns:90px minmax(0,1fr);gap:13px;padding:13px;}
+ .ga-city-page .cg-card-link>img {width:90px;height:120px;}
+ .ga-city-page .cg-city-card h3 {font-size:22px;}
+}
+@media(prefers-reduced-motion:no-preference) {html:has(.ga-city-page){scroll-behavior:smooth;}}
+@media(prefers-reduced-motion:reduce) {.ga-city-page .cg-city-card {transition:none;}}
+
+/* Preserve the temple roof and white balustrade at wide desktop sizes. */
+@media(min-width:768px) {
+ .ga-city-page .cg-hero-media {background:linear-gradient(90deg,transparent,#0c365b70);-webkit-mask-image:linear-gradient(90deg,transparent,#000 22%);mask-image:linear-gradient(90deg,transparent,#000 22%);}
+ .ga-city-page .cg-hero-media img {position:absolute;right:0;top:0;width:auto;max-width:none;height:100%;object-fit:contain;
+ -webkit-mask-image:linear-gradient(90deg,transparent,#000 23%);mask-image:linear-gradient(90deg,transparent,#000 23%);}
+}
+@media(max-width:767px) {
+ .ga-city-page .cg-hero-media img {object-fit:contain;object-position:center;}
+}
+
+/* Tablet copy stays above the photo; masks follow the actual image edges. */
+@media(min-width:768px) and (max-width:991.98px) {
+ .ga-city-page .cg-hero {display:flex;flex-direction:column;}
+ .ga-city-page .cg-hero .cp-hero-grid {display:block;min-height:0;padding-block:34px 20px;order:1;}
+ .ga-city-page .cg-hero .cp-lead {max-width:650px;}
+ .ga-city-page .cg-hero-media {position:relative;inset:auto;height:300px;order:2;background:none;
+ -webkit-mask-image:linear-gradient(0deg,#000 85%,transparent);mask-image:linear-gradient(0deg,#000 85%,transparent);}
+ .ga-city-page .cg-hero-media img {position:static;display:block;width:auto;height:100%;max-width:100%;margin-inline:auto;object-fit:contain;
+ -webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);}
+}
+@media(max-width:767px) {
+ .ga-city-page .cg-hero-media img {width:auto;height:100%;max-width:100%;margin-inline:auto;
+ -webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);}
+}
+/* Replacement-photo crop anchors only; original card boxes remain unchanged. */
+.ga-city-page .cg-card-link>img[src="assets/city-guides-v2/shenzhen.webp"]{object-position:79% center;}
+.ga-city-page .cg-card-link>img[src="assets/city-guides-v2/hangzhou.webp"]{object-position:10% center;}
+
+/* Related Resources only: clickable cards and a quiet credits link. */
+.ga-city-page .cg-resources .cg-resources-intro {font-size:16px;line-height:1.65;color:#52657b;margin:0 0 22px;}
+.ga-city-page .cg-resources .cg-resource-cards {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:1fr;gap:18px;}
+.ga-city-page .cg-resources .cg-resource-card {display:flex;flex-direction:column;gap:14px;min-width:0;min-height:178px;padding:22px;background:#fff;border:1px solid #dce7f6;border-radius:14px;box-shadow:0 4px 14px #183a6810;color:#102b50;text-decoration:none;transition:transform .18s,border-color .18s;}
+.ga-city-page .cg-resources .cg-resource-card:hover {transform:translateY(-3px);border-color:#96bff4;}
+.ga-city-page .cg-resources .cg-resource-card-heading {display:flex;align-items:center;gap:12px;}
+.ga-city-page .cg-resources .cg-resource-card-heading svg {flex:0 0 28px;color:#0878ff;}
+.ga-city-page .cg-resources .cg-resource-card h3 {font-size:21px;line-height:1.25;margin:0;color:#102b50;}
+.ga-city-page .cg-resources .cg-resource-card p {font-size:15px;line-height:1.6;margin:0;color:#52657b;}
+.ga-city-page .cg-resources .cg-resource-explore {margin-top:auto;color:#076bfa;font-size:15px;font-weight:600;line-height:1.5;}
+.ga-city-page .cg-resources>.cg-credits {text-align:right;margin:18px 0 0;font-size:13px;line-height:1.6;}
+.ga-city-page .cg-resources>.cg-credits a {color:#536a83;font-size:13px;font-weight:400;text-decoration:none;}
+.ga-city-page .cg-resources>.cg-credits a:hover {text-decoration:underline;}
+@media(max-width:1199px) {.ga-city-page .cg-resources .cg-resource-cards {grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:767px) {.ga-city-page .cg-resources .cg-resource-cards {grid-template-columns:minmax(0,1fr);}}
+@media(prefers-reduced-motion:reduce) {.ga-city-page .cg-resources .cg-resource-card {transition:none;}}

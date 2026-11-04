@@ -1,0 +1,14 @@
+/* Dedicated Image Credits page only; no City Guides component changes. */
+.cg-credits-document .credits-main{padding:42px 0 50px;background:#f4f8ff;}
+.cg-credits-document .credits-main h1{font-size:clamp(29px,3vw,40px);line-height:1.15;color:#102b50;margin:20px 0;}
+.cg-credits-document .credits-intro{max-width:1000px;color:#3f5773;font-size:16px;line-height:1.7;}
+.cg-credits-document .credits-back{font-size:15px;font-weight:600;margin:0 0 20px;}
+.cg-credits-document .credits-list{display:grid;gap:24px;margin-top:30px;}
+.cg-credits-document .credits-photo{display:grid;grid-template-columns:240px minmax(0,1fr);gap:26px;padding:25px;border:1px solid #dce7f6;border-radius:14px;background:#fff;}
+.cg-credits-document .credits-photo>img{width:100%;height:auto;max-height:200px;object-fit:contain;object-position:top;background:#edf3fa;border-radius:8px;}
+.cg-credits-document .credits-photo h2{font-size:26px;line-height:1.2;margin:0 0 18px;color:#102b50;}
+.cg-credits-document .credits-photo dl{margin:0;font-size:14px;line-height:1.65;color:#3f5773;}
+.cg-credits-document .credits-photo dl>div{display:grid;grid-template-columns:130px minmax(0,1fr);gap:12px;margin:0 0 10px;}
+.cg-credits-document .credits-photo dt{font-weight:600;}
+.cg-credits-document .credits-photo dd{margin:0;overflow-wrap:anywhere;}
+@media(max-width:767px){.cg-credits-document .credits-photo{grid-template-columns:minmax(0,1fr);padding:21px;gap:20px}.cg-credits-document .credits-photo>img{max-height:240px}.cg-credits-document .credits-photo dl>div{grid-template-columns:minmax(0,1fr);gap:3px}}
