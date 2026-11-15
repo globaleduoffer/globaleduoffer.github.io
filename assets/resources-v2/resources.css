@@ -67,7 +67,7 @@ html[lang="en"] .rs-v2 .rs-hero h1,html[lang="en"] .rs-v2 .rs-cta h2{color:#fff}
 .rs-v2 .rs-academic-service{margin-top:17px;font-size:14px;line-height:1.5;color:#4b627c}
 .rs-academic-service a{font-weight:750}
 .rs-cta{position:relative;overflow:hidden;background:radial-gradient(ellipse at 6% 90%,#167bd977,transparent 46%),radial-gradient(ellipse at 100% 30%,#1269bb88,transparent 50%),linear-gradient(110deg,#082749,#064477);color:#fff;padding:36px 0 38px;isolation:isolate}
-.rs-cta .container{position:relative;z-index:1;text-align:center;max-width:1000px!important}
+.rs-cta .container{position:relative;z-index:1;text-align:center}
 .rs-v2 .rs-cta h2{color:#fff;margin-bottom:10px;font-size:clamp(1.6rem,2.5vw,2rem)}
 .rs-v2 .rs-cta p{max-width:750px;margin:0 auto 20px;color:#e6f1ff;font-size:17px;line-height:1.5}
 .rs-cta-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
@@ -84,3 +84,21 @@ html[lang="en"] .rs-v2 .rs-hero h1,html[lang="en"] .rs-v2 .rs-cta h2{color:#fff}
 @media(max-width:850px){.rs-resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.rs-category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.rs-hero-copy{width:66%;max-width:560px}.rs-hero-art{right:-6%;width:63%;opacity:.62}.rs-v2 .rs-hero h1{font-size:36px}.rs-hero::after{background:linear-gradient(90deg,#071d39 0%,#071d39ee 26%,#071d3966 70%,transparent)}.rs-hero-inner{padding-top:34px;padding-bottom:34px}.rs-cta-skyline{width:37%;opacity:.2}}
 @media(max-width:600px){.rs-hero-copy{width:100%;max-width:none}.rs-v2 .rs-hero h1{font-size:clamp(29px,8.6vw,35px);line-height:1.08}.rs-v2 .rs-hero-lead{font-size:16px;line-height:1.5;margin-bottom:19px}.rs-hero-art{width:115%;right:-30%;opacity:.22}.rs-hero::after{background:linear-gradient(90deg,#071d39f2,#071d39bb 60%,#071d3966)}.rs-hero-inner{padding-top:30px;padding-bottom:32px;min-height:0}.rs-search{gap:6px;padding-left:10px}.rs-search input{font-size:14px!important}.rs-search-submit{padding:8px 13px}.rs-search>svg{width:18px;height:18px}.rs-clear{width:28px}.rs-category-section{padding:25px 0}.rs-category-grid{grid-template-columns:1fr;gap:12px;margin-top:17px}.rs-category-card{min-height:86px;padding:15px 16px;gap:14px}.rs-category-icon{flex-basis:48px;height:48px}.rs-category-copy span{font-size:14px}.rs-v2 .rs-category-copy strong{font-size:18px}.rs-resource-grid{grid-template-columns:1fr;gap:19px}.rs-resources-section{padding:27px 0 30px}.rs-resource-copy{padding:17px 18px 19px}.rs-v2 .rs-resource-copy h3{font-size:22px}.rs-v2 .rs-resource-copy p{font-size:16px}.rs-resource-cta{font-size:16px}.rs-service-grid{gap:12px;grid-template-columns:1fr}.rs-service-card{min-height:65px}.rs-service-card strong{font-size:17px}.rs-services-heading{gap:8px}.rs-cta{padding:31px 0 35px}.rs-v2 .rs-cta p{font-size:16px}.rs-cta-skyline{width:60%;opacity:.13}.rs-cta-actions{gap:11px}.rs-v2 .rs-cta-btn{padding:10px 18px;min-width:142px}.rs-section-top{gap:7px}}
 @media(prefers-reduced-motion:reduce){.rs-v2 *{transition:none!important;scroll-behavior:auto!important}}
+
+/* Match the production Home Hero horizontal grid; never targets navigation or footer.
+   These four important declarations only override the shared important container rules. */
+main.rs-v2 .container {
+  width: 89% !important;
+  max-width: 1320px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+@media (max-width: 991.98px) {
+  main.rs-v2 .container { width: calc(100% - 40px) !important; }
+}
+@media (max-width: 575.98px) {
+  main.rs-v2 .container { width: calc(100% - 44px) !important; }
+}
+@media (max-width: 359.98px) {
+  main.rs-v2 .container { width: calc(100% - 36px) !important; }
+}
