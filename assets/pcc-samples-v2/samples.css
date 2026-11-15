@@ -7,3 +7,21 @@ html[lang="en"] body.ga-pcc-samples-page main.ps :is(h1,h2,h3,h4){font-family:"S
 .ps-hero-note{bottom:-16px;z-index:4}
 @media(max-width:600px){.ps-hero-note{bottom:-10px}}
 @media(prefers-reduced-motion:reduce){.ps *{scroll-behavior:auto!important;transition:none!important}}
+
+/* Match the production Home Hero horizontal grid; never targets navigation or footer.
+   These four important declarations only override the shared important container rules. */
+main.ps .container {
+  width: 89% !important;
+  max-width: 1320px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+@media (max-width: 991.98px) {
+  main.ps .container { width: calc(100% - 40px) !important; }
+}
+@media (max-width: 575.98px) {
+  main.ps .container { width: calc(100% - 44px) !important; }
+}
+@media (max-width: 359.98px) {
+  main.ps .container { width: calc(100% - 36px) !important; }
+}
