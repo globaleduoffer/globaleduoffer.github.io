@@ -1,0 +1,6 @@
+/* Only this article; all typography and editorial components use the pinned reference stylesheet. */
+.ed-page.on-page > .ed-heading.ed-shell{padding-bottom:12px;margin-bottom:24px}
+.ed-page.on-page .ed-figure img{aspect-ratio:auto;object-fit:contain;object-position:50% 50%}
+.ed-page.on-page .ed-toc nav{max-height:none;overflow:visible}
+.ed-page.on-page .ed-resource-card h3{margin-top:0}
+@media(max-width:991.98px){.ed-page.on-page > .ed-heading.ed-shell{padding-bottom:8px;margin-bottom:20px}}
