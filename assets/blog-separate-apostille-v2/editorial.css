@@ -1,0 +1,5 @@
+/* Page-local image handling; typography and components use the unchanged reference stylesheet. */
+.ed-page.sa-page .ed-figure img{object-fit:cover;object-position:50% 0}
+.ed-page.sa-page .ed-toc nav{max-height:none;overflow:visible}
+/* The reference's sticky container owns scrolling; avoid two nested scrollbars for this longer TOC. */
+.ed-page.sa-page .ed-resource-card h3{margin-top:0}
