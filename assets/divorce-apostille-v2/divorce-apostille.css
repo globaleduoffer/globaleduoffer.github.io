@@ -1,0 +1,27 @@
+/* Target page only; the published PCC editorial stylesheet remains the design system. */
+body.divorce-apostille .ed-page.divorce-page > .ed-heading{padding-bottom:12px;margin-bottom:24px}
+body.divorce-apostille .divorce-page .ed-figure img{object-fit:contain;object-position:50% 50%;background:#fff}
+body.divorce-apostille .divorce-page .divorce-three{grid-template-columns:repeat(3,minmax(0,1fr));margin:24px 0}
+body.divorce-apostille .divorce-page .divorce-type{cursor:default;transition:none}
+body.divorce-apostille .divorce-page .divorce-type:hover{background:#fff;border-color:#d5e4f1;text-decoration:none}
+body.divorce-apostille .divorce-page .divorce-type h3{margin-top:15px}
+body.divorce-apostille .divorce-page .divorce-type p:last-child{margin-bottom:0}
+body.divorce-apostille .divorce-page .divorce-scope .article-note{margin:0}
+body.divorce-apostille .divorce-page .divorce-scope h3{margin-top:0}
+body.divorce-apostille .divorce-page .ed-steps{list-style:decimal-leading-zero}
+body.divorce-apostille .divorce-page .ed-copy-fallback{width:100%;min-height:220px}
+@media(max-width:1199.98px){body.divorce-apostille .divorce-page .divorce-three{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:991.98px){body.divorce-apostille .ed-page.divorce-page > .ed-heading{padding-bottom:8px;margin-bottom:20px}}
+@media(max-width:575.98px){body.divorce-apostille .divorce-page .divorce-three{grid-template-columns:1fr}}
+
+/* Original identification table remains unchanged; horizontal scrolling is local to this region. */
+body.divorce-apostille .divorce-page .article-table-wrap{width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:24px 0;border:1px solid #d7e5f1;border-radius:8px}
+body.divorce-apostille .divorce-page .article-record-table{width:100%;min-width:680px;border-collapse:collapse;background:#fff}
+body.divorce-apostille .divorce-page .article-record-table th,body.divorce-apostille .divorce-page .article-record-table td{padding:16px 18px;border-bottom:1px solid #e2ebf3;text-align:left;vertical-align:top;font-size:16px;line-height:1.65;color:#3f556b}
+body.divorce-apostille .divorce-page .article-record-table th{background:#edf6ff;color:#153b63;font-weight:600}
+body.divorce-apostille .divorce-page .article-record-table tbody tr:last-child td{border-bottom:0}
+
+/* Keep the complete non-16:9 photograph; no letterbox or crop. */
+body.divorce-apostille .divorce-page .ed-figure img{aspect-ratio:1920/1073;height:auto;object-fit:contain}
+body.divorce-apostille .divorce-page .divorce-comparison .article-note{margin:0}
+body.divorce-apostille .divorce-page .divorce-comparison h3{margin-top:15px}
