@@ -1,0 +1,15 @@
+/* Target page only; the published PCC editorial stylesheet remains the design system. */
+body.employment-apostille .ed-page.employment-page > .ed-heading{padding-bottom:12px;margin-bottom:24px}
+body.employment-apostille .employment-page .ed-figure img{object-fit:contain;object-position:50% 50%;background:#fff}
+body.employment-apostille .employment-page .employment-types{grid-template-columns:repeat(3,minmax(0,1fr));margin:24px 0}
+body.employment-apostille .employment-page .employment-type{cursor:default;transition:none}
+body.employment-apostille .employment-page .employment-type:hover{background:#fff;border-color:#d5e4f1;text-decoration:none}
+body.employment-apostille .employment-page .employment-type h3{margin-top:15px}
+body.employment-apostille .employment-page .employment-type p:last-child{margin-bottom:0}
+body.employment-apostille .employment-page .employment-scope .article-note{margin:0}
+body.employment-apostille .employment-page .employment-scope h3{margin-top:0}
+body.employment-apostille .employment-page .ed-steps{list-style:decimal-leading-zero}
+body.employment-apostille .employment-page .ed-copy-fallback{width:100%;min-height:220px}
+@media(max-width:1199.98px){body.employment-apostille .employment-page .employment-types{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:991.98px){body.employment-apostille .ed-page.employment-page > .ed-heading{padding-bottom:8px;margin-bottom:20px}}
+@media(max-width:575.98px){body.employment-apostille .employment-page .employment-types{grid-template-columns:1fr}}
