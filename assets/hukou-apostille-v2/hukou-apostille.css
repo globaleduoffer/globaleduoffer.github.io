@@ -1,0 +1,19 @@
+/* Target page only; the published PCC editorial stylesheet remains the design system. */
+body.hukou-apostille .ed-page.hukou-page > .ed-heading{padding-bottom:12px;margin-bottom:24px}
+body.hukou-apostille .hukou-page .ed-figure img{object-fit:cover;object-position:50% 50%;background:#fff}
+body.hukou-apostille .hukou-page .hukou-types{grid-template-columns:repeat(3,minmax(0,1fr));margin:24px 0}
+body.hukou-apostille .hukou-page .hukou-type{cursor:default;transition:none}
+body.hukou-apostille .hukou-page .hukou-type:hover{background:#fff;border-color:#d5e4f1;text-decoration:none}
+body.hukou-apostille .hukou-page .hukou-type h3{margin-top:15px}
+body.hukou-apostille .hukou-page .hukou-type p:last-child{margin-bottom:0}
+body.hukou-apostille .hukou-page .hukou-scope .article-note{margin:0}
+body.hukou-apostille .hukou-page .hukou-scope h3{margin-top:0}
+body.hukou-apostille .hukou-page .ed-steps{list-style:decimal-leading-zero}
+body.hukou-apostille .hukou-page .ed-copy-fallback{width:100%;min-height:220px}
+@media(max-width:1199.98px){body.hukou-apostille .hukou-page .hukou-types{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:991.98px){body.hukou-apostille .ed-page.hukou-page > .ed-heading{padding-bottom:8px;margin-bottom:20px}}
+@media(max-width:575.98px){body.hukou-apostille .hukou-page .hukou-types{grid-template-columns:1fr}}
+
+
+body.hukou-apostille .hukou-page .hukou-comparison .article-note{margin:0}
+body.hukou-apostille .hukou-page .hukou-comparison h3{margin-top:0}
