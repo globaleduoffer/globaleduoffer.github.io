@@ -1,0 +1,21 @@
+/* Page-local extensions to the published PCC editorial components. */
+body.pcc-apostille-v2 .ed-page.pcc-apostille-page>.ed-heading{padding-bottom:12px;margin-bottom:24px}
+body.pcc-apostille-v2 .pcc-apostille-page .ed-figure img{aspect-ratio:1734/1146;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center}
+body.pcc-apostille-v2 .pcc-apostille-page .pcc-three{grid-template-columns:repeat(3,minmax(0,1fr));margin:24px 0}
+body.pcc-apostille-v2 .pcc-apostille-page .pcc-type{cursor:default;transition:none}
+body.pcc-apostille-v2 .pcc-apostille-page .pcc-type:hover{background:#fff;border-color:#d5e4f1}
+body.pcc-apostille-v2 .pcc-apostille-page .pcc-type p:last-child{margin-bottom:0}
+body.pcc-apostille-v2 .pcc-apostille-page .ed-copy-fallback{width:100%;min-height:220px}
+body.pcc-apostille-v2 .pcc-apostille-page .pcc-route{padding:22px 24px;border:1px solid #cddfed;border-radius:14px;background:#f5f9fd;margin:32px 0}
+body.pcc-apostille-v2 .pcc-apostille-page .pcc-route>h2{margin-top:0}
+body.pcc-apostille-v2 .pcc-apostille-page .pcc-route>label{display:block;font-size:18px;font-weight:600;margin-bottom:10px}
+body.pcc-apostille-v2 .pcc-apostille-page .pcc-route select{width:100%;max-width:100%;min-height:44px;padding:10px;border:1px solid #bfcedb;border-radius:7px;background:#fff;color:#17334f;font:inherit}
+body.pcc-apostille-v2 .pcc-apostille-page .pcc-route fieldset{display:block;margin:24px 0}
+body.pcc-apostille-v2 .pcc-apostille-page .pcc-route legend{font-size:18px;font-weight:600;line-height:1.5;float:none;margin-bottom:10px}
+body.pcc-apostille-v2 .pcc-apostille-page .pcc-radio-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px}
+body.pcc-apostille-v2 .pcc-apostille-page fieldset label{min-height:44px}
+body.pcc-apostille-v2 .pcc-apostille-page .pcc-route .article-note h3{margin-top:0}
+body.pcc-apostille-v2 .pcc-apostille-page #route-document-note:empty{display:none}
+body.pcc-apostille-v2 .pcc-apostille-page .ed-copy{min-height:44px}
+@media(max-width:1199.98px){body.pcc-apostille-v2 .pcc-apostille-page .pcc-three{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:575.98px){body.pcc-apostille-v2 .pcc-apostille-page .pcc-three,body.pcc-apostille-v2 .pcc-apostille-page .pcc-radio-grid{grid-template-columns:1fr}body.pcc-apostille-v2 .pcc-apostille-page .pcc-route{padding:21px}}
