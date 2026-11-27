@@ -1,0 +1,37 @@
+/* Page-local extensions to the published PCC editorial components. */
+body.commercial-apostille-v2 .ed-page.commercial-apostille-page>.ed-heading{padding-bottom:12px;margin-bottom:24px}
+body.commercial-apostille-v2 .commercial-apostille-page .ed-figure img{aspect-ratio:1762/974;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center}
+body.commercial-apostille-v2 .commercial-apostille-page .commercial-three{grid-template-columns:repeat(3,minmax(0,1fr));margin:24px 0}
+body.commercial-apostille-v2 .commercial-apostille-page .commercial-type{cursor:default;transition:none}
+body.commercial-apostille-v2 .commercial-apostille-page .commercial-type:hover{background:#fff;border-color:#d5e4f1}
+body.commercial-apostille-v2 .commercial-apostille-page .commercial-type p:last-child{margin-bottom:0}
+body.commercial-apostille-v2 .commercial-apostille-page .ed-copy-fallback{width:100%;min-height:220px}
+body.commercial-apostille-v2 .commercial-apostille-page .commercial-tool{padding:22px 24px;border:1px solid #cddfed;border-radius:14px;background:#f5f9fd;margin:32px 0}
+body.commercial-apostille-v2 .commercial-apostille-page .commercial-tool>h2{margin-top:0}
+body.commercial-apostille-v2 .commercial-apostille-page .commercial-tool>label{display:block;font-size:18px;font-weight:600;margin-bottom:10px}
+body.commercial-apostille-v2 .commercial-apostille-page .commercial-tool select{width:100%;max-width:100%;min-height:44px;padding:10px;border:1px solid #bfcedb;border-radius:7px;background:#fff;color:#17334f;font:inherit}
+body.commercial-apostille-v2 .commercial-apostille-page .commercial-tool fieldset{display:block;margin:24px 0}
+body.commercial-apostille-v2 .commercial-apostille-page .commercial-tool legend{font-size:18px;font-weight:600;line-height:1.5;float:none;margin-bottom:10px}
+body.commercial-apostille-v2 .commercial-apostille-page .commercial-choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px}
+body.commercial-apostille-v2 .commercial-apostille-page fieldset label{min-height:44px}
+body.commercial-apostille-v2 .commercial-apostille-page .commercial-tool .article-note h3{margin-top:0}
+body.commercial-apostille-v2 .commercial-apostille-page #review-document-hint:empty{display:none}
+body.commercial-apostille-v2 .commercial-apostille-page .ed-copy{min-height:44px}
+@media(max-width:1199.98px){body.commercial-apostille-v2 .commercial-apostille-page .commercial-three{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:575.98px){body.commercial-apostille-v2 .commercial-apostille-page .commercial-three,body.commercial-apostille-v2 .commercial-apostille-page .commercial-choice-grid{grid-template-columns:1fr}body.commercial-apostille-v2 .commercial-apostille-page .commercial-tool{padding:21px}}
+
+body.commercial-apostille-v2 .commercial-apostille-page #review-requirements{white-space:pre-line}
+body.commercial-apostille-v2 .commercial-apostille-page .article-table-wrap{max-width:100%;margin:24px 0;border:1px solid #d7e5f1;border-radius:8px}
+body.commercial-apostille-v2 .commercial-apostille-page .article-record-table{width:100%;table-layout:fixed;border-collapse:collapse;background:#fff}
+body.commercial-apostille-v2 .commercial-apostille-page .article-record-table :is(th,td){padding:15px 16px;vertical-align:top;border-bottom:1px solid #e2ebf3;overflow-wrap:anywhere;text-align:left;font-size:16px;line-height:1.65;color:#3f556b}
+body.commercial-apostille-v2 .commercial-apostille-page .article-record-table th{background:#edf6ff;color:#153b63;font-weight:600}
+body.commercial-apostille-v2 .commercial-apostille-page .article-record-table tr:last-child td{border-bottom:0}
+@media(max-width:575.98px){
+body.commercial-apostille-v2 .commercial-apostille-page .article-table-wrap{border:0;overflow:visible}
+body.commercial-apostille-v2 .commercial-apostille-page .article-record-table{display:block;table-layout:auto}
+body.commercial-apostille-v2 .commercial-apostille-page .article-record-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+body.commercial-apostille-v2 .commercial-apostille-page .article-record-table tbody{display:block}
+body.commercial-apostille-v2 .commercial-apostille-page .article-record-table tbody tr{display:block;margin-bottom:16px;border:1px solid #d7e5f1;border-radius:8px;overflow:hidden}
+body.commercial-apostille-v2 .commercial-apostille-page .article-record-table td{display:block;width:100%;padding:14px 16px}
+body.commercial-apostille-v2 .commercial-apostille-page .article-record-table td::before{content:attr(data-label);display:block;color:#153b63;font-weight:600;margin-bottom:5px}
+}
