@@ -1,0 +1,51 @@
+/* Page-local extensions to the published PCC editorial components. */
+body.poa-apostille-v2 .ed-page.poa-apostille-page>.ed-heading{padding-bottom:12px;margin-bottom:24px}
+body.poa-apostille-v2 .poa-apostille-page .ed-figure img{aspect-ratio:2038/1088;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center}
+body.poa-apostille-v2 .poa-apostille-page .poa-three{grid-template-columns:repeat(3,minmax(0,1fr));margin:24px 0}
+body.poa-apostille-v2 .poa-apostille-page .poa-card{cursor:default;transition:none}
+body.poa-apostille-v2 .poa-apostille-page .poa-card:hover{background:#fff;border-color:#d5e4f1}
+body.poa-apostille-v2 .poa-apostille-page .poa-card p:last-child{margin-bottom:0}
+body.poa-apostille-v2 .poa-apostille-page .ed-copy-fallback{width:100%;min-height:220px}
+body.poa-apostille-v2 .poa-apostille-page .poa-tool{padding:22px 24px;border:1px solid #cddfed;border-radius:14px;background:#f5f9fd;margin:32px 0}
+body.poa-apostille-v2 .poa-apostille-page .poa-tool>h2{margin-top:0}
+body.poa-apostille-v2 .poa-apostille-page .poa-tool>label{display:block;font-size:18px;font-weight:600;margin-bottom:10px}
+body.poa-apostille-v2 .poa-apostille-page .poa-tool select{width:100%;max-width:100%;min-height:44px;padding:10px;border:1px solid #bfcedb;border-radius:7px;background:#fff;color:#17334f;font:inherit}
+body.poa-apostille-v2 .poa-apostille-page .poa-tool fieldset{display:block;margin:24px 0}
+body.poa-apostille-v2 .poa-apostille-page .poa-tool legend{font-size:18px;font-weight:600;line-height:1.5;float:none;margin-bottom:10px}
+body.poa-apostille-v2 .poa-apostille-page .poa-choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px}
+body.poa-apostille-v2 .poa-apostille-page fieldset label{min-height:44px}
+body.poa-apostille-v2 .poa-apostille-page .poa-tool .article-note h3{margin-top:0}
+body.poa-apostille-v2 .poa-apostille-page #review-document-hint:empty{display:none}
+body.poa-apostille-v2 .poa-apostille-page .ed-copy{min-height:44px}
+@media(max-width:1199.98px){body.poa-apostille-v2 .poa-apostille-page .poa-three{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:575.98px){body.poa-apostille-v2 .poa-apostille-page .poa-three,body.poa-apostille-v2 .poa-apostille-page .poa-choice-grid{grid-template-columns:1fr}body.poa-apostille-v2 .poa-apostille-page .poa-tool{padding:21px}}
+
+body.poa-apostille-v2 .poa-apostille-page #review-requirements{white-space:pre-line}
+body.poa-apostille-v2 .poa-apostille-page .article-table-wrap{max-width:100%;margin:24px 0;border:1px solid #d7e5f1;border-radius:8px}
+body.poa-apostille-v2 .poa-apostille-page .article-record-table{width:100%;table-layout:fixed;border-collapse:collapse;background:#fff}
+body.poa-apostille-v2 .poa-apostille-page .article-record-table :is(th,td){padding:15px 16px;vertical-align:top;border-bottom:1px solid #e2ebf3;overflow-wrap:anywhere;text-align:left;font-size:16px;line-height:1.65;color:#3f556b}
+body.poa-apostille-v2 .poa-apostille-page .article-record-table th{background:#edf6ff;color:#153b63;font-weight:600}
+body.poa-apostille-v2 .poa-apostille-page .article-record-table tr:last-child td{border-bottom:0}
+@media(max-width:575.98px){
+body.poa-apostille-v2 .poa-apostille-page .article-table-wrap{border:0;overflow:visible}
+body.poa-apostille-v2 .poa-apostille-page .article-record-table{display:block;table-layout:auto}
+body.poa-apostille-v2 .poa-apostille-page .article-record-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+body.poa-apostille-v2 .poa-apostille-page .article-record-table tbody{display:block}
+body.poa-apostille-v2 .poa-apostille-page .article-record-table tbody tr{display:block;margin-bottom:16px;border:1px solid #d7e5f1;border-radius:8px;overflow:hidden}
+body.poa-apostille-v2 .poa-apostille-page .article-record-table td{display:block;width:100%;padding:14px 16px}
+body.poa-apostille-v2 .poa-apostille-page .article-record-table td::before{content:attr(data-label);display:block;color:#153b63;font-weight:600;margin-bottom:5px}
+}
+
+body.poa-apostille-v2 .poa-apostille-page .poa-check-items{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 20px;margin:0;padding:0;list-style:none}
+body.poa-apostille-v2 .poa-apostille-page .poa-check-items li{margin:0;padding:0}
+body.poa-apostille-v2 .poa-apostille-page :is(input,select,button,a):focus-visible{outline:3px solid #1769aa;outline-offset:3px}
+@media(max-width:575.98px){body.poa-apostille-v2 .poa-apostille-page .poa-check-items{grid-template-columns:1fr}}
+
+/* Bottom CTA auxiliary navigation; main action buttons stay unchanged. */
+body.poa-apostille-v2 .poa-apostille-page .ed-final .poa-cta-secondary{display:flex;align-items:center;margin-top:22px}
+body.poa-apostille-v2 .poa-apostille-page .ed-final .poa-cta-secondary-link{display:inline-flex;align-items:center;gap:8px;max-width:100%;color:#b5d6f5;font-size:15px;font-weight:500;line-height:1.6;text-decoration:none;transition:color .2s ease}
+body.poa-apostille-v2 .poa-apostille-page .ed-final .poa-cta-secondary-link span{min-width:0}
+body.poa-apostille-v2 .poa-apostille-page .ed-final .poa-cta-secondary-link i{flex:none;font-size:13px}
+body.poa-apostille-v2 .poa-apostille-page .ed-final .poa-cta-secondary-link:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+body.poa-apostille-v2 .poa-apostille-page .ed-final .poa-cta-secondary-link:focus-visible{outline:2px solid #b5d6f5;outline-offset:4px;border-radius:3px}
+@media(max-width:767px){body.poa-apostille-v2 .poa-apostille-page .ed-final .poa-cta-secondary{margin-top:18px}body.poa-apostille-v2 .poa-apostille-page .ed-final .poa-cta-secondary-link{font-size:14px;min-height:44px}}
