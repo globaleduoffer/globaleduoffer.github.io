@@ -1,0 +1,27 @@
+/* Target page only; the published PCC editorial stylesheet remains the design system. */
+body.death-apostille .ed-page.death-page > .ed-heading{padding-bottom:12px;margin-bottom:24px}
+body.death-apostille .death-page .ed-figure img{object-fit:contain;object-position:50% 50%;background:#fff}
+body.death-apostille .death-page .death-three{grid-template-columns:repeat(3,minmax(0,1fr));margin:24px 0}
+body.death-apostille .death-page .death-type{cursor:default;transition:none}
+body.death-apostille .death-page .death-type:hover{background:#fff;border-color:#d5e4f1;text-decoration:none}
+body.death-apostille .death-page .death-type h3{margin-top:15px}
+body.death-apostille .death-page .death-type p:last-child{margin-bottom:0}
+body.death-apostille .death-page .death-scope .article-note{margin:0}
+body.death-apostille .death-page .death-scope h3{margin-top:0}
+body.death-apostille .death-page .ed-steps{list-style:decimal-leading-zero}
+body.death-apostille .death-page .ed-copy-fallback{width:100%;min-height:220px}
+@media(max-width:1199.98px){body.death-apostille .death-page .death-three{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:991.98px){body.death-apostille .ed-page.death-page > .ed-heading{padding-bottom:8px;margin-bottom:20px}}
+@media(max-width:575.98px){body.death-apostille .death-page .death-three{grid-template-columns:1fr}}
+
+/* Comparison table summarizes the original text; horizontal scrolling is local to this region. */
+body.death-apostille .death-page .article-table-wrap{width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:24px 0;border:1px solid #d7e5f1;border-radius:8px}
+body.death-apostille .death-page .article-record-table{width:100%;min-width:680px;border-collapse:collapse;background:#fff}
+body.death-apostille .death-page .article-record-table th,body.death-apostille .death-page .article-record-table td{padding:16px 18px;border-bottom:1px solid #e2ebf3;text-align:left;vertical-align:top;font-size:16px;line-height:1.65;color:#3f556b}
+body.death-apostille .death-page .article-record-table th{background:#edf6ff;color:#153b63;font-weight:600}
+body.death-apostille .death-page .article-record-table tbody tr:last-child td{border-bottom:0}
+
+/* Keep the complete original photograph; no letterbox or crop. */
+body.death-apostille .death-page .ed-figure img{aspect-ratio:1902/1182;height:auto;object-fit:contain}
+body.death-apostille .death-page .death-comparison .article-note{margin:0}
+body.death-apostille .death-page .death-comparison h3{margin-top:15px}
