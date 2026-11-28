@@ -1,0 +1,55 @@
+/* Page-local extensions to the published PCC editorial components. */
+body.pcc-legalization-v2 .ed-page.pcc-legalization-page>.ed-heading{padding-bottom:12px;margin-bottom:24px}
+body.pcc-legalization-v2 .pcc-legalization-page .ed-figure img{aspect-ratio:2096/1160;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center}
+body.pcc-legalization-v2 .pcc-legalization-page .pcc-three{grid-template-columns:repeat(3,minmax(0,1fr));margin:24px 0}
+body.pcc-legalization-v2 .pcc-legalization-page .pcc-card{cursor:default;transition:none}
+body.pcc-legalization-v2 .pcc-legalization-page .pcc-card:hover{background:#fff;border-color:#d5e4f1}
+body.pcc-legalization-v2 .pcc-legalization-page .pcc-card p:last-child{margin-bottom:0}
+body.pcc-legalization-v2 .pcc-legalization-page .ed-copy-fallback{width:100%;min-height:220px}
+body.pcc-legalization-v2 .pcc-legalization-page .pcc-tool{padding:22px 24px;border:1px solid #cddfed;border-radius:14px;background:#f5f9fd;margin:32px 0}
+body.pcc-legalization-v2 .pcc-legalization-page .pcc-tool>h2{margin-top:0}
+body.pcc-legalization-v2 .pcc-legalization-page .pcc-tool>label{display:block;font-size:18px;font-weight:600;margin-bottom:10px}
+body.pcc-legalization-v2 .pcc-legalization-page .pcc-tool select{width:100%;max-width:100%;min-height:44px;padding:10px;border:1px solid #bfcedb;border-radius:7px;background:#fff;color:#17334f;font:inherit}
+body.pcc-legalization-v2 .pcc-legalization-page .pcc-tool fieldset{display:block;margin:24px 0}
+body.pcc-legalization-v2 .pcc-legalization-page .pcc-tool legend{font-size:18px;font-weight:600;line-height:1.5;float:none;margin-bottom:10px}
+body.pcc-legalization-v2 .pcc-legalization-page .pcc-choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px}
+body.pcc-legalization-v2 .pcc-legalization-page fieldset label{min-height:44px}
+body.pcc-legalization-v2 .pcc-legalization-page .pcc-tool .article-note h3{margin-top:0}
+body.pcc-legalization-v2 .pcc-legalization-page #review-location-notes:empty{display:none}
+body.pcc-legalization-v2 .pcc-legalization-page .ed-copy{min-height:44px}
+@media(max-width:1199.98px){body.pcc-legalization-v2 .pcc-legalization-page .pcc-three{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:575.98px){body.pcc-legalization-v2 .pcc-legalization-page .pcc-three,body.pcc-legalization-v2 .pcc-legalization-page .pcc-choice-grid{grid-template-columns:1fr}body.pcc-legalization-v2 .pcc-legalization-page .pcc-tool{padding:21px}}
+
+body.pcc-legalization-v2 .pcc-legalization-page #review-requirements-notes{white-space:pre-line}
+body.pcc-legalization-v2 .pcc-legalization-page .article-table-wrap{max-width:100%;margin:24px 0;border:1px solid #d7e5f1;border-radius:8px}
+body.pcc-legalization-v2 .pcc-legalization-page .article-record-table{width:100%;table-layout:fixed;border-collapse:collapse;background:#fff}
+body.pcc-legalization-v2 .pcc-legalization-page .article-record-table :is(th,td){padding:15px 16px;vertical-align:top;border-bottom:1px solid #e2ebf3;overflow-wrap:anywhere;text-align:left;font-size:16px;line-height:1.65;color:#3f556b}
+body.pcc-legalization-v2 .pcc-legalization-page .article-record-table th{background:#edf6ff;color:#153b63;font-weight:600}
+body.pcc-legalization-v2 .pcc-legalization-page .article-record-table tr:last-child td{border-bottom:0}
+@media(max-width:575.98px){
+body.pcc-legalization-v2 .pcc-legalization-page .article-table-wrap{border:0;overflow:visible}
+body.pcc-legalization-v2 .pcc-legalization-page .article-record-table{display:block;table-layout:auto}
+body.pcc-legalization-v2 .pcc-legalization-page .article-record-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+body.pcc-legalization-v2 .pcc-legalization-page .article-record-table tbody{display:block}
+body.pcc-legalization-v2 .pcc-legalization-page .article-record-table tbody tr{display:block;margin-bottom:16px;border:1px solid #d7e5f1;border-radius:8px;overflow:hidden}
+body.pcc-legalization-v2 .pcc-legalization-page .article-record-table td{display:block;width:100%;padding:14px 16px}
+body.pcc-legalization-v2 .pcc-legalization-page .article-record-table td::before{content:attr(data-label);display:block;color:#153b63;font-weight:600;margin-bottom:5px}
+}
+
+body.pcc-legalization-v2 .pcc-legalization-page .pcc-check-items{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 20px;margin:0;padding:0;list-style:none}
+body.pcc-legalization-v2 .pcc-legalization-page .pcc-check-items li{margin:0;padding:0}
+body.pcc-legalization-v2 .pcc-legalization-page :is(input,select,button,a):focus-visible{outline:3px solid #1769aa;outline-offset:3px}
+@media(max-width:575.98px){body.pcc-legalization-v2 .pcc-legalization-page .pcc-check-items{grid-template-columns:1fr}}
+
+/* Bottom CTA auxiliary navigation; main action buttons stay unchanged. */
+body.pcc-legalization-v2 .pcc-legalization-page .ed-final .pcc-cta-secondary{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;margin-top:22px}
+body.pcc-legalization-v2 .pcc-legalization-page .ed-final .pcc-cta-secondary-link{display:inline-flex;align-items:center;gap:8px;max-width:100%;color:#b5d6f5;font-size:15px;font-weight:500;line-height:1.6;text-decoration:none;transition:color .2s ease}
+body.pcc-legalization-v2 .pcc-legalization-page .ed-final .pcc-cta-secondary-link span{min-width:0}
+body.pcc-legalization-v2 .pcc-legalization-page .ed-final .pcc-cta-secondary-link i{flex:none;font-size:13px}
+body.pcc-legalization-v2 .pcc-legalization-page .ed-final .pcc-cta-secondary-link:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+body.pcc-legalization-v2 .pcc-legalization-page .ed-final .pcc-cta-secondary-link:focus-visible{outline:2px solid #b5d6f5;outline-offset:4px;border-radius:3px}
+@media(max-width:767px){body.pcc-legalization-v2 .pcc-legalization-page .ed-final .pcc-cta-secondary{flex-direction:column;align-items:flex-start;gap:4px;margin-top:18px}body.pcc-legalization-v2 .pcc-legalization-page .ed-final .pcc-cta-secondary-link{font-size:14px;min-height:44px}}
+
+body.pcc-legalization-v2 .pcc-legalization-page #review-existing-notes:empty,body.pcc-legalization-v2 .pcc-legalization-page #review-requirements-notes:empty{display:none}
+
+@media(max-width:575.98px){body.pcc-legalization-v2 .pcc-legalization-page .ed-final .hero-actions .btn{white-space:normal;min-width:0;overflow-wrap:break-word;text-align:center}}
