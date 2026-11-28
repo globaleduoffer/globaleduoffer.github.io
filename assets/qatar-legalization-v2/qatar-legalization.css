@@ -1,0 +1,38 @@
+/* Qatar-only extensions to the published Editorial V2 system. */
+.ga-qatar-legalization-v2 .ed-heading{padding-bottom:20px;margin-bottom:28px}
+.ga-qatar-legalization-v2 .ed-meta .article-meta{color:inherit;font-weight:400}
+.ga-qatar-legalization-v2 .qatar-breadcrumb{font-size:14px;color:#617589;margin-bottom:20px}
+.ga-qatar-legalization-v2 .ed-figure img{width:100%;height:auto;aspect-ratio:auto;max-height:none;object-fit:contain;object-position:center}
+.ga-qatar-legalization-v2 .qatar-quick{background:#edf6ff;border-left:3px solid #1682d0;padding:23px 27px;border-radius:0 8px 8px 0}
+.ga-qatar-legalization-v2 .qatar-quick>h2{margin-top:0}
+.ga-qatar-legalization-v2 .qatar-quick .article-note{border:0;background:transparent;padding:0}
+.ga-qatar-legalization-v2 .qatar-static-card{cursor:default;transition:none;margin-top:12px}
+.ga-qatar-legalization-v2 .qatar-static-card:hover{background:#fff;border-color:#d5e4f1}
+.ga-qatar-legalization-v2 .qatar-static-card p{margin-bottom:0}
+.ga-qatar-legalization-v2 .article-table-wrap{max-width:100%;overflow-x:auto;border:1px solid #d7e5f1;border-radius:8px;margin:24px 0}
+.ga-qatar-legalization-v2 .article-record-table{width:100%;min-width:560px;border-collapse:collapse}
+.ga-qatar-legalization-v2 .article-record-table :is(th,td){padding:15px 16px;text-align:left;vertical-align:top;border-bottom:1px solid #e2ebf3;font-size:16px;line-height:1.65;color:#3f556b}
+.ga-qatar-legalization-v2 .article-record-table th{background:#edf6ff;color:#153b63}
+.ga-qatar-legalization-v2 .qatar-check-items{grid-column:1/-1;display:grid;gap:12px 20px;grid-template-columns:repeat(2,minmax(0,1fr));list-style:none;padding:0;margin:0}
+.ga-qatar-legalization-v2 .qatar-check-items li{padding:0;margin:0}
+.ga-qatar-legalization-v2 fieldset label{min-height:44px}
+.ga-qatar-legalization-v2 .qatar-tool{padding:22px 24px;border:1px solid #cddfed;border-radius:14px;background:#f5f9fd;margin:32px 0}
+.ga-qatar-legalization-v2 .qatar-tool>h2{margin-top:0}
+.ga-qatar-legalization-v2 .qatar-tool>label{display:block;font-size:18px;font-weight:600;margin:20px 0 10px}
+.ga-qatar-legalization-v2 .qatar-tool select{width:100%;max-width:100%;min-height:44px;padding:10px;border:1px solid #bfcedb;border-radius:7px;background:#fff;color:#17334f;font:inherit}
+.ga-qatar-legalization-v2 .qatar-tool fieldset{display:block;margin:24px 0}
+.ga-qatar-legalization-v2 .qatar-tool legend{float:none;font-size:18px;font-weight:600;line-height:1.5}
+.ga-qatar-legalization-v2 .qatar-tool .article-note{margin-top:24px}
+.ga-qatar-legalization-v2 .qatar-tool .article-note p{white-space:pre-line}
+.ga-qatar-legalization-v2 .qatar-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.ga-qatar-legalization-v2 .qatar-actions :is(button,a){min-height:44px;white-space:normal}
+.ga-qatar-legalization-v2 .qatar-copy-fallback{display:block;width:100%;min-height:230px;font:inherit;color:#17334f;background:#fff}
+.ga-qatar-legalization-v2 .ed-final .qatar-cta-secondary{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;margin-top:22px}
+.ga-qatar-legalization-v2 .ed-final .qatar-cta-secondary-link{display:inline-flex;align-items:center;gap:8px;max-width:100%;color:#b5d6f5;font-size:15px;font-weight:500;line-height:1.6;text-decoration:none}
+.ga-qatar-legalization-v2 .ed-final .qatar-cta-secondary-link i{flex:none;font-size:13px}
+.ga-qatar-legalization-v2 .ed-final .qatar-cta-secondary-link:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.ga-qatar-legalization-v2 .ed-final .qatar-cta-secondary-link:focus-visible{outline:2px solid #b5d6f5;outline-offset:4px;border-radius:3px}
+.ga-qatar-legalization-v2 :is(h2,h3){scroll-margin-top:30px}
+@media(max-width:767px){.ga-qatar-legalization-v2 .ed-final .qatar-cta-secondary{flex-direction:column;align-items:flex-start;gap:4px;margin-top:22px}.ga-qatar-legalization-v2 .ed-final .qatar-cta-secondary-link{font-size:14px;min-height:44px}}
+@media(max-width:575.98px){.ga-qatar-legalization-v2 .qatar-check-items{grid-template-columns:1fr}.ga-qatar-legalization-v2 .qatar-tool,.ga-qatar-legalization-v2 .qatar-quick{padding:21px}.ga-qatar-legalization-v2 .ed-final .hero-actions .btn{white-space:normal;min-width:0;text-align:center;overflow-wrap:break-word}.ga-qatar-legalization-v2 .qatar-actions{align-items:stretch;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){.ga-qatar-legalization-v2 *{transition:none;scroll-behavior:auto}}
